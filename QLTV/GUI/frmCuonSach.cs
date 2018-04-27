@@ -11,19 +11,19 @@ using DevExpress.XtraEditors;
 
 namespace QLTV.GUI
 {
-    public partial class frmUser : DevExpress.XtraEditors.XtraForm
+    public partial class frmCuonSach : DevExpress.XtraEditors.XtraForm
     {
-        public frmUser()
+        public frmCuonSach()
         {
             InitializeComponent();
         }
 
-        private void frmUser_Load(object sender, EventArgs e)
+        private void frmCuonSach_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.
-            this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
-            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.THEDOCGIA' table. You can move, or remove it, as needed.
-            this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.SACH' table. You can move, or remove it, as needed.
+            this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CUONSACH' table. You can move, or remove it, as needed.
+            this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
 
         }
 

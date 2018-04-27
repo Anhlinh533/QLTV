@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="QuanLyThuVienDataSet1" targetNamespace="http://tempuri.org/QuanLyThuVienDataSet1.xsd" xmlns:mstns="http://tempuri.org/QuanLyThuVienDataSet1.xsd" xmlns="http://tempuri.org/QuanLyThuVienDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="QuanLyThuVienDataSet" targetNamespace="http://tempuri.org/QuanLyThuVienDataSet.xsd" xmlns:mstns="http://tempuri.org/QuanLyThuVienDataSet.xsd" xmlns="http://tempuri.org/QuanLyThuVienDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -1188,7 +1188,7 @@ SELECT IDDocGia, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe, N
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="QuanLyThuVienDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QuanLyThuVienDataSet1" msprop:Generator_UserDSName="QuanLyThuVienDataSet1">
+  <xs:element name="QuanLyThuVienDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QuanLyThuVienDataSet" msprop:Generator_UserDSName="QuanLyThuVienDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="BCSACHTRATRE" msprop:Generator_TableClassName="BCSACHTRATREDataTable" msprop:Generator_TableVarName="tableBCSACHTRATRE" msprop:Generator_TablePropName="BCSACHTRATRE" msprop:Generator_RowDeletingName="BCSACHTRATRERowDeleting" msprop:Generator_RowChangingName="BCSACHTRATRERowChanging" msprop:Generator_RowEvHandlerName="BCSACHTRATRERowChangeEventHandler" msprop:Generator_RowDeletedName="BCSACHTRATRERowDeleted" msprop:Generator_UserTableName="BCSACHTRATRE" msprop:Generator_RowChangedName="BCSACHTRATRERowChanged" msprop:Generator_RowEvArgName="BCSACHTRATRERowChangeEvent" msprop:Generator_RowClassName="BCSACHTRATRERow">

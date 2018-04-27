@@ -41,6 +41,21 @@ namespace QLTV
             f.Show();
         }
 
+        private void btn_DauSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDauSach f = new frmDauSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_CuonSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCuonSach f = new frmCuonSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
         #endregion
 
 
@@ -57,6 +72,8 @@ namespace QLTV
             }
             return false;
         }
+
+
 
 
         #endregion

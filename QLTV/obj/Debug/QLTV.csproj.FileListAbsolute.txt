@@ -97,3 +97,4 @@ C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.G
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTacGia.resources
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmMuonSach.resources
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTraSach.resources
+C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCuonSach.resources

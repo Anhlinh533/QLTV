@@ -20,7 +20,7 @@ namespace QLTV {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("QuanLyThuVienDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("QuanLyThuVienDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class QuanLyThuVienDataSet : global::System.Data.DataSet {
         
@@ -715,9 +715,9 @@ namespace QLTV {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "QuanLyThuVienDataSet1";
+            this.DataSetName = "QuanLyThuVienDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/QuanLyThuVienDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/QuanLyThuVienDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableBCSACHTRATRE = new BCSACHTRATREDataTable();
@@ -10221,7 +10221,7 @@ namespace QLTV {
         }
     }
 }
-namespace QLTV.QuanLyThuVienDataSet1TableAdapters {
+namespace QLTV.QuanLyThuVienDataSetTableAdapters {
     
     
     /// <summary>

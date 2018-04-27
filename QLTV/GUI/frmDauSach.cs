@@ -17,5 +17,39 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+
+        private void frmDauSach_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.LOAISACH' table. You can move, or remove it, as needed.
+            this.lOAISACHTableAdapter.Fill(this.quanLyThuVienDataSet.LOAISACH);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.DAUSACH' table. You can move, or remove it, as needed.
+            this.dAUSACHTableAdapter.Fill(this.quanLyThuVienDataSet.DAUSACH);
+
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_IDDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,6 +54,7 @@
             this.btn_TheDocGia = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Users = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_Sach = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btn_DauSach = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Sach = new DevExpress.XtraBars.BarButtonItem();
             this.btn_CuonSach = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_TacGia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -66,7 +67,6 @@
             this.ribtab_DoiPWD = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rib_Users = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btn_DauSach = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).BeginInit();
             this.SuspendLayout();
@@ -263,6 +263,16 @@
             this.ribtab_Sach.Name = "ribtab_Sach";
             this.ribtab_Sach.Text = "Sách";
             // 
+            // btn_DauSach
+            // 
+            this.btn_DauSach.Caption = "Đầu sách";
+            this.btn_DauSach.Id = 16;
+            this.btn_DauSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_bookmark_book_64;
+            this.btn_DauSach.Name = "btn_DauSach";
+            this.btn_DauSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_DauSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DauSach_ItemClick);
+            // 
             // btn_Sach
             // 
             this.btn_Sach.Caption = "Sách";
@@ -281,6 +291,7 @@
             this.btn_CuonSach.Name = "btn_CuonSach";
             this.btn_CuonSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_CuonSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_CuonSach_ItemClick);
             // 
             // ribtab_TacGia
             // 
@@ -373,15 +384,6 @@
             // xtraTable
             // 
             this.xtraTable.MdiParent = this;
-            // 
-            // btn_DauSach
-            // 
-            this.btn_DauSach.Caption = "Đầu sách";
-            this.btn_DauSach.Id = 16;
-            this.btn_DauSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_bookmark_book_64;
-            this.btn_DauSach.Name = "btn_DauSach";
-            this.btn_DauSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // frmMain
             // 
