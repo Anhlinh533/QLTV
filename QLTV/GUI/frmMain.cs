@@ -56,6 +56,77 @@ namespace QLTV
             f.MdiParent = this;
             f.Show();
         }
+
+        private void btn_LoaiSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLoaiSach f = new frmLoaiSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_CTPhieuNhapSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCTPhieuNhapSach f = new frmCTPhieuNhapSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_TacGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTacGia f = new frmTacGia();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_CTTacGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCTTacGia f = new frmCTTacGia();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_PhieuNhapSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmPhieuNhapSach f = new frmPhieuNhapSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+        private void btn_Muon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmMuonSach f = new frmMuonSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_CTMuonSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCTMuonSach f = new frmCTMuonSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_Tra_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTraSach f = new frmTraSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_CTTraSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmCTTraSach f = new frmCTTraSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
         #endregion
 
 
@@ -72,6 +143,9 @@ namespace QLTV
             }
             return false;
         }
+
+
+
 
 
 

@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+
+namespace QLTV.GUI
+{
+    public partial class frmCTPhieuNhapSach : DevExpress.XtraEditors.XtraForm
+    {
+        public frmCTPhieuNhapSach()
+        {
+            InitializeComponent();
+        }
+
+        private void frmCTPhieuNhapSach_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.SACH' table. You can move, or remove it, as needed.
+            this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.PHIEUNHAPSACH' table. You can move, or remove it, as needed.
+            this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_PHIEUNHAPSACH' table. You can move, or remove it, as needed.
+            this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
+
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_IDDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

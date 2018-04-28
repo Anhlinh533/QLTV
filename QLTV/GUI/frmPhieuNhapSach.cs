@@ -11,17 +11,17 @@ using DevExpress.XtraEditors;
 
 namespace QLTV.GUI
 {
-    public partial class frmTacGia : DevExpress.XtraEditors.XtraForm
+    public partial class frmPhieuNhapSach : DevExpress.XtraEditors.XtraForm
     {
-        public frmTacGia()
+        public frmPhieuNhapSach()
         {
             InitializeComponent();
         }
 
-        private void frmTacGia_Load(object sender, EventArgs e)
+        private void frmPhieuNhapSach_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.TACGIA' table. You can move, or remove it, as needed.
-            this.tACGIATableAdapter.Fill(this.quanLyThuVienDataSet.TACGIA);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.PHIEUNHAPSACH' table. You can move, or remove it, as needed.
+            this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
 
         }
 

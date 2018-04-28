@@ -113,6 +113,16 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_book_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-book-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_book_shelf_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8_book_shelf_48", resourceCulture);
@@ -183,9 +193,39 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_form_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-form-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_lock_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-lock-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_more_details_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-more-details-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_news_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-news-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

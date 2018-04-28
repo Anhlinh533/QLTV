@@ -68,6 +68,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\frmCTMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmCTMuonSach.Designer.cs">
+      <DependentUpon>frmCTMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmCTPhieuNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmCTPhieuNhapSach.Designer.cs">
+      <DependentUpon>frmCTPhieuNhapSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmCTTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmCTTacGia.Designer.cs">
+      <DependentUpon>frmCTTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmCTTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmCTTraSach.Designer.cs">
+      <DependentUpon>frmCTTraSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmCuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +104,12 @@
     <Compile Include="GUI\frmDauSach.Designer.cs">
       <DependentUpon>frmDauSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLoaiSach.Designer.cs">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +121,12 @@
     </Compile>
     <Compile Include="GUI\frmMuonSach.Designer.cs">
       <DependentUpon>frmMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmPhieuNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPhieuNhapSach.Designer.cs">
+      <DependentUpon>frmPhieuNhapSach.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmSach.cs">
       <SubType>Form</SubType>
@@ -130,17 +166,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThuVienDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\frmCTMuonSach.resx">
+      <DependentUpon>frmCTMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmCTPhieuNhapSach.resx">
+      <DependentUpon>frmCTPhieuNhapSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmCTTacGia.resx">
+      <DependentUpon>frmCTTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmCTTraSach.resx">
+      <DependentUpon>frmCTTraSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCuonSach.resx">
       <DependentUpon>frmCuonSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDauSach.resx">
       <DependentUpon>frmDauSach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLoaiSach.resx">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMuonSach.resx">
       <DependentUpon>frmMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPhieuNhapSach.resx">
+      <DependentUpon>frmPhieuNhapSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmSach.resx">
       <DependentUpon>frmSach.cs</DependentUpon>
@@ -258,6 +312,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-bookmark-book-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-details-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-form-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-news-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -72,7 +72,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_Delete = new System.Windows.Forms.DataGridView();
             this.iDDocGiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoTenDGDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinhDGDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,7 +108,7 @@
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             this.SuspendLayout();
@@ -140,6 +140,9 @@
             // 
             // groupControl2
             // 
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -147,7 +150,6 @@
             this.groupControl2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupControl2.Controls.Add(this.dgv_ThemDG);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupControl2.Location = new System.Drawing.Point(423, 0);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(1025, 860);
@@ -350,8 +352,9 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -552,28 +555,29 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.Appearance.Options.UseFont = true;
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.AutoSize = true;
-            this.groupControl3.Controls.Add(this.dataGridView1);
+            this.groupControl3.Controls.Add(this.dgv_Delete);
             this.groupControl3.Location = new System.Drawing.Point(411, 0);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(1037, 910);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu độc giả";
             // 
-            // dataGridView1
+            // dgv_Delete
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_Delete.AutoGenerateColumns = false;
+            this.dgv_Delete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Delete.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDocGiaDataGridViewTextBoxColumn1,
             this.hoTenDGDataGridViewTextBoxColumn1,
             this.ngaySinhDGDataGridViewTextBoxColumn1,
@@ -583,12 +587,12 @@
             this.ngayLapTheDataGridViewTextBoxColumn1,
             this.ngayHetHanDataGridViewTextBoxColumn1,
             this.tongNoDataGridViewTextBoxColumn1});
-            this.dataGridView1.DataSource = this.tHEDOCGIABindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1025, 810);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_Delete.DataSource = this.tHEDOCGIABindingSource;
+            this.dgv_Delete.Location = new System.Drawing.Point(3, 47);
+            this.dgv_Delete.Name = "dgv_Delete";
+            this.dgv_Delete.RowTemplate.Height = 28;
+            this.dgv_Delete.Size = new System.Drawing.Size(1025, 810);
+            this.dgv_Delete.TabIndex = 0;
             // 
             // iDDocGiaDataGridViewTextBoxColumn1
             // 
@@ -664,8 +668,9 @@
             // 
             // groupControl4
             // 
-            this.groupControl4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.AutoSize = true;
@@ -762,7 +767,7 @@
             this.item_Xoa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
@@ -818,7 +823,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayHetHanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongNoDataGridViewTextBoxColumn;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_Delete;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDocGiaDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoTenDGDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDGDataGridViewTextBoxColumn1;

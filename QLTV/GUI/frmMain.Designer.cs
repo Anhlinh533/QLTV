@@ -47,8 +47,10 @@
             this.rib_MuonTra = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribtab_Muon = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_Muon = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_CTMuonSach = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_Tra = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_Tra = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_CTTraSach = new DevExpress.XtraBars.BarButtonItem();
             this.rib_QuanLi = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribtab_DocGia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_TheDocGia = new DevExpress.XtraBars.BarButtonItem();
@@ -57,8 +59,12 @@
             this.btn_DauSach = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Sach = new DevExpress.XtraBars.BarButtonItem();
             this.btn_CuonSach = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_LoaiSach = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_PhieuNhapSach = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_CTPhieuNhapSach = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_TacGia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_TacGia = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_CTTacGia = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_DoiPWD = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -192,6 +198,7 @@
             // ribtab_Muon
             // 
             this.ribtab_Muon.ItemLinks.Add(this.btn_Muon);
+            this.ribtab_Muon.ItemLinks.Add(this.btn_CTMuonSach);
             this.ribtab_Muon.Name = "ribtab_Muon";
             this.ribtab_Muon.Text = "Quản lí mượn";
             // 
@@ -203,10 +210,22 @@
             this.btn_Muon.Name = "btn_Muon";
             this.btn_Muon.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_Muon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Muon_ItemClick);
+            // 
+            // btn_CTMuonSach
+            // 
+            this.btn_CTMuonSach.Caption = "Chi tiết mượn sách";
+            this.btn_CTMuonSach.Id = 21;
+            this.btn_CTMuonSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_more_details_40;
+            this.btn_CTMuonSach.Name = "btn_CTMuonSach";
+            this.btn_CTMuonSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_CTMuonSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_CTMuonSach_ItemClick);
             // 
             // ribtab_Tra
             // 
             this.ribtab_Tra.ItemLinks.Add(this.btn_Tra);
+            this.ribtab_Tra.ItemLinks.Add(this.btn_CTTraSach);
             this.ribtab_Tra.Name = "ribtab_Tra";
             this.ribtab_Tra.Text = "Quản lí trả";
             // 
@@ -218,6 +237,17 @@
             this.btn_Tra.Name = "btn_Tra";
             this.btn_Tra.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_Tra.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Tra_ItemClick);
+            // 
+            // btn_CTTraSach
+            // 
+            this.btn_CTTraSach.Caption = "Chi tiết trả sách";
+            this.btn_CTTraSach.Id = 22;
+            this.btn_CTTraSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_form_40;
+            this.btn_CTTraSach.Name = "btn_CTTraSach";
+            this.btn_CTTraSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_CTTraSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_CTTraSach_ItemClick);
             // 
             // rib_QuanLi
             // 
@@ -260,6 +290,9 @@
             this.ribtab_Sach.ItemLinks.Add(this.btn_DauSach);
             this.ribtab_Sach.ItemLinks.Add(this.btn_Sach);
             this.ribtab_Sach.ItemLinks.Add(this.btn_CuonSach);
+            this.ribtab_Sach.ItemLinks.Add(this.btn_LoaiSach);
+            this.ribtab_Sach.ItemLinks.Add(this.btn_PhieuNhapSach);
+            this.ribtab_Sach.ItemLinks.Add(this.btn_CTPhieuNhapSach);
             this.ribtab_Sach.Name = "ribtab_Sach";
             this.ribtab_Sach.Text = "Sách";
             // 
@@ -293,9 +326,41 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.btn_CuonSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_CuonSach_ItemClick);
             // 
+            // btn_LoaiSach
+            // 
+            this.btn_LoaiSach.Caption = "Loại sách";
+            this.btn_LoaiSach.Id = 17;
+            this.btn_LoaiSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
+            this.btn_LoaiSach.Name = "btn_LoaiSach";
+            this.btn_LoaiSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_LoaiSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_LoaiSach_ItemClick);
+            // 
+            // btn_PhieuNhapSach
+            // 
+            this.btn_PhieuNhapSach.Caption = "Phiếu nhập sách";
+            this.btn_PhieuNhapSach.Id = 19;
+            this.btn_PhieuNhapSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_form_40;
+            this.btn_PhieuNhapSach.Name = "btn_PhieuNhapSach";
+            this.btn_PhieuNhapSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_PhieuNhapSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_PhieuNhapSach_ItemClick);
+            // 
+            // btn_CTPhieuNhapSach
+            // 
+            this.btn_CTPhieuNhapSach.Caption = "Chi tiết phiếu nhập sách";
+            this.btn_CTPhieuNhapSach.Hint = "Chi tiết phiếu nhập sách";
+            this.btn_CTPhieuNhapSach.Id = 20;
+            this.btn_CTPhieuNhapSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_news_50;
+            this.btn_CTPhieuNhapSach.Name = "btn_CTPhieuNhapSach";
+            this.btn_CTPhieuNhapSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_CTPhieuNhapSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_CTPhieuNhapSach_ItemClick);
+            // 
             // ribtab_TacGia
             // 
             this.ribtab_TacGia.ItemLinks.Add(this.btn_TacGia);
+            this.ribtab_TacGia.ItemLinks.Add(this.btn_CTTacGia);
             this.ribtab_TacGia.Name = "ribtab_TacGia";
             this.ribtab_TacGia.Text = "Tác giả";
             // 
@@ -307,6 +372,17 @@
             this.btn_TacGia.Name = "btn_TacGia";
             this.btn_TacGia.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TacGia_ItemClick);
+            // 
+            // btn_CTTacGia
+            // 
+            this.btn_CTTacGia.Caption = "Chi tiết tác giả";
+            this.btn_CTTacGia.Id = 18;
+            this.btn_CTTacGia.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_more_details_40;
+            this.btn_CTTacGia.Name = "btn_CTTacGia";
+            this.btn_CTTacGia.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_CTTacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_CTTacGia_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -343,10 +419,16 @@
             this.btn_TKMuon,
             this.btn_TKTra,
             this.btn_DoiPWD,
-            this.btn_DauSach});
+            this.btn_DauSach,
+            this.btn_LoaiSach,
+            this.btn_CTTacGia,
+            this.btn_PhieuNhapSach,
+            this.btn_CTPhieuNhapSach,
+            this.btn_CTMuonSach,
+            this.btn_CTTraSach});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl.MaxItemId = 17;
+            this.ribbonControl.MaxItemId = 23;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rib_QuanLi,
@@ -445,6 +527,12 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage rib_Users;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTable;
         private DevExpress.XtraBars.BarButtonItem btn_DauSach;
+        private DevExpress.XtraBars.BarButtonItem btn_LoaiSach;
+        private DevExpress.XtraBars.BarButtonItem btn_CTTacGia;
+        private DevExpress.XtraBars.BarButtonItem btn_PhieuNhapSach;
+        private DevExpress.XtraBars.BarButtonItem btn_CTPhieuNhapSach;
+        private DevExpress.XtraBars.BarButtonItem btn_CTMuonSach;
+        private DevExpress.XtraBars.BarButtonItem btn_CTTraSach;
     }
 }
 
