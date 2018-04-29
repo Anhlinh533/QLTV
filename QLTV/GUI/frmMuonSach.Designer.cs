@@ -31,18 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
-            this.pHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
-            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.dgv_Them = new System.Windows.Forms.DataGridView();
             this.iDPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hanTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Sua = new System.Windows.Forms.ToolStripButton();
@@ -57,31 +53,33 @@
             this.dtp_HanTra = new DevExpress.XtraEditors.DateEdit();
             this.dtp_NgayMuon = new DevExpress.XtraEditors.DateEdit();
             this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
+            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_IDPhieuMuon = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.dgv_Delete = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
+            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
+            this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
-            this.item_Xoa.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -90,11 +88,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
+            this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -122,38 +122,6 @@
             this.item_Them.Name = "item_Them";
             this.item_Them.Size = new System.Drawing.Size(1705, 921);
             // 
-            // item_Xoa
-            // 
-            this.item_Xoa.Caption = "Xóa theo ID";
-            this.item_Xoa.Controls.Add(this.groupControl2);
-            this.item_Xoa.Controls.Add(this.groupControl1);
-            this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1705, 921);
-            // 
-            // quanLyThuVienDataSet
-            // 
-            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
-            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pHIEUMUONBindingSource
-            // 
-            this.pHIEUMUONBindingSource.DataMember = "PHIEUMUON";
-            this.pHIEUMUONBindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // pHIEUMUONTableAdapter
-            // 
-            this.pHIEUMUONTableAdapter.ClearBeforeFill = true;
-            // 
-            // tHEDOCGIABindingSource
-            // 
-            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
-            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // tHEDOCGIATableAdapter
-            // 
-            this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
-            // 
             // groupControl3
             // 
             this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -173,7 +141,9 @@
             // 
             // dgv_Them
             // 
-            this.dgv_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Them.AutoGenerateColumns = false;
             this.dgv_Them.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Them.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -219,6 +189,16 @@
             this.hanTraDataGridViewTextBoxColumn.HeaderText = "Hạn trả";
             this.hanTraDataGridViewTextBoxColumn.Name = "hanTraDataGridViewTextBoxColumn";
             this.hanTraDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // pHIEUMUONBindingSource
+            // 
+            this.pHIEUMUONBindingSource.DataMember = "PHIEUMUON";
+            this.pHIEUMUONBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // quanLyThuVienDataSet
+            // 
+            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
+            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator1
             // 
@@ -394,6 +374,11 @@
             this.cbb_IDDocGia.TabIndex = 5;
             this.cbb_IDDocGia.ValueMember = "IDDocGia";
             // 
+            // tHEDOCGIABindingSource
+            // 
+            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
+            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
             // tb_IDPhieuMuon
             // 
             this.tb_IDPhieuMuon.Location = new System.Drawing.Point(238, 78);
@@ -441,23 +426,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID phiếu mượn:";
             // 
-            // groupControl1
+            // item_Xoa
             // 
-            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.Appearance.Options.UseFont = true;
-            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.btn_IDDelete);
-            this.groupControl1.Controls.Add(this.cbb_IDDelete);
-            this.groupControl1.Controls.Add(this.label5);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(448, 921);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "Thông tin xóa";
+            this.item_Xoa.Caption = "Xóa theo ID";
+            this.item_Xoa.Controls.Add(this.groupControl2);
+            this.item_Xoa.Controls.Add(this.groupControl1);
+            this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.item_Xoa.Name = "item_Xoa";
+            this.item_Xoa.Size = new System.Drawing.Size(1705, 921);
             // 
             // groupControl2
             // 
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -471,7 +453,9 @@
             // 
             // dgv_Delete
             // 
-            this.dgv_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Delete.AutoGenerateColumns = false;
             this.dgv_Delete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Delete.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -518,27 +502,23 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 150;
             // 
-            // label5
+            // groupControl1
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(3, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(338, 36);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "ID phiếu mượn cần xóa:";
-            // 
-            // cbb_IDDelete
-            // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pHIEUMUONBindingSource, "IDPhieuMuon", true));
-            this.cbb_IDDelete.DataSource = this.pHIEUMUONBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDPhieuMuon";
-            this.cbb_IDDelete.FormattingEnabled = true;
-            this.cbb_IDDelete.Location = new System.Drawing.Point(9, 137);
-            this.cbb_IDDelete.Name = "cbb_IDDelete";
-            this.cbb_IDDelete.Size = new System.Drawing.Size(223, 44);
-            this.cbb_IDDelete.TabIndex = 1;
-            this.cbb_IDDelete.ValueMember = "IDPhieuMuon";
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.Appearance.Options.UseFont = true;
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_IDDelete);
+            this.groupControl1.Controls.Add(this.cbb_IDDelete);
+            this.groupControl1.Controls.Add(this.label5);
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(448, 921);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "Thông tin xóa";
             // 
             // btn_IDDelete
             // 
@@ -560,6 +540,36 @@
             this.btn_IDDelete.TabIndex = 3;
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
+            // cbb_IDDelete
+            // 
+            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pHIEUMUONBindingSource, "IDPhieuMuon", true));
+            this.cbb_IDDelete.DataSource = this.pHIEUMUONBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDPhieuMuon";
+            this.cbb_IDDelete.FormattingEnabled = true;
+            this.cbb_IDDelete.Location = new System.Drawing.Point(9, 137);
+            this.cbb_IDDelete.Name = "cbb_IDDelete";
+            this.cbb_IDDelete.Size = new System.Drawing.Size(223, 44);
+            this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "IDPhieuMuon";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(3, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(338, 36);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "ID phiếu mượn cần xóa:";
+            // 
+            // pHIEUMUONTableAdapter
+            // 
+            this.pHIEUMUONTableAdapter.ClearBeforeFill = true;
+            // 
+            // tHEDOCGIATableAdapter
+            // 
+            this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
+            // 
             // frmMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -572,14 +582,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
             this.item_Them.ResumeLayout(false);
-            this.item_Xoa.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -590,12 +598,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
+            this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }

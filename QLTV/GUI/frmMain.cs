@@ -28,7 +28,7 @@ namespace QLTV
         }
         private void btn_Users_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmUser f = new frmUser();
+            frmUsers f = new frmUsers();
             if (ExistForm(f)) return;
             f.MdiParent = this;
             f.Show();

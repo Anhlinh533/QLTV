@@ -91,7 +91,6 @@ C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\bin\Debug\es\Dev
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraLayout.v17.2.resources.dll
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraLayout.v17.2.resources.dll
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\bin\Debug\Bunifu_UI_v1.5.3.dll
-C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmUser.resources
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSach.resources
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDauSach.resources
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTacGia.resources
@@ -104,3 +103,4 @@ C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.G
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTPhieuNhapSach.resources
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTMuonSach.resources
 C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTTraSach.resources
+C:\Users\BaoDuy\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.GUI.frmUsers.resources

@@ -1,6 +1,6 @@
 ﻿namespace QLTV.GUI
 {
-    partial class frmCTTacGia
+    partial class frmUsers
     {
         /// <summary>
         /// Required designer variable.
@@ -32,11 +32,11 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDCTTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTTACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dgv_Them = new System.Windows.Forms.DataGridView();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pwdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uSERSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -49,47 +49,41 @@
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.tACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dAUSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tb_IDCTTacGia = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.dgv_Delete = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
-            this.cbb_IDCTTacGia = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cT_TACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter();
-            this.dAUSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter();
-            this.tACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSERSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -102,20 +96,20 @@
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.item_Them,
             this.item_Xoa});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1640, 1018);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(1584, 1078);
             this.navigationPane1.SelectedPage = this.item_Them;
-            this.navigationPane1.Size = new System.Drawing.Size(1640, 1018);
-            this.navigationPane1.TabIndex = 4;
+            this.navigationPane1.Size = new System.Drawing.Size(1584, 1078);
+            this.navigationPane1.TabIndex = 0;
             this.navigationPane1.Text = "navigationPane1";
             // 
             // item_Them
             // 
-            this.item_Them.Caption = "Thêm chi tiết tác giả";
+            this.item_Them.Caption = "Thêm User";
             this.item_Them.Controls.Add(this.groupControl2);
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1550, 937);
+            this.item_Them.Size = new System.Drawing.Size(1494, 997);
             // 
             // groupControl2
             // 
@@ -126,60 +120,60 @@
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
-            this.groupControl2.Controls.Add(this.dataGridView1);
+            this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
-            this.groupControl2.Location = new System.Drawing.Point(479, 0);
+            this.groupControl2.Location = new System.Drawing.Point(407, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1071, 937);
+            this.groupControl2.Size = new System.Drawing.Size(1087, 997);
             this.groupControl2.TabIndex = 1;
-            this.groupControl2.Text = "Dữ liệu chi tiết tác giả";
+            this.groupControl2.Text = "Dữ liệu User";
             // 
-            // dataGridView1
+            // dgv_Them
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDCTTacGiaDataGridViewTextBoxColumn,
-            this.iDDauSachDataGridViewTextBoxColumn,
-            this.iDTacGiaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.cTTACGIABindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1059, 850);
-            this.dataGridView1.TabIndex = 2;
+            this.dgv_Them.AutoGenerateColumns = false;
+            this.dgv_Them.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Them.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userNameDataGridViewTextBoxColumn,
+            this.pwdDataGridViewTextBoxColumn,
+            this.iDDocGiaDataGridViewTextBoxColumn});
+            this.dgv_Them.DataSource = this.uSERSBindingSource;
+            this.dgv_Them.Location = new System.Drawing.Point(6, 81);
+            this.dgv_Them.Name = "dgv_Them";
+            this.dgv_Them.RowTemplate.Height = 28;
+            this.dgv_Them.Size = new System.Drawing.Size(1075, 910);
+            this.dgv_Them.TabIndex = 2;
             // 
-            // iDCTTacGiaDataGridViewTextBoxColumn
+            // userNameDataGridViewTextBoxColumn
             // 
-            this.iDCTTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDCTTacGiaDataGridViewTextBoxColumn.DataPropertyName = "IDCTTacGia";
-            this.iDCTTacGiaDataGridViewTextBoxColumn.HeaderText = "ID chi tiết tác giả";
-            this.iDCTTacGiaDataGridViewTextBoxColumn.Name = "iDCTTacGiaDataGridViewTextBoxColumn";
-            this.iDCTTacGiaDataGridViewTextBoxColumn.Width = 218;
+            this.userNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "User name";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            this.userNameDataGridViewTextBoxColumn.Width = 194;
             // 
-            // iDDauSachDataGridViewTextBoxColumn
+            // pwdDataGridViewTextBoxColumn
             // 
-            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDDauSachDataGridViewTextBoxColumn.DataPropertyName = "IDDauSach";
-            this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
-            this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
-            this.iDDauSachDataGridViewTextBoxColumn.Width = 192;
+            this.pwdDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.pwdDataGridViewTextBoxColumn.DataPropertyName = "Pwd";
+            this.pwdDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.pwdDataGridViewTextBoxColumn.Name = "pwdDataGridViewTextBoxColumn";
+            this.pwdDataGridViewTextBoxColumn.Width = 176;
             // 
-            // iDTacGiaDataGridViewTextBoxColumn
+            // iDDocGiaDataGridViewTextBoxColumn
             // 
-            this.iDTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDTacGiaDataGridViewTextBoxColumn.DataPropertyName = "IDTacGia";
-            this.iDTacGiaDataGridViewTextBoxColumn.HeaderText = "ID tác giả";
-            this.iDTacGiaDataGridViewTextBoxColumn.Name = "iDTacGiaDataGridViewTextBoxColumn";
-            this.iDTacGiaDataGridViewTextBoxColumn.Width = 165;
+            this.iDDocGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDDocGiaDataGridViewTextBoxColumn.DataPropertyName = "IDDocGia";
+            this.iDDocGiaDataGridViewTextBoxColumn.HeaderText = "ID độc giả";
+            this.iDDocGiaDataGridViewTextBoxColumn.Name = "iDDocGiaDataGridViewTextBoxColumn";
+            this.iDDocGiaDataGridViewTextBoxColumn.Width = 187;
             // 
-            // cTTACGIABindingSource
+            // uSERSBindingSource
             // 
-            this.cTTACGIABindingSource.DataMember = "CT_TACGIA";
-            this.cTTACGIABindingSource.DataSource = this.quanLyThuVienDataSet;
+            this.uSERSBindingSource.DataMember = "USERS";
+            this.uSERSBindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
             // quanLyThuVienDataSet
             // 
@@ -208,7 +202,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1065, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1081, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -286,17 +280,17 @@
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.Controls.Add(this.btn_Them);
-            this.groupControl1.Controls.Add(this.comboBox2);
             this.groupControl1.Controls.Add(this.comboBox1);
-            this.groupControl1.Controls.Add(this.tb_IDCTTacGia);
+            this.groupControl1.Controls.Add(this.textBox2);
+            this.groupControl1.Controls.Add(this.textBox1);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(473, 937);
+            this.groupControl1.Size = new System.Drawing.Size(401, 997);
             this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "Thông tin chi tiết tác giả";
+            this.groupControl1.Text = "Thông tin User";
             // 
             // btn_Them
             // 
@@ -311,53 +305,34 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(142, 276);
+            this.btn_Them.Location = new System.Drawing.Point(113, 274);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // comboBox2
-            // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tACGIABindingSource, "IDTacGia", true));
-            this.comboBox2.DataSource = this.tACGIABindingSource;
-            this.comboBox2.DisplayMember = "IDTacGia";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(266, 198);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(201, 44);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.ValueMember = "IDTacGia";
-            // 
-            // tACGIABindingSource
-            // 
-            this.tACGIABindingSource.DataMember = "TACGIA";
-            this.tACGIABindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
             // comboBox1
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dAUSACHBindingSource, "IDDauSach", true));
-            this.comboBox1.DataSource = this.dAUSACHBindingSource;
-            this.comboBox1.DisplayMember = "IDDauSach";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(266, 138);
+            this.comboBox1.Location = new System.Drawing.Point(181, 198);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(201, 44);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.ValueMember = "IDDauSach";
+            this.comboBox1.Size = new System.Drawing.Size(189, 44);
+            this.comboBox1.TabIndex = 5;
             // 
-            // dAUSACHBindingSource
+            // textBox2
             // 
-            this.dAUSACHBindingSource.DataMember = "DAUSACH";
-            this.dAUSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            this.textBox2.Location = new System.Drawing.Point(181, 138);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(189, 44);
+            this.textBox2.TabIndex = 4;
             // 
-            // tb_IDCTTacGia
+            // textBox1
             // 
-            this.tb_IDCTTacGia.Location = new System.Drawing.Point(266, 78);
-            this.tb_IDCTTacGia.Name = "tb_IDCTTacGia";
-            this.tb_IDCTTacGia.Size = new System.Drawing.Size(201, 44);
-            this.tb_IDCTTacGia.TabIndex = 3;
+            this.textBox1.Location = new System.Drawing.Point(181, 78);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(189, 44);
+            this.textBox1.TabIndex = 3;
             // 
             // label3
             // 
@@ -365,9 +340,9 @@
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(6, 201);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 36);
+            this.label3.Size = new System.Drawing.Size(162, 36);
             this.label3.TabIndex = 2;
-            this.label3.Text = "ID tác giả:";
+            this.label3.Text = "ID độc giả:";
             // 
             // label2
             // 
@@ -375,9 +350,9 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(6, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 36);
+            this.label2.Size = new System.Drawing.Size(151, 36);
             this.label2.TabIndex = 1;
-            this.label2.Text = "ID đầu sách:";
+            this.label2.Text = "Password:";
             // 
             // label1
             // 
@@ -385,18 +360,18 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(6, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 36);
+            this.label1.Size = new System.Drawing.Size(169, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ID chi tiết tác giả:";
+            this.label1.Text = "User name:";
             // 
             // item_Xoa
             // 
             this.item_Xoa.Caption = "Xóa theo ID";
-            this.item_Xoa.Controls.Add(this.groupControl3);
             this.item_Xoa.Controls.Add(this.groupControl4);
+            this.item_Xoa.Controls.Add(this.groupControl3);
             this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
             this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1550, 937);
+            this.item_Xoa.Size = new System.Drawing.Size(1494, 997);
             // 
             // groupControl3
             // 
@@ -407,54 +382,18 @@
             this.groupControl3.Appearance.Options.UseFont = true;
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
-            this.groupControl3.Controls.Add(this.dgv_Delete);
-            this.groupControl3.Location = new System.Drawing.Point(421, 0);
+            this.groupControl3.Controls.Add(this.btn_IDDelete);
+            this.groupControl3.Controls.Add(this.comboBox2);
+            this.groupControl3.Controls.Add(this.label4);
+            this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1129, 937);
-            this.groupControl3.TabIndex = 3;
-            this.groupControl3.Text = "Dữ liệu chi tiết tác giả";
+            this.groupControl3.Size = new System.Drawing.Size(401, 997);
+            this.groupControl3.TabIndex = 0;
+            this.groupControl3.Text = "Thông tin xóa";
             // 
-            // dgv_Delete
+            // uSERSTableAdapter
             // 
-            this.dgv_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Delete.AutoGenerateColumns = false;
-            this.dgv_Delete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Delete.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.dgv_Delete.DataSource = this.cTTACGIABindingSource;
-            this.dgv_Delete.Location = new System.Drawing.Point(3, 47);
-            this.dgv_Delete.Name = "dgv_Delete";
-            this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1123, 887);
-            this.dgv_Delete.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IDCTTacGia";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID chi tiết tác giả";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 218;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "IDDauSach";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ID đầu sách";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 192;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "IDTacGia";
-            this.dataGridViewTextBoxColumn3.HeaderText = "ID tác giả";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 165;
+            this.uSERSTableAdapter.ClearBeforeFill = true;
             // 
             // groupControl4
             // 
@@ -465,14 +404,74 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
-            this.groupControl4.Controls.Add(this.btn_IDDelete);
-            this.groupControl4.Controls.Add(this.cbb_IDCTTacGia);
-            this.groupControl4.Controls.Add(this.label4);
-            this.groupControl4.Location = new System.Drawing.Point(0, 0);
+            this.groupControl4.Controls.Add(this.dgv_Delete);
+            this.groupControl4.Location = new System.Drawing.Point(407, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(415, 937);
-            this.groupControl4.TabIndex = 2;
-            this.groupControl4.Text = "Thông tin xóa";
+            this.groupControl4.Size = new System.Drawing.Size(1088, 997);
+            this.groupControl4.TabIndex = 1;
+            this.groupControl4.Text = "Dữ liệu User";
+            // 
+            // dgv_Delete
+            // 
+            this.dgv_Delete.AutoGenerateColumns = false;
+            this.dgv_Delete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Delete.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dgv_Delete.DataSource = this.uSERSBindingSource;
+            this.dgv_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Delete.Location = new System.Drawing.Point(3, 47);
+            this.dgv_Delete.Name = "dgv_Delete";
+            this.dgv_Delete.RowTemplate.Height = 28;
+            this.dgv_Delete.Size = new System.Drawing.Size(1082, 947);
+            this.dgv_Delete.TabIndex = 3;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn1.HeaderText = "User name";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 194;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Pwd";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Password";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 176;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "IDDocGia";
+            this.dataGridViewTextBoxColumn3.HeaderText = "ID độc giả";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 187;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(6, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(281, 36);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "User name cần xóa:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.uSERSBindingSource, "UserName", true));
+            this.comboBox2.DataSource = this.uSERSBindingSource;
+            this.comboBox2.DisplayMember = "UserName";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(12, 118);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(205, 44);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.ValueMember = "UserName";
             // 
             // btn_IDDelete
             // 
@@ -487,59 +486,30 @@
             this.btn_IDDelete.ImageZoom = 50;
             this.btn_IDDelete.LabelPosition = 41;
             this.btn_IDDelete.LabelText = "Xóa";
-            this.btn_IDDelete.Location = new System.Drawing.Point(111, 200);
+            this.btn_IDDelete.Location = new System.Drawing.Point(108, 186);
             this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(6);
             this.btn_IDDelete.Name = "btn_IDDelete";
             this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
             this.btn_IDDelete.TabIndex = 3;
+            this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
-            // cbb_IDCTTacGia
-            // 
-            this.cbb_IDCTTacGia.FormattingEnabled = true;
-            this.cbb_IDCTTacGia.Location = new System.Drawing.Point(12, 130);
-            this.cbb_IDCTTacGia.Name = "cbb_IDCTTacGia";
-            this.cbb_IDCTTacGia.Size = new System.Drawing.Size(210, 44);
-            this.cbb_IDCTTacGia.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(6, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(366, 36);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "ID chi tiết tác giả cần xóa:";
-            // 
-            // cT_TACGIATableAdapter
-            // 
-            this.cT_TACGIATableAdapter.ClearBeforeFill = true;
-            // 
-            // dAUSACHTableAdapter
-            // 
-            this.dAUSACHTableAdapter.ClearBeforeFill = true;
-            // 
-            // tACGIATableAdapter
-            // 
-            this.tACGIATableAdapter.ClearBeforeFill = true;
-            // 
-            // frmCTTacGia
+            // frmUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1640, 1018);
+            this.ClientSize = new System.Drawing.Size(1584, 1078);
             this.Controls.Add(this.navigationPane1);
-            this.Name = "frmCTTacGia";
-            this.Text = "frmCTTacGia";
-            this.Load += new System.EventHandler(this.frmCTTacGia_Load);
+            this.Name = "frmUsers";
+            this.Text = "frmUsers";
+            this.Load += new System.EventHandler(this.frmUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
             this.item_Them.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSERSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -547,15 +517,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).EndInit();
+            this.groupControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
-            this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -564,12 +532,10 @@
 
         private DevExpress.XtraBars.Navigation.NavigationPane navigationPane1;
         private DevExpress.XtraBars.Navigation.NavigationPage item_Them;
+        private DevExpress.XtraBars.Navigation.NavigationPage item_Xoa;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraBars.Navigation.NavigationPage item_Xoa;
-        private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.GroupControl groupControl4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_Them;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton btn_Sua;
@@ -580,27 +546,25 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripButton btn_Reset;
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
-        private System.Windows.Forms.BindingSource cTTACGIABindingSource;
-        private QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter cT_TACGIATableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTTacGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDauSachDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.BindingSource uSERSBindingSource;
+        private QuanLyThuVienDataSetTableAdapters.USERSTableAdapter uSERSTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pwdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDocGiaDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox tb_IDCTTacGia;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.BindingSource dAUSACHBindingSource;
-        private QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter dAUSACHTableAdapter;
-        private System.Windows.Forms.BindingSource tACGIABindingSource;
-        private QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter tACGIATableAdapter;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.GroupControl groupControl4;
         private System.Windows.Forms.DataGridView dgv_Delete;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.ComboBox cbb_IDCTTacGia;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
     }

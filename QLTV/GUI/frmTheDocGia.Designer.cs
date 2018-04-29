@@ -564,9 +564,9 @@
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.AutoSize = true;
             this.groupControl3.Controls.Add(this.dgv_Delete);
-            this.groupControl3.Location = new System.Drawing.Point(411, 0);
+            this.groupControl3.Location = new System.Drawing.Point(417, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1037, 910);
+            this.groupControl3.Size = new System.Drawing.Size(1031, 860);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu độc giả";
             // 
@@ -591,7 +591,7 @@
             this.dgv_Delete.Location = new System.Drawing.Point(3, 47);
             this.dgv_Delete.Name = "dgv_Delete";
             this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1025, 810);
+            this.dgv_Delete.Size = new System.Drawing.Size(1019, 803);
             this.dgv_Delete.TabIndex = 0;
             // 
             // iDDocGiaDataGridViewTextBoxColumn1

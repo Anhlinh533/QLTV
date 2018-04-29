@@ -152,11 +152,11 @@
     <Compile Include="GUI\frmTraSach.Designer.cs">
       <DependentUpon>frmTraSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmUser.cs">
+    <Compile Include="GUI\frmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmUser.Designer.cs">
-      <DependentUpon>frmUser.cs</DependentUpon>
+    <Compile Include="GUI\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -208,8 +208,8 @@
     <EmbeddedResource Include="GUI\frmTraSach.resx">
       <DependentUpon>frmTraSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmUser.resx">
-      <DependentUpon>frmUser.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

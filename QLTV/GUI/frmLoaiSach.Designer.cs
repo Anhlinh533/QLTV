@@ -32,10 +32,11 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.dgv_Them = new System.Windows.Forms.DataGridView();
+            this.iDLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lOAISACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Sua = new System.Windows.Forms.ToolStripButton();
@@ -45,41 +46,40 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
-            this.lOAISACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lOAISACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAISACHTableAdapter();
-            this.iDLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_TenLoaiSach = new System.Windows.Forms.TextBox();
-            this.tb_IDLoaiSach = new System.Windows.Forms.TextBox();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
+            this.tb_IDLoaiSach = new System.Windows.Forms.TextBox();
+            this.tb_TenLoaiSach = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.dgv_Delete = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
+            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lOAISACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAISACHTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -109,13 +109,14 @@
             // 
             // groupControl2
             // 
-            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
-            this.groupControl2.Controls.Add(this.dataGridView1);
+            this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
             this.groupControl2.Location = new System.Drawing.Point(462, 0);
             this.groupControl2.Name = "groupControl2";
@@ -123,67 +124,48 @@
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu loại sách";
             // 
-            // groupControl1
+            // dgv_Them
             // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.Appearance.Options.UseFont = true;
-            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.btn_Them);
-            this.groupControl1.Controls.Add(this.tb_IDLoaiSach);
-            this.groupControl1.Controls.Add(this.tb_TenLoaiSach);
-            this.groupControl1.Controls.Add(this.label2);
-            this.groupControl1.Controls.Add(this.label1);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(456, 984);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "Thông tin loại sách";
-            // 
-            // item_Xoa
-            // 
-            this.item_Xoa.Caption = "Xóa theo ID";
-            this.item_Xoa.Controls.Add(this.groupControl3);
-            this.item_Xoa.Controls.Add(this.groupControl4);
-            this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1572, 984);
-            // 
-            // groupControl3
-            // 
-            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl3.Appearance.Options.UseFont = true;
-            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl3.AppearanceCaption.Options.UseFont = true;
-            this.groupControl3.Controls.Add(this.dgv_Delete);
-            this.groupControl3.Location = new System.Drawing.Point(388, 0);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1184, 984);
-            this.groupControl3.TabIndex = 3;
-            this.groupControl3.Text = "Dữ liệu loại sách";
+            this.dgv_Them.AutoGenerateColumns = false;
+            this.dgv_Them.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Them.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDLoaiSachDataGridViewTextBoxColumn,
+            this.tenLoaiSachDataGridViewTextBoxColumn});
+            this.dgv_Them.DataSource = this.lOAISACHBindingSource;
+            this.dgv_Them.Location = new System.Drawing.Point(6, 81);
+            this.dgv_Them.Name = "dgv_Them";
+            this.dgv_Them.RowTemplate.Height = 28;
+            this.dgv_Them.Size = new System.Drawing.Size(1098, 897);
+            this.dgv_Them.TabIndex = 2;
             // 
-            // groupControl4
+            // iDLoaiSachDataGridViewTextBoxColumn
             // 
-            this.groupControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl4.Appearance.Options.UseFont = true;
-            this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl4.AppearanceCaption.Options.UseFont = true;
-            this.groupControl4.Controls.Add(this.btn_IDDelete);
-            this.groupControl4.Controls.Add(this.cbb_IDDelete);
-            this.groupControl4.Controls.Add(this.label3);
-            this.groupControl4.Location = new System.Drawing.Point(0, 0);
-            this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(382, 984);
-            this.groupControl4.TabIndex = 2;
-            this.groupControl4.Text = "Thông tin xóa";
+            this.iDLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiSach";
+            this.iDLoaiSachDataGridViewTextBoxColumn.HeaderText = "ID loại sách";
+            this.iDLoaiSachDataGridViewTextBoxColumn.Name = "iDLoaiSachDataGridViewTextBoxColumn";
+            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 206;
+            // 
+            // tenLoaiSachDataGridViewTextBoxColumn
+            // 
+            this.tenLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tenLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "TenLoaiSach";
+            this.tenLoaiSachDataGridViewTextBoxColumn.HeaderText = "Tên loại sách";
+            this.tenLoaiSachDataGridViewTextBoxColumn.Name = "tenLoaiSachDataGridViewTextBoxColumn";
+            this.tenLoaiSachDataGridViewTextBoxColumn.Width = 226;
+            // 
+            // lOAISACHBindingSource
+            // 
+            this.lOAISACHBindingSource.DataMember = "LOAISACH";
+            this.lOAISACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // quanLyThuVienDataSet
+            // 
+            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
+            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator1
             // 
@@ -275,83 +257,25 @@
             this.btn_Reset.Text = "Reset dữ liệu";
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
-            // dataGridView1
+            // groupControl1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDLoaiSachDataGridViewTextBoxColumn,
-            this.tenLoaiSachDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.lOAISACHBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1098, 897);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // quanLyThuVienDataSet
-            // 
-            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
-            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lOAISACHBindingSource
-            // 
-            this.lOAISACHBindingSource.DataMember = "LOAISACH";
-            this.lOAISACHBindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // lOAISACHTableAdapter
-            // 
-            this.lOAISACHTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDLoaiSachDataGridViewTextBoxColumn
-            // 
-            this.iDLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiSach";
-            this.iDLoaiSachDataGridViewTextBoxColumn.HeaderText = "ID loại sách";
-            this.iDLoaiSachDataGridViewTextBoxColumn.Name = "iDLoaiSachDataGridViewTextBoxColumn";
-            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 206;
-            // 
-            // tenLoaiSachDataGridViewTextBoxColumn
-            // 
-            this.tenLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.tenLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "TenLoaiSach";
-            this.tenLoaiSachDataGridViewTextBoxColumn.HeaderText = "Tên loại sách";
-            this.tenLoaiSachDataGridViewTextBoxColumn.Name = "tenLoaiSachDataGridViewTextBoxColumn";
-            this.tenLoaiSachDataGridViewTextBoxColumn.Width = 226;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(6, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID loại sách:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 141);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 36);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên loại sách:";
-            // 
-            // tb_TenLoaiSach
-            // 
-            this.tb_TenLoaiSach.Location = new System.Drawing.Point(213, 138);
-            this.tb_TenLoaiSach.Name = "tb_TenLoaiSach";
-            this.tb_TenLoaiSach.Size = new System.Drawing.Size(221, 44);
-            this.tb_TenLoaiSach.TabIndex = 2;
-            // 
-            // tb_IDLoaiSach
-            // 
-            this.tb_IDLoaiSach.Location = new System.Drawing.Point(213, 78);
-            this.tb_IDLoaiSach.Name = "tb_IDLoaiSach";
-            this.tb_IDLoaiSach.Size = new System.Drawing.Size(221, 44);
-            this.tb_IDLoaiSach.TabIndex = 3;
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.Appearance.Options.UseFont = true;
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_Them);
+            this.groupControl1.Controls.Add(this.tb_IDLoaiSach);
+            this.groupControl1.Controls.Add(this.tb_TenLoaiSach);
+            this.groupControl1.Controls.Add(this.label2);
+            this.groupControl1.Controls.Add(this.label1);
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(456, 984);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "Thông tin loại sách";
             // 
             // btn_Them
             // 
@@ -373,8 +297,70 @@
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
+            // tb_IDLoaiSach
+            // 
+            this.tb_IDLoaiSach.Location = new System.Drawing.Point(213, 78);
+            this.tb_IDLoaiSach.Name = "tb_IDLoaiSach";
+            this.tb_IDLoaiSach.Size = new System.Drawing.Size(221, 44);
+            this.tb_IDLoaiSach.TabIndex = 3;
+            // 
+            // tb_TenLoaiSach
+            // 
+            this.tb_TenLoaiSach.Location = new System.Drawing.Point(213, 138);
+            this.tb_TenLoaiSach.Name = "tb_TenLoaiSach";
+            this.tb_TenLoaiSach.Size = new System.Drawing.Size(221, 44);
+            this.tb_TenLoaiSach.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(6, 141);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 36);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tên loại sách:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(6, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(181, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID loại sách:";
+            // 
+            // item_Xoa
+            // 
+            this.item_Xoa.Caption = "Xóa theo ID";
+            this.item_Xoa.Controls.Add(this.groupControl3);
+            this.item_Xoa.Controls.Add(this.groupControl4);
+            this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.item_Xoa.Name = "item_Xoa";
+            this.item_Xoa.Size = new System.Drawing.Size(1572, 984);
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl3.Appearance.Options.UseFont = true;
+            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl3.AppearanceCaption.Options.UseFont = true;
+            this.groupControl3.Controls.Add(this.dgv_Delete);
+            this.groupControl3.Location = new System.Drawing.Point(388, 0);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(1184, 984);
+            this.groupControl3.TabIndex = 3;
+            this.groupControl3.Text = "Dữ liệu loại sách";
+            // 
             // dgv_Delete
             // 
+            this.dgv_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Delete.AutoGenerateColumns = false;
             this.dgv_Delete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Delete.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -403,27 +389,23 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 226;
             // 
-            // label3
+            // groupControl4
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(293, 36);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "ID loại sách cần xóa:";
-            // 
-            // cbb_IDDelete
-            // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lOAISACHBindingSource, "IDLoaiSach", true));
-            this.cbb_IDDelete.DataSource = this.lOAISACHBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDLoaiSach";
-            this.cbb_IDDelete.FormattingEnabled = true;
-            this.cbb_IDDelete.Location = new System.Drawing.Point(12, 125);
-            this.cbb_IDDelete.Name = "cbb_IDDelete";
-            this.cbb_IDDelete.Size = new System.Drawing.Size(224, 44);
-            this.cbb_IDDelete.TabIndex = 1;
-            this.cbb_IDDelete.ValueMember = "IDLoaiSach";
+            this.groupControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl4.Appearance.Options.UseFont = true;
+            this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl4.AppearanceCaption.Options.UseFont = true;
+            this.groupControl4.Controls.Add(this.btn_IDDelete);
+            this.groupControl4.Controls.Add(this.cbb_IDDelete);
+            this.groupControl4.Controls.Add(this.label3);
+            this.groupControl4.Location = new System.Drawing.Point(0, 0);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(382, 984);
+            this.groupControl4.TabIndex = 2;
+            this.groupControl4.Text = "Thông tin xóa";
             // 
             // btn_IDDelete
             // 
@@ -445,6 +427,32 @@
             this.btn_IDDelete.TabIndex = 3;
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
+            // cbb_IDDelete
+            // 
+            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lOAISACHBindingSource, "IDLoaiSach", true));
+            this.cbb_IDDelete.DataSource = this.lOAISACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDLoaiSach";
+            this.cbb_IDDelete.FormattingEnabled = true;
+            this.cbb_IDDelete.Location = new System.Drawing.Point(12, 125);
+            this.cbb_IDDelete.Name = "cbb_IDDelete";
+            this.cbb_IDDelete.Size = new System.Drawing.Size(224, 44);
+            this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "IDLoaiSach";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(6, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(293, 36);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "ID loại sách cần xóa:";
+            // 
+            // lOAISACHTableAdapter
+            // 
+            this.lOAISACHTableAdapter.ClearBeforeFill = true;
+            // 
             // frmLoaiSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -460,22 +468,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -489,7 +497,7 @@
         private DevExpress.XtraBars.Navigation.NavigationPage item_Xoa;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_Them;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton btn_Sua;
