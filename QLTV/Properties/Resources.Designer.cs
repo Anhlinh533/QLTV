@@ -163,6 +163,16 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_calendar_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-calendar-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cancel_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cancel-16", resourceCulture);
@@ -213,6 +223,16 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_money_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-money-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_more_details_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-more-details-40", resourceCulture);
@@ -236,6 +256,16 @@ namespace QLTV.Properties {
         internal static System.Drawing.Bitmap icons8_next_page_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-next-page-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_numbers_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-numbers-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,6 +323,16 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_plus_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-plus-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_right_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-right-64", resourceCulture);
@@ -306,6 +346,26 @@ namespace QLTV.Properties {
         internal static System.Drawing.Bitmap icons8_right_641 {
             get {
                 object obj = ResourceManager.GetObject("icons8-right-641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_schedule_64__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-schedule-64 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_today_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-today-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

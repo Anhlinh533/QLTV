@@ -152,6 +152,12 @@
     <Compile Include="GUI\frmTraSach.Designer.cs">
       <DependentUpon>frmTraSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmTuoiDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTuoiDocGia.Designer.cs">
+      <DependentUpon>frmTuoiDocGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThuVienDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SCRIPT\checkType.cs" />
+    <Compile Include="SCRIPT\formatCTMuonSach.cs" />
+    <Compile Include="SCRIPT\formatCTPhieuNhapSach.cs" />
+    <Compile Include="SCRIPT\formatCTTacGia.cs" />
+    <Compile Include="SCRIPT\formatCTTraSach.cs" />
+    <Compile Include="SCRIPT\formatCuonSach.cs" />
+    <Compile Include="SCRIPT\formatDauSach.cs" />
+    <Compile Include="SCRIPT\formatLoaiSach.cs" />
+    <Compile Include="SCRIPT\formatMuonSach.cs" />
+    <Compile Include="SCRIPT\formatPhieuNhapSach.cs" />
+    <Compile Include="SCRIPT\formatSach.cs" />
+    <Compile Include="SCRIPT\formatTacGia.cs" />
+    <Compile Include="SCRIPT\formatTheDocGia.cs" />
+    <Compile Include="SCRIPT\formatTraSach.cs" />
+    <Compile Include="SCRIPT\useForm.cs" />
     <EmbeddedResource Include="GUI\frmCTMuonSach.resx">
       <DependentUpon>frmCTMuonSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTraSach.resx">
       <DependentUpon>frmTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTuoiDocGia.resx">
+      <DependentUpon>frmTuoiDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
@@ -307,9 +331,7 @@
   <ItemGroup>
     <None Include="Resources\icons8-available-updates-40.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SCRIPT\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8-bookmark-book-64.png" />
   </ItemGroup>
@@ -324,6 +346,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-news-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-numbers-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-schedule-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-today-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

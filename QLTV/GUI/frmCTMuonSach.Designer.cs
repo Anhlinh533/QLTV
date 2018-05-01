@@ -65,7 +65,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cT_PHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
@@ -356,9 +356,11 @@
             // tb_IDCTPhieuMuon
             // 
             this.tb_IDCTPhieuMuon.Location = new System.Drawing.Point(337, 78);
+            this.tb_IDCTPhieuMuon.MaxLength = 3;
             this.tb_IDCTPhieuMuon.Name = "tb_IDCTPhieuMuon";
             this.tb_IDCTPhieuMuon.Size = new System.Drawing.Size(175, 44);
             this.tb_IDCTPhieuMuon.TabIndex = 3;
+            this.tb_IDCTPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
             // 
@@ -467,7 +469,7 @@
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.btn_IDDelete);
-            this.groupControl4.Controls.Add(this.comboBox1);
+            this.groupControl4.Controls.Add(this.cbb_IDDelete);
             this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
@@ -495,13 +497,13 @@
             this.btn_IDDelete.TabIndex = 3;
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
-            // comboBox1
+            // cbb_IDDelete
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(9, 125);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(230, 44);
-            this.comboBox1.TabIndex = 1;
+            this.cbb_IDDelete.FormattingEnabled = true;
+            this.cbb_IDDelete.Location = new System.Drawing.Point(9, 125);
+            this.cbb_IDDelete.Name = "cbb_IDDelete";
+            this.cbb_IDDelete.Size = new System.Drawing.Size(230, 44);
+            this.cbb_IDDelete.TabIndex = 1;
             // 
             // label4
             // 
@@ -602,7 +604,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbb_IDDelete;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
     }

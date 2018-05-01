@@ -384,9 +384,11 @@
             // tb_IDSach
             // 
             this.tb_IDSach.Location = new System.Drawing.Point(225, 78);
+            this.tb_IDSach.MaxLength = 3;
             this.tb_IDSach.Name = "tb_IDSach";
             this.tb_IDSach.Size = new System.Drawing.Size(221, 44);
             this.tb_IDSach.TabIndex = 8;
+            this.tb_IDSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // cbb_IDDauSach
             // 

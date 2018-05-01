@@ -342,9 +342,11 @@
             // tb_IDDauSach
             // 
             this.tb_IDDauSach.Location = new System.Drawing.Point(245, 66);
+            this.tb_IDDauSach.MaxLength = 3;
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(195, 44);
             this.tb_IDDauSach.TabIndex = 3;
+            this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
             // 

@@ -338,9 +338,11 @@
             // tb_IDTacGia
             // 
             this.tb_IDTacGia.Location = new System.Drawing.Point(187, 78);
+            this.tb_IDTacGia.MaxLength = 3;
             this.tb_IDTacGia.Name = "tb_IDTacGia";
             this.tb_IDTacGia.Size = new System.Drawing.Size(223, 44);
             this.tb_IDTacGia.TabIndex = 3;
+            this.tb_IDTacGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
             // 

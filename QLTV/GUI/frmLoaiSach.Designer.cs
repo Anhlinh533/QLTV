@@ -300,9 +300,11 @@
             // tb_IDLoaiSach
             // 
             this.tb_IDLoaiSach.Location = new System.Drawing.Point(213, 78);
+            this.tb_IDLoaiSach.MaxLength = 3;
             this.tb_IDLoaiSach.Name = "tb_IDLoaiSach";
             this.tb_IDLoaiSach.Size = new System.Drawing.Size(221, 44);
             this.tb_IDLoaiSach.TabIndex = 3;
+            this.tb_IDLoaiSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_TenLoaiSach
             // 

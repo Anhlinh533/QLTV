@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using QLTV.SCRIPT;
+using QLTV.ADO;
 
 namespace QLTV.GUI
 {
@@ -26,6 +28,7 @@ namespace QLTV.GUI
             this.lOAIDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.LOAIDOCGIA);
 
         }
+        #region Event
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
@@ -44,12 +47,20 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatTheDocGia.Instance.checkThongTin(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
         }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
+        #region Function
+        public void ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+        #endregion
     }
 }

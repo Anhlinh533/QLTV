@@ -51,5 +51,10 @@ namespace QLTV.GUI
         {
 
         }
+
+        public void ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

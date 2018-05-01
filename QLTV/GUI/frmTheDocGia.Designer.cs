@@ -470,9 +470,11 @@
             // tb_IDDocGia
             // 
             this.tb_IDDocGia.Location = new System.Drawing.Point(207, 79);
+            this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(201, 44);
             this.tb_IDDocGia.TabIndex = 7;
+            this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label7
             // 

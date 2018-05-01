@@ -26,7 +26,7 @@ namespace QLTV.ADO
                 ADO.ConnectionSQL.instance = value;
             }
         }
-
+        #region SLQ
         private ConnectionSQL() { }
 
         private string connectionSTR = ConfigurationManager.ConnectionStrings["Conn"].ConnectionString;
@@ -119,6 +119,28 @@ namespace QLTV.ADO
 
             }
             return data;
+        }
+        #endregion
+        public void Execute(string sql)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công", "Chú ý");
+            }
+            catch (Exception ex)
+            {
+                string str = ex.Message;
+                str = str.Substring(67);
+                MessageBox.Show(str, "Chú ý");
+            }
+
+            con.Close();
         }
     }
 }

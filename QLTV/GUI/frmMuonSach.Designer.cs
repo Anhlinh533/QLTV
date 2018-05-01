@@ -112,6 +112,7 @@
             this.navigationPane1.Size = new System.Drawing.Size(1795, 1002);
             this.navigationPane1.TabIndex = 2;
             this.navigationPane1.Text = "navigationPane1";
+            this.navigationPane1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // item_Them
             // 
@@ -382,9 +383,11 @@
             // tb_IDPhieuMuon
             // 
             this.tb_IDPhieuMuon.Location = new System.Drawing.Point(238, 78);
+            this.tb_IDPhieuMuon.MaxLength = 3;
             this.tb_IDPhieuMuon.Name = "tb_IDPhieuMuon";
             this.tb_IDPhieuMuon.Size = new System.Drawing.Size(190, 44);
             this.tb_IDPhieuMuon.TabIndex = 4;
+            this.tb_IDPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label4
             // 

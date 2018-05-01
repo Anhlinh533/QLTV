@@ -338,9 +338,11 @@
             // tb_IDPhieuNhap
             // 
             this.tb_IDPhieuNhap.Location = new System.Drawing.Point(228, 78);
+            this.tb_IDPhieuNhap.MaxLength = 3;
             this.tb_IDPhieuNhap.Name = "tb_IDPhieuNhap";
             this.tb_IDPhieuNhap.Size = new System.Drawing.Size(203, 44);
             this.tb_IDPhieuNhap.TabIndex = 3;
+            this.tb_IDPhieuNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
             // 

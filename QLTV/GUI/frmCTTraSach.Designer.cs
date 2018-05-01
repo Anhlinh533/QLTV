@@ -375,9 +375,11 @@
             // tb_IDCTPhieuTra
             // 
             this.tb_IDCTPhieuTra.Location = new System.Drawing.Point(297, 78);
+            this.tb_IDCTPhieuTra.MaxLength = 3;
             this.tb_IDCTPhieuTra.Name = "tb_IDCTPhieuTra";
             this.tb_IDCTPhieuTra.Size = new System.Drawing.Size(243, 44);
             this.tb_IDCTPhieuTra.TabIndex = 5;
+            this.tb_IDCTPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label5
             // 
