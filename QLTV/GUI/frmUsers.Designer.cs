@@ -49,9 +49,9 @@
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
+            this.tb_Password = new System.Windows.Forms.TextBox();
+            this.tb_UserName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -280,9 +280,9 @@
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.Controls.Add(this.btn_Them);
-            this.groupControl1.Controls.Add(this.comboBox1);
-            this.groupControl1.Controls.Add(this.textBox2);
-            this.groupControl1.Controls.Add(this.textBox1);
+            this.groupControl1.Controls.Add(this.cbb_IDDocGia);
+            this.groupControl1.Controls.Add(this.tb_Password);
+            this.groupControl1.Controls.Add(this.tb_UserName);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
@@ -312,27 +312,28 @@
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // comboBox1
+            // cbb_IDDocGia
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(181, 198);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(189, 44);
-            this.comboBox1.TabIndex = 5;
+            this.cbb_IDDocGia.FormattingEnabled = true;
+            this.cbb_IDDocGia.Location = new System.Drawing.Point(181, 198);
+            this.cbb_IDDocGia.Name = "cbb_IDDocGia";
+            this.cbb_IDDocGia.Size = new System.Drawing.Size(189, 44);
+            this.cbb_IDDocGia.TabIndex = 5;
             // 
-            // textBox2
+            // tb_Password
             // 
-            this.textBox2.Location = new System.Drawing.Point(181, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 44);
-            this.textBox2.TabIndex = 4;
+            this.tb_Password.Location = new System.Drawing.Point(181, 138);
+            this.tb_Password.Name = "tb_Password";
+            this.tb_Password.Size = new System.Drawing.Size(189, 44);
+            this.tb_Password.TabIndex = 4;
             // 
-            // textBox1
+            // tb_UserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 44);
-            this.textBox1.TabIndex = 3;
+            this.tb_UserName.Location = new System.Drawing.Point(181, 78);
+            this.tb_UserName.MaxLength = 50;
+            this.tb_UserName.Name = "tb_UserName";
+            this.tb_UserName.Size = new System.Drawing.Size(189, 44);
+            this.tb_UserName.TabIndex = 3;
             // 
             // label3
             // 
@@ -551,9 +552,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pwdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDocGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbb_IDDocGia;
+        private System.Windows.Forms.TextBox tb_Password;
+        private System.Windows.Forms.TextBox tb_UserName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

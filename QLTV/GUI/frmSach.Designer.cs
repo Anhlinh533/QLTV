@@ -377,6 +377,7 @@
             // tb_NXB
             // 
             this.tb_NXB.Location = new System.Drawing.Point(225, 198);
+            this.tb_NXB.MaxLength = 20;
             this.tb_NXB.Name = "tb_NXB";
             this.tb_NXB.Size = new System.Drawing.Size(221, 44);
             this.tb_NXB.TabIndex = 9;

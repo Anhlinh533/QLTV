@@ -309,6 +309,7 @@
             // tb_TenLoaiSach
             // 
             this.tb_TenLoaiSach.Location = new System.Drawing.Point(213, 138);
+            this.tb_TenLoaiSach.MaxLength = 50;
             this.tb_TenLoaiSach.Name = "tb_TenLoaiSach";
             this.tb_TenLoaiSach.Size = new System.Drawing.Size(221, 44);
             this.tb_TenLoaiSach.TabIndex = 2;

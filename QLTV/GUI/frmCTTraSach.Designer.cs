@@ -364,6 +364,7 @@
             this.tb_SoNgayMuon.Name = "tb_SoNgayMuon";
             this.tb_SoNgayMuon.Size = new System.Drawing.Size(243, 44);
             this.tb_SoNgayMuon.TabIndex = 7;
+            this.tb_SoNgayMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_TienPhat
             // 
@@ -371,6 +372,7 @@
             this.tb_TienPhat.Name = "tb_TienPhat";
             this.tb_TienPhat.Size = new System.Drawing.Size(243, 44);
             this.tb_TienPhat.TabIndex = 6;
+            this.tb_TienPhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuTra
             // 

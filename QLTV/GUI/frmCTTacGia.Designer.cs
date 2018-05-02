@@ -49,9 +49,9 @@
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbb_IDTacGia = new System.Windows.Forms.ComboBox();
             this.tACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbb_IDDauSach = new System.Windows.Forms.ComboBox();
             this.dAUSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_IDCTTacGia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -286,8 +286,8 @@
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.Controls.Add(this.btn_Them);
-            this.groupControl1.Controls.Add(this.comboBox2);
-            this.groupControl1.Controls.Add(this.comboBox1);
+            this.groupControl1.Controls.Add(this.cbb_IDTacGia);
+            this.groupControl1.Controls.Add(this.cbb_IDDauSach);
             this.groupControl1.Controls.Add(this.tb_IDCTTacGia);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
@@ -318,34 +318,34 @@
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // comboBox2
+            // cbb_IDTacGia
             // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tACGIABindingSource, "IDTacGia", true));
-            this.comboBox2.DataSource = this.tACGIABindingSource;
-            this.comboBox2.DisplayMember = "IDTacGia";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(266, 198);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(201, 44);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.ValueMember = "IDTacGia";
+            this.cbb_IDTacGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tACGIABindingSource, "IDTacGia", true));
+            this.cbb_IDTacGia.DataSource = this.tACGIABindingSource;
+            this.cbb_IDTacGia.DisplayMember = "IDTacGia";
+            this.cbb_IDTacGia.FormattingEnabled = true;
+            this.cbb_IDTacGia.Location = new System.Drawing.Point(266, 198);
+            this.cbb_IDTacGia.Name = "cbb_IDTacGia";
+            this.cbb_IDTacGia.Size = new System.Drawing.Size(201, 44);
+            this.cbb_IDTacGia.TabIndex = 5;
+            this.cbb_IDTacGia.ValueMember = "IDTacGia";
             // 
             // tACGIABindingSource
             // 
             this.tACGIABindingSource.DataMember = "TACGIA";
             this.tACGIABindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
-            // comboBox1
+            // cbb_IDDauSach
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dAUSACHBindingSource, "IDDauSach", true));
-            this.comboBox1.DataSource = this.dAUSACHBindingSource;
-            this.comboBox1.DisplayMember = "IDDauSach";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(266, 138);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(201, 44);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.ValueMember = "IDDauSach";
+            this.cbb_IDDauSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dAUSACHBindingSource, "IDDauSach", true));
+            this.cbb_IDDauSach.DataSource = this.dAUSACHBindingSource;
+            this.cbb_IDDauSach.DisplayMember = "IDDauSach";
+            this.cbb_IDDauSach.FormattingEnabled = true;
+            this.cbb_IDDauSach.Location = new System.Drawing.Point(266, 138);
+            this.cbb_IDDauSach.Name = "cbb_IDDauSach";
+            this.cbb_IDDauSach.Size = new System.Drawing.Size(201, 44);
+            this.cbb_IDDauSach.TabIndex = 4;
+            this.cbb_IDDauSach.ValueMember = "IDDauSach";
             // 
             // dAUSACHBindingSource
             // 
@@ -587,8 +587,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCTTacGiaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDauSachDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbb_IDTacGia;
+        private System.Windows.Forms.ComboBox cbb_IDDauSach;
         private System.Windows.Forms.TextBox tb_IDCTTacGia;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

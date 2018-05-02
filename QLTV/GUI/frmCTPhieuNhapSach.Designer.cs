@@ -403,6 +403,7 @@
             this.tb_ThanhTien.Name = "tb_ThanhTien";
             this.tb_ThanhTien.Size = new System.Drawing.Size(216, 44);
             this.tb_ThanhTien.TabIndex = 9;
+            this.tb_ThanhTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_DonGia
             // 
@@ -410,6 +411,7 @@
             this.tb_DonGia.Name = "tb_DonGia";
             this.tb_DonGia.Size = new System.Drawing.Size(216, 44);
             this.tb_DonGia.TabIndex = 8;
+            this.tb_DonGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoLuong
             // 
@@ -417,6 +419,7 @@
             this.tb_SoLuong.Name = "tb_SoLuong";
             this.tb_SoLuong.Size = new System.Drawing.Size(216, 44);
             this.tb_SoLuong.TabIndex = 7;
+            this.tb_SoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuNhap
             // 

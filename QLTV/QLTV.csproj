@@ -68,6 +68,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO\adoCTMuonSach.cs" />
+    <Compile Include="ADO\adoCTPhieuNhapSach.cs" />
+    <Compile Include="ADO\adoCTTacGia.cs" />
+    <Compile Include="ADO\adoCTTraSach.cs" />
+    <Compile Include="ADO\adoCuonSach.cs" />
+    <Compile Include="ADO\adoDauSach.cs" />
+    <Compile Include="ADO\adoLoaiSach.cs" />
+    <Compile Include="ADO\adoMuonSach.cs" />
+    <Compile Include="ADO\adoPhieuNhapSach.cs" />
+    <Compile Include="ADO\adoSach.cs" />
+    <Compile Include="ADO\adoTacGia.cs" />
+    <Compile Include="ADO\adoTheDocGia.cs" />
+    <Compile Include="ADO\adoTraSach.cs" />
+    <Compile Include="ADO\adoTuoiDocGia.cs" />
+    <Compile Include="ADO\adoUsers.cs" />
     <Compile Include="GUI\frmCTMuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +161,36 @@
     <Compile Include="GUI\frmTheDocGia.Designer.cs">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmTKDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTKDocGia.Designer.cs">
+      <DependentUpon>frmTKDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTKMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTKMuonSach.Designer.cs">
+      <DependentUpon>frmTKMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTKSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTKSach.Designer.cs">
+      <DependentUpon>frmTKSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTKTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTKTacGia.Designer.cs">
+      <DependentUpon>frmTKTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTKTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTKTraSach.Designer.cs">
+      <DependentUpon>frmTKTraSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmTraSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +231,7 @@
     <Compile Include="SCRIPT\formatTacGia.cs" />
     <Compile Include="SCRIPT\formatTheDocGia.cs" />
     <Compile Include="SCRIPT\formatTraSach.cs" />
+    <Compile Include="SCRIPT\formatUsers.cs" />
     <Compile Include="SCRIPT\useForm.cs" />
     <EmbeddedResource Include="GUI\frmCTMuonSach.resx">
       <DependentUpon>frmCTMuonSach.cs</DependentUpon>
@@ -225,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTheDocGia.resx">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTKDocGia.resx">
+      <DependentUpon>frmTKDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTraSach.resx">
       <DependentUpon>frmTraSach.cs</DependentUpon>
@@ -331,7 +380,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-available-updates-40.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-search-48.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-bookmark-book-64.png" />
   </ItemGroup>

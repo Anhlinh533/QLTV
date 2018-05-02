@@ -30,5 +30,10 @@ namespace QLTV.SCRIPT
             IDDocGia = "LSA" + id;
             return IDDocGia;
         }
+        public void checkLoaiSach(string IDLoaiSach, string TenLoaiSach)
+        {
+            if(IDLoaiSach=="") MessageBox.Show("Không được để trống ID loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if(TenLoaiSach=="") MessageBox.Show("Không được để trống tên loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

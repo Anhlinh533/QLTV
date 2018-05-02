@@ -29,5 +29,11 @@ namespace QLTV.SCRIPT
             IDDocGia = "CSA" + id;
             return IDDocGia;
         }
+        public void checkCuonSach(string IDCuonSach,string IDSach, string TinhTrang)
+        {
+            if(IDCuonSach=="") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if(IDSach=="") MessageBox.Show("Không được để trống ID sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if(TinhTrang=="") MessageBox.Show("Không được để trống tình trạng.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

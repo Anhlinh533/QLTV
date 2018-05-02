@@ -318,6 +318,7 @@
             // tb_TenDauSach
             // 
             this.tb_TenDauSach.Location = new System.Drawing.Point(245, 125);
+            this.tb_TenDauSach.MaxLength = 200;
             this.tb_TenDauSach.Name = "tb_TenDauSach";
             this.tb_TenDauSach.Size = new System.Drawing.Size(195, 44);
             this.tb_TenDauSach.TabIndex = 5;

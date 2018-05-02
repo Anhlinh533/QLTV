@@ -30,5 +30,11 @@ namespace QLTV.SCRIPT
             IDDocGia = "CPM" + id;
             return IDDocGia;
         }
+        public void checkCTMuonSach(string IDCTPhieuMuon, string IDPhieuMuon, string IDCuonSach)
+        {
+            if(IDCTPhieuMuon=="") MessageBox.Show("Không được để trống ID chi tiết phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if(IDPhieuMuon=="") MessageBox.Show("Không được để trống ID phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if(IDCuonSach=="") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

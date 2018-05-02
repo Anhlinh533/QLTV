@@ -34,7 +34,7 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatMuonSach.Instance.checkPhieuMuonSach(tb_IDPhieuMuon.Text, cbb_IDDocGia.Text, dtp_NgayMuon.Text, dtp_HanTra.Text);
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

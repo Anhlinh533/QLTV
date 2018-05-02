@@ -334,6 +334,7 @@
             this.tb_TongTien.Name = "tb_TongTien";
             this.tb_TongTien.Size = new System.Drawing.Size(203, 44);
             this.tb_TongTien.TabIndex = 4;
+            this.tb_TongTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuNhap
             // 
