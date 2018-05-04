@@ -17,5 +17,14 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+
+        private void frmTKMuonSach_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_PHIEUMUON' table. You can move, or remove it, as needed.
+            this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.PHIEUMUON' table. You can move, or remove it, as needed.
+            this.pHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUMUON);
+
+        }
     }
 }

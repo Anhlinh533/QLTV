@@ -50,12 +50,10 @@
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
-            this.dtp_HanTra = new DevExpress.XtraEditors.DateEdit();
             this.dtp_NgayMuon = new DevExpress.XtraEditors.DateEdit();
             this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
             this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_IDPhieuMuon = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -84,8 +82,6 @@
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
@@ -301,11 +297,9 @@
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.btn_Them);
-            this.groupControl4.Controls.Add(this.dtp_HanTra);
             this.groupControl4.Controls.Add(this.dtp_NgayMuon);
             this.groupControl4.Controls.Add(this.cbb_IDDocGia);
             this.groupControl4.Controls.Add(this.tb_IDPhieuMuon);
-            this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Controls.Add(this.label3);
             this.groupControl4.Controls.Add(this.label2);
             this.groupControl4.Controls.Add(this.label1);
@@ -328,26 +322,12 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(142, 329);
+            this.btn_Them.Location = new System.Drawing.Point(138, 270);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
-            // 
-            // dtp_HanTra
-            // 
-            this.dtp_HanTra.EditValue = null;
-            this.dtp_HanTra.Location = new System.Drawing.Point(238, 258);
-            this.dtp_HanTra.Name = "dtp_HanTra";
-            this.dtp_HanTra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_HanTra.Properties.Appearance.Options.UseFont = true;
-            this.dtp_HanTra.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_HanTra.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_HanTra.Size = new System.Drawing.Size(190, 42);
-            this.dtp_HanTra.TabIndex = 7;
             // 
             // dtp_NgayMuon
             // 
@@ -388,16 +368,6 @@
             this.tb_IDPhieuMuon.Size = new System.Drawing.Size(190, 44);
             this.tb_IDPhieuMuon.TabIndex = 4;
             this.tb_IDPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(6, 261);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 36);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Hạn trả:";
             // 
             // label3
             // 
@@ -597,8 +567,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
@@ -639,11 +607,9 @@
         private System.Windows.Forms.ToolStripButton btn_Reset;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
-        private DevExpress.XtraEditors.DateEdit dtp_HanTra;
         private DevExpress.XtraEditors.DateEdit dtp_NgayMuon;
         private System.Windows.Forms.ComboBox cbb_IDDocGia;
         private System.Windows.Forms.TextBox tb_IDPhieuMuon;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

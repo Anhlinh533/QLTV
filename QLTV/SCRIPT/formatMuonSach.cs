@@ -28,12 +28,11 @@ namespace QLTV.SCRIPT
             IDDocGia = "IPM" + id;
             return IDDocGia;
         }
-        public void checkPhieuMuonSach(string IDPhieuMuon,string IDDocGia, string NgayMuon, string HanTra)
+        public void checkPhieuMuonSach(string IDPhieuMuon,string IDDocGia, string NgayMuon)
         {
             if (IDPhieuMuon=="") MessageBox.Show("Không được để trống ID phiếu mượn", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if(IDDocGia=="") MessageBox.Show("Không được để trống ID độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if(NgayMuon=="") MessageBox.Show("Không được để trống ngày mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(HanTra=="") MessageBox.Show("Không được để trống hạn trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

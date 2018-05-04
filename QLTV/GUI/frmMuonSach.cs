@@ -34,7 +34,7 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatMuonSach.Instance.checkPhieuMuonSach(tb_IDPhieuMuon.Text, cbb_IDDocGia.Text, dtp_NgayMuon.Text, dtp_HanTra.Text);
+            SCRIPT.formatMuonSach.Instance.checkPhieuMuonSach(tb_IDPhieuMuon.Text, cbb_IDDocGia.Text, dtp_NgayMuon.Text);
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -56,5 +56,6 @@ namespace QLTV.GUI
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
     }
 }

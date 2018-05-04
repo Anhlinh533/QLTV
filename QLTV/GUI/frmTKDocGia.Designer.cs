@@ -68,6 +68,7 @@
             this.iDDocGiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uSERSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_TKUser = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TenUser = new System.Windows.Forms.TextBox();
             this.tb_IDUser = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -75,7 +76,6 @@
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
-            this.btn_TKUser = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKDocGia.SuspendLayout();
@@ -529,6 +529,25 @@
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm User theo";
             // 
+            // btn_TKUser
+            // 
+            this.btn_TKUser.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_TKUser.color = System.Drawing.Color.SeaGreen;
+            this.btn_TKUser.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btn_TKUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_TKUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btn_TKUser.ForeColor = System.Drawing.Color.White;
+            this.btn_TKUser.Image = global::QLTV.Properties.Resources.icons8_search_48;
+            this.btn_TKUser.ImagePosition = 20;
+            this.btn_TKUser.ImageZoom = 50;
+            this.btn_TKUser.LabelPosition = 41;
+            this.btn_TKUser.LabelText = "Tìm kiếm";
+            this.btn_TKUser.Location = new System.Drawing.Point(135, 205);
+            this.btn_TKUser.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_TKUser.Name = "btn_TKUser";
+            this.btn_TKUser.Size = new System.Drawing.Size(155, 162);
+            this.btn_TKUser.TabIndex = 16;
+            // 
             // tb_TenUser
             // 
             this.tb_TenUser.Location = new System.Drawing.Point(199, 65);
@@ -578,25 +597,6 @@
             // uSERSTableAdapter
             // 
             this.uSERSTableAdapter.ClearBeforeFill = true;
-            // 
-            // btn_TKUser
-            // 
-            this.btn_TKUser.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_TKUser.color = System.Drawing.Color.SeaGreen;
-            this.btn_TKUser.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_TKUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_TKUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_TKUser.ForeColor = System.Drawing.Color.White;
-            this.btn_TKUser.Image = global::QLTV.Properties.Resources.icons8_search_48;
-            this.btn_TKUser.ImagePosition = 20;
-            this.btn_TKUser.ImageZoom = 50;
-            this.btn_TKUser.LabelPosition = 41;
-            this.btn_TKUser.LabelText = "Tìm kiếm";
-            this.btn_TKUser.Location = new System.Drawing.Point(135, 205);
-            this.btn_TKUser.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_TKUser.Name = "btn_TKUser";
-            this.btn_TKUser.Size = new System.Drawing.Size(155, 162);
-            this.btn_TKUser.TabIndex = 16;
             // 
             // frmTKDocGia
             // 

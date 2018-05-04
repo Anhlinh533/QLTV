@@ -17,5 +17,14 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+
+        private void frmTKSach_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CUONSACH' table. You can move, or remove it, as needed.
+            this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.SACH' table. You can move, or remove it, as needed.
+            this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
+
+        }
     }
 }

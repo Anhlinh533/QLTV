@@ -275,6 +275,18 @@
     <EmbeddedResource Include="GUI\frmTKDocGia.resx">
       <DependentUpon>frmTKDocGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTKMuonSach.resx">
+      <DependentUpon>frmTKMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTKSach.resx">
+      <DependentUpon>frmTKSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTKTacGia.resx">
+      <DependentUpon>frmTKTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTKTraSach.resx">
+      <DependentUpon>frmTKTraSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTraSach.resx">
       <DependentUpon>frmTraSach.cs</DependentUpon>
     </EmbeddedResource>
