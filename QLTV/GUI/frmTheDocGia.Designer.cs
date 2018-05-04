@@ -33,6 +33,15 @@
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.dgv_ThemDG = new System.Windows.Forms.DataGridView();
+            this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoTenDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinhDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDLoaiDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayLapTheDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayHetHanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
@@ -45,11 +54,11 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.dtp_NgayLapThe = new System.Windows.Forms.DateTimePicker();
+            this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_LoaiDocGia = new System.Windows.Forms.ComboBox();
             this.lOAIDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dtp_NgayLapThe = new DevExpress.XtraEditors.DateEdit();
-            this.dtp_NgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.tb_Email = new System.Windows.Forms.TextBox();
             this.tb_DiaChi = new System.Windows.Forms.TextBox();
             this.tb_HoTenDocGia = new System.Windows.Forms.TextBox();
@@ -79,15 +88,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
-            this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoTenDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaySinhDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDLoaiDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayLapTheDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayHetHanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -101,10 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
@@ -179,6 +175,83 @@
             this.dgv_ThemDG.RowTemplate.Height = 28;
             this.dgv_ThemDG.Size = new System.Drawing.Size(1019, 767);
             this.dgv_ThemDG.TabIndex = 1;
+            // 
+            // iDDocGiaDataGridViewTextBoxColumn
+            // 
+            this.iDDocGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDDocGiaDataGridViewTextBoxColumn.DataPropertyName = "IDDocGia";
+            this.iDDocGiaDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDocGiaDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDDocGiaDataGridViewTextBoxColumn.Name = "iDDocGiaDataGridViewTextBoxColumn";
+            this.iDDocGiaDataGridViewTextBoxColumn.Width = 82;
+            // 
+            // hoTenDGDataGridViewTextBoxColumn
+            // 
+            this.hoTenDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.hoTenDGDataGridViewTextBoxColumn.DataPropertyName = "HoTenDG";
+            this.hoTenDGDataGridViewTextBoxColumn.HeaderText = "Họ và tên";
+            this.hoTenDGDataGridViewTextBoxColumn.MaxInputLength = 50;
+            this.hoTenDGDataGridViewTextBoxColumn.Name = "hoTenDGDataGridViewTextBoxColumn";
+            this.hoTenDGDataGridViewTextBoxColumn.Width = 179;
+            // 
+            // ngaySinhDGDataGridViewTextBoxColumn
+            // 
+            this.ngaySinhDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ngaySinhDGDataGridViewTextBoxColumn.DataPropertyName = "NgaySinhDG";
+            this.ngaySinhDGDataGridViewTextBoxColumn.HeaderText = "Ngày sinh";
+            this.ngaySinhDGDataGridViewTextBoxColumn.Name = "ngaySinhDGDataGridViewTextBoxColumn";
+            this.ngaySinhDGDataGridViewTextBoxColumn.Width = 182;
+            // 
+            // diaChiDGDataGridViewTextBoxColumn
+            // 
+            this.diaChiDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.diaChiDGDataGridViewTextBoxColumn.DataPropertyName = "DiaChiDG";
+            this.diaChiDGDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diaChiDGDataGridViewTextBoxColumn.MaxInputLength = 50;
+            this.diaChiDGDataGridViewTextBoxColumn.Name = "diaChiDGDataGridViewTextBoxColumn";
+            this.diaChiDGDataGridViewTextBoxColumn.Width = 142;
+            // 
+            // emailDGDataGridViewTextBoxColumn
+            // 
+            this.emailDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.emailDGDataGridViewTextBoxColumn.DataPropertyName = "EmailDG";
+            this.emailDGDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDGDataGridViewTextBoxColumn.MaxInputLength = 30;
+            this.emailDGDataGridViewTextBoxColumn.Name = "emailDGDataGridViewTextBoxColumn";
+            this.emailDGDataGridViewTextBoxColumn.Width = 123;
+            // 
+            // iDLoaiDGDataGridViewTextBoxColumn
+            // 
+            this.iDLoaiDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDLoaiDGDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiDG";
+            this.iDLoaiDGDataGridViewTextBoxColumn.HeaderText = "Loại độc giả";
+            this.iDLoaiDGDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDLoaiDGDataGridViewTextBoxColumn.Name = "iDLoaiDGDataGridViewTextBoxColumn";
+            this.iDLoaiDGDataGridViewTextBoxColumn.Width = 210;
+            // 
+            // ngayLapTheDataGridViewTextBoxColumn
+            // 
+            this.ngayLapTheDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ngayLapTheDataGridViewTextBoxColumn.DataPropertyName = "NgayLapThe";
+            this.ngayLapTheDataGridViewTextBoxColumn.HeaderText = "Ngày lập thẻ";
+            this.ngayLapTheDataGridViewTextBoxColumn.Name = "ngayLapTheDataGridViewTextBoxColumn";
+            this.ngayLapTheDataGridViewTextBoxColumn.Width = 220;
+            // 
+            // ngayHetHanDataGridViewTextBoxColumn
+            // 
+            this.ngayHetHanDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ngayHetHanDataGridViewTextBoxColumn.DataPropertyName = "NgayHetHan";
+            this.ngayHetHanDataGridViewTextBoxColumn.HeaderText = "Ngày hết hạn";
+            this.ngayHetHanDataGridViewTextBoxColumn.Name = "ngayHetHanDataGridViewTextBoxColumn";
+            this.ngayHetHanDataGridViewTextBoxColumn.Width = 230;
+            // 
+            // tongNoDataGridViewTextBoxColumn
+            // 
+            this.tongNoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.tongNoDataGridViewTextBoxColumn.DataPropertyName = "TongNo";
+            this.tongNoDataGridViewTextBoxColumn.HeaderText = "Tổng nợ";
+            this.tongNoDataGridViewTextBoxColumn.Name = "tongNoDataGridViewTextBoxColumn";
+            this.tongNoDataGridViewTextBoxColumn.Width = 162;
             // 
             // tHEDOCGIABindingSource
             // 
@@ -290,10 +363,10 @@
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.AutoSize = true;
-            this.groupControl1.Controls.Add(this.btn_Them);
-            this.groupControl1.Controls.Add(this.cbb_LoaiDocGia);
             this.groupControl1.Controls.Add(this.dtp_NgayLapThe);
             this.groupControl1.Controls.Add(this.dtp_NgaySinh);
+            this.groupControl1.Controls.Add(this.btn_Them);
+            this.groupControl1.Controls.Add(this.cbb_LoaiDocGia);
             this.groupControl1.Controls.Add(this.tb_Email);
             this.groupControl1.Controls.Add(this.tb_DiaChi);
             this.groupControl1.Controls.Add(this.tb_HoTenDocGia);
@@ -310,6 +383,22 @@
             this.groupControl1.Size = new System.Drawing.Size(417, 860);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin độc giả";
+            // 
+            // dtp_NgayLapThe
+            // 
+            this.dtp_NgayLapThe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgayLapThe.Location = new System.Drawing.Point(207, 436);
+            this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
+            this.dtp_NgayLapThe.Size = new System.Drawing.Size(201, 44);
+            this.dtp_NgayLapThe.TabIndex = 16;
+            // 
+            // dtp_NgaySinh
+            // 
+            this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(207, 196);
+            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(201, 44);
+            this.dtp_NgaySinh.TabIndex = 15;
             // 
             // btn_Them
             // 
@@ -347,34 +436,6 @@
             // 
             this.lOAIDOCGIABindingSource.DataMember = "LOAIDOCGIA";
             this.lOAIDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // dtp_NgayLapThe
-            // 
-            this.dtp_NgayLapThe.EditValue = null;
-            this.dtp_NgayLapThe.Location = new System.Drawing.Point(207, 439);
-            this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
-            this.dtp_NgayLapThe.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_NgayLapThe.Properties.Appearance.Options.UseFont = true;
-            this.dtp_NgayLapThe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayLapThe.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayLapThe.Size = new System.Drawing.Size(201, 42);
-            this.dtp_NgayLapThe.TabIndex = 12;
-            // 
-            // dtp_NgaySinh
-            // 
-            this.dtp_NgaySinh.EditValue = null;
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(207, 199);
-            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_NgaySinh.Properties.Appearance.Options.UseFont = true;
-            this.dtp_NgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(201, 42);
-            this.dtp_NgaySinh.TabIndex = 11;
             // 
             // tb_Email
             // 
@@ -528,23 +589,25 @@
             // 
             // iDDocGiaDataGridViewTextBoxColumn1
             // 
-            this.iDDocGiaDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDDocGiaDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDDocGiaDataGridViewTextBoxColumn1.DataPropertyName = "IDDocGia";
             this.iDDocGiaDataGridViewTextBoxColumn1.HeaderText = "ID độc giả";
+            this.iDDocGiaDataGridViewTextBoxColumn1.MaxInputLength = 6;
             this.iDDocGiaDataGridViewTextBoxColumn1.Name = "iDDocGiaDataGridViewTextBoxColumn1";
             this.iDDocGiaDataGridViewTextBoxColumn1.Width = 187;
             // 
             // hoTenDGDataGridViewTextBoxColumn1
             // 
-            this.hoTenDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.hoTenDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.hoTenDGDataGridViewTextBoxColumn1.DataPropertyName = "HoTenDG";
             this.hoTenDGDataGridViewTextBoxColumn1.HeaderText = "Họ và tên";
+            this.hoTenDGDataGridViewTextBoxColumn1.MaxInputLength = 50;
             this.hoTenDGDataGridViewTextBoxColumn1.Name = "hoTenDGDataGridViewTextBoxColumn1";
             this.hoTenDGDataGridViewTextBoxColumn1.Width = 179;
             // 
             // ngaySinhDGDataGridViewTextBoxColumn1
             // 
-            this.ngaySinhDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.ngaySinhDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ngaySinhDGDataGridViewTextBoxColumn1.DataPropertyName = "NgaySinhDG";
             this.ngaySinhDGDataGridViewTextBoxColumn1.HeaderText = "Ngày sinh";
             this.ngaySinhDGDataGridViewTextBoxColumn1.Name = "ngaySinhDGDataGridViewTextBoxColumn1";
@@ -552,31 +615,34 @@
             // 
             // diaChiDGDataGridViewTextBoxColumn1
             // 
-            this.diaChiDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.diaChiDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.diaChiDGDataGridViewTextBoxColumn1.DataPropertyName = "DiaChiDG";
             this.diaChiDGDataGridViewTextBoxColumn1.HeaderText = "Địa chỉ";
+            this.diaChiDGDataGridViewTextBoxColumn1.MaxInputLength = 50;
             this.diaChiDGDataGridViewTextBoxColumn1.Name = "diaChiDGDataGridViewTextBoxColumn1";
             this.diaChiDGDataGridViewTextBoxColumn1.Width = 142;
             // 
             // emailDGDataGridViewTextBoxColumn1
             // 
-            this.emailDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.emailDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.emailDGDataGridViewTextBoxColumn1.DataPropertyName = "EmailDG";
             this.emailDGDataGridViewTextBoxColumn1.HeaderText = "Email";
+            this.emailDGDataGridViewTextBoxColumn1.MaxInputLength = 30;
             this.emailDGDataGridViewTextBoxColumn1.Name = "emailDGDataGridViewTextBoxColumn1";
             this.emailDGDataGridViewTextBoxColumn1.Width = 123;
             // 
             // iDLoaiDGDataGridViewTextBoxColumn1
             // 
-            this.iDLoaiDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDLoaiDGDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDLoaiDGDataGridViewTextBoxColumn1.DataPropertyName = "IDLoaiDG";
             this.iDLoaiDGDataGridViewTextBoxColumn1.HeaderText = "Loại độc giả";
+            this.iDLoaiDGDataGridViewTextBoxColumn1.MaxInputLength = 6;
             this.iDLoaiDGDataGridViewTextBoxColumn1.Name = "iDLoaiDGDataGridViewTextBoxColumn1";
             this.iDLoaiDGDataGridViewTextBoxColumn1.Width = 210;
             // 
             // ngayLapTheDataGridViewTextBoxColumn1
             // 
-            this.ngayLapTheDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.ngayLapTheDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ngayLapTheDataGridViewTextBoxColumn1.DataPropertyName = "NgayLapThe";
             this.ngayLapTheDataGridViewTextBoxColumn1.HeaderText = "Ngày lập thẻ";
             this.ngayLapTheDataGridViewTextBoxColumn1.Name = "ngayLapTheDataGridViewTextBoxColumn1";
@@ -584,7 +650,7 @@
             // 
             // ngayHetHanDataGridViewTextBoxColumn1
             // 
-            this.ngayHetHanDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.ngayHetHanDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ngayHetHanDataGridViewTextBoxColumn1.DataPropertyName = "NgayHetHan";
             this.ngayHetHanDataGridViewTextBoxColumn1.HeaderText = "Ngày hết hạn";
             this.ngayHetHanDataGridViewTextBoxColumn1.Name = "ngayHetHanDataGridViewTextBoxColumn1";
@@ -592,7 +658,7 @@
             // 
             // tongNoDataGridViewTextBoxColumn1
             // 
-            this.tongNoDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tongNoDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.tongNoDataGridViewTextBoxColumn1.DataPropertyName = "TongNo";
             this.tongNoDataGridViewTextBoxColumn1.HeaderText = "Tổng nợ";
             this.tongNoDataGridViewTextBoxColumn1.Name = "tongNoDataGridViewTextBoxColumn1";
@@ -665,80 +731,6 @@
             // 
             this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
             // 
-            // iDDocGiaDataGridViewTextBoxColumn
-            // 
-            this.iDDocGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDDocGiaDataGridViewTextBoxColumn.DataPropertyName = "IDDocGia";
-            this.iDDocGiaDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDocGiaDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDDocGiaDataGridViewTextBoxColumn.Name = "iDDocGiaDataGridViewTextBoxColumn";
-            this.iDDocGiaDataGridViewTextBoxColumn.Width = 82;
-            // 
-            // hoTenDGDataGridViewTextBoxColumn
-            // 
-            this.hoTenDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.hoTenDGDataGridViewTextBoxColumn.DataPropertyName = "HoTenDG";
-            this.hoTenDGDataGridViewTextBoxColumn.HeaderText = "Họ và tên";
-            this.hoTenDGDataGridViewTextBoxColumn.Name = "hoTenDGDataGridViewTextBoxColumn";
-            this.hoTenDGDataGridViewTextBoxColumn.Width = 179;
-            // 
-            // ngaySinhDGDataGridViewTextBoxColumn
-            // 
-            this.ngaySinhDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ngaySinhDGDataGridViewTextBoxColumn.DataPropertyName = "NgaySinhDG";
-            this.ngaySinhDGDataGridViewTextBoxColumn.HeaderText = "Ngày sinh";
-            this.ngaySinhDGDataGridViewTextBoxColumn.Name = "ngaySinhDGDataGridViewTextBoxColumn";
-            this.ngaySinhDGDataGridViewTextBoxColumn.Width = 182;
-            // 
-            // diaChiDGDataGridViewTextBoxColumn
-            // 
-            this.diaChiDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.diaChiDGDataGridViewTextBoxColumn.DataPropertyName = "DiaChiDG";
-            this.diaChiDGDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
-            this.diaChiDGDataGridViewTextBoxColumn.Name = "diaChiDGDataGridViewTextBoxColumn";
-            this.diaChiDGDataGridViewTextBoxColumn.Width = 142;
-            // 
-            // emailDGDataGridViewTextBoxColumn
-            // 
-            this.emailDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.emailDGDataGridViewTextBoxColumn.DataPropertyName = "EmailDG";
-            this.emailDGDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDGDataGridViewTextBoxColumn.Name = "emailDGDataGridViewTextBoxColumn";
-            this.emailDGDataGridViewTextBoxColumn.Width = 123;
-            // 
-            // iDLoaiDGDataGridViewTextBoxColumn
-            // 
-            this.iDLoaiDGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDLoaiDGDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiDG";
-            this.iDLoaiDGDataGridViewTextBoxColumn.HeaderText = "Loại độc giả";
-            this.iDLoaiDGDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDLoaiDGDataGridViewTextBoxColumn.Name = "iDLoaiDGDataGridViewTextBoxColumn";
-            this.iDLoaiDGDataGridViewTextBoxColumn.Width = 210;
-            // 
-            // ngayLapTheDataGridViewTextBoxColumn
-            // 
-            this.ngayLapTheDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ngayLapTheDataGridViewTextBoxColumn.DataPropertyName = "NgayLapThe";
-            this.ngayLapTheDataGridViewTextBoxColumn.HeaderText = "Ngày lập thẻ";
-            this.ngayLapTheDataGridViewTextBoxColumn.Name = "ngayLapTheDataGridViewTextBoxColumn";
-            this.ngayLapTheDataGridViewTextBoxColumn.Width = 220;
-            // 
-            // ngayHetHanDataGridViewTextBoxColumn
-            // 
-            this.ngayHetHanDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ngayHetHanDataGridViewTextBoxColumn.DataPropertyName = "NgayHetHan";
-            this.ngayHetHanDataGridViewTextBoxColumn.HeaderText = "Ngày hết hạn";
-            this.ngayHetHanDataGridViewTextBoxColumn.Name = "ngayHetHanDataGridViewTextBoxColumn";
-            this.ngayHetHanDataGridViewTextBoxColumn.Width = 230;
-            // 
-            // tongNoDataGridViewTextBoxColumn
-            // 
-            this.tongNoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.tongNoDataGridViewTextBoxColumn.DataPropertyName = "TongNo";
-            this.tongNoDataGridViewTextBoxColumn.HeaderText = "Tổng nợ";
-            this.tongNoDataGridViewTextBoxColumn.Name = "tongNoDataGridViewTextBoxColumn";
-            this.tongNoDataGridViewTextBoxColumn.Width = 162;
-            // 
             // frmTheDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -765,10 +757,6 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             this.item_Xoa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -791,8 +779,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private System.Windows.Forms.ComboBox cbb_LoaiDocGia;
-        private DevExpress.XtraEditors.DateEdit dtp_NgayLapThe;
-        private DevExpress.XtraEditors.DateEdit dtp_NgaySinh;
         private System.Windows.Forms.TextBox tb_Email;
         private System.Windows.Forms.TextBox tb_DiaChi;
         private System.Windows.Forms.TextBox tb_HoTenDocGia;
@@ -821,15 +807,6 @@
         private QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter tHEDOCGIATableAdapter;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
         private System.Windows.Forms.DataGridView dgv_Delete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDocGiaDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hoTenDGDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDGDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDGDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDGDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDLoaiDGDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngayLapTheDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngayHetHanDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tongNoDataGridViewTextBoxColumn1;
         private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
         private System.Windows.Forms.ComboBox cbb_IDDelete;
         private System.Windows.Forms.Label label8;
@@ -842,5 +819,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayLapTheDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayHetHanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDocGiaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoTenDGDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDGDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDGDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDGDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDLoaiDGDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayLapTheDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayHetHanDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongNoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DateTimePicker dtp_NgayLapThe;
+        private System.Windows.Forms.DateTimePicker dtp_NgaySinh;
     }
 }

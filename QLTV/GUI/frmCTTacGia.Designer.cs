@@ -154,25 +154,28 @@
             // 
             // iDCTTacGiaDataGridViewTextBoxColumn
             // 
-            this.iDCTTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDCTTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDCTTacGiaDataGridViewTextBoxColumn.DataPropertyName = "IDCTTacGia";
             this.iDCTTacGiaDataGridViewTextBoxColumn.HeaderText = "ID chi tiết tác giả";
+            this.iDCTTacGiaDataGridViewTextBoxColumn.MaxInputLength = 6;
             this.iDCTTacGiaDataGridViewTextBoxColumn.Name = "iDCTTacGiaDataGridViewTextBoxColumn";
             this.iDCTTacGiaDataGridViewTextBoxColumn.Width = 218;
             // 
             // iDDauSachDataGridViewTextBoxColumn
             // 
-            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDDauSachDataGridViewTextBoxColumn.DataPropertyName = "IDDauSach";
             this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
+            this.iDDauSachDataGridViewTextBoxColumn.MaxInputLength = 6;
             this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
             this.iDDauSachDataGridViewTextBoxColumn.Width = 192;
             // 
             // iDTacGiaDataGridViewTextBoxColumn
             // 
-            this.iDTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDTacGiaDataGridViewTextBoxColumn.DataPropertyName = "IDTacGia";
             this.iDTacGiaDataGridViewTextBoxColumn.HeaderText = "ID tác giả";
+            this.iDTacGiaDataGridViewTextBoxColumn.MaxInputLength = 6;
             this.iDTacGiaDataGridViewTextBoxColumn.Name = "iDTacGiaDataGridViewTextBoxColumn";
             this.iDTacGiaDataGridViewTextBoxColumn.Width = 165;
             // 
@@ -436,25 +439,28 @@
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "IDCTTacGia";
             this.dataGridViewTextBoxColumn1.HeaderText = "ID chi tiết tác giả";
+            this.dataGridViewTextBoxColumn1.MaxInputLength = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Width = 218;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "IDDauSach";
             this.dataGridViewTextBoxColumn2.HeaderText = "ID đầu sách";
+            this.dataGridViewTextBoxColumn2.MaxInputLength = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 192;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn3.DataPropertyName = "IDTacGia";
             this.dataGridViewTextBoxColumn3.HeaderText = "ID tác giả";
+            this.dataGridViewTextBoxColumn3.MaxInputLength = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 165;
             // 
@@ -584,9 +590,6 @@
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource cTTACGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter cT_TACGIATableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTTacGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDauSachDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox cbb_IDTacGia;
         private System.Windows.Forms.ComboBox cbb_IDDauSach;
         private System.Windows.Forms.TextBox tb_IDCTTacGia;
@@ -599,11 +602,14 @@
         private QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter tACGIATableAdapter;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
         private System.Windows.Forms.DataGridView dgv_Delete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.ComboBox cbb_IDCTTacGia;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTTacGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDauSachDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

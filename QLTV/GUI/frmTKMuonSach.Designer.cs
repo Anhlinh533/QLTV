@@ -57,15 +57,15 @@
             this.iDCuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTPHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_TKCTPhieuMuonSach = new Bunifu.Framework.UI.BunifuTileButton();
+            this.tb_IDCuonSach = new System.Windows.Forms.TextBox();
+            this.tb_IDPhieuMuonSach = new System.Windows.Forms.TextBox();
+            this.tb_IDCTPhieuMuonSach = new System.Windows.Forms.TextBox();
             this.rdb_IDCuonSach = new System.Windows.Forms.RadioButton();
             this.rdb_IDPhieuMuonSach = new System.Windows.Forms.RadioButton();
             this.rdb_IDCTPhieuMuon = new System.Windows.Forms.RadioButton();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
             this.cT_PHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter();
-            this.tb_IDCTPhieuMuonSach = new System.Windows.Forms.TextBox();
-            this.tb_IDPhieuMuonSach = new System.Windows.Forms.TextBox();
-            this.tb_IDCuonSach = new System.Windows.Forms.TextBox();
-            this.btn_TKCTPhieuMuonSach = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKPhieuMuonSach.SuspendLayout();
@@ -149,7 +149,7 @@
             // 
             // iDPhieuMuonDataGridViewTextBoxColumn
             // 
-            this.iDPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuMuon";
             this.iDPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID phiếu mượn";
             this.iDPhieuMuonDataGridViewTextBoxColumn.Name = "iDPhieuMuonDataGridViewTextBoxColumn";
@@ -157,7 +157,7 @@
             // 
             // iDDocGiaDataGridViewTextBoxColumn
             // 
-            this.iDDocGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDDocGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDDocGiaDataGridViewTextBoxColumn.DataPropertyName = "IDDocGia";
             this.iDDocGiaDataGridViewTextBoxColumn.HeaderText = "ID độc giả";
             this.iDDocGiaDataGridViewTextBoxColumn.Name = "iDDocGiaDataGridViewTextBoxColumn";
@@ -165,7 +165,7 @@
             // 
             // ngayMuonDataGridViewTextBoxColumn
             // 
-            this.ngayMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.ngayMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ngayMuonDataGridViewTextBoxColumn.DataPropertyName = "NgayMuon";
             this.ngayMuonDataGridViewTextBoxColumn.HeaderText = "Ngày mượn";
             this.ngayMuonDataGridViewTextBoxColumn.Name = "ngayMuonDataGridViewTextBoxColumn";
@@ -173,7 +173,7 @@
             // 
             // hanTraDataGridViewTextBoxColumn
             // 
-            this.hanTraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.hanTraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.hanTraDataGridViewTextBoxColumn.DataPropertyName = "HanTra";
             this.hanTraDataGridViewTextBoxColumn.HeaderText = "Hạn trả";
             this.hanTraDataGridViewTextBoxColumn.Name = "hanTraDataGridViewTextBoxColumn";
@@ -364,7 +364,7 @@
             // 
             // iDCTPhieuMuonDataGridViewTextBoxColumn
             // 
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDCTPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDCTPhieuMuon";
             this.iDCTPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID chi tiết phiếu mượn";
             this.iDCTPhieuMuonDataGridViewTextBoxColumn.Name = "iDCTPhieuMuonDataGridViewTextBoxColumn";
@@ -372,7 +372,7 @@
             // 
             // iDPhieuMuonDataGridViewTextBoxColumn1
             // 
-            this.iDPhieuMuonDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDPhieuMuonDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDPhieuMuonDataGridViewTextBoxColumn1.DataPropertyName = "IDPhieuMuon";
             this.iDPhieuMuonDataGridViewTextBoxColumn1.HeaderText = "ID phiếu mượn";
             this.iDPhieuMuonDataGridViewTextBoxColumn1.Name = "iDPhieuMuonDataGridViewTextBoxColumn1";
@@ -380,7 +380,7 @@
             // 
             // iDCuonSachDataGridViewTextBoxColumn
             // 
-            this.iDCuonSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDCuonSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDCuonSachDataGridViewTextBoxColumn.DataPropertyName = "IDCuonSach";
             this.iDCuonSachDataGridViewTextBoxColumn.HeaderText = "ID cuốn sách";
             this.iDCuonSachDataGridViewTextBoxColumn.Name = "iDCuonSachDataGridViewTextBoxColumn";
@@ -412,6 +412,46 @@
             this.groupControl1.Size = new System.Drawing.Size(515, 1002);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm chi tiết phiếu mượn sách theo";
+            // 
+            // btn_TKCTPhieuMuonSach
+            // 
+            this.btn_TKCTPhieuMuonSach.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_TKCTPhieuMuonSach.color = System.Drawing.Color.SeaGreen;
+            this.btn_TKCTPhieuMuonSach.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btn_TKCTPhieuMuonSach.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_TKCTPhieuMuonSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btn_TKCTPhieuMuonSach.ForeColor = System.Drawing.Color.White;
+            this.btn_TKCTPhieuMuonSach.Image = global::QLTV.Properties.Resources.icons8_search_48;
+            this.btn_TKCTPhieuMuonSach.ImagePosition = 20;
+            this.btn_TKCTPhieuMuonSach.ImageZoom = 50;
+            this.btn_TKCTPhieuMuonSach.LabelPosition = 41;
+            this.btn_TKCTPhieuMuonSach.LabelText = "Tìm kiếm";
+            this.btn_TKCTPhieuMuonSach.Location = new System.Drawing.Point(152, 278);
+            this.btn_TKCTPhieuMuonSach.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_TKCTPhieuMuonSach.Name = "btn_TKCTPhieuMuonSach";
+            this.btn_TKCTPhieuMuonSach.Size = new System.Drawing.Size(155, 162);
+            this.btn_TKCTPhieuMuonSach.TabIndex = 17;
+            // 
+            // tb_IDCuonSach
+            // 
+            this.tb_IDCuonSach.Location = new System.Drawing.Point(351, 199);
+            this.tb_IDCuonSach.Name = "tb_IDCuonSach";
+            this.tb_IDCuonSach.Size = new System.Drawing.Size(158, 44);
+            this.tb_IDCuonSach.TabIndex = 5;
+            // 
+            // tb_IDPhieuMuonSach
+            // 
+            this.tb_IDPhieuMuonSach.Location = new System.Drawing.Point(351, 139);
+            this.tb_IDPhieuMuonSach.Name = "tb_IDPhieuMuonSach";
+            this.tb_IDPhieuMuonSach.Size = new System.Drawing.Size(158, 44);
+            this.tb_IDPhieuMuonSach.TabIndex = 4;
+            // 
+            // tb_IDCTPhieuMuonSach
+            // 
+            this.tb_IDCTPhieuMuonSach.Location = new System.Drawing.Point(351, 79);
+            this.tb_IDCTPhieuMuonSach.Name = "tb_IDCTPhieuMuonSach";
+            this.tb_IDCTPhieuMuonSach.Size = new System.Drawing.Size(158, 44);
+            this.tb_IDCTPhieuMuonSach.TabIndex = 3;
             // 
             // rdb_IDCuonSach
             // 
@@ -456,46 +496,6 @@
             // cT_PHIEUMUONTableAdapter
             // 
             this.cT_PHIEUMUONTableAdapter.ClearBeforeFill = true;
-            // 
-            // tb_IDCTPhieuMuonSach
-            // 
-            this.tb_IDCTPhieuMuonSach.Location = new System.Drawing.Point(351, 79);
-            this.tb_IDCTPhieuMuonSach.Name = "tb_IDCTPhieuMuonSach";
-            this.tb_IDCTPhieuMuonSach.Size = new System.Drawing.Size(158, 44);
-            this.tb_IDCTPhieuMuonSach.TabIndex = 3;
-            // 
-            // tb_IDPhieuMuonSach
-            // 
-            this.tb_IDPhieuMuonSach.Location = new System.Drawing.Point(351, 139);
-            this.tb_IDPhieuMuonSach.Name = "tb_IDPhieuMuonSach";
-            this.tb_IDPhieuMuonSach.Size = new System.Drawing.Size(158, 44);
-            this.tb_IDPhieuMuonSach.TabIndex = 4;
-            // 
-            // tb_IDCuonSach
-            // 
-            this.tb_IDCuonSach.Location = new System.Drawing.Point(351, 199);
-            this.tb_IDCuonSach.Name = "tb_IDCuonSach";
-            this.tb_IDCuonSach.Size = new System.Drawing.Size(158, 44);
-            this.tb_IDCuonSach.TabIndex = 5;
-            // 
-            // btn_TKCTPhieuMuonSach
-            // 
-            this.btn_TKCTPhieuMuonSach.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_TKCTPhieuMuonSach.color = System.Drawing.Color.SeaGreen;
-            this.btn_TKCTPhieuMuonSach.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_TKCTPhieuMuonSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_TKCTPhieuMuonSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_TKCTPhieuMuonSach.ForeColor = System.Drawing.Color.White;
-            this.btn_TKCTPhieuMuonSach.Image = global::QLTV.Properties.Resources.icons8_search_48;
-            this.btn_TKCTPhieuMuonSach.ImagePosition = 20;
-            this.btn_TKCTPhieuMuonSach.ImageZoom = 50;
-            this.btn_TKCTPhieuMuonSach.LabelPosition = 41;
-            this.btn_TKCTPhieuMuonSach.LabelText = "Tìm kiếm";
-            this.btn_TKCTPhieuMuonSach.Location = new System.Drawing.Point(152, 278);
-            this.btn_TKCTPhieuMuonSach.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_TKCTPhieuMuonSach.Name = "btn_TKCTPhieuMuonSach";
-            this.btn_TKCTPhieuMuonSach.Size = new System.Drawing.Size(155, 162);
-            this.btn_TKCTPhieuMuonSach.TabIndex = 17;
             // 
             // frmTKMuonSach
             // 
@@ -546,10 +546,6 @@
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource pHIEUMUONBindingSource;
         private QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter pHIEUMUONTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDocGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngayMuonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hanTraDataGridViewTextBoxColumn;
         private System.Windows.Forms.RadioButton rdb_HanTra;
         private System.Windows.Forms.RadioButton rdb_IDNgayMuon;
         private System.Windows.Forms.RadioButton rdb_IDDocGia;
@@ -562,9 +558,6 @@
         private System.Windows.Forms.DataGridView dgv_TKCTPhieuMuonSach;
         private System.Windows.Forms.BindingSource cTPHIEUMUONBindingSource;
         private QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter cT_PHIEUMUONTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTPhieuMuonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCuonSachDataGridViewTextBoxColumn;
         private System.Windows.Forms.RadioButton rdb_IDCTPhieuMuon;
         private System.Windows.Forms.RadioButton rdb_IDCuonSach;
         private System.Windows.Forms.RadioButton rdb_IDPhieuMuonSach;
@@ -572,5 +565,12 @@
         private System.Windows.Forms.TextBox tb_IDCuonSach;
         private System.Windows.Forms.TextBox tb_IDPhieuMuonSach;
         private System.Windows.Forms.TextBox tb_IDCTPhieuMuonSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDocGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayMuonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hanTraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTPhieuMuonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCuonSachDataGridViewTextBoxColumn;
     }
 }

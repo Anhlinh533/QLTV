@@ -39,6 +39,7 @@ namespace QLTV.GUI
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
 
+
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)

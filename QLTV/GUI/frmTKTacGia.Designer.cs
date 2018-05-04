@@ -32,58 +32,56 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
-            this.tACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter();
             this.iDTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rdb_IDTacGia = new System.Windows.Forms.RadioButton();
-            this.rdb_TenTacGia = new System.Windows.Forms.RadioButton();
-            this.rdb_NgaySinh = new System.Windows.Forms.RadioButton();
-            this.tb_IDTacGia = new System.Windows.Forms.TextBox();
-            this.tb_TenTacGia = new System.Windows.Forms.TextBox();
-            this.dtp_NgaySinh = new DevExpress.XtraEditors.DateEdit();
+            this.tACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btn_TKTacGia = new Bunifu.Framework.UI.BunifuTileButton();
+            this.tb_TenTacGia = new System.Windows.Forms.TextBox();
+            this.tb_IDTacGia = new System.Windows.Forms.TextBox();
+            this.rdb_NgaySinh = new System.Windows.Forms.RadioButton();
+            this.rdb_TenTacGia = new System.Windows.Forms.RadioButton();
+            this.rdb_IDTacGia = new System.Windows.Forms.RadioButton();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.quanLyThuVienDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cTTACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cT_TACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter();
             this.iDCTTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDTacGiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rdb_IDCTTacGia = new System.Windows.Forms.RadioButton();
-            this.rdb_IDDauSach = new System.Windows.Forms.RadioButton();
-            this.rdb_IDTacGiaCT = new System.Windows.Forms.RadioButton();
-            this.btn_TKCTTacGia = new Bunifu.Framework.UI.BunifuTileButton();
-            this.tb_IDCTTacGia = new System.Windows.Forms.TextBox();
-            this.tb_IDDauSach = new System.Windows.Forms.TextBox();
+            this.cTTACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThuVienDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tb_IDTacGiaCT = new System.Windows.Forms.TextBox();
+            this.tb_IDDauSach = new System.Windows.Forms.TextBox();
+            this.tb_IDCTTacGia = new System.Windows.Forms.TextBox();
+            this.btn_TKCTTacGia = new Bunifu.Framework.UI.BunifuTileButton();
+            this.rdb_IDTacGiaCT = new System.Windows.Forms.RadioButton();
+            this.rdb_IDDauSach = new System.Windows.Forms.RadioButton();
+            this.rdb_IDCTTacGia = new System.Windows.Forms.RadioButton();
+            this.tACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter();
+            this.cT_TACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties)).BeginInit();
             this.navigationPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -127,28 +125,6 @@
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu thông tin tác giả";
             // 
-            // groupControl3
-            // 
-            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl3.Appearance.Options.UseFont = true;
-            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl3.AppearanceCaption.Options.UseFont = true;
-            this.groupControl3.Controls.Add(this.btn_TKTacGia);
-            this.groupControl3.Controls.Add(this.dtp_NgaySinh);
-            this.groupControl3.Controls.Add(this.tb_TenTacGia);
-            this.groupControl3.Controls.Add(this.tb_IDTacGia);
-            this.groupControl3.Controls.Add(this.rdb_NgaySinh);
-            this.groupControl3.Controls.Add(this.rdb_TenTacGia);
-            this.groupControl3.Controls.Add(this.rdb_IDTacGia);
-            this.groupControl3.Location = new System.Drawing.Point(0, 0);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(635, 1017);
-            this.groupControl3.TabIndex = 0;
-            this.groupControl3.Text = "Tìm kiếm theo";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -165,23 +141,9 @@
             this.dataGridView1.Size = new System.Drawing.Size(972, 967);
             this.dataGridView1.TabIndex = 0;
             // 
-            // quanLyThuVienDataSet
-            // 
-            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
-            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tACGIABindingSource
-            // 
-            this.tACGIABindingSource.DataMember = "TACGIA";
-            this.tACGIABindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // tACGIATableAdapter
-            // 
-            this.tACGIATableAdapter.ClearBeforeFill = true;
-            // 
             // iDTacGiaDataGridViewTextBoxColumn
             // 
-            this.iDTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDTacGiaDataGridViewTextBoxColumn.DataPropertyName = "IDTacGia";
             this.iDTacGiaDataGridViewTextBoxColumn.HeaderText = "ID tác giả";
             this.iDTacGiaDataGridViewTextBoxColumn.Name = "iDTacGiaDataGridViewTextBoxColumn";
@@ -189,7 +151,7 @@
             // 
             // tenTacGiaDataGridViewTextBoxColumn
             // 
-            this.tenTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tenTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.tenTacGiaDataGridViewTextBoxColumn.DataPropertyName = "TenTacGia";
             this.tenTacGiaDataGridViewTextBoxColumn.HeaderText = "Tên tác giả";
             this.tenTacGiaDataGridViewTextBoxColumn.Name = "tenTacGiaDataGridViewTextBoxColumn";
@@ -197,74 +159,51 @@
             // 
             // ngaySinhDataGridViewTextBoxColumn
             // 
-            this.ngaySinhDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.ngaySinhDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
             this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "Ngày sinh";
             this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
             this.ngaySinhDataGridViewTextBoxColumn.Width = 182;
             // 
-            // rdb_IDTacGia
+            // tACGIABindingSource
             // 
-            this.rdb_IDTacGia.AutoSize = true;
-            this.rdb_IDTacGia.Checked = true;
-            this.rdb_IDTacGia.ForeColor = System.Drawing.Color.Red;
-            this.rdb_IDTacGia.Location = new System.Drawing.Point(6, 79);
-            this.rdb_IDTacGia.Name = "rdb_IDTacGia";
-            this.rdb_IDTacGia.Size = new System.Drawing.Size(169, 40);
-            this.rdb_IDTacGia.TabIndex = 0;
-            this.rdb_IDTacGia.TabStop = true;
-            this.rdb_IDTacGia.Text = "ID tác giả";
-            this.rdb_IDTacGia.UseVisualStyleBackColor = true;
+            this.tACGIABindingSource.DataMember = "TACGIA";
+            this.tACGIABindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
-            // rdb_TenTacGia
+            // quanLyThuVienDataSet
             // 
-            this.rdb_TenTacGia.AutoSize = true;
-            this.rdb_TenTacGia.ForeColor = System.Drawing.Color.Red;
-            this.rdb_TenTacGia.Location = new System.Drawing.Point(6, 139);
-            this.rdb_TenTacGia.Name = "rdb_TenTacGia";
-            this.rdb_TenTacGia.Size = new System.Drawing.Size(189, 40);
-            this.rdb_TenTacGia.TabIndex = 1;
-            this.rdb_TenTacGia.Text = "Tên tác giả";
-            this.rdb_TenTacGia.UseVisualStyleBackColor = true;
+            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
+            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // rdb_NgaySinh
+            // groupControl3
             // 
-            this.rdb_NgaySinh.AutoSize = true;
-            this.rdb_NgaySinh.ForeColor = System.Drawing.Color.Red;
-            this.rdb_NgaySinh.Location = new System.Drawing.Point(6, 199);
-            this.rdb_NgaySinh.Name = "rdb_NgaySinh";
-            this.rdb_NgaySinh.Size = new System.Drawing.Size(171, 40);
-            this.rdb_NgaySinh.TabIndex = 2;
-            this.rdb_NgaySinh.Text = "Ngày sinh";
-            this.rdb_NgaySinh.UseVisualStyleBackColor = true;
-            // 
-            // tb_IDTacGia
-            // 
-            this.tb_IDTacGia.Location = new System.Drawing.Point(232, 78);
-            this.tb_IDTacGia.Name = "tb_IDTacGia";
-            this.tb_IDTacGia.Size = new System.Drawing.Size(235, 44);
-            this.tb_IDTacGia.TabIndex = 3;
-            // 
-            // tb_TenTacGia
-            // 
-            this.tb_TenTacGia.Location = new System.Drawing.Point(232, 138);
-            this.tb_TenTacGia.Name = "tb_TenTacGia";
-            this.tb_TenTacGia.Size = new System.Drawing.Size(235, 44);
-            this.tb_TenTacGia.TabIndex = 4;
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl3.Appearance.Options.UseFont = true;
+            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl3.AppearanceCaption.Options.UseFont = true;
+            this.groupControl3.Controls.Add(this.dtp_NgaySinh);
+            this.groupControl3.Controls.Add(this.btn_TKTacGia);
+            this.groupControl3.Controls.Add(this.tb_TenTacGia);
+            this.groupControl3.Controls.Add(this.tb_IDTacGia);
+            this.groupControl3.Controls.Add(this.rdb_NgaySinh);
+            this.groupControl3.Controls.Add(this.rdb_TenTacGia);
+            this.groupControl3.Controls.Add(this.rdb_IDTacGia);
+            this.groupControl3.Location = new System.Drawing.Point(0, 0);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(635, 1017);
+            this.groupControl3.TabIndex = 0;
+            this.groupControl3.Text = "Tìm kiếm theo";
             // 
             // dtp_NgaySinh
             // 
-            this.dtp_NgaySinh.EditValue = null;
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(232, 198);
+            this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(232, 195);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_NgaySinh.Properties.Appearance.Options.UseFont = true;
-            this.dtp_NgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(235, 42);
-            this.dtp_NgaySinh.TabIndex = 5;
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(235, 44);
+            this.dtp_NgaySinh.TabIndex = 18;
             // 
             // btn_TKTacGia
             // 
@@ -285,6 +224,55 @@
             this.btn_TKTacGia.Size = new System.Drawing.Size(155, 162);
             this.btn_TKTacGia.TabIndex = 17;
             // 
+            // tb_TenTacGia
+            // 
+            this.tb_TenTacGia.Location = new System.Drawing.Point(232, 138);
+            this.tb_TenTacGia.Name = "tb_TenTacGia";
+            this.tb_TenTacGia.Size = new System.Drawing.Size(235, 44);
+            this.tb_TenTacGia.TabIndex = 4;
+            // 
+            // tb_IDTacGia
+            // 
+            this.tb_IDTacGia.Location = new System.Drawing.Point(232, 78);
+            this.tb_IDTacGia.Name = "tb_IDTacGia";
+            this.tb_IDTacGia.Size = new System.Drawing.Size(235, 44);
+            this.tb_IDTacGia.TabIndex = 3;
+            // 
+            // rdb_NgaySinh
+            // 
+            this.rdb_NgaySinh.AutoSize = true;
+            this.rdb_NgaySinh.ForeColor = System.Drawing.Color.Red;
+            this.rdb_NgaySinh.Location = new System.Drawing.Point(6, 199);
+            this.rdb_NgaySinh.Name = "rdb_NgaySinh";
+            this.rdb_NgaySinh.Size = new System.Drawing.Size(171, 40);
+            this.rdb_NgaySinh.TabIndex = 2;
+            this.rdb_NgaySinh.Text = "Ngày sinh";
+            this.rdb_NgaySinh.UseVisualStyleBackColor = true;
+            // 
+            // rdb_TenTacGia
+            // 
+            this.rdb_TenTacGia.AutoSize = true;
+            this.rdb_TenTacGia.ForeColor = System.Drawing.Color.Red;
+            this.rdb_TenTacGia.Location = new System.Drawing.Point(6, 139);
+            this.rdb_TenTacGia.Name = "rdb_TenTacGia";
+            this.rdb_TenTacGia.Size = new System.Drawing.Size(189, 40);
+            this.rdb_TenTacGia.TabIndex = 1;
+            this.rdb_TenTacGia.Text = "Tên tác giả";
+            this.rdb_TenTacGia.UseVisualStyleBackColor = true;
+            // 
+            // rdb_IDTacGia
+            // 
+            this.rdb_IDTacGia.AutoSize = true;
+            this.rdb_IDTacGia.Checked = true;
+            this.rdb_IDTacGia.ForeColor = System.Drawing.Color.Red;
+            this.rdb_IDTacGia.Location = new System.Drawing.Point(6, 79);
+            this.rdb_IDTacGia.Name = "rdb_IDTacGia";
+            this.rdb_IDTacGia.Size = new System.Drawing.Size(169, 40);
+            this.rdb_IDTacGia.TabIndex = 0;
+            this.rdb_IDTacGia.TabStop = true;
+            this.rdb_IDTacGia.Text = "ID tác giả";
+            this.rdb_IDTacGia.UseVisualStyleBackColor = true;
+            // 
             // navigationPage2
             // 
             this.navigationPage2.Caption = "Tìm kiếm thông tin chi tiết tác giả";
@@ -293,28 +281,6 @@
             this.navigationPage2.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_administrator_male_80;
             this.navigationPage2.Name = "navigationPage2";
             this.navigationPage2.Size = new System.Drawing.Size(1456, 1017);
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.Appearance.Options.UseFont = true;
-            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.tb_IDTacGiaCT);
-            this.groupControl1.Controls.Add(this.tb_IDDauSach);
-            this.groupControl1.Controls.Add(this.tb_IDCTTacGia);
-            this.groupControl1.Controls.Add(this.btn_TKCTTacGia);
-            this.groupControl1.Controls.Add(this.rdb_IDTacGiaCT);
-            this.groupControl1.Controls.Add(this.rdb_IDDauSach);
-            this.groupControl1.Controls.Add(this.rdb_IDCTTacGia);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(501, 1017);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "Tìm kiếm theo";
             // 
             // groupControl2
             // 
@@ -345,23 +311,9 @@
             this.dataGridView2.Size = new System.Drawing.Size(944, 967);
             this.dataGridView2.TabIndex = 0;
             // 
-            // quanLyThuVienDataSetBindingSource
-            // 
-            this.quanLyThuVienDataSetBindingSource.DataSource = this.quanLyThuVienDataSet;
-            this.quanLyThuVienDataSetBindingSource.Position = 0;
-            // 
-            // cTTACGIABindingSource
-            // 
-            this.cTTACGIABindingSource.DataMember = "CT_TACGIA";
-            this.cTTACGIABindingSource.DataSource = this.quanLyThuVienDataSetBindingSource;
-            // 
-            // cT_TACGIATableAdapter
-            // 
-            this.cT_TACGIATableAdapter.ClearBeforeFill = true;
-            // 
             // iDCTTacGiaDataGridViewTextBoxColumn
             // 
-            this.iDCTTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDCTTacGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDCTTacGiaDataGridViewTextBoxColumn.DataPropertyName = "IDCTTacGia";
             this.iDCTTacGiaDataGridViewTextBoxColumn.HeaderText = "ID chi tiết tác giả";
             this.iDCTTacGiaDataGridViewTextBoxColumn.Name = "iDCTTacGiaDataGridViewTextBoxColumn";
@@ -369,7 +321,7 @@
             // 
             // iDDauSachDataGridViewTextBoxColumn
             // 
-            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDDauSachDataGridViewTextBoxColumn.DataPropertyName = "IDDauSach";
             this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
             this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
@@ -377,46 +329,64 @@
             // 
             // iDTacGiaDataGridViewTextBoxColumn1
             // 
-            this.iDTacGiaDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDTacGiaDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.iDTacGiaDataGridViewTextBoxColumn1.DataPropertyName = "IDTacGia";
             this.iDTacGiaDataGridViewTextBoxColumn1.HeaderText = "ID tác giả";
             this.iDTacGiaDataGridViewTextBoxColumn1.Name = "iDTacGiaDataGridViewTextBoxColumn1";
             this.iDTacGiaDataGridViewTextBoxColumn1.Width = 165;
             // 
-            // rdb_IDCTTacGia
+            // cTTACGIABindingSource
             // 
-            this.rdb_IDCTTacGia.AutoSize = true;
-            this.rdb_IDCTTacGia.Checked = true;
-            this.rdb_IDCTTacGia.ForeColor = System.Drawing.Color.Red;
-            this.rdb_IDCTTacGia.Location = new System.Drawing.Point(6, 73);
-            this.rdb_IDCTTacGia.Name = "rdb_IDCTTacGia";
-            this.rdb_IDCTTacGia.Size = new System.Drawing.Size(268, 40);
-            this.rdb_IDCTTacGia.TabIndex = 0;
-            this.rdb_IDCTTacGia.TabStop = true;
-            this.rdb_IDCTTacGia.Text = "ID chi tiết tác giả";
-            this.rdb_IDCTTacGia.UseVisualStyleBackColor = true;
+            this.cTTACGIABindingSource.DataMember = "CT_TACGIA";
+            this.cTTACGIABindingSource.DataSource = this.quanLyThuVienDataSetBindingSource;
             // 
-            // rdb_IDDauSach
+            // quanLyThuVienDataSetBindingSource
             // 
-            this.rdb_IDDauSach.AutoSize = true;
-            this.rdb_IDDauSach.ForeColor = System.Drawing.Color.Red;
-            this.rdb_IDDauSach.Location = new System.Drawing.Point(6, 133);
-            this.rdb_IDDauSach.Name = "rdb_IDDauSach";
-            this.rdb_IDDauSach.Size = new System.Drawing.Size(199, 40);
-            this.rdb_IDDauSach.TabIndex = 1;
-            this.rdb_IDDauSach.Text = "ID đầu sách";
-            this.rdb_IDDauSach.UseVisualStyleBackColor = true;
+            this.quanLyThuVienDataSetBindingSource.DataSource = this.quanLyThuVienDataSet;
+            this.quanLyThuVienDataSetBindingSource.Position = 0;
             // 
-            // rdb_IDTacGiaCT
+            // groupControl1
             // 
-            this.rdb_IDTacGiaCT.AutoSize = true;
-            this.rdb_IDTacGiaCT.ForeColor = System.Drawing.Color.Red;
-            this.rdb_IDTacGiaCT.Location = new System.Drawing.Point(6, 193);
-            this.rdb_IDTacGiaCT.Name = "rdb_IDTacGiaCT";
-            this.rdb_IDTacGiaCT.Size = new System.Drawing.Size(169, 40);
-            this.rdb_IDTacGiaCT.TabIndex = 2;
-            this.rdb_IDTacGiaCT.Text = "ID tác giả";
-            this.rdb_IDTacGiaCT.UseVisualStyleBackColor = true;
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.Appearance.Options.UseFont = true;
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.tb_IDTacGiaCT);
+            this.groupControl1.Controls.Add(this.tb_IDDauSach);
+            this.groupControl1.Controls.Add(this.tb_IDCTTacGia);
+            this.groupControl1.Controls.Add(this.btn_TKCTTacGia);
+            this.groupControl1.Controls.Add(this.rdb_IDTacGiaCT);
+            this.groupControl1.Controls.Add(this.rdb_IDDauSach);
+            this.groupControl1.Controls.Add(this.rdb_IDCTTacGia);
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(501, 1017);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "Tìm kiếm theo";
+            // 
+            // tb_IDTacGiaCT
+            // 
+            this.tb_IDTacGiaCT.Location = new System.Drawing.Point(280, 192);
+            this.tb_IDTacGiaCT.Name = "tb_IDTacGiaCT";
+            this.tb_IDTacGiaCT.Size = new System.Drawing.Size(215, 44);
+            this.tb_IDTacGiaCT.TabIndex = 21;
+            // 
+            // tb_IDDauSach
+            // 
+            this.tb_IDDauSach.Location = new System.Drawing.Point(280, 132);
+            this.tb_IDDauSach.Name = "tb_IDDauSach";
+            this.tb_IDDauSach.Size = new System.Drawing.Size(215, 44);
+            this.tb_IDDauSach.TabIndex = 20;
+            // 
+            // tb_IDCTTacGia
+            // 
+            this.tb_IDCTTacGia.Location = new System.Drawing.Point(280, 73);
+            this.tb_IDCTTacGia.Name = "tb_IDCTTacGia";
+            this.tb_IDCTTacGia.Size = new System.Drawing.Size(215, 44);
+            this.tb_IDCTTacGia.TabIndex = 19;
             // 
             // btn_TKCTTacGia
             // 
@@ -437,26 +407,48 @@
             this.btn_TKCTTacGia.Size = new System.Drawing.Size(155, 162);
             this.btn_TKCTTacGia.TabIndex = 18;
             // 
-            // tb_IDCTTacGia
+            // rdb_IDTacGiaCT
             // 
-            this.tb_IDCTTacGia.Location = new System.Drawing.Point(280, 73);
-            this.tb_IDCTTacGia.Name = "tb_IDCTTacGia";
-            this.tb_IDCTTacGia.Size = new System.Drawing.Size(215, 44);
-            this.tb_IDCTTacGia.TabIndex = 19;
+            this.rdb_IDTacGiaCT.AutoSize = true;
+            this.rdb_IDTacGiaCT.ForeColor = System.Drawing.Color.Red;
+            this.rdb_IDTacGiaCT.Location = new System.Drawing.Point(6, 193);
+            this.rdb_IDTacGiaCT.Name = "rdb_IDTacGiaCT";
+            this.rdb_IDTacGiaCT.Size = new System.Drawing.Size(169, 40);
+            this.rdb_IDTacGiaCT.TabIndex = 2;
+            this.rdb_IDTacGiaCT.Text = "ID tác giả";
+            this.rdb_IDTacGiaCT.UseVisualStyleBackColor = true;
             // 
-            // tb_IDDauSach
+            // rdb_IDDauSach
             // 
-            this.tb_IDDauSach.Location = new System.Drawing.Point(280, 132);
-            this.tb_IDDauSach.Name = "tb_IDDauSach";
-            this.tb_IDDauSach.Size = new System.Drawing.Size(215, 44);
-            this.tb_IDDauSach.TabIndex = 20;
+            this.rdb_IDDauSach.AutoSize = true;
+            this.rdb_IDDauSach.ForeColor = System.Drawing.Color.Red;
+            this.rdb_IDDauSach.Location = new System.Drawing.Point(6, 133);
+            this.rdb_IDDauSach.Name = "rdb_IDDauSach";
+            this.rdb_IDDauSach.Size = new System.Drawing.Size(199, 40);
+            this.rdb_IDDauSach.TabIndex = 1;
+            this.rdb_IDDauSach.Text = "ID đầu sách";
+            this.rdb_IDDauSach.UseVisualStyleBackColor = true;
             // 
-            // tb_IDTacGiaCT
+            // rdb_IDCTTacGia
             // 
-            this.tb_IDTacGiaCT.Location = new System.Drawing.Point(280, 192);
-            this.tb_IDTacGiaCT.Name = "tb_IDTacGiaCT";
-            this.tb_IDTacGiaCT.Size = new System.Drawing.Size(215, 44);
-            this.tb_IDTacGiaCT.TabIndex = 21;
+            this.rdb_IDCTTacGia.AutoSize = true;
+            this.rdb_IDCTTacGia.Checked = true;
+            this.rdb_IDCTTacGia.ForeColor = System.Drawing.Color.Red;
+            this.rdb_IDCTTacGia.Location = new System.Drawing.Point(6, 73);
+            this.rdb_IDCTTacGia.Name = "rdb_IDCTTacGia";
+            this.rdb_IDCTTacGia.Size = new System.Drawing.Size(268, 40);
+            this.rdb_IDCTTacGia.TabIndex = 0;
+            this.rdb_IDCTTacGia.TabStop = true;
+            this.rdb_IDCTTacGia.Text = "ID chi tiết tác giả";
+            this.rdb_IDCTTacGia.UseVisualStyleBackColor = true;
+            // 
+            // tACGIATableAdapter
+            // 
+            this.tACGIATableAdapter.ClearBeforeFill = true;
+            // 
+            // cT_TACGIATableAdapter
+            // 
+            this.cT_TACGIATableAdapter.ClearBeforeFill = true;
             // 
             // frmTKTacGia
             // 
@@ -472,23 +464,21 @@
             this.navigationPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgaySinh.Properties)).EndInit();
             this.navigationPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -503,10 +493,6 @@
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource tACGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter tACGIATableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenTacGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDataGridViewTextBoxColumn;
-        private DevExpress.XtraEditors.DateEdit dtp_NgaySinh;
         private System.Windows.Forms.TextBox tb_TenTacGia;
         private System.Windows.Forms.TextBox tb_IDTacGia;
         private System.Windows.Forms.RadioButton rdb_NgaySinh;
@@ -520,9 +506,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.BindingSource cTTACGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter cT_TACGIATableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTTacGiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDauSachDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn1;
         private System.Windows.Forms.TextBox tb_IDCTTacGia;
         private Bunifu.Framework.UI.BunifuTileButton btn_TKCTTacGia;
         private System.Windows.Forms.RadioButton rdb_IDTacGiaCT;
@@ -530,5 +513,12 @@
         private System.Windows.Forms.RadioButton rdb_IDCTTacGia;
         private System.Windows.Forms.TextBox tb_IDTacGiaCT;
         private System.Windows.Forms.TextBox tb_IDDauSach;
+        private System.Windows.Forms.DateTimePicker dtp_NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenTacGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTTacGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDauSachDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDTacGiaDataGridViewTextBoxColumn1;
     }
 }
