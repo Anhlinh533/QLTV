@@ -49,6 +49,7 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
             if(tb_IDDocGia.Text!="" && tb_HoTenDocGia.Text!="" && dtp_NgaySinh.Text!="" && tb_DiaChi.Text!="" && tb_Email.Text!="" && cbb_LoaiDocGia.Text!= "" && dtp_NgayLapThe.Text!="")
             {
@@ -56,6 +57,11 @@ namespace QLTV.GUI
                 this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             }
 
+=======
+            if (SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text))
+                ADO.adoTheDocGia.Instance.Them(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+            this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+>>>>>>> 5928c0e760d97d1147110af5437a12a422dde456
         }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
