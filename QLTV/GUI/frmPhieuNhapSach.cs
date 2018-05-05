@@ -43,6 +43,11 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text, tb_TongTien.Text);
+            if(tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "" && tb_TongTien.Text != "" )
+            {
+                //Hàm thêm
+
+            }
         }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)

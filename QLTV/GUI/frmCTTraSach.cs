@@ -33,6 +33,11 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDPhieuMuon.Text, tb_SoNgayMuon.Text, tb_TienPhat.Text);
+            if(tb_IDCTPhieuTra.Text != "" && tb_SoNgayMuon.Text != "" && tb_TienPhat.Text != "" && cbb_IDPhieuMuon.Text != "" && cbb_IDPhieuTra.Text != "" )
+            {
+                //Hàm thêm
+
+            }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

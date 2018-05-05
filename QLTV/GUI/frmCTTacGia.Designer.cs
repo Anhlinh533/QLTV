@@ -65,7 +65,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
-            this.cbb_IDCTTacGia = new System.Windows.Forms.ComboBox();
+            this.cbb_Delete = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cT_TACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter();
             this.dAUSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter();
@@ -474,7 +474,7 @@
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.btn_IDDelete);
-            this.groupControl4.Controls.Add(this.cbb_IDCTTacGia);
+            this.groupControl4.Controls.Add(this.cbb_Delete);
             this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
@@ -501,13 +501,13 @@
             this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
             this.btn_IDDelete.TabIndex = 3;
             // 
-            // cbb_IDCTTacGia
+            // cbb_Delete
             // 
-            this.cbb_IDCTTacGia.FormattingEnabled = true;
-            this.cbb_IDCTTacGia.Location = new System.Drawing.Point(12, 130);
-            this.cbb_IDCTTacGia.Name = "cbb_IDCTTacGia";
-            this.cbb_IDCTTacGia.Size = new System.Drawing.Size(210, 44);
-            this.cbb_IDCTTacGia.TabIndex = 1;
+            this.cbb_Delete.FormattingEnabled = true;
+            this.cbb_Delete.Location = new System.Drawing.Point(12, 130);
+            this.cbb_Delete.Name = "cbb_Delete";
+            this.cbb_Delete.Size = new System.Drawing.Size(210, 44);
+            this.cbb_Delete.TabIndex = 1;
             // 
             // label4
             // 
@@ -602,7 +602,7 @@
         private QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter tACGIATableAdapter;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
         private System.Windows.Forms.DataGridView dgv_Delete;
-        private System.Windows.Forms.ComboBox cbb_IDCTTacGia;
+        private System.Windows.Forms.ComboBox cbb_Delete;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCTTacGiaDataGridViewTextBoxColumn;

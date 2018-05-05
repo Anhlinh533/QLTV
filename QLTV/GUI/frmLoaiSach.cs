@@ -33,6 +33,10 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatLoaiSach.Instance.checkLoaiSach(tb_IDLoaiSach.Text, tb_TenLoaiSach.Text);
+            if(tb_IDLoaiSach.Text != "" && tb_TenLoaiSach.Text != "" )
+            {
+                //Hàm thêm
+            }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

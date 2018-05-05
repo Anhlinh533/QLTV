@@ -34,8 +34,6 @@ CREATE TABLE THEDOCGIA
 
 INSERT INTO THEDOCGIA(IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe) VALUES ('IDG001', N'Nguyễn Văn A', '1/1/1990', N'bá', 'b@yahoo.com', 'LDG002', '1/1/2018')
 INSERT INTO THEDOCGIA(IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe) VALUES ('IDG002', N'Nguyễn Văn B', '1/1/1990', N'bá', 'b@yahoo.com', 'LDG002', '1/1/2018')
-INSERT INTO THEDOCGIA(IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe) VALUES ('IDG01', N'Nguyễn Văn B', '1/1/1990', N'bá', 'b@yahoo.com', 'LDG001', '1/1/2018')
-
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ SACH _________________________________________________________________--
@@ -158,8 +156,8 @@ CREATE TABLE CT_PHIEUTRA
 (
 	IDCTPhieuTra varchar(6) PRIMARY KEY NOT NULL,
 	IDPhieuTra varchar(6) FOREIGN KEY REFERENCES PHIEUTRA(IDPhieuTra),
-	IDCuonSach varchar(6) FOREIGN KEY REFERENCES CUONSACH(IDCuonSach),	
-	IDPhieuMuon varchar(6) FOREIGN KEY REFERENCES PHIEUMUON(IDPhieuMuon),
+	IDCuonSach varchar(6) FOREIGN KEY REFERENCES CUONSACH(IDCuonSach),
+	IDCTPhieuMuon varchar(6) FOREIGN KEY REFERENCES CT_PHIEUMUON(IDCTPhieuMuon),
 	SoNgayMuon int NOT NULL,
 	TienPhat money DEFAULT(0)
 )
@@ -312,11 +310,11 @@ BEGIN
 	DECLARE @NGAYNHAP datetime, @NAMXB int, @KHOANGCACHXB int
 
 	SELECT @NGAYNHAP = NgayNhap 
-	FROM INSERTED I, PHIEUNHAPSACH
-	WHERE I.IDPhieuNhap = IDPhieuNhap
+	FROM INSERTED I, PHIEUNHAPSACH P
+	WHERE I.IDPhieuNhap = P.IDPhieuNhap
 	SELECT @NAMXB = NamXB
-	FROM INSERTED I, SACH
-	WHERE I.IDSach = IDSach
+	FROM INSERTED I, SACH S
+	WHERE I.IDSach = S.IDSach
 	SELECT @KHOANGCACHXB = KhoangCachXB
 	FROM THAMSO
 
@@ -338,8 +336,8 @@ BEGIN
 	DECLARE @NGAYHETHAN datetime, @IDCUONSACH varchar(6), @IDDOCGIA varchar(6), @NGAYMUON datetime, @TINHTRANG nvarchar(20), @NGHETHAN datetime
 		
 	SELECT @IDCUONSACH = IDCuonSach, @IDDOCGIA = IDDocGia, @NGAYMUON = NgayMuon
-	FROM INSERTED I, PHIEUMUON A
-	WHERE I.IDPhieuMuon = A.IDPhieuMuon
+	FROM INSERTED I, PHIEUMUON P
+	WHERE I.IDPhieuMuon = P.IDPhieuMuon
 	SELECT @NGAYHETHAN = NgayHetHan
 	FROM THEDOCGIA
 	WHERE @IDDOCGIA = IDDocGia
@@ -347,9 +345,9 @@ BEGIN
 	FROM CUONSACH
 	WHERE @IDCUONSACH = IDCuonSach	
 
-	IF((@NGAYHETHAN <= @NGAYMUON) OR (@TINHTRANG = N'Cho mượn') OR EXISTS (SELECT * FROM PHIEUMUON A 
-																		   WHERE HanTra < @NGAYMUON 
-																		   AND NOT EXISTS(SELECT * FROM CT_PHIEUTRA B WHERE A.IDPhieuMuon = B.IDPhieuMuon)))
+	IF((@NGAYHETHAN <= @NGAYMUON) OR (@TINHTRANG = N'Cho mượn') OR EXISTS (SELECT * FROM PHIEUMUON A, CT_PHIEUMUON B
+																		   WHERE A.IDPhieuMuon = B.IDPhieuMuon AND A.HanTra < @NGAYMUON
+																		   AND NOT EXISTS(SELECT * FROM PHIEUTRA C, CT_PHIEUTRA D WHERE C.IDPhieuTra = D.IDCTPhieuTra AND D.IDCTPhieuMuon = B.IDCTPhieuMuon)))
 	BEGIN
 		PRINT N'Lỗi: Chỉ cho mượn với thẻ còn hạn, không có sách mượn quá hạn, và sách không có người đang mượn'
 		ROLLBACK TRANSACTION
@@ -440,8 +438,8 @@ BEGIN
 	SELECT @SOTIENTHU = SoTienThu
 	FROM INSERTED
 	SELECT @TONGNO = TongNo
-	FROM INSERTED I, THEDOCGIA A
-	WHERE I.IDDocGia = A.IDDocGia
+	FROM INSERTED I, THEDOCGIA T
+	WHERE I.IDDocGia = T.IDDocGia
 	SELECT @APDUNGQDSOTIENTHU = ApDungQDSoTienThu
 	FROM THAMSO
 	

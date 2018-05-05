@@ -705,12 +705,14 @@
             // 
             this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tHEDOCGIABindingSource, "IDDocGia", true));
             this.cbb_IDDelete.DataSource = this.tHEDOCGIABindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDDocGia";
             this.cbb_IDDelete.Font = new System.Drawing.Font("Tahoma", 15F);
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 127);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
             this.cbb_IDDelete.Size = new System.Drawing.Size(170, 44);
             this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "IDDocGia";
             // 
             // label8
             // 

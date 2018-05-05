@@ -33,6 +33,10 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatTraSach.Instance.checkTraSach(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_TienPhatKiNay.Text, tb_SoTienTra.Text, tb_TienNoKiNay.Text);
+            if(tb_IDPhieuTra.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayTra.Text != "" && tb_TienPhatKiNay.Text != "" && tb_SoTienTra.Text != "" && tb_TienNoKiNay.Text != "")
+            {
+                //Hàm thêm
+            }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

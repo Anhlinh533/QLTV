@@ -45,6 +45,11 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
+            if(tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "" && cbb_TinhTrang.Text != "" )
+            {
+                // Hàm thêm
+
+            }
         }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
