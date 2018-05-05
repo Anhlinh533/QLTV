@@ -24,11 +24,9 @@ namespace QLTV.SCRIPT
             }
         }
 
-        public string returnIDPhieuTra(string id)
+        public void returnIDPhieuTra(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "IPT" + id;
-            return IDDocGia;
+            id = "IPT" + id;
         }
         public void checkTraSach(string IDPhieuTra,string IDDocGia,string NgayTra,string TienPhatKiNay, string SoTienTra,string TienNoKiNay)
         {

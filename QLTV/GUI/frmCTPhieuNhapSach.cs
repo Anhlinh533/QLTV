@@ -29,6 +29,16 @@ namespace QLTV.GUI
 
         }
 
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            SCRIPT.formatCTPhieuNhapSach.Instance.checkCTPhieuNhapSach(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text, tb_ThanhTien.Text);
+            if (tb_DonGia.Text != "" && tb_IDCTPhieuNhap.Text != "" && tb_SoLuong.Text != "" && tb_ThanhTien.Text != "" && cbb_IDPhieuNhap.Text != "" && cbb_IDSach.Text != "")
+            {
+                ADO.adoCTPhieuNhapSach.Instance.Them(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
+                this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
+            }
+        }
+
         private void btn_Sua_Click(object sender, EventArgs e)
         {
 
@@ -42,17 +52,7 @@ namespace QLTV.GUI
         private void btn_Reset_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn_Them_Click(object sender, EventArgs e)
-        {
-            SCRIPT.formatCTPhieuNhapSach.Instance.checkCTPhieuNhapSach(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text, tb_ThanhTien.Text);
-            if(tb_DonGia.Text!="" && tb_IDCTPhieuNhap.Text != "" && tb_SoLuong.Text != "" && tb_ThanhTien.Text != "" && cbb_IDPhieuNhap.Text != "" && cbb_IDSach.Text != "" )
-            {
-                //Hàm thêm
-
-            }
-        }
+        }        
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {

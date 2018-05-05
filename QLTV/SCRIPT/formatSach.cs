@@ -23,11 +23,9 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatSach.instance = value;
             }
         }
-        public string returnIDSach(string id)
+        public void returnIDSach(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "ISA" + id;
-            return IDDocGia;
+            id = "ISA" + id;
         }
         public void checkSach(string IDSach,string IDDauSach, string NhaXuatBan, string NamXuatBan, string SoLuongTon, string GiaTien)
         {

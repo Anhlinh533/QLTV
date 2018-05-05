@@ -27,6 +27,16 @@ namespace QLTV.GUI
 
         }
 
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
+            if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "" && cbb_TinhTrang.Text != "")
+            {
+                ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
+                this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+            }
+        }
+
         private void btn_Sua_Click(object sender, EventArgs e)
         {
 
@@ -40,17 +50,7 @@ namespace QLTV.GUI
         private void btn_Reset_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn_Them_Click(object sender, EventArgs e)
-        {
-            SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
-            if(tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "" && cbb_TinhTrang.Text != "" )
-            {
-                // Hàm thêm
-
-            }
-        }
+        }        
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {

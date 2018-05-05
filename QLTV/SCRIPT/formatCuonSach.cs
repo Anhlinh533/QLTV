@@ -23,11 +23,9 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCuonSach.instance = value;
             }
         }
-        public string returnIDCuonSach(string id)
+        public void returnIDCuonSach(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "CSA" + id;
-            return IDDocGia;
+            id = "CSA" + id;
         }
         public void checkCuonSach(string IDCuonSach,string IDSach, string TinhTrang)
         {

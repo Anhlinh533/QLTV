@@ -133,12 +133,12 @@ namespace QLTV.ADO
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Thêm thành công", "Chú ý");
+                MessageBox.Show("Thành công", "Chú ý");
             }
             catch (Exception ex)
             {
                 string str = ex.Message;
-                str = str.Substring(67);
+                //str = str.Substring(67);
                 MessageBox.Show(str, "Chú ý");
             }
 

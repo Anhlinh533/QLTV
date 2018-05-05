@@ -22,11 +22,9 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatMuonSach.instance = value;
             }
         }
-        public string returnIDPhieuMuon(string id)
+        public void returnIDPhieuMuon(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "IPM" + id;
-            return IDDocGia;
+            id = "IPM" + id;
         }
         public void checkPhieuMuonSach(string IDPhieuMuon,string IDDocGia, string NgayMuon)
         {

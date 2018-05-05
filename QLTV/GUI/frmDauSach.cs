@@ -27,6 +27,16 @@ namespace QLTV.GUI
 
         }
 
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            SCRIPT.formatDauSach.Instance.checkDauSach(tb_IDDauSach.Text, tb_TenDauSach.Text, cbb_IDTheLoaiSach.Text);
+            if (tb_IDDauSach.Text != "" && tb_TenDauSach.Text != "" && cbb_IDTheLoaiSach.Text != "")
+            {
+                ADO.adoDauSach.Instance.Them(tb_IDDauSach.Text, tb_TenDauSach.Text, cbb_IDTheLoaiSach.Text);
+                this.dAUSACHTableAdapter.Fill(this.quanLyThuVienDataSet.DAUSACH);
+            }
+        }
+
         private void btn_Sua_Click(object sender, EventArgs e)
         {
 
@@ -40,17 +50,7 @@ namespace QLTV.GUI
         private void btn_Reset_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn_Them_Click(object sender, EventArgs e)
-        {
-            SCRIPT.formatDauSach.Instance.checkDauSach(tb_IDDauSach.Text, tb_TenDauSach.Text, cbb_IDTheLoaiSach.Text);
-            if(tb_IDDauSach.Text != "" && tb_TenDauSach.Text != "" && cbb_IDTheLoaiSach.Text != "" )
-            {
-                //Hàm thêm
-
-            }
-        }
+        }        
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {

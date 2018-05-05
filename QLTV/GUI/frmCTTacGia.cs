@@ -39,8 +39,8 @@ namespace QLTV.GUI
             SCRIPT.formatCTTacGia.Instance.checkCTTacGia(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
             if(tb_IDCTTacGia.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDTacGia.Text != "" )
             {
-                //Hàm thêm
-
+                ADO.adoCTTacGia.Instance.Them(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
+                this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
             }
         }
 

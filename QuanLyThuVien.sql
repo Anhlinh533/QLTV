@@ -32,8 +32,8 @@ CREATE TABLE THEDOCGIA
 )
 --DROP TABLE THEDOCGIA
 
-INSERT INTO THEDOCGIA(IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe) VALUES ('IDG001', N'Nguyễn Văn A', '1/1/1990', N'bá', 'b@yahoo.com', 'LDG002', '1/1/2018')
-INSERT INTO THEDOCGIA(IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe) VALUES ('IDG002', N'Nguyễn Văn B', '1/1/1990', N'bá', 'b@yahoo.com', 'LDG002', '1/1/2018')
+INSERT INTO THEDOCGIA(IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe) VALUES ('IDG001', N'Nguyễn Văn A', '1/1/1990', N'á', 'b@yahoo.com', 'LDG001', '1/1/2018')
+INSERT INTO THEDOCGIA(IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe) VALUES ('IDG002', N'Nguyễn Văn B', '1/1/1997', N'ố', 'b@yahoo.com', 'LDG002', '6/9/2016')
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ SACH _________________________________________________________________--
@@ -95,16 +95,16 @@ CREATE TABLE CT_TACGIA
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ PHIEUNHAPSACH ________________________________________________________--
---3
+--3 ************
 CREATE TABLE PHIEUNHAPSACH
 (
 	IDPhieuNhap varchar(6) PRIMARY KEY NOT NULL,
 	NgayNhap datetime NOT NULL,
-	TongTien money NOT NULL
+	TongTien money NOT NULL --
 )
 --DROP TABLE PHIEUNHAPSACH
 
---3.1
+--3.1 ************
 CREATE TABLE CT_PHIEUNHAPSACH
 (
 	IDCTPhieuNhap varchar(6) PRIMARY KEY NOT NULL,
@@ -112,7 +112,7 @@ CREATE TABLE CT_PHIEUNHAPSACH
 	IDSach varchar(6) FOREIGN KEY REFERENCES SACH(IDSach),
 	SoLuong int NOT NULL,
 	DonGia money NOT NULL,
-	ThanhTien money NOT NULL
+	ThanhTien money NOT NULL --
 )
 --DROP TABLE CT_PHIEUNHAPSACH
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -139,40 +139,40 @@ CREATE TABLE CT_PHIEUMUON
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ PHIEUTRA _____________________________________________________________--
---5
+--5 ************
 CREATE TABLE PHIEUTRA
 (
 	IDPhieuTra varchar(6) PRIMARY KEY NOT NULL,
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia),
 	NgayTra datetime NOT NULL,
-	TienPhatKyNay money NOT NULL,
+	TienPhatKyNay money NOT NULL, --
 	SoTienTra money NOT NULL,
-	TienNoKyNay money NOT NULL
+	TienNoKyNay money NOT NULL --
 )
 --DROP TABLE PHIEUTRA
 
---5.1
+--5.1 ************
 CREATE TABLE CT_PHIEUTRA
 (
 	IDCTPhieuTra varchar(6) PRIMARY KEY NOT NULL,
 	IDPhieuTra varchar(6) FOREIGN KEY REFERENCES PHIEUTRA(IDPhieuTra),
-	IDCuonSach varchar(6) FOREIGN KEY REFERENCES CUONSACH(IDCuonSach),
-	IDCTPhieuMuon varchar(6) FOREIGN KEY REFERENCES CT_PHIEUMUON(IDCTPhieuMuon),
-	SoNgayMuon int NOT NULL,
-	TienPhat money DEFAULT(0)
+	IDCuonSach varchar(6) FOREIGN KEY REFERENCES CUONSACH(IDCuonSach), --+
+	IDCTPhieuMuon varchar(6) FOREIGN KEY REFERENCES CT_PHIEUMUON(IDCTPhieuMuon), --
+	SoNgayMuon int NOT NULL, --
+	TienPhat money DEFAULT(0) --
 )
 --DROP TABLE CT_PHIEUTRA
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ PHIEUTHUTIENPHAT _____________________________________________________--
---6
+--6 ************
 CREATE TABLE PHIEUTHUTIENPHAT
 (
 	IDPhieuThu varchar(6) PRIMARY KEY NOT NULL,	
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia),
 	NgayLap datetime NOT NULL,
 	SoTienThu money NOT NULL,
-	ConLai money NOT NULL
+	ConLai money NOT NULL --
 )
 --DROP TABLE PHIEUTHUTIENPHAT
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -183,7 +183,7 @@ CREATE TABLE BCTINHHINHMUONSACH
 (
 	IDBCMuonSach varchar(6) PRIMARY KEY NOT NULL,
 	ThangNam int NOT NULL,
-	TongSoLuotMuon int NOT NULL
+	TongSoLuotMuon int NOT NULL --
 )
 --DROP TABLE BCTINHHINHMUONSACH
 
@@ -193,8 +193,8 @@ CREATE TABLE CT_BCTINHHINHMUONSACH
 	IDCTBCMuonSach varchar(6) PRIMARY KEY NOT NULL,
 	IDBCMuonSach varchar(6) FOREIGN KEY REFERENCES BCTINHHINHMUONSACH(IDBCMuonSach),
 	IDLoaiSach varchar(6) FOREIGN KEY REFERENCES LOAISACH(IDLoaiSach),
-	SoLuotMuon int NOT NULL,
-	TiLe float NOT NULL
+	SoLuotMuon int NOT NULL, --
+	TiLe float NOT NULL --
 )
 --DROP TABLE CT_BCTINHHINHMUONSACH
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -207,7 +207,7 @@ CREATE TABLE BCSACHTRATRE
 	NgayThangNam datetime NOT NULL,
 	IDCuonSach  varchar(6) FOREIGN KEY REFERENCES CUONSACH(IDCuonSach),
 	IDPhieuMuon varchar(6) FOREIGN KEY REFERENCES PHIEUMUON(IDPhieuMuon),
-	SoNgayTraTre int NOT NULL
+	SoNgayTraTre int NOT NULL --
 )
 --DROP TABLE BCSACHTRATRE
 --------------------------------------------------------------------------------------------------------------------------------------

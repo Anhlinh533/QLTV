@@ -25,21 +25,16 @@ namespace QLTV.GUI
 
         }
 
-        private void btn_IDDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDPhieuMuon.Text, tb_SoNgayMuon.Text, tb_TienPhat.Text);
-            if(tb_IDCTPhieuTra.Text != "" && tb_SoNgayMuon.Text != "" && tb_TienPhat.Text != "" && cbb_IDPhieuMuon.Text != "" && cbb_IDPhieuTra.Text != "" )
+            if (tb_IDCTPhieuTra.Text != "" && tb_SoNgayMuon.Text != "" && tb_TienPhat.Text != "" && cbb_IDPhieuMuon.Text != "" && cbb_IDPhieuTra.Text != "")
             {
-                //Hàm thêm
-
+                //ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
+                this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
             }
         }
-
+        
         private void btn_Sua_Click(object sender, EventArgs e)
         {
 
@@ -51,6 +46,11 @@ namespace QLTV.GUI
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_IDDelete_Click(object sender, EventArgs e)
         {
 
         }

@@ -24,11 +24,9 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCTMuonSach.instance = value;
             }
         }
-        public string returnIDCTMuonSach(string id)
+        public void returnIDCTMuonSach(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "CPM" + id;
-            return IDDocGia;
+            id = "CPM" + id;        
         }
         public void checkCTMuonSach(string IDCTPhieuMuon, string IDPhieuMuon, string IDCuonSach)
         {
