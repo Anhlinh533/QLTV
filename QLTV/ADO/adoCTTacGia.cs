@@ -24,6 +24,25 @@ namespace QLTV.ADO
             }
         }
 
+        public void Them(string tb_IDCTTacGia, string cbb_IDDauSach, string cbb_IDTacGia)
+        {
+            SCRIPT.formatCTTacGia.Instance.returnIDCTTacGia(ref tb_IDCTTacGia);
+            string sqlInsert = "INSERT INTO CT_TACGIA VALUES ('" + tb_IDCTTacGia + "','" + cbb_IDDauSach + "','" + cbb_IDTacGia + "')";
+            ADO.ConnectionSQL.Instance.Execute(sqlInsert);
+        }
 
+        public void Xoa(string tb_IDCTTacGia)
+        {
+            //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
+            string sqlDelete = "DELETE FROM CT_TACGIA WHERE IDCTTacGia ='" + tb_IDCTTacGia + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlDelete);
+        }
+
+        public void Sua(string tb_IDCTTacGia, string cbb_IDDauSach, string cbb_IDTacGia)
+        {
+            SCRIPT.formatCTTacGia.Instance.returnIDCTTacGia(ref tb_IDCTTacGia);
+            string sqlUpdate = "UPDATE CT_TACGIA SET IDDauSach = '" + cbb_IDDauSach + "', IDTacGia = '" + cbb_IDTacGia + "' WHERE IDCTTacGia = '" + tb_IDCTTacGia + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
     }
 }

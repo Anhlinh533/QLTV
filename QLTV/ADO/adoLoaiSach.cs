@@ -24,6 +24,25 @@ namespace QLTV.ADO
             }
         }
 
+        public void Them(string tb_IDLoaiSach, string tb_TenLoaiSach)
+        {
+            SCRIPT.formatLoaiSach.Instance.returnIDLoaiSach(ref tb_IDLoaiSach);
+            string sqlInsert = "INSERT INTO LOAISACH VALUES ('" + tb_IDLoaiSach + "',N'" + tb_TenLoaiSach + "')";
+            ADO.ConnectionSQL.Instance.Execute(sqlInsert);
+        }
 
+        public void Xoa(string tb_IDLoaiSach)
+        {
+            //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
+            string sqlDelete = "DELETE FROM LOAISACH WHERE IDLoaiSach ='" + tb_IDLoaiSach + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlDelete);
+        }
+
+        public void Sua(string tb_IDLoaiSach, string tb_TenLoaiSach)
+        {
+            SCRIPT.formatLoaiSach.Instance.returnIDLoaiSach(ref tb_IDLoaiSach);
+            string sqlUpdate = "UPDATE LOAISACH SET TenLoaiSach = N'" + tb_TenLoaiSach + "' WHERE IDLoaiSach = '" + tb_IDLoaiSach + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
     }
 }

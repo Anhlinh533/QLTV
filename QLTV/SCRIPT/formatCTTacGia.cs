@@ -24,11 +24,9 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCTTacGia.instance = value;
             }
         }
-        public string returnIDCTTacGia(string id)
+        public void returnIDCTTacGia(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "CTG" + id;
-            return IDDocGia;
+            id = "CTG" + id;            
         }
         public void checkCTTacGia(string IDChiTietTacGia, string IDDauSach, string IDTacGia)
         {

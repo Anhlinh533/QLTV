@@ -24,11 +24,9 @@ namespace QLTV.SCRIPT
             }
 
         }
-        public string returnIDLoaiSach(string id)
+        public void returnIDLoaiSach(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "LSA" + id;
-            return IDDocGia;
+            id = "LSA" + id;
         }
         public void checkLoaiSach(string IDLoaiSach, string TenLoaiSach)
         {

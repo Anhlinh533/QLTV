@@ -317,6 +317,105 @@ D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmUsers.resources
 D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
 D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
 D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
+<<<<<<< HEAD
 C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\QLTV.exe.config
 C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.exe
 C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.pdb
+=======
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\QLTV.exe.config
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.exe
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.pdb
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\QLTV.exe
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\QLTV.pdb
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Data.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Office.v17.2.Core.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Printing.v17.2.Core.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.RichEdit.v17.2.Core.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Utils.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Xpo.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraBars.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Sparkline.v17.2.Core.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraEditors.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraLayout.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraNavBar.v17.2.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Pdf.v17.2.Core.xml
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Data.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Data.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Data.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Data.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.DataAccess.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.DataAccess.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.DataAccess.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.DataAccess.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Office.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Office.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Office.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Utils.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Utils.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Utils.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Utils.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Xpo.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Xpo.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Xpo.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Xpo.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraBars.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraBars.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraBars.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraBars.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraEditors.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraEditors.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraEditors.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraEditors.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraLayout.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraLayout.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraLayout.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraLayout.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraNavBar.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraNavBar.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraNavBar.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraNavBar.v17.2.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTMuonSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTPhieuNhapSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTTacGia.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTTraSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCuonSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDauSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmLoaiSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.frmMain.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmMuonSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmPhieuNhapSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTacGia.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTheDocGia.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKDocGia.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKMuonSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKTacGia.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKTraSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTraSach.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTuoiDocGia.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmUsers.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
+>>>>>>> a896779cfdcb8f9e2a56e6f36ff851078ecc9961

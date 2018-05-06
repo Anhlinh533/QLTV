@@ -24,11 +24,9 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCTTraSach.instance = value;
             }
         }
-        public string returnIDCTTraSach(string id)
+        public void returnIDCTTraSach(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "CPT" + id;
-            return IDDocGia;
+            id = "CPT" + id;
         }
         public void checkCTTraSach(string IDChiTietPhieuTra, string IDPhieuTra, string IDPhieuMuon,string SoNgayMuon,string TienPhat)
         {

@@ -25,12 +25,12 @@ namespace QLTV.SCRIPT
             }
         }
 
-        public void returnIDDocGia(ref string tb_IDDocGia)
+        public void returnIDDocGia(ref string id)
         {
-            tb_IDDocGia = "IDG" + tb_IDDocGia;
+            id = "IDG" + id;
         }
 
-        public bool checkTheDocGia(string IDDocGia, string HoTen, string NgaySinh, string DiaChi, string Email, string LoaiDocGia, string NgayLapThe)
+        public void checkTheDocGia(string IDDocGia, string HoTen, string NgaySinh, string DiaChi, string Email, string LoaiDocGia, string NgayLapThe)
         {
             if (IDDocGia == "") MessageBox.Show("Không được để trống ID độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (HoTen == "") MessageBox.Show("Không được để trống họ tên độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -40,8 +40,7 @@ namespace QLTV.SCRIPT
             else if (NgaySinh == "") MessageBox.Show("Không được để trống ngày sinh.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (LoaiDocGia == "") MessageBox.Show("Không được để trống loại độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (!checkType.Instance.checkIsMail(Email)) MessageBox.Show("Email sai định dạng vui lòng nhập lại Email.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else return true;
-            return false;
+            
             //else if (IDDocGia != "" && HoTen != "" && Email != "" && DiaChi != "" && LoaiDocGia != "" && NgayLapThe != null && NgaySinh != null)
             //{
             //    sql = "INSERT INTO THEDOCGIA VALUES ("+IDDocGia+", "+HoTen+"," +NgaySinh+"," + DiaChi + ", "+Email+", "+LoaiDocGia+", "+ NgayLapThe+", NULL, NULL";

@@ -23,12 +23,12 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatDauSach.instance = value;
             }
         }
-        public string returnIDDauSach(string id)
+
+        public void returnIDDauSach(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "DSA" + id;
-            return IDDocGia;
+            id = "DSA" + id;
         }
+
         public void checkDauSach(string IDDauSach, string TenDauSach,string IDTheLoaiSach)
         {
             if (IDDauSach=="") MessageBox.Show("Không được để trống ID đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);

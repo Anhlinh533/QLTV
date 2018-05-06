@@ -23,6 +23,25 @@ namespace QLTV.ADO
             }
         }
 
+        public void Them(string tb_IDPhieuNhap, string dtp_NgayNhap)
+        {
+            SCRIPT.formatPhieuNhapSach.Instance.returnIDPhieuNhapSach(ref tb_IDPhieuNhap);
+            string sqlInsert = "INSERT INTO PHIEUNHAPSACH (IDPhieuNhap, NgayNhap) VALUES ('" + tb_IDPhieuNhap + "','" + dtp_NgayNhap + "')";
+            ADO.ConnectionSQL.Instance.Execute(sqlInsert);
+        }
 
+        public void Xoa(string tb_IDPhieuNhap)
+        {
+            //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
+            string sqlDelete = "DELETE FROM PHIEUNHAPSACH WHERE IDPhieuNhap ='" + tb_IDPhieuNhap + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlDelete);
+        }
+
+        public void Sua(string tb_IDPhieuNhap, string dtp_NgayNhap)
+        {
+            SCRIPT.formatPhieuNhapSach.Instance.returnIDPhieuNhapSach(ref tb_IDPhieuNhap);
+            string sqlUpdate = "UPDATE PHIEUNHAPSACH SET NgayNhap = '" + dtp_NgayNhap + "' WHERE IDPhieuNhap = '" + tb_IDPhieuNhap + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
     }
 }

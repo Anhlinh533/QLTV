@@ -70,23 +70,17 @@
             this.lOAISACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAISACHTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
-            this.item_Them.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDauSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).BeginInit();
-            this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -95,13 +89,14 @@
             this.navigationPane1.Controls.Add(this.item_Xoa);
             this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationPane1.Location = new System.Drawing.Point(0, 0);
+            this.navigationPane1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.navigationPane1.Name = "navigationPane1";
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.item_Them,
             this.item_Xoa});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1562, 1033);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(913, 512);
             this.navigationPane1.SelectedPage = this.item_Them;
-            this.navigationPane1.Size = new System.Drawing.Size(1562, 1033);
+            this.navigationPane1.Size = new System.Drawing.Size(913, 512);
             this.navigationPane1.TabIndex = 2;
             this.navigationPane1.Text = "navigationPane1";
             // 
@@ -110,9 +105,11 @@
             this.item_Them.Caption = "Thêm đầu sách";
             this.item_Them.Controls.Add(this.groupControl2);
             this.item_Them.Controls.Add(this.groupControl1);
+            this.item_Them.Enabled = true;
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
+            this.item_Them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1472, 952);
+            this.item_Them.Size = new System.Drawing.Size(839, 452);
             // 
             // groupControl2
             // 
@@ -125,9 +122,10 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.dgv_ThemDauSach);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
-            this.groupControl2.Location = new System.Drawing.Point(452, 0);
+            this.groupControl2.Location = new System.Drawing.Point(301, 0);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1020, 951);
+            this.groupControl2.Size = new System.Drawing.Size(527, 437);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu đầu sách";
             // 
@@ -143,10 +141,11 @@
             this.tenDauSachDataGridViewTextBoxColumn,
             this.iDLoaiSachDataGridViewTextBoxColumn});
             this.dgv_ThemDauSach.DataSource = this.dAUSACHBindingSource;
-            this.dgv_ThemDauSach.Location = new System.Drawing.Point(6, 95);
+            this.dgv_ThemDauSach.Location = new System.Drawing.Point(4, 65);
+            this.dgv_ThemDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_ThemDauSach.Name = "dgv_ThemDauSach";
             this.dgv_ThemDauSach.RowTemplate.Height = 28;
-            this.dgv_ThemDauSach.Size = new System.Drawing.Size(1011, 853);
+            this.dgv_ThemDauSach.Size = new System.Drawing.Size(521, 370);
             this.dgv_ThemDauSach.TabIndex = 2;
             // 
             // iDDauSachDataGridViewTextBoxColumn
@@ -156,7 +155,7 @@
             this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
             this.iDDauSachDataGridViewTextBoxColumn.MaxInputLength = 6;
             this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
-            this.iDDauSachDataGridViewTextBoxColumn.Width = 192;
+            this.iDDauSachDataGridViewTextBoxColumn.Width = 129;
             // 
             // tenDauSachDataGridViewTextBoxColumn
             // 
@@ -165,7 +164,7 @@
             this.tenDauSachDataGridViewTextBoxColumn.HeaderText = "Tên đầu sách";
             this.tenDauSachDataGridViewTextBoxColumn.MaxInputLength = 200;
             this.tenDauSachDataGridViewTextBoxColumn.Name = "tenDauSachDataGridViewTextBoxColumn";
-            this.tenDauSachDataGridViewTextBoxColumn.Width = 210;
+            this.tenDauSachDataGridViewTextBoxColumn.Width = 141;
             // 
             // iDLoaiSachDataGridViewTextBoxColumn
             // 
@@ -174,7 +173,7 @@
             this.iDLoaiSachDataGridViewTextBoxColumn.HeaderText = "ID thể loại sách";
             this.iDLoaiSachDataGridViewTextBoxColumn.MaxInputLength = 6;
             this.iDLoaiSachDataGridViewTextBoxColumn.Name = "iDLoaiSachDataGridViewTextBoxColumn";
-            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 181;
+            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 123;
             // 
             // dAUSACHBindingSource
             // 
@@ -201,14 +200,14 @@
             this.toolStripSeparator2,
             this.toolStripLabel3,
             this.btn_Reset});
-            this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 31);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1014, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(523, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -216,7 +215,7 @@
             // 
             this.toolStripLabel1.ForeColor = System.Drawing.Color.Red;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(42, 28);
+            this.toolStripLabel1.Size = new System.Drawing.Size(26, 28);
             this.toolStripLabel1.Text = "Sửa";
             this.toolStripLabel1.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
@@ -239,7 +238,7 @@
             // 
             this.toolStripLabel2.ForeColor = System.Drawing.Color.Red;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(43, 28);
+            this.toolStripLabel2.Size = new System.Drawing.Size(27, 28);
             this.toolStripLabel2.Text = "Xóa";
             this.toolStripLabel2.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
@@ -262,7 +261,7 @@
             // 
             this.toolStripLabel3.ForeColor = System.Drawing.Color.Red;
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(113, 28);
+            this.toolStripLabel3.Size = new System.Drawing.Size(74, 28);
             this.toolStripLabel3.Text = "Reset dữ liệu";
             this.toolStripLabel3.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
@@ -293,8 +292,9 @@
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(446, 951);
+            this.groupControl1.Size = new System.Drawing.Size(144, 437);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin đầu sách";
             // 
@@ -311,19 +311,20 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(145, 264);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_Them.Location = new System.Drawing.Point(97, 181);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 147);
+            this.btn_Them.Size = new System.Drawing.Size(85, 101);
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // tb_TenDauSach
             // 
-            this.tb_TenDauSach.Location = new System.Drawing.Point(245, 125);
+            this.tb_TenDauSach.Location = new System.Drawing.Point(163, 86);
+            this.tb_TenDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_TenDauSach.MaxLength = 200;
             this.tb_TenDauSach.Name = "tb_TenDauSach";
-            this.tb_TenDauSach.Size = new System.Drawing.Size(195, 44);
+            this.tb_TenDauSach.Size = new System.Drawing.Size(131, 32);
             this.tb_TenDauSach.TabIndex = 5;
             // 
             // cbb_IDTheLoaiSach
@@ -332,9 +333,10 @@
             this.cbb_IDTheLoaiSach.DataSource = this.lOAISACHBindingSource;
             this.cbb_IDTheLoaiSach.DisplayMember = "IDLoaiSach";
             this.cbb_IDTheLoaiSach.FormattingEnabled = true;
-            this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(245, 184);
+            this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(163, 126);
+            this.cbb_IDTheLoaiSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbb_IDTheLoaiSach.Name = "cbb_IDTheLoaiSach";
-            this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(195, 44);
+            this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(131, 32);
             this.cbb_IDTheLoaiSach.TabIndex = 4;
             this.cbb_IDTheLoaiSach.ValueMember = "IDLoaiSach";
             // 
@@ -345,10 +347,11 @@
             // 
             // tb_IDDauSach
             // 
-            this.tb_IDDauSach.Location = new System.Drawing.Point(245, 66);
+            this.tb_IDDauSach.Location = new System.Drawing.Point(163, 45);
+            this.tb_IDDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_IDDauSach.MaxLength = 3;
             this.tb_IDDauSach.Name = "tb_IDDauSach";
-            this.tb_IDDauSach.Size = new System.Drawing.Size(195, 44);
+            this.tb_IDDauSach.Size = new System.Drawing.Size(131, 32);
             this.tb_IDDauSach.TabIndex = 3;
             this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
@@ -356,9 +359,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 187);
+            this.label3.Location = new System.Drawing.Point(4, 128);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 36);
+            this.label3.Size = new System.Drawing.Size(157, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "ID thể loại sách:";
             // 
@@ -366,9 +370,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 128);
+            this.label2.Location = new System.Drawing.Point(4, 88);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 36);
+            this.label2.Size = new System.Drawing.Size(136, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên đầu sách:";
             // 
@@ -376,9 +381,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(6, 69);
+            this.label1.Location = new System.Drawing.Point(4, 47);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 36);
+            this.label1.Size = new System.Drawing.Size(123, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID đầu sách:";
             // 
@@ -387,9 +393,11 @@
             this.item_Xoa.Caption = "Xóa theo ID";
             this.item_Xoa.Controls.Add(this.groupControl3);
             this.item_Xoa.Controls.Add(this.groupControl4);
+            this.item_Xoa.Enabled = true;
             this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.item_Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1472, 952);
+            this.item_Xoa.Size = new System.Drawing.Size(981, 651);
             // 
             // groupControl3
             // 
@@ -401,9 +409,10 @@
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.Controls.Add(this.dataGridView1);
-            this.groupControl3.Location = new System.Drawing.Point(388, 0);
+            this.groupControl3.Location = new System.Drawing.Point(259, 0);
+            this.groupControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1085, 952);
+            this.groupControl3.Size = new System.Drawing.Size(723, 651);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu đầu sách";
             // 
@@ -419,10 +428,11 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.dataGridView1.DataSource = this.dAUSACHBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 47);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 32);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1073, 899);
+            this.dataGridView1.Size = new System.Drawing.Size(715, 615);
             this.dataGridView1.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -432,7 +442,7 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "ID đầu sách";
             this.dataGridViewTextBoxColumn1.MaxInputLength = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 192;
+            this.dataGridViewTextBoxColumn1.Width = 129;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -441,7 +451,7 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Tên đầu sách";
             this.dataGridViewTextBoxColumn2.MaxInputLength = 200;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 210;
+            this.dataGridViewTextBoxColumn2.Width = 141;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -450,7 +460,7 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "ID thể loại sách";
             this.dataGridViewTextBoxColumn3.MaxInputLength = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 181;
+            this.dataGridViewTextBoxColumn3.Width = 123;
             // 
             // groupControl4
             // 
@@ -465,8 +475,9 @@
             this.groupControl4.Controls.Add(this.cbb_IDDelete);
             this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
+            this.groupControl4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(382, 952);
+            this.groupControl4.Size = new System.Drawing.Size(255, 651);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
             // 
@@ -483,10 +494,10 @@
             this.btn_IDDelete.ImageZoom = 50;
             this.btn_IDDelete.LabelPosition = 41;
             this.btn_IDDelete.LabelText = "Xóa";
-            this.btn_IDDelete.Location = new System.Drawing.Point(109, 203);
-            this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_IDDelete.Location = new System.Drawing.Point(73, 139);
+            this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_IDDelete.Name = "btn_IDDelete";
-            this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
+            this.btn_IDDelete.Size = new System.Drawing.Size(85, 100);
             this.btn_IDDelete.TabIndex = 3;
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
@@ -496,9 +507,10 @@
             this.cbb_IDDelete.DataSource = this.dAUSACHBindingSource;
             this.cbb_IDDelete.DisplayMember = "IDDauSach";
             this.cbb_IDDelete.FormattingEnabled = true;
-            this.cbb_IDDelete.Location = new System.Drawing.Point(12, 133);
+            this.cbb_IDDelete.Location = new System.Drawing.Point(8, 91);
+            this.cbb_IDDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
-            this.cbb_IDDelete.Size = new System.Drawing.Size(207, 44);
+            this.cbb_IDDelete.Size = new System.Drawing.Size(139, 32);
             this.cbb_IDDelete.TabIndex = 1;
             this.cbb_IDDelete.ValueMember = "IDDauSach";
             // 
@@ -506,9 +518,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(6, 75);
+            this.label4.Location = new System.Drawing.Point(4, 51);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(297, 36);
+            this.label4.Size = new System.Drawing.Size(198, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "ID đầu sách cần xóa:";
             // 
@@ -522,19 +535,17 @@
             // 
             // frmDauSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1562, 1033);
+            this.ClientSize = new System.Drawing.Size(913, 512);
             this.Controls.Add(this.navigationPane1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDauSach";
             this.Text = "frmDauSach";
             this.Load += new System.EventHandler(this.frmDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
-            this.item_Them.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            this.groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDauSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
@@ -542,16 +553,10 @@
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).EndInit();
-            this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
-            this.groupControl4.ResumeLayout(false);
-            this.groupControl4.PerformLayout();
             this.ResumeLayout(false);
 
         }

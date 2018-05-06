@@ -23,11 +23,9 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatPhieuNhapSach.instance = value;
             }
         }
-        public string returnIDPhieuNhapSach(string id)
+        public void returnIDPhieuNhapSach(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "INS" + id;
-            return IDDocGia;
+            id = "INS" + id;
         }
         public void checkPhieuNhapSach(string IDPhieuNhap,string NgayNhap,string TongTien)
         {

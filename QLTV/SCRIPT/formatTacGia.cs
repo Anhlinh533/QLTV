@@ -24,11 +24,9 @@ namespace QLTV.SCRIPT
             }
         }
 
-        public string returnIDTacGia(string id)
+        public void returnIDTacGia(ref string id)
         {
-            string IDDocGia;
-            IDDocGia = "ITG" + id;
-            return IDDocGia;
+            id = "ITG" + id;
         }
         public void checkTacGia(string IDTacGia, string TenTacGia,string NgaySinh)
         {

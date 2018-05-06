@@ -24,6 +24,25 @@ namespace QLTV.ADO
             }
         }
 
+        public void Them(string tb_IDPhieuMuon, string cbb_IDDocGia, string dtp_NgayMuon)
+        {
+            SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
+            string sqlInsert = "INSERT INTO PHIEUMUON VALUES ('" + tb_IDPhieuMuon + "','" + cbb_IDDocGia + "','" + dtp_NgayMuon + "')";
+            ADO.ConnectionSQL.Instance.Execute(sqlInsert);
+        }
 
+        public void Xoa(string tb_IDPhieuMuon)
+        {
+            //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
+            string sqlDelete = "DELETE FROM PHIEUMUON WHERE IDPhieuMuon ='" + tb_IDPhieuMuon + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlDelete);
+        }
+
+        public void Sua(string tb_IDPhieuMuon, string cbb_IDDocGia, string dtp_NgayMuon)
+        {
+            SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
+            string sqlUpdate = "UPDATE PHIEUMUON SET IDDocGia = '" + cbb_IDDocGia + "', NgayMuon = '" + dtp_NgayMuon + "' WHERE IDPhieuMuon = '" + tb_IDPhieuMuon + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
     }
 }
