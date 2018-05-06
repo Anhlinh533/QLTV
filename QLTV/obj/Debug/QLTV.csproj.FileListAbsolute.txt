@@ -317,3 +317,6 @@ D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmUsers.resources
 D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
 D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
 D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.pdb
