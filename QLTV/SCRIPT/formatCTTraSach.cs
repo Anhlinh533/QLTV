@@ -28,13 +28,11 @@ namespace QLTV.SCRIPT
         {
             id = "CPT" + id;
         }
-        public void checkCTTraSach(string IDChiTietPhieuTra, string IDPhieuTra, string IDPhieuMuon,string SoNgayMuon,string TienPhat)
+        public void checkCTTraSach(string IDChiTietPhieuTra, string IDPhieuTra, string IDCuonSach)
         {
-            if (IDChiTietPhieuTra=="") MessageBox.Show("Không được để trống ID chi tiết phiếu trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDPhieuTra=="") MessageBox.Show("Không được để trống ID phiếu trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDPhieuMuon=="") MessageBox.Show("Không được để trống ID phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(SoNgayMuon=="") MessageBox.Show("Không được để trống số ngày mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(TienPhat=="") MessageBox.Show("Không được để trống tiền phạt.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDChiTietPhieuTra == "") MessageBox.Show("Không được để trống ID chi tiết phiếu trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDPhieuTra == "") MessageBox.Show("Không được để trống ID phiếu trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDCuonSach == "") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

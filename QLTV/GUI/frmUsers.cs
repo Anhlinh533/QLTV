@@ -20,6 +20,8 @@ namespace QLTV.GUI
 
         private void frmUsers_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.THEDOCGIA' table. You can move, or remove it, as needed.
+            this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.
             this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
 

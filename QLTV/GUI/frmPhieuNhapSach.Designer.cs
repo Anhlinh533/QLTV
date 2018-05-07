@@ -48,11 +48,9 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.dtp_NgayNhap = new System.Windows.Forms.DateTimePicker();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
-            this.dtp_NgayNhap = new DevExpress.XtraEditors.DateEdit();
-            this.tb_TongTien = new System.Windows.Forms.TextBox();
             this.tb_IDPhieuNhap = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -78,8 +76,6 @@
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayNhap.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayNhap.Properties)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
@@ -282,11 +278,9 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.dtp_NgayNhap);
-            this.groupControl1.Controls.Add(this.tb_TongTien);
+            this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.tb_IDPhieuNhap);
-            this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
@@ -294,6 +288,14 @@
             this.groupControl1.Size = new System.Drawing.Size(437, 982);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin phiếu nhập sách";
+            // 
+            // dtp_NgayNhap
+            // 
+            this.dtp_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgayNhap.Location = new System.Drawing.Point(228, 135);
+            this.dtp_NgayNhap.Name = "dtp_NgayNhap";
+            this.dtp_NgayNhap.Size = new System.Drawing.Size(203, 44);
+            this.dtp_NgayNhap.TabIndex = 16;
             // 
             // btn_Them
             // 
@@ -308,34 +310,12 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(137, 276);
+            this.btn_Them.Location = new System.Drawing.Point(141, 215);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
-            // 
-            // dtp_NgayNhap
-            // 
-            this.dtp_NgayNhap.EditValue = null;
-            this.dtp_NgayNhap.Location = new System.Drawing.Point(228, 138);
-            this.dtp_NgayNhap.Name = "dtp_NgayNhap";
-            this.dtp_NgayNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_NgayNhap.Properties.Appearance.Options.UseFont = true;
-            this.dtp_NgayNhap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayNhap.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayNhap.Size = new System.Drawing.Size(203, 42);
-            this.dtp_NgayNhap.TabIndex = 5;
-            // 
-            // tb_TongTien
-            // 
-            this.tb_TongTien.Location = new System.Drawing.Point(228, 198);
-            this.tb_TongTien.Name = "tb_TongTien";
-            this.tb_TongTien.Size = new System.Drawing.Size(203, 44);
-            this.tb_TongTien.TabIndex = 4;
-            this.tb_TongTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuNhap
             // 
@@ -345,16 +325,6 @@
             this.tb_IDPhieuNhap.Size = new System.Drawing.Size(203, 44);
             this.tb_IDPhieuNhap.TabIndex = 3;
             this.tb_IDPhieuNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 201);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 36);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tổng tiền:";
             // 
             // label2
             // 
@@ -532,8 +502,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayNhap.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayNhap.Properties)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
@@ -567,11 +535,8 @@
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource pHIEUNHAPSACHBindingSource;
         private QuanLyThuVienDataSetTableAdapters.PHIEUNHAPSACHTableAdapter pHIEUNHAPSACHTableAdapter;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.DateEdit dtp_NgayNhap;
-        private System.Windows.Forms.TextBox tb_TongTien;
         private System.Windows.Forms.TextBox tb_IDPhieuNhap;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
         private System.Windows.Forms.DataGridView dgv_Delete;
@@ -584,5 +549,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DateTimePicker dtp_NgayNhap;
     }
 }

@@ -27,11 +27,10 @@ namespace QLTV.SCRIPT
         {
             id = "INS" + id;
         }
-        public void checkPhieuNhapSach(string IDPhieuNhap,string NgayNhap,string TongTien)
+        public void checkPhieuNhapSach(string IDPhieuNhap,string NgayNhap)
         {
             if(IDPhieuNhap=="") MessageBox.Show("Không được để trống ID phiếu nhập sách", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if(NgayNhap=="") MessageBox.Show("Không được để trống ngày nhập", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(TongTien=="") MessageBox.Show("Không được để trống tổng tiền", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

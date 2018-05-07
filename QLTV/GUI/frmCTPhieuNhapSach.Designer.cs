@@ -56,11 +56,9 @@
             this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cbb_IDPhieuNhap = new System.Windows.Forms.ComboBox();
             this.pHIEUNHAPSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tb_ThanhTien = new System.Windows.Forms.TextBox();
             this.tb_DonGia = new System.Windows.Forms.TextBox();
             this.tb_SoLuong = new System.Windows.Forms.TextBox();
             this.tb_IDCTPhieuNhap = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -330,11 +328,9 @@
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.cbb_IDSach);
             this.groupControl1.Controls.Add(this.cbb_IDPhieuNhap);
-            this.groupControl1.Controls.Add(this.tb_ThanhTien);
             this.groupControl1.Controls.Add(this.tb_DonGia);
             this.groupControl1.Controls.Add(this.tb_SoLuong);
             this.groupControl1.Controls.Add(this.tb_IDCTPhieuNhap);
-            this.groupControl1.Controls.Add(this.label6);
             this.groupControl1.Controls.Add(this.label5);
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label3);
@@ -359,7 +355,7 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(193, 464);
+            this.btn_Them.Location = new System.Drawing.Point(193, 396);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
@@ -400,14 +396,6 @@
             this.pHIEUNHAPSACHBindingSource.DataMember = "PHIEUNHAPSACH";
             this.pHIEUNHAPSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
-            // tb_ThanhTien
-            // 
-            this.tb_ThanhTien.Location = new System.Drawing.Point(327, 378);
-            this.tb_ThanhTien.Name = "tb_ThanhTien";
-            this.tb_ThanhTien.Size = new System.Drawing.Size(216, 44);
-            this.tb_ThanhTien.TabIndex = 9;
-            this.tb_ThanhTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
-            // 
             // tb_DonGia
             // 
             this.tb_DonGia.Location = new System.Drawing.Point(327, 318);
@@ -432,16 +420,6 @@
             this.tb_IDCTPhieuNhap.Size = new System.Drawing.Size(216, 44);
             this.tb_IDCTPhieuNhap.TabIndex = 6;
             this.tb_IDCTPhieuNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(6, 381);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(170, 36);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Thành tiền:";
             // 
             // label5
             // 
@@ -630,11 +608,15 @@
             // 
             // cbb_IDDelete
             // 
+            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cTPHIEUNHAPSACHBindingSource, "IDCTPhieuNhap", true));
+            this.cbb_IDDelete.DataSource = this.cTPHIEUNHAPSACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDCTPhieuNhap";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 145);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
             this.cbb_IDDelete.Size = new System.Drawing.Size(222, 44);
             this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "IDCTPhieuNhap";
             // 
             // label7
             // 
@@ -719,11 +701,9 @@
         private QuanLyThuVienDataSetTableAdapters.CT_PHIEUNHAPSACHTableAdapter cT_PHIEUNHAPSACHTableAdapter;
         private System.Windows.Forms.ComboBox cbb_IDSach;
         private System.Windows.Forms.ComboBox cbb_IDPhieuNhap;
-        private System.Windows.Forms.TextBox tb_ThanhTien;
         private System.Windows.Forms.TextBox tb_DonGia;
         private System.Windows.Forms.TextBox tb_SoLuong;
         private System.Windows.Forms.TextBox tb_IDCTPhieuNhap;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

@@ -41,6 +41,9 @@
             this.ribtab_SoNgayMuon = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_SoNgayMuonMax = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_SoSachMuonMax = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btn_SoSachMuonMax = new DevExpress.XtraBars.BarButtonItem();
+            this.ribtab_TienPhatMoiNgay = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btn_TienPhatMoiNgay = new DevExpress.XtraBars.BarButtonItem();
             this.rib_TimKiem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribtab_TKDocGia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_TKDocGia = new DevExpress.XtraBars.BarButtonItem();
@@ -81,9 +84,7 @@
             this.ribtab_DoiPWD = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rib_Users = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btn_SoSachMuonMax = new DevExpress.XtraBars.BarButtonItem();
-            this.ribtab_TienPhatMoiNgay = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btn_TienPhatMoiNgay = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).BeginInit();
             this.SuspendLayout();
@@ -126,6 +127,7 @@
             this.btn_TuoiDocGia.Name = "btn_TuoiDocGia";
             this.btn_TuoiDocGia.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TuoiDocGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TuoiDocGia_ItemClick);
             // 
             // ribtab_HanTheDocGia
             // 
@@ -141,6 +143,7 @@
             this.btn_HanThe.Name = "btn_HanThe";
             this.btn_HanThe.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_HanThe.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_HanThe_ItemClick);
             // 
             // ribtab_KhoangCachXuatBan
             // 
@@ -156,6 +159,7 @@
             this.ribtab_KhoangCachNamXuatBan.Name = "ribtab_KhoangCachNamXuatBan";
             this.ribtab_KhoangCachNamXuatBan.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.ribtab_KhoangCachNamXuatBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ribtab_KhoangCachNamXuatBan_ItemClick);
             // 
             // ribtab_SoNgayMuon
             // 
@@ -171,12 +175,39 @@
             this.btn_SoNgayMuonMax.Name = "btn_SoNgayMuonMax";
             this.btn_SoNgayMuonMax.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_SoNgayMuonMax.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_SoNgayMuonMax_ItemClick);
             // 
             // ribtab_SoSachMuonMax
             // 
             this.ribtab_SoSachMuonMax.ItemLinks.Add(this.btn_SoSachMuonMax);
             this.ribtab_SoSachMuonMax.Name = "ribtab_SoSachMuonMax";
             this.ribtab_SoSachMuonMax.Text = "Số sách mượn max";
+            // 
+            // btn_SoSachMuonMax
+            // 
+            this.btn_SoSachMuonMax.Caption = "Số sách mượn max";
+            this.btn_SoSachMuonMax.Id = 27;
+            this.btn_SoSachMuonMax.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
+            this.btn_SoSachMuonMax.Name = "btn_SoSachMuonMax";
+            this.btn_SoSachMuonMax.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_SoSachMuonMax.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_SoSachMuonMax_ItemClick);
+            // 
+            // ribtab_TienPhatMoiNgay
+            // 
+            this.ribtab_TienPhatMoiNgay.ItemLinks.Add(this.btn_TienPhatMoiNgay);
+            this.ribtab_TienPhatMoiNgay.Name = "ribtab_TienPhatMoiNgay";
+            this.ribtab_TienPhatMoiNgay.Text = "Tiền phạt mỗi ngày";
+            // 
+            // btn_TienPhatMoiNgay
+            // 
+            this.btn_TienPhatMoiNgay.Caption = "Tiền phạt mỗi ngày";
+            this.btn_TienPhatMoiNgay.Id = 28;
+            this.btn_TienPhatMoiNgay.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_money_64;
+            this.btn_TienPhatMoiNgay.Name = "btn_TienPhatMoiNgay";
+            this.btn_TienPhatMoiNgay.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TienPhatMoiNgay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TienPhatMoiNgay_ItemClick);
             // 
             // rib_TimKiem
             // 
@@ -508,10 +539,11 @@
             this.ribtab_KhoangCachNamXuatBan,
             this.btn_SoNgayMuonMax,
             this.btn_SoSachMuonMax,
-            this.btn_TienPhatMoiNgay});
+            this.btn_TienPhatMoiNgay,
+            this.barButtonItem1});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl.MaxItemId = 29;
+            this.ribbonControl.MaxItemId = 30;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rib_QuanLi,
@@ -550,29 +582,11 @@
             // 
             this.xtraTable.MdiParent = this;
             // 
-            // btn_SoSachMuonMax
+            // barButtonItem1
             // 
-            this.btn_SoSachMuonMax.Caption = "Số sách mượn max";
-            this.btn_SoSachMuonMax.Id = 27;
-            this.btn_SoSachMuonMax.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
-            this.btn_SoSachMuonMax.Name = "btn_SoSachMuonMax";
-            this.btn_SoSachMuonMax.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            // 
-            // ribtab_TienPhatMoiNgay
-            // 
-            this.ribtab_TienPhatMoiNgay.ItemLinks.Add(this.btn_TienPhatMoiNgay);
-            this.ribtab_TienPhatMoiNgay.Name = "ribtab_TienPhatMoiNgay";
-            this.ribtab_TienPhatMoiNgay.Text = "Tiền phạt mỗi ngày";
-            // 
-            // btn_TienPhatMoiNgay
-            // 
-            this.btn_TienPhatMoiNgay.Caption = "Tiền phạt mỗi ngày";
-            this.btn_TienPhatMoiNgay.Id = 28;
-            this.btn_TienPhatMoiNgay.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_money_64;
-            this.btn_TienPhatMoiNgay.Name = "btn_TienPhatMoiNgay";
-            this.btn_TienPhatMoiNgay.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem1.Caption = "barButtonItem1";
+            this.barButtonItem1.Id = 29;
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // frmMain
             // 
@@ -651,6 +665,7 @@
         private DevExpress.XtraBars.BarButtonItem btn_SoSachMuonMax;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_TienPhatMoiNgay;
         private DevExpress.XtraBars.BarButtonItem btn_TienPhatMoiNgay;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
 

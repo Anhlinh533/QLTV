@@ -20,6 +20,10 @@ namespace QLTV.GUI
 
         private void frmCTTraSach_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.PHIEUTRA' table. You can move, or remove it, as needed.
+            this.pHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUTRA);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CUONSACH' table. You can move, or remove it, as needed.
+            this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_PHIEUTRA' table. You can move, or remove it, as needed.
             this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
 
@@ -27,8 +31,8 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDPhieuMuon.Text, tb_SoNgayMuon.Text, tb_TienPhat.Text);
-            if (tb_IDCTPhieuTra.Text != "" && tb_SoNgayMuon.Text != "" && tb_TienPhat.Text != "" && cbb_IDPhieuMuon.Text != "" && cbb_IDPhieuTra.Text != "")
+            SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text,cbb_IDCuonSach.Text);
+            if (tb_IDCTPhieuTra.Text != ""  && cbb_IDPhieuTra.Text != "" && cbb_IDCuonSach.Text!="")
             {
                 //ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
                 this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);

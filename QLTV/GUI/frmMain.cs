@@ -127,6 +127,54 @@ namespace QLTV
             f.MdiParent = this;
             f.Show();
         }
+
+        private void btn_TuoiDocGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTuoiDocGia f = new frmTuoiDocGia();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_HanThe_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmHanThe f = new frmHanThe();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void ribtab_KhoangCachNamXuatBan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmKhoangCachXuatBan f = new frmKhoangCachXuatBan();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_SoNgayMuonMax_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmSoNgayMuonMax f = new frmSoNgayMuonMax();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_SoSachMuonMax_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmSoSachMuonMax f = new frmSoSachMuonMax();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_TienPhatMoiNgay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTienPhatMoiNgay f = new frmTienPhatMoiNgay();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
         #endregion
 
 
@@ -143,6 +191,7 @@ namespace QLTV
             }
             return false;
         }
+
 
 
 

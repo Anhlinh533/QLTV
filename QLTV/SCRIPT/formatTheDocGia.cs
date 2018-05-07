@@ -25,6 +25,8 @@ namespace QLTV.SCRIPT
             }
         }
 
+
+
         public void returnIDDocGia(ref string id)
         {
             id = "IDG" + id;

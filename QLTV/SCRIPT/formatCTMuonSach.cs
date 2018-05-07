@@ -34,5 +34,6 @@ namespace QLTV.SCRIPT
             else if(IDPhieuMuon=="") MessageBox.Show("Không được để trống ID phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if(IDCuonSach=="") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
     }
 }

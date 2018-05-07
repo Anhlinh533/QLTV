@@ -54,13 +54,9 @@
             this.dtp_NgayTra = new System.Windows.Forms.DateTimePicker();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
-            this.tb_TienPhatKiNay = new System.Windows.Forms.TextBox();
             this.tb_SoTienTra = new System.Windows.Forms.TextBox();
-            this.tb_TienNoKiNay = new System.Windows.Forms.TextBox();
             this.tb_IDPhieuTra = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -323,13 +319,9 @@
             this.groupControl1.Controls.Add(this.dtp_NgayTra);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.cbb_IDDocGia);
-            this.groupControl1.Controls.Add(this.tb_TienPhatKiNay);
             this.groupControl1.Controls.Add(this.tb_SoTienTra);
-            this.groupControl1.Controls.Add(this.tb_TienNoKiNay);
             this.groupControl1.Controls.Add(this.tb_IDPhieuTra);
-            this.groupControl1.Controls.Add(this.label6);
             this.groupControl1.Controls.Add(this.label5);
-            this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
@@ -360,7 +352,7 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(165, 450);
+            this.btn_Them.Location = new System.Drawing.Point(141, 321);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
@@ -375,26 +367,12 @@
             this.cbb_IDDocGia.Size = new System.Drawing.Size(203, 44);
             this.cbb_IDDocGia.TabIndex = 10;
             // 
-            // tb_TienPhatKiNay
-            // 
-            this.tb_TienPhatKiNay.Location = new System.Drawing.Point(253, 258);
-            this.tb_TienPhatKiNay.Name = "tb_TienPhatKiNay";
-            this.tb_TienPhatKiNay.Size = new System.Drawing.Size(203, 44);
-            this.tb_TienPhatKiNay.TabIndex = 9;
-            // 
             // tb_SoTienTra
             // 
-            this.tb_SoTienTra.Location = new System.Drawing.Point(253, 318);
+            this.tb_SoTienTra.Location = new System.Drawing.Point(253, 258);
             this.tb_SoTienTra.Name = "tb_SoTienTra";
             this.tb_SoTienTra.Size = new System.Drawing.Size(203, 44);
             this.tb_SoTienTra.TabIndex = 8;
-            // 
-            // tb_TienNoKiNay
-            // 
-            this.tb_TienNoKiNay.Location = new System.Drawing.Point(253, 378);
-            this.tb_TienNoKiNay.Name = "tb_TienNoKiNay";
-            this.tb_TienNoKiNay.Size = new System.Drawing.Size(203, 44);
-            this.tb_TienNoKiNay.TabIndex = 7;
             // 
             // tb_IDPhieuTra
             // 
@@ -405,35 +383,15 @@
             this.tb_IDPhieuTra.TabIndex = 6;
             this.tb_IDPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(6, 381);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(215, 36);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Tiền nợ kì này:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(6, 321);
+            this.label5.Location = new System.Drawing.Point(6, 261);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(164, 36);
             this.label5.TabIndex = 4;
             this.label5.Text = "Số tiền trả:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(6, 261);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 36);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Tiền phạt kì này:";
             // 
             // label3
             // 
@@ -675,13 +633,9 @@
         private System.Windows.Forms.BindingSource pHIEUTRABindingSource;
         private QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter pHIEUTRATableAdapter;
         private System.Windows.Forms.ComboBox cbb_IDDocGia;
-        private System.Windows.Forms.TextBox tb_TienPhatKiNay;
         private System.Windows.Forms.TextBox tb_SoTienTra;
-        private System.Windows.Forms.TextBox tb_TienNoKiNay;
         private System.Windows.Forms.TextBox tb_IDPhieuTra;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

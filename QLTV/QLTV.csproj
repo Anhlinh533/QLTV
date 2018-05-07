@@ -51,6 +51,30 @@
     <Reference Include="DevExpress.XtraEditors.v17.2" />
     <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -119,6 +143,18 @@
     <Compile Include="GUI\frmDauSach.Designer.cs">
       <DependentUpon>frmDauSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmHanThe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHanThe.Designer.cs">
+      <DependentUpon>frmHanThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmKhoangCachXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmKhoangCachXuatBan.Designer.cs">
+      <DependentUpon>frmKhoangCachXuatBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmLoaiSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,11 +179,35 @@
     <Compile Include="GUI\frmPhieuNhapSach.Designer.cs">
       <DependentUpon>frmPhieuNhapSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmReportSachTraTre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmReportSachTraTre.Designer.cs">
+      <DependentUpon>frmReportSachTraTre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmReportTinhHinhMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmReportTinhHinhMuonSach.Designer.cs">
+      <DependentUpon>frmReportTinhHinhMuonSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmSach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmSach.Designer.cs">
       <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmSoNgayMuonMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSoNgayMuonMax.Designer.cs">
+      <DependentUpon>frmSoNgayMuonMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmSoSachMuonMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSoSachMuonMax.Designer.cs">
+      <DependentUpon>frmSoSachMuonMax.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmTacGia.cs">
       <SubType>Form</SubType>
@@ -160,6 +220,12 @@
     </Compile>
     <Compile Include="GUI\frmTheDocGia.Designer.cs">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTienPhatMoiNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmTienPhatMoiNgay.Designer.cs">
+      <DependentUpon>frmTienPhatMoiNgay.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmTKDocGia.cs">
       <SubType>Form</SubType>
@@ -251,6 +317,12 @@
     <EmbeddedResource Include="GUI\frmDauSach.resx">
       <DependentUpon>frmDauSach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHanThe.resx">
+      <DependentUpon>frmHanThe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmKhoangCachXuatBan.resx">
+      <DependentUpon>frmKhoangCachXuatBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLoaiSach.resx">
       <DependentUpon>frmLoaiSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,14 +335,29 @@
     <EmbeddedResource Include="GUI\frmPhieuNhapSach.resx">
       <DependentUpon>frmPhieuNhapSach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmReportSachTraTre.resx">
+      <DependentUpon>frmReportSachTraTre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmReportTinhHinhMuonSach.resx">
+      <DependentUpon>frmReportTinhHinhMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmSach.resx">
       <DependentUpon>frmSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmSoNgayMuonMax.resx">
+      <DependentUpon>frmSoNgayMuonMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmSoSachMuonMax.resx">
+      <DependentUpon>frmSoSachMuonMax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTacGia.resx">
       <DependentUpon>frmTacGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTheDocGia.resx">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmTienPhatMoiNgay.resx">
+      <DependentUpon>frmTienPhatMoiNgay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTKDocGia.resx">
       <DependentUpon>frmTKDocGia.cs</DependentUpon>
@@ -308,6 +395,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -427,6 +515,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-plus-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REPORT\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

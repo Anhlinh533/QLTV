@@ -28,14 +28,12 @@ namespace QLTV.SCRIPT
         {
             id = "IPT" + id;
         }
-        public void checkTraSach(string IDPhieuTra,string IDDocGia,string NgayTra,string TienPhatKiNay, string SoTienTra,string TienNoKiNay)
+        public void checkTraSach(string IDPhieuTra,string IDDocGia,string NgayTra, string SoTienTra)
         {
              if(IDPhieuTra=="") MessageBox.Show("Không được để trống ID phiếu trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
              else if (IDDocGia == "") MessageBox.Show("Không được để trống ID độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
              else if (NgayTra == "") MessageBox.Show("Không được để trống ngày trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-             else if (TienPhatKiNay == "") MessageBox.Show("Không được để trống tiền phạt kì này.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
              else if (SoTienTra == "") MessageBox.Show("Không được để trống số tiền trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-             else if (TienNoKiNay == "") MessageBox.Show("Không được để trống tiền nợ kì này.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

@@ -66,6 +66,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
+            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -84,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -317,11 +320,15 @@
             // 
             // cbb_IDDocGia
             // 
+            this.cbb_IDDocGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tHEDOCGIABindingSource, "IDDocGia", true));
+            this.cbb_IDDocGia.DataSource = this.tHEDOCGIABindingSource;
+            this.cbb_IDDocGia.DisplayMember = "IDDocGia";
             this.cbb_IDDocGia.FormattingEnabled = true;
             this.cbb_IDDocGia.Location = new System.Drawing.Point(181, 198);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
             this.cbb_IDDocGia.Size = new System.Drawing.Size(189, 44);
             this.cbb_IDDocGia.TabIndex = 5;
+            this.cbb_IDDocGia.ValueMember = "IDDocGia";
             // 
             // tb_Password
             // 
@@ -500,6 +507,15 @@
             // 
             this.uSERSTableAdapter.ClearBeforeFill = true;
             // 
+            // tHEDOCGIABindingSource
+            // 
+            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
+            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // tHEDOCGIATableAdapter
+            // 
+            this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
+            // 
             // frmUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -531,6 +547,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -574,5 +591,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.BindingSource tHEDOCGIABindingSource;
+        private QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter tHEDOCGIATableAdapter;
     }
 }
