@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +37,7 @@ namespace QLTV.GUI
             {
                 //ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
                 this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
+                ResetForm();
             }
         }
         
@@ -46,23 +48,53 @@ namespace QLTV.GUI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            if (tb_IDCTPhieuTra.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (tb_IDCTPhieuTra.Text != "")
+            {
+                ADO.adoCTTraSach.Instance.Xoa(tb_IDCTPhieuTra.Text);
+                this.cT_PHIEUTRATableAdapter.Fill(quanLyThuVienDataSet.CT_PHIEUTRA);
+                ResetForm();
+            }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-
+            this.cT_PHIEUTRATableAdapter.Fill(quanLyThuVienDataSet.CT_PHIEUTRA);
+            ResetForm();
         }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
-
+            if (cbb_Delete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (cbb_Delete.Text != "")
+            {
+                ADO.adoCTTraSach.Instance.Xoa(cbb_Delete.Text);
+                this.cT_PHIEUTRATableAdapter.Fill(quanLyThuVienDataSet.CT_PHIEUTRA);
+                ResetForm();
+            }
         }
-
+        #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
+        private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            tb_IDCTPhieuTra.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+            cbb_IDPhieuTra.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            cbb_IDCuonSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+        }
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+        #endregion
     }
 }

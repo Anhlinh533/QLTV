@@ -143,6 +143,7 @@
             this.dgv_Them.RowTemplate.Height = 28;
             this.dgv_Them.Size = new System.Drawing.Size(1247, 895);
             this.dgv_Them.TabIndex = 2;
+            this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
             // iDPhieuNhapDataGridViewTextBoxColumn
             // 

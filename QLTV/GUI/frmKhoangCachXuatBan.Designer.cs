@@ -72,6 +72,7 @@
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 131);
             this.btn_Them.TabIndex = 6;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // tb_KhoangCach
             // 

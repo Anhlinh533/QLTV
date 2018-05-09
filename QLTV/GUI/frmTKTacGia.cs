@@ -26,5 +26,29 @@ namespace QLTV.GUI
             this.tACGIATableAdapter.Fill(this.quanLyThuVienDataSet.TACGIA);
 
         }
+
+        private void btn_TKTacGia_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+
+        private void btn_TKCTTacGia_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
     }
 }

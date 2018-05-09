@@ -255,6 +255,7 @@
             this.btn_TKSach.Name = "btn_TKSach";
             this.btn_TKSach.Size = new System.Drawing.Size(155, 162);
             this.btn_TKSach.TabIndex = 16;
+            this.btn_TKSach.Click += new System.EventHandler(this.btn_TKSach_Click);
             // 
             // tb_GiaTien
             // 
@@ -476,6 +477,7 @@
             this.btn_TKCuonSach.Name = "btn_TKCuonSach";
             this.btn_TKCuonSach.Size = new System.Drawing.Size(155, 162);
             this.btn_TKCuonSach.TabIndex = 16;
+            this.btn_TKCuonSach.Click += new System.EventHandler(this.btn_TKCuonSach_Click);
             // 
             // cbb_TinhTrang
             // 

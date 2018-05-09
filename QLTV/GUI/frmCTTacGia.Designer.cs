@@ -151,6 +151,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1059, 850);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // iDCTTacGiaDataGridViewTextBoxColumn
             // 
@@ -500,6 +501,7 @@
             this.btn_IDDelete.Name = "btn_IDDelete";
             this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
             this.btn_IDDelete.TabIndex = 3;
+            this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
             // cbb_Delete
             // 

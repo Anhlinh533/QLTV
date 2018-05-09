@@ -127,7 +127,7 @@
             this.groupControl2.Controls.Add(this.bindingNavigator1);
             this.groupControl2.Location = new System.Drawing.Point(452, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1795, 1190);
+            this.groupControl2.Size = new System.Drawing.Size(829, 664);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu đầu sách";
             // 
@@ -146,8 +146,9 @@
             this.dgv_ThemDauSach.Location = new System.Drawing.Point(6, 95);
             this.dgv_ThemDauSach.Name = "dgv_ThemDauSach";
             this.dgv_ThemDauSach.RowTemplate.Height = 28;
-            this.dgv_ThemDauSach.Size = new System.Drawing.Size(2276, 1585);
+            this.dgv_ThemDauSach.Size = new System.Drawing.Size(817, 563);
             this.dgv_ThemDauSach.TabIndex = 2;
+            this.dgv_ThemDauSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDauSach_CellClick);
             // 
             // iDDauSachDataGridViewTextBoxColumn
             // 
@@ -209,7 +210,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1789, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(823, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -295,7 +296,7 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1220, 1190);
+            this.groupControl1.Size = new System.Drawing.Size(446, 667);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin đầu sách";
             // 
@@ -313,7 +314,7 @@
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
             this.btn_Them.Location = new System.Drawing.Point(146, 265);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 148);
             this.btn_Them.TabIndex = 15;
@@ -404,15 +405,12 @@
             this.groupControl3.Controls.Add(this.dataGridView1);
             this.groupControl3.Location = new System.Drawing.Point(388, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(2064, 1473);
+            this.groupControl3.Size = new System.Drawing.Size(905, 679);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu đầu sách";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -420,10 +418,11 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.dataGridView1.DataSource = this.dAUSACHBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 47);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 47);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(2836, 2225);
+            this.dataGridView1.Size = new System.Drawing.Size(899, 629);
             this.dataGridView1.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -467,7 +466,7 @@
             this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(1362, 1473);
+            this.groupControl4.Size = new System.Drawing.Size(382, 667);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
             // 
@@ -485,7 +484,7 @@
             this.btn_IDDelete.LabelPosition = 41;
             this.btn_IDDelete.LabelText = "Xóa";
             this.btn_IDDelete.Location = new System.Drawing.Point(110, 203);
-            this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(6);
             this.btn_IDDelete.Name = "btn_IDDelete";
             this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
             this.btn_IDDelete.TabIndex = 3;

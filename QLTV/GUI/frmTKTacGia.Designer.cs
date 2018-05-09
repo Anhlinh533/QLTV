@@ -223,6 +223,7 @@
             this.btn_TKTacGia.Name = "btn_TKTacGia";
             this.btn_TKTacGia.Size = new System.Drawing.Size(155, 162);
             this.btn_TKTacGia.TabIndex = 17;
+            this.btn_TKTacGia.Click += new System.EventHandler(this.btn_TKTacGia_Click);
             // 
             // tb_TenTacGia
             // 
@@ -406,6 +407,7 @@
             this.btn_TKCTTacGia.Name = "btn_TKCTTacGia";
             this.btn_TKCTTacGia.Size = new System.Drawing.Size(155, 162);
             this.btn_TKCTTacGia.TabIndex = 18;
+            this.btn_TKCTTacGia.Click += new System.EventHandler(this.btn_TKCTTacGia_Click);
             // 
             // rdb_IDTacGiaCT
             // 

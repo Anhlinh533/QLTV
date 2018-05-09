@@ -26,5 +26,29 @@ namespace QLTV.GUI
             this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
 
         }
+
+        private void btn_TKSach_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+
+        private void btn_TKCuonSach_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
     }
 }

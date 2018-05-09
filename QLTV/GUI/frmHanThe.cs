@@ -17,5 +17,11 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+
+        }
     }
 }

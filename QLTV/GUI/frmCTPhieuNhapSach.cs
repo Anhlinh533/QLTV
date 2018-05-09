@@ -36,6 +36,7 @@ namespace QLTV.GUI
             {
                 ADO.adoCTPhieuNhapSach.Instance.Them(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
                 this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
+                
             }
         }
 
@@ -46,23 +47,58 @@ namespace QLTV.GUI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            if (tb_IDCTPhieuNhap.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (tb_IDCTPhieuNhap.Text != "")
+            {
+                ADO.adoCTPhieuNhapSach.Instance.Xoa(tb_IDCTPhieuNhap.Text);
+                this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
+                ResetForm();
+            }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-
+            this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
+            ResetForm();
         }        
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
-
+            if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (cbb_IDDelete.Text != "")
+            {
+                ADO.adoCTPhieuNhapSach.Instance.Xoa(tb_IDCTPhieuNhap.Text);
+                this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
+                ResetForm();
+            }
         }
 
+
+        #region Form
+
+        private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            tb_IDCTPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+            cbb_IDPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            cbb_IDSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            tb_SoLuong.Text = dgv_Them.Rows[numrow].Cells[3].Value.ToString();
+            tb_DonGia.Text = dgv_Them.Rows[numrow].Cells[4].Value.ToString();
+
+        }
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+        #endregion
     }
 }

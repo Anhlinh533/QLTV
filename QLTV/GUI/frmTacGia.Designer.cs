@@ -124,7 +124,7 @@
             this.groupControl2.Controls.Add(this.bindingNavigator1);
             this.groupControl2.Location = new System.Drawing.Point(446, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(2558, 1924);
+            this.groupControl2.Size = new System.Drawing.Size(1066, 962);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu tác giả";
             // 
@@ -140,11 +140,12 @@
             this.tenTacGiaDataGridViewTextBoxColumn,
             this.ngaySinhDataGridViewTextBoxColumn});
             this.dgv_Them.DataSource = this.tACGIABindingSource;
-            this.dgv_Them.Location = new System.Drawing.Point(6, 81);
+            this.dgv_Them.Location = new System.Drawing.Point(6, 91);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(2546, 1837);
+            this.dgv_Them.Size = new System.Drawing.Size(1047, 865);
             this.dgv_Them.TabIndex = 2;
+            this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
             // iDTacGiaDataGridViewTextBoxColumn
             // 
@@ -204,7 +205,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(2552, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1060, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -290,7 +291,7 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1942, 1924);
+            this.groupControl1.Size = new System.Drawing.Size(440, 962);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin tác giả";
             // 

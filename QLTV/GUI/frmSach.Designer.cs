@@ -76,10 +76,10 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
-            this.tb_IDDelete = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.sACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.SACHTableAdapter();
             this.dAUSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter();
+            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -163,6 +163,7 @@
             this.dgv_Them.RowTemplate.Height = 28;
             this.dgv_Them.Size = new System.Drawing.Size(1052, 788);
             this.dgv_Them.TabIndex = 2;
+            this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
             // iDSachDataGridViewTextBoxColumn
             // 
@@ -595,8 +596,8 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
+            this.groupControl4.Controls.Add(this.cbb_IDDelete);
             this.groupControl4.Controls.Add(this.btn_IDDelete);
-            this.groupControl4.Controls.Add(this.tb_IDDelete);
             this.groupControl4.Controls.Add(this.label7);
             this.groupControl4.Location = new System.Drawing.Point(0, 5);
             this.groupControl4.Name = "groupControl4";
@@ -624,13 +625,6 @@
             this.btn_IDDelete.TabIndex = 3;
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
-            // tb_IDDelete
-            // 
-            this.tb_IDDelete.Location = new System.Drawing.Point(12, 141);
-            this.tb_IDDelete.Name = "tb_IDDelete";
-            this.tb_IDDelete.Size = new System.Drawing.Size(232, 44);
-            this.tb_IDDelete.TabIndex = 1;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -648,6 +642,18 @@
             // dAUSACHTableAdapter
             // 
             this.dAUSACHTableAdapter.ClearBeforeFill = true;
+            // 
+            // cbb_IDDelete
+            // 
+            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.sACHBindingSource, "IDSach", true));
+            this.cbb_IDDelete.DataSource = this.sACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDSach";
+            this.cbb_IDDelete.FormattingEnabled = true;
+            this.cbb_IDDelete.Location = new System.Drawing.Point(12, 138);
+            this.cbb_IDDelete.Name = "cbb_IDDelete";
+            this.cbb_IDDelete.Size = new System.Drawing.Size(214, 44);
+            this.cbb_IDDelete.TabIndex = 4;
+            this.cbb_IDDelete.ValueMember = "IDSach";
             // 
             // frmSach
             // 
@@ -722,7 +728,6 @@
         private System.Windows.Forms.TextBox tb_NXB;
         private System.Windows.Forms.TextBox tb_IDSach;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
-        private System.Windows.Forms.TextBox tb_IDDelete;
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
         private System.Windows.Forms.DataGridView dgv_Delete;
@@ -738,5 +743,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.ComboBox cbb_IDDelete;
     }
 }

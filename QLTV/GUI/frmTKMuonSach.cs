@@ -26,5 +26,30 @@ namespace QLTV.GUI
             this.pHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUMUON);
 
         }
+
+        private void btn_TKCTPhieuMuonSach_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+
+        }
+
+        private void btn_TKPhieuMuonSach_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
     }
 }

@@ -21,5 +21,11 @@ namespace QLTV.GUI
         private void frmTuoiDocGia_Load(object sender, EventArgs e)
         {
         }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+
+        }
     }
 }

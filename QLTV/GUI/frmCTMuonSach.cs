@@ -36,33 +36,66 @@ namespace QLTV.GUI
             {
                 ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
                 this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                ResetForm();
+
             }
         }        
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            if (tb_IDCTPhieuMuon.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (tb_IDCTPhieuMuon.Text != "")
+            {
+                ADO.adoCTMuonSach.Instance.Xoa(tb_IDCTPhieuMuon.Text);
+                this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            ADO.adoCTMuonSach.Instance.Xoa(tb_IDCTPhieuMuon.Text);
+            this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+            ResetForm();
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-
+            this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+            ResetForm();
         }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
-
+            if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (cbb_IDDelete.Text != "")
+            {
+                ADO.adoCTMuonSach.Instance.Xoa(cbb_IDDelete.Text);
+                this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                ResetForm();
+            }
         }
-
+        #region Form
+        private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            tb_IDCTPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+            cbb_IDPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            cbb_IDCuonSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+        }
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+        #endregion
     }
 }

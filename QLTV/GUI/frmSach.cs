@@ -34,6 +34,7 @@ namespace QLTV.GUI
             {
                 ADO.adoSach.Instance.Them(tb_IDSach.Text, cbb_IDDauSach.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
                 this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
+                ResetForm();
             }
         }
 
@@ -44,7 +45,13 @@ namespace QLTV.GUI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            if (tb_IDSach.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (tb_IDSach.Text != "")
+            {
+                ADO.adoSach.Instance.Xoa(tb_IDSach.Text);
+                this.sACHTableAdapter.Fill(quanLyThuVienDataSet.SACH);
+                ResetForm();
+            }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -54,12 +61,40 @@ namespace QLTV.GUI
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
-
+            if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (cbb_IDDelete.Text != "")
+            {
+                ADO.adoSach.Instance.Xoa(cbb_IDDelete.Text);
+                this.sACHTableAdapter.Fill(quanLyThuVienDataSet.SACH);
+                ResetForm();
+            }
         }
-
+        #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
+
+        private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            tb_IDSach.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+            cbb_IDDauSach.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            tb_NXB.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            cbb_NXB.Text = dgv_Them.Rows[numrow].Cells[3].Value.ToString();
+            tb_SoLuongTon.Text = dgv_Them.Rows[numrow].Cells[4].Value.ToString();
+            tb_GiaTien.Text = dgv_Them.Rows[numrow].Cells[5].Value.ToString();
+        }
+
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+        #endregion
     }
 }

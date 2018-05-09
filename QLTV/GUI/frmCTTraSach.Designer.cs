@@ -50,8 +50,12 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cbb_IDCuonSach = new System.Windows.Forms.ComboBox();
+            this.cUONSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDPhieuTra = new System.Windows.Forms.ComboBox();
+            this.pHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_IDCTPhieuTra = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -68,11 +72,7 @@
             this.cbb_Delete = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cT_PHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUTRATableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbb_IDCuonSach = new System.Windows.Forms.ComboBox();
-            this.cUONSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cUONSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter();
-            this.pHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
@@ -86,14 +86,14 @@
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -157,6 +157,7 @@
             this.dgv_Them.RowTemplate.Height = 28;
             this.dgv_Them.Size = new System.Drawing.Size(1169, 870);
             this.dgv_Them.TabIndex = 2;
+            this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
             // iDCTPhieuTraDataGridViewTextBoxColumn
             // 
@@ -323,6 +324,33 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin chi tiết phiếu trả sách";
             // 
+            // cbb_IDCuonSach
+            // 
+            this.cbb_IDCuonSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cUONSACHBindingSource, "IDCuonSach", true));
+            this.cbb_IDCuonSach.DataSource = this.cUONSACHBindingSource;
+            this.cbb_IDCuonSach.DisplayMember = "IDCuonSach";
+            this.cbb_IDCuonSach.FormattingEnabled = true;
+            this.cbb_IDCuonSach.Location = new System.Drawing.Point(297, 198);
+            this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
+            this.cbb_IDCuonSach.Size = new System.Drawing.Size(243, 44);
+            this.cbb_IDCuonSach.TabIndex = 17;
+            this.cbb_IDCuonSach.ValueMember = "IDCuonSach";
+            // 
+            // cUONSACHBindingSource
+            // 
+            this.cUONSACHBindingSource.DataMember = "CUONSACH";
+            this.cUONSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(6, 201);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(199, 36);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "ID cuốn sách:";
+            // 
             // btn_Them
             // 
             this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
@@ -354,6 +382,11 @@
             this.cbb_IDPhieuTra.Size = new System.Drawing.Size(243, 44);
             this.cbb_IDPhieuTra.TabIndex = 8;
             this.cbb_IDPhieuTra.ValueMember = "IDPhieuTra";
+            // 
+            // pHIEUTRABindingSource
+            // 
+            this.pHIEUTRABindingSource.DataMember = "PHIEUTRA";
+            this.pHIEUTRABindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
             // tb_IDCTPhieuTra
             // 
@@ -534,41 +567,9 @@
             // 
             this.cT_PHIEUTRATableAdapter.ClearBeforeFill = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 201);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 36);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "ID cuốn sách:";
-            // 
-            // cbb_IDCuonSach
-            // 
-            this.cbb_IDCuonSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cUONSACHBindingSource, "IDCuonSach", true));
-            this.cbb_IDCuonSach.DataSource = this.cUONSACHBindingSource;
-            this.cbb_IDCuonSach.DisplayMember = "IDCuonSach";
-            this.cbb_IDCuonSach.FormattingEnabled = true;
-            this.cbb_IDCuonSach.Location = new System.Drawing.Point(297, 198);
-            this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
-            this.cbb_IDCuonSach.Size = new System.Drawing.Size(243, 44);
-            this.cbb_IDCuonSach.TabIndex = 17;
-            this.cbb_IDCuonSach.ValueMember = "IDCuonSach";
-            // 
-            // cUONSACHBindingSource
-            // 
-            this.cUONSACHBindingSource.DataMember = "CUONSACH";
-            this.cUONSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
             // cUONSACHTableAdapter
             // 
             this.cUONSACHTableAdapter.ClearBeforeFill = true;
-            // 
-            // pHIEUTRABindingSource
-            // 
-            this.pHIEUTRABindingSource.DataMember = "PHIEUTRA";
-            this.pHIEUTRABindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
             // pHIEUTRATableAdapter
             // 
@@ -598,6 +599,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
@@ -605,8 +608,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

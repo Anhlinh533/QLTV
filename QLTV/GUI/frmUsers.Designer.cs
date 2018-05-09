@@ -50,6 +50,7 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
+            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.tb_UserName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,10 +64,9 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
-            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
@@ -80,13 +80,13 @@
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -148,6 +148,7 @@
             this.dgv_Them.RowTemplate.Height = 28;
             this.dgv_Them.Size = new System.Drawing.Size(1284, 987);
             this.dgv_Them.TabIndex = 2;
+            this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
             // userNameDataGridViewTextBoxColumn
             // 
@@ -330,6 +331,11 @@
             this.cbb_IDDocGia.TabIndex = 5;
             this.cbb_IDDocGia.ValueMember = "IDDocGia";
             // 
+            // tHEDOCGIABindingSource
+            // 
+            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
+            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
             // tb_Password
             // 
             this.tb_Password.Location = new System.Drawing.Point(181, 138);
@@ -453,7 +459,7 @@
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.Controls.Add(this.btn_IDDelete);
-            this.groupControl3.Controls.Add(this.comboBox2);
+            this.groupControl3.Controls.Add(this.cbb_IDDelete);
             this.groupControl3.Controls.Add(this.label4);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
@@ -481,17 +487,17 @@
             this.btn_IDDelete.TabIndex = 3;
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
-            // comboBox2
+            // cbb_IDDelete
             // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.uSERSBindingSource, "UserName", true));
-            this.comboBox2.DataSource = this.uSERSBindingSource;
-            this.comboBox2.DisplayMember = "UserName";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 118);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(205, 44);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.ValueMember = "UserName";
+            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.uSERSBindingSource, "UserName", true));
+            this.cbb_IDDelete.DataSource = this.uSERSBindingSource;
+            this.cbb_IDDelete.DisplayMember = "UserName";
+            this.cbb_IDDelete.FormattingEnabled = true;
+            this.cbb_IDDelete.Location = new System.Drawing.Point(12, 118);
+            this.cbb_IDDelete.Name = "cbb_IDDelete";
+            this.cbb_IDDelete.Size = new System.Drawing.Size(205, 44);
+            this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "UserName";
             // 
             // label4
             // 
@@ -506,11 +512,6 @@
             // uSERSTableAdapter
             // 
             this.uSERSTableAdapter.ClearBeforeFill = true;
-            // 
-            // tHEDOCGIABindingSource
-            // 
-            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
-            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
             // tHEDOCGIATableAdapter
             // 
@@ -540,6 +541,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
@@ -547,7 +549,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -582,7 +583,7 @@
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private System.Windows.Forms.DataGridView dgv_Delete;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbb_IDDelete;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;

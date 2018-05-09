@@ -100,7 +100,7 @@
             this.item_TKPhieuMuonSach,
             this.item_TKCTPhieuMuonSach});
             this.navigationPane1.RegularSize = new System.Drawing.Size(1659, 1083);
-            this.navigationPane1.SelectedPage = this.item_TKCTPhieuMuonSach;
+            this.navigationPane1.SelectedPage = this.item_TKPhieuMuonSach;
             this.navigationPane1.Size = new System.Drawing.Size(1659, 1083);
             this.navigationPane1.TabIndex = 0;
             this.navigationPane1.Text = "`````````````````````";
@@ -231,6 +231,7 @@
             this.btn_TKPhieuMuonSach.Name = "btn_TKPhieuMuonSach";
             this.btn_TKPhieuMuonSach.Size = new System.Drawing.Size(155, 162);
             this.btn_TKPhieuMuonSach.TabIndex = 16;
+            this.btn_TKPhieuMuonSach.Click += new System.EventHandler(this.btn_TKPhieuMuonSach_Click);
             // 
             // dtp_HanTra
             // 
@@ -431,6 +432,7 @@
             this.btn_TKCTPhieuMuonSach.Name = "btn_TKCTPhieuMuonSach";
             this.btn_TKCTPhieuMuonSach.Size = new System.Drawing.Size(155, 162);
             this.btn_TKCTPhieuMuonSach.TabIndex = 17;
+            this.btn_TKCTPhieuMuonSach.Click += new System.EventHandler(this.btn_TKCTPhieuMuonSach_Click);
             // 
             // tb_IDCuonSach
             // 

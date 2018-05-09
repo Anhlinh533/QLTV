@@ -108,7 +108,7 @@
             this.navigationPage1,
             this.navigationPage2});
             this.navigationPane1.RegularSize = new System.Drawing.Size(1467, 1082);
-            this.navigationPane1.SelectedPage = this.navigationPage2;
+            this.navigationPane1.SelectedPage = this.navigationPage1;
             this.navigationPane1.Size = new System.Drawing.Size(1467, 1082);
             this.navigationPane1.TabIndex = 1;
             this.navigationPane1.Text = "navigationPane1";
@@ -269,6 +269,7 @@
             this.btn_TKPhieuTraSach.Name = "btn_TKPhieuTraSach";
             this.btn_TKPhieuTraSach.Size = new System.Drawing.Size(155, 162);
             this.btn_TKPhieuTraSach.TabIndex = 17;
+            this.btn_TKPhieuTraSach.Click += new System.EventHandler(this.btn_TKPhieuTraSach_Click);
             // 
             // tb_TienNoKiNay
             // 
@@ -509,6 +510,7 @@
             this.btn_TKCTPhieuTraSach.Name = "btn_TKCTPhieuTraSach";
             this.btn_TKCTPhieuTraSach.Size = new System.Drawing.Size(155, 162);
             this.btn_TKCTPhieuTraSach.TabIndex = 18;
+            this.btn_TKCTPhieuTraSach.Click += new System.EventHandler(this.btn_TKCTPhieuTraSach_Click);
             // 
             // tb_TienPhat
             // 

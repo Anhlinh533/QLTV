@@ -29,7 +29,13 @@ namespace QLTV.GUI
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
-
+            //if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //if (cbb_IDDelete.Text != "")
+            //{
+            //    ADO.adoUsers.Instance.Xoa(cbb_IDDelete.Text);
+            //    this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
+            //    ResetForm();
+            //}
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -38,6 +44,8 @@ namespace QLTV.GUI
             if(tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "" )
             {
                 //Hàm thêm
+
+                ResetForm();
             }
         }
 
@@ -48,12 +56,36 @@ namespace QLTV.GUI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            //if (tb_UserName.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //if (tb_UserName.Text != "")
+            //{
+            //    ADO.adoUsers.Instance.Xoa(tb_UserName.Text);
+            //    this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
+            //    ResetForm();
+            //}
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
 
         }
+        #region Form
+        private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            tb_UserName.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+            tb_Password.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            cbb_IDDocGia.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+        }
+
+        public void ResetForm()
+        {
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+        #endregion
     }
 }

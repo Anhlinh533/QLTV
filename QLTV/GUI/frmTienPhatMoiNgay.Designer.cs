@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TienPhatMoiNgay = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +53,26 @@
             this.groupControl1.Size = new System.Drawing.Size(682, 328);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Chỉnh sửa qui định về tiền phạt mỗi ngày";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_Them.color = System.Drawing.Color.SeaGreen;
+            this.btn_Them.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btn_Them.ForeColor = System.Drawing.Color.White;
+            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
+            this.btn_Them.ImagePosition = 20;
+            this.btn_Them.ImageZoom = 50;
+            this.btn_Them.LabelPosition = 41;
+            this.btn_Them.LabelText = "Sửa";
+            this.btn_Them.Location = new System.Drawing.Point(527, 141);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(128, 131);
+            this.btn_Them.TabIndex = 6;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // tb_TienPhatMoiNgay
             // 
@@ -80,25 +100,6 @@
             this.label1.Size = new System.Drawing.Size(389, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thay đổi tiền phạt mỗi ngày";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_Them.color = System.Drawing.Color.SeaGreen;
-            this.btn_Them.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
-            this.btn_Them.ImagePosition = 20;
-            this.btn_Them.ImageZoom = 50;
-            this.btn_Them.LabelPosition = 41;
-            this.btn_Them.LabelText = "Sửa";
-            this.btn_Them.Location = new System.Drawing.Point(527, 141);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 131);
-            this.btn_Them.TabIndex = 6;
             // 
             // frmTienPhatMoiNgay
             // 

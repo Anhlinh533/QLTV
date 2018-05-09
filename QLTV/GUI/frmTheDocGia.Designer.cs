@@ -175,6 +175,7 @@
             this.dgv_ThemDG.RowTemplate.Height = 28;
             this.dgv_ThemDG.Size = new System.Drawing.Size(1019, 767);
             this.dgv_ThemDG.TabIndex = 1;
+            this.dgv_ThemDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDG_CellClick);
             // 
             // iDDocGiaDataGridViewTextBoxColumn
             // 
