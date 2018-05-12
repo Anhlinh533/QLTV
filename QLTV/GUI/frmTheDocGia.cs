@@ -68,8 +68,9 @@ namespace QLTV.GUI
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-
-        }        
+            this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+            ResetForm();
+        }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {

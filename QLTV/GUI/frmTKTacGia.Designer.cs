@@ -203,7 +203,7 @@
             this.dtp_NgaySinh.Location = new System.Drawing.Point(232, 195);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(235, 44);
-            this.dtp_NgaySinh.TabIndex = 18;
+            this.dtp_NgaySinh.TabIndex = 3;
             // 
             // btn_TKTacGia
             // 
@@ -230,14 +230,14 @@
             this.tb_TenTacGia.Location = new System.Drawing.Point(232, 138);
             this.tb_TenTacGia.Name = "tb_TenTacGia";
             this.tb_TenTacGia.Size = new System.Drawing.Size(235, 44);
-            this.tb_TenTacGia.TabIndex = 4;
+            this.tb_TenTacGia.TabIndex = 2;
             // 
             // tb_IDTacGia
             // 
             this.tb_IDTacGia.Location = new System.Drawing.Point(232, 78);
             this.tb_IDTacGia.Name = "tb_IDTacGia";
             this.tb_IDTacGia.Size = new System.Drawing.Size(235, 44);
-            this.tb_IDTacGia.TabIndex = 3;
+            this.tb_IDTacGia.TabIndex = 1;
             // 
             // rdb_NgaySinh
             // 
@@ -373,21 +373,21 @@
             this.tb_IDTacGiaCT.Location = new System.Drawing.Point(280, 192);
             this.tb_IDTacGiaCT.Name = "tb_IDTacGiaCT";
             this.tb_IDTacGiaCT.Size = new System.Drawing.Size(215, 44);
-            this.tb_IDTacGiaCT.TabIndex = 21;
+            this.tb_IDTacGiaCT.TabIndex = 3;
             // 
             // tb_IDDauSach
             // 
             this.tb_IDDauSach.Location = new System.Drawing.Point(280, 132);
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(215, 44);
-            this.tb_IDDauSach.TabIndex = 20;
+            this.tb_IDDauSach.TabIndex = 2;
             // 
             // tb_IDCTTacGia
             // 
             this.tb_IDCTTacGia.Location = new System.Drawing.Point(280, 73);
             this.tb_IDCTTacGia.Name = "tb_IDCTTacGia";
             this.tb_IDCTTacGia.Size = new System.Drawing.Size(215, 44);
-            this.tb_IDCTTacGia.TabIndex = 19;
+            this.tb_IDCTTacGia.TabIndex = 1;
             // 
             // btn_TKCTTacGia
             // 

@@ -326,7 +326,7 @@
             this.tb_TenDauSach.MaxLength = 200;
             this.tb_TenDauSach.Name = "tb_TenDauSach";
             this.tb_TenDauSach.Size = new System.Drawing.Size(194, 44);
-            this.tb_TenDauSach.TabIndex = 5;
+            this.tb_TenDauSach.TabIndex = 2;
             // 
             // cbb_IDTheLoaiSach
             // 
@@ -337,7 +337,7 @@
             this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(244, 184);
             this.cbb_IDTheLoaiSach.Name = "cbb_IDTheLoaiSach";
             this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(194, 44);
-            this.cbb_IDTheLoaiSach.TabIndex = 4;
+            this.cbb_IDTheLoaiSach.TabIndex = 3;
             this.cbb_IDTheLoaiSach.ValueMember = "IDLoaiSach";
             // 
             // lOAISACHBindingSource
@@ -351,7 +351,7 @@
             this.tb_IDDauSach.MaxLength = 3;
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(194, 44);
-            this.tb_IDDauSach.TabIndex = 3;
+            this.tb_IDDauSach.TabIndex = 1;
             this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3

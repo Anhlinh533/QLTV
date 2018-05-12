@@ -301,7 +301,7 @@
             this.dtp_NgaySinh.Location = new System.Drawing.Point(187, 195);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(223, 44);
-            this.dtp_NgaySinh.TabIndex = 16;
+            this.dtp_NgaySinh.TabIndex = 3;
             // 
             // btn_Them
             // 
@@ -328,7 +328,7 @@
             this.tb_TenTacGia.Location = new System.Drawing.Point(187, 138);
             this.tb_TenTacGia.Name = "tb_TenTacGia";
             this.tb_TenTacGia.Size = new System.Drawing.Size(223, 44);
-            this.tb_TenTacGia.TabIndex = 4;
+            this.tb_TenTacGia.TabIndex = 2;
             // 
             // tb_IDTacGia
             // 
@@ -336,7 +336,7 @@
             this.tb_IDTacGia.MaxLength = 3;
             this.tb_IDTacGia.Name = "tb_IDTacGia";
             this.tb_IDTacGia.Size = new System.Drawing.Size(223, 44);
-            this.tb_IDTacGia.TabIndex = 3;
+            this.tb_IDTacGia.TabIndex = 1;
             this.tb_IDTacGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3

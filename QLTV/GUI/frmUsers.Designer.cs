@@ -328,7 +328,7 @@
             this.cbb_IDDocGia.Location = new System.Drawing.Point(181, 198);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
             this.cbb_IDDocGia.Size = new System.Drawing.Size(189, 44);
-            this.cbb_IDDocGia.TabIndex = 5;
+            this.cbb_IDDocGia.TabIndex = 3;
             this.cbb_IDDocGia.ValueMember = "IDDocGia";
             // 
             // tHEDOCGIABindingSource
@@ -341,7 +341,7 @@
             this.tb_Password.Location = new System.Drawing.Point(181, 138);
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.Size = new System.Drawing.Size(189, 44);
-            this.tb_Password.TabIndex = 4;
+            this.tb_Password.TabIndex = 2;
             // 
             // tb_UserName
             // 
@@ -349,7 +349,7 @@
             this.tb_UserName.MaxLength = 50;
             this.tb_UserName.Name = "tb_UserName";
             this.tb_UserName.Size = new System.Drawing.Size(189, 44);
-            this.tb_UserName.TabIndex = 3;
+            this.tb_UserName.TabIndex = 1;
             // 
             // label3
             // 

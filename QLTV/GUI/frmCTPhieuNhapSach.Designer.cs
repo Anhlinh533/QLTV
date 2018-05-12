@@ -372,7 +372,7 @@
             this.cbb_IDSach.Location = new System.Drawing.Point(327, 198);
             this.cbb_IDSach.Name = "cbb_IDSach";
             this.cbb_IDSach.Size = new System.Drawing.Size(216, 44);
-            this.cbb_IDSach.TabIndex = 11;
+            this.cbb_IDSach.TabIndex = 3;
             this.cbb_IDSach.ValueMember = "IDSach";
             // 
             // sACHBindingSource
@@ -389,7 +389,7 @@
             this.cbb_IDPhieuNhap.Location = new System.Drawing.Point(327, 138);
             this.cbb_IDPhieuNhap.Name = "cbb_IDPhieuNhap";
             this.cbb_IDPhieuNhap.Size = new System.Drawing.Size(216, 44);
-            this.cbb_IDPhieuNhap.TabIndex = 10;
+            this.cbb_IDPhieuNhap.TabIndex = 2;
             this.cbb_IDPhieuNhap.ValueMember = "IDPhieuNhap";
             // 
             // pHIEUNHAPSACHBindingSource
@@ -402,7 +402,7 @@
             this.tb_DonGia.Location = new System.Drawing.Point(327, 318);
             this.tb_DonGia.Name = "tb_DonGia";
             this.tb_DonGia.Size = new System.Drawing.Size(216, 44);
-            this.tb_DonGia.TabIndex = 8;
+            this.tb_DonGia.TabIndex = 5;
             this.tb_DonGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoLuong
@@ -410,7 +410,7 @@
             this.tb_SoLuong.Location = new System.Drawing.Point(327, 258);
             this.tb_SoLuong.Name = "tb_SoLuong";
             this.tb_SoLuong.Size = new System.Drawing.Size(216, 44);
-            this.tb_SoLuong.TabIndex = 7;
+            this.tb_SoLuong.TabIndex = 4;
             this.tb_SoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuNhap
@@ -419,7 +419,7 @@
             this.tb_IDCTPhieuNhap.MaxLength = 3;
             this.tb_IDCTPhieuNhap.Name = "tb_IDCTPhieuNhap";
             this.tb_IDCTPhieuNhap.Size = new System.Drawing.Size(216, 44);
-            this.tb_IDCTPhieuNhap.TabIndex = 6;
+            this.tb_IDCTPhieuNhap.TabIndex = 1;
             this.tb_IDCTPhieuNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label5

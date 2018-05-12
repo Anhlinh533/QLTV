@@ -67,7 +67,8 @@ namespace QLTV.GUI
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-
+            this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
+            ResetForm();
         }
         #region Form
         private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)

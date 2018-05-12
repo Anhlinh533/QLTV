@@ -132,9 +132,9 @@
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.dataGridView1);
-            this.groupControl4.Location = new System.Drawing.Point(430, 0);
+            this.groupControl4.Location = new System.Drawing.Point(455, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(924, 1001);
+            this.groupControl4.Size = new System.Drawing.Size(899, 1001);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu thông tin mượn sách";
             // 
@@ -154,7 +154,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 47);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(918, 951);
+            this.dataGridView1.Size = new System.Drawing.Size(893, 951);
             this.dataGridView1.TabIndex = 0;
             // 
             // iDPhieuTraDataGridViewTextBoxColumn
@@ -239,7 +239,7 @@
             this.groupControl3.Controls.Add(this.rdb_IDPhieuTra);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(424, 1001);
+            this.groupControl3.Size = new System.Drawing.Size(449, 1001);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm theo";
             // 
@@ -248,8 +248,8 @@
             this.dtp_NgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayTra.Location = new System.Drawing.Point(267, 190);
             this.dtp_NgayTra.Name = "dtp_NgayTra";
-            this.dtp_NgayTra.Size = new System.Drawing.Size(151, 44);
-            this.dtp_NgayTra.TabIndex = 18;
+            this.dtp_NgayTra.Size = new System.Drawing.Size(163, 44);
+            this.dtp_NgayTra.TabIndex = 3;
             // 
             // btn_TKPhieuTraSach
             // 
@@ -275,36 +275,36 @@
             // 
             this.tb_TienNoKiNay.Location = new System.Drawing.Point(267, 373);
             this.tb_TienNoKiNay.Name = "tb_TienNoKiNay";
-            this.tb_TienNoKiNay.Size = new System.Drawing.Size(151, 44);
-            this.tb_TienNoKiNay.TabIndex = 10;
+            this.tb_TienNoKiNay.Size = new System.Drawing.Size(163, 44);
+            this.tb_TienNoKiNay.TabIndex = 6;
             // 
             // tb_SoTienTra
             // 
             this.tb_SoTienTra.Location = new System.Drawing.Point(267, 313);
             this.tb_SoTienTra.Name = "tb_SoTienTra";
-            this.tb_SoTienTra.Size = new System.Drawing.Size(151, 44);
-            this.tb_SoTienTra.TabIndex = 9;
+            this.tb_SoTienTra.Size = new System.Drawing.Size(163, 44);
+            this.tb_SoTienTra.TabIndex = 5;
             // 
             // tb_IDPhieuTra
             // 
             this.tb_IDPhieuTra.Location = new System.Drawing.Point(267, 73);
             this.tb_IDPhieuTra.Name = "tb_IDPhieuTra";
-            this.tb_IDPhieuTra.Size = new System.Drawing.Size(151, 44);
-            this.tb_IDPhieuTra.TabIndex = 8;
+            this.tb_IDPhieuTra.Size = new System.Drawing.Size(163, 44);
+            this.tb_IDPhieuTra.TabIndex = 1;
             // 
             // tb_IDDocGia
             // 
             this.tb_IDDocGia.Location = new System.Drawing.Point(267, 133);
             this.tb_IDDocGia.Name = "tb_IDDocGia";
-            this.tb_IDDocGia.Size = new System.Drawing.Size(151, 44);
-            this.tb_IDDocGia.TabIndex = 7;
+            this.tb_IDDocGia.Size = new System.Drawing.Size(163, 44);
+            this.tb_IDDocGia.TabIndex = 2;
             // 
             // tb_TienPhatKiNay
             // 
             this.tb_TienPhatKiNay.Location = new System.Drawing.Point(267, 253);
             this.tb_TienPhatKiNay.Name = "tb_TienPhatKiNay";
-            this.tb_TienPhatKiNay.Size = new System.Drawing.Size(151, 44);
-            this.tb_TienPhatKiNay.TabIndex = 6;
+            this.tb_TienPhatKiNay.Size = new System.Drawing.Size(163, 44);
+            this.tb_TienPhatKiNay.TabIndex = 4;
             // 
             // rdb_TienNoKiNay
             // 
@@ -517,35 +517,35 @@
             this.tb_TienPhat.Location = new System.Drawing.Point(311, 320);
             this.tb_TienPhat.Name = "tb_TienPhat";
             this.tb_TienPhat.Size = new System.Drawing.Size(155, 44);
-            this.tb_TienPhat.TabIndex = 9;
+            this.tb_TienPhat.TabIndex = 5;
             // 
             // tb_SoNgayMuon
             // 
             this.tb_SoNgayMuon.Location = new System.Drawing.Point(311, 260);
             this.tb_SoNgayMuon.Name = "tb_SoNgayMuon";
             this.tb_SoNgayMuon.Size = new System.Drawing.Size(155, 44);
-            this.tb_SoNgayMuon.TabIndex = 8;
+            this.tb_SoNgayMuon.TabIndex = 4;
             // 
             // tb_IDPhieuMuon
             // 
             this.tb_IDPhieuMuon.Location = new System.Drawing.Point(311, 200);
             this.tb_IDPhieuMuon.Name = "tb_IDPhieuMuon";
             this.tb_IDPhieuMuon.Size = new System.Drawing.Size(155, 44);
-            this.tb_IDPhieuMuon.TabIndex = 7;
+            this.tb_IDPhieuMuon.TabIndex = 3;
             // 
             // tb_IDPhieuTraCT
             // 
             this.tb_IDPhieuTraCT.Location = new System.Drawing.Point(311, 140);
             this.tb_IDPhieuTraCT.Name = "tb_IDPhieuTraCT";
             this.tb_IDPhieuTraCT.Size = new System.Drawing.Size(155, 44);
-            this.tb_IDPhieuTraCT.TabIndex = 6;
+            this.tb_IDPhieuTraCT.TabIndex = 2;
             // 
             // tb_IDCTPhieuTra
             // 
             this.tb_IDCTPhieuTra.Location = new System.Drawing.Point(311, 80);
             this.tb_IDCTPhieuTra.Name = "tb_IDCTPhieuTra";
             this.tb_IDCTPhieuTra.Size = new System.Drawing.Size(155, 44);
-            this.tb_IDCTPhieuTra.TabIndex = 5;
+            this.tb_IDCTPhieuTra.TabIndex = 1;
             // 
             // rdb_TienPhat
             // 

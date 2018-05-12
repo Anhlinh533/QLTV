@@ -129,9 +129,9 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
-            this.groupControl2.Location = new System.Drawing.Point(524, 0);
+            this.groupControl2.Location = new System.Drawing.Point(541, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1178, 952);
+            this.groupControl2.Size = new System.Drawing.Size(1161, 952);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu chi tiết phiếu mượn";
             // 
@@ -150,7 +150,7 @@
             this.dgv_Them.Location = new System.Drawing.Point(6, 81);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(1166, 865);
+            this.dgv_Them.Size = new System.Drawing.Size(1149, 865);
             this.dgv_Them.TabIndex = 2;
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
@@ -213,7 +213,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1172, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1155, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -299,7 +299,7 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(518, 952);
+            this.groupControl1.Size = new System.Drawing.Size(535, 952);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin chi tiết phiếu mượn";
             // 
@@ -332,7 +332,7 @@
             this.cbb_IDCuonSach.Location = new System.Drawing.Point(337, 198);
             this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
             this.cbb_IDCuonSach.Size = new System.Drawing.Size(175, 44);
-            this.cbb_IDCuonSach.TabIndex = 5;
+            this.cbb_IDCuonSach.TabIndex = 3;
             this.cbb_IDCuonSach.ValueMember = "IDCuonSach";
             // 
             // cUONSACHBindingSource
@@ -349,7 +349,7 @@
             this.cbb_IDPhieuMuon.Location = new System.Drawing.Point(337, 138);
             this.cbb_IDPhieuMuon.Name = "cbb_IDPhieuMuon";
             this.cbb_IDPhieuMuon.Size = new System.Drawing.Size(175, 44);
-            this.cbb_IDPhieuMuon.TabIndex = 4;
+            this.cbb_IDPhieuMuon.TabIndex = 2;
             this.cbb_IDPhieuMuon.ValueMember = "IDPhieuMuon";
             // 
             // pHIEUMUONBindingSource
@@ -363,7 +363,7 @@
             this.tb_IDCTPhieuMuon.MaxLength = 3;
             this.tb_IDCTPhieuMuon.Name = "tb_IDCTPhieuMuon";
             this.tb_IDCTPhieuMuon.Size = new System.Drawing.Size(175, 44);
-            this.tb_IDCTPhieuMuon.TabIndex = 3;
+            this.tb_IDCTPhieuMuon.TabIndex = 1;
             this.tb_IDCTPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3

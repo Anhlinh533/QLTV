@@ -105,7 +105,7 @@
             this.navigationPane1.RegularSize = new System.Drawing.Size(1640, 1018);
             this.navigationPane1.SelectedPage = this.item_Them;
             this.navigationPane1.Size = new System.Drawing.Size(1640, 1018);
-            this.navigationPane1.TabIndex = 4;
+            this.navigationPane1.TabIndex = 1;
             this.navigationPane1.Text = "navigationPane1";
             // 
             // item_Them
@@ -331,7 +331,7 @@
             this.cbb_IDTacGia.Location = new System.Drawing.Point(266, 198);
             this.cbb_IDTacGia.Name = "cbb_IDTacGia";
             this.cbb_IDTacGia.Size = new System.Drawing.Size(201, 44);
-            this.cbb_IDTacGia.TabIndex = 5;
+            this.cbb_IDTacGia.TabIndex = 3;
             this.cbb_IDTacGia.ValueMember = "IDTacGia";
             // 
             // tACGIABindingSource
@@ -348,7 +348,7 @@
             this.cbb_IDDauSach.Location = new System.Drawing.Point(266, 138);
             this.cbb_IDDauSach.Name = "cbb_IDDauSach";
             this.cbb_IDDauSach.Size = new System.Drawing.Size(201, 44);
-            this.cbb_IDDauSach.TabIndex = 4;
+            this.cbb_IDDauSach.TabIndex = 2;
             this.cbb_IDDauSach.ValueMember = "IDDauSach";
             // 
             // dAUSACHBindingSource
@@ -362,7 +362,7 @@
             this.tb_IDCTTacGia.MaxLength = 3;
             this.tb_IDCTTacGia.Name = "tb_IDCTTacGia";
             this.tb_IDCTTacGia.Size = new System.Drawing.Size(201, 44);
-            this.tb_IDCTTacGia.TabIndex = 3;
+            this.tb_IDCTTacGia.TabIndex = 1;
             this.tb_IDCTTacGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3

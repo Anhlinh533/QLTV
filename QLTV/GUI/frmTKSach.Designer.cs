@@ -262,42 +262,42 @@
             this.tb_GiaTien.Location = new System.Drawing.Point(254, 373);
             this.tb_GiaTien.Name = "tb_GiaTien";
             this.tb_GiaTien.Size = new System.Drawing.Size(214, 44);
-            this.tb_GiaTien.TabIndex = 11;
+            this.tb_GiaTien.TabIndex = 6;
             // 
             // tb_SoLuongTon
             // 
             this.tb_SoLuongTon.Location = new System.Drawing.Point(254, 313);
             this.tb_SoLuongTon.Name = "tb_SoLuongTon";
             this.tb_SoLuongTon.Size = new System.Drawing.Size(214, 44);
-            this.tb_SoLuongTon.TabIndex = 10;
+            this.tb_SoLuongTon.TabIndex = 5;
             // 
             // tb_NamXuatBan
             // 
             this.tb_NamXuatBan.Location = new System.Drawing.Point(254, 253);
             this.tb_NamXuatBan.Name = "tb_NamXuatBan";
             this.tb_NamXuatBan.Size = new System.Drawing.Size(214, 44);
-            this.tb_NamXuatBan.TabIndex = 9;
+            this.tb_NamXuatBan.TabIndex = 4;
             // 
             // tb_NhaXuatBan
             // 
             this.tb_NhaXuatBan.Location = new System.Drawing.Point(254, 193);
             this.tb_NhaXuatBan.Name = "tb_NhaXuatBan";
             this.tb_NhaXuatBan.Size = new System.Drawing.Size(214, 44);
-            this.tb_NhaXuatBan.TabIndex = 8;
+            this.tb_NhaXuatBan.TabIndex = 3;
             // 
             // tb_IDDauSach
             // 
             this.tb_IDDauSach.Location = new System.Drawing.Point(254, 133);
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(214, 44);
-            this.tb_IDDauSach.TabIndex = 7;
+            this.tb_IDDauSach.TabIndex = 2;
             // 
             // tb_IDSach
             // 
             this.tb_IDSach.Location = new System.Drawing.Point(254, 73);
             this.tb_IDSach.Name = "tb_IDSach";
             this.tb_IDSach.Size = new System.Drawing.Size(214, 44);
-            this.tb_IDSach.TabIndex = 6;
+            this.tb_IDSach.TabIndex = 1;
             // 
             // rdb_GiaTien
             // 
@@ -488,21 +488,21 @@
             this.cbb_TinhTrang.Location = new System.Drawing.Point(225, 182);
             this.cbb_TinhTrang.Name = "cbb_TinhTrang";
             this.cbb_TinhTrang.Size = new System.Drawing.Size(213, 44);
-            this.cbb_TinhTrang.TabIndex = 5;
+            this.cbb_TinhTrang.TabIndex = 3;
             // 
             // tb_IDSachCS
             // 
             this.tb_IDSachCS.Location = new System.Drawing.Point(225, 122);
             this.tb_IDSachCS.Name = "tb_IDSachCS";
             this.tb_IDSachCS.Size = new System.Drawing.Size(213, 44);
-            this.tb_IDSachCS.TabIndex = 4;
+            this.tb_IDSachCS.TabIndex = 2;
             // 
             // tb_IDCuonSach
             // 
             this.tb_IDCuonSach.Location = new System.Drawing.Point(225, 62);
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
             this.tb_IDCuonSach.Size = new System.Drawing.Size(213, 44);
-            this.tb_IDCuonSach.TabIndex = 3;
+            this.tb_IDCuonSach.TabIndex = 1;
             // 
             // rdb_TinhTrang
             // 

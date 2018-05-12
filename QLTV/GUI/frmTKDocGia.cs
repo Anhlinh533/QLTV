@@ -31,20 +31,55 @@ namespace QLTV.GUI
 
         private void btn_TKDocGia_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-            SCRIPT.useForm.ResetAllControls(groupControl2);
-            SCRIPT.useForm.ResetAllControls(groupControl3);
-            SCRIPT.useForm.ResetAllControls(groupControl4);
+            if (rdb_IDDocGia.Checked == true)
+            {
+                dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(SCRIPT.formatTheDocGia.Instance.TKIDDocGia(tb_IDDocGia.Text.Trim()));
+                ResetForm();
+            }
+            else if (rdb_DiaChi.Checked == true)
+            {
+                dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(SCRIPT.formatTheDocGia.Instance.TKDiaChiDG(tb_DiaChi.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_Email.Checked==true)
+            {
+                dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(SCRIPT.formatTheDocGia.Instance.TKEmailDG(tb_Email.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_HoTen.Checked==true)
+            {
+                dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(SCRIPT.formatTheDocGia.Instance.TKHoTenDG(tb_HoTen.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_LoaiDocGia.Checked==true)
+            {
+                dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(SCRIPT.formatTheDocGia.Instance.TKIDLoaiDG(cbb_LoaiDocGia.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_NgayLapThe.Checked==true)
+            {
+                dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(SCRIPT.formatTheDocGia.Instance.TKNgayLapThe(dtp_NgayLapThe.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_NgaySinh.Checked==true)
+            {
+                dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(SCRIPT.formatTheDocGia.Instance.TKNgaySinhDG(dtp_NgaySinh.Text.Trim()));
+                ResetForm();
+            }
+
         }
 
         private void btn_TKUser_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-            SCRIPT.useForm.ResetAllControls(groupControl2);
-            SCRIPT.useForm.ResetAllControls(groupControl3);
-            SCRIPT.useForm.ResetAllControls(groupControl4);
+            ResetForm();
         }
 
+        #region Form
+        public void ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
@@ -52,5 +87,6 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl3);
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
+        #endregion
     }
 }

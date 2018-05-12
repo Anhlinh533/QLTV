@@ -338,7 +338,7 @@
             this.dtp_NgayTra.Location = new System.Drawing.Point(253, 195);
             this.dtp_NgayTra.Name = "dtp_NgayTra";
             this.dtp_NgayTra.Size = new System.Drawing.Size(203, 44);
-            this.dtp_NgayTra.TabIndex = 16;
+            this.dtp_NgayTra.TabIndex = 3;
             // 
             // btn_Them
             // 
@@ -366,14 +366,14 @@
             this.cbb_IDDocGia.Location = new System.Drawing.Point(253, 138);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
             this.cbb_IDDocGia.Size = new System.Drawing.Size(203, 44);
-            this.cbb_IDDocGia.TabIndex = 10;
+            this.cbb_IDDocGia.TabIndex = 2;
             // 
             // tb_SoTienTra
             // 
             this.tb_SoTienTra.Location = new System.Drawing.Point(253, 258);
             this.tb_SoTienTra.Name = "tb_SoTienTra";
             this.tb_SoTienTra.Size = new System.Drawing.Size(203, 44);
-            this.tb_SoTienTra.TabIndex = 8;
+            this.tb_SoTienTra.TabIndex = 4;
             // 
             // tb_IDPhieuTra
             // 
@@ -381,7 +381,7 @@
             this.tb_IDPhieuTra.MaxLength = 3;
             this.tb_IDPhieuTra.Name = "tb_IDPhieuTra";
             this.tb_IDPhieuTra.Size = new System.Drawing.Size(203, 44);
-            this.tb_IDPhieuTra.TabIndex = 6;
+            this.tb_IDPhieuTra.TabIndex = 1;
             this.tb_IDPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label5

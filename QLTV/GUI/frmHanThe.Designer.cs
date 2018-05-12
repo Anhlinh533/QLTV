@@ -79,7 +79,7 @@
             this.tb_HanThe.Location = new System.Drawing.Point(225, 171);
             this.tb_HanThe.Name = "tb_HanThe";
             this.tb_HanThe.Size = new System.Drawing.Size(179, 44);
-            this.tb_HanThe.TabIndex = 2;
+            this.tb_HanThe.TabIndex = 1;
             // 
             // label2
             // 

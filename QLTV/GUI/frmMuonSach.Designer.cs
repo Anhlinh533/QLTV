@@ -316,7 +316,7 @@
             this.dtp_NgayMuon.Location = new System.Drawing.Point(238, 195);
             this.dtp_NgayMuon.Name = "dtp_NgayMuon";
             this.dtp_NgayMuon.Size = new System.Drawing.Size(190, 44);
-            this.dtp_NgayMuon.TabIndex = 16;
+            this.dtp_NgayMuon.TabIndex = 3;
             // 
             // btn_Them
             // 
@@ -347,7 +347,7 @@
             this.cbb_IDDocGia.Location = new System.Drawing.Point(238, 138);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
             this.cbb_IDDocGia.Size = new System.Drawing.Size(190, 44);
-            this.cbb_IDDocGia.TabIndex = 5;
+            this.cbb_IDDocGia.TabIndex = 2;
             this.cbb_IDDocGia.ValueMember = "IDDocGia";
             // 
             // tHEDOCGIABindingSource
@@ -361,7 +361,7 @@
             this.tb_IDPhieuMuon.MaxLength = 3;
             this.tb_IDPhieuMuon.Name = "tb_IDPhieuMuon";
             this.tb_IDPhieuMuon.Size = new System.Drawing.Size(190, 44);
-            this.tb_IDPhieuMuon.TabIndex = 4;
+            this.tb_IDPhieuMuon.TabIndex = 1;
             this.tb_IDPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3

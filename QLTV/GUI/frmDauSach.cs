@@ -56,7 +56,8 @@ namespace QLTV.GUI
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-
+            this.dAUSACHTableAdapter.Fill(quanLyThuVienDataSet.DAUSACH);
+            ResetForm();
         }        
 
         private void btn_IDDelete_Click(object sender, EventArgs e)

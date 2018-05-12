@@ -79,7 +79,7 @@
             this.tb_SoSachMuonMax.Location = new System.Drawing.Point(328, 176);
             this.tb_SoSachMuonMax.Name = "tb_SoSachMuonMax";
             this.tb_SoSachMuonMax.Size = new System.Drawing.Size(167, 44);
-            this.tb_SoSachMuonMax.TabIndex = 2;
+            this.tb_SoSachMuonMax.TabIndex = 1;
             // 
             // label2
             // 

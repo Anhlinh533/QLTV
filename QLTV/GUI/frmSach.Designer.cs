@@ -75,11 +75,11 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
             this.label7 = new System.Windows.Forms.Label();
             this.sACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.SACHTableAdapter();
             this.dAUSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter();
-            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -369,14 +369,14 @@
             this.tb_GiaTien.Location = new System.Drawing.Point(225, 378);
             this.tb_GiaTien.Name = "tb_GiaTien";
             this.tb_GiaTien.Size = new System.Drawing.Size(221, 44);
-            this.tb_GiaTien.TabIndex = 11;
+            this.tb_GiaTien.TabIndex = 6;
             // 
             // tb_SoLuongTon
             // 
             this.tb_SoLuongTon.Location = new System.Drawing.Point(225, 318);
             this.tb_SoLuongTon.Name = "tb_SoLuongTon";
             this.tb_SoLuongTon.Size = new System.Drawing.Size(221, 44);
-            this.tb_SoLuongTon.TabIndex = 10;
+            this.tb_SoLuongTon.TabIndex = 5;
             // 
             // tb_NXB
             // 
@@ -384,7 +384,7 @@
             this.tb_NXB.MaxLength = 20;
             this.tb_NXB.Name = "tb_NXB";
             this.tb_NXB.Size = new System.Drawing.Size(221, 44);
-            this.tb_NXB.TabIndex = 9;
+            this.tb_NXB.TabIndex = 3;
             // 
             // tb_IDSach
             // 
@@ -392,7 +392,7 @@
             this.tb_IDSach.MaxLength = 3;
             this.tb_IDSach.Name = "tb_IDSach";
             this.tb_IDSach.Size = new System.Drawing.Size(221, 44);
-            this.tb_IDSach.TabIndex = 8;
+            this.tb_IDSach.TabIndex = 1;
             this.tb_IDSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // cbb_IDDauSach
@@ -404,7 +404,7 @@
             this.cbb_IDDauSach.Location = new System.Drawing.Point(225, 138);
             this.cbb_IDDauSach.Name = "cbb_IDDauSach";
             this.cbb_IDDauSach.Size = new System.Drawing.Size(221, 44);
-            this.cbb_IDDauSach.TabIndex = 7;
+            this.cbb_IDDauSach.TabIndex = 2;
             this.cbb_IDDauSach.ValueMember = "IDDauSach";
             // 
             // dAUSACHBindingSource
@@ -428,7 +428,7 @@
             this.cbb_NXB.Location = new System.Drawing.Point(225, 258);
             this.cbb_NXB.Name = "cbb_NXB";
             this.cbb_NXB.Size = new System.Drawing.Size(221, 44);
-            this.cbb_NXB.TabIndex = 6;
+            this.cbb_NXB.TabIndex = 4;
             // 
             // label6
             // 
@@ -605,6 +605,18 @@
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
             // 
+            // cbb_IDDelete
+            // 
+            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.sACHBindingSource, "IDSach", true));
+            this.cbb_IDDelete.DataSource = this.sACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDSach";
+            this.cbb_IDDelete.FormattingEnabled = true;
+            this.cbb_IDDelete.Location = new System.Drawing.Point(12, 138);
+            this.cbb_IDDelete.Name = "cbb_IDDelete";
+            this.cbb_IDDelete.Size = new System.Drawing.Size(214, 44);
+            this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "IDSach";
+            // 
             // btn_IDDelete
             // 
             this.btn_IDDelete.BackColor = System.Drawing.Color.SeaGreen;
@@ -642,18 +654,6 @@
             // dAUSACHTableAdapter
             // 
             this.dAUSACHTableAdapter.ClearBeforeFill = true;
-            // 
-            // cbb_IDDelete
-            // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.sACHBindingSource, "IDSach", true));
-            this.cbb_IDDelete.DataSource = this.sACHBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDSach";
-            this.cbb_IDDelete.FormattingEnabled = true;
-            this.cbb_IDDelete.Location = new System.Drawing.Point(12, 138);
-            this.cbb_IDDelete.Name = "cbb_IDDelete";
-            this.cbb_IDDelete.Size = new System.Drawing.Size(214, 44);
-            this.cbb_IDDelete.TabIndex = 4;
-            this.cbb_IDDelete.ValueMember = "IDSach";
             // 
             // frmSach
             // 

@@ -333,7 +333,7 @@
             this.cbb_IDCuonSach.Location = new System.Drawing.Point(297, 198);
             this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
             this.cbb_IDCuonSach.Size = new System.Drawing.Size(243, 44);
-            this.cbb_IDCuonSach.TabIndex = 17;
+            this.cbb_IDCuonSach.TabIndex = 3;
             this.cbb_IDCuonSach.ValueMember = "IDCuonSach";
             // 
             // cUONSACHBindingSource
@@ -380,7 +380,7 @@
             this.cbb_IDPhieuTra.Location = new System.Drawing.Point(297, 138);
             this.cbb_IDPhieuTra.Name = "cbb_IDPhieuTra";
             this.cbb_IDPhieuTra.Size = new System.Drawing.Size(243, 44);
-            this.cbb_IDPhieuTra.TabIndex = 8;
+            this.cbb_IDPhieuTra.TabIndex = 2;
             this.cbb_IDPhieuTra.ValueMember = "IDPhieuTra";
             // 
             // pHIEUTRABindingSource
@@ -394,7 +394,7 @@
             this.tb_IDCTPhieuTra.MaxLength = 3;
             this.tb_IDCTPhieuTra.Name = "tb_IDCTPhieuTra";
             this.tb_IDCTPhieuTra.Size = new System.Drawing.Size(243, 44);
-            this.tb_IDCTPhieuTra.TabIndex = 5;
+            this.tb_IDCTPhieuTra.TabIndex = 1;
             this.tb_IDCTPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label2

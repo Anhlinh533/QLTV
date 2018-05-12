@@ -79,7 +79,7 @@
             this.tb_TienPhatMoiNgay.Location = new System.Drawing.Point(328, 176);
             this.tb_TienPhatMoiNgay.Name = "tb_TienPhatMoiNgay";
             this.tb_TienPhatMoiNgay.Size = new System.Drawing.Size(167, 44);
-            this.tb_TienPhatMoiNgay.TabIndex = 2;
+            this.tb_TienPhatMoiNgay.TabIndex = 1;
             // 
             // label2
             // 

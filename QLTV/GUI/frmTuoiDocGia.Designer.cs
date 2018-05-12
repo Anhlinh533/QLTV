@@ -95,14 +95,14 @@
             this.tb_TuoiMax.Location = new System.Drawing.Point(193, 223);
             this.tb_TuoiMax.Name = "tb_TuoiMax";
             this.tb_TuoiMax.Size = new System.Drawing.Size(181, 44);
-            this.tb_TuoiMax.TabIndex = 4;
+            this.tb_TuoiMax.TabIndex = 2;
             // 
             // tb_TuoiMin
             // 
             this.tb_TuoiMin.Location = new System.Drawing.Point(193, 163);
             this.tb_TuoiMin.Name = "tb_TuoiMin";
             this.tb_TuoiMin.Size = new System.Drawing.Size(181, 44);
-            this.tb_TuoiMin.TabIndex = 3;
+            this.tb_TuoiMin.TabIndex = 1;
             // 
             // label3
             // 

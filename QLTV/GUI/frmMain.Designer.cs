@@ -79,12 +79,12 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_DoiPWD = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.rib_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribtab_DoiPWD = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rib_Users = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).BeginInit();
             this.SuspendLayout();
@@ -234,6 +234,7 @@
             this.btn_TKDocGia.Name = "btn_TKDocGia";
             this.btn_TKDocGia.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TKDocGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TKDocGia_ItemClick);
             // 
             // ribtab_TKSach
             // 
@@ -249,6 +250,7 @@
             this.btn_TKSach.Name = "btn_TKSach";
             this.btn_TKSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TKSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TKSach_ItemClick);
             // 
             // ribtab_TKTacGia
             // 
@@ -264,6 +266,7 @@
             this.btn_TKTacGia.Name = "btn_TKTacGia";
             this.btn_TKTacGia.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TKTacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TKTacGia_ItemClick);
             // 
             // ribtab_TKMuon
             // 
@@ -279,6 +282,7 @@
             this.btn_TKMuon.Name = "btn_TKMuon";
             this.btn_TKMuon.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TKMuon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TKMuon_ItemClick);
             // 
             // ribtab_TKTra
             // 
@@ -294,6 +298,7 @@
             this.btn_TKTra.Name = "btn_TKTra";
             this.btn_TKTra.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_TKTra.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TKTra_ItemClick);
             // 
             // rib_MuonTra
             // 
@@ -554,6 +559,12 @@
             this.rib_TroGiup});
             this.ribbonControl.Size = new System.Drawing.Size(1835, 219);
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "barButtonItem1";
+            this.barButtonItem1.Id = 29;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
             // rib_BaoCao
             // 
             this.rib_BaoCao.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -581,12 +592,6 @@
             // xtraTable
             // 
             this.xtraTable.MdiParent = this;
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "barButtonItem1";
-            this.barButtonItem1.Id = 29;
-            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // frmMain
             // 

@@ -54,7 +54,8 @@ namespace QLTV.GUI
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-
+            this.pHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUTRA);
+            ResetForm();
         }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)

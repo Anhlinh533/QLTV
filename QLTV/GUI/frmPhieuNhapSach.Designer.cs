@@ -296,7 +296,7 @@
             this.dtp_NgayNhap.Location = new System.Drawing.Point(228, 135);
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
             this.dtp_NgayNhap.Size = new System.Drawing.Size(203, 44);
-            this.dtp_NgayNhap.TabIndex = 16;
+            this.dtp_NgayNhap.TabIndex = 2;
             // 
             // btn_Them
             // 
@@ -324,7 +324,7 @@
             this.tb_IDPhieuNhap.MaxLength = 3;
             this.tb_IDPhieuNhap.Name = "tb_IDPhieuNhap";
             this.tb_IDPhieuNhap.Size = new System.Drawing.Size(203, 44);
-            this.tb_IDPhieuNhap.TabIndex = 3;
+            this.tb_IDPhieuNhap.TabIndex = 1;
             this.tb_IDPhieuNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label2

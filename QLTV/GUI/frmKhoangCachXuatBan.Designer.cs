@@ -79,7 +79,7 @@
             this.tb_KhoangCach.Location = new System.Drawing.Point(269, 171);
             this.tb_KhoangCach.Name = "tb_KhoangCach";
             this.tb_KhoangCach.Size = new System.Drawing.Size(167, 44);
-            this.tb_KhoangCach.TabIndex = 2;
+            this.tb_KhoangCach.TabIndex = 1;
             // 
             // label2
             // 

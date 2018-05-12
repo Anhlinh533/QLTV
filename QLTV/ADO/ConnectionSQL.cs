@@ -32,34 +32,34 @@ namespace QLTV.ADO
 
         //private string connectionSTR = ConfigurationManager.ConnectionStrings["Conn"].ConnectionString;
 
-        ////Thực hiện các câu lệnh Select
-        //public DataTable ExecuteQuery(string query, object[] parameter = null)
-        //{
+        //Thực hiện các câu lệnh Select
+        public DataTable ExecuteQuery(string query, object[] parameter = null)
+        {
 
-        //    DataTable data = new DataTable();
-        //    using (SqlConnection connection = new SqlConnection(connectionSTR))
-        //    {
-        //        connection.Open();
-        //        SqlCommand command = new SqlCommand(query, connection);
-        //        if (parameter != null)
-        //        {
-        //            string[] listPara = query.Split(' ');
-        //            int i = 0;
-        //            foreach (string item in listPara)
-        //            {
-        //                if (item.Contains('@'))
-        //                {
-        //                    command.Parameters.AddWithValue(item, parameter[i]);
-        //                    i++;
-        //                }
-        //            }
-        //        }
-        //        SqlDataAdapter adapter = new SqlDataAdapter(command);
-        //        adapter.Fill(data);
-        //        connection.Close();
-        //    }
-        //    return data;
-        //}
+            DataTable data = new DataTable();
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True"))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(data);
+                connection.Close();
+            }
+            return data;
+        }
 
         ////Liên quan đến số lượng
         //public int ExecuteNonQuery(string query, object[] parameter = null)
@@ -144,5 +144,6 @@ namespace QLTV.ADO
 
             con.Close();
         }
+
     }
 }

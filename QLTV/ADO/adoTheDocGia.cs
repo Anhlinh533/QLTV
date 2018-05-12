@@ -44,5 +44,10 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE THEDOCGIA SET HoTenDG = N'" + tb_HoTenDocGia + "', NgaySinhDG = '" + dtp_NgaySinh + "', DiaChiDG = N'" + tb_DiaChi + "', EmailDG = '" + tb_Email + "', IDLoaiDG = '" + cbb_LoaiDocGia + "', NgayLapThe = '" + dtp_NgayLapThe + "' WHERE IDDocGia = '" + tb_IDDocGia + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        //public void TKIDDocGia(string IDDocGia)
+        //{
+        //    string SQlSearch = "Select * from THEDOCGIA where IDDocGia like '%" + IDDocGia + "%' ";
+        //    ADO.ConnectionSQL.Instance.ExecuteQuery(SQlSearch);
+        //}
     }
 }

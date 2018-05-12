@@ -391,7 +391,7 @@
             this.dtp_NgayLapThe.Location = new System.Drawing.Point(207, 436);
             this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
             this.dtp_NgayLapThe.Size = new System.Drawing.Size(201, 44);
-            this.dtp_NgayLapThe.TabIndex = 16;
+            this.dtp_NgayLapThe.TabIndex = 7;
             // 
             // dtp_NgaySinh
             // 
@@ -399,7 +399,7 @@
             this.dtp_NgaySinh.Location = new System.Drawing.Point(207, 196);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(201, 44);
-            this.dtp_NgaySinh.TabIndex = 15;
+            this.dtp_NgaySinh.TabIndex = 3;
             // 
             // btn_Them
             // 
@@ -425,13 +425,11 @@
             // 
             this.cbb_LoaiDocGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lOAIDOCGIABindingSource, "IDLoaiDG", true));
             this.cbb_LoaiDocGia.DataSource = this.lOAIDOCGIABindingSource;
-            this.cbb_LoaiDocGia.DisplayMember = "IDLoaiDG";
             this.cbb_LoaiDocGia.FormattingEnabled = true;
             this.cbb_LoaiDocGia.Location = new System.Drawing.Point(207, 379);
             this.cbb_LoaiDocGia.Name = "cbb_LoaiDocGia";
             this.cbb_LoaiDocGia.Size = new System.Drawing.Size(201, 44);
-            this.cbb_LoaiDocGia.TabIndex = 13;
-            this.cbb_LoaiDocGia.ValueMember = "IDLoaiDG";
+            this.cbb_LoaiDocGia.TabIndex = 6;
             // 
             // lOAIDOCGIABindingSource
             // 
@@ -443,21 +441,21 @@
             this.tb_Email.Location = new System.Drawing.Point(207, 319);
             this.tb_Email.Name = "tb_Email";
             this.tb_Email.Size = new System.Drawing.Size(201, 44);
-            this.tb_Email.TabIndex = 10;
+            this.tb_Email.TabIndex = 5;
             // 
             // tb_DiaChi
             // 
             this.tb_DiaChi.Location = new System.Drawing.Point(207, 259);
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(201, 44);
-            this.tb_DiaChi.TabIndex = 9;
+            this.tb_DiaChi.TabIndex = 4;
             // 
             // tb_HoTenDocGia
             // 
             this.tb_HoTenDocGia.Location = new System.Drawing.Point(207, 139);
             this.tb_HoTenDocGia.Name = "tb_HoTenDocGia";
             this.tb_HoTenDocGia.Size = new System.Drawing.Size(201, 44);
-            this.tb_HoTenDocGia.TabIndex = 8;
+            this.tb_HoTenDocGia.TabIndex = 2;
             // 
             // tb_IDDocGia
             // 
@@ -465,7 +463,7 @@
             this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(201, 44);
-            this.tb_IDDocGia.TabIndex = 7;
+            this.tb_IDDocGia.TabIndex = 1;
             this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label7

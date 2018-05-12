@@ -175,6 +175,47 @@ namespace QLTV
             f.MdiParent = this;
             f.Show();
         }
+
+        private void btn_TKDocGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTKDocGia f = new frmTKDocGia();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_TKSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTKSach f = new frmTKSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_TKTacGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTKTacGia f = new frmTKTacGia();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void btn_TKMuon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTKMuonSach f = new frmTKMuonSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+
+        }
+
+        private void btn_TKTra_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmTKTraSach f = new frmTKTraSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
         #endregion
 
 
@@ -191,6 +232,7 @@ namespace QLTV
             }
             return false;
         }
+
 
 
 

@@ -389,7 +389,7 @@
             this.cbb_TinhTrang.Location = new System.Drawing.Point(211, 196);
             this.cbb_TinhTrang.Name = "cbb_TinhTrang";
             this.cbb_TinhTrang.Size = new System.Drawing.Size(212, 44);
-            this.cbb_TinhTrang.TabIndex = 5;
+            this.cbb_TinhTrang.TabIndex = 3;
             // 
             // cbb_IDSach
             // 
@@ -400,7 +400,7 @@
             this.cbb_IDSach.Location = new System.Drawing.Point(211, 136);
             this.cbb_IDSach.Name = "cbb_IDSach";
             this.cbb_IDSach.Size = new System.Drawing.Size(212, 44);
-            this.cbb_IDSach.TabIndex = 4;
+            this.cbb_IDSach.TabIndex = 2;
             this.cbb_IDSach.ValueMember = "IDSach";
             // 
             // sACHBindingSource
@@ -414,7 +414,7 @@
             this.tb_IDCuonSach.MaxLength = 3;
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
             this.tb_IDCuonSach.Size = new System.Drawing.Size(212, 44);
-            this.tb_IDCuonSach.TabIndex = 3;
+            this.tb_IDCuonSach.TabIndex = 1;
             this.tb_IDCuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
@@ -503,7 +503,7 @@
             this.cbb_IDDelete.Location = new System.Drawing.Point(6, 134);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
             this.cbb_IDDelete.Size = new System.Drawing.Size(305, 44);
-            this.cbb_IDDelete.TabIndex = 2;
+            this.cbb_IDDelete.TabIndex = 1;
             this.cbb_IDDelete.ValueMember = "IDCuonSach";
             // 
             // label4
