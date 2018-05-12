@@ -365,9 +365,7 @@
             // 
             // cbb_IDSach
             // 
-            this.cbb_IDSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.sACHBindingSource, "IDSach", true));
             this.cbb_IDSach.DataSource = this.sACHBindingSource;
-            this.cbb_IDSach.DisplayMember = "IDSach";
             this.cbb_IDSach.FormattingEnabled = true;
             this.cbb_IDSach.Location = new System.Drawing.Point(327, 198);
             this.cbb_IDSach.Name = "cbb_IDSach";
@@ -382,9 +380,7 @@
             // 
             // cbb_IDPhieuNhap
             // 
-            this.cbb_IDPhieuNhap.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pHIEUNHAPSACHBindingSource, "IDPhieuNhap", true));
             this.cbb_IDPhieuNhap.DataSource = this.pHIEUNHAPSACHBindingSource;
-            this.cbb_IDPhieuNhap.DisplayMember = "IDPhieuNhap";
             this.cbb_IDPhieuNhap.FormattingEnabled = true;
             this.cbb_IDPhieuNhap.Location = new System.Drawing.Point(327, 138);
             this.cbb_IDPhieuNhap.Name = "cbb_IDPhieuNhap";
@@ -609,9 +605,7 @@
             // 
             // cbb_IDDelete
             // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cTPHIEUNHAPSACHBindingSource, "IDCTPhieuNhap", true));
             this.cbb_IDDelete.DataSource = this.cTPHIEUNHAPSACHBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDCTPhieuNhap";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 145);
             this.cbb_IDDelete.Name = "cbb_IDDelete";

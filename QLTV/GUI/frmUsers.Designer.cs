@@ -295,7 +295,7 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(610, 1074);
+            this.groupControl1.Size = new System.Drawing.Size(401, 1074);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin User";
             // 
@@ -321,7 +321,6 @@
             // 
             // cbb_IDDocGia
             // 
-            this.cbb_IDDocGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tHEDOCGIABindingSource, "IDDocGia", true));
             this.cbb_IDDocGia.DataSource = this.tHEDOCGIABindingSource;
             this.cbb_IDDocGia.DisplayMember = "IDDocGia";
             this.cbb_IDDocGia.FormattingEnabled = true;
@@ -463,7 +462,7 @@
             this.groupControl3.Controls.Add(this.label4);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(610, 1074);
+            this.groupControl3.Size = new System.Drawing.Size(401, 1074);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Thông tin xóa";
             // 
@@ -489,7 +488,6 @@
             // 
             // cbb_IDDelete
             // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.uSERSBindingSource, "UserName", true));
             this.cbb_IDDelete.DataSource = this.uSERSBindingSource;
             this.cbb_IDDelete.DisplayMember = "UserName";
             this.cbb_IDDelete.FormattingEnabled = true;

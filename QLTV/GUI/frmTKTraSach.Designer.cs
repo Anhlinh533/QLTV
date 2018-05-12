@@ -32,7 +32,7 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_TKTraSach = new System.Windows.Forms.DataGridView();
             this.iDPhieuTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,7 +68,7 @@
             this.btn_TKCTPhieuTraSach = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TienPhat = new System.Windows.Forms.TextBox();
             this.tb_SoNgayMuon = new System.Windows.Forms.TextBox();
-            this.tb_IDPhieuMuon = new System.Windows.Forms.TextBox();
+            this.tb_IDCTPhieuMuon = new System.Windows.Forms.TextBox();
             this.tb_IDPhieuTraCT = new System.Windows.Forms.TextBox();
             this.tb_IDCTPhieuTra = new System.Windows.Forms.TextBox();
             this.rdb_TienPhat = new System.Windows.Forms.RadioButton();
@@ -78,12 +78,14 @@
             this.rdb_IDCTPhieuTra = new System.Windows.Forms.RadioButton();
             this.pHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter();
             this.cT_PHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUTRATableAdapter();
+            this.rdb_CuonSach = new System.Windows.Forms.RadioButton();
+            this.tb_CuonSach = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKTraSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -107,9 +109,9 @@
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navigationPage1,
             this.navigationPage2});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1467, 1082);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(1750, 1082);
             this.navigationPane1.SelectedPage = this.navigationPage1;
-            this.navigationPane1.Size = new System.Drawing.Size(1467, 1082);
+            this.navigationPane1.Size = new System.Drawing.Size(1750, 1082);
             this.navigationPane1.TabIndex = 1;
             this.navigationPane1.Text = "navigationPane1";
             // 
@@ -120,7 +122,7 @@
             this.navigationPage1.Controls.Add(this.groupControl3);
             this.navigationPage1.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(1353, 1001);
+            this.navigationPage1.Size = new System.Drawing.Size(1636, 1001);
             // 
             // groupControl4
             // 
@@ -131,31 +133,31 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
-            this.groupControl4.Controls.Add(this.dataGridView1);
-            this.groupControl4.Location = new System.Drawing.Point(455, 0);
+            this.groupControl4.Controls.Add(this.dgv_TKTraSach);
+            this.groupControl4.Location = new System.Drawing.Point(521, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(899, 1001);
+            this.groupControl4.Size = new System.Drawing.Size(1116, 1001);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu thông tin mượn sách";
             // 
-            // dataGridView1
+            // dgv_TKTraSach
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_TKTraSach.AutoGenerateColumns = false;
+            this.dgv_TKTraSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TKTraSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDPhieuTraDataGridViewTextBoxColumn,
             this.iDDocGiaDataGridViewTextBoxColumn,
             this.ngayTraDataGridViewTextBoxColumn,
             this.tienPhatKyNayDataGridViewTextBoxColumn,
             this.soTienTraDataGridViewTextBoxColumn,
             this.tienNoKyNayDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pHIEUTRABindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(893, 951);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_TKTraSach.DataSource = this.pHIEUTRABindingSource;
+            this.dgv_TKTraSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_TKTraSach.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKTraSach.Name = "dgv_TKTraSach";
+            this.dgv_TKTraSach.RowTemplate.Height = 28;
+            this.dgv_TKTraSach.Size = new System.Drawing.Size(1110, 951);
+            this.dgv_TKTraSach.TabIndex = 0;
             // 
             // iDPhieuTraDataGridViewTextBoxColumn
             // 
@@ -239,7 +241,7 @@
             this.groupControl3.Controls.Add(this.rdb_IDPhieuTra);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(449, 1001);
+            this.groupControl3.Size = new System.Drawing.Size(515, 1001);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm theo";
             // 
@@ -248,7 +250,7 @@
             this.dtp_NgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayTra.Location = new System.Drawing.Point(267, 190);
             this.dtp_NgayTra.Name = "dtp_NgayTra";
-            this.dtp_NgayTra.Size = new System.Drawing.Size(163, 44);
+            this.dtp_NgayTra.Size = new System.Drawing.Size(202, 44);
             this.dtp_NgayTra.TabIndex = 3;
             // 
             // btn_TKPhieuTraSach
@@ -275,35 +277,35 @@
             // 
             this.tb_TienNoKiNay.Location = new System.Drawing.Point(267, 373);
             this.tb_TienNoKiNay.Name = "tb_TienNoKiNay";
-            this.tb_TienNoKiNay.Size = new System.Drawing.Size(163, 44);
+            this.tb_TienNoKiNay.Size = new System.Drawing.Size(202, 44);
             this.tb_TienNoKiNay.TabIndex = 6;
             // 
             // tb_SoTienTra
             // 
             this.tb_SoTienTra.Location = new System.Drawing.Point(267, 313);
             this.tb_SoTienTra.Name = "tb_SoTienTra";
-            this.tb_SoTienTra.Size = new System.Drawing.Size(163, 44);
+            this.tb_SoTienTra.Size = new System.Drawing.Size(202, 44);
             this.tb_SoTienTra.TabIndex = 5;
             // 
             // tb_IDPhieuTra
             // 
             this.tb_IDPhieuTra.Location = new System.Drawing.Point(267, 73);
             this.tb_IDPhieuTra.Name = "tb_IDPhieuTra";
-            this.tb_IDPhieuTra.Size = new System.Drawing.Size(163, 44);
+            this.tb_IDPhieuTra.Size = new System.Drawing.Size(202, 44);
             this.tb_IDPhieuTra.TabIndex = 1;
             // 
             // tb_IDDocGia
             // 
             this.tb_IDDocGia.Location = new System.Drawing.Point(267, 133);
             this.tb_IDDocGia.Name = "tb_IDDocGia";
-            this.tb_IDDocGia.Size = new System.Drawing.Size(163, 44);
+            this.tb_IDDocGia.Size = new System.Drawing.Size(202, 44);
             this.tb_IDDocGia.TabIndex = 2;
             // 
             // tb_TienPhatKiNay
             // 
             this.tb_TienPhatKiNay.Location = new System.Drawing.Point(267, 253);
             this.tb_TienPhatKiNay.Name = "tb_TienPhatKiNay";
-            this.tb_TienPhatKiNay.Size = new System.Drawing.Size(163, 44);
+            this.tb_TienPhatKiNay.Size = new System.Drawing.Size(202, 44);
             this.tb_TienPhatKiNay.TabIndex = 4;
             // 
             // rdb_TienNoKiNay
@@ -369,6 +371,7 @@
             // rdb_IDPhieuTra
             // 
             this.rdb_IDPhieuTra.AutoSize = true;
+            this.rdb_IDPhieuTra.Checked = true;
             this.rdb_IDPhieuTra.ForeColor = System.Drawing.Color.Red;
             this.rdb_IDPhieuTra.Location = new System.Drawing.Point(6, 74);
             this.rdb_IDPhieuTra.Name = "rdb_IDPhieuTra";
@@ -385,7 +388,7 @@
             this.navigationPage2.Controls.Add(this.groupControl1);
             this.navigationPage2.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_40;
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(1353, 1001);
+            this.navigationPage2.Size = new System.Drawing.Size(1636, 1001);
             // 
             // groupControl2
             // 
@@ -397,9 +400,9 @@
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.dgv_TKCTPhieuTraSach);
-            this.groupControl2.Location = new System.Drawing.Point(478, 0);
+            this.groupControl2.Location = new System.Drawing.Point(578, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(876, 1001);
+            this.groupControl2.Size = new System.Drawing.Size(1059, 1001);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu thông tin chi tiết phiếu trả sách";
             // 
@@ -418,7 +421,7 @@
             this.dgv_TKCTPhieuTraSach.Location = new System.Drawing.Point(3, 47);
             this.dgv_TKCTPhieuTraSach.Name = "dgv_TKCTPhieuTraSach";
             this.dgv_TKCTPhieuTraSach.RowTemplate.Height = 28;
-            this.dgv_TKCTPhieuTraSach.Size = new System.Drawing.Size(870, 951);
+            this.dgv_TKCTPhieuTraSach.Size = new System.Drawing.Size(1053, 951);
             this.dgv_TKCTPhieuTraSach.TabIndex = 0;
             // 
             // iDCTPhieuTraDataGridViewTextBoxColumn
@@ -475,10 +478,12 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.tb_CuonSach);
+            this.groupControl1.Controls.Add(this.rdb_CuonSach);
             this.groupControl1.Controls.Add(this.btn_TKCTPhieuTraSach);
             this.groupControl1.Controls.Add(this.tb_TienPhat);
             this.groupControl1.Controls.Add(this.tb_SoNgayMuon);
-            this.groupControl1.Controls.Add(this.tb_IDPhieuMuon);
+            this.groupControl1.Controls.Add(this.tb_IDCTPhieuMuon);
             this.groupControl1.Controls.Add(this.tb_IDPhieuTraCT);
             this.groupControl1.Controls.Add(this.tb_IDCTPhieuTra);
             this.groupControl1.Controls.Add(this.rdb_TienPhat);
@@ -488,7 +493,7 @@
             this.groupControl1.Controls.Add(this.rdb_IDCTPhieuTra);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(472, 1001);
+            this.groupControl1.Size = new System.Drawing.Size(572, 1001);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm theo";
             // 
@@ -505,7 +510,7 @@
             this.btn_TKCTPhieuTraSach.ImageZoom = 50;
             this.btn_TKCTPhieuTraSach.LabelPosition = 41;
             this.btn_TKCTPhieuTraSach.LabelText = "Tìm kiếm";
-            this.btn_TKCTPhieuTraSach.Location = new System.Drawing.Point(161, 388);
+            this.btn_TKCTPhieuTraSach.Location = new System.Drawing.Point(150, 450);
             this.btn_TKCTPhieuTraSach.Margin = new System.Windows.Forms.Padding(6);
             this.btn_TKCTPhieuTraSach.Name = "btn_TKCTPhieuTraSach";
             this.btn_TKCTPhieuTraSach.Size = new System.Drawing.Size(155, 162);
@@ -514,37 +519,37 @@
             // 
             // tb_TienPhat
             // 
-            this.tb_TienPhat.Location = new System.Drawing.Point(311, 320);
+            this.tb_TienPhat.Location = new System.Drawing.Point(351, 380);
             this.tb_TienPhat.Name = "tb_TienPhat";
-            this.tb_TienPhat.Size = new System.Drawing.Size(155, 44);
-            this.tb_TienPhat.TabIndex = 5;
+            this.tb_TienPhat.Size = new System.Drawing.Size(198, 44);
+            this.tb_TienPhat.TabIndex = 6;
             // 
             // tb_SoNgayMuon
             // 
-            this.tb_SoNgayMuon.Location = new System.Drawing.Point(311, 260);
+            this.tb_SoNgayMuon.Location = new System.Drawing.Point(351, 320);
             this.tb_SoNgayMuon.Name = "tb_SoNgayMuon";
-            this.tb_SoNgayMuon.Size = new System.Drawing.Size(155, 44);
-            this.tb_SoNgayMuon.TabIndex = 4;
+            this.tb_SoNgayMuon.Size = new System.Drawing.Size(198, 44);
+            this.tb_SoNgayMuon.TabIndex = 5;
             // 
-            // tb_IDPhieuMuon
+            // tb_IDCTPhieuMuon
             // 
-            this.tb_IDPhieuMuon.Location = new System.Drawing.Point(311, 200);
-            this.tb_IDPhieuMuon.Name = "tb_IDPhieuMuon";
-            this.tb_IDPhieuMuon.Size = new System.Drawing.Size(155, 44);
-            this.tb_IDPhieuMuon.TabIndex = 3;
+            this.tb_IDCTPhieuMuon.Location = new System.Drawing.Point(351, 261);
+            this.tb_IDCTPhieuMuon.Name = "tb_IDCTPhieuMuon";
+            this.tb_IDCTPhieuMuon.Size = new System.Drawing.Size(198, 44);
+            this.tb_IDCTPhieuMuon.TabIndex = 4;
             // 
             // tb_IDPhieuTraCT
             // 
-            this.tb_IDPhieuTraCT.Location = new System.Drawing.Point(311, 140);
+            this.tb_IDPhieuTraCT.Location = new System.Drawing.Point(351, 140);
             this.tb_IDPhieuTraCT.Name = "tb_IDPhieuTraCT";
-            this.tb_IDPhieuTraCT.Size = new System.Drawing.Size(155, 44);
+            this.tb_IDPhieuTraCT.Size = new System.Drawing.Size(198, 44);
             this.tb_IDPhieuTraCT.TabIndex = 2;
             // 
             // tb_IDCTPhieuTra
             // 
-            this.tb_IDCTPhieuTra.Location = new System.Drawing.Point(311, 80);
+            this.tb_IDCTPhieuTra.Location = new System.Drawing.Point(351, 80);
             this.tb_IDCTPhieuTra.Name = "tb_IDCTPhieuTra";
-            this.tb_IDCTPhieuTra.Size = new System.Drawing.Size(155, 44);
+            this.tb_IDCTPhieuTra.Size = new System.Drawing.Size(198, 44);
             this.tb_IDCTPhieuTra.TabIndex = 1;
             // 
             // rdb_TienPhat
@@ -552,11 +557,10 @@
             this.rdb_TienPhat.AutoSize = true;
             this.rdb_TienPhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.rdb_TienPhat.ForeColor = System.Drawing.Color.Red;
-            this.rdb_TienPhat.Location = new System.Drawing.Point(6, 321);
+            this.rdb_TienPhat.Location = new System.Drawing.Point(6, 381);
             this.rdb_TienPhat.Name = "rdb_TienPhat";
             this.rdb_TienPhat.Size = new System.Drawing.Size(167, 40);
             this.rdb_TienPhat.TabIndex = 4;
-            this.rdb_TienPhat.TabStop = true;
             this.rdb_TienPhat.Text = "Tiền phạt";
             this.rdb_TienPhat.UseVisualStyleBackColor = true;
             // 
@@ -564,11 +568,10 @@
             // 
             this.rdb_SoNgayMuon.AutoSize = true;
             this.rdb_SoNgayMuon.ForeColor = System.Drawing.Color.Red;
-            this.rdb_SoNgayMuon.Location = new System.Drawing.Point(6, 261);
+            this.rdb_SoNgayMuon.Location = new System.Drawing.Point(6, 321);
             this.rdb_SoNgayMuon.Name = "rdb_SoNgayMuon";
             this.rdb_SoNgayMuon.Size = new System.Drawing.Size(233, 40);
             this.rdb_SoNgayMuon.TabIndex = 3;
-            this.rdb_SoNgayMuon.TabStop = true;
             this.rdb_SoNgayMuon.Text = "Số ngày mượn";
             this.rdb_SoNgayMuon.UseVisualStyleBackColor = true;
             // 
@@ -576,12 +579,11 @@
             // 
             this.rdb_IDPhieuMuon.AutoSize = true;
             this.rdb_IDPhieuMuon.ForeColor = System.Drawing.Color.Red;
-            this.rdb_IDPhieuMuon.Location = new System.Drawing.Point(6, 201);
+            this.rdb_IDPhieuMuon.Location = new System.Drawing.Point(6, 261);
             this.rdb_IDPhieuMuon.Name = "rdb_IDPhieuMuon";
-            this.rdb_IDPhieuMuon.Size = new System.Drawing.Size(240, 40);
+            this.rdb_IDPhieuMuon.Size = new System.Drawing.Size(339, 40);
             this.rdb_IDPhieuMuon.TabIndex = 2;
-            this.rdb_IDPhieuMuon.TabStop = true;
-            this.rdb_IDPhieuMuon.Text = "ID phiếu mượn";
+            this.rdb_IDPhieuMuon.Text = "ID chi tiết phiếu mượn";
             this.rdb_IDPhieuMuon.UseVisualStyleBackColor = true;
             // 
             // rdb_IDPhieuTraCT
@@ -592,13 +594,13 @@
             this.rdb_IDPhieuTraCT.Name = "rdb_IDPhieuTraCT";
             this.rdb_IDPhieuTraCT.Size = new System.Drawing.Size(200, 40);
             this.rdb_IDPhieuTraCT.TabIndex = 1;
-            this.rdb_IDPhieuTraCT.TabStop = true;
             this.rdb_IDPhieuTraCT.Text = "ID phiếu trả";
             this.rdb_IDPhieuTraCT.UseVisualStyleBackColor = true;
             // 
             // rdb_IDCTPhieuTra
             // 
             this.rdb_IDCTPhieuTra.AutoSize = true;
+            this.rdb_IDCTPhieuTra.Checked = true;
             this.rdb_IDCTPhieuTra.ForeColor = System.Drawing.Color.Red;
             this.rdb_IDCTPhieuTra.Location = new System.Drawing.Point(6, 81);
             this.rdb_IDCTPhieuTra.Name = "rdb_IDCTPhieuTra";
@@ -616,11 +618,30 @@
             // 
             this.cT_PHIEUTRATableAdapter.ClearBeforeFill = true;
             // 
+            // rdb_CuonSach
+            // 
+            this.rdb_CuonSach.AutoSize = true;
+            this.rdb_CuonSach.ForeColor = System.Drawing.Color.Red;
+            this.rdb_CuonSach.Location = new System.Drawing.Point(6, 201);
+            this.rdb_CuonSach.Name = "rdb_CuonSach";
+            this.rdb_CuonSach.Size = new System.Drawing.Size(177, 40);
+            this.rdb_CuonSach.TabIndex = 19;
+            this.rdb_CuonSach.TabStop = true;
+            this.rdb_CuonSach.Text = "Cuốn sách";
+            this.rdb_CuonSach.UseVisualStyleBackColor = true;
+            // 
+            // tb_CuonSach
+            // 
+            this.tb_CuonSach.Location = new System.Drawing.Point(351, 200);
+            this.tb_CuonSach.Name = "tb_CuonSach";
+            this.tb_CuonSach.Size = new System.Drawing.Size(198, 44);
+            this.tb_CuonSach.TabIndex = 20;
+            // 
             // frmTKTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1467, 1082);
+            this.ClientSize = new System.Drawing.Size(1750, 1082);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTKTraSach";
             this.Text = "frmTKTraSach";
@@ -630,7 +651,7 @@
             this.navigationPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKTraSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -657,7 +678,7 @@
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_TKTraSach;
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource pHIEUTRABindingSource;
         private QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter pHIEUTRATableAdapter;
@@ -679,7 +700,7 @@
         private Bunifu.Framework.UI.BunifuTileButton btn_TKCTPhieuTraSach;
         private System.Windows.Forms.TextBox tb_TienPhat;
         private System.Windows.Forms.TextBox tb_SoNgayMuon;
-        private System.Windows.Forms.TextBox tb_IDPhieuMuon;
+        private System.Windows.Forms.TextBox tb_IDCTPhieuMuon;
         private System.Windows.Forms.TextBox tb_IDPhieuTraCT;
         private System.Windows.Forms.TextBox tb_IDCTPhieuTra;
         private System.Windows.Forms.RadioButton rdb_TienPhat;
@@ -699,5 +720,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soNgayMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tienPhatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox tb_CuonSach;
+        private System.Windows.Forms.RadioButton rdb_CuonSach;
     }
 }

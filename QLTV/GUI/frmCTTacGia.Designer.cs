@@ -324,9 +324,7 @@
             // 
             // cbb_IDTacGia
             // 
-            this.cbb_IDTacGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tACGIABindingSource, "IDTacGia", true));
             this.cbb_IDTacGia.DataSource = this.tACGIABindingSource;
-            this.cbb_IDTacGia.DisplayMember = "IDTacGia";
             this.cbb_IDTacGia.FormattingEnabled = true;
             this.cbb_IDTacGia.Location = new System.Drawing.Point(266, 198);
             this.cbb_IDTacGia.Name = "cbb_IDTacGia";
@@ -341,9 +339,7 @@
             // 
             // cbb_IDDauSach
             // 
-            this.cbb_IDDauSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dAUSACHBindingSource, "IDDauSach", true));
             this.cbb_IDDauSach.DataSource = this.dAUSACHBindingSource;
-            this.cbb_IDDauSach.DisplayMember = "IDDauSach";
             this.cbb_IDDauSach.FormattingEnabled = true;
             this.cbb_IDDauSach.Location = new System.Drawing.Point(266, 138);
             this.cbb_IDDauSach.Name = "cbb_IDDauSach";
@@ -505,11 +501,14 @@
             // 
             // cbb_Delete
             // 
+            this.cbb_Delete.DataSource = this.cTTACGIABindingSource;
+            this.cbb_Delete.DisplayMember = "IDCTTacGia";
             this.cbb_Delete.FormattingEnabled = true;
             this.cbb_Delete.Location = new System.Drawing.Point(12, 130);
             this.cbb_Delete.Name = "cbb_Delete";
             this.cbb_Delete.Size = new System.Drawing.Size(210, 44);
             this.cbb_Delete.TabIndex = 1;
+            this.cbb_Delete.ValueMember = "IDCTTacGia";
             // 
             // label4
             // 

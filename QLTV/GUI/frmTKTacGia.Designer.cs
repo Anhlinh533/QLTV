@@ -32,7 +32,7 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_TKTacGia = new System.Windows.Forms.DataGridView();
             this.iDTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +48,7 @@
             this.rdb_IDTacGia = new System.Windows.Forms.RadioButton();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgv_TKCTTacGia = new System.Windows.Forms.DataGridView();
             this.iDCTTacGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDTacGiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,7 +69,7 @@
             this.navigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKTacGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -77,7 +77,7 @@
             this.navigationPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCTTacGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -118,28 +118,28 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
-            this.groupControl4.Controls.Add(this.dataGridView1);
+            this.groupControl4.Controls.Add(this.dgv_TKTacGia);
             this.groupControl4.Location = new System.Drawing.Point(479, 0);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Size = new System.Drawing.Size(978, 1017);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu thông tin tác giả";
             // 
-            // dataGridView1
+            // dgv_TKTacGia
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_TKTacGia.AutoGenerateColumns = false;
+            this.dgv_TKTacGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TKTacGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDTacGiaDataGridViewTextBoxColumn,
             this.tenTacGiaDataGridViewTextBoxColumn,
             this.ngaySinhDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tACGIABindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(972, 967);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_TKTacGia.DataSource = this.tACGIABindingSource;
+            this.dgv_TKTacGia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_TKTacGia.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKTacGia.Name = "dgv_TKTacGia";
+            this.dgv_TKTacGia.RowTemplate.Height = 28;
+            this.dgv_TKTacGia.Size = new System.Drawing.Size(972, 967);
+            this.dgv_TKTacGia.TabIndex = 0;
             // 
             // iDTacGiaDataGridViewTextBoxColumn
             // 
@@ -289,28 +289,28 @@
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
-            this.groupControl2.Controls.Add(this.dataGridView2);
+            this.groupControl2.Controls.Add(this.dgv_TKCTTacGia);
             this.groupControl2.Location = new System.Drawing.Point(507, 0);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(950, 1017);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu chi tiết tác giả";
             // 
-            // dataGridView2
+            // dgv_TKCTTacGia
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_TKCTTacGia.AutoGenerateColumns = false;
+            this.dgv_TKCTTacGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TKCTTacGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCTTacGiaDataGridViewTextBoxColumn,
             this.iDDauSachDataGridViewTextBoxColumn,
             this.iDTacGiaDataGridViewTextBoxColumn1});
-            this.dataGridView2.DataSource = this.cTTACGIABindingSource;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 47);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(944, 967);
-            this.dataGridView2.TabIndex = 0;
+            this.dgv_TKCTTacGia.DataSource = this.cTTACGIABindingSource;
+            this.dgv_TKCTTacGia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_TKCTTacGia.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKCTTacGia.Name = "dgv_TKCTTacGia";
+            this.dgv_TKCTTacGia.RowTemplate.Height = 28;
+            this.dgv_TKCTTacGia.Size = new System.Drawing.Size(944, 967);
+            this.dgv_TKCTTacGia.TabIndex = 0;
             // 
             // iDCTTacGiaDataGridViewTextBoxColumn
             // 
@@ -466,7 +466,7 @@
             this.navigationPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKTacGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tACGIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -475,7 +475,7 @@
             this.navigationPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCTTacGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -491,7 +491,7 @@
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_TKTacGia;
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource tACGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.TACGIATableAdapter tACGIATableAdapter;
@@ -503,7 +503,7 @@
         private Bunifu.Framework.UI.BunifuTileButton btn_TKTacGia;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgv_TKCTTacGia;
         private System.Windows.Forms.BindingSource quanLyThuVienDataSetBindingSource;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.BindingSource cTTACGIABindingSource;

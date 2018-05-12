@@ -29,21 +29,48 @@ namespace QLTV.GUI
 
         private void btn_TKCTPhieuMuonSach_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-            SCRIPT.useForm.ResetAllControls(groupControl2);
-            SCRIPT.useForm.ResetAllControls(groupControl3);
-            SCRIPT.useForm.ResetAllControls(groupControl4);
+            if(rdb_IDCTPhieuMuon.Checked==true && tb_IDCTPhieuMuonSach.Text!="")
+            {
+                dgv_TKCTPhieuMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTMuonSach.Instance.TKIDCTPhieuMuon(tb_IDCTPhieuMuonSach.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_IDCuonSach.Checked==true && tb_IDCuonSach.Text!="")
+            {
+                dgv_TKCTPhieuMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTMuonSach.Instance.TKIDCuonSach(tb_IDCuonSach.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_IDPhieuMuonSach.Checked==true && tb_IDPhieuMuonSach.Text!="")
+            {
+                dgv_TKCTPhieuMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTMuonSach.Instance.TKIDPhieuMuon(tb_IDPhieuMuonSach.Text.Trim()));
+                ResetForm();
+            }
 
         }
 
         private void btn_TKPhieuMuonSach_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-            SCRIPT.useForm.ResetAllControls(groupControl2);
-            SCRIPT.useForm.ResetAllControls(groupControl3);
-            SCRIPT.useForm.ResetAllControls(groupControl4);
+            if(rdb_HanTra.Checked==true && dtp_HanTra.Text!="")
+            {
+                dgv_TKMuonSach.DataSource= ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKHanTra(dtp_HanTra.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_IDDocGia.Checked==true && tb_IDDocGia.Text!="")
+            {
+                dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKHanTra(tb_IDDocGia.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_IDPhieuMuon.Checked==true && tb_IDPhieuMuon.Text!="")
+            {
+                dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKIDPhieuMuon(tb_IDPhieuMuon.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_NgayMuon.Checked==true && dtp_NgayMuon.Text!="")
+            {
+                dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKNgayMuon(dtp_NgayMuon.Text.Trim()));
+                ResetForm();
+            }
         }
-
+        #region Form
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
@@ -51,5 +78,6 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl3);
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
+        #endregion
     }
 }

@@ -325,9 +325,7 @@
             // 
             // cbb_IDCuonSach
             // 
-            this.cbb_IDCuonSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cUONSACHBindingSource, "IDCuonSach", true));
             this.cbb_IDCuonSach.DataSource = this.cUONSACHBindingSource;
-            this.cbb_IDCuonSach.DisplayMember = "IDCuonSach";
             this.cbb_IDCuonSach.FormattingEnabled = true;
             this.cbb_IDCuonSach.Location = new System.Drawing.Point(337, 198);
             this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
@@ -342,9 +340,7 @@
             // 
             // cbb_IDPhieuMuon
             // 
-            this.cbb_IDPhieuMuon.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pHIEUMUONBindingSource, "IDPhieuMuon", true));
             this.cbb_IDPhieuMuon.DataSource = this.pHIEUMUONBindingSource;
-            this.cbb_IDPhieuMuon.DisplayMember = "IDPhieuMuon";
             this.cbb_IDPhieuMuon.FormattingEnabled = true;
             this.cbb_IDPhieuMuon.Location = new System.Drawing.Point(337, 138);
             this.cbb_IDPhieuMuon.Name = "cbb_IDPhieuMuon";
@@ -506,11 +502,14 @@
             // 
             // cbb_IDDelete
             // 
+            this.cbb_IDDelete.DataSource = this.cTPHIEUMUONBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDCTPhieuMuon";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(9, 125);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
             this.cbb_IDDelete.Size = new System.Drawing.Size(230, 44);
             this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "IDCTPhieuMuon";
             // 
             // label4
             // 

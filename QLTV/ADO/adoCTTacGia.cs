@@ -23,7 +23,7 @@ namespace QLTV.ADO
                 ADO.adoCTTacGia.instance = value;
             }
         }
-
+        #region Insert
         public void Them(string tb_IDCTTacGia, string cbb_IDDauSach, string cbb_IDTacGia)
         {
             SCRIPT.formatCTTacGia.Instance.returnIDCTTacGia(ref tb_IDCTTacGia);
@@ -44,5 +44,24 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE CT_TACGIA SET IDDauSach = '" + cbb_IDDauSach + "', IDTacGia = '" + cbb_IDTacGia + "' WHERE IDCTTacGia = '" + tb_IDCTTacGia + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
+        #region Tim Kiem
+        public string TKIDCTTacGia(string IDCTTacGia)
+        {
+            IDCTTacGia = "Select * from CT_TACGIA where IDCTTacGia like '%" + IDCTTacGia + "%' ";
+            return IDCTTacGia;
+        }
+        public string TKIDDauSach(string IDDauSach)
+        {
+            IDDauSach = "Select * from CT_TACGIA where IDDauSach like '%" + IDDauSach + "%' ";
+            return IDDauSach;
+        }
+        public string TKIDTacGia(string IDTacGia)
+        {
+            IDTacGia = "Select * from CT_TACGIA where IDTacGia like '%" + IDTacGia + "%' ";
+            return IDTacGia;
+        }
+
+        #endregion
     }
 }

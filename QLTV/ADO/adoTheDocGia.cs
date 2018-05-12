@@ -23,6 +23,7 @@ namespace QLTV.ADO
                 ADO.adoTheDocGia.instance = value;
             }
         }
+        #region Insert
 
         public void Them(string tb_IDDocGia, string tb_HoTenDocGia, string dtp_NgaySinh, string tb_DiaChi, string tb_Email, string cbb_LoaiDocGia, string dtp_NgayLapThe)
         {
@@ -44,10 +45,49 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE THEDOCGIA SET HoTenDG = N'" + tb_HoTenDocGia + "', NgaySinhDG = '" + dtp_NgaySinh + "', DiaChiDG = N'" + tb_DiaChi + "', EmailDG = '" + tb_Email + "', IDLoaiDG = '" + cbb_LoaiDocGia + "', NgayLapThe = '" + dtp_NgayLapThe + "' WHERE IDDocGia = '" + tb_IDDocGia + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
-        //public void TKIDDocGia(string IDDocGia)
-        //{
-        //    string SQlSearch = "Select * from THEDOCGIA where IDDocGia like '%" + IDDocGia + "%' ";
-        //    ADO.ConnectionSQL.Instance.ExecuteQuery(SQlSearch);
-        //}
+        #endregion
+        #region TimKiem
+        public string TKIDDocGia(string IDDocGia)
+        {
+            IDDocGia = "Select * from THEDOCGIA where IDDocGia like '%" + IDDocGia + "%' ";
+            return IDDocGia;
+        }
+
+        public string TKHoTenDG(string HoTenDG)
+        {
+            HoTenDG = "Select * from THEDOCGIA where HoTenDG like '%" + HoTenDG + "%' ";
+            return HoTenDG;
+        }
+
+        public string TKNgaySinhDG(string NgaySinhDG)
+        {
+            NgaySinhDG = "Select * from THEDOCGIA where NgaySinhDG like '%" + NgaySinhDG + "%' ";
+            return NgaySinhDG;
+        }
+
+        public string TKEmailDG(string EmailDG)
+        {
+            EmailDG = "Select * from THEDOCGIA where EmailDG like '%" + EmailDG + "%' ";
+            return EmailDG;
+        }
+
+        public string TKIDLoaiDG(string IDLoaiDG)
+        {
+            IDLoaiDG = "Select * from THEDOCGIA where IDLoaiDG like '%" + IDLoaiDG + "%' ";
+            return IDLoaiDG;
+        }
+
+        public string TKNgayLapThe(string NgayLapThe)
+        {
+            NgayLapThe = "Select * from THEDOCGIA where NgayLapThe like '%" + NgayLapThe + "%' ";
+            return NgayLapThe;
+        }
+
+        public string TKDiaChiDG(string DiaChiDG)
+        {
+            DiaChiDG = "Select * from THEDOCGIA where DiaChiDG like '%" + DiaChiDG + "%' ";
+            return DiaChiDG;
+        }
+        #endregion
     }
 }

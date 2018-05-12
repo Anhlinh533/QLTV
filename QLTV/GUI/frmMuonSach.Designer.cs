@@ -340,9 +340,7 @@
             // 
             // cbb_IDDocGia
             // 
-            this.cbb_IDDocGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tHEDOCGIABindingSource, "IDDocGia", true));
             this.cbb_IDDocGia.DataSource = this.tHEDOCGIABindingSource;
-            this.cbb_IDDocGia.DisplayMember = "IDDocGia";
             this.cbb_IDDocGia.FormattingEnabled = true;
             this.cbb_IDDocGia.Location = new System.Drawing.Point(238, 138);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
@@ -512,9 +510,7 @@
             // 
             // cbb_IDDelete
             // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pHIEUMUONBindingSource, "IDPhieuMuon", true));
             this.cbb_IDDelete.DataSource = this.pHIEUMUONBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDPhieuMuon";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(9, 137);
             this.cbb_IDDelete.Name = "cbb_IDDelete";

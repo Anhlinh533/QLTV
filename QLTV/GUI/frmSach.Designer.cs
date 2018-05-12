@@ -397,7 +397,6 @@
             // 
             // cbb_IDDauSach
             // 
-            this.cbb_IDDauSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.dAUSACHBindingSource, "IDDauSach", true));
             this.cbb_IDDauSach.DataSource = this.dAUSACHBindingSource;
             this.cbb_IDDauSach.DisplayMember = "IDDauSach";
             this.cbb_IDDauSach.FormattingEnabled = true;
@@ -607,9 +606,7 @@
             // 
             // cbb_IDDelete
             // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.sACHBindingSource, "IDSach", true));
             this.cbb_IDDelete.DataSource = this.sACHBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDSach";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 138);
             this.cbb_IDDelete.Name = "cbb_IDDelete";

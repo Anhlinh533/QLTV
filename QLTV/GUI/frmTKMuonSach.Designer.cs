@@ -32,7 +32,7 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_TKPhieuMuonSach = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_TKMuonSach = new System.Windows.Forms.DataGridView();
             this.iDPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngayMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,12 +41,10 @@
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.btn_TKPhieuMuonSach = new Bunifu.Framework.UI.BunifuTileButton();
-            this.dtp_HanTra = new DevExpress.XtraEditors.DateEdit();
-            this.dtp_NgayMuon = new DevExpress.XtraEditors.DateEdit();
             this.tb_IDDocGia = new System.Windows.Forms.TextBox();
             this.tb_IDPhieuMuon = new System.Windows.Forms.TextBox();
             this.rdb_HanTra = new System.Windows.Forms.RadioButton();
-            this.rdb_IDNgayMuon = new System.Windows.Forms.RadioButton();
+            this.rdb_NgayMuon = new System.Windows.Forms.RadioButton();
             this.rdb_IDDocGia = new System.Windows.Forms.RadioButton();
             this.rdb_IDPhieuMuon = new System.Windows.Forms.RadioButton();
             this.item_TKCTPhieuMuonSach = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -66,20 +64,18 @@
             this.rdb_IDCTPhieuMuon = new System.Windows.Forms.RadioButton();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
             this.cT_PHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter();
+            this.dtp_NgayMuon = new System.Windows.Forms.DateTimePicker();
+            this.dtp_HanTra = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKPhieuMuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKMuonSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties)).BeginInit();
             this.item_TKCTPhieuMuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
@@ -99,9 +95,9 @@
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.item_TKPhieuMuonSach,
             this.item_TKCTPhieuMuonSach});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1659, 1083);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(1887, 1083);
             this.navigationPane1.SelectedPage = this.item_TKPhieuMuonSach;
-            this.navigationPane1.Size = new System.Drawing.Size(1659, 1083);
+            this.navigationPane1.Size = new System.Drawing.Size(1887, 1083);
             this.navigationPane1.TabIndex = 0;
             this.navigationPane1.Text = "`````````````````````";
             // 
@@ -112,7 +108,7 @@
             this.item_TKPhieuMuonSach.Controls.Add(this.groupControl3);
             this.item_TKPhieuMuonSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_borow_book_80;
             this.item_TKPhieuMuonSach.Name = "item_TKPhieuMuonSach";
-            this.item_TKPhieuMuonSach.Size = new System.Drawing.Size(1529, 1002);
+            this.item_TKPhieuMuonSach.Size = new System.Drawing.Size(1757, 1002);
             // 
             // groupControl4
             // 
@@ -123,29 +119,29 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
-            this.groupControl4.Controls.Add(this.dataGridView1);
-            this.groupControl4.Location = new System.Drawing.Point(480, 0);
+            this.groupControl4.Controls.Add(this.dgv_TKMuonSach);
+            this.groupControl4.Location = new System.Drawing.Point(511, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(1050, 1002);
+            this.groupControl4.Size = new System.Drawing.Size(1247, 1002);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu phiếu mượn sách";
             // 
-            // dataGridView1
+            // dgv_TKMuonSach
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_TKMuonSach.AutoGenerateColumns = false;
+            this.dgv_TKMuonSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TKMuonSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDPhieuMuonDataGridViewTextBoxColumn,
             this.iDDocGiaDataGridViewTextBoxColumn,
             this.ngayMuonDataGridViewTextBoxColumn,
             this.hanTraDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pHIEUMUONBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1044, 952);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_TKMuonSach.DataSource = this.pHIEUMUONBindingSource;
+            this.dgv_TKMuonSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_TKMuonSach.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKMuonSach.Name = "dgv_TKMuonSach";
+            this.dgv_TKMuonSach.RowTemplate.Height = 28;
+            this.dgv_TKMuonSach.Size = new System.Drawing.Size(1241, 952);
+            this.dgv_TKMuonSach.TabIndex = 0;
             // 
             // iDPhieuMuonDataGridViewTextBoxColumn
             // 
@@ -198,18 +194,18 @@
             this.groupControl3.Appearance.Options.UseFont = true;
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
-            this.groupControl3.Controls.Add(this.btn_TKPhieuMuonSach);
             this.groupControl3.Controls.Add(this.dtp_HanTra);
             this.groupControl3.Controls.Add(this.dtp_NgayMuon);
+            this.groupControl3.Controls.Add(this.btn_TKPhieuMuonSach);
             this.groupControl3.Controls.Add(this.tb_IDDocGia);
             this.groupControl3.Controls.Add(this.tb_IDPhieuMuon);
             this.groupControl3.Controls.Add(this.rdb_HanTra);
-            this.groupControl3.Controls.Add(this.rdb_IDNgayMuon);
+            this.groupControl3.Controls.Add(this.rdb_NgayMuon);
             this.groupControl3.Controls.Add(this.rdb_IDDocGia);
             this.groupControl3.Controls.Add(this.rdb_IDPhieuMuon);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(474, 1002);
+            this.groupControl3.Size = new System.Drawing.Size(505, 1002);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm theo";
             // 
@@ -232,34 +228,6 @@
             this.btn_TKPhieuMuonSach.Size = new System.Drawing.Size(155, 162);
             this.btn_TKPhieuMuonSach.TabIndex = 16;
             this.btn_TKPhieuMuonSach.Click += new System.EventHandler(this.btn_TKPhieuMuonSach_Click);
-            // 
-            // dtp_HanTra
-            // 
-            this.dtp_HanTra.EditValue = null;
-            this.dtp_HanTra.Location = new System.Drawing.Point(263, 248);
-            this.dtp_HanTra.Name = "dtp_HanTra";
-            this.dtp_HanTra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_HanTra.Properties.Appearance.Options.UseFont = true;
-            this.dtp_HanTra.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_HanTra.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_HanTra.Size = new System.Drawing.Size(205, 42);
-            this.dtp_HanTra.TabIndex = 7;
-            // 
-            // dtp_NgayMuon
-            // 
-            this.dtp_NgayMuon.EditValue = null;
-            this.dtp_NgayMuon.Location = new System.Drawing.Point(263, 188);
-            this.dtp_NgayMuon.Name = "dtp_NgayMuon";
-            this.dtp_NgayMuon.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_NgayMuon.Properties.Appearance.Options.UseFont = true;
-            this.dtp_NgayMuon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayMuon.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayMuon.Size = new System.Drawing.Size(205, 42);
-            this.dtp_NgayMuon.TabIndex = 6;
             // 
             // tb_IDDocGia
             // 
@@ -286,16 +254,16 @@
             this.rdb_HanTra.Text = "Hạn trả:";
             this.rdb_HanTra.UseVisualStyleBackColor = true;
             // 
-            // rdb_IDNgayMuon
+            // rdb_NgayMuon
             // 
-            this.rdb_IDNgayMuon.AutoSize = true;
-            this.rdb_IDNgayMuon.ForeColor = System.Drawing.Color.Red;
-            this.rdb_IDNgayMuon.Location = new System.Drawing.Point(6, 189);
-            this.rdb_IDNgayMuon.Name = "rdb_IDNgayMuon";
-            this.rdb_IDNgayMuon.Size = new System.Drawing.Size(205, 40);
-            this.rdb_IDNgayMuon.TabIndex = 2;
-            this.rdb_IDNgayMuon.Text = "Ngày mượn:";
-            this.rdb_IDNgayMuon.UseVisualStyleBackColor = true;
+            this.rdb_NgayMuon.AutoSize = true;
+            this.rdb_NgayMuon.ForeColor = System.Drawing.Color.Red;
+            this.rdb_NgayMuon.Location = new System.Drawing.Point(6, 189);
+            this.rdb_NgayMuon.Name = "rdb_NgayMuon";
+            this.rdb_NgayMuon.Size = new System.Drawing.Size(205, 40);
+            this.rdb_NgayMuon.TabIndex = 2;
+            this.rdb_NgayMuon.Text = "Ngày mượn:";
+            this.rdb_NgayMuon.UseVisualStyleBackColor = true;
             // 
             // rdb_IDDocGia
             // 
@@ -329,7 +297,7 @@
             this.item_TKCTPhieuMuonSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_more_details_40;
             this.item_TKCTPhieuMuonSach.Name = "item_TKCTPhieuMuonSach";
             this.item_TKCTPhieuMuonSach.PageText = "";
-            this.item_TKCTPhieuMuonSach.Size = new System.Drawing.Size(1529, 1002);
+            this.item_TKCTPhieuMuonSach.Size = new System.Drawing.Size(1757, 1002);
             // 
             // groupControl2
             // 
@@ -341,9 +309,9 @@
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.dgv_TKCTPhieuMuonSach);
-            this.groupControl2.Location = new System.Drawing.Point(521, 0);
+            this.groupControl2.Location = new System.Drawing.Point(589, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1009, 1002);
+            this.groupControl2.Size = new System.Drawing.Size(1169, 1002);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu chi tiết phiếu mượn sách";
             // 
@@ -360,7 +328,7 @@
             this.dgv_TKCTPhieuMuonSach.Location = new System.Drawing.Point(3, 47);
             this.dgv_TKCTPhieuMuonSach.Name = "dgv_TKCTPhieuMuonSach";
             this.dgv_TKCTPhieuMuonSach.RowTemplate.Height = 28;
-            this.dgv_TKCTPhieuMuonSach.Size = new System.Drawing.Size(1003, 952);
+            this.dgv_TKCTPhieuMuonSach.Size = new System.Drawing.Size(1163, 952);
             this.dgv_TKCTPhieuMuonSach.TabIndex = 0;
             // 
             // iDCTPhieuMuonDataGridViewTextBoxColumn
@@ -410,7 +378,7 @@
             this.groupControl1.Controls.Add(this.rdb_IDCTPhieuMuon);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(515, 1002);
+            this.groupControl1.Size = new System.Drawing.Size(583, 1002);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm chi tiết phiếu mượn sách theo";
             // 
@@ -438,21 +406,21 @@
             // 
             this.tb_IDCuonSach.Location = new System.Drawing.Point(351, 199);
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
-            this.tb_IDCuonSach.Size = new System.Drawing.Size(158, 44);
+            this.tb_IDCuonSach.Size = new System.Drawing.Size(200, 44);
             this.tb_IDCuonSach.TabIndex = 5;
             // 
             // tb_IDPhieuMuonSach
             // 
             this.tb_IDPhieuMuonSach.Location = new System.Drawing.Point(351, 139);
             this.tb_IDPhieuMuonSach.Name = "tb_IDPhieuMuonSach";
-            this.tb_IDPhieuMuonSach.Size = new System.Drawing.Size(158, 44);
+            this.tb_IDPhieuMuonSach.Size = new System.Drawing.Size(200, 44);
             this.tb_IDPhieuMuonSach.TabIndex = 4;
             // 
             // tb_IDCTPhieuMuonSach
             // 
             this.tb_IDCTPhieuMuonSach.Location = new System.Drawing.Point(351, 79);
             this.tb_IDCTPhieuMuonSach.Name = "tb_IDCTPhieuMuonSach";
-            this.tb_IDCTPhieuMuonSach.Size = new System.Drawing.Size(158, 44);
+            this.tb_IDCTPhieuMuonSach.Size = new System.Drawing.Size(200, 44);
             this.tb_IDCTPhieuMuonSach.TabIndex = 3;
             // 
             // rdb_IDCuonSach
@@ -463,7 +431,6 @@
             this.rdb_IDCuonSach.Name = "rdb_IDCuonSach";
             this.rdb_IDCuonSach.Size = new System.Drawing.Size(213, 40);
             this.rdb_IDCuonSach.TabIndex = 2;
-            this.rdb_IDCuonSach.TabStop = true;
             this.rdb_IDCuonSach.Text = "ID cuốn sách";
             this.rdb_IDCuonSach.UseVisualStyleBackColor = true;
             // 
@@ -475,13 +442,13 @@
             this.rdb_IDPhieuMuonSach.Name = "rdb_IDPhieuMuonSach";
             this.rdb_IDPhieuMuonSach.Size = new System.Drawing.Size(240, 40);
             this.rdb_IDPhieuMuonSach.TabIndex = 1;
-            this.rdb_IDPhieuMuonSach.TabStop = true;
             this.rdb_IDPhieuMuonSach.Text = "ID phiếu mượn";
             this.rdb_IDPhieuMuonSach.UseVisualStyleBackColor = true;
             // 
             // rdb_IDCTPhieuMuon
             // 
             this.rdb_IDCTPhieuMuon.AutoSize = true;
+            this.rdb_IDCTPhieuMuon.Checked = true;
             this.rdb_IDCTPhieuMuon.ForeColor = System.Drawing.Color.Red;
             this.rdb_IDCTPhieuMuon.Location = new System.Drawing.Point(6, 80);
             this.rdb_IDCTPhieuMuon.Name = "rdb_IDCTPhieuMuon";
@@ -499,11 +466,27 @@
             // 
             this.cT_PHIEUMUONTableAdapter.ClearBeforeFill = true;
             // 
+            // dtp_NgayMuon
+            // 
+            this.dtp_NgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgayMuon.Location = new System.Drawing.Point(263, 185);
+            this.dtp_NgayMuon.Name = "dtp_NgayMuon";
+            this.dtp_NgayMuon.Size = new System.Drawing.Size(205, 44);
+            this.dtp_NgayMuon.TabIndex = 3;
+            // 
+            // dtp_HanTra
+            // 
+            this.dtp_HanTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_HanTra.Location = new System.Drawing.Point(263, 245);
+            this.dtp_HanTra.Name = "dtp_HanTra";
+            this.dtp_HanTra.Size = new System.Drawing.Size(205, 44);
+            this.dtp_HanTra.TabIndex = 4;
+            // 
             // frmTKMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1659, 1083);
+            this.ClientSize = new System.Drawing.Size(1887, 1083);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTKMuonSach";
             this.Text = "frmTKMuonSach";
@@ -513,16 +496,12 @@
             this.item_TKPhieuMuonSach.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKMuonSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_HanTra.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayMuon.Properties)).EndInit();
             this.item_TKCTPhieuMuonSach.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
@@ -544,16 +523,14 @@
         private DevExpress.XtraBars.Navigation.NavigationPage item_TKCTPhieuMuonSach;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_TKMuonSach;
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource pHIEUMUONBindingSource;
         private QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter pHIEUMUONTableAdapter;
         private System.Windows.Forms.RadioButton rdb_HanTra;
-        private System.Windows.Forms.RadioButton rdb_IDNgayMuon;
+        private System.Windows.Forms.RadioButton rdb_NgayMuon;
         private System.Windows.Forms.RadioButton rdb_IDDocGia;
         private System.Windows.Forms.RadioButton rdb_IDPhieuMuon;
-        private DevExpress.XtraEditors.DateEdit dtp_HanTra;
-        private DevExpress.XtraEditors.DateEdit dtp_NgayMuon;
         private System.Windows.Forms.TextBox tb_IDDocGia;
         private System.Windows.Forms.TextBox tb_IDPhieuMuon;
         private Bunifu.Framework.UI.BunifuTileButton btn_TKPhieuMuonSach;
@@ -574,5 +551,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCTPhieuMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCuonSachDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DateTimePicker dtp_HanTra;
+        private System.Windows.Forms.DateTimePicker dtp_NgayMuon;
     }
 }

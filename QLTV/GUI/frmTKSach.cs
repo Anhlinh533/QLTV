@@ -29,20 +29,57 @@ namespace QLTV.GUI
 
         private void btn_TKSach_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-            SCRIPT.useForm.ResetAllControls(groupControl2);
-            SCRIPT.useForm.ResetAllControls(groupControl3);
-            SCRIPT.useForm.ResetAllControls(groupControl4);
+            if(rdb_GiaTien.Checked==true && tb_GiaTien.Text!="")
+            {
+                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKGiaTien(tb_GiaTien.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_IDDauSach.Checked==true && tb_IDDauSach.Text!="")
+            {
+                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDDauSach(tb_IDDauSach.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_IDSach.Checked==true && tb_IDSach.Text!="")
+            {
+                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDSach(tb_IDSach.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_NamXuatBan.Checked==true && tb_NamXuatBan.Text!="")
+            {
+                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKNamXB(tb_NamXuatBan.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_NhaXuatBan.Checked==true && tb_NhaXuatBan.Text!="")
+            {
+                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKNhaXB(tb_NhaXuatBan.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_SoLuongTon.Checked==true && tb_SoLuongTon.Text!="")
+            {
+                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKSoLuongTon(tb_SoLuongTon.Text.Trim()));
+                ResetForm();
+            }
         }
 
         private void btn_TKCuonSach_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-            SCRIPT.useForm.ResetAllControls(groupControl2);
-            SCRIPT.useForm.ResetAllControls(groupControl3);
-            SCRIPT.useForm.ResetAllControls(groupControl4);
+            if(rdb_IDCuonSach.Checked==true && tb_IDCuonSach.Text!="")
+            {
+                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCuonSach.Instance.TKIDCuonSach(tb_IDCuonSach.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_IDSachCS.Checked==true && tb_IDSachCS.Text!="")
+            {
+                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCuonSach.Instance.TKIDSach(tb_IDSachCS.Text.Trim()));
+                ResetForm();
+            }
+            else if(rdb_TinhTrang.Checked==true && cbb_TinhTrang.Text!="")
+            {
+                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCuonSach.Instance.TKTinhTrang(cbb_TinhTrang.Text.Trim()));
+                ResetForm();
+            }
         }
-
+        #region Form
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
@@ -50,5 +87,6 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl3);
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
+        #endregion
     }
 }

@@ -455,9 +455,7 @@
             // 
             // cbb_IDDelete
             // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pHIEUNHAPSACHBindingSource, "IDPhieuNhap", true));
             this.cbb_IDDelete.DataSource = this.pHIEUNHAPSACHBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDPhieuNhap";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 130);
             this.cbb_IDDelete.Name = "cbb_IDDelete";

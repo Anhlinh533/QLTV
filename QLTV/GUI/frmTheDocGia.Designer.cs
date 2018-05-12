@@ -423,13 +423,14 @@
             // 
             // cbb_LoaiDocGia
             // 
-            this.cbb_LoaiDocGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lOAIDOCGIABindingSource, "IDLoaiDG", true));
             this.cbb_LoaiDocGia.DataSource = this.lOAIDOCGIABindingSource;
+            this.cbb_LoaiDocGia.DisplayMember = "IDLoaiDG";
             this.cbb_LoaiDocGia.FormattingEnabled = true;
             this.cbb_LoaiDocGia.Location = new System.Drawing.Point(207, 379);
             this.cbb_LoaiDocGia.Name = "cbb_LoaiDocGia";
             this.cbb_LoaiDocGia.Size = new System.Drawing.Size(201, 44);
             this.cbb_LoaiDocGia.TabIndex = 6;
+            this.cbb_LoaiDocGia.ValueMember = "IDLoaiDG";
             // 
             // lOAIDOCGIABindingSource
             // 
@@ -702,9 +703,7 @@
             // 
             // cbb_IDDelete
             // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tHEDOCGIABindingSource, "IDDocGia", true));
             this.cbb_IDDelete.DataSource = this.tHEDOCGIABindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDDocGia";
             this.cbb_IDDelete.Font = new System.Drawing.Font("Tahoma", 15F);
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 127);

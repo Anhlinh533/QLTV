@@ -478,9 +478,7 @@
             // 
             // cbb_IDDelete
             // 
-            this.cbb_IDDelete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tACGIABindingSource, "IDTacGia", true));
             this.cbb_IDDelete.DataSource = this.tACGIABindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDTacGia";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 124);
             this.cbb_IDDelete.Name = "cbb_IDDelete";

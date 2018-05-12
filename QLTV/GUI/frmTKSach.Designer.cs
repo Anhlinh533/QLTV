@@ -57,7 +57,7 @@
             this.rdb_IDSach = new System.Windows.Forms.RadioButton();
             this.item_CuonSach = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_TKCuonSach = new System.Windows.Forms.DataGridView();
             this.iDCuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDSachDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tinhTrangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,7 +85,7 @@
             this.item_CuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCuonSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -385,28 +385,28 @@
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
-            this.groupControl2.Controls.Add(this.dataGridView1);
+            this.groupControl2.Controls.Add(this.dgv_TKCuonSach);
             this.groupControl2.Location = new System.Drawing.Point(450, 0);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(1081, 1016);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu thông tin cuốn sách";
             // 
-            // dataGridView1
+            // dgv_TKCuonSach
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_TKCuonSach.AutoGenerateColumns = false;
+            this.dgv_TKCuonSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TKCuonSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDCuonSachDataGridViewTextBoxColumn,
             this.iDSachDataGridViewTextBoxColumn1,
             this.tinhTrangDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.cUONSACHBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1075, 966);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_TKCuonSach.DataSource = this.cUONSACHBindingSource;
+            this.dgv_TKCuonSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_TKCuonSach.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKCuonSach.Name = "dgv_TKCuonSach";
+            this.dgv_TKCuonSach.RowTemplate.Height = 28;
+            this.dgv_TKCuonSach.Size = new System.Drawing.Size(1075, 966);
+            this.dgv_TKCuonSach.TabIndex = 0;
             // 
             // iDCuonSachDataGridViewTextBoxColumn
             // 
@@ -512,7 +512,6 @@
             this.rdb_TinhTrang.Name = "rdb_TinhTrang";
             this.rdb_TinhTrang.Size = new System.Drawing.Size(179, 40);
             this.rdb_TinhTrang.TabIndex = 2;
-            this.rdb_TinhTrang.TabStop = true;
             this.rdb_TinhTrang.Text = "Tình trạng";
             this.rdb_TinhTrang.UseVisualStyleBackColor = true;
             // 
@@ -524,13 +523,13 @@
             this.rdb_IDSachCS.Name = "rdb_IDSachCS";
             this.rdb_IDSachCS.Size = new System.Drawing.Size(140, 40);
             this.rdb_IDSachCS.TabIndex = 1;
-            this.rdb_IDSachCS.TabStop = true;
             this.rdb_IDSachCS.Text = "ID sách";
             this.rdb_IDSachCS.UseVisualStyleBackColor = true;
             // 
             // rdb_IDCuonSach
             // 
             this.rdb_IDCuonSach.AutoSize = true;
+            this.rdb_IDCuonSach.Checked = true;
             this.rdb_IDCuonSach.ForeColor = System.Drawing.Color.Red;
             this.rdb_IDCuonSach.Location = new System.Drawing.Point(6, 63);
             this.rdb_IDCuonSach.Name = "rdb_IDCuonSach";
@@ -571,7 +570,7 @@
             this.item_CuonSach.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCuonSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -612,7 +611,7 @@
         private System.Windows.Forms.RadioButton rdb_IDDauSach;
         private System.Windows.Forms.RadioButton rdb_IDSach;
         private Bunifu.Framework.UI.BunifuTileButton btn_TKSach;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_TKCuonSach;
         private System.Windows.Forms.BindingSource cUONSACHBindingSource;
         private QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter cUONSACHTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCuonSachDataGridViewTextBoxColumn;

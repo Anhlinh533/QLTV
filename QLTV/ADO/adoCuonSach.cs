@@ -23,6 +23,7 @@ namespace QLTV.ADO
                 ADO.adoCuonSach.instance = value;
             }
         }
+        #region Insert
 
         public void Them(string tb_IDCuonSach, string cbb_IDSach, string cbb_TinhTrang)
         {
@@ -44,5 +45,27 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE CUONSACH SET IDSach = '" + cbb_IDSach + "', TinhTrang = N'" + cbb_TinhTrang +"' WHERE IDCuonSach = '" + tb_IDCuonSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
+        #region Tim Kiem
+
+        public string TKIDCuonSach(string IDCuonSach)
+        {
+            IDCuonSach = "Select * from CUONSACH where IDCuonSach like '%" + IDCuonSach + "%' ";
+            return IDCuonSach; 
+        }
+
+        public string TKIDSach(string IDSach)
+        {
+            IDSach = "Select * from CUONSACH where IDSach like '%" + IDSach + "%' ";
+            return IDSach;
+        }
+
+        public string TKTinhTrang(string TinhTrang)
+        {
+            TinhTrang = "Select * from CUONSACH where TinhTrang like '%" + TinhTrang + "%' ";
+            return TinhTrang;
+        }
+
+        #endregion
     }
 }

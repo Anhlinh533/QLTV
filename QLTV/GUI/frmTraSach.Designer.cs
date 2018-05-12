@@ -74,6 +74,8 @@
             this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter();
+            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -92,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -362,11 +365,13 @@
             // 
             // cbb_IDDocGia
             // 
+            this.cbb_IDDocGia.DataSource = this.tHEDOCGIABindingSource;
             this.cbb_IDDocGia.FormattingEnabled = true;
             this.cbb_IDDocGia.Location = new System.Drawing.Point(253, 138);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
             this.cbb_IDDocGia.Size = new System.Drawing.Size(203, 44);
             this.cbb_IDDocGia.TabIndex = 2;
+            this.cbb_IDDocGia.ValueMember = "IDDocGia";
             // 
             // tb_SoTienTra
             // 
@@ -556,11 +561,13 @@
             // 
             // cbb_IDDelete
             // 
+            this.cbb_IDDelete.DataSource = this.pHIEUTRABindingSource;
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 132);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
             this.cbb_IDDelete.Size = new System.Drawing.Size(213, 44);
             this.cbb_IDDelete.TabIndex = 1;
+            this.cbb_IDDelete.ValueMember = "IDPhieuTra";
             // 
             // label7
             // 
@@ -575,6 +582,15 @@
             // pHIEUTRATableAdapter
             // 
             this.pHIEUTRATableAdapter.ClearBeforeFill = true;
+            // 
+            // tHEDOCGIABindingSource
+            // 
+            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
+            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // tHEDOCGIATableAdapter
+            // 
+            this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
             // 
             // frmTraSach
             // 
@@ -607,6 +623,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -658,5 +675,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DateTimePicker dtp_NgayTra;
+        private System.Windows.Forms.BindingSource tHEDOCGIABindingSource;
+        private QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter tHEDOCGIATableAdapter;
     }
 }

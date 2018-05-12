@@ -23,7 +23,7 @@ namespace QLTV.ADO
                 ADO.adoCTTraSach.instance = value;
             }
         }
-
+        #region Insert
         public void Them(string tb_IDCTPhieuTra, string cbb_IDPhieuTra, string cbb_IDCuonSach)
         {
             SCRIPT.formatCTTraSach.Instance.returnIDCTTraSach(ref tb_IDCTPhieuTra);
@@ -44,5 +44,43 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE CT_PHIEUTRA SET IDPhieuTra = '" + cbb_IDPhieuTra + "', IDCuonSach = '" + cbb_IDCuonSach + "' WHERE IDCTPhieuTra = '" + tb_IDCTPhieuTra + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
+        #region Tim Kiem
+        public string TKIDCTPhieuTra(string IDCTPhieuTra)
+        {
+            IDCTPhieuTra = "Select * from CT_PHIEUTRA where IDCTPhieuTra like '%" + IDCTPhieuTra + "%' ";
+            return IDCTPhieuTra;
+        }
+
+        public string TKIDPhieuTra(string IDPhieuTra)
+        {
+            IDPhieuTra = "Select * from CT_PHIEUTRA where IDPhieuTra like '%" + IDPhieuTra + "%' ";
+            return IDPhieuTra;
+        }
+
+        public string TKIDCuonSach(string IDCuonSach)
+        {
+            IDCuonSach = "Select * from CT_PHIEUTRA where IDCuonSach like '%" + IDCuonSach + "%' ";
+            return IDCuonSach;
+        }
+
+        public string TKIDCTPhieuMuon(string IDCTPhieuMuon)
+        {
+            IDCTPhieuMuon = "Select * from CT_PHIEUTRA where IDCTPhieuMuon like '%" + IDCTPhieuMuon + "%' ";
+            return IDCTPhieuMuon;
+        }
+
+        public string TKSoNgayMuon(string SoNgayMuon)
+        {
+            SoNgayMuon = "Select * from CT_PHIEUTRA where SoNgayMuon like '%" + SoNgayMuon + "%' ";
+            return SoNgayMuon;
+        }
+
+        public string TKTienPhat(string TienPhat)
+        {
+            TienPhat = "Select * from CT_PHIEUTRA where TienPhat like '%" + TienPhat + "%' ";
+            return TienPhat;
+        }
+        #endregion
     }
 }

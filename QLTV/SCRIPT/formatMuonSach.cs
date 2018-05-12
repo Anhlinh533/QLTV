@@ -32,5 +32,6 @@ namespace QLTV.SCRIPT
             else if(IDDocGia=="") MessageBox.Show("Không được để trống ID độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if(NgayMuon=="") MessageBox.Show("Không được để trống ngày mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
     }
 }

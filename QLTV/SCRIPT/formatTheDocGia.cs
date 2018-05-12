@@ -49,48 +49,6 @@ namespace QLTV.SCRIPT
             //    ADO.ConnectionSQL.Instance.Execute(sql);
             //}            
         }
-        #region TimKiem
-        public string TKIDDocGia(string IDDocGia)
-        {
-            IDDocGia="Select * from THEDOCGIA where IDDocGia like '%" + IDDocGia + "%' ";
-            return IDDocGia;
-        }
 
-        public string TKHoTenDG(string HoTenDG)
-        {
-            HoTenDG = "Select * from THEDOCGIA where HoTenDG like '%" + HoTenDG + "%' ";
-            return HoTenDG;
-        }
-
-        public string TKNgaySinhDG(string NgaySinhDG)
-        {
-            NgaySinhDG = "Select * from THEDOCGIA where NgaySinhDG like '%" + NgaySinhDG + "%' ";
-            return NgaySinhDG;
-        }
-
-        public string TKEmailDG(string EmailDG)
-        {
-            EmailDG = "Select * from THEDOCGIA where EmailDG like '%" + EmailDG + "%' ";
-            return EmailDG;
-        }
-
-        public string TKIDLoaiDG(string IDLoaiDG)
-        {
-            IDLoaiDG = "Select * from THEDOCGIA where IDLoaiDG like '%" + IDLoaiDG + "%' ";
-            return IDLoaiDG;
-        }
-
-        public string TKNgayLapThe(string NgayLapThe)
-        {
-            NgayLapThe = "Select * from THEDOCGIA where NgayLapThe like '%" + NgayLapThe + "%' ";
-            return NgayLapThe;
-        }
-
-        public string TKDiaChiDG(string DiaChiDG)
-        {
-            DiaChiDG = "Select * from THEDOCGIA where DiaChiDG like '%" + DiaChiDG + "%' ";
-            return DiaChiDG;
-        }
-        #endregion
     }
 }

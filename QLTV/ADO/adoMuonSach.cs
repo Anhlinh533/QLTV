@@ -23,7 +23,7 @@ namespace QLTV.ADO
                 ADO.adoMuonSach.instance = value;
             }
         }
-
+        #region Insert
         public void Them(string tb_IDPhieuMuon, string cbb_IDDocGia, string dtp_NgayMuon)
         {
             SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
@@ -44,5 +44,31 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE PHIEUMUON SET IDDocGia = '" + cbb_IDDocGia + "', NgayMuon = '" + dtp_NgayMuon + "' WHERE IDPhieuMuon = '" + tb_IDPhieuMuon + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
+        #region TimKiem
+        public string TKIDPhieuMuon(string IDPhieuMuon)
+        {
+            IDPhieuMuon = "Select * from PHIEUMUON where IDPhieuMuon like '%" + IDPhieuMuon + "%' ";
+            return IDPhieuMuon;
+        }
+
+        public string TKIDDocGia(string IDDocGia)
+        {
+            IDDocGia = "Select * from PHIEUMUON where IDDocGia like '%" + IDDocGia + "%' ";
+            return IDDocGia;
+        }
+
+        public string TKNgayMuon(string NgayMuon)
+        {
+            NgayMuon = "Select * from PHIEUMUON where NgayMuon like '%" + NgayMuon + "%' ";
+            return NgayMuon;
+        }
+
+        public string TKHanTra(string HanTra)
+        {
+            HanTra = "Select * from PHIEUMUON where HanTra like '%" + HanTra + "%' ";
+            return HanTra;
+        }
+        #endregion
     }
 }

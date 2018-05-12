@@ -182,6 +182,3 @@ C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.exe
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.pdb
-C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\QLTV.exe.config
-C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.exe
-C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.pdb

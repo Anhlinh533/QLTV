@@ -45,6 +45,7 @@
             this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.dtp_NgayLapThe = new System.Windows.Forms.DateTimePicker();
             this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btn_TKDocGia = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_IDDocGia = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@
             this.tb_Email = new System.Windows.Forms.TextBox();
             this.cbb_LoaiDocGia = new System.Windows.Forms.ComboBox();
             this.lOAIDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dtp_NgayLapThe = new DevExpress.XtraEditors.DateEdit();
             this.rdb_NgayLapThe = new System.Windows.Forms.RadioButton();
             this.rdb_LoaiDocGia = new System.Windows.Forms.RadioButton();
             this.rdb_Email = new System.Windows.Forms.RadioButton();
@@ -71,8 +71,8 @@
             this.btn_TKUser = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TenUser = new System.Windows.Forms.TextBox();
             this.tb_IDUser = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdb_UserIDDocGia = new System.Windows.Forms.RadioButton();
+            this.rdb_User = new System.Windows.Forms.RadioButton();
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
@@ -87,8 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties)).BeginInit();
             this.item_TKUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
@@ -252,6 +250,7 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.dtp_NgayLapThe);
             this.groupControl1.Controls.Add(this.dtp_NgaySinh);
             this.groupControl1.Controls.Add(this.btn_TKDocGia);
             this.groupControl1.Controls.Add(this.tb_IDDocGia);
@@ -259,7 +258,6 @@
             this.groupControl1.Controls.Add(this.tb_DiaChi);
             this.groupControl1.Controls.Add(this.tb_Email);
             this.groupControl1.Controls.Add(this.cbb_LoaiDocGia);
-            this.groupControl1.Controls.Add(this.dtp_NgayLapThe);
             this.groupControl1.Controls.Add(this.rdb_NgayLapThe);
             this.groupControl1.Controls.Add(this.rdb_LoaiDocGia);
             this.groupControl1.Controls.Add(this.rdb_Email);
@@ -272,6 +270,14 @@
             this.groupControl1.Size = new System.Drawing.Size(482, 964);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm theo";
+            // 
+            // dtp_NgayLapThe
+            // 
+            this.dtp_NgayLapThe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgayLapThe.Location = new System.Drawing.Point(232, 425);
+            this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
+            this.dtp_NgayLapThe.Size = new System.Drawing.Size(230, 44);
+            this.dtp_NgayLapThe.TabIndex = 7;
             // 
             // dtp_NgaySinh
             // 
@@ -331,7 +337,6 @@
             // 
             // cbb_LoaiDocGia
             // 
-            this.cbb_LoaiDocGia.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lOAIDOCGIABindingSource, "IDLoaiDG", true));
             this.cbb_LoaiDocGia.DataSource = this.lOAIDOCGIABindingSource;
             this.cbb_LoaiDocGia.DisplayMember = "IDLoaiDG";
             this.cbb_LoaiDocGia.FormattingEnabled = true;
@@ -345,20 +350,6 @@
             // 
             this.lOAIDOCGIABindingSource.DataMember = "LOAIDOCGIA";
             this.lOAIDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // dtp_NgayLapThe
-            // 
-            this.dtp_NgayLapThe.EditValue = null;
-            this.dtp_NgayLapThe.Location = new System.Drawing.Point(232, 428);
-            this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
-            this.dtp_NgayLapThe.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.dtp_NgayLapThe.Properties.Appearance.Options.UseFont = true;
-            this.dtp_NgayLapThe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayLapThe.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtp_NgayLapThe.Size = new System.Drawing.Size(230, 42);
-            this.dtp_NgayLapThe.TabIndex = 7;
             // 
             // rdb_NgayLapThe
             // 
@@ -514,8 +505,8 @@
             this.groupControl3.Controls.Add(this.btn_TKUser);
             this.groupControl3.Controls.Add(this.tb_TenUser);
             this.groupControl3.Controls.Add(this.tb_IDUser);
-            this.groupControl3.Controls.Add(this.radioButton2);
-            this.groupControl3.Controls.Add(this.radioButton1);
+            this.groupControl3.Controls.Add(this.rdb_UserIDDocGia);
+            this.groupControl3.Controls.Add(this.rdb_User);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(460, 964);
@@ -556,29 +547,29 @@
             this.tb_IDUser.Size = new System.Drawing.Size(255, 44);
             this.tb_IDUser.TabIndex = 2;
             // 
-            // radioButton2
+            // rdb_UserIDDocGia
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.Color.Red;
-            this.radioButton2.Location = new System.Drawing.Point(6, 126);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(187, 40);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "ID độc giả:";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdb_UserIDDocGia.AutoSize = true;
+            this.rdb_UserIDDocGia.ForeColor = System.Drawing.Color.Red;
+            this.rdb_UserIDDocGia.Location = new System.Drawing.Point(6, 126);
+            this.rdb_UserIDDocGia.Name = "rdb_UserIDDocGia";
+            this.rdb_UserIDDocGia.Size = new System.Drawing.Size(187, 40);
+            this.rdb_UserIDDocGia.TabIndex = 1;
+            this.rdb_UserIDDocGia.TabStop = true;
+            this.rdb_UserIDDocGia.Text = "ID độc giả:";
+            this.rdb_UserIDDocGia.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdb_User
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.Red;
-            this.radioButton1.Location = new System.Drawing.Point(6, 66);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(171, 40);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tên User:";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdb_User.AutoSize = true;
+            this.rdb_User.ForeColor = System.Drawing.Color.Red;
+            this.rdb_User.Location = new System.Drawing.Point(6, 66);
+            this.rdb_User.Name = "rdb_User";
+            this.rdb_User.Size = new System.Drawing.Size(171, 40);
+            this.rdb_User.TabIndex = 0;
+            this.rdb_User.TabStop = true;
+            this.rdb_User.Text = "Tên User:";
+            this.rdb_User.UseVisualStyleBackColor = true;
             // 
             // tHEDOCGIATableAdapter
             // 
@@ -613,8 +604,6 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtp_NgayLapThe.Properties)).EndInit();
             this.item_TKUsers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
@@ -644,7 +633,6 @@
         private System.Windows.Forms.BindingSource tHEDOCGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter tHEDOCGIATableAdapter;
         private System.Windows.Forms.ComboBox cbb_LoaiDocGia;
-        private DevExpress.XtraEditors.DateEdit dtp_NgayLapThe;
         private System.Windows.Forms.BindingSource lOAIDOCGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter lOAIDOCGIATableAdapter;
         private DevExpress.XtraEditors.GroupControl groupControl2;
@@ -656,8 +644,8 @@
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private System.Windows.Forms.DataGridView dgv_TKUser;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdb_UserIDDocGia;
+        private System.Windows.Forms.RadioButton rdb_User;
         private System.Windows.Forms.BindingSource uSERSBindingSource;
         private QuanLyThuVienDataSetTableAdapters.USERSTableAdapter uSERSTableAdapter;
         private Bunifu.Framework.UI.BunifuTileButton btn_TKDocGia;
@@ -676,5 +664,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayLapTheDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayHetHanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DateTimePicker dtp_NgayLapThe;
     }
 }

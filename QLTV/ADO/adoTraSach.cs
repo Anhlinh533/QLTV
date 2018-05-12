@@ -23,7 +23,7 @@ namespace QLTV.ADO
                 ADO.adoTraSach.instance = value;
             }
         }
-
+        #region Insert
         public void Them(string tb_IDPhieuTra, string cbb_IDDocGia, string dtp_NgayTra, string tb_SoTienTra)
         {
             SCRIPT.formatTraSach.Instance.returnIDPhieuTra(ref tb_IDPhieuTra);
@@ -44,5 +44,43 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE PHIEUTRA SET IDDocGia = '" + cbb_IDDocGia + "', NgayTra = '" + dtp_NgayTra + "', SoTienTra = '" + tb_SoTienTra + "' WHERE IDPhieuTra = '" + tb_IDPhieuTra + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
+        #region Form
+
+        public string TKIDPhieuTra(string IDPhieuTra)
+        {
+            IDPhieuTra = "Select * from PHIEUTRA where IDPhieuTra like '%" + IDPhieuTra + "%' ";
+            return IDPhieuTra;
+        }
+        public string TKIDDocGia(string IDDocGia)
+        {
+            IDDocGia = "Select * from PHIEUTRA where IDDocGia like '%" + IDDocGia + "%' ";
+            return IDDocGia;
+        }
+
+        public string TKNgayTra(string NgayTra)
+        {
+            NgayTra = "Select * from PHIEUTRA where NgayTra like '%" + NgayTra + "%' ";
+            return NgayTra;
+        }
+
+        public string TKTienPhatKyNay(string TienPhatKyNay)
+        {
+            TienPhatKyNay = "Select * from PHIEUTRA where TienPhatKyNay like '%" + TienPhatKyNay + "%' ";
+            return TienPhatKyNay;
+        }
+
+        public string TKSoTienTra(string SoTienTra)
+        {
+            SoTienTra = "Select * from PHIEUTRA where SoTienTra like '%" + SoTienTra + "%' ";
+            return SoTienTra;
+        }
+
+        public string TKTienNoKyNay(string TienNoKyNay)
+        {
+            TienNoKyNay = "Select * from PHIEUTRA where TienNoKyNay like '%" + TienNoKyNay + "%' ";
+            return TienNoKyNay;
+        }
+        #endregion
     }
 }

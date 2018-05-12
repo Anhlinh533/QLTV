@@ -326,9 +326,7 @@
             // 
             // cbb_IDCuonSach
             // 
-            this.cbb_IDCuonSach.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cUONSACHBindingSource, "IDCuonSach", true));
             this.cbb_IDCuonSach.DataSource = this.cUONSACHBindingSource;
-            this.cbb_IDCuonSach.DisplayMember = "IDCuonSach";
             this.cbb_IDCuonSach.FormattingEnabled = true;
             this.cbb_IDCuonSach.Location = new System.Drawing.Point(297, 198);
             this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
@@ -373,9 +371,7 @@
             // 
             // cbb_IDPhieuTra
             // 
-            this.cbb_IDPhieuTra.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pHIEUTRABindingSource, "IDPhieuTra", true));
             this.cbb_IDPhieuTra.DataSource = this.pHIEUTRABindingSource;
-            this.cbb_IDPhieuTra.DisplayMember = "IDPhieuTra";
             this.cbb_IDPhieuTra.FormattingEnabled = true;
             this.cbb_IDPhieuTra.Location = new System.Drawing.Point(297, 138);
             this.cbb_IDPhieuTra.Name = "cbb_IDPhieuTra";
@@ -543,9 +539,7 @@
             // 
             // cbb_Delete
             // 
-            this.cbb_Delete.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cTPHIEUTRABindingSource, "IDCTPhieuTra", true));
             this.cbb_Delete.DataSource = this.cTPHIEUTRABindingSource;
-            this.cbb_Delete.DisplayMember = "IDCTPhieuTra";
             this.cbb_Delete.FormattingEnabled = true;
             this.cbb_Delete.Location = new System.Drawing.Point(9, 123);
             this.cbb_Delete.Name = "cbb_Delete";
