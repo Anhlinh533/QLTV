@@ -326,6 +326,7 @@
             // cbb_IDCuonSach
             // 
             this.cbb_IDCuonSach.DataSource = this.cUONSACHBindingSource;
+            this.cbb_IDCuonSach.DisplayMember = "IDCuonSach";
             this.cbb_IDCuonSach.FormattingEnabled = true;
             this.cbb_IDCuonSach.Location = new System.Drawing.Point(337, 198);
             this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
@@ -341,6 +342,7 @@
             // cbb_IDPhieuMuon
             // 
             this.cbb_IDPhieuMuon.DataSource = this.pHIEUMUONBindingSource;
+            this.cbb_IDPhieuMuon.DisplayMember = "IDPhieuMuon";
             this.cbb_IDPhieuMuon.FormattingEnabled = true;
             this.cbb_IDPhieuMuon.Location = new System.Drawing.Point(337, 138);
             this.cbb_IDPhieuMuon.Name = "cbb_IDPhieuMuon";
@@ -540,7 +542,9 @@
             this.ClientSize = new System.Drawing.Size(1792, 1033);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmCTMuonSach";
-            this.Text = "frmCTMuonSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chi tiết mượn sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCTMuonSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

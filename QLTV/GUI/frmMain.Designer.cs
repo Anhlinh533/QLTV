@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.rib_TroGiup = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rib_QuiDinh = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -600,12 +601,14 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1835, 1186);
             this.Controls.Add(this.ribbonControl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Phần mềm quản lí thư viện";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).EndInit();
             this.ResumeLayout(false);

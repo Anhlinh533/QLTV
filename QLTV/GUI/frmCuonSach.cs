@@ -29,13 +29,13 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
-            if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "" && cbb_TinhTrang.Text != "")
-            {
-                ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
-                this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
-                ResetForm();
-            }
+            //SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
+            //if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "" && cbb_TinhTrang.Text != "")
+            //{
+            //    ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
+            //    this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+            //    ResetForm();
+            //}
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace QLTV.GUI
             numrow = e.RowIndex;
             tb_IDCuonSach.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
             cbb_IDSach.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
-            cbb_TinhTrang.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            //cbb_TinhTrang.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
         }
         public void ResetForm()
         {

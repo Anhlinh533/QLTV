@@ -607,6 +607,7 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.sACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDSach";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 138);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
@@ -659,7 +660,9 @@
             this.ClientSize = new System.Drawing.Size(1612, 962);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmSach";
-            this.Text = "frmSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

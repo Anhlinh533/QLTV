@@ -522,7 +522,9 @@
             this.ClientSize = new System.Drawing.Size(1793, 1155);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmUsers";
-            this.Text = "frmUsers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Users";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

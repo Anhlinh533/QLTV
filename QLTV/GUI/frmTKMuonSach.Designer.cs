@@ -40,6 +40,8 @@
             this.pHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.dtp_HanTra = new System.Windows.Forms.DateTimePicker();
+            this.dtp_NgayMuon = new System.Windows.Forms.DateTimePicker();
             this.btn_TKPhieuMuonSach = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_IDDocGia = new System.Windows.Forms.TextBox();
             this.tb_IDPhieuMuon = new System.Windows.Forms.TextBox();
@@ -64,8 +66,6 @@
             this.rdb_IDCTPhieuMuon = new System.Windows.Forms.RadioButton();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
             this.cT_PHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter();
-            this.dtp_NgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.dtp_HanTra = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKPhieuMuonSach.SuspendLayout();
@@ -208,6 +208,22 @@
             this.groupControl3.Size = new System.Drawing.Size(505, 1002);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm theo";
+            // 
+            // dtp_HanTra
+            // 
+            this.dtp_HanTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_HanTra.Location = new System.Drawing.Point(263, 245);
+            this.dtp_HanTra.Name = "dtp_HanTra";
+            this.dtp_HanTra.Size = new System.Drawing.Size(205, 44);
+            this.dtp_HanTra.TabIndex = 4;
+            // 
+            // dtp_NgayMuon
+            // 
+            this.dtp_NgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgayMuon.Location = new System.Drawing.Point(263, 185);
+            this.dtp_NgayMuon.Name = "dtp_NgayMuon";
+            this.dtp_NgayMuon.Size = new System.Drawing.Size(205, 44);
+            this.dtp_NgayMuon.TabIndex = 3;
             // 
             // btn_TKPhieuMuonSach
             // 
@@ -466,22 +482,6 @@
             // 
             this.cT_PHIEUMUONTableAdapter.ClearBeforeFill = true;
             // 
-            // dtp_NgayMuon
-            // 
-            this.dtp_NgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayMuon.Location = new System.Drawing.Point(263, 185);
-            this.dtp_NgayMuon.Name = "dtp_NgayMuon";
-            this.dtp_NgayMuon.Size = new System.Drawing.Size(205, 44);
-            this.dtp_NgayMuon.TabIndex = 3;
-            // 
-            // dtp_HanTra
-            // 
-            this.dtp_HanTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_HanTra.Location = new System.Drawing.Point(263, 245);
-            this.dtp_HanTra.Name = "dtp_HanTra";
-            this.dtp_HanTra.Size = new System.Drawing.Size(205, 44);
-            this.dtp_HanTra.TabIndex = 4;
-            // 
             // frmTKMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -489,7 +489,9 @@
             this.ClientSize = new System.Drawing.Size(1887, 1083);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTKMuonSach";
-            this.Text = "frmTKMuonSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tìm kiếm phiếu mượn sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTKMuonSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

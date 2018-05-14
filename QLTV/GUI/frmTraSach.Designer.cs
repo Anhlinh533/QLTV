@@ -54,6 +54,7 @@
             this.dtp_NgayTra = new System.Windows.Forms.DateTimePicker();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
+            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_SoTienTra = new System.Windows.Forms.TextBox();
             this.tb_IDPhieuTra = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -74,7 +75,6 @@
             this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter();
-            this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
@@ -88,13 +88,13 @@
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -366,12 +366,18 @@
             // cbb_IDDocGia
             // 
             this.cbb_IDDocGia.DataSource = this.tHEDOCGIABindingSource;
+            this.cbb_IDDocGia.DisplayMember = "IDDocGia";
             this.cbb_IDDocGia.FormattingEnabled = true;
             this.cbb_IDDocGia.Location = new System.Drawing.Point(253, 138);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
             this.cbb_IDDocGia.Size = new System.Drawing.Size(203, 44);
             this.cbb_IDDocGia.TabIndex = 2;
             this.cbb_IDDocGia.ValueMember = "IDDocGia";
+            // 
+            // tHEDOCGIABindingSource
+            // 
+            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
+            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
             // 
             // tb_SoTienTra
             // 
@@ -562,6 +568,7 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.pHIEUTRABindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDPhieuTra";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 132);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
@@ -583,11 +590,6 @@
             // 
             this.pHIEUTRATableAdapter.ClearBeforeFill = true;
             // 
-            // tHEDOCGIABindingSource
-            // 
-            this.tHEDOCGIABindingSource.DataMember = "THEDOCGIA";
-            this.tHEDOCGIABindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
             // tHEDOCGIATableAdapter
             // 
             this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
@@ -599,7 +601,9 @@
             this.ClientSize = new System.Drawing.Size(1544, 1007);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTraSach";
-            this.Text = "frmTraSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Phiếu trả sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTraSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
@@ -616,6 +620,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
@@ -623,7 +628,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

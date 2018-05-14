@@ -704,6 +704,7 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.tHEDOCGIABindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDDocGia";
             this.cbb_IDDelete.Font = new System.Drawing.Font("Tahoma", 15F);
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 127);
@@ -738,7 +739,9 @@
             this.ClientSize = new System.Drawing.Size(1538, 941);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTheDocGia";
-            this.Text = "frmTheDocGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thẻ độc giả";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTheDocGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

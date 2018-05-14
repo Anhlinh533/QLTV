@@ -325,6 +325,7 @@
             // cbb_IDTacGia
             // 
             this.cbb_IDTacGia.DataSource = this.tACGIABindingSource;
+            this.cbb_IDTacGia.DisplayMember = "IDTacGia";
             this.cbb_IDTacGia.FormattingEnabled = true;
             this.cbb_IDTacGia.Location = new System.Drawing.Point(266, 198);
             this.cbb_IDTacGia.Name = "cbb_IDTacGia";
@@ -340,6 +341,7 @@
             // cbb_IDDauSach
             // 
             this.cbb_IDDauSach.DataSource = this.dAUSACHBindingSource;
+            this.cbb_IDDauSach.DisplayMember = "IDDauSach";
             this.cbb_IDDauSach.FormattingEnabled = true;
             this.cbb_IDDauSach.Location = new System.Drawing.Point(266, 138);
             this.cbb_IDDauSach.Name = "cbb_IDDauSach";
@@ -539,7 +541,9 @@
             this.ClientSize = new System.Drawing.Size(1640, 1018);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmCTTacGia";
-            this.Text = "frmCTTacGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chi tiết tác giả";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCTTacGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

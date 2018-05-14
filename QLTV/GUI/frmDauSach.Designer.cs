@@ -331,6 +331,7 @@
             // cbb_IDTheLoaiSach
             // 
             this.cbb_IDTheLoaiSach.DataSource = this.lOAISACHBindingSource;
+            this.cbb_IDTheLoaiSach.DisplayMember = "IDLoaiSach";
             this.cbb_IDTheLoaiSach.FormattingEnabled = true;
             this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(244, 184);
             this.cbb_IDTheLoaiSach.Name = "cbb_IDTheLoaiSach";
@@ -491,6 +492,7 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.dAUSACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDDauSach";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 133);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
@@ -523,7 +525,9 @@
             this.ClientSize = new System.Drawing.Size(1370, 748);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmDauSach";
-            this.Text = "frmDauSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm đầu sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmDauSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

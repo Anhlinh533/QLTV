@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMuonSach));
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -341,6 +342,7 @@
             // cbb_IDDocGia
             // 
             this.cbb_IDDocGia.DataSource = this.tHEDOCGIABindingSource;
+            this.cbb_IDDocGia.DisplayMember = "IDDocGia";
             this.cbb_IDDocGia.FormattingEnabled = true;
             this.cbb_IDDocGia.Location = new System.Drawing.Point(238, 138);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
@@ -511,6 +513,7 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.pHIEUMUONBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDPhieuMuon";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(9, 137);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
@@ -542,8 +545,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1795, 1002);
             this.Controls.Add(this.navigationPane1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMuonSach";
-            this.Text = "frmMuonSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Phiếu mượn sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMuonSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

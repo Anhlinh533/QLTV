@@ -590,7 +590,9 @@
             this.ClientSize = new System.Drawing.Size(1814, 1045);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTKDocGia";
-            this.Text = "frmTKDocGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tìm kiếm độc giả";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTKDocGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

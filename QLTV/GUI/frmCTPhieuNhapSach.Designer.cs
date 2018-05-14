@@ -366,6 +366,7 @@
             // cbb_IDSach
             // 
             this.cbb_IDSach.DataSource = this.sACHBindingSource;
+            this.cbb_IDSach.DisplayMember = "IDSach";
             this.cbb_IDSach.FormattingEnabled = true;
             this.cbb_IDSach.Location = new System.Drawing.Point(327, 198);
             this.cbb_IDSach.Name = "cbb_IDSach";
@@ -381,6 +382,7 @@
             // cbb_IDPhieuNhap
             // 
             this.cbb_IDPhieuNhap.DataSource = this.pHIEUNHAPSACHBindingSource;
+            this.cbb_IDPhieuNhap.DisplayMember = "IDPhieuNhap";
             this.cbb_IDPhieuNhap.FormattingEnabled = true;
             this.cbb_IDPhieuNhap.Location = new System.Drawing.Point(327, 138);
             this.cbb_IDPhieuNhap.Name = "cbb_IDPhieuNhap";
@@ -606,6 +608,7 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.cTPHIEUNHAPSACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDCTPhieuNhap";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 145);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
@@ -642,7 +645,9 @@
             this.ClientSize = new System.Drawing.Size(1685, 1013);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmCTPhieuNhapSach";
-            this.Text = "frmCTPhieuNhapSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chi tiết phiếu nhập sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCTPhieuNhapSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

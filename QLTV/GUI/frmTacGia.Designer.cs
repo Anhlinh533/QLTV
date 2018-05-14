@@ -479,6 +479,7 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.tACGIABindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDTacGia";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 124);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
@@ -507,7 +508,9 @@
             this.ClientSize = new System.Drawing.Size(1592, 1043);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTacGia";
-            this.Text = "frmTacGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tác giả";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTacGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

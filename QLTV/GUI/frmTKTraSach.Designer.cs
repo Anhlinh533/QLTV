@@ -65,6 +65,8 @@
             this.tienPhatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTPHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.tb_CuonSach = new System.Windows.Forms.TextBox();
+            this.rdb_CuonSach = new System.Windows.Forms.RadioButton();
             this.btn_TKCTPhieuTraSach = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TienPhat = new System.Windows.Forms.TextBox();
             this.tb_SoNgayMuon = new System.Windows.Forms.TextBox();
@@ -78,8 +80,6 @@
             this.rdb_IDCTPhieuTra = new System.Windows.Forms.RadioButton();
             this.pHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter();
             this.cT_PHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUTRATableAdapter();
-            this.rdb_CuonSach = new System.Windows.Forms.RadioButton();
-            this.tb_CuonSach = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -497,6 +497,25 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm theo";
             // 
+            // tb_CuonSach
+            // 
+            this.tb_CuonSach.Location = new System.Drawing.Point(351, 200);
+            this.tb_CuonSach.Name = "tb_CuonSach";
+            this.tb_CuonSach.Size = new System.Drawing.Size(198, 44);
+            this.tb_CuonSach.TabIndex = 20;
+            // 
+            // rdb_CuonSach
+            // 
+            this.rdb_CuonSach.AutoSize = true;
+            this.rdb_CuonSach.ForeColor = System.Drawing.Color.Red;
+            this.rdb_CuonSach.Location = new System.Drawing.Point(6, 201);
+            this.rdb_CuonSach.Name = "rdb_CuonSach";
+            this.rdb_CuonSach.Size = new System.Drawing.Size(177, 40);
+            this.rdb_CuonSach.TabIndex = 19;
+            this.rdb_CuonSach.TabStop = true;
+            this.rdb_CuonSach.Text = "Cuốn sách";
+            this.rdb_CuonSach.UseVisualStyleBackColor = true;
+            // 
             // btn_TKCTPhieuTraSach
             // 
             this.btn_TKCTPhieuTraSach.BackColor = System.Drawing.Color.SeaGreen;
@@ -618,25 +637,6 @@
             // 
             this.cT_PHIEUTRATableAdapter.ClearBeforeFill = true;
             // 
-            // rdb_CuonSach
-            // 
-            this.rdb_CuonSach.AutoSize = true;
-            this.rdb_CuonSach.ForeColor = System.Drawing.Color.Red;
-            this.rdb_CuonSach.Location = new System.Drawing.Point(6, 201);
-            this.rdb_CuonSach.Name = "rdb_CuonSach";
-            this.rdb_CuonSach.Size = new System.Drawing.Size(177, 40);
-            this.rdb_CuonSach.TabIndex = 19;
-            this.rdb_CuonSach.TabStop = true;
-            this.rdb_CuonSach.Text = "Cuốn sách";
-            this.rdb_CuonSach.UseVisualStyleBackColor = true;
-            // 
-            // tb_CuonSach
-            // 
-            this.tb_CuonSach.Location = new System.Drawing.Point(351, 200);
-            this.tb_CuonSach.Name = "tb_CuonSach";
-            this.tb_CuonSach.Size = new System.Drawing.Size(198, 44);
-            this.tb_CuonSach.TabIndex = 20;
-            // 
             // frmTKTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -644,7 +644,9 @@
             this.ClientSize = new System.Drawing.Size(1750, 1082);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTKTraSach";
-            this.Text = "frmTKTraSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tìm kiếm phiếu trả sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTKTraSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

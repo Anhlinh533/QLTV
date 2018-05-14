@@ -54,11 +54,9 @@
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
-            this.cbb_TinhTrang = new System.Windows.Forms.ComboBox();
             this.cbb_IDSach = new System.Windows.Forms.ComboBox();
             this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_IDCuonSach = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.item_Xoa = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -99,9 +97,9 @@
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.Controls.Add(this.dgv_Delete);
-            this.groupControl3.Location = new System.Drawing.Point(388, 0);
+            this.groupControl3.Location = new System.Drawing.Point(443, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1231, 867);
+            this.groupControl3.Size = new System.Drawing.Size(1176, 867);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu cuốn sách";
             // 
@@ -120,7 +118,7 @@
             this.dgv_Delete.Location = new System.Drawing.Point(6, 50);
             this.dgv_Delete.Name = "dgv_Delete";
             this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1219, 811);
+            this.dgv_Delete.Size = new System.Drawing.Size(1164, 811);
             this.dgv_Delete.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -196,9 +194,9 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
-            this.groupControl2.Location = new System.Drawing.Point(435, 0);
+            this.groupControl2.Location = new System.Drawing.Point(532, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1184, 867);
+            this.groupControl2.Size = new System.Drawing.Size(1087, 867);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu cuốn sách";
             // 
@@ -217,7 +215,7 @@
             this.dgv_Them.Location = new System.Drawing.Point(6, 89);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(1172, 772);
+            this.dgv_Them.Size = new System.Drawing.Size(1075, 772);
             this.dgv_Them.TabIndex = 2;
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
@@ -270,7 +268,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1178, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1081, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -348,15 +346,13 @@
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.Controls.Add(this.btn_Them);
-            this.groupControl1.Controls.Add(this.cbb_TinhTrang);
             this.groupControl1.Controls.Add(this.cbb_IDSach);
             this.groupControl1.Controls.Add(this.tb_IDCuonSach);
-            this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(429, 867);
+            this.groupControl1.Size = new System.Drawing.Size(532, 867);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin cuốn sách";
             // 
@@ -373,31 +369,21 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(137, 290);
+            this.btn_Them.Location = new System.Drawing.Point(188, 272);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
             this.btn_Them.TabIndex = 15;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // cbb_TinhTrang
-            // 
-            this.cbb_TinhTrang.FormattingEnabled = true;
-            this.cbb_TinhTrang.Items.AddRange(new object[] {
-            "Chưa cho mượn.",
-            "Đã cho mượn"});
-            this.cbb_TinhTrang.Location = new System.Drawing.Point(211, 196);
-            this.cbb_TinhTrang.Name = "cbb_TinhTrang";
-            this.cbb_TinhTrang.Size = new System.Drawing.Size(212, 44);
-            this.cbb_TinhTrang.TabIndex = 3;
-            // 
             // cbb_IDSach
             // 
             this.cbb_IDSach.DataSource = this.sACHBindingSource;
+            this.cbb_IDSach.DisplayMember = "IDSach";
             this.cbb_IDSach.FormattingEnabled = true;
             this.cbb_IDSach.Location = new System.Drawing.Point(211, 136);
             this.cbb_IDSach.Name = "cbb_IDSach";
-            this.cbb_IDSach.Size = new System.Drawing.Size(212, 44);
+            this.cbb_IDSach.Size = new System.Drawing.Size(279, 44);
             this.cbb_IDSach.TabIndex = 2;
             this.cbb_IDSach.ValueMember = "IDSach";
             // 
@@ -411,19 +397,9 @@
             this.tb_IDCuonSach.Location = new System.Drawing.Point(211, 76);
             this.tb_IDCuonSach.MaxLength = 3;
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
-            this.tb_IDCuonSach.Size = new System.Drawing.Size(212, 44);
+            this.tb_IDCuonSach.Size = new System.Drawing.Size(279, 44);
             this.tb_IDCuonSach.TabIndex = 1;
             this.tb_IDCuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 199);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 36);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tình trạng:";
             // 
             // label2
             // 
@@ -468,7 +444,7 @@
             this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(382, 867);
+            this.groupControl4.Size = new System.Drawing.Size(437, 867);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
             // 
@@ -485,7 +461,7 @@
             this.btn_IDDelete.ImageZoom = 50;
             this.btn_IDDelete.LabelPosition = 41;
             this.btn_IDDelete.LabelText = "Xóa";
-            this.btn_IDDelete.Location = new System.Drawing.Point(106, 214);
+            this.btn_IDDelete.Location = new System.Drawing.Point(140, 227);
             this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(6);
             this.btn_IDDelete.Name = "btn_IDDelete";
             this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
@@ -495,10 +471,11 @@
             // cbb_IDDelete
             // 
             this.cbb_IDDelete.DataSource = this.cUONSACHBindingSource;
+            this.cbb_IDDelete.DisplayMember = "IDCuonSach";
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(6, 134);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
-            this.cbb_IDDelete.Size = new System.Drawing.Size(305, 44);
+            this.cbb_IDDelete.Size = new System.Drawing.Size(344, 44);
             this.cbb_IDDelete.TabIndex = 1;
             this.cbb_IDDelete.ValueMember = "IDCuonSach";
             // 
@@ -527,7 +504,9 @@
             this.ClientSize = new System.Drawing.Size(1709, 948);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmCuonSach";
-            this.Text = "frmCuonSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm cuốn sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCuonSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
@@ -578,10 +557,8 @@
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource cUONSACHBindingSource;
         private QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter cUONSACHTableAdapter;
-        private System.Windows.Forms.ComboBox cbb_TinhTrang;
         private System.Windows.Forms.ComboBox cbb_IDSach;
         private System.Windows.Forms.TextBox tb_IDCuonSach;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource sACHBindingSource;

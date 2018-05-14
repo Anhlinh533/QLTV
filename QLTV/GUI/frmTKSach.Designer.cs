@@ -554,7 +554,9 @@
             this.ClientSize = new System.Drawing.Size(1628, 1097);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTKSach";
-            this.Text = "frmTKSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tìm kiếm sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTKSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);

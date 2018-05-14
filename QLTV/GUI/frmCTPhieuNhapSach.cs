@@ -99,6 +99,12 @@ namespace QLTV.GUI
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
         #endregion
+
+        private void dg(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
