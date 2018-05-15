@@ -80,6 +80,7 @@
             this.tb_TienPhatMoiNgay.Name = "tb_TienPhatMoiNgay";
             this.tb_TienPhatMoiNgay.Size = new System.Drawing.Size(167, 44);
             this.tb_TienPhatMoiNgay.TabIndex = 1;
+            this.tb_TienPhatMoiNgay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label2
             // 

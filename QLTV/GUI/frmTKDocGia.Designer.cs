@@ -310,9 +310,11 @@
             // tb_IDDocGia
             // 
             this.tb_IDDocGia.Location = new System.Drawing.Point(232, 68);
+            this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(230, 44);
             this.tb_IDDocGia.TabIndex = 1;
+            this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_HoTen
             // 
@@ -320,6 +322,7 @@
             this.tb_HoTen.Name = "tb_HoTen";
             this.tb_HoTen.Size = new System.Drawing.Size(230, 44);
             this.tb_HoTen.TabIndex = 2;
+            this.tb_HoTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // tb_DiaChi
             // 
@@ -543,9 +546,11 @@
             // tb_IDUser
             // 
             this.tb_IDUser.Location = new System.Drawing.Point(199, 125);
+            this.tb_IDUser.MaxLength = 3;
             this.tb_IDUser.Name = "tb_IDUser";
             this.tb_IDUser.Size = new System.Drawing.Size(255, 44);
             this.tb_IDUser.TabIndex = 2;
+            this.tb_IDUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_UserIDDocGia
             // 

@@ -20,6 +20,8 @@ namespace QLTV.GUI
 
         private void frmReportSachTraTre_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.BCSACHTRATRE' table. You can move, or remove it, as needed.
+            this.bCSACHTRATRETableAdapter.Fill(this.quanLyThuVienDataSet.BCSACHTRATRE);
 
             this.reportViewer1.RefreshReport();
         }

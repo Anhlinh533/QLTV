@@ -65,8 +65,6 @@
             this.tienPhatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTPHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.tb_CuonSach = new System.Windows.Forms.TextBox();
-            this.rdb_CuonSach = new System.Windows.Forms.RadioButton();
             this.btn_TKCTPhieuTraSach = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TienPhat = new System.Windows.Forms.TextBox();
             this.tb_SoNgayMuon = new System.Windows.Forms.TextBox();
@@ -279,6 +277,7 @@
             this.tb_TienNoKiNay.Name = "tb_TienNoKiNay";
             this.tb_TienNoKiNay.Size = new System.Drawing.Size(202, 44);
             this.tb_TienNoKiNay.TabIndex = 6;
+            this.tb_TienNoKiNay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoTienTra
             // 
@@ -286,6 +285,7 @@
             this.tb_SoTienTra.Name = "tb_SoTienTra";
             this.tb_SoTienTra.Size = new System.Drawing.Size(202, 44);
             this.tb_SoTienTra.TabIndex = 5;
+            this.tb_SoTienTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuTra
             // 
@@ -293,6 +293,7 @@
             this.tb_IDPhieuTra.Name = "tb_IDPhieuTra";
             this.tb_IDPhieuTra.Size = new System.Drawing.Size(202, 44);
             this.tb_IDPhieuTra.TabIndex = 1;
+            this.tb_IDPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDDocGia
             // 
@@ -300,6 +301,7 @@
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(202, 44);
             this.tb_IDDocGia.TabIndex = 2;
+            this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_TienPhatKiNay
             // 
@@ -307,6 +309,7 @@
             this.tb_TienPhatKiNay.Name = "tb_TienPhatKiNay";
             this.tb_TienPhatKiNay.Size = new System.Drawing.Size(202, 44);
             this.tb_TienPhatKiNay.TabIndex = 4;
+            this.tb_TienPhatKiNay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_TienNoKiNay
             // 
@@ -478,8 +481,6 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.tb_CuonSach);
-            this.groupControl1.Controls.Add(this.rdb_CuonSach);
             this.groupControl1.Controls.Add(this.btn_TKCTPhieuTraSach);
             this.groupControl1.Controls.Add(this.tb_TienPhat);
             this.groupControl1.Controls.Add(this.tb_SoNgayMuon);
@@ -496,25 +497,6 @@
             this.groupControl1.Size = new System.Drawing.Size(572, 1001);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm theo";
-            // 
-            // tb_CuonSach
-            // 
-            this.tb_CuonSach.Location = new System.Drawing.Point(351, 200);
-            this.tb_CuonSach.Name = "tb_CuonSach";
-            this.tb_CuonSach.Size = new System.Drawing.Size(198, 44);
-            this.tb_CuonSach.TabIndex = 20;
-            // 
-            // rdb_CuonSach
-            // 
-            this.rdb_CuonSach.AutoSize = true;
-            this.rdb_CuonSach.ForeColor = System.Drawing.Color.Red;
-            this.rdb_CuonSach.Location = new System.Drawing.Point(6, 201);
-            this.rdb_CuonSach.Name = "rdb_CuonSach";
-            this.rdb_CuonSach.Size = new System.Drawing.Size(177, 40);
-            this.rdb_CuonSach.TabIndex = 19;
-            this.rdb_CuonSach.TabStop = true;
-            this.rdb_CuonSach.Text = "Cuốn sách";
-            this.rdb_CuonSach.UseVisualStyleBackColor = true;
             // 
             // btn_TKCTPhieuTraSach
             // 
@@ -538,24 +520,27 @@
             // 
             // tb_TienPhat
             // 
-            this.tb_TienPhat.Location = new System.Drawing.Point(351, 380);
+            this.tb_TienPhat.Location = new System.Drawing.Point(351, 320);
             this.tb_TienPhat.Name = "tb_TienPhat";
             this.tb_TienPhat.Size = new System.Drawing.Size(198, 44);
             this.tb_TienPhat.TabIndex = 6;
+            this.tb_TienPhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoNgayMuon
             // 
-            this.tb_SoNgayMuon.Location = new System.Drawing.Point(351, 320);
+            this.tb_SoNgayMuon.Location = new System.Drawing.Point(351, 260);
             this.tb_SoNgayMuon.Name = "tb_SoNgayMuon";
             this.tb_SoNgayMuon.Size = new System.Drawing.Size(198, 44);
             this.tb_SoNgayMuon.TabIndex = 5;
+            this.tb_SoNgayMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuMuon
             // 
-            this.tb_IDCTPhieuMuon.Location = new System.Drawing.Point(351, 261);
+            this.tb_IDCTPhieuMuon.Location = new System.Drawing.Point(351, 200);
             this.tb_IDCTPhieuMuon.Name = "tb_IDCTPhieuMuon";
             this.tb_IDCTPhieuMuon.Size = new System.Drawing.Size(198, 44);
             this.tb_IDCTPhieuMuon.TabIndex = 4;
+            this.tb_IDCTPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuTraCT
             // 
@@ -563,6 +548,7 @@
             this.tb_IDPhieuTraCT.Name = "tb_IDPhieuTraCT";
             this.tb_IDPhieuTraCT.Size = new System.Drawing.Size(198, 44);
             this.tb_IDPhieuTraCT.TabIndex = 2;
+            this.tb_IDPhieuTraCT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuTra
             // 
@@ -570,13 +556,14 @@
             this.tb_IDCTPhieuTra.Name = "tb_IDCTPhieuTra";
             this.tb_IDCTPhieuTra.Size = new System.Drawing.Size(198, 44);
             this.tb_IDCTPhieuTra.TabIndex = 1;
+            this.tb_IDCTPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_TienPhat
             // 
             this.rdb_TienPhat.AutoSize = true;
             this.rdb_TienPhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.rdb_TienPhat.ForeColor = System.Drawing.Color.Red;
-            this.rdb_TienPhat.Location = new System.Drawing.Point(6, 381);
+            this.rdb_TienPhat.Location = new System.Drawing.Point(6, 321);
             this.rdb_TienPhat.Name = "rdb_TienPhat";
             this.rdb_TienPhat.Size = new System.Drawing.Size(167, 40);
             this.rdb_TienPhat.TabIndex = 4;
@@ -587,7 +574,7 @@
             // 
             this.rdb_SoNgayMuon.AutoSize = true;
             this.rdb_SoNgayMuon.ForeColor = System.Drawing.Color.Red;
-            this.rdb_SoNgayMuon.Location = new System.Drawing.Point(6, 321);
+            this.rdb_SoNgayMuon.Location = new System.Drawing.Point(6, 261);
             this.rdb_SoNgayMuon.Name = "rdb_SoNgayMuon";
             this.rdb_SoNgayMuon.Size = new System.Drawing.Size(233, 40);
             this.rdb_SoNgayMuon.TabIndex = 3;
@@ -598,7 +585,7 @@
             // 
             this.rdb_IDPhieuMuon.AutoSize = true;
             this.rdb_IDPhieuMuon.ForeColor = System.Drawing.Color.Red;
-            this.rdb_IDPhieuMuon.Location = new System.Drawing.Point(6, 261);
+            this.rdb_IDPhieuMuon.Location = new System.Drawing.Point(6, 201);
             this.rdb_IDPhieuMuon.Name = "rdb_IDPhieuMuon";
             this.rdb_IDPhieuMuon.Size = new System.Drawing.Size(339, 40);
             this.rdb_IDPhieuMuon.TabIndex = 2;
@@ -722,7 +709,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soNgayMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tienPhatDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TextBox tb_CuonSach;
-        private System.Windows.Forms.RadioButton rdb_CuonSach;
     }
 }

@@ -38,6 +38,13 @@ namespace QLTV.SCRIPT
                 this.Close();
             }
         }
+        //Tránh việc gõ số vào textbox Họ tên
+        private void chu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
+        }
+
+
         // Show message box cho form
         private void Close()
         {

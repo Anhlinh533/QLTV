@@ -80,6 +80,7 @@
             this.tb_HanThe.Name = "tb_HanThe";
             this.tb_HanThe.Size = new System.Drawing.Size(179, 44);
             this.tb_HanThe.TabIndex = 1;
+            this.tb_HanThe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label2
             // 

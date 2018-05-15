@@ -102,9 +102,10 @@ namespace QLTV.GUI
 
         #endregion
 
-        private void dg(object sender, DataGridViewCellEventArgs e)
-        {
 
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

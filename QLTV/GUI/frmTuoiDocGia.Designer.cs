@@ -96,6 +96,7 @@
             this.tb_TuoiMax.Name = "tb_TuoiMax";
             this.tb_TuoiMax.Size = new System.Drawing.Size(181, 44);
             this.tb_TuoiMax.TabIndex = 2;
+            this.tb_TuoiMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_TuoiMin
             // 
@@ -103,6 +104,7 @@
             this.tb_TuoiMin.Name = "tb_TuoiMin";
             this.tb_TuoiMin.Size = new System.Drawing.Size(181, 44);
             this.tb_TuoiMin.TabIndex = 1;
+            this.tb_TuoiMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
             // 

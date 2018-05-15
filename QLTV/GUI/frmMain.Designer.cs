@@ -81,10 +81,14 @@
             this.btn_DoiPWD = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_rpSachTraTre = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.rib_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribtab_rpSachTraTre = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribtab_rpTinhHinhMuonSach = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribtab_DoiPWD = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rib_Users = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).BeginInit();
@@ -546,10 +550,13 @@
             this.btn_SoNgayMuonMax,
             this.btn_SoSachMuonMax,
             this.btn_TienPhatMoiNgay,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.btn_rpSachTraTre,
+            this.barButtonItem3,
+            this.barButtonItem4});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl.MaxItemId = 30;
+            this.ribbonControl.MaxItemId = 34;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rib_QuanLi,
@@ -566,17 +573,45 @@
             this.barButtonItem1.Id = 29;
             this.barButtonItem1.Name = "barButtonItem1";
             // 
+            // btn_rpSachTraTre
+            // 
+            this.btn_rpSachTraTre.Caption = "Báo cáo sách trả trễ";
+            this.btn_rpSachTraTre.Id = 30;
+            this.btn_rpSachTraTre.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_40;
+            this.btn_rpSachTraTre.Name = "btn_rpSachTraTre";
+            this.btn_rpSachTraTre.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_rpSachTraTre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_rpSachTraTre_ItemClick);
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Báo cáo tình hình mượn sách";
+            this.barButtonItem3.Id = 31;
+            this.barButtonItem3.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            // 
             // rib_BaoCao
             // 
             this.rib_BaoCao.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3});
+            this.ribtab_rpSachTraTre,
+            this.ribtab_rpTinhHinhMuonSach});
             this.rib_BaoCao.Name = "rib_BaoCao";
             this.rib_BaoCao.Text = "Báo cáo";
             // 
-            // ribbonPageGroup3
+            // ribtab_rpSachTraTre
             // 
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
+            this.ribtab_rpSachTraTre.ItemLinks.Add(this.btn_rpSachTraTre);
+            this.ribtab_rpSachTraTre.Name = "ribtab_rpSachTraTre";
+            this.ribtab_rpSachTraTre.Text = "Sách trả trễ";
+            // 
+            // ribtab_rpTinhHinhMuonSach
+            // 
+            this.ribtab_rpTinhHinhMuonSach.ItemLinks.Add(this.barButtonItem3);
+            this.ribtab_rpTinhHinhMuonSach.Name = "ribtab_rpTinhHinhMuonSach";
+            this.ribtab_rpTinhHinhMuonSach.Text = "Tình hình mượn sách";
             // 
             // ribtab_DoiPWD
             // 
@@ -589,6 +624,12 @@
             this.ribtab_DoiPWD});
             this.rib_Users.Name = "rib_Users";
             this.rib_Users.Text = "Thông tin cá nhân";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "barButtonItem4";
+            this.barButtonItem4.Id = 32;
+            this.barButtonItem4.Name = "barButtonItem4";
             // 
             // xtraTable
             // 
@@ -651,10 +692,9 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.Ribbon.RibbonPage rib_BaoCao;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_rpSachTraTre;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_DoiPWD;
         private DevExpress.XtraBars.Ribbon.RibbonPage rib_Users;
-        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTable;
         private DevExpress.XtraBars.BarButtonItem btn_DauSach;
         private DevExpress.XtraBars.BarButtonItem btn_LoaiSach;
         private DevExpress.XtraBars.BarButtonItem btn_CTTacGia;
@@ -674,6 +714,11 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_TienPhatMoiNgay;
         private DevExpress.XtraBars.BarButtonItem btn_TienPhatMoiNgay;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btn_rpSachTraTre;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_rpTinhHinhMuonSach;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTable;
     }
 }
 

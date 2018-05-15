@@ -45,6 +45,22 @@ namespace QLTV.GUI
                 ResetForm();
             }
 
+            if (rdb_IDCTPhieuMuon.Checked == true && tb_IDCTPhieuMuonSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID chi tiết phiếu mượn cần tìm!!");
+                tb_IDCTPhieuMuonSach.Focus();
+            }
+            else if (rdb_IDCuonSach.Checked == true && tb_IDCuonSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID cuốn sách cần tìm!!");
+                tb_IDCuonSach.Focus();
+            }
+            else if (rdb_IDPhieuMuonSach.Checked == true && tb_IDPhieuMuonSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID phiếu mượn cần tìm!!");
+                tb_IDPhieuMuonSach.Focus();
+            }
+
         }
 
         private void btn_TKPhieuMuonSach_Click(object sender, EventArgs e)
@@ -69,6 +85,18 @@ namespace QLTV.GUI
                 dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKNgayMuon(dtp_NgayMuon.Text.Trim()));
                 ResetForm();
             }
+            if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID độc giả cần tìm!!");
+                tb_IDDocGia.Focus();
+            }
+            else if (rdb_IDPhieuMuon.Checked == true && tb_IDPhieuMuon.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID phiếu mượn cần tìm!!");
+                tb_IDPhieuMuon.Focus();
+
+            }
+            
         }
         #region Form
         public void ResetForm()
@@ -77,6 +105,11 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl2);
             SCRIPT.useForm.ResetAllControls(groupControl3);
             SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+        public void ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
         #endregion
     }

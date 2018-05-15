@@ -93,5 +93,10 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
         #endregion
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

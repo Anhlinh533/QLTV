@@ -32,6 +32,18 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
             this.dgv_ThemDG = new System.Windows.Forms.DataGridView();
             this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoTenDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,15 +56,6 @@
             this.tongNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.dtp_NgayLapThe = new System.Windows.Forms.DateTimePicker();
             this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
@@ -93,11 +96,11 @@
             this.item_Them.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).BeginInit();
@@ -119,9 +122,9 @@
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.item_Them,
             this.item_Xoa});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1538, 941);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(1907, 1012);
             this.navigationPane1.SelectedPage = this.item_Them;
-            this.navigationPane1.Size = new System.Drawing.Size(1538, 941);
+            this.navigationPane1.Size = new System.Drawing.Size(1907, 1012);
             this.navigationPane1.TabIndex = 0;
             this.navigationPane1.Text = "navigationPane1";
             // 
@@ -132,7 +135,7 @@
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1448, 860);
+            this.item_Them.Size = new System.Drawing.Size(1817, 931);
             // 
             // groupControl2
             // 
@@ -144,13 +147,129 @@
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupControl2.Controls.Add(this.dgv_ThemDG);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
-            this.groupControl2.Location = new System.Drawing.Point(423, 0);
+            this.groupControl2.Controls.Add(this.dgv_ThemDG);
+            this.groupControl2.Location = new System.Drawing.Point(539, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1025, 860);
+            this.groupControl2.Size = new System.Drawing.Size(1278, 931);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu độc giả";
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = null;
+            this.bindingNavigator1.CountItem = null;
+            this.bindingNavigator1.DeleteItem = null;
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.btn_Sua,
+            this.toolStripSeparator1,
+            this.toolStripLabel2,
+            this.btn_Xoa,
+            this.toolStripSeparator2,
+            this.toolStripLabel3,
+            this.btn_Reset,
+            this.toolStripSeparator3,
+            this.toolStripLabel4,
+            this.btn_Exit});
+            this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
+            this.bindingNavigator1.MoveFirstItem = null;
+            this.bindingNavigator1.MoveLastItem = null;
+            this.bindingNavigator1.MoveNextItem = null;
+            this.bindingNavigator1.MovePreviousItem = null;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = null;
+            this.bindingNavigator1.Size = new System.Drawing.Size(1272, 31);
+            this.bindingNavigator1.TabIndex = 4;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(42, 28);
+            this.toolStripLabel1.Text = "Sửa";
+            this.toolStripLabel1.Click += new System.EventHandler(this.btn_Sua_Click);
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Sua.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
+            this.btn_Sua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(28, 28);
+            this.btn_Sua.Text = "Sửa thông tin";
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(43, 28);
+            this.toolStripLabel2.Text = "Xóa";
+            this.toolStripLabel2.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(28, 28);
+            this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(113, 28);
+            this.toolStripLabel3.Text = "Reset dữ liệu";
+            this.toolStripLabel3.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // btn_Reset
+            // 
+            this.btn_Reset.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(28, 28);
+            this.btn_Reset.Text = "Reset dữ liệu";
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel4
+            // 
+            this.toolStripLabel4.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            this.toolStripLabel4.Size = new System.Drawing.Size(57, 28);
+            this.toolStripLabel4.Text = "Thoát";
+            this.toolStripLabel4.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(28, 28);
+            this.btn_Exit.Text = "toolStripButton1";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // dgv_ThemDG
             // 
@@ -170,10 +289,10 @@
             this.ngayHetHanDataGridViewTextBoxColumn,
             this.tongNoDataGridViewTextBoxColumn});
             this.dgv_ThemDG.DataSource = this.tHEDOCGIABindingSource;
-            this.dgv_ThemDG.Location = new System.Drawing.Point(3, 90);
+            this.dgv_ThemDG.Location = new System.Drawing.Point(3, 98);
             this.dgv_ThemDG.Name = "dgv_ThemDG";
             this.dgv_ThemDG.RowTemplate.Height = 28;
-            this.dgv_ThemDG.Size = new System.Drawing.Size(1019, 767);
+            this.dgv_ThemDG.Size = new System.Drawing.Size(1272, 830);
             this.dgv_ThemDG.TabIndex = 1;
             this.dgv_ThemDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDG_CellClick);
             // 
@@ -264,96 +383,6 @@
             this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
             this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // bindingNavigator1
-            // 
-            this.bindingNavigator1.AddNewItem = null;
-            this.bindingNavigator1.CountItem = null;
-            this.bindingNavigator1.DeleteItem = null;
-            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.btn_Sua,
-            this.toolStripSeparator1,
-            this.toolStripLabel2,
-            this.btn_Xoa,
-            this.toolStripSeparator2,
-            this.toolStripLabel3,
-            this.btn_Reset});
-            this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
-            this.bindingNavigator1.MoveFirstItem = null;
-            this.bindingNavigator1.MoveLastItem = null;
-            this.bindingNavigator1.MoveNextItem = null;
-            this.bindingNavigator1.MovePreviousItem = null;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1019, 31);
-            this.bindingNavigator1.TabIndex = 0;
-            this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Red;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(42, 28);
-            this.toolStripLabel1.Text = "Sửa";
-            this.toolStripLabel1.Click += new System.EventHandler(this.btn_Sua_Click);
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_Sua.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
-            this.btn_Sua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(28, 28);
-            this.btn_Sua.Text = "Sửa thông tin";
-            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.ForeColor = System.Drawing.Color.Red;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(43, 28);
-            this.toolStripLabel2.Text = "Xóa";
-            this.toolStripLabel2.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
-            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(28, 28);
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.ForeColor = System.Drawing.Color.Red;
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(113, 28);
-            this.toolStripLabel3.Text = "Reset dữ liệu";
-            this.toolStripLabel3.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
-            // btn_Reset
-            // 
-            this.btn_Reset.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
-            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(28, 28);
-            this.btn_Reset.Text = "Reset dữ liệu";
-            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
             // groupControl1
             // 
             this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -381,7 +410,7 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(417, 860);
+            this.groupControl1.Size = new System.Drawing.Size(533, 931);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin độc giả";
             // 
@@ -390,7 +419,7 @@
             this.dtp_NgayLapThe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayLapThe.Location = new System.Drawing.Point(207, 436);
             this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
-            this.dtp_NgayLapThe.Size = new System.Drawing.Size(201, 44);
+            this.dtp_NgayLapThe.Size = new System.Drawing.Size(275, 44);
             this.dtp_NgayLapThe.TabIndex = 7;
             // 
             // dtp_NgaySinh
@@ -398,7 +427,7 @@
             this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgaySinh.Location = new System.Drawing.Point(207, 196);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(201, 44);
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(275, 44);
             this.dtp_NgaySinh.TabIndex = 3;
             // 
             // btn_Them
@@ -428,7 +457,7 @@
             this.cbb_LoaiDocGia.FormattingEnabled = true;
             this.cbb_LoaiDocGia.Location = new System.Drawing.Point(207, 379);
             this.cbb_LoaiDocGia.Name = "cbb_LoaiDocGia";
-            this.cbb_LoaiDocGia.Size = new System.Drawing.Size(201, 44);
+            this.cbb_LoaiDocGia.Size = new System.Drawing.Size(275, 44);
             this.cbb_LoaiDocGia.TabIndex = 6;
             this.cbb_LoaiDocGia.ValueMember = "IDLoaiDG";
             // 
@@ -441,29 +470,30 @@
             // 
             this.tb_Email.Location = new System.Drawing.Point(207, 319);
             this.tb_Email.Name = "tb_Email";
-            this.tb_Email.Size = new System.Drawing.Size(201, 44);
+            this.tb_Email.Size = new System.Drawing.Size(275, 44);
             this.tb_Email.TabIndex = 5;
             // 
             // tb_DiaChi
             // 
             this.tb_DiaChi.Location = new System.Drawing.Point(207, 259);
             this.tb_DiaChi.Name = "tb_DiaChi";
-            this.tb_DiaChi.Size = new System.Drawing.Size(201, 44);
+            this.tb_DiaChi.Size = new System.Drawing.Size(275, 44);
             this.tb_DiaChi.TabIndex = 4;
             // 
             // tb_HoTenDocGia
             // 
             this.tb_HoTenDocGia.Location = new System.Drawing.Point(207, 139);
             this.tb_HoTenDocGia.Name = "tb_HoTenDocGia";
-            this.tb_HoTenDocGia.Size = new System.Drawing.Size(201, 44);
+            this.tb_HoTenDocGia.Size = new System.Drawing.Size(275, 44);
             this.tb_HoTenDocGia.TabIndex = 2;
+            this.tb_HoTenDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // tb_IDDocGia
             // 
             this.tb_IDDocGia.Location = new System.Drawing.Point(207, 79);
             this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
-            this.tb_IDDocGia.Size = new System.Drawing.Size(201, 44);
+            this.tb_IDDocGia.Size = new System.Drawing.Size(275, 44);
             this.tb_IDDocGia.TabIndex = 1;
             this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
@@ -544,7 +574,7 @@
             this.item_Xoa.Controls.Add(this.groupControl4);
             this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
             this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1448, 860);
+            this.item_Xoa.Size = new System.Drawing.Size(1817, 931);
             // 
             // groupControl3
             // 
@@ -559,7 +589,7 @@
             this.groupControl3.Controls.Add(this.dgv_Delete);
             this.groupControl3.Location = new System.Drawing.Point(417, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1031, 860);
+            this.groupControl3.Size = new System.Drawing.Size(1400, 931);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu độc giả";
             // 
@@ -584,7 +614,7 @@
             this.dgv_Delete.Location = new System.Drawing.Point(3, 47);
             this.dgv_Delete.Name = "dgv_Delete";
             this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1019, 803);
+            this.dgv_Delete.Size = new System.Drawing.Size(1388, 874);
             this.dgv_Delete.TabIndex = 0;
             // 
             // iDDocGiaDataGridViewTextBoxColumn1
@@ -677,7 +707,7 @@
             this.groupControl4.Controls.Add(this.label8);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(411, 860);
+            this.groupControl4.Size = new System.Drawing.Size(411, 931);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
             // 
@@ -709,7 +739,7 @@
             this.cbb_IDDelete.FormattingEnabled = true;
             this.cbb_IDDelete.Location = new System.Drawing.Point(12, 127);
             this.cbb_IDDelete.Name = "cbb_IDDelete";
-            this.cbb_IDDelete.Size = new System.Drawing.Size(170, 44);
+            this.cbb_IDDelete.Size = new System.Drawing.Size(210, 44);
             this.cbb_IDDelete.TabIndex = 1;
             this.cbb_IDDelete.ValueMember = "IDDocGia";
             // 
@@ -736,7 +766,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1538, 941);
+            this.ClientSize = new System.Drawing.Size(1907, 1012);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTheDocGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -750,12 +780,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -796,15 +826,6 @@
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource lOAIDOCGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter lOAIDOCGIATableAdapter;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripButton btn_Sua;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripButton btn_Xoa;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripButton btn_Reset;
         private System.Windows.Forms.DataGridView dgv_ThemDG;
         private System.Windows.Forms.BindingSource tHEDOCGIABindingSource;
         private QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter tHEDOCGIATableAdapter;
@@ -833,5 +854,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tongNoDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DateTimePicker dtp_NgayLapThe;
         private System.Windows.Forms.DateTimePicker dtp_NgaySinh;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton btn_Sua;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripButton btn_Xoa;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripButton btn_Reset;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripButton btn_Exit;
     }
 }

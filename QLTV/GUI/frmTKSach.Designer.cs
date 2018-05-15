@@ -263,6 +263,7 @@
             this.tb_GiaTien.Name = "tb_GiaTien";
             this.tb_GiaTien.Size = new System.Drawing.Size(214, 44);
             this.tb_GiaTien.TabIndex = 6;
+            this.tb_GiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoLuongTon
             // 
@@ -270,6 +271,7 @@
             this.tb_SoLuongTon.Name = "tb_SoLuongTon";
             this.tb_SoLuongTon.Size = new System.Drawing.Size(214, 44);
             this.tb_SoLuongTon.TabIndex = 5;
+            this.tb_SoLuongTon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_NamXuatBan
             // 
@@ -277,6 +279,7 @@
             this.tb_NamXuatBan.Name = "tb_NamXuatBan";
             this.tb_NamXuatBan.Size = new System.Drawing.Size(214, 44);
             this.tb_NamXuatBan.TabIndex = 4;
+            this.tb_NamXuatBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_NhaXuatBan
             // 
@@ -284,6 +287,7 @@
             this.tb_NhaXuatBan.Name = "tb_NhaXuatBan";
             this.tb_NhaXuatBan.Size = new System.Drawing.Size(214, 44);
             this.tb_NhaXuatBan.TabIndex = 3;
+            this.tb_NhaXuatBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // tb_IDDauSach
             // 
@@ -291,6 +295,7 @@
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(214, 44);
             this.tb_IDDauSach.TabIndex = 2;
+            this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDSach
             // 
@@ -298,6 +303,7 @@
             this.tb_IDSach.Name = "tb_IDSach";
             this.tb_IDSach.Size = new System.Drawing.Size(214, 44);
             this.tb_IDSach.TabIndex = 1;
+            this.tb_IDSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_GiaTien
             // 
@@ -496,6 +502,7 @@
             this.tb_IDSachCS.Name = "tb_IDSachCS";
             this.tb_IDSachCS.Size = new System.Drawing.Size(213, 44);
             this.tb_IDSachCS.TabIndex = 2;
+            this.tb_IDSachCS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCuonSach
             // 
@@ -503,6 +510,7 @@
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
             this.tb_IDCuonSach.Size = new System.Drawing.Size(213, 44);
             this.tb_IDCuonSach.TabIndex = 1;
+            this.tb_IDCuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_TinhTrang
             // 

@@ -20,6 +20,8 @@ namespace QLTV.GUI
 
         private void frmSach_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_TACGIA' table. You can move, or remove it, as needed.
+            this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.DAUSACH' table. You can move, or remove it, as needed.
             this.dAUSACHTableAdapter.Fill(this.quanLyThuVienDataSet.DAUSACH);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.SACH' table. You can move, or remove it, as needed.
@@ -97,5 +99,10 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
         #endregion
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -32,12 +32,6 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.dgv_ThemDauSach = new System.Windows.Forms.DataGridView();
-            this.iDDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dAUSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Sua = new System.Windows.Forms.ToolStripButton();
@@ -47,6 +41,15 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
+            this.dgv_ThemDauSach = new System.Windows.Forms.DataGridView();
+            this.iDDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDLoaiSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dAUSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TenDauSach = new System.Windows.Forms.TextBox();
@@ -73,11 +76,11 @@
             this.item_Them.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDauSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).BeginInit();
@@ -99,9 +102,9 @@
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.item_Them,
             this.item_Xoa});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1370, 748);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(1749, 1018);
             this.navigationPane1.SelectedPage = this.item_Them;
-            this.navigationPane1.Size = new System.Drawing.Size(1370, 748);
+            this.navigationPane1.Size = new System.Drawing.Size(1749, 1018);
             this.navigationPane1.TabIndex = 2;
             this.navigationPane1.Text = "navigationPane1";
             // 
@@ -112,7 +115,7 @@
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1280, 667);
+            this.item_Them.Size = new System.Drawing.Size(1659, 937);
             // 
             // groupControl2
             // 
@@ -123,69 +126,13 @@
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
-            this.groupControl2.Controls.Add(this.dgv_ThemDauSach);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
-            this.groupControl2.Location = new System.Drawing.Point(452, 0);
+            this.groupControl2.Controls.Add(this.dgv_ThemDauSach);
+            this.groupControl2.Location = new System.Drawing.Point(596, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(829, 664);
+            this.groupControl2.Size = new System.Drawing.Size(1064, 934);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu đầu sách";
-            // 
-            // dgv_ThemDauSach
-            // 
-            this.dgv_ThemDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_ThemDauSach.AutoGenerateColumns = false;
-            this.dgv_ThemDauSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_ThemDauSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDauSachDataGridViewTextBoxColumn,
-            this.tenDauSachDataGridViewTextBoxColumn,
-            this.iDLoaiSachDataGridViewTextBoxColumn});
-            this.dgv_ThemDauSach.DataSource = this.dAUSACHBindingSource;
-            this.dgv_ThemDauSach.Location = new System.Drawing.Point(6, 95);
-            this.dgv_ThemDauSach.Name = "dgv_ThemDauSach";
-            this.dgv_ThemDauSach.RowTemplate.Height = 28;
-            this.dgv_ThemDauSach.Size = new System.Drawing.Size(817, 563);
-            this.dgv_ThemDauSach.TabIndex = 2;
-            this.dgv_ThemDauSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDauSach_CellClick);
-            // 
-            // iDDauSachDataGridViewTextBoxColumn
-            // 
-            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDDauSachDataGridViewTextBoxColumn.DataPropertyName = "IDDauSach";
-            this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
-            this.iDDauSachDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
-            this.iDDauSachDataGridViewTextBoxColumn.Width = 192;
-            // 
-            // tenDauSachDataGridViewTextBoxColumn
-            // 
-            this.tenDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.tenDauSachDataGridViewTextBoxColumn.DataPropertyName = "TenDauSach";
-            this.tenDauSachDataGridViewTextBoxColumn.HeaderText = "Tên đầu sách";
-            this.tenDauSachDataGridViewTextBoxColumn.MaxInputLength = 200;
-            this.tenDauSachDataGridViewTextBoxColumn.Name = "tenDauSachDataGridViewTextBoxColumn";
-            this.tenDauSachDataGridViewTextBoxColumn.Width = 210;
-            // 
-            // iDLoaiSachDataGridViewTextBoxColumn
-            // 
-            this.iDLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiSach";
-            this.iDLoaiSachDataGridViewTextBoxColumn.HeaderText = "ID thể loại sách";
-            this.iDLoaiSachDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDLoaiSachDataGridViewTextBoxColumn.Name = "iDLoaiSachDataGridViewTextBoxColumn";
-            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 181;
-            // 
-            // dAUSACHBindingSource
-            // 
-            this.dAUSACHBindingSource.DataMember = "DAUSACH";
-            this.dAUSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // quanLyThuVienDataSet
-            // 
-            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
-            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator1
             // 
@@ -201,17 +148,19 @@
             this.btn_Xoa,
             this.toolStripSeparator2,
             this.toolStripLabel3,
-            this.btn_Reset});
+            this.btn_Reset,
+            this.toolStripSeparator3,
+            this.toolStripLabel4,
+            this.btn_Exit});
             this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(823, 31);
-            this.bindingNavigator1.TabIndex = 1;
+            this.bindingNavigator1.Size = new System.Drawing.Size(1058, 31);
+            this.bindingNavigator1.TabIndex = 3;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // toolStripLabel1
@@ -278,6 +227,85 @@
             this.btn_Reset.Text = "Reset dữ liệu";
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel4
+            // 
+            this.toolStripLabel4.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            this.toolStripLabel4.Size = new System.Drawing.Size(57, 28);
+            this.toolStripLabel4.Text = "Thoát";
+            this.toolStripLabel4.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(28, 28);
+            this.btn_Exit.Text = "toolStripButton1";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // dgv_ThemDauSach
+            // 
+            this.dgv_ThemDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_ThemDauSach.AutoGenerateColumns = false;
+            this.dgv_ThemDauSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ThemDauSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDauSachDataGridViewTextBoxColumn,
+            this.tenDauSachDataGridViewTextBoxColumn,
+            this.iDLoaiSachDataGridViewTextBoxColumn});
+            this.dgv_ThemDauSach.DataSource = this.dAUSACHBindingSource;
+            this.dgv_ThemDauSach.Location = new System.Drawing.Point(6, 97);
+            this.dgv_ThemDauSach.Name = "dgv_ThemDauSach";
+            this.dgv_ThemDauSach.RowTemplate.Height = 28;
+            this.dgv_ThemDauSach.Size = new System.Drawing.Size(1052, 831);
+            this.dgv_ThemDauSach.TabIndex = 2;
+            this.dgv_ThemDauSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDauSach_CellClick);
+            // 
+            // iDDauSachDataGridViewTextBoxColumn
+            // 
+            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDDauSachDataGridViewTextBoxColumn.DataPropertyName = "IDDauSach";
+            this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
+            this.iDDauSachDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
+            this.iDDauSachDataGridViewTextBoxColumn.Width = 192;
+            // 
+            // tenDauSachDataGridViewTextBoxColumn
+            // 
+            this.tenDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.tenDauSachDataGridViewTextBoxColumn.DataPropertyName = "TenDauSach";
+            this.tenDauSachDataGridViewTextBoxColumn.HeaderText = "Tên đầu sách";
+            this.tenDauSachDataGridViewTextBoxColumn.MaxInputLength = 200;
+            this.tenDauSachDataGridViewTextBoxColumn.Name = "tenDauSachDataGridViewTextBoxColumn";
+            this.tenDauSachDataGridViewTextBoxColumn.Width = 210;
+            // 
+            // iDLoaiSachDataGridViewTextBoxColumn
+            // 
+            this.iDLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiSach";
+            this.iDLoaiSachDataGridViewTextBoxColumn.HeaderText = "ID thể loại sách";
+            this.iDLoaiSachDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDLoaiSachDataGridViewTextBoxColumn.Name = "iDLoaiSachDataGridViewTextBoxColumn";
+            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 181;
+            // 
+            // dAUSACHBindingSource
+            // 
+            this.dAUSACHBindingSource.DataMember = "DAUSACH";
+            this.dAUSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // quanLyThuVienDataSet
+            // 
+            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
+            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // groupControl1
             // 
             this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -296,7 +324,7 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(446, 667);
+            this.groupControl1.Size = new System.Drawing.Size(590, 937);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin đầu sách";
             // 
@@ -325,8 +353,9 @@
             this.tb_TenDauSach.Location = new System.Drawing.Point(244, 126);
             this.tb_TenDauSach.MaxLength = 200;
             this.tb_TenDauSach.Name = "tb_TenDauSach";
-            this.tb_TenDauSach.Size = new System.Drawing.Size(194, 44);
+            this.tb_TenDauSach.Size = new System.Drawing.Size(279, 44);
             this.tb_TenDauSach.TabIndex = 2;
+            this.tb_TenDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // cbb_IDTheLoaiSach
             // 
@@ -335,7 +364,7 @@
             this.cbb_IDTheLoaiSach.FormattingEnabled = true;
             this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(244, 184);
             this.cbb_IDTheLoaiSach.Name = "cbb_IDTheLoaiSach";
-            this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(194, 44);
+            this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(279, 44);
             this.cbb_IDTheLoaiSach.TabIndex = 3;
             this.cbb_IDTheLoaiSach.ValueMember = "IDLoaiSach";
             // 
@@ -349,7 +378,7 @@
             this.tb_IDDauSach.Location = new System.Drawing.Point(244, 66);
             this.tb_IDDauSach.MaxLength = 3;
             this.tb_IDDauSach.Name = "tb_IDDauSach";
-            this.tb_IDDauSach.Size = new System.Drawing.Size(194, 44);
+            this.tb_IDDauSach.Size = new System.Drawing.Size(279, 44);
             this.tb_IDDauSach.TabIndex = 1;
             this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
@@ -390,7 +419,7 @@
             this.item_Xoa.Controls.Add(this.groupControl4);
             this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
             this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1280, 667);
+            this.item_Xoa.Size = new System.Drawing.Size(1659, 937);
             // 
             // groupControl3
             // 
@@ -404,7 +433,7 @@
             this.groupControl3.Controls.Add(this.dataGridView1);
             this.groupControl3.Location = new System.Drawing.Point(388, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(905, 679);
+            this.groupControl3.Size = new System.Drawing.Size(1284, 949);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu đầu sách";
             // 
@@ -421,7 +450,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 47);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(899, 629);
+            this.dataGridView1.Size = new System.Drawing.Size(1278, 899);
             this.dataGridView1.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -465,7 +494,7 @@
             this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(382, 667);
+            this.groupControl4.Size = new System.Drawing.Size(382, 937);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
             // 
@@ -522,7 +551,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 748);
+            this.ClientSize = new System.Drawing.Size(1749, 1018);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmDauSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -535,12 +564,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDauSach)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDauSach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -566,15 +595,6 @@
         private DevExpress.XtraBars.Navigation.NavigationPage item_Xoa;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private System.Windows.Forms.DataGridView dgv_ThemDauSach;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripButton btn_Sua;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripButton btn_Xoa;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripButton btn_Reset;
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource dAUSACHBindingSource;
         private QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter dAUSACHTableAdapter;
@@ -597,5 +617,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton btn_Sua;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripButton btn_Xoa;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripButton btn_Reset;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripButton btn_Exit;
     }
 }

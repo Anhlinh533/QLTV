@@ -59,6 +59,40 @@ namespace QLTV.GUI
                 dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKSoLuongTon(tb_SoLuongTon.Text.Trim()));
                 ResetForm();
             }
+
+            if (rdb_GiaTien.Checked == true && tb_GiaTien.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền giá tiền cần tìm!!");
+                tb_GiaTien.Focus();
+            }
+            else if (rdb_IDDauSach.Checked == true && tb_IDDauSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID đầu sách cần tìm!!");
+                tb_IDDauSach.Focus();
+            }
+            else if (rdb_IDSach.Checked == true && tb_IDSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID sách cần tìm!!");
+                tb_IDSach.Focus();
+            }
+            else if (rdb_NhaXuatBan.Checked == true && tb_NhaXuatBan.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền nhà xuất bản cần tìm!!");
+                tb_NhaXuatBan.Focus();
+            }
+            else if (rdb_NamXuatBan.Checked == true && tb_NamXuatBan.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền năm xuất bản cần tìm!!");
+                tb_NamXuatBan.Focus();
+            }
+            else if (rdb_SoLuongTon.Checked == true && tb_SoLuongTon.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền số lượng tồn cần tìm!!");
+                tb_SoLuongTon.Focus();
+            }
+
+
+
         }
 
         private void btn_TKCuonSach_Click(object sender, EventArgs e)
@@ -78,6 +112,23 @@ namespace QLTV.GUI
                 dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCuonSach.Instance.TKTinhTrang(cbb_TinhTrang.Text.Trim()));
                 ResetForm();
             }
+
+            if (rdb_IDCuonSach.Checked == true && tb_IDCuonSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID cuốn sách cần tìm!!");
+                tb_IDCuonSach.Focus();
+            }
+            else if (rdb_IDSachCS.Checked == true && tb_IDSachCS.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID sách cần tìm !!");
+                tb_IDSachCS.Focus();
+            }
+            else if (rdb_TinhTrang.Checked == true && cbb_TinhTrang.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn tình trạng cần tìm!!");
+            }
+
+
         }
         #region Form
         public void ResetForm()
@@ -87,6 +138,16 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl3);
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
+        public void ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+        private void chu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
+        }
         #endregion
+
     }
 }

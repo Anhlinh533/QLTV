@@ -44,6 +44,18 @@ namespace QLTV.GUI
                 dgv_TKTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTacGia.Instance.TKTenTacGia(tb_TenTacGia.Text.Trim()));
                 ResetForm();
             }
+
+            if (rdb_IDTacGia.Checked == true && tb_IDTacGia.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID tác giả cần tìm!!");
+                tb_IDTacGia.Focus();
+            }
+            else if (rdb_TenTacGia.Checked == true && tb_TenTacGia.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền tên tác giả cần tìm!!");
+                tb_TenTacGia.Focus();
+            }
+
         }
 
         private void btn_TKCTTacGia_Click(object sender, EventArgs e)
@@ -63,6 +75,23 @@ namespace QLTV.GUI
                 dgv_TKCTTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTacGia.Instance.TKIDTacGia(tb_IDTacGiaCT.Text.Trim()));
                 ResetForm();
             }
+
+            if (rdb_IDCTTacGia.Checked == true && tb_IDCTTacGia.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID chi tiết tác giả cần tìm!!");
+                tb_IDCTTacGia.Focus();
+            }
+            else if (rdb_IDDauSach.Checked == true && tb_IDDauSach.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID đầu sách cần tìm!!");
+                tb_IDDauSach.Focus();
+            }
+            else if (rdb_IDTacGiaCT.Checked == true && tb_IDTacGiaCT.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID tác giả cần tìm!!");
+                tb_IDTacGiaCT.Focus();
+            }
+
         }
         #region Form
         public void ResetForm()

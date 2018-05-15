@@ -80,6 +80,7 @@
             this.tb_SoSachMuonMax.Name = "tb_SoSachMuonMax";
             this.tb_SoSachMuonMax.Size = new System.Drawing.Size(167, 44);
             this.tb_SoSachMuonMax.TabIndex = 1;
+            this.tb_SoSachMuonMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label2
             // 

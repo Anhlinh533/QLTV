@@ -248,16 +248,20 @@
             // tb_IDDocGia
             // 
             this.tb_IDDocGia.Location = new System.Drawing.Point(263, 128);
+            this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(205, 44);
             this.tb_IDDocGia.TabIndex = 5;
+            this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuMuon
             // 
             this.tb_IDPhieuMuon.Location = new System.Drawing.Point(263, 68);
+            this.tb_IDPhieuMuon.MaxLength = 3;
             this.tb_IDPhieuMuon.Name = "tb_IDPhieuMuon";
             this.tb_IDPhieuMuon.Size = new System.Drawing.Size(205, 44);
             this.tb_IDPhieuMuon.TabIndex = 4;
+            this.tb_IDPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_HanTra
             // 
@@ -421,23 +425,29 @@
             // tb_IDCuonSach
             // 
             this.tb_IDCuonSach.Location = new System.Drawing.Point(351, 199);
+            this.tb_IDCuonSach.MaxLength = 3;
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
             this.tb_IDCuonSach.Size = new System.Drawing.Size(200, 44);
             this.tb_IDCuonSach.TabIndex = 5;
+            this.tb_IDCuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuMuonSach
             // 
             this.tb_IDPhieuMuonSach.Location = new System.Drawing.Point(351, 139);
+            this.tb_IDPhieuMuonSach.MaxLength = 3;
             this.tb_IDPhieuMuonSach.Name = "tb_IDPhieuMuonSach";
             this.tb_IDPhieuMuonSach.Size = new System.Drawing.Size(200, 44);
             this.tb_IDPhieuMuonSach.TabIndex = 4;
+            this.tb_IDPhieuMuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuMuonSach
             // 
             this.tb_IDCTPhieuMuonSach.Location = new System.Drawing.Point(351, 79);
+            this.tb_IDCTPhieuMuonSach.MaxLength = 3;
             this.tb_IDCTPhieuMuonSach.Name = "tb_IDCTPhieuMuonSach";
             this.tb_IDCTPhieuMuonSach.Size = new System.Drawing.Size(200, 44);
             this.tb_IDCTPhieuMuonSach.TabIndex = 3;
+            this.tb_IDCTPhieuMuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_IDCuonSach
             // 

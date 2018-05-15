@@ -66,7 +66,30 @@ namespace QLTV.GUI
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKNgaySinhDG(dtp_NgaySinh.Text.Trim()));
                 ResetForm();
             }
-
+            if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền ID độc giả cần tìm!!");
+                tb_IDDocGia.Focus();
+            }
+            else if (rdb_DiaChi.Checked == true && tb_DiaChi.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền địa chỉ cần tìm!!");
+                tb_DiaChi.Focus();
+            }
+            else if (rdb_Email.Checked == true && tb_Email.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền email cần tìm!!");
+                tb_Email.Focus();
+            }
+            else if (rdb_HoTen.Checked == true && tb_HoTen.Text == "")
+            {
+                MessageBox.Show("Vui lòng điền tên độc giả cần tìm!!");
+                tb_HoTen.Focus();
+            }
+            else if (rdb_LoaiDocGia.Checked == true && cbb_LoaiDocGia.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn loại độc giả cần tìm!!");
+            }
         }
 
         private void btn_TKUser_Click(object sender, EventArgs e)
@@ -81,6 +104,17 @@ namespace QLTV.GUI
                 dgv_TKUser.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoUsers.Instance.TKUser(tb_IDUser.Text.Trim()));
                 ResetForm();
             }
+            if (rdb_User.Checked == true && tb_TenUser.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập Username cần tìm!!");
+                tb_TenUser.Focus();
+            }
+            else if (rdb_UserIDDocGia.Checked == true && tb_IDUser.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập ID độc giả cần tìm!!");
+                tb_IDUser.Focus();
+            }
+
         }
 
         #region Form
@@ -95,6 +129,11 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl2);
             SCRIPT.useForm.ResetAllControls(groupControl3);
             SCRIPT.useForm.ResetAllControls(groupControl4);
+        }
+
+        private void chu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
         }
         #endregion
     }

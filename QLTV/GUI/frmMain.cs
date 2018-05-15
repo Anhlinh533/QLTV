@@ -216,6 +216,22 @@ namespace QLTV
             f.MdiParent = this;
             f.Show();
         }
+
+        private void btn_rpSachTraTre_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmReportSachTraTre f = new frmReportSachTraTre();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmReportTinhHinhMuonSach f = new frmReportTinhHinhMuonSach();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
         #endregion
 
 
@@ -232,6 +248,7 @@ namespace QLTV
             }
             return false;
         }
+
 
 
 
