@@ -90,7 +90,7 @@ CREATE TABLE CUONSACH
 (
 	IDCuonSach varchar(6) PRIMARY KEY NOT NULL,
 	IDSach varchar(6) FOREIGN KEY REFERENCES SACH(IDSach),
-	TinhTrang nvarchar(20) DEFAULT(N'Chưa cho mượn')
+	TinhTrang nvarchar(20) DEFAULT(N'Chưa cho mượn') --o
 )
 
 INSERT INTO CUONSACH (IDCuonSach, IDSach) VALUES ('CSA001', 'ISA001')
@@ -189,9 +189,9 @@ CREATE TABLE PHIEUTRA
 	IDPhieuTra varchar(6) PRIMARY KEY NOT NULL,
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia), --IDSach điền vào CT_PHIEUTRA
 	NgayTra datetime NOT NULL,
-	TienPhatKyNay money, --o
+	TienPhatKyNay money DEFAULT(0), --o default
 	SoTienTra money DEFAULT(0),
-	TienNoKyNay money --o
+	TienNoKyNay money DEFAULT(0) --o default
 )
 
 INSERT INTO PHIEUTRA (IDPhieuTra, IDDocGia, NgayTra, SoTienTra) VALUES ('IPT001', 'IDG001', '7/1/2018', 1000)
@@ -269,6 +269,16 @@ CREATE TABLE USERS
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia),
 	Pwd varchar(50) NOT NULL
 )
+
+--DROP TABLE USERADMIN
+CREATE TABLE USERADMIN
+(
+	UserNameAdmin varchar(50),
+	PasswordAdmin varchar(50)
+)
+
+INSERT INTO USERADMIN VALUES ('HunterTeam', '05123')
+INSERT INTO USERADMIN VALUES ('baoduy', '05123')
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ THAMSO _______________________________________________________________--
@@ -454,6 +464,12 @@ BEGIN
 		PRINT N'Đơn giá sách khi nhập phải bé hơn giá tiền của sách'
 		ROLLBACK TRANSACTION
 	END
+
+/*Giảm SoLuongTon khi nhập SoLuong*/  -------------- mới thêm
+	UPDATE SACH
+	SET SoLuongTon = A.SoLuongTon - @SOLUONG
+	FROM INSERTED I, SACH A
+	WHERE A.IDSach = I.IDSach 
 
 /*Sách xuất bản 8 năm*/
 	DECLARE @NGAYNHAP datetime, @NAMXB int, @KHOANGCACHXB int

@@ -27,7 +27,7 @@ namespace QLTV.ADO
         public void Them(string tb_IDPhieuTra, string cbb_IDDocGia, string dtp_NgayTra, string tb_SoTienTra)
         {
             SCRIPT.formatTraSach.Instance.returnIDPhieuTra(ref tb_IDPhieuTra);
-            string sqlInsert = "INSERT INTO PHIEUTRA VALUES ('" + tb_IDPhieuTra + "','" + cbb_IDDocGia + "','" + dtp_NgayTra + "','" + tb_SoTienTra + "')";
+            string sqlInsert = "INSERT INTO PHIEUTRA (IDPhieuTra, IDDocGia, NgayTra, SoTienTra) VALUES ('" + tb_IDPhieuTra + "','" + cbb_IDDocGia + "','" + dtp_NgayTra + "','" + tb_SoTienTra + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 

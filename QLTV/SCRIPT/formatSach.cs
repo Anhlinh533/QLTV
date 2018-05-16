@@ -27,14 +27,15 @@ namespace QLTV.SCRIPT
         {
             id = "ISA" + id;
         }
-        public void checkSach(string IDSach,string IDDauSach, string NhaXuatBan, string NamXuatBan, string SoLuongTon, string GiaTien)
+        public void checkSach(string IDSach, string IDDauSach, string IDCTTacGia, string NhaXuatBan, string NamXuatBan, string SoLuongTon, string GiaTien)
         {
-            if(IDSach=="") MessageBox.Show("Không được để trống ID sách", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDDauSach=="") MessageBox.Show("Không được để trống ID đầu sách", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(NhaXuatBan=="") MessageBox.Show("Không được để trống nhà xuất bản", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(NamXuatBan=="") MessageBox.Show("Không được để trống năm xuất bản", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (SoLuongTon=="") MessageBox.Show("Không được để trống số lượng tồn", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (GiaTien=="") MessageBox.Show("Không được để trống giá tiền", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDSach == "") MessageBox.Show("Không được để trống ID sách", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDDauSach == "") MessageBox.Show("Không được để trống ID đầu sách", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDCTTacGia == "") MessageBox.Show("Không được để trống ID chi tiết tác giả", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (NhaXuatBan == "") MessageBox.Show("Không được để trống nhà xuất bản", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (NamXuatBan == "") MessageBox.Show("Không được để trống năm xuất bản", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (SoLuongTon == "") MessageBox.Show("Không được để trống số lượng tồn", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (GiaTien == "") MessageBox.Show("Không được để trống giá tiền", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

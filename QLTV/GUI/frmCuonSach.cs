@@ -29,13 +29,13 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            //SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
-            //if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "" && cbb_TinhTrang.Text != "")
-            //{
-            //    ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
-            //    this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
-            //    ResetForm();
-            //}
+            SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text);
+            if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "")
+            {
+                ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text);
+                this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+                ResetForm();
+            }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)

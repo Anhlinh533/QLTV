@@ -31,10 +31,10 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatSach.Instance.checkSach(tb_IDSach.Text, cbb_IDDauSach.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
-            if (tb_IDSach.Text != "" && cbb_IDDauSach.Text != "" && tb_NXB.Text != "" && cbb_NXB.Text != "" && tb_SoLuongTon.Text != "" && tb_GiaTien.Text != "")
+            SCRIPT.formatSach.Instance.checkSach(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+            if (tb_IDSach.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDCTTacGia.Text != "" && tb_NXB.Text != "" && cbb_NXB.Text != "" && tb_SoLuongTon.Text != "" && tb_GiaTien.Text != "")
             {
-                ADO.adoSach.Instance.Them(tb_IDSach.Text, cbb_IDDauSach.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+                ADO.adoSach.Instance.Them(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
                 this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
                 ResetForm();
             }
