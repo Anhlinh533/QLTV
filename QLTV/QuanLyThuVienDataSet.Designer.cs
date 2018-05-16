@@ -62,6 +62,8 @@ namespace QLTV {
         
         private THEDOCGIADataTable tableTHEDOCGIA;
         
+        private USERADMINDataTable tableUSERADMIN;
+        
         private USERSDataTable tableUSERS;
         
         private global::System.Data.DataRelation relationFK__BCSACHTRA__IDCuo__6EF57B66;
@@ -192,6 +194,9 @@ namespace QLTV {
                 }
                 if ((ds.Tables["THEDOCGIA"] != null)) {
                     base.Tables.Add(new THEDOCGIADataTable(ds.Tables["THEDOCGIA"]));
+                }
+                if ((ds.Tables["USERADMIN"] != null)) {
+                    base.Tables.Add(new USERADMINDataTable(ds.Tables["USERADMIN"]));
                 }
                 if ((ds.Tables["USERS"] != null)) {
                     base.Tables.Add(new USERSDataTable(ds.Tables["USERS"]));
@@ -408,6 +413,16 @@ namespace QLTV {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public USERADMINDataTable USERADMIN {
+            get {
+                return this.tableUSERADMIN;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public USERSDataTable USERS {
             get {
                 return this.tableUSERS;
@@ -537,6 +552,9 @@ namespace QLTV {
                 }
                 if ((ds.Tables["THEDOCGIA"] != null)) {
                     base.Tables.Add(new THEDOCGIADataTable(ds.Tables["THEDOCGIA"]));
+                }
+                if ((ds.Tables["USERADMIN"] != null)) {
+                    base.Tables.Add(new USERADMINDataTable(ds.Tables["USERADMIN"]));
                 }
                 if ((ds.Tables["USERS"] != null)) {
                     base.Tables.Add(new USERSDataTable(ds.Tables["USERS"]));
@@ -688,6 +706,12 @@ namespace QLTV {
                     this.tableTHEDOCGIA.InitVars();
                 }
             }
+            this.tableUSERADMIN = ((USERADMINDataTable)(base.Tables["USERADMIN"]));
+            if ((initTable == true)) {
+                if ((this.tableUSERADMIN != null)) {
+                    this.tableUSERADMIN.InitVars();
+                }
+            }
             this.tableUSERS = ((USERSDataTable)(base.Tables["USERS"]));
             if ((initTable == true)) {
                 if ((this.tableUSERS != null)) {
@@ -764,6 +788,8 @@ namespace QLTV {
             base.Tables.Add(this.tableTHAMSO);
             this.tableTHEDOCGIA = new THEDOCGIADataTable();
             base.Tables.Add(this.tableTHEDOCGIA);
+            this.tableUSERADMIN = new USERADMINDataTable();
+            base.Tables.Add(this.tableUSERADMIN);
             this.tableUSERS = new USERSDataTable();
             base.Tables.Add(this.tableUSERS);
             this.relationFK__BCSACHTRA__IDCuo__6EF57B66 = new global::System.Data.DataRelation("FK__BCSACHTRA__IDCuo__6EF57B66", new global::System.Data.DataColumn[] {
@@ -972,6 +998,12 @@ namespace QLTV {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeUSERADMIN() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeUSERS() {
             return false;
         }
@@ -1087,6 +1119,9 @@ namespace QLTV {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void THEDOCGIARowChangeEventHandler(object sender, THEDOCGIARowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void USERADMINRowChangeEventHandler(object sender, USERADMINRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void USERSRowChangeEventHandler(object sender, USERSRowChangeEvent e);
@@ -7074,6 +7109,269 @@ namespace QLTV {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class USERADMINDataTable : global::System.Data.TypedTableBase<USERADMINRow> {
+            
+            private global::System.Data.DataColumn columnUserNameAdmin;
+            
+            private global::System.Data.DataColumn columnPasswordAdmin;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public USERADMINDataTable() {
+                this.TableName = "USERADMIN";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal USERADMINDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected USERADMINDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UserNameAdminColumn {
+                get {
+                    return this.columnUserNameAdmin;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PasswordAdminColumn {
+                get {
+                    return this.columnPasswordAdmin;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public USERADMINRow this[int index] {
+                get {
+                    return ((USERADMINRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event USERADMINRowChangeEventHandler USERADMINRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event USERADMINRowChangeEventHandler USERADMINRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event USERADMINRowChangeEventHandler USERADMINRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event USERADMINRowChangeEventHandler USERADMINRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddUSERADMINRow(USERADMINRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public USERADMINRow AddUSERADMINRow(string UserNameAdmin, string PasswordAdmin) {
+                USERADMINRow rowUSERADMINRow = ((USERADMINRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        UserNameAdmin,
+                        PasswordAdmin};
+                rowUSERADMINRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowUSERADMINRow);
+                return rowUSERADMINRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                USERADMINDataTable cln = ((USERADMINDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new USERADMINDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnUserNameAdmin = base.Columns["UserNameAdmin"];
+                this.columnPasswordAdmin = base.Columns["PasswordAdmin"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnUserNameAdmin = new global::System.Data.DataColumn("UserNameAdmin", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUserNameAdmin);
+                this.columnPasswordAdmin = new global::System.Data.DataColumn("PasswordAdmin", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPasswordAdmin);
+                this.columnUserNameAdmin.MaxLength = 50;
+                this.columnPasswordAdmin.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public USERADMINRow NewUSERADMINRow() {
+                return ((USERADMINRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new USERADMINRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(USERADMINRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.USERADMINRowChanged != null)) {
+                    this.USERADMINRowChanged(this, new USERADMINRowChangeEvent(((USERADMINRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.USERADMINRowChanging != null)) {
+                    this.USERADMINRowChanging(this, new USERADMINRowChangeEvent(((USERADMINRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.USERADMINRowDeleted != null)) {
+                    this.USERADMINRowDeleted(this, new USERADMINRowChangeEvent(((USERADMINRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.USERADMINRowDeleting != null)) {
+                    this.USERADMINRowDeleting(this, new USERADMINRowChangeEvent(((USERADMINRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveUSERADMINRow(USERADMINRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                QuanLyThuVienDataSet ds = new QuanLyThuVienDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "USERADMINDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class USERSDataTable : global::System.Data.TypedTableBase<USERSRow> {
             
             private global::System.Data.DataColumn columnUserName;
@@ -9845,6 +10143,77 @@ namespace QLTV {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+        public partial class USERADMINRow : global::System.Data.DataRow {
+            
+            private USERADMINDataTable tableUSERADMIN;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal USERADMINRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableUSERADMIN = ((USERADMINDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UserNameAdmin {
+                get {
+                    try {
+                        return ((string)(this[this.tableUSERADMIN.UserNameAdminColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UserNameAdmin\' in table \'USERADMIN\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUSERADMIN.UserNameAdminColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PasswordAdmin {
+                get {
+                    try {
+                        return ((string)(this[this.tableUSERADMIN.PasswordAdminColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PasswordAdmin\' in table \'USERADMIN\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableUSERADMIN.PasswordAdminColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUserNameAdminNull() {
+                return this.IsNull(this.tableUSERADMIN.UserNameAdminColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUserNameAdminNull() {
+                this[this.tableUSERADMIN.UserNameAdminColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPasswordAdminNull() {
+                return this.IsNull(this.tableUSERADMIN.PasswordAdminColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPasswordAdminNull() {
+                this[this.tableUSERADMIN.PasswordAdminColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
         public partial class USERSRow : global::System.Data.DataRow {
             
             private USERSDataTable tableUSERS;
@@ -10550,6 +10919,40 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public THEDOCGIARow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class USERADMINRowChangeEvent : global::System.EventArgs {
+            
+            private USERADMINRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public USERADMINRowChangeEvent(USERADMINRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public USERADMINRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -18196,6 +18599,243 @@ SELECT IDDocGia, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe, N
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class USERADMINTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public USERADMINTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "USERADMIN";
+            tableMapping.ColumnMappings.Add("UserNameAdmin", "UserNameAdmin");
+            tableMapping.ColumnMappings.Add("PasswordAdmin", "PasswordAdmin");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[USERADMIN] ([UserNameAdmin], [PasswordAdmin]) VALUES (@UserNam" +
+                "eAdmin, @PasswordAdmin)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserNameAdmin", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserNameAdmin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PasswordAdmin", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PasswordAdmin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::QLTV.Properties.Settings.Default.QuanLyThuVienConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT UserNameAdmin, PasswordAdmin FROM dbo.USERADMIN";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(QuanLyThuVienDataSet.USERADMINDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual QuanLyThuVienDataSet.USERADMINDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            QuanLyThuVienDataSet.USERADMINDataTable dataTable = new QuanLyThuVienDataSet.USERADMINDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(QuanLyThuVienDataSet.USERADMINDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(QuanLyThuVienDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "USERADMIN");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string UserNameAdmin, string PasswordAdmin) {
+            if ((UserNameAdmin == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(UserNameAdmin));
+            }
+            if ((PasswordAdmin == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(PasswordAdmin));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class USERSTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -18613,6 +19253,8 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
         
         private THEDOCGIATableAdapter _tHEDOCGIATableAdapter;
         
+        private USERADMINTableAdapter _uSERADMINTableAdapter;
+        
         private USERSTableAdapter _uSERSTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
@@ -18901,6 +19543,20 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
+        public USERADMINTableAdapter USERADMINTableAdapter {
+            get {
+                return this._uSERADMINTableAdapter;
+            }
+            set {
+                this._uSERADMINTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
         public USERSTableAdapter USERSTableAdapter {
             get {
                 return this._uSERSTableAdapter;
@@ -19005,6 +19661,10 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                             && (this._tHEDOCGIATableAdapter.Connection != null))) {
                     return this._tHEDOCGIATableAdapter.Connection;
                 }
+                if (((this._uSERADMINTableAdapter != null) 
+                            && (this._uSERADMINTableAdapter.Connection != null))) {
+                    return this._uSERADMINTableAdapter.Connection;
+                }
                 if (((this._uSERSTableAdapter != null) 
                             && (this._uSERSTableAdapter.Connection != null))) {
                     return this._uSERSTableAdapter.Connection;
@@ -19079,6 +19739,9 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                 if ((this._tHEDOCGIATableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._uSERADMINTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 if ((this._uSERSTableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -19120,15 +19783,6 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._lOAIDOCGIATableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.LOAIDOCGIA.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._lOAIDOCGIATableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._cT_TACGIATableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.CT_TACGIA.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -19138,12 +19792,12 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._sACHTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.SACH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._lOAIDOCGIATableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.LOAIDOCGIA.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._sACHTableAdapter.Update(updatedRows));
+                    result = (result + this._lOAIDOCGIATableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -19156,6 +19810,15 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._sACHTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.SACH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._sACHTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._bCTINHHINHMUONSACHTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.BCTINHHINHMUONSACH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -19165,21 +19828,21 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._pHIEUTRATableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.PHIEUTRA.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._pHIEUTRATableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._cUONSACHTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.CUONSACH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._cUONSACHTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._pHIEUTRATableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.PHIEUTRA.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._pHIEUTRATableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -19216,6 +19879,15 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._bCSACHTRATRETableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._uSERADMINTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.USERADMIN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._uSERADMINTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -19307,14 +19979,6 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._lOAIDOCGIATableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.LOAIDOCGIA.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._lOAIDOCGIATableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._cT_TACGIATableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.CT_TACGIA.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -19323,11 +19987,11 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._sACHTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.SACH.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._lOAIDOCGIATableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.LOAIDOCGIA.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._sACHTableAdapter.Update(addedRows));
+                    result = (result + this._lOAIDOCGIATableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -19339,6 +20003,14 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._sACHTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.SACH.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._sACHTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._bCTINHHINHMUONSACHTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.BCTINHHINHMUONSACH.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -19347,19 +20019,19 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._pHIEUTRATableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.PHIEUTRA.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._pHIEUTRATableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._cUONSACHTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.CUONSACH.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._cUONSACHTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._pHIEUTRATableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.PHIEUTRA.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._pHIEUTRATableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -19392,6 +20064,14 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._bCSACHTRATRETableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._uSERADMINTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.USERADMIN.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._uSERADMINTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -19501,6 +20181,14 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._uSERADMINTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.USERADMIN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._uSERADMINTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._bCSACHTRATRETableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.BCSACHTRATRE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -19533,19 +20221,19 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._cUONSACHTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CUONSACH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cUONSACHTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._pHIEUTRATableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.PHIEUTRA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._pHIEUTRATableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cUONSACHTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CUONSACH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cUONSACHTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -19557,14 +20245,6 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._tHEDOCGIATableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.THEDOCGIA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._tHEDOCGIATableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._sACHTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.SACH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -19573,11 +20253,11 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._cT_TACGIATableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CT_TACGIA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tHEDOCGIATableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.THEDOCGIA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._cT_TACGIATableAdapter.Update(deletedRows));
+                    result = (result + this._tHEDOCGIATableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -19586,6 +20266,14 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._lOAIDOCGIATableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cT_TACGIATableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CT_TACGIA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cT_TACGIATableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -19744,6 +20432,11 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
             }
             if (((this._tHEDOCGIATableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._tHEDOCGIATableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._uSERADMINTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._uSERADMINTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -19955,6 +20648,15 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tHEDOCGIATableAdapter.Adapter);
                     }
                 }
+                if ((this._uSERADMINTableAdapter != null)) {
+                    revertConnections.Add(this._uSERADMINTableAdapter, this._uSERADMINTableAdapter.Connection);
+                    this._uSERADMINTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._uSERADMINTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._uSERADMINTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._uSERADMINTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._uSERADMINTableAdapter.Adapter);
+                    }
+                }
                 if ((this._uSERSTableAdapter != null)) {
                     revertConnections.Add(this._uSERSTableAdapter, this._uSERSTableAdapter.Connection);
                     this._uSERSTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -20097,6 +20799,10 @@ SELECT UserName, IDDocGia, Pwd FROM USERS WHERE (UserName = @UserName)";
                 if ((this._tHEDOCGIATableAdapter != null)) {
                     this._tHEDOCGIATableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tHEDOCGIATableAdapter]));
                     this._tHEDOCGIATableAdapter.Transaction = null;
+                }
+                if ((this._uSERADMINTableAdapter != null)) {
+                    this._uSERADMINTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._uSERADMINTableAdapter]));
+                    this._uSERADMINTableAdapter.Transaction = null;
                 }
                 if ((this._uSERSTableAdapter != null)) {
                     this._uSERSTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._uSERSTableAdapter]));
