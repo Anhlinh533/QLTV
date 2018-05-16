@@ -35,10 +35,9 @@ namespace QLTV.ADO
         //Thực hiện các câu lệnh Select
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
-            //Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True
-            //Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True
+
             DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True"))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
@@ -126,7 +125,7 @@ namespace QLTV.ADO
 
         public void Execute(string sql)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True");
             con.Open();
 
             SqlCommand cmd = new SqlCommand(sql, con);

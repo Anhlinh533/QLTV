@@ -109,6 +109,7 @@
     <Compile Include="ADO\adoCuonSach.cs" />
     <Compile Include="ADO\adoDauSach.cs" />
     <Compile Include="ADO\adoLoaiSach.cs" />
+    <Compile Include="ADO\adoLogin.cs" />
     <Compile Include="ADO\adoMuonSach.cs" />
     <Compile Include="ADO\adoPhieuNhapSach.cs" />
     <Compile Include="ADO\adoSach.cs" />
@@ -146,6 +147,12 @@
     </Compile>
     <Compile Include="GUI\frmCuonSach.Designer.cs">
       <DependentUpon>frmCuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDangKi.Designer.cs">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmDauSach.cs">
       <SubType>Form</SubType>
@@ -329,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCuonSach.resx">
       <DependentUpon>frmCuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDangKi.resx">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDauSach.resx">
       <DependentUpon>frmDauSach.cs</DependentUpon>
@@ -552,6 +562,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_mypc_lock_41753.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

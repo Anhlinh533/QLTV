@@ -63,6 +63,16 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_user_male_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-user-male-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_administrator_male_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8_administrator_male_48", resourceCulture);
@@ -196,6 +206,16 @@ namespace QLTV.Properties {
         internal static System.Drawing.Bitmap icons8_cancel_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cancel-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_enter_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-enter-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

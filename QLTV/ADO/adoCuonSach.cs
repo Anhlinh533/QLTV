@@ -25,10 +25,10 @@ namespace QLTV.ADO
         }
         #region Insert
 
-        public void Them(string tb_IDCuonSach, string cbb_IDSach)
+        public void Them(string tb_IDCuonSach, string cbb_IDSach, string cbb_TinhTrang)
         {
             SCRIPT.formatCuonSach.Instance.returnIDCuonSach(ref tb_IDCuonSach);
-            string sqlInsert = "INSERT INTO CUONSACH (IDCuonSach, IDSach) VALUES ('" + tb_IDCuonSach + "','" + cbb_IDSach + "')";
+            string sqlInsert = "INSERT INTO CUONSACH VALUES ('" + tb_IDCuonSach + "','" + cbb_IDSach + "',N'" + cbb_TinhTrang + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
@@ -39,10 +39,10 @@ namespace QLTV.ADO
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
         }
 
-        public void Sua(string tb_IDCuonSach, string cbb_IDSach)
+        public void Sua(string tb_IDCuonSach, string cbb_IDSach, string cbb_TinhTrang)
         {
             SCRIPT.formatCuonSach.Instance.returnIDCuonSach(ref tb_IDCuonSach);
-            string sqlUpdate = "UPDATE CUONSACH SET IDSach = '" + cbb_IDSach + "' WHERE IDCuonSach = '" + tb_IDCuonSach + "'";
+            string sqlUpdate = "UPDATE CUONSACH SET IDSach = '" + cbb_IDSach + "', TinhTrang = N'" + cbb_TinhTrang +"' WHERE IDCuonSach = '" + tb_IDCuonSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion

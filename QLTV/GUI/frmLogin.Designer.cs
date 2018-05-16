@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_DangKi = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_DangNhap = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tb_MatKhau = new System.Windows.Forms.TextBox();
             this.tb_UserName = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_DangKi = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +70,37 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // btn_DangKi
+            // 
+            this.btn_DangKi.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btn_DangKi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.btn_DangKi, "btn_DangKi");
+            this.btn_DangKi.BorderRadius = 0;
+            this.btn_DangKi.ButtonText = "Đăng kí";
+            this.btn_DangKi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DangKi.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_DangKi.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_DangKi.Iconimage = global::QLTV.Properties.Resources.icons8_add_user_male_48;
+            this.btn_DangKi.Iconimage_right = null;
+            this.btn_DangKi.Iconimage_right_Selected = null;
+            this.btn_DangKi.Iconimage_Selected = null;
+            this.btn_DangKi.IconMarginLeft = 0;
+            this.btn_DangKi.IconMarginRight = 0;
+            this.btn_DangKi.IconRightVisible = true;
+            this.btn_DangKi.IconRightZoom = 0D;
+            this.btn_DangKi.IconVisible = true;
+            this.btn_DangKi.IconZoom = 60D;
+            this.btn_DangKi.IsTab = false;
+            this.btn_DangKi.Name = "btn_DangKi";
+            this.btn_DangKi.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_DangKi.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_DangKi.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_DangKi.selected = false;
+            this.btn_DangKi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_DangKi.Textcolor = System.Drawing.Color.Red;
+            this.btn_DangKi.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangKi.Click += new System.EventHandler(this.btn_DangKi_Click);
+            // 
             // btn_DangNhap
             // 
             this.btn_DangNhap.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -80,7 +111,7 @@
             this.btn_DangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DangNhap.DisabledColor = System.Drawing.Color.Gray;
             this.btn_DangNhap.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_DangNhap.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_DangNhap.Iconimage")));
+            this.btn_DangNhap.Iconimage = global::QLTV.Properties.Resources.icons8_enter_64;
             this.btn_DangNhap.Iconimage_right = null;
             this.btn_DangNhap.Iconimage_right_Selected = null;
             this.btn_DangNhap.Iconimage_Selected = null;
@@ -89,7 +120,7 @@
             this.btn_DangNhap.IconRightVisible = true;
             this.btn_DangNhap.IconRightZoom = 0D;
             this.btn_DangNhap.IconVisible = true;
-            this.btn_DangNhap.IconZoom = 90D;
+            this.btn_DangNhap.IconZoom = 60D;
             this.btn_DangNhap.IsTab = false;
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -99,6 +130,7 @@
             this.btn_DangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_DangNhap.Textcolor = System.Drawing.Color.Red;
             this.btn_DangNhap.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // tb_MatKhau
             // 
@@ -133,36 +165,6 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Name = "label1";
             // 
-            // btn_DangKi
-            // 
-            this.btn_DangKi.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_DangKi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.btn_DangKi, "btn_DangKi");
-            this.btn_DangKi.BorderRadius = 0;
-            this.btn_DangKi.ButtonText = "Đăng kí";
-            this.btn_DangKi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DangKi.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_DangKi.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_DangKi.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_DangKi.Iconimage")));
-            this.btn_DangKi.Iconimage_right = null;
-            this.btn_DangKi.Iconimage_right_Selected = null;
-            this.btn_DangKi.Iconimage_Selected = null;
-            this.btn_DangKi.IconMarginLeft = 0;
-            this.btn_DangKi.IconMarginRight = 0;
-            this.btn_DangKi.IconRightVisible = true;
-            this.btn_DangKi.IconRightZoom = 0D;
-            this.btn_DangKi.IconVisible = true;
-            this.btn_DangKi.IconZoom = 90D;
-            this.btn_DangKi.IsTab = false;
-            this.btn_DangKi.Name = "btn_DangKi";
-            this.btn_DangKi.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_DangKi.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_DangKi.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_DangKi.selected = false;
-            this.btn_DangKi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_DangKi.Textcolor = System.Drawing.Color.Red;
-            this.btn_DangKi.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // frmLogin
             // 
             this.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("frmLogin.Appearance.ForeColor")));
@@ -171,7 +173,10 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

@@ -27,7 +27,7 @@ namespace QLTV.ADO
         public void Them(string tb_IDPhieuMuon, string cbb_IDDocGia, string dtp_NgayMuon)
         {
             SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
-            string sqlInsert = "INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('" + tb_IDPhieuMuon + "','" + cbb_IDDocGia + "','" + dtp_NgayMuon + "')";
+            string sqlInsert = "INSERT INTO PHIEUMUON VALUES ('" + tb_IDPhieuMuon + "','" + cbb_IDDocGia + "','" + dtp_NgayMuon + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 

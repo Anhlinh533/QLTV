@@ -281,261 +281,288 @@ C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\RdlCompile.cache
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\RdlCompile.compiled
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\bin\Debug\REPORT\rpSachTraTre.rdlc
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.GUI.frmLogin.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\QLTV.exe.config
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.exe
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.pdb
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTMuonSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTPhieuNhapSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTTacGia.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTTraSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCuonSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDauSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmHanThe.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmKhoangCachXuatBan.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmLoaiSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmLogin.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.frmMain.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmMuonSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmPhieuNhapSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmReportSachTraTre.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmReportTinhHinhMuonSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSoNgayMuonMax.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSoSachMuonMax.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTacGia.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTheDocGia.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTienPhatMoiNgay.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKDocGia.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKMuonSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKTacGia.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKTraSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTraSach.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTuoiDocGia.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmUsers.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\RdlCompile.cache
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\RdlCompile.compiled
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\REPORT\rpSachTraTre.rdlc
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\QLTV.exe
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\QLTV.pdb
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.Common.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.Design.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraTreeList.v17.2.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraRichEdit.v17.2.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.UI.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.Extensions.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraPivotGrid.v17.2.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraGrid.v17.2.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\EnvDTE.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Diagram.v17.2.Core.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraDiagram.v17.2.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\stdole.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\EnvDTE80.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.Build.Tasks.Core.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\VSLangProj.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\VSLangProj80.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.MSXML.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.Build.Utilities.Core.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.Build.Framework.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\VSLangProj2.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Data.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Office.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Pdf.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.PivotGrid.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Printing.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.RichEdit.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Utils.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Utils.v17.2.UI.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Xpo.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraBars.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Sparkline.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraEditors.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraGauges.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraLayout.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraNavBar.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraPrinting.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraReports.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraTreeList.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraRichEdit.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.UI.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraPivotGrid.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraGrid.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\EnvDTE.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.Diagram.v17.2.Core.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\DevExpress.XtraDiagram.v17.2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\EnvDTE80.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\VSLangProj.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\VSLangProj80.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\VSLangProj2.xml
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Data.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Data.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Data.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Data.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.DataAccess.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.DataAccess.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.DataAccess.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.DataAccess.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Office.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Office.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Office.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Pdf.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Pdf.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Pdf.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Pdf.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.PivotGrid.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.PivotGrid.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.PivotGrid.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.PivotGrid.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Printing.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Printing.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Printing.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Printing.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.RichEdit.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.RichEdit.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Utils.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Utils.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Utils.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Utils.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Utils.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Utils.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Utils.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Utils.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Xpo.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Xpo.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Xpo.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Xpo.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraBars.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraBars.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraBars.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraBars.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Sparkline.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Sparkline.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Sparkline.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Sparkline.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraCharts.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraCharts.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraCharts.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraCharts.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraEditors.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraEditors.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraEditors.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraEditors.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraGauges.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraGauges.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraGauges.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraGauges.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraLayout.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraLayout.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraLayout.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraLayout.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraNavBar.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraNavBar.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraNavBar.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraNavBar.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraPrinting.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraPrinting.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraPrinting.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraPrinting.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraReports.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraReports.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraReports.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraReports.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraReports.v17.2.Extensions.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraReports.v17.2.Extensions.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraReports.v17.2.Extensions.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraReports.v17.2.Extensions.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraTreeList.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraTreeList.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraTreeList.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraTreeList.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraRichEdit.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraRichEdit.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraRichEdit.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraRichEdit.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.DataAccess.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.DataAccess.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.DataAccess.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.DataAccess.v17.2.UI.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraPivotGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraPivotGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraPivotGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraPivotGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.XtraGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.XtraGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraGrid.v17.2.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\de\DevExpress.Diagram.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\es\DevExpress.Diagram.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ja\DevExpress.Diagram.v17.2.Core.resources.dll
-D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\bin\Debug\ru\DevExpress.Diagram.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDangKi.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\REPORT\rpSachTraTre.rdlc
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\QLTV.exe
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\QLTV.pdb
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.BonusSkins.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Charts.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.CodeParser.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Data.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Images.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Office.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.PivotGrid.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Printing.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.RichEdit.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.RichEdit.v17.2.Export.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Sparkline.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Utils.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Utils.v17.2.UI.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Xpo.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraBars.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraEditors.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraGauges.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraLayout.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraNavBar.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraPrinting.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraReports.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraTreeList.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraRichEdit.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.UI.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.Extensions.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraPivotGrid.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraGrid.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\EnvDTE.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Diagram.v17.2.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraDiagram.v17.2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\stdole.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\EnvDTE80.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.Build.Tasks.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\VSLangProj.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\VSLangProj80.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.MSXML.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.Build.Utilities.Core.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\VSLangProj2.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Data.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Office.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Pdf.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.PivotGrid.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Printing.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.RichEdit.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Utils.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Utils.v17.2.UI.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Xpo.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraBars.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Sparkline.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraEditors.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraGauges.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraLayout.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraNavBar.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraPrinting.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraReports.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraTreeList.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraRichEdit.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.DataAccess.v17.2.UI.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraPivotGrid.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraGrid.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\EnvDTE.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.Diagram.v17.2.Core.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\DevExpress.XtraDiagram.v17.2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\EnvDTE80.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\VSLangProj.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\VSLangProj80.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\VSLangProj2.xml
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Data.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Data.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Data.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Data.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.DataAccess.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.DataAccess.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.DataAccess.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.DataAccess.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.PivotGrid.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.PivotGrid.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.PivotGrid.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.PivotGrid.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Utils.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Utils.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Utils.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Utils.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Utils.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Utils.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Utils.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Utils.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Xpo.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Xpo.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Xpo.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Xpo.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraCharts.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraCharts.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraCharts.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraCharts.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraGauges.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraGauges.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraGauges.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraGauges.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraNavBar.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraNavBar.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraNavBar.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraNavBar.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraReports.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraReports.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraReports.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraReports.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraReports.v17.2.Extensions.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraReports.v17.2.Extensions.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraReports.v17.2.Extensions.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraReports.v17.2.Extensions.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraRichEdit.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraRichEdit.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraRichEdit.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraRichEdit.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.DataAccess.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.DataAccess.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.DataAccess.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.DataAccess.v17.2.UI.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraPivotGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraPivotGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraPivotGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraPivotGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\de\DevExpress.Diagram.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\es\DevExpress.Diagram.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ja\DevExpress.Diagram.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\bin\Debug\ru\DevExpress.Diagram.v17.2.Core.resources.dll
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTMuonSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTPhieuNhapSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTTacGia.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCTTraSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmCuonSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDangKi.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDauSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmHanThe.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmKhoangCachXuatBan.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmLoaiSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmLogin.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.frmMain.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmMuonSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmPhieuNhapSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmReportSachTraTre.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmReportTinhHinhMuonSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSoNgayMuonMax.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmSoSachMuonMax.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTacGia.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTheDocGia.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTienPhatMoiNgay.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKDocGia.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKMuonSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKTacGia.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTKTraSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTraSach.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmTuoiDocGia.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmUsers.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\RdlCompile.cache
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\RdlCompile.compiled

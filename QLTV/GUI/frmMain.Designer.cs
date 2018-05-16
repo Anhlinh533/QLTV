@@ -83,12 +83,12 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_rpSachTraTre = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.rib_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribtab_rpSachTraTre = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribtab_rpTinhHinhMuonSach = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribtab_DoiPWD = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rib_Users = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).BeginInit();
@@ -397,7 +397,7 @@
             // 
             this.btn_Users.Caption = "Users";
             this.btn_Users.Id = 3;
-            this.btn_Users.ImageOptions.LargeImage = global::QLTV.Properties.Resources.icons8_user_48;
+            this.btn_Users.ImageOptions.LargeImage = global::QLTV.Properties.Resources.icons8_add_user_male_48;
             this.btn_Users.Name = "btn_Users";
             this.btn_Users.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -593,6 +593,12 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "barButtonItem4";
+            this.barButtonItem4.Id = 32;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
             // rib_BaoCao
             // 
             this.rib_BaoCao.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -624,12 +630,6 @@
             this.ribtab_DoiPWD});
             this.rib_Users.Name = "rib_Users";
             this.rib_Users.Text = "Thông tin cá nhân";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "barButtonItem4";
-            this.barButtonItem4.Id = 32;
-            this.barButtonItem4.Name = "barButtonItem4";
             // 
             // xtraTable
             // 

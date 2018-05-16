@@ -35,7 +35,7 @@ namespace QLTV.GUI
             SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text,cbb_IDCuonSach.Text);
             if (tb_IDCTPhieuTra.Text != ""  && cbb_IDPhieuTra.Text != "" && cbb_IDCuonSach.Text!="")
             {
-                ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
+                //ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
                 this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
                 ResetForm();
             }

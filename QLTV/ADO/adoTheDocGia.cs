@@ -28,7 +28,7 @@ namespace QLTV.ADO
         public void Them(string tb_IDDocGia, string tb_HoTenDocGia, string dtp_NgaySinh, string tb_DiaChi, string tb_Email, string cbb_LoaiDocGia, string dtp_NgayLapThe)
         {
             SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
-            string sqlInsert = "INSERT INTO THEDOCGIA (IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe)  VALUES ('" + tb_IDDocGia + "', N'" + tb_HoTenDocGia + "', '" + dtp_NgaySinh + "', N'" + tb_DiaChi + "', '" + tb_Email + "', '" + cbb_LoaiDocGia + "', '" + dtp_NgayLapThe + "')";
+            string sqlInsert = "INSERT INTO THEDOCGIA (IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe)  VALUES ('" + tb_IDDocGia + "',N'" + tb_HoTenDocGia + "','" + dtp_NgaySinh + "',N'" + tb_DiaChi + "','" + tb_Email + "','" + cbb_LoaiDocGia + "','" + dtp_NgayLapThe + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
