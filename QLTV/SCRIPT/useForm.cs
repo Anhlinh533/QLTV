@@ -23,11 +23,13 @@ namespace QLTV.SCRIPT
                 SCRIPT.useForm.instance = value;
             }
         }
+
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
         // Tránh việc gõ chữ vào text box ID
         public void messageShow(object sender, EventArgs e)
         {
@@ -38,12 +40,12 @@ namespace QLTV.SCRIPT
                 this.Close();
             }
         }
+
         //Tránh việc gõ số vào textbox Họ tên
         private void chu_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
         }
-
 
         // Show message box cho form
         private void Close()
@@ -96,8 +98,6 @@ namespace QLTV.SCRIPT
                     pictureBox.Hide();
                 }
             }
-
-
         }
     }
 }

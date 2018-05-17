@@ -25,10 +25,10 @@ namespace QLTV.ADO
         }
         #region Insert
 
-        public void Them(string tb_IDCuonSach, string cbb_IDSach, string cbb_TinhTrang)
+        public void Them(string tb_IDCuonSach, string cbb_IDSach)
         {
             SCRIPT.formatCuonSach.Instance.returnIDCuonSach(ref tb_IDCuonSach);
-            string sqlInsert = "INSERT INTO CUONSACH VALUES ('" + tb_IDCuonSach + "','" + cbb_IDSach + "',N'" + cbb_TinhTrang + "')";
+            string sqlInsert = "INSERT INTO CUONSACH (IDCuonSach, IDSach) VALUES ('" + tb_IDCuonSach + "','" + cbb_IDSach + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
@@ -39,19 +39,19 @@ namespace QLTV.ADO
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
         }
 
-        public void Sua(string tb_IDCuonSach, string cbb_IDSach, string cbb_TinhTrang)
+        public void Sua(string tb_IDCuonSach, string cbb_IDSach)
         {
-            SCRIPT.formatCuonSach.Instance.returnIDCuonSach(ref tb_IDCuonSach);
-            string sqlUpdate = "UPDATE CUONSACH SET IDSach = '" + cbb_IDSach + "', TinhTrang = N'" + cbb_TinhTrang +"' WHERE IDCuonSach = '" + tb_IDCuonSach + "'";
+            //SCRIPT.formatCuonSach.Instance.returnIDCuonSach(ref tb_IDCuonSach);
+            string sqlUpdate = "UPDATE CUONSACH SET IDSach = '" + cbb_IDSach + "' WHERE IDCuonSach = '" + tb_IDCuonSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion
-        #region Tim Kiem
 
+        #region Tim Kiem
         public string TKIDCuonSach(string IDCuonSach)
         {
             IDCuonSach = "Select * from CUONSACH where IDCuonSach like '%" + IDCuonSach + "%' ";
-            return IDCuonSach; 
+            return IDCuonSach;
         }
 
         public string TKIDSach(string IDSach)
@@ -65,7 +65,6 @@ namespace QLTV.ADO
             TinhTrang = "Select * from CUONSACH where TinhTrang like '%" + TinhTrang + "%' ";
             return TinhTrang;
         }
-
         #endregion
     }
 }

@@ -23,11 +23,12 @@ namespace QLTV.ADO
                 ADO.adoSach.instance = value;
             }
         }
+
         #region Insert
-        public void Them(string tb_IDSach, string cbb_IDDauSach, string tb_NXB, string cbb_NXB, string tb_SoLuongTon, string tb_GiaTien)
+        public void Them(string tb_IDSach, string cbb_IDDauSach, string cbb_IDCTTacGia, string tb_NXB, string cbb_NXB, string tb_SoLuongTon, string tb_GiaTien)
         {
             SCRIPT.formatSach.Instance.returnIDSach(ref tb_IDSach);
-            string sqlInsert = "INSERT INTO SACH VALUES ('" + tb_IDSach + "','" + cbb_IDDauSach + "',N'" + tb_NXB + "','" + cbb_NXB + "','" + tb_SoLuongTon + "','" + tb_GiaTien + "')";
+            string sqlInsert = "INSERT INTO SACH VALUES ('" + tb_IDSach + "', '" + cbb_IDDauSach + "', '" + cbb_IDCTTacGia + "', N'" + tb_NXB + "', '" + cbb_NXB + "', '" + tb_SoLuongTon + "', '" + tb_GiaTien + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
@@ -38,13 +39,14 @@ namespace QLTV.ADO
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
         }
 
-        public void Sua(string tb_IDSach, string cbb_IDDauSach, string tb_NXB, string cbb_NXB, string tb_SoLuongTon, string tb_GiaTien)
+        public void Sua(string tb_IDSach, string cbb_IDDauSach, string cbb_IDCTTacGia, string tb_NXB, string cbb_NXB, string tb_SoLuongTon, string tb_GiaTien)
         {
-            SCRIPT.formatSach.Instance.returnIDSach(ref tb_IDSach);
-            string sqlUpdate = "UPDATE SACH SET IDDauSach = '" + cbb_IDDauSach + "', NhaXB = N'" + tb_NXB + "', NamXB = '" + cbb_NXB + "', SoLuongTon = '" + tb_SoLuongTon + "', GiaTien = '" + tb_GiaTien + "' WHERE IDSach = '" + tb_IDSach + "'";
+            //SCRIPT.formatSach.Instance.returnIDSach(ref tb_IDSach);
+            string sqlUpdate = "UPDATE SACH SET IDDauSach = '" + cbb_IDDauSach + "', IDCTTacGia = '" + cbb_IDCTTacGia + "', NhaXB = N'" + tb_NXB + "', NamXB = '" + cbb_NXB + "', SoLuongTon = '" + tb_SoLuongTon + "', GiaTien = '" + tb_GiaTien + "' WHERE IDSach = '" + tb_IDSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion
+
         #region Tim Kiem
         public string TKIDSach(string IDSach)
         {
@@ -80,7 +82,6 @@ namespace QLTV.ADO
             GiaTien = "Select * from SACH where GiaTien like '%" + GiaTien + "%' ";
             return GiaTien;
         }
-
         #endregion
     }
 }

@@ -24,6 +24,7 @@ namespace QLTV.ADO
                 ADO.adoLogin.instance = value;
             }
         }
+
         public bool checkDocGia(string UserName, string Password)
         {
             //con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
@@ -51,28 +52,35 @@ namespace QLTV.ADO
             //{
             //    MessageBox.Show("Lỗi kết nối.", "Chú ý!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
             con.Open();
+
             string sql = "Select *from USERS where UserName='" + UserName + "' and Pwd='" + Password + "'";
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dta = cmd.ExecuteReader();
-            if(dta.Read()==true)
+
+            if (dta.Read()==true)
             {
                 return true;
             }
+
             return false;
         }
+
         public bool checkAdmin(string UserName, string Password)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
             con.Open();
+
             string sql = "Select *from USERADMIN where UserNameAdmin='" + UserName + "' and PasswordAdmin='" + Password + "'";
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dta = cmd.ExecuteReader();
+
             if (dta.Read() == true)
             {
                 return true;
             }
+
             return false;
         }
     }

@@ -24,23 +24,28 @@ namespace QLTV.GUI
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.PHIEUTRA' table. You can move, or remove it, as needed.
             this.pHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUTRA);
-
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatTraSach.Instance.checkTraSach(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);
-            if (tb_IDPhieuTra.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayTra.Text != ""  && tb_SoTienTra.Text != "" )
+            if (tb_IDPhieuTra.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayTra.Text != "" && tb_SoTienTra.Text != "")
             {
                 ADO.adoTraSach.Instance.Them(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);
                 this.pHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUTRA);
                 ResetForm();
             }
         }
-        
+
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatTraSach.Instance.checkTraSach(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);
+            if (tb_IDPhieuTra.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayTra.Text != "" && tb_SoTienTra.Text != "")
+            {
+                ADO.adoTraSach.Instance.Sua(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);
+                this.pHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUTRA);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -70,6 +75,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -86,7 +92,6 @@ namespace QLTV.GUI
             dtp_NgayTra.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
             tb_SoTienTra.Text = dgv_Them.Rows[numrow].Cells[3].Value.ToString();
         }
-
 
         public void ResetForm()
         {

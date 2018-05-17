@@ -26,7 +26,6 @@ namespace QLTV.GUI
             this.pHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUMUON);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_PHIEUMUON' table. You can move, or remove it, as needed.
             this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
-            
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -37,11 +36,21 @@ namespace QLTV.GUI
                 ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
                 this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
                 ResetForm();
-
             }
-        }        
+        }
 
         private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            SCRIPT.formatCTMuonSach.Instance.checkCTMuonSach(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
+            if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
+            {
+                ADO.adoCTMuonSach.Instance.Sua(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
+                this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                ResetForm();
+            }
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
         {
             if (tb_IDCTPhieuMuon.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (tb_IDCTPhieuMuon.Text != "")
@@ -50,13 +59,6 @@ namespace QLTV.GUI
                 this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
                 ResetForm();
             }
-        }
-
-        private void btn_Xoa_Click(object sender, EventArgs e)
-        {
-            ADO.adoCTMuonSach.Instance.Xoa(tb_IDCTPhieuMuon.Text);
-            this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
-            ResetForm();
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -75,6 +77,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -84,6 +87,7 @@ namespace QLTV.GUI
             cbb_IDPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
             cbb_IDCuonSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
         }
+
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
@@ -91,6 +95,7 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl3);
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
+
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))

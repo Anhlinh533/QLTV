@@ -26,15 +26,14 @@ namespace QLTV.GUI
             this.dAUSACHTableAdapter.Fill(this.quanLyThuVienDataSet.DAUSACH);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.SACH' table. You can move, or remove it, as needed.
             this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
-
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatSach.Instance.checkSach(tb_IDSach.Text, cbb_IDDauSach.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
-            if (tb_IDSach.Text != "" && cbb_IDDauSach.Text != "" && tb_NXB.Text != "" && cbb_NXB.Text != "" && tb_SoLuongTon.Text != "" && tb_GiaTien.Text != "")
+            SCRIPT.formatSach.Instance.checkSach(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+            if (tb_IDSach.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDCTTacGia.Text != "" && tb_NXB.Text != "" && cbb_NXB.Text != "" && tb_SoLuongTon.Text != "" && tb_GiaTien.Text != "")
             {
-                ADO.adoSach.Instance.Them(tb_IDSach.Text, cbb_IDDauSach.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+                ADO.adoSach.Instance.Them(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
                 this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
                 ResetForm();
             }
@@ -42,7 +41,13 @@ namespace QLTV.GUI
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatSach.Instance.checkSach(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+            if (tb_IDSach.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDCTTacGia.Text != "" && tb_NXB.Text != "" && cbb_NXB.Text != "" && tb_SoLuongTon.Text != "" && tb_GiaTien.Text != "")
+            {
+                ADO.adoSach.Instance.Sua(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+                this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -72,6 +77,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {

@@ -32,19 +32,24 @@ namespace QLTV.ADO
 
         //private string connectionSTR = ConfigurationManager.ConnectionStrings["Conn"].ConnectionString;
 
+        //Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True
+        //Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True
+
         //Thực hiện các câu lệnh Select
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
-
             DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True"))
+
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True"))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
+
                 if (parameter != null)
                 {
                     string[] listPara = query.Split(' ');
                     int i = 0;
+
                     foreach (string item in listPara)
                     {
                         if (item.Contains('@'))
@@ -54,10 +59,12 @@ namespace QLTV.ADO
                         }
                     }
                 }
+
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(data);
                 connection.Close();
             }
+
             return data;
         }
 
@@ -125,7 +132,7 @@ namespace QLTV.ADO
 
         public void Execute(string sql)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
             con.Open();
 
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -144,6 +151,5 @@ namespace QLTV.ADO
 
             con.Close();
         }
-
     }
 }

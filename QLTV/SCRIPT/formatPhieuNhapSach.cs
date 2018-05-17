@@ -23,14 +23,16 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatPhieuNhapSach.instance = value;
             }
         }
+
         public void returnIDPhieuNhapSach(ref string id)
         {
             id = "INS" + id;
         }
-        public void checkPhieuNhapSach(string IDPhieuNhap,string NgayNhap)
+
+        public void checkPhieuNhapSach(string IDPhieuNhap, string NgayNhap)
         {
-            if(IDPhieuNhap=="") MessageBox.Show("Không được để trống ID phiếu nhập sách", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(NgayNhap=="") MessageBox.Show("Không được để trống ngày nhập", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDPhieuNhap == "") MessageBox.Show("Không được để trống ID phiếu nhập sách", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (NgayNhap == "") MessageBox.Show("Không được để trống ngày nhập", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

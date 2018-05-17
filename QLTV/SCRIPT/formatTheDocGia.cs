@@ -25,8 +25,6 @@ namespace QLTV.SCRIPT
             }
         }
 
-
-
         public void returnIDDocGia(ref string id)
         {
             id = "IDG" + id;
@@ -42,13 +40,12 @@ namespace QLTV.SCRIPT
             else if (NgaySinh == "") MessageBox.Show("Không được để trống ngày sinh.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (LoaiDocGia == "") MessageBox.Show("Không được để trống loại độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (!checkType.Instance.checkIsMail(Email)) MessageBox.Show("Email sai định dạng vui lòng nhập lại Email.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            
+
             //else if (IDDocGia != "" && HoTen != "" && Email != "" && DiaChi != "" && LoaiDocGia != "" && NgayLapThe != null && NgaySinh != null)
             //{
             //    sql = "INSERT INTO THEDOCGIA VALUES ("+IDDocGia+", "+HoTen+"," +NgaySinh+"," + DiaChi + ", "+Email+", "+LoaiDocGia+", "+ NgayLapThe+", NULL, NULL";
             //    ADO.ConnectionSQL.Instance.Execute(sql);
             //}            
         }
-
     }
 }

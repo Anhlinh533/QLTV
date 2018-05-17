@@ -24,24 +24,12 @@ namespace QLTV.GUI
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.
             this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
-
-        }
-
-        private void btn_IDDelete_Click(object sender, EventArgs e)
-        {
-            //if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //if (cbb_IDDelete.Text != "")
-            //{
-            //    ADO.adoUsers.Instance.Xoa(cbb_IDDelete.Text);
-            //    this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
-            //    ResetForm();
-            //}
-        }
+        }        
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
-            if(tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "" )
+            if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
             {
                 //Hàm thêm
 
@@ -70,6 +58,18 @@ namespace QLTV.GUI
             this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
             ResetForm();
         }
+
+        private void btn_IDDelete_Click(object sender, EventArgs e)
+        {
+            //if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //if (cbb_IDDelete.Text != "")
+            //{
+            //    ADO.adoUsers.Instance.Xoa(cbb_IDDelete.Text);
+            //    this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
+            //    ResetForm();
+            //}
+        }
+
         #region Form
         private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
         {

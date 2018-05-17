@@ -23,7 +23,5 @@ namespace QLTV.ADO
                 ADO.adoTuoiDocGia.instance = value;
             }
         }
-
-
     }
 }

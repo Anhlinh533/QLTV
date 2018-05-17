@@ -29,11 +29,11 @@ namespace QLTV.SCRIPT
             id = "DSA" + id;
         }
 
-        public void checkDauSach(string IDDauSach, string TenDauSach,string IDTheLoaiSach)
+        public void checkDauSach(string IDDauSach, string TenDauSach, string IDTheLoaiSach)
         {
-            if (IDDauSach=="") MessageBox.Show("Không được để trống ID đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(TenDauSach=="") MessageBox.Show("Không được để trống tên đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDTheLoaiSach=="") MessageBox.Show("Không được để trống ID thể loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDDauSach == "") MessageBox.Show("Không được để trống ID đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (TenDauSach == "") MessageBox.Show("Không được để trống tên đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDTheLoaiSach == "") MessageBox.Show("Không được để trống ID thể loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

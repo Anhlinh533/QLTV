@@ -23,12 +23,12 @@ namespace QLTV.ADO
                 ADO.adoTheDocGia.instance = value;
             }
         }
+        
         #region Insert
-
         public void Them(string tb_IDDocGia, string tb_HoTenDocGia, string dtp_NgaySinh, string tb_DiaChi, string tb_Email, string cbb_LoaiDocGia, string dtp_NgayLapThe)
         {
             SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
-            string sqlInsert = "INSERT INTO THEDOCGIA (IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe)  VALUES ('" + tb_IDDocGia + "',N'" + tb_HoTenDocGia + "','" + dtp_NgaySinh + "',N'" + tb_DiaChi + "','" + tb_Email + "','" + cbb_LoaiDocGia + "','" + dtp_NgayLapThe + "')";
+            string sqlInsert = "INSERT INTO THEDOCGIA (IDDocGIa, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, IDLoaiDG, NgayLapThe)  VALUES ('" + tb_IDDocGia + "', N'" + tb_HoTenDocGia + "', '" + dtp_NgaySinh + "', N'" + tb_DiaChi + "', '" + tb_Email + "', '" + cbb_LoaiDocGia + "', '" + dtp_NgayLapThe + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
@@ -41,11 +41,12 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDDocGia, string tb_HoTenDocGia, string dtp_NgaySinh, string tb_DiaChi, string tb_Email, string cbb_LoaiDocGia, string dtp_NgayLapThe)
         {
-            SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
+            //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
             string sqlUpdate = "UPDATE THEDOCGIA SET HoTenDG = N'" + tb_HoTenDocGia + "', NgaySinhDG = '" + dtp_NgaySinh + "', DiaChiDG = N'" + tb_DiaChi + "', EmailDG = '" + tb_Email + "', IDLoaiDG = '" + cbb_LoaiDocGia + "', NgayLapThe = '" + dtp_NgayLapThe + "' WHERE IDDocGia = '" + tb_IDDocGia + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion
+
         #region TimKiem
         public string TKIDDocGia(string IDDocGia)
         {

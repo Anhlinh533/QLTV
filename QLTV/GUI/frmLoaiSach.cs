@@ -22,7 +22,6 @@ namespace QLTV.GUI
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.LOAISACH' table. You can move, or remove it, as needed.
             this.lOAISACHTableAdapter.Fill(this.quanLyThuVienDataSet.LOAISACH);
-
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -38,7 +37,13 @@ namespace QLTV.GUI
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatLoaiSach.Instance.checkLoaiSach(tb_IDLoaiSach.Text, tb_TenLoaiSach.Text);
+            if (tb_IDLoaiSach.Text != "" && tb_TenLoaiSach.Text != "")
+            {
+                ADO.adoLoaiSach.Instance.Sua(tb_IDLoaiSach.Text, tb_TenLoaiSach.Text);
+                this.lOAISACHTableAdapter.Fill(this.quanLyThuVienDataSet.LOAISACH);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -68,6 +73,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -82,6 +88,7 @@ namespace QLTV.GUI
             tb_IDLoaiSach.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
             tb_TenLoaiSach.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
         }
+
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);

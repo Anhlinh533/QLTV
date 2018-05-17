@@ -27,23 +27,28 @@ namespace QLTV.GUI
             this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_PHIEUTRA' table. You can move, or remove it, as needed.
             this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
-
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text,cbb_IDCuonSach.Text);
-            if (tb_IDCTPhieuTra.Text != ""  && cbb_IDPhieuTra.Text != "" && cbb_IDCuonSach.Text!="")
+            SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
+            if (tb_IDCTPhieuTra.Text != "" && cbb_IDPhieuTra.Text != "" && cbb_IDCuonSach.Text != "")
             {
-                //ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
+                ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
                 this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
                 ResetForm();
             }
         }
-        
+
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatCTTraSach.Instance.checkCTTraSach(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
+            if (tb_IDCTPhieuTra.Text != "" && cbb_IDPhieuTra.Text != "" && cbb_IDCuonSach.Text != "")
+            {
+                ADO.adoCTTraSach.Instance.Sua(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
+                this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -73,6 +78,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -88,6 +94,7 @@ namespace QLTV.GUI
             cbb_IDPhieuTra.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
             cbb_IDCuonSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
         }
+
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);

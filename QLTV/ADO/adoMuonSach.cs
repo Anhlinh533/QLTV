@@ -23,11 +23,12 @@ namespace QLTV.ADO
                 ADO.adoMuonSach.instance = value;
             }
         }
+
         #region Insert
         public void Them(string tb_IDPhieuMuon, string cbb_IDDocGia, string dtp_NgayMuon)
         {
             SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
-            string sqlInsert = "INSERT INTO PHIEUMUON VALUES ('" + tb_IDPhieuMuon + "','" + cbb_IDDocGia + "','" + dtp_NgayMuon + "')";
+            string sqlInsert = "INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('" + tb_IDPhieuMuon + "','" + cbb_IDDocGia + "','" + dtp_NgayMuon + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
@@ -40,11 +41,12 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDPhieuMuon, string cbb_IDDocGia, string dtp_NgayMuon)
         {
-            SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
+            //SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
             string sqlUpdate = "UPDATE PHIEUMUON SET IDDocGia = '" + cbb_IDDocGia + "', NgayMuon = '" + dtp_NgayMuon + "' WHERE IDPhieuMuon = '" + tb_IDPhieuMuon + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion
+
         #region TimKiem
         public string TKIDPhieuMuon(string IDPhieuMuon)
         {

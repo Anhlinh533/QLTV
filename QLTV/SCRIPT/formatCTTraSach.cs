@@ -24,10 +24,12 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCTTraSach.instance = value;
             }
         }
+
         public void returnIDCTTraSach(ref string id)
         {
             id = "CPT" + id;
         }
+
         public void checkCTTraSach(string IDChiTietPhieuTra, string IDPhieuTra, string IDCuonSach)
         {
             if (IDChiTietPhieuTra == "") MessageBox.Show("Không được để trống ID chi tiết phiếu trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);

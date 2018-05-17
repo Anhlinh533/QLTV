@@ -23,6 +23,7 @@ namespace QLTV.ADO
                 ADO.adoTacGia.instance = value;
             }
         }
+
         #region Insert
         public void Them(string tb_IDTacGia, string tb_TenTacGia, string dtp_NgaySinh)
         {
@@ -40,7 +41,7 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDTacGia, string tb_TenTacGia, string dtp_NgaySinh)
         {
-            SCRIPT.formatTacGia.Instance.returnIDTacGia(ref tb_IDTacGia);
+            //SCRIPT.formatTacGia.Instance.returnIDTacGia(ref tb_IDTacGia);
             string sqlUpdate = "UPDATE TACGIA SET TenTacGia = N'" + tb_TenTacGia + "', NgaySinh = '" + dtp_NgaySinh + "' WHERE IDTacGia = '" + tb_IDTacGia + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }

@@ -26,6 +26,7 @@ namespace QLTV.GUI
                 frmMain dlg2 = new frmMain();
                 dlg2.ShowDialog();
             }
+
             if(ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false && ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false)
             {
                 MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập và mật khẩu!!","Cảnh báo!!",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -34,6 +35,7 @@ namespace QLTV.GUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
         }
 
         private void btn_DangKi_Click(object sender, EventArgs e)

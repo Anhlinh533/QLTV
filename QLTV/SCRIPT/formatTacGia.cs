@@ -28,11 +28,12 @@ namespace QLTV.SCRIPT
         {
             id = "ITG" + id;
         }
-        public void checkTacGia(string IDTacGia, string TenTacGia,string NgaySinh)
+
+        public void checkTacGia(string IDTacGia, string TenTacGia, string NgaySinh)
         {
-            if(IDTacGia=="") MessageBox.Show("Không được để trống ID tác giả", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(TenTacGia=="") MessageBox.Show("Không được để trống tên tác giả", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(NgaySinh=="") MessageBox.Show("Không được để trống ngày sinh", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDTacGia == "") MessageBox.Show("Không được để trống ID tác giả", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (TenTacGia == "") MessageBox.Show("Không được để trống tên tác giả", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (NgaySinh == "") MessageBox.Show("Không được để trống ngày sinh", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

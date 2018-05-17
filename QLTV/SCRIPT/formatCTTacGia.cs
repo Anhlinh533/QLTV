@@ -24,15 +24,17 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCTTacGia.instance = value;
             }
         }
+
         public void returnIDCTTacGia(ref string id)
         {
             id = "CTG" + id;            
         }
+
         public void checkCTTacGia(string IDChiTietTacGia, string IDDauSach, string IDTacGia)
         {
-            if(IDChiTietTacGia=="") MessageBox.Show("Không được để trống ID chi tiết tác giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDDauSach=="") MessageBox.Show("Không được để trống ID đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDTacGia=="") MessageBox.Show("Không được để trống ID tác giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDChiTietTacGia == "") MessageBox.Show("Không được để trống ID chi tiết tác giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDDauSach == "") MessageBox.Show("Không được để trống ID đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDTacGia == "") MessageBox.Show("Không được để trống ID tác giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

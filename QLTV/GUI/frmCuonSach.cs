@@ -24,23 +24,28 @@ namespace QLTV.GUI
             this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CUONSACH' table. You can move, or remove it, as needed.
             this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
-
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            //SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
-            //if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "" && cbb_TinhTrang.Text != "")
-            //{
-            //    ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text, cbb_TinhTrang.Text);
-            //    this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
-            //    ResetForm();
-            //}
+            SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text);
+            if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "")
+            {
+                ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text);
+                this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+                ResetForm();
+            }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text);
+            if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "")
+            {
+                ADO.adoCuonSach.Instance.Sua(tb_IDCuonSach.Text, cbb_IDSach.Text);
+                this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -58,7 +63,7 @@ namespace QLTV.GUI
         {
             this.cUONSACHTableAdapter.Fill(quanLyThuVienDataSet.CUONSACH);
             ResetForm();
-        }        
+        }
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
@@ -70,6 +75,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -85,6 +91,7 @@ namespace QLTV.GUI
             cbb_IDSach.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
             //cbb_TinhTrang.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
         }
+
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);

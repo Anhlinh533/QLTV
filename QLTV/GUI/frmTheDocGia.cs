@@ -27,10 +27,9 @@ namespace QLTV.GUI
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.LOAIDOCGIA' table. You can move, or remove it, as needed.
             this.lOAIDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.LOAIDOCGIA);
-
         }
-        #region Event
 
+        #region Event
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
@@ -52,6 +51,7 @@ namespace QLTV.GUI
             {
                 ADO.adoTheDocGia.Instance.Sua(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
                 this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+                ResetForm();
             }
         }
 
@@ -83,12 +83,14 @@ namespace QLTV.GUI
             }
         }
         #endregion
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
         private void dgv_ThemDG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int numrow;
@@ -101,7 +103,6 @@ namespace QLTV.GUI
             cbb_LoaiDocGia.Text = dgv_ThemDG.Rows[numrow].Cells[5].Value.ToString();
             dtp_NgayLapThe.Text = dgv_ThemDG.Rows[numrow].Cells[6].Value.ToString();
         }
-
 
         public void ResetForm()
         {

@@ -40,7 +40,7 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDDauSach, string tb_TenDauSach, string cbb_IDTheLoaiSach)
         {
-            SCRIPT.formatDauSach.Instance.returnIDDauSach(ref tb_IDDauSach);
+            //SCRIPT.formatDauSach.Instance.returnIDDauSach(ref tb_IDDauSach);
             string sqlUpdate = "UPDATE DAUSACH SET TenDauSach = N'" + tb_TenDauSach + "', IDLoaiSach = '" + cbb_IDTheLoaiSach + "' WHERE IDDauSach = '" + tb_IDDauSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }

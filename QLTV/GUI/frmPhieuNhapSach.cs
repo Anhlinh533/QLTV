@@ -22,13 +22,12 @@ namespace QLTV.GUI
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.PHIEUNHAPSACH' table. You can move, or remove it, as needed.
             this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
-
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
-            if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "" )
+            if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
             {
                 ADO.adoPhieuNhapSach.Instance.Them(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
                 this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
@@ -38,7 +37,13 @@ namespace QLTV.GUI
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+            if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
+            {
+                ADO.adoPhieuNhapSach.Instance.Sua(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+                this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -68,6 +73,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -81,7 +87,6 @@ namespace QLTV.GUI
             numrow = e.RowIndex;
             tb_IDPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
             dtp_NgayNhap.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
-
         }
 
         public void ResetForm()

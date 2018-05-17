@@ -24,16 +24,17 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCTMuonSach.instance = value;
             }
         }
+
         public void returnIDCTMuonSach(ref string id)
         {
             id = "CPM" + id;        
         }
+
         public void checkCTMuonSach(string IDCTPhieuMuon, string IDPhieuMuon, string IDCuonSach)
         {
-            if(IDCTPhieuMuon=="") MessageBox.Show("Không được để trống ID chi tiết phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDPhieuMuon=="") MessageBox.Show("Không được để trống ID phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDCuonSach=="") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDCTPhieuMuon == "") MessageBox.Show("Không được để trống ID chi tiết phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDPhieuMuon == "") MessageBox.Show("Không được để trống ID phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDCuonSach == "") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-
     }
 }

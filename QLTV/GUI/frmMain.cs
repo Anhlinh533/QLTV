@@ -18,6 +18,7 @@ namespace QLTV
         {
             InitializeComponent();
         }
+
         #region Event
         private void btn_TheDocGia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -26,6 +27,7 @@ namespace QLTV
             DG.MdiParent = this;
             DG.Show();
         }
+
         private void btn_Users_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmUsers f = new frmUsers();
@@ -33,6 +35,7 @@ namespace QLTV
             f.MdiParent = this;
             f.Show();
         }
+
         private void btn_Sach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmSach f = new frmSach();
@@ -96,6 +99,7 @@ namespace QLTV
             f.MdiParent = this;
             f.Show();
         }
+
         private void btn_Muon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmMuonSach f = new frmMuonSach();
@@ -206,7 +210,6 @@ namespace QLTV
             if (ExistForm(f)) return;
             f.MdiParent = this;
             f.Show();
-
         }
 
         private void btn_TKTra_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -234,7 +237,6 @@ namespace QLTV
         }
         #endregion
 
-
         #region Function
         private bool ExistForm(Form  form)
         {
@@ -248,18 +250,6 @@ namespace QLTV
             }
             return false;
         }
-
-
-
-
-
-
-
-
-
-
         #endregion
-
-
     }
 }

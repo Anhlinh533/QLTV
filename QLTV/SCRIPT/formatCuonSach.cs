@@ -23,15 +23,16 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatCuonSach.instance = value;
             }
         }
+
         public void returnIDCuonSach(ref string id)
         {
             id = "CSA" + id;
         }
-        public void checkCuonSach(string IDCuonSach,string IDSach, string TinhTrang)
+
+        public void checkCuonSach(string IDCuonSach, string IDSach)
         {
-            if(IDCuonSach=="") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(IDSach=="") MessageBox.Show("Không được để trống ID sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(TinhTrang=="") MessageBox.Show("Không được để trống tình trạng.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDCuonSach == "") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDSach == "") MessageBox.Show("Không được để trống ID sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

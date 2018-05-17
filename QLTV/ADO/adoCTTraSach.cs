@@ -23,6 +23,7 @@ namespace QLTV.ADO
                 ADO.adoCTTraSach.instance = value;
             }
         }
+
         #region Insert
         public void Them(string tb_IDCTPhieuTra, string cbb_IDPhieuTra, string cbb_IDCuonSach)
         {
@@ -40,11 +41,12 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDCTPhieuTra, string cbb_IDPhieuTra, string cbb_IDCuonSach)
         {
-            SCRIPT.formatCTTraSach.Instance.returnIDCTTraSach(ref tb_IDCTPhieuTra);
+            //SCRIPT.formatCTTraSach.Instance.returnIDCTTraSach(ref tb_IDCTPhieuTra);
             string sqlUpdate = "UPDATE CT_PHIEUTRA SET IDPhieuTra = '" + cbb_IDPhieuTra + "', IDCuonSach = '" + cbb_IDCuonSach + "' WHERE IDCTPhieuTra = '" + tb_IDCTPhieuTra + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion
+
         #region Tim Kiem
         public string TKIDCTPhieuTra(string IDCTPhieuTra)
         {

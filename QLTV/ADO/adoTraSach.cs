@@ -23,11 +23,12 @@ namespace QLTV.ADO
                 ADO.adoTraSach.instance = value;
             }
         }
+
         #region Insert
         public void Them(string tb_IDPhieuTra, string cbb_IDDocGia, string dtp_NgayTra, string tb_SoTienTra)
         {
             SCRIPT.formatTraSach.Instance.returnIDPhieuTra(ref tb_IDPhieuTra);
-            string sqlInsert = "INSERT INTO PHIEUTRA VALUES ('" + tb_IDPhieuTra + "','" + cbb_IDDocGia + "','" + dtp_NgayTra + "','" + tb_SoTienTra + "')";
+            string sqlInsert = "INSERT INTO PHIEUTRA (IDPhieuTra, IDDocGia, NgayTra, SoTienTra) VALUES ('" + tb_IDPhieuTra + "','" + cbb_IDDocGia + "','" + dtp_NgayTra + "','" + tb_SoTienTra + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
@@ -40,13 +41,13 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDPhieuTra, string cbb_IDDocGia, string dtp_NgayTra, string tb_SoTienTra)
         {
-            SCRIPT.formatTraSach.Instance.returnIDPhieuTra(ref tb_IDPhieuTra);
+            //SCRIPT.formatTraSach.Instance.returnIDPhieuTra(ref tb_IDPhieuTra);
             string sqlUpdate = "UPDATE PHIEUTRA SET IDDocGia = '" + cbb_IDDocGia + "', NgayTra = '" + dtp_NgayTra + "', SoTienTra = '" + tb_SoTienTra + "' WHERE IDPhieuTra = '" + tb_IDPhieuTra + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion
-        #region Form
 
+        #region Form
         public string TKIDPhieuTra(string IDPhieuTra)
         {
             IDPhieuTra = "Select * from PHIEUTRA where IDPhieuTra like '%" + IDPhieuTra + "%' ";

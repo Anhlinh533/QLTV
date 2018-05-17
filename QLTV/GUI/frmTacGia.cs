@@ -22,7 +22,6 @@ namespace QLTV.GUI
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.TACGIA' table. You can move, or remove it, as needed.
             this.tACGIATableAdapter.Fill(this.quanLyThuVienDataSet.TACGIA);
-
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -38,7 +37,13 @@ namespace QLTV.GUI
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatTacGia.Instance.checkTacGia(tb_IDTacGia.Text, tb_TenTacGia.Text, dtp_NgaySinh.Text);
+            if (tb_IDTacGia.Text != "" && tb_TenTacGia.Text != "" && dtp_NgaySinh.Text != "")
+            {
+                ADO.adoTacGia.Instance.Sua(tb_IDTacGia.Text, tb_TenTacGia.Text, dtp_NgaySinh.Text);
+                this.tACGIATableAdapter.Fill(this.quanLyThuVienDataSet.TACGIA);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -68,6 +73,7 @@ namespace QLTV.GUI
                 ResetForm();
             }
         }
+
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {

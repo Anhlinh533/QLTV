@@ -23,6 +23,7 @@ namespace QLTV.ADO
                 ADO.adoCTMuonSach.instance = value;
             }
         }
+
         #region Insert
         public void Them(string tb_IDCTPhieuMuon, string cbb_IDPhieuMuon, string cbb_IDCuonSach)
         {
@@ -40,11 +41,12 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDCTPhieuMuon, string cbb_IDPhieuMuon, string cbb_IDCuonSach)
         {
-            SCRIPT.formatCTMuonSach.Instance.returnIDCTMuonSach(ref tb_IDCTPhieuMuon);
+            //SCRIPT.formatCTMuonSach.Instance.returnIDCTMuonSach(ref tb_IDCTPhieuMuon);
             string sqlUpdate = "UPDATE CT_PHIEUMUON SET IDPhieuMuon = '" + cbb_IDPhieuMuon + "', IDCuonSach = '" + cbb_IDCuonSach + "' WHERE IDCTPhieuMuon = '" + tb_IDCTPhieuMuon + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion
+
         #region Tim Kiem
         public string TKIDCTPhieuMuon(string IDCTPhieuMuon)
         {
@@ -63,7 +65,6 @@ namespace QLTV.ADO
             IDCuonSach = "Select * from CT_PHIEUMUON where IDCuonSach like '%" + IDCuonSach + "%' ";
             return IDCuonSach;
         }
-
         #endregion
     }
 }
