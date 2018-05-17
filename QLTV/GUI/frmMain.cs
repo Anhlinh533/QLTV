@@ -261,6 +261,7 @@ namespace QLTV
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            rib_User.Text = "Tài khoản: " + UserName;
             if (ADO.adoLogin.Instance.checkDocGia(UserName, Password) == true)
             {
                 btn_CTMuonSach.Enabled = false;
@@ -285,6 +286,16 @@ namespace QLTV
                 btn_KhoangCachNamXuatBan.Enabled = false;
                 //btn_CTMuonSach.Enabled = false;
             }
+        }
+
+        private void btn_DangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_DangXuat_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
         }
     }
 }

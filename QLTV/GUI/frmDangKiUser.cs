@@ -17,6 +17,20 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+        string IDDocGia;
+        public frmDangKiUser(string sIDDocGia): this()
+        {
+            IDDocGia = sIDDocGia;
+        }
 
+        private void frmDangKiUser_Load(object sender, EventArgs e)
+        {
+            tb_IDDocGia.Text = "IDG" +IDDocGia;
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -578,6 +578,33 @@
   <ItemGroup>
     <None Include="Resources\icons8-enter-64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-business-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-form-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-card-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-properties-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online-support-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-info-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-40.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

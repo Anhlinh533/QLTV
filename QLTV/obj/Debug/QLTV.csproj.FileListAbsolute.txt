@@ -826,3 +826,4 @@ D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
 D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\RdlCompile.cache
 D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\RdlCompile.compiled
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDangKiUser.resources
+C:\Users\BaoDuy\Documents\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDangKiUser.resources

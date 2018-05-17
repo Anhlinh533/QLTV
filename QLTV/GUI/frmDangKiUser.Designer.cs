@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangKiUser));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tb_IDDocGia = new System.Windows.Forms.TextBox();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
-            this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.tb_UserName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,8 +63,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.tb_IDDocGia);
             this.groupBox1.Controls.Add(this.btn_Them);
-            this.groupBox1.Controls.Add(this.cbb_IDDocGia);
             this.groupBox1.Controls.Add(this.tb_Password);
             this.groupBox1.Controls.Add(this.tb_UserName);
             this.groupBox1.Controls.Add(this.label3);
@@ -79,6 +79,14 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tài khoản";
+            // 
+            // tb_IDDocGia
+            // 
+            this.tb_IDDocGia.Enabled = false;
+            this.tb_IDDocGia.Location = new System.Drawing.Point(230, 177);
+            this.tb_IDDocGia.Name = "tb_IDDocGia";
+            this.tb_IDDocGia.Size = new System.Drawing.Size(189, 44);
+            this.tb_IDDocGia.TabIndex = 23;
             // 
             // btn_Them
             // 
@@ -98,16 +106,7 @@
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
             this.btn_Them.TabIndex = 22;
-            // 
-            // cbb_IDDocGia
-            // 
-            this.cbb_IDDocGia.DisplayMember = "IDDocGia";
-            this.cbb_IDDocGia.FormattingEnabled = true;
-            this.cbb_IDDocGia.Location = new System.Drawing.Point(230, 177);
-            this.cbb_IDDocGia.Name = "cbb_IDDocGia";
-            this.cbb_IDDocGia.Size = new System.Drawing.Size(189, 44);
-            this.cbb_IDDocGia.TabIndex = 21;
-            this.cbb_IDDocGia.ValueMember = "IDDocGia";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // tb_Password
             // 
@@ -173,7 +172,9 @@
             this.ClientSize = new System.Drawing.Size(674, 370);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "frmDangKiUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng kí tài khoản";
+            this.Load += new System.EventHandler(this.frmDangKiUser_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -188,11 +189,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
-        private System.Windows.Forms.ComboBox cbb_IDDocGia;
         private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.TextBox tb_UserName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tb_IDDocGia;
     }
 }

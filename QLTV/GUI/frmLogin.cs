@@ -31,6 +31,7 @@ namespace QLTV.GUI
             {
                 MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập và mật khẩu!!","Cảnh báo!!",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
+
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

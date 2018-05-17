@@ -40,6 +40,8 @@ namespace QLTV.GUI
             if (tb_IDDocGia.Text != "" && tb_HoTenDocGia.Text != "" && dtp_NgaySinh.Text != "" && tb_DiaChi.Text != "" && tb_Email.Text != "" && cbb_LoaiDocGia.Text != "" && dtp_NgayLapThe.Text != "")
             {
                 ADO.adoTheDocGia.Instance.Them(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+                frmDangKiUser dlg2 = new frmDangKiUser(tb_IDDocGia.Text.Trim());
+                dlg2.ShowDialog();
                 this.Close();
             }
         }
