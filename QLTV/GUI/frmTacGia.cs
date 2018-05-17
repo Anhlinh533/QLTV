@@ -27,6 +27,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatTacGia.Instance.checkTacGia(tb_IDTacGia.Text, tb_TenTacGia.Text, dtp_NgaySinh.Text);
+            SCRIPT.formatTacGia.Instance.checkNull(tb_IDTacGia, tb_TenTacGia);
             if (tb_IDTacGia.Text != "" && tb_TenTacGia.Text != "" && dtp_NgaySinh.Text != "")
             {
                 ADO.adoTacGia.Instance.Them(tb_IDTacGia.Text, tb_TenTacGia.Text, dtp_NgaySinh.Text);
@@ -38,6 +39,8 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatTacGia.Instance.checkTacGia(tb_IDTacGia.Text, tb_TenTacGia.Text, dtp_NgaySinh.Text);
+            SCRIPT.formatTacGia.Instance.checkNull(tb_IDTacGia, tb_TenTacGia);
+
             if (tb_IDTacGia.Text != "" && tb_TenTacGia.Text != "" && dtp_NgaySinh.Text != "")
             {
                 ADO.adoTacGia.Instance.Sua(tb_IDTacGia.Text, tb_TenTacGia.Text, dtp_NgaySinh.Text);

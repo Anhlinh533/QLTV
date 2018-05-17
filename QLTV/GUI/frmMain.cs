@@ -148,7 +148,7 @@ namespace QLTV
             f.Show();
         }
 
-        private void ribtab_KhoangCachNamXuatBan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btn_KhoangCachNamXuatBan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmKhoangCachXuatBan f = new frmKhoangCachXuatBan();
             if (ExistForm(f)) return;
@@ -251,5 +251,40 @@ namespace QLTV
             return false;
         }
         #endregion
+        private string UserName;
+        private string Password;
+        public frmMain(string user, string pass) : this()
+        {
+            UserName = user;
+            Password = pass;
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            if (ADO.adoLogin.Instance.checkDocGia(UserName, Password) == true)
+            {
+                btn_CTMuonSach.Enabled = false;
+                btn_CTPhieuNhapSach.Enabled = false;
+                btn_CTTacGia.Enabled = false;
+                btn_CTTraSach.Enabled = false;
+                btn_CuonSach.Enabled = false;
+                btn_DauSach.Enabled = false;
+                btn_HanThe.Enabled = false;
+                btn_LoaiSach.Enabled = false;
+                btn_Muon.Enabled = false;
+                btn_PhieuNhapSach.Enabled = false;
+                btn_Sach.Enabled = false;
+                btn_SoNgayMuonMax.Enabled = false;
+                btn_SoSachMuonMax.Enabled = false;
+                btn_TacGia.Enabled = false;
+                btn_TheDocGia.Enabled = false;
+                btn_TienPhatMoiNgay.Enabled = false;
+                btn_Tra.Enabled = false;
+                btn_TuoiDocGia.Enabled = false;
+                btn_Users.Enabled = false;
+                btn_KhoangCachNamXuatBan.Enabled = false;
+                //btn_CTMuonSach.Enabled = false;
+            }
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text);
+            SCRIPT.formatCuonSach.Instance.checkNull(tb_IDCuonSach, cbb_IDSach);
             if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "")
             {
                 ADO.adoCuonSach.Instance.Them(tb_IDCuonSach.Text, cbb_IDSach.Text);
@@ -40,6 +41,8 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCuonSach.Instance.checkCuonSach(tb_IDCuonSach.Text, cbb_IDSach.Text);
+            SCRIPT.formatCuonSach.Instance.checkNull(tb_IDCuonSach, cbb_IDSach);
+
             if (tb_IDCuonSach.Text != "" && cbb_IDSach.Text != "")
             {
                 ADO.adoCuonSach.Instance.Sua(tb_IDCuonSach.Text, cbb_IDSach.Text);

@@ -34,5 +34,11 @@ namespace QLTV.SCRIPT
             else if (IDDocGia == "") MessageBox.Show("Không được để trống ID độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (NgayMuon == "") MessageBox.Show("Không được để trống ngày mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public void checkNull(Control IDPhieuMuon, Control IDDocGia)
+        {
+            if (useForm.Instance.checkNull(IDPhieuMuon) == true) useForm.Instance.Focus(IDPhieuMuon);
+            else if (useForm.Instance.checkNull(IDDocGia) == true) useForm.Instance.Focus(IDDocGia);
+        }
     }
 }

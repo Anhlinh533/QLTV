@@ -37,5 +37,13 @@ namespace QLTV.SCRIPT
             else if (SoLuong == "") MessageBox.Show("Không được để trống số lượng.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (DonGia == "") MessageBox.Show("Không được để trống đơn giá", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+        public void checkNull(Control IDCTPhieuNhap,Control IDPhieuNhap, Control IDSach, Control SoLuong,Control DonGia)
+        {
+            if (useForm.Instance.checkNull(IDCTPhieuNhap) == true) useForm.Instance.Focus(IDCTPhieuNhap);
+            else if (useForm.Instance.checkNull(IDPhieuNhap) == true) useForm.Instance.Focus(IDPhieuNhap);
+            else if (useForm.Instance.checkNull(IDSach) == true) useForm.Instance.Focus(IDSach);
+            else if (useForm.Instance.checkNull(SoLuong) == true) useForm.Instance.Focus(SoLuong);
+            else if (useForm.Instance.checkNull(DonGia) == true) useForm.Instance.Focus(DonGia);
+        }
     }
 }

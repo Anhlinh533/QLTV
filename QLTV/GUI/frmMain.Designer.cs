@@ -38,7 +38,7 @@
             this.ribtab_HanTheDocGia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_HanThe = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_KhoangCachXuatBan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribtab_KhoangCachNamXuatBan = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_KhoangCachNamXuatBan = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_SoNgayMuon = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_SoNgayMuonMax = new DevExpress.XtraBars.BarButtonItem();
             this.ribtab_SoSachMuonMax = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -82,7 +82,7 @@
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_rpSachTraTre = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_rpTinhHinhMuonSach = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.rib_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribtab_rpSachTraTre = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -152,19 +152,19 @@
             // 
             // ribtab_KhoangCachXuatBan
             // 
-            this.ribtab_KhoangCachXuatBan.ItemLinks.Add(this.ribtab_KhoangCachNamXuatBan);
+            this.ribtab_KhoangCachXuatBan.ItemLinks.Add(this.btn_KhoangCachNamXuatBan);
             this.ribtab_KhoangCachXuatBan.Name = "ribtab_KhoangCachXuatBan";
             this.ribtab_KhoangCachXuatBan.Text = "Khoảng cách năm xuất bản";
             // 
-            // ribtab_KhoangCachNamXuatBan
+            // btn_KhoangCachNamXuatBan
             // 
-            this.ribtab_KhoangCachNamXuatBan.Caption = "Khoảng cách năm xuất bản";
-            this.ribtab_KhoangCachNamXuatBan.Id = 25;
-            this.ribtab_KhoangCachNamXuatBan.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_calendar_48;
-            this.ribtab_KhoangCachNamXuatBan.Name = "ribtab_KhoangCachNamXuatBan";
-            this.ribtab_KhoangCachNamXuatBan.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            this.btn_KhoangCachNamXuatBan.Caption = "Khoảng cách năm xuất bản";
+            this.btn_KhoangCachNamXuatBan.Id = 25;
+            this.btn_KhoangCachNamXuatBan.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_calendar_48;
+            this.btn_KhoangCachNamXuatBan.Name = "btn_KhoangCachNamXuatBan";
+            this.btn_KhoangCachNamXuatBan.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            this.ribtab_KhoangCachNamXuatBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ribtab_KhoangCachNamXuatBan_ItemClick);
+            this.btn_KhoangCachNamXuatBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_KhoangCachNamXuatBan_ItemClick);
             // 
             // ribtab_SoNgayMuon
             // 
@@ -546,13 +546,13 @@
             this.btn_CTTraSach,
             this.btn_TuoiDocGia,
             this.btn_HanThe,
-            this.ribtab_KhoangCachNamXuatBan,
+            this.btn_KhoangCachNamXuatBan,
             this.btn_SoNgayMuonMax,
             this.btn_SoSachMuonMax,
             this.btn_TienPhatMoiNgay,
             this.barButtonItem1,
             this.btn_rpSachTraTre,
-            this.barButtonItem3,
+            this.btn_rpTinhHinhMuonSach,
             this.barButtonItem4});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(4);
@@ -583,15 +583,15 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.btn_rpSachTraTre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_rpSachTraTre_ItemClick);
             // 
-            // barButtonItem3
+            // btn_rpTinhHinhMuonSach
             // 
-            this.barButtonItem3.Caption = "Báo cáo tình hình mượn sách";
-            this.barButtonItem3.Id = 31;
-            this.barButtonItem3.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            this.btn_rpTinhHinhMuonSach.Caption = "Báo cáo tình hình mượn sách";
+            this.btn_rpTinhHinhMuonSach.Id = 31;
+            this.btn_rpTinhHinhMuonSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
+            this.btn_rpTinhHinhMuonSach.Name = "btn_rpTinhHinhMuonSach";
+            this.btn_rpTinhHinhMuonSach.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            this.btn_rpTinhHinhMuonSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
             // barButtonItem4
             // 
@@ -615,7 +615,7 @@
             // 
             // ribtab_rpTinhHinhMuonSach
             // 
-            this.ribtab_rpTinhHinhMuonSach.ItemLinks.Add(this.barButtonItem3);
+            this.ribtab_rpTinhHinhMuonSach.ItemLinks.Add(this.btn_rpTinhHinhMuonSach);
             this.ribtab_rpTinhHinhMuonSach.Name = "ribtab_rpTinhHinhMuonSach";
             this.ribtab_rpTinhHinhMuonSach.Text = "Tình hình mượn sách";
             // 
@@ -650,6 +650,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lí thư viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).EndInit();
             this.ResumeLayout(false);
@@ -706,7 +707,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_HanTheDocGia;
         private DevExpress.XtraBars.BarButtonItem btn_HanThe;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_KhoangCachXuatBan;
-        private DevExpress.XtraBars.BarButtonItem ribtab_KhoangCachNamXuatBan;
+        private DevExpress.XtraBars.BarButtonItem btn_KhoangCachNamXuatBan;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_SoNgayMuon;
         private DevExpress.XtraBars.BarButtonItem btn_SoNgayMuonMax;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_SoSachMuonMax;
@@ -715,7 +716,7 @@
         private DevExpress.XtraBars.BarButtonItem btn_TienPhatMoiNgay;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem btn_rpSachTraTre;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem btn_rpTinhHinhMuonSach;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_rpTinhHinhMuonSach;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTable;

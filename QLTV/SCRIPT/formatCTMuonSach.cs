@@ -29,12 +29,20 @@ namespace QLTV.SCRIPT
         {
             id = "CPM" + id;        
         }
+        
+
 
         public void checkCTMuonSach(string IDCTPhieuMuon, string IDPhieuMuon, string IDCuonSach)
         {
-            if (IDCTPhieuMuon == "") MessageBox.Show("Không được để trống ID chi tiết phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (IDCTPhieuMuon == "")  MessageBox.Show("Không được để trống ID chi tiết phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);          
             else if (IDPhieuMuon == "") MessageBox.Show("Không được để trống ID phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (IDCuonSach == "") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        public void checkNull(Control IDCTPhieuMuon,Control IDPhieuMuon,Control IDCuonSach)
+        {
+            if (useForm.Instance.checkNull(IDCTPhieuMuon) == true) useForm.Instance.Focus(IDCTPhieuMuon);
+            else if (useForm.Instance.checkNull(IDPhieuMuon) == true) useForm.Instance.Focus(IDPhieuMuon);
+            else if (useForm.Instance.checkNull(IDCuonSach) == true) useForm.Instance.Focus(IDCuonSach);
         }
     }
 }

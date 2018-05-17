@@ -35,5 +35,11 @@ namespace QLTV.SCRIPT
             else if (TenTacGia == "") MessageBox.Show("Không được để trống tên tác giả", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (NgaySinh == "") MessageBox.Show("Không được để trống ngày sinh", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+        
+        public void checkNull(Control IDTacGia,Control TenTacGia)
+        {
+            if (useForm.Instance.checkNull(IDTacGia) == true) useForm.Instance.Focus(IDTacGia);
+            else if (useForm.Instance.checkNull(TenTacGia) == true) useForm.Instance.Focus(TenTacGia);
+        }
     }
 }

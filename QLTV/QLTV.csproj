@@ -154,6 +154,12 @@
     <Compile Include="GUI\frmDangKi.Designer.cs">
       <DependentUpon>frmDangKi.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmDangKiUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDangKiUser.Designer.cs">
+      <DependentUpon>frmDangKiUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmDauSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangKi.resx">
       <DependentUpon>frmDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDangKiUser.resx">
+      <DependentUpon>frmDangKiUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDauSach.resx">
       <DependentUpon>frmDauSach.cs</DependentUpon>

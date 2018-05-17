@@ -36,5 +36,12 @@ namespace QLTV.SCRIPT
             else if (IDDauSach == "") MessageBox.Show("Không được để trống ID đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (IDTacGia == "") MessageBox.Show("Không được để trống ID tác giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public void checkNull(Control IDCTTacGia,Control IDDauSach,Control IDTacGia)
+        {
+            if (useForm.Instance.checkNull(IDCTTacGia) == true) useForm.Instance.Focus(IDCTTacGia);
+            else if (useForm.Instance.checkNull(IDDauSach) == true) useForm.Instance.Focus(IDDauSach);
+            else if (useForm.Instance.checkNull(IDTacGia) == true) useForm.Instance.Focus(IDTacGia);
+        }
     }
 }

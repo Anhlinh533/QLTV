@@ -31,6 +31,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCTTacGia.Instance.checkCTTacGia(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
+            SCRIPT.formatCTTacGia.Instance.checkNull(tb_IDCTTacGia, cbb_IDDauSach, cbb_IDTacGia);
             if (tb_IDCTTacGia.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDTacGia.Text != "")
             {
                 ADO.adoCTTacGia.Instance.Them(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
@@ -42,6 +43,8 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCTTacGia.Instance.checkCTTacGia(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
+            SCRIPT.formatCTTacGia.Instance.checkNull(tb_IDCTTacGia, cbb_IDDauSach, cbb_IDTacGia);
+
             if (tb_IDCTTacGia.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDTacGia.Text != "")
             {
                 ADO.adoCTTacGia.Instance.Sua(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);

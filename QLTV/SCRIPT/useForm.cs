@@ -53,6 +53,51 @@ namespace QLTV.SCRIPT
             throw new NotImplementedException();
         }
 
+
+        public bool checkNull(Control control)
+        {
+            if (control is TextBox)
+            {
+                TextBox tb = (TextBox)control;
+                if (tb.Text == "")
+                {
+                    return true;
+                }
+            }
+            if (control is ComboBox)
+            {
+                ComboBox cb = (ComboBox)control;
+                if (cb.Text == "")
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
+
+        public void Focus(Control control)
+        {
+            if(control is TextBox)
+            {
+                TextBox tb = (TextBox)control;
+                if (tb.Text == "")
+                {
+                    tb.Focus();
+                }
+            }
+            if(control is ComboBox)
+            {
+                ComboBox cb = (ComboBox)control;
+                if (cb.Text == "")
+                {
+                    cb.Focus();
+                }
+             
+            }
+        }
+
+
         public static void ResetAllControls(Control form)
         {
             foreach (Control control in form.Controls)

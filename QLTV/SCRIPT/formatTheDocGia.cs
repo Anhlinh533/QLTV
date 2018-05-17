@@ -47,5 +47,14 @@ namespace QLTV.SCRIPT
             //    ADO.ConnectionSQL.Instance.Execute(sql);
             //}            
         }
+        public void checkNull(Control IDDocGia, Control HoTen, Control DiaChi, Control Email, Control LoaiDocGia)
+        {
+            if (useForm.Instance.checkNull(IDDocGia) == true) useForm.Instance.Focus(IDDocGia);
+            else if (useForm.Instance.checkNull(HoTen) == true) useForm.Instance.Focus(HoTen);
+            else if (useForm.Instance.checkNull(DiaChi) == true) useForm.Instance.Focus(DiaChi);
+            else if (useForm.Instance.checkNull(Email) == true) useForm.Instance.Focus(Email);
+            else if (useForm.Instance.checkNull(LoaiDocGia) == true) useForm.Instance.Focus(LoaiDocGia);
+
+        }
     }
 }

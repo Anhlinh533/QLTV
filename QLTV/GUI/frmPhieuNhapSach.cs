@@ -27,6 +27,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+            SCRIPT.formatPhieuNhapSach.Instance.checkNull(tb_IDPhieuNhap);
             if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
             {
                 ADO.adoPhieuNhapSach.Instance.Them(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
@@ -38,6 +39,8 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+            SCRIPT.formatPhieuNhapSach.Instance.checkNull(tb_IDPhieuNhap);
+
             if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
             {
                 ADO.adoPhieuNhapSach.Instance.Sua(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);

@@ -29,6 +29,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatMuonSach.Instance.checkPhieuMuonSach(tb_IDPhieuMuon.Text, cbb_IDDocGia.Text, dtp_NgayMuon.Text);
+            SCRIPT.formatMuonSach.Instance.checkNull(tb_IDPhieuMuon, cbb_IDDocGia);
             if (tb_IDPhieuMuon.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayMuon.Text != "")
             {
                 ADO.adoMuonSach.Instance.Them(tb_IDPhieuMuon.Text, cbb_IDDocGia.Text, dtp_NgayMuon.Text);
@@ -40,6 +41,8 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatMuonSach.Instance.checkPhieuMuonSach(tb_IDPhieuMuon.Text, cbb_IDDocGia.Text, dtp_NgayMuon.Text);
+            SCRIPT.formatMuonSach.Instance.checkNull(tb_IDPhieuMuon, cbb_IDDocGia);
+
             if (tb_IDPhieuMuon.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayMuon.Text != "")
             {
                 ADO.adoMuonSach.Instance.Sua(tb_IDPhieuMuon.Text, cbb_IDDocGia.Text, dtp_NgayMuon.Text);

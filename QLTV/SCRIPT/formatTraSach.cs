@@ -35,5 +35,12 @@ namespace QLTV.SCRIPT
              else if (NgayTra == "") MessageBox.Show("Không được để trống ngày trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
              else if (SoTienTra == "") MessageBox.Show("Không được để trống số tiền trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public void checkNull(Control IDPhieuTra,Control IDDocGia, Control SoTienTra)
+        {
+            if (useForm.Instance.checkNull(IDPhieuTra) == true) useForm.Instance.Focus(IDPhieuTra);
+            else if (useForm.Instance.checkNull(IDDocGia) == true) useForm.Instance.Focus(IDDocGia);
+            else if (useForm.Instance.checkNull(SoTienTra) == true) useForm.Instance.Focus(SoTienTra);
+        }
     }
 }

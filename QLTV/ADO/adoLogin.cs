@@ -52,7 +52,7 @@ namespace QLTV.ADO
             //{
             //    MessageBox.Show("Lỗi kết nối.", "Chú ý!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True");
             con.Open();
 
             string sql = "Select *from USERS where UserName='" + UserName + "' and Pwd='" + Password + "'";
@@ -69,7 +69,7 @@ namespace QLTV.ADO
 
         public bool checkAdmin(string UserName, string Password)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True");
             con.Open();
 
             string sql = "Select *from USERADMIN where UserNameAdmin='" + UserName + "' and PasswordAdmin='" + Password + "'";

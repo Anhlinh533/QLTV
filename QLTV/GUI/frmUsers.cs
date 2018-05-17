@@ -29,6 +29,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+            SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
             if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
             {
                 //Hàm thêm
@@ -39,7 +40,8 @@ namespace QLTV.GUI
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
+            SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+            SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)

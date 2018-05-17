@@ -29,6 +29,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatTraSach.Instance.checkTraSach(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);
+            SCRIPT.formatTraSach.Instance.checkNull(tb_IDPhieuTra, cbb_IDDocGia, tb_SoTienTra);
             if (tb_IDPhieuTra.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayTra.Text != "" && tb_SoTienTra.Text != "")
             {
                 ADO.adoTraSach.Instance.Them(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);
@@ -40,6 +41,7 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatTraSach.Instance.checkTraSach(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);
+            SCRIPT.formatTraSach.Instance.checkNull(tb_IDPhieuTra, cbb_IDDocGia, tb_SoTienTra);
             if (tb_IDPhieuTra.Text != "" && cbb_IDDocGia.Text != "" && dtp_NgayTra.Text != "" && tb_SoTienTra.Text != "")
             {
                 ADO.adoTraSach.Instance.Sua(tb_IDPhieuTra.Text, cbb_IDDocGia.Text, dtp_NgayTra.Text, tb_SoTienTra.Text);

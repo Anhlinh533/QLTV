@@ -34,5 +34,10 @@ namespace QLTV.SCRIPT
             if (IDLoaiSach == "") MessageBox.Show("Không được để trống ID loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (TenLoaiSach == "") MessageBox.Show("Không được để trống tên loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+        public void checkNull(Control IDLoaiSach, Control TenLoaiSach)
+        {
+            if (useForm.Instance.checkNull(IDLoaiSach) == true) useForm.Instance.Focus(IDLoaiSach);
+            else if (useForm.Instance.checkNull(TenLoaiSach) == true) useForm.Instance.Focus(TenLoaiSach);
+        }
     }
 }

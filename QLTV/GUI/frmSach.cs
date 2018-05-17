@@ -31,6 +31,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatSach.Instance.checkSach(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+            SCRIPT.formatSach.Instance.checkNull(tb_IDSach, cbb_IDDauSach, cbb_IDCTTacGia, tb_NXB, cbb_NXB, tb_SoLuongTon, tb_GiaTien);
             if (tb_IDSach.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDCTTacGia.Text != "" && tb_NXB.Text != "" && cbb_NXB.Text != "" && tb_SoLuongTon.Text != "" && tb_GiaTien.Text != "")
             {
                 ADO.adoSach.Instance.Them(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
@@ -42,6 +43,8 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatSach.Instance.checkSach(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);
+            SCRIPT.formatSach.Instance.checkNull(tb_IDSach, cbb_IDDauSach, cbb_IDCTTacGia, tb_NXB, cbb_NXB, tb_SoLuongTon, tb_GiaTien);
+
             if (tb_IDSach.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDCTTacGia.Text != "" && tb_NXB.Text != "" && cbb_NXB.Text != "" && tb_SoLuongTon.Text != "" && tb_GiaTien.Text != "")
             {
                 ADO.adoSach.Instance.Sua(tb_IDSach.Text, cbb_IDDauSach.Text, cbb_IDCTTacGia.Text, tb_NXB.Text, cbb_NXB.Text, tb_SoLuongTon.Text, tb_GiaTien.Text);

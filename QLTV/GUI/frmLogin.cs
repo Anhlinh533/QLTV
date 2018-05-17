@@ -23,7 +23,7 @@ namespace QLTV.GUI
             if(ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim())==true||ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim())==true)
             {
                 MessageBox.Show("Đăng nhập thành công");
-                frmMain dlg2 = new frmMain();
+                frmMain dlg2 = new frmMain(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim());
                 dlg2.ShowDialog();
             }
 
@@ -40,7 +40,8 @@ namespace QLTV.GUI
 
         private void btn_DangKi_Click(object sender, EventArgs e)
         {
-
+            frmDangKi frm = new frmDangKi();
+            frm.ShowDialog();
         }
     }
 }

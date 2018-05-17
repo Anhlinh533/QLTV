@@ -486,7 +486,6 @@
             this.tb_HoTenDocGia.Name = "tb_HoTenDocGia";
             this.tb_HoTenDocGia.Size = new System.Drawing.Size(275, 44);
             this.tb_HoTenDocGia.TabIndex = 2;
-            this.tb_HoTenDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // tb_IDDocGia
             // 

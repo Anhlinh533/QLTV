@@ -29,6 +29,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatDauSach.Instance.checkDauSach(tb_IDDauSach.Text, tb_TenDauSach.Text, cbb_IDTheLoaiSach.Text);
+            SCRIPT.formatDauSach.Instance.checkNull(tb_IDDauSach, tb_TenDauSach, cbb_IDTheLoaiSach);
             if (tb_IDDauSach.Text != "" && tb_TenDauSach.Text != "" && cbb_IDTheLoaiSach.Text != "")
             {
                 ADO.adoDauSach.Instance.Them(tb_IDDauSach.Text, tb_TenDauSach.Text, cbb_IDTheLoaiSach.Text);
@@ -40,6 +41,8 @@ namespace QLTV.GUI
         private void btn_Sua_Click(object sender, EventArgs e)
         {
             SCRIPT.formatDauSach.Instance.checkDauSach(tb_IDDauSach.Text, tb_TenDauSach.Text, cbb_IDTheLoaiSach.Text);
+            SCRIPT.formatDauSach.Instance.checkNull(tb_IDDauSach, tb_TenDauSach, cbb_IDTheLoaiSach);
+
             if (tb_IDDauSach.Text != "" && tb_TenDauSach.Text != "" && cbb_IDTheLoaiSach.Text != "")
             {
                 ADO.adoDauSach.Instance.Sua(tb_IDDauSach.Text, tb_TenDauSach.Text, cbb_IDTheLoaiSach.Text);
