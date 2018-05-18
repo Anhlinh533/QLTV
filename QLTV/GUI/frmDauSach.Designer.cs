@@ -51,6 +51,9 @@
             this.dAUSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TenDauSach = new System.Windows.Forms.TextBox();
             this.cbb_IDTheLoaiSach = new System.Windows.Forms.ComboBox();
@@ -83,6 +86,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -315,6 +320,9 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.pic_Ss);
+            this.groupControl1.Controls.Add(this.pic_Warning);
+            this.groupControl1.Controls.Add(this.label5);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.tb_TenDauSach);
             this.groupControl1.Controls.Add(this.cbb_IDTheLoaiSach);
@@ -327,6 +335,36 @@
             this.groupControl1.Size = new System.Drawing.Size(590, 937);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin đầu sách";
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(529, 66);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(37, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 18;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(529, 66);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(37, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 17;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label5.Location = new System.Drawing.Point(240, 124);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "label5";
             // 
             // btn_Them
             // 
@@ -341,7 +379,7 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(146, 265);
+            this.btn_Them.Location = new System.Drawing.Point(146, 300);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 148);
@@ -350,7 +388,7 @@
             // 
             // tb_TenDauSach
             // 
-            this.tb_TenDauSach.Location = new System.Drawing.Point(244, 126);
+            this.tb_TenDauSach.Location = new System.Drawing.Point(244, 161);
             this.tb_TenDauSach.MaxLength = 200;
             this.tb_TenDauSach.Name = "tb_TenDauSach";
             this.tb_TenDauSach.Size = new System.Drawing.Size(279, 44);
@@ -362,7 +400,7 @@
             this.cbb_IDTheLoaiSach.DataSource = this.lOAISACHBindingSource;
             this.cbb_IDTheLoaiSach.DisplayMember = "IDLoaiSach";
             this.cbb_IDTheLoaiSach.FormattingEnabled = true;
-            this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(244, 184);
+            this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(244, 219);
             this.cbb_IDTheLoaiSach.Name = "cbb_IDTheLoaiSach";
             this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(279, 44);
             this.cbb_IDTheLoaiSach.TabIndex = 3;
@@ -380,13 +418,14 @@
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(279, 44);
             this.tb_IDDauSach.TabIndex = 1;
+            this.tb_IDDauSach.TextChanged += new System.EventHandler(this.tb_IDDauSach_TextChanged);
             this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 187);
+            this.label3.Location = new System.Drawing.Point(6, 222);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(233, 36);
             this.label3.TabIndex = 2;
@@ -396,7 +435,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 129);
+            this.label2.Location = new System.Drawing.Point(6, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 36);
             this.label2.TabIndex = 1;
@@ -573,6 +612,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -629,5 +670,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.PictureBox pic_Ss;
+        private System.Windows.Forms.PictureBox pic_Warning;
+        private System.Windows.Forms.Label label5;
     }
 }

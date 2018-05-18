@@ -54,6 +54,9 @@
             this.cTPHIEUNHAPSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDSach = new System.Windows.Forms.ComboBox();
             this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -95,6 +98,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPSACHBindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
@@ -141,9 +146,9 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.bindingNavigator1);
             this.groupControl2.Controls.Add(this.dgv_Them);
-            this.groupControl2.Location = new System.Drawing.Point(555, 0);
+            this.groupControl2.Location = new System.Drawing.Point(619, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1041, 932);
+            this.groupControl2.Size = new System.Drawing.Size(977, 932);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu chi tiết phiếu nhập sách";
             // 
@@ -172,7 +177,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1035, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(971, 31);
             this.bindingNavigator1.TabIndex = 3;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -281,7 +286,7 @@
             this.dgv_Them.Location = new System.Drawing.Point(6, 95);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(1029, 831);
+            this.dgv_Them.Size = new System.Drawing.Size(965, 831);
             this.dgv_Them.TabIndex = 2;
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
@@ -355,6 +360,9 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.pic_Ss);
+            this.groupControl1.Controls.Add(this.pic_Warning);
+            this.groupControl1.Controls.Add(this.label6);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.cbb_IDSach);
             this.groupControl1.Controls.Add(this.cbb_IDPhieuNhap);
@@ -368,9 +376,39 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(549, 932);
+            this.groupControl1.Size = new System.Drawing.Size(613, 932);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin chi tiết phiếu nhập sách";
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(549, 78);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(38, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 18;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(549, 80);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(38, 37);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 17;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label6.Location = new System.Drawing.Point(323, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 24);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "label6";
             // 
             // btn_Them
             // 
@@ -385,7 +423,7 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(193, 396);
+            this.btn_Them.Location = new System.Drawing.Point(193, 430);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
@@ -397,7 +435,7 @@
             this.cbb_IDSach.DataSource = this.sACHBindingSource;
             this.cbb_IDSach.DisplayMember = "IDSach";
             this.cbb_IDSach.FormattingEnabled = true;
-            this.cbb_IDSach.Location = new System.Drawing.Point(327, 198);
+            this.cbb_IDSach.Location = new System.Drawing.Point(327, 232);
             this.cbb_IDSach.Name = "cbb_IDSach";
             this.cbb_IDSach.Size = new System.Drawing.Size(216, 44);
             this.cbb_IDSach.TabIndex = 3;
@@ -413,7 +451,7 @@
             this.cbb_IDPhieuNhap.DataSource = this.pHIEUNHAPSACHBindingSource;
             this.cbb_IDPhieuNhap.DisplayMember = "IDPhieuNhap";
             this.cbb_IDPhieuNhap.FormattingEnabled = true;
-            this.cbb_IDPhieuNhap.Location = new System.Drawing.Point(327, 138);
+            this.cbb_IDPhieuNhap.Location = new System.Drawing.Point(327, 172);
             this.cbb_IDPhieuNhap.Name = "cbb_IDPhieuNhap";
             this.cbb_IDPhieuNhap.Size = new System.Drawing.Size(216, 44);
             this.cbb_IDPhieuNhap.TabIndex = 2;
@@ -426,7 +464,7 @@
             // 
             // tb_DonGia
             // 
-            this.tb_DonGia.Location = new System.Drawing.Point(327, 318);
+            this.tb_DonGia.Location = new System.Drawing.Point(327, 352);
             this.tb_DonGia.Name = "tb_DonGia";
             this.tb_DonGia.Size = new System.Drawing.Size(216, 44);
             this.tb_DonGia.TabIndex = 5;
@@ -434,7 +472,7 @@
             // 
             // tb_SoLuong
             // 
-            this.tb_SoLuong.Location = new System.Drawing.Point(327, 258);
+            this.tb_SoLuong.Location = new System.Drawing.Point(327, 292);
             this.tb_SoLuong.Name = "tb_SoLuong";
             this.tb_SoLuong.Size = new System.Drawing.Size(216, 44);
             this.tb_SoLuong.TabIndex = 4;
@@ -447,13 +485,14 @@
             this.tb_IDCTPhieuNhap.Name = "tb_IDCTPhieuNhap";
             this.tb_IDCTPhieuNhap.Size = new System.Drawing.Size(216, 44);
             this.tb_IDCTPhieuNhap.TabIndex = 1;
+            this.tb_IDCTPhieuNhap.TextChanged += new System.EventHandler(this.tb_IDCTPhieuNhap_TextChanged);
             this.tb_IDCTPhieuNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(6, 321);
+            this.label5.Location = new System.Drawing.Point(6, 355);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(130, 36);
             this.label5.TabIndex = 4;
@@ -463,7 +502,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(6, 261);
+            this.label4.Location = new System.Drawing.Point(6, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 36);
             this.label4.TabIndex = 3;
@@ -473,7 +512,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 201);
+            this.label3.Location = new System.Drawing.Point(6, 235);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 36);
             this.label3.TabIndex = 2;
@@ -483,7 +522,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 141);
+            this.label2.Location = new System.Drawing.Point(6, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(216, 36);
             this.label2.TabIndex = 1;
@@ -693,6 +732,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUNHAPSACHBindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
@@ -762,5 +803,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.PictureBox pic_Ss;
+        private System.Windows.Forms.PictureBox pic_Warning;
+        private System.Windows.Forms.Label label6;
     }
 }

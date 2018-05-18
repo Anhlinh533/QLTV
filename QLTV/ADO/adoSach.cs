@@ -83,5 +83,14 @@ namespace QLTV.ADO
             return GiaTien;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatSach.Instance.returnIDSach(ref ID);
+            string sql = "Select *from SACH where IDSach='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

@@ -67,6 +67,9 @@
             this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pHIEUNHAPSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUNHAPSACHTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -85,6 +88,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -123,9 +128,9 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.bindingNavigator1);
             this.groupControl2.Controls.Add(this.dgv_Them);
-            this.groupControl2.Location = new System.Drawing.Point(443, 0);
+            this.groupControl2.Location = new System.Drawing.Point(503, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1259, 982);
+            this.groupControl2.Size = new System.Drawing.Size(1199, 982);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu phiếu nhập sách";
             // 
@@ -154,7 +159,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1253, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1193, 31);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -260,7 +265,7 @@
             this.dgv_Them.Location = new System.Drawing.Point(6, 100);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(1247, 876);
+            this.dgv_Them.Size = new System.Drawing.Size(1187, 876);
             this.dgv_Them.TabIndex = 2;
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
@@ -308,6 +313,9 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.pic_Ss);
+            this.groupControl1.Controls.Add(this.pic_Warning);
+            this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.dtp_NgayNhap);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.tb_IDPhieuNhap);
@@ -315,14 +323,14 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(437, 982);
+            this.groupControl1.Size = new System.Drawing.Size(497, 982);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin phiếu nhập sách";
             // 
             // dtp_NgayNhap
             // 
             this.dtp_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayNhap.Location = new System.Drawing.Point(228, 135);
+            this.dtp_NgayNhap.Location = new System.Drawing.Point(228, 175);
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
             this.dtp_NgayNhap.Size = new System.Drawing.Size(203, 44);
             this.dtp_NgayNhap.TabIndex = 2;
@@ -340,7 +348,7 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(141, 215);
+            this.btn_Them.Location = new System.Drawing.Point(141, 255);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
@@ -354,13 +362,14 @@
             this.tb_IDPhieuNhap.Name = "tb_IDPhieuNhap";
             this.tb_IDPhieuNhap.Size = new System.Drawing.Size(203, 44);
             this.tb_IDPhieuNhap.TabIndex = 1;
+            this.tb_IDPhieuNhap.TextChanged += new System.EventHandler(this.tb_IDPhieuNhap_TextChanged);
             this.tb_IDPhieuNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 141);
+            this.label2.Location = new System.Drawing.Point(6, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 36);
             this.label2.TabIndex = 1;
@@ -507,6 +516,36 @@
             // 
             this.pHIEUNHAPSACHTableAdapter.ClearBeforeFill = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label3.Location = new System.Drawing.Point(224, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 24);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "label3";
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(437, 78);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(41, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 17;
+            this.pic_Warning.TabStop = false;
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(437, 78);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(41, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 18;
+            this.pic_Ss.TabStop = false;
+            // 
             // frmPhieuNhapSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -540,6 +579,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -584,5 +625,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.PictureBox pic_Ss;
+        private System.Windows.Forms.PictureBox pic_Warning;
+        private System.Windows.Forms.Label label3;
     }
 }

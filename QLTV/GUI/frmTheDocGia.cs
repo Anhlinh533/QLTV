@@ -27,6 +27,9 @@ namespace QLTV.GUI
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.LOAIDOCGIA' table. You can move, or remove it, as needed.
             this.lOAIDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.LOAIDOCGIA);
+            label9.Hide();
+            pic_Warning.Hide();
+            pic_Ss.Hide();
         }
 
         #region Event
@@ -122,6 +125,11 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tb_IDDocGia_TextChanged(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.Instance.checkID(ADO.adoTheDocGia.Instance.checkID(tb_IDDocGia.Text.Trim()), label9, tb_IDDocGia, pic_Warning, pic_Ss);
         }
     }
 }

@@ -66,5 +66,14 @@ namespace QLTV.ADO
             return TinhTrang;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatCuonSach.Instance.returnIDCuonSach(ref ID);
+            string sql = "Select *from CUONSACH where IDCuonSach='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

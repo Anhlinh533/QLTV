@@ -26,7 +26,7 @@ namespace QLTV.ADO
                 ADO.ConnectionSQL.instance = value;
             }
         }
-
+        string dataSource = @"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True";
         //#region SLQ
         //private ConnectionSQL() { }
 
@@ -40,7 +40,7 @@ namespace QLTV.ADO
         {
             DataTable data = new DataTable();
 
-            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True"))
+            using (SqlConnection connection = new SqlConnection(dataSource))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
@@ -137,7 +137,7 @@ namespace QLTV.ADO
 
         public void Execute(string sql)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True");
+            SqlConnection con = new SqlConnection(dataSource);
 
             con.InfoMessage += new SqlInfoMessageEventHandler(InfoMessageHandler);
 
@@ -148,16 +148,30 @@ namespace QLTV.ADO
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Thành công", "Chú ý");
+                MessageBox.Show("Thành công!!", "Chú ý!!",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 string str = ex.Message;
                 //str = str.Substring(67);
-                MessageBox.Show(str, "Chú ý");
+                MessageBox.Show(str, "Chú ý",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
 
             con.Close();
+        }
+
+        public bool check(string sql)
+        {
+            SqlConnection con = new SqlConnection(dataSource);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dta = cmd.ExecuteReader();
+
+            if (dta.Read() == true)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -64,5 +64,14 @@ namespace QLTV.ADO
             return NgaySinh;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatTacGia.Instance.returnIDTacGia(ref ID);
+            string sql = "Select *from TACGIA where IDTacGia='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

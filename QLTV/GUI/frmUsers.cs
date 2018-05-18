@@ -24,6 +24,9 @@ namespace QLTV.GUI
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.
             this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
+            label5.Hide();
+            pic_Ss.Hide();
+            pic_Warning.Hide();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -100,6 +103,34 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tb_UserName_TextChanged(object sender, EventArgs e)
+        {
+            if (ADO.adoLogin.Instance.checkUserName(tb_UserName.Text.Trim()) == true)
+            {
+                label5.ForeColor = Color.Red;
+                label5.Text = "UserName này đã tồn tại!!";
+                label5.Show();
+                pic_Warning.Show();
+                pic_Ss.Hide();
+            }
+            else
+            {
+                label5.ForeColor = Color.Green;
+                label5.Text = "Username phù hợp!!";
+                label5.Show();
+                pic_Warning.Hide();
+                pic_Ss.Show();
+            }
+            if (tb_UserName.Text == "")
+            {
+                label5.ForeColor = Color.Red;
+                label5.Text = "Không được để trống ID";
+                label5.Show();
+                pic_Ss.Hide();
+                pic_Warning.Show();
+            }
         }
     }
 }

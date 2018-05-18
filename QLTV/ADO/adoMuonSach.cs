@@ -72,5 +72,14 @@ namespace QLTV.ADO
             return HanTra;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref ID);
+            string sql = "Select *from PHIEUMUON where IDPhieuMuon='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

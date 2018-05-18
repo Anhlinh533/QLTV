@@ -74,6 +74,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -93,6 +96,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -132,9 +137,9 @@
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.Controls.Add(this.bindingNavigator1);
             this.groupControl3.Controls.Add(this.dgv_Them);
-            this.groupControl3.Location = new System.Drawing.Point(440, 0);
+            this.groupControl3.Location = new System.Drawing.Point(501, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1266, 921);
+            this.groupControl3.Size = new System.Drawing.Size(1205, 921);
             this.groupControl3.TabIndex = 5;
             this.groupControl3.Text = "Dữ liệu mượn sách";
             // 
@@ -163,7 +168,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1260, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1199, 31);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -270,7 +275,7 @@
             this.dgv_Them.Location = new System.Drawing.Point(6, 106);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(1254, 809);
+            this.dgv_Them.Size = new System.Drawing.Size(1193, 809);
             this.dgv_Them.TabIndex = 2;
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
@@ -327,6 +332,9 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
+            this.groupControl4.Controls.Add(this.pic_Ss);
+            this.groupControl4.Controls.Add(this.pic_Warning);
+            this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Controls.Add(this.dtp_NgayMuon);
             this.groupControl4.Controls.Add(this.btn_Them);
             this.groupControl4.Controls.Add(this.cbb_IDDocGia);
@@ -336,14 +344,14 @@
             this.groupControl4.Controls.Add(this.label1);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(434, 921);
+            this.groupControl4.Size = new System.Drawing.Size(495, 921);
             this.groupControl4.TabIndex = 4;
             this.groupControl4.Text = "Thông tin mượn sách";
             // 
             // dtp_NgayMuon
             // 
             this.dtp_NgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayMuon.Location = new System.Drawing.Point(238, 195);
+            this.dtp_NgayMuon.Location = new System.Drawing.Point(238, 240);
             this.dtp_NgayMuon.Name = "dtp_NgayMuon";
             this.dtp_NgayMuon.Size = new System.Drawing.Size(190, 44);
             this.dtp_NgayMuon.TabIndex = 3;
@@ -361,7 +369,7 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(138, 270);
+            this.btn_Them.Location = new System.Drawing.Point(138, 315);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
@@ -373,7 +381,7 @@
             this.cbb_IDDocGia.DataSource = this.tHEDOCGIABindingSource;
             this.cbb_IDDocGia.DisplayMember = "IDDocGia";
             this.cbb_IDDocGia.FormattingEnabled = true;
-            this.cbb_IDDocGia.Location = new System.Drawing.Point(238, 138);
+            this.cbb_IDDocGia.Location = new System.Drawing.Point(238, 183);
             this.cbb_IDDocGia.Name = "cbb_IDDocGia";
             this.cbb_IDDocGia.Size = new System.Drawing.Size(190, 44);
             this.cbb_IDDocGia.TabIndex = 2;
@@ -391,13 +399,14 @@
             this.tb_IDPhieuMuon.Name = "tb_IDPhieuMuon";
             this.tb_IDPhieuMuon.Size = new System.Drawing.Size(190, 44);
             this.tb_IDPhieuMuon.TabIndex = 1;
+            this.tb_IDPhieuMuon.TextChanged += new System.EventHandler(this.tb_IDPhieuMuon_TextChanged);
             this.tb_IDPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 201);
+            this.label3.Location = new System.Drawing.Point(6, 246);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 36);
             this.label3.TabIndex = 2;
@@ -407,7 +416,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 141);
+            this.label2.Location = new System.Drawing.Point(6, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 36);
             this.label2.TabIndex = 1;
@@ -568,6 +577,36 @@
             // 
             this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label4.Location = new System.Drawing.Point(234, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 24);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "label4";
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(434, 78);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(38, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 17;
+            this.pic_Warning.TabStop = false;
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(434, 78);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(38, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 18;
+            this.pic_Ss.TabStop = false;
+            // 
             // frmMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -603,6 +642,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -652,5 +693,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.PictureBox pic_Ss;
+        private System.Windows.Forms.PictureBox pic_Warning;
+        private System.Windows.Forms.Label label4;
     }
 }

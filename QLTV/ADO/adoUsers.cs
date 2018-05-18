@@ -57,5 +57,13 @@ namespace QLTV.ADO
             return UserName;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            string sql = "Select *from USERS where UserName='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

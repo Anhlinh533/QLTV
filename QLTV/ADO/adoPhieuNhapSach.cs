@@ -43,5 +43,14 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE PHIEUNHAPSACH SET NgayNhap = '" + dtp_NgayNhap + "' WHERE IDPhieuNhap = '" + tb_IDPhieuNhap + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatPhieuNhapSach.Instance.returnIDPhieuNhapSach(ref ID);
+            string sql = "Select *from PHIEUNHAPSACH where IDPhieuNhap='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

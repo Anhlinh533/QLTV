@@ -24,6 +24,9 @@ namespace QLTV.GUI
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.PHIEUTRA' table. You can move, or remove it, as needed.
             this.pHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUTRA);
+            label4.Hide();
+            pic_Ss.Hide();
+            pic_Warning.Hide();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -107,6 +110,12 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tb_IDPhieuTra_TextChanged(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.Instance.checkID(ADO.adoTraSach.Instance.checkID(tb_IDPhieuTra.Text.Trim()), label4, tb_IDPhieuTra, pic_Warning, pic_Ss);
+
         }
     }
 }

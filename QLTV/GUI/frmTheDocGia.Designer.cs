@@ -91,6 +91,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -110,6 +113,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -149,9 +154,9 @@
             this.groupControl2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupControl2.Controls.Add(this.bindingNavigator1);
             this.groupControl2.Controls.Add(this.dgv_ThemDG);
-            this.groupControl2.Location = new System.Drawing.Point(539, 0);
+            this.groupControl2.Location = new System.Drawing.Point(557, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1278, 931);
+            this.groupControl2.Size = new System.Drawing.Size(1260, 931);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu độc giả";
             // 
@@ -180,7 +185,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1272, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1254, 31);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -292,7 +297,7 @@
             this.dgv_ThemDG.Location = new System.Drawing.Point(3, 98);
             this.dgv_ThemDG.Name = "dgv_ThemDG";
             this.dgv_ThemDG.RowTemplate.Height = 28;
-            this.dgv_ThemDG.Size = new System.Drawing.Size(1272, 830);
+            this.dgv_ThemDG.Size = new System.Drawing.Size(1254, 830);
             this.dgv_ThemDG.TabIndex = 1;
             this.dgv_ThemDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDG_CellClick);
             // 
@@ -393,6 +398,9 @@
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.AutoSize = true;
+            this.groupControl1.Controls.Add(this.pic_Ss);
+            this.groupControl1.Controls.Add(this.pic_Warning);
+            this.groupControl1.Controls.Add(this.label9);
             this.groupControl1.Controls.Add(this.dtp_NgayLapThe);
             this.groupControl1.Controls.Add(this.dtp_NgaySinh);
             this.groupControl1.Controls.Add(this.btn_Them);
@@ -410,14 +418,14 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(533, 931);
+            this.groupControl1.Size = new System.Drawing.Size(551, 931);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin độc giả";
             // 
             // dtp_NgayLapThe
             // 
             this.dtp_NgayLapThe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayLapThe.Location = new System.Drawing.Point(207, 436);
+            this.dtp_NgayLapThe.Location = new System.Drawing.Point(207, 470);
             this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
             this.dtp_NgayLapThe.Size = new System.Drawing.Size(275, 44);
             this.dtp_NgayLapThe.TabIndex = 7;
@@ -425,7 +433,7 @@
             // dtp_NgaySinh
             // 
             this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(207, 196);
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(207, 230);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(275, 44);
             this.dtp_NgaySinh.TabIndex = 3;
@@ -443,7 +451,7 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(144, 534);
+            this.btn_Them.Location = new System.Drawing.Point(144, 568);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(128, 147);
@@ -455,7 +463,7 @@
             this.cbb_LoaiDocGia.DataSource = this.lOAIDOCGIABindingSource;
             this.cbb_LoaiDocGia.DisplayMember = "IDLoaiDG";
             this.cbb_LoaiDocGia.FormattingEnabled = true;
-            this.cbb_LoaiDocGia.Location = new System.Drawing.Point(207, 379);
+            this.cbb_LoaiDocGia.Location = new System.Drawing.Point(207, 413);
             this.cbb_LoaiDocGia.Name = "cbb_LoaiDocGia";
             this.cbb_LoaiDocGia.Size = new System.Drawing.Size(275, 44);
             this.cbb_LoaiDocGia.TabIndex = 6;
@@ -468,21 +476,21 @@
             // 
             // tb_Email
             // 
-            this.tb_Email.Location = new System.Drawing.Point(207, 319);
+            this.tb_Email.Location = new System.Drawing.Point(207, 353);
             this.tb_Email.Name = "tb_Email";
             this.tb_Email.Size = new System.Drawing.Size(275, 44);
             this.tb_Email.TabIndex = 5;
             // 
             // tb_DiaChi
             // 
-            this.tb_DiaChi.Location = new System.Drawing.Point(207, 259);
+            this.tb_DiaChi.Location = new System.Drawing.Point(207, 293);
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(275, 44);
             this.tb_DiaChi.TabIndex = 4;
             // 
             // tb_HoTenDocGia
             // 
-            this.tb_HoTenDocGia.Location = new System.Drawing.Point(207, 139);
+            this.tb_HoTenDocGia.Location = new System.Drawing.Point(207, 173);
             this.tb_HoTenDocGia.Name = "tb_HoTenDocGia";
             this.tb_HoTenDocGia.Size = new System.Drawing.Size(275, 44);
             this.tb_HoTenDocGia.TabIndex = 2;
@@ -494,13 +502,14 @@
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(275, 44);
             this.tb_IDDocGia.TabIndex = 1;
+            this.tb_IDDocGia.TextChanged += new System.EventHandler(this.tb_IDDocGia_TextChanged);
             this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(6, 442);
+            this.label7.Location = new System.Drawing.Point(6, 476);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(195, 36);
             this.label7.TabIndex = 6;
@@ -510,7 +519,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(6, 382);
+            this.label6.Location = new System.Drawing.Point(6, 416);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(185, 36);
             this.label6.TabIndex = 5;
@@ -520,7 +529,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(6, 322);
+            this.label5.Location = new System.Drawing.Point(6, 356);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 36);
             this.label5.TabIndex = 4;
@@ -530,7 +539,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(6, 262);
+            this.label4.Location = new System.Drawing.Point(6, 296);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 36);
             this.label4.TabIndex = 3;
@@ -540,7 +549,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 202);
+            this.label3.Location = new System.Drawing.Point(6, 236);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(157, 36);
             this.label3.TabIndex = 2;
@@ -550,7 +559,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 142);
+            this.label2.Location = new System.Drawing.Point(6, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 36);
             this.label2.TabIndex = 1;
@@ -761,6 +770,36 @@
             // 
             this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label9.Location = new System.Drawing.Point(203, 137);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 24);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "label9";
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(488, 79);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(38, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 16;
+            this.pic_Warning.TabStop = false;
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(488, 79);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(38, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 17;
+            this.pic_Ss.TabStop = false;
+            // 
             // frmTheDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -797,6 +836,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -865,5 +906,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.PictureBox pic_Ss;
+        private System.Windows.Forms.PictureBox pic_Warning;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -44,5 +44,14 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE DAUSACH SET TenDauSach = N'" + tb_TenDauSach + "', IDLoaiSach = '" + cbb_IDTheLoaiSach + "' WHERE IDDauSach = '" + tb_IDDauSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatDauSach.Instance.returnIDDauSach(ref ID);
+            string sql = "Select *from DAUSACH where IDDauSach='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

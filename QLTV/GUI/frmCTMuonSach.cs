@@ -26,6 +26,9 @@ namespace QLTV.GUI
             this.pHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUMUON);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_PHIEUMUON' table. You can move, or remove it, as needed.
             this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+            label5.Hide();
+            pic_Ss.Hide();
+            pic_Warning.Hide();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -110,6 +113,11 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tb_IDCTPhieuMuon_TextChanged(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.Instance.checkID(ADO.adoCTMuonSach.Instance.checkID(tb_IDCTPhieuMuon.Text.Trim()), label5, tb_IDCTPhieuMuon, pic_Warning, pic_Ss);
         }
     }
 }

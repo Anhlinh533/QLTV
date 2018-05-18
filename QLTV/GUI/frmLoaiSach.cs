@@ -22,6 +22,9 @@ namespace QLTV.GUI
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.LOAISACH' table. You can move, or remove it, as needed.
             this.lOAISACHTableAdapter.Fill(this.quanLyThuVienDataSet.LOAISACH);
+            label4.Hide();
+            pic_Ss.Hide();
+            pic_Warning.Hide();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -109,6 +112,12 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tb_IDLoaiSach_TextChanged(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.Instance.checkID(ADO.adoLoaiSach.Instance.checkID(tb_IDLoaiSach.Text.Trim()), label4, tb_IDLoaiSach, pic_Warning, pic_Ss);
+
         }
     }
 }

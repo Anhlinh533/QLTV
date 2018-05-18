@@ -66,5 +66,13 @@ namespace QLTV.ADO
             return IDCuonSach;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            string sql= "Select *from CT_PHIEUMUON where IDCTPhieuMuon='CPM" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

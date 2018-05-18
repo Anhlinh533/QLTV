@@ -31,7 +31,9 @@ namespace QLTV.GUI
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.LOAIDOCGIA' table. You can move, or remove it, as needed.
             this.lOAIDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.LOAIDOCGIA);
-
+            label9.Hide();
+            pic_Ss.Hide();
+            pic_Warning.Hide();
         }
         private void btn_Them_Click(object sender, EventArgs e)
         {
@@ -43,6 +45,26 @@ namespace QLTV.GUI
                 frmDangKiUser dlg2 = new frmDangKiUser(tb_IDDocGia.Text.Trim());
                 dlg2.ShowDialog();
                 this.Close();
+            }
+        }
+
+        private void tb_IDDocGia_TextChanged(object sender, EventArgs e)
+        {
+            if(ADO.adoLogin.Instance.checkIDDocGia(tb_IDDocGia.Text.Trim())==true)
+            {
+                label9.ForeColor = Color.Red;
+                label9.Text = "ID này đã tồn tại!!";
+                label9.Show();
+                pic_Warning.Show();
+                pic_Ss.Hide();
+            }
+            else
+            {
+                label9.ForeColor = Color.Green;
+                label9.Text = "Có thể đăng kí ID này!!";
+                label9.Show();
+                pic_Ss.Show();
+                pic_Warning.Hide();
             }
         }
     }

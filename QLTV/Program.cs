@@ -22,6 +22,7 @@ namespace QLTV
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             Application.Run(new frmLogin
+
                 ());
         }
     }

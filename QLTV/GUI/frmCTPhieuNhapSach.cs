@@ -26,6 +26,9 @@ namespace QLTV.GUI
             this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_PHIEUNHAPSACH' table. You can move, or remove it, as needed.
             this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
+            label6.Hide();
+            pic_Ss.Hide();
+            pic_Warning.Hide();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -112,5 +115,11 @@ namespace QLTV.GUI
         {
             this.Close();
         }
+
+        private void tb_IDCTPhieuNhap_TextChanged(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.Instance.checkID(ADO.adoCTPhieuNhapSach.Instance.checkID(tb_IDCTPhieuNhap.Text.Trim()), label6, tb_IDCTPhieuNhap, pic_Warning, pic_Ss);
+        }
+
     }
 }

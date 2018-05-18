@@ -84,5 +84,14 @@ namespace QLTV.ADO
             return TienPhat;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatCTTraSach.Instance.returnIDCTTraSach(ref ID);
+            string sql = "Select *from CT_PHIEUTRA where IDCTPhieuTra='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

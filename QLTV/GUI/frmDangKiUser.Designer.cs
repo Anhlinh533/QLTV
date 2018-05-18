@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangKiUser));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tb_IDDocGia = new System.Windows.Forms.TextBox();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_Password = new System.Windows.Forms.TextBox();
@@ -41,6 +44,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -63,6 +68,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.pic_Ss);
+            this.groupBox1.Controls.Add(this.pic_Warning);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.tb_IDDocGia);
             this.groupBox1.Controls.Add(this.btn_Them);
             this.groupBox1.Controls.Add(this.tb_Password);
@@ -73,17 +81,47 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(0, 117);
+            this.groupBox1.Location = new System.Drawing.Point(0, 92);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(674, 253);
+            this.groupBox1.Size = new System.Drawing.Size(674, 278);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tài khoản";
             // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(425, 60);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(39, 41);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 26;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(425, 60);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(39, 41);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 25;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(226, 104);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 24);
+            this.label5.TabIndex = 24;
+            // 
             // tb_IDDocGia
             // 
             this.tb_IDDocGia.Enabled = false;
-            this.tb_IDDocGia.Location = new System.Drawing.Point(230, 177);
+            this.tb_IDDocGia.Location = new System.Drawing.Point(230, 182);
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(189, 44);
             this.tb_IDDocGia.TabIndex = 23;
@@ -110,8 +148,9 @@
             // 
             // tb_Password
             // 
-            this.tb_Password.Location = new System.Drawing.Point(230, 117);
+            this.tb_Password.Location = new System.Drawing.Point(230, 128);
             this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '*';
             this.tb_Password.Size = new System.Drawing.Size(189, 44);
             this.tb_Password.TabIndex = 19;
             // 
@@ -122,12 +161,13 @@
             this.tb_UserName.Name = "tb_UserName";
             this.tb_UserName.Size = new System.Drawing.Size(189, 44);
             this.tb_UserName.TabIndex = 17;
+            this.tb_UserName.TextChanged += new System.EventHandler(this.tb_UserName_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(55, 180);
+            this.label3.Location = new System.Drawing.Point(55, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 36);
             this.label3.TabIndex = 20;
@@ -137,7 +177,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(55, 120);
+            this.label2.Location = new System.Drawing.Point(55, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 36);
             this.label2.TabIndex = 18;
@@ -179,6 +219,8 @@
             this.bunifuGradientPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,5 +237,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_IDDocGia;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pic_Warning;
+        private System.Windows.Forms.PictureBox pic_Ss;
     }
 }

@@ -22,7 +22,7 @@ namespace QLTV.GUI
         {
             if(ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim())==true||ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim())==true)
             {
-                MessageBox.Show("Đăng nhập thành công");
+                MessageBox.Show("Đăng nhập thành công","Đăng nhập!!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                 frmMain dlg2 = new frmMain(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim());
                 dlg2.ShowDialog();
             }

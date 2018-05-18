@@ -24,6 +24,9 @@ namespace QLTV.GUI
             this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CUONSACH' table. You can move, or remove it, as needed.
             this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+            label3.Hide();
+            pic_Ss.Hide();
+            pic_Warning.Hide();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -107,6 +110,12 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tb_IDCuonSach_TextChanged(object sender, EventArgs e)
+        {
+            SCRIPT.useForm.Instance.checkID(ADO.adoCuonSach.Instance.checkID(tb_IDCuonSach.Text.Trim()), label3, tb_IDCuonSach, pic_Warning, pic_Ss);
+
         }
     }
 }

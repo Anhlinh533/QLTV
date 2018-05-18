@@ -90,5 +90,14 @@ namespace QLTV.ADO
             return DiaChiDG;
         }
         #endregion
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref ID);
+            string sql = "Select *from THEDOCGIA where IDDocGia='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

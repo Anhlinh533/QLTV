@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -142,6 +143,34 @@ namespace QLTV.SCRIPT
                     PictureBox pictureBox = (PictureBox)control;
                     pictureBox.Hide();
                 }
+            }
+        }
+
+        public void checkID(bool ado,Label lb, TextBox tb,PictureBox Warning, PictureBox Ss)
+        {
+            if (ado==true)
+            {
+                lb.ForeColor = Color.Red;
+                lb.Text = "ID này đã tồn tại!!";
+                lb.Show();
+                Warning.Show();
+                Ss.Hide();
+            }
+            else
+            {
+                lb.ForeColor = Color.Green;
+                lb.Text = "ID phù hợp!!";
+                lb.Show();
+                Warning.Hide();
+                Ss.Show();
+            }
+            if (tb.Text == "")
+            {
+                lb.ForeColor = Color.Red;
+                lb.Text = "Không được để trống ID";
+                lb.Show();
+                Ss.Hide();
+                Warning.Show();
             }
         }
     }
