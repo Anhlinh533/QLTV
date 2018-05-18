@@ -265,9 +265,9 @@ CREATE TABLE BCSACHTRATRE
 --DROP TABLE USERS
 CREATE TABLE USERS
 (
-	UserName varchar(50) PRIMARY KEY NOT NULL, --sửa thành khóa chính
-	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia),
-	Pwd varchar(50) NOT NULL
+	UserName varchar(50) PRIMARY KEY NOT NULL, --sửa thành khóa chính	
+	Pwd varchar(50) NOT NULL,
+	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia)
 )
 
 --DROP TABLE USERADMIN
@@ -279,7 +279,7 @@ CREATE TABLE USERADMIN
 
 INSERT INTO USERADMIN VALUES ('HunterTeam', '05123')
 INSERT INTO USERADMIN VALUES ('baoduy', '05123')
-INSERT INTO USERADMIN VALUES ('sadok125', '25251997')
+INSERT INTO USERADMIN VALUES ('sadok', '123654')
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ THAMSO _______________________________________________________________--
@@ -327,7 +327,7 @@ BEGIN
 
 	IF (DATEDIFF(year, @NGAYSINHDG, @NGAYLAPTHE) < @TUOIMIN OR DATEDIFF(year, @NGAYSINHDG,  @NGAYLAPTHE) > @TUOIMAX)
 	BEGIN
-		PRINT N'Lỗi: Tuổi của độc giả phải từ 18 đến 55'
+		PRINT N'Lỗi: Tuổi của độc giả phải từ ' + CAST(@TUOIMIN AS varchar) + N' đến ' + CAST(@TUOIMAX AS varchar)
 		ROLLBACK TRANSACTION
 	END	
 
@@ -373,7 +373,7 @@ BEGIN
 
 	IF((year(@NGAYNHAP) - @NAMXB) > @KHOANGCACHXB)
 	BEGIN
-		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng 8 năm'
+		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + ' năm'
 		ROLLBACK TRANSACTION
 	END
 
@@ -431,7 +431,7 @@ BEGIN
 
 			IF((year(@NGAYNHAPI) - @NAMXB) > @KHOANGCACHXB)
 			BEGIN
-				PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng 8 năm'
+				PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + ' năm'
 				ROLLBACK TRANSACTION
 			END
 		END
@@ -486,7 +486,7 @@ BEGIN
 
 	IF((year(@NGAYNHAP) - @NAMXB) > @KHOANGCACHXB)
 	BEGIN
-		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng 8 năm'
+		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + ' năm'
 		ROLLBACK TRANSACTION
 	END
 
@@ -631,7 +631,7 @@ BEGIN
 						WHERE C.IDCuonSach = A.IDCuonSach AND C.IDPhieuTra = D.IDPhieuTra
 						AND D.NgayTra < B.NgayMuon))) > @SOSACHMUONMAX		
 	BEGIN
-		PRINT N'Lỗi: Mỗi độc giả chỉ mượn tối đa 5 quyển sách'
+		PRINT N'Lỗi: Mỗi độc giả chỉ mượn tối đa ' + CAST(@SOSACHMUONMAX AS varchar) + ' quyển sách'
 		ROLLBACK TRANSACTION 
 	END	
 
@@ -678,7 +678,7 @@ BEGIN
 
 		IF (@SOTIENTRA > @TIENPHATKYNAY)
 		BEGIN
-			PRINT N'Số tiền trả vượt quá tiền phạt kỳ này. Vui lòng nhập lại số tiền trả'
+			PRINT N'Số tiền trả(Phiếu trả) vượt quá tiền phạt kỳ này. Vui lòng nhập lại số tiền trả'
 
 			UPDATE PHIEUTRA
 			SET TienNoKyNay = 0

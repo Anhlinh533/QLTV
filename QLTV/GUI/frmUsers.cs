@@ -24,7 +24,7 @@ namespace QLTV.GUI
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.
             this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
-        }        
+        }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
@@ -32,8 +32,8 @@ namespace QLTV.GUI
             SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
             if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
             {
-                //Hàm thêm
-
+                ADO.adoUsers.Instance.Them(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+                this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
                 ResetForm();
             }
         }
@@ -42,17 +42,23 @@ namespace QLTV.GUI
         {
             SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
             SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
+            if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
+            {
+                ADO.adoUsers.Instance.Sua(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+                this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
+                ResetForm();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            //if (tb_UserName.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //if (tb_UserName.Text != "")
-            //{
-            //    ADO.adoUsers.Instance.Xoa(tb_UserName.Text);
-            //    this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
-            //    ResetForm();
-            //}
+            if (tb_UserName.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (tb_UserName.Text != "")
+            {
+                ADO.adoUsers.Instance.Xoa(tb_UserName.Text);
+                this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
+                ResetForm();
+            }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -63,13 +69,13 @@ namespace QLTV.GUI
 
         private void btn_IDDelete_Click(object sender, EventArgs e)
         {
-            //if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //if (cbb_IDDelete.Text != "")
-            //{
-            //    ADO.adoUsers.Instance.Xoa(cbb_IDDelete.Text);
-            //    this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
-            //    ResetForm();
-            //}
+            if (cbb_IDDelete.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (cbb_IDDelete.Text != "")
+            {
+                ADO.adoUsers.Instance.Xoa(cbb_IDDelete.Text);
+                this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
+                ResetForm();
+            }
         }
 
         #region Form

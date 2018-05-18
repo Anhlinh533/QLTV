@@ -20,8 +20,8 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-
+            //SCRIPT.useForm.ResetAllControls(groupControl1);
+            ADO.adoHanThe.Instance.Sua(tb_HanThe.Text);
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)

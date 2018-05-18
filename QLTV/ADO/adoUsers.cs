@@ -25,9 +25,23 @@ namespace QLTV.ADO
         }
 
         #region Insert
+        public void Them(string tb_UserName, string tb_Password, string cbb_IDDocGia)
+        {
+            string sqlInsert = "INSERT INTO USERS VALUES ('" + tb_UserName + "', '" + tb_Password + "', '" + cbb_IDDocGia + "')";
+            ADO.ConnectionSQL.Instance.Execute(sqlInsert);
+        }
 
+        public void Xoa(string tb_UserName)
+        {
+            string sqlDelete = "DELETE FROM USERS WHERE UserName ='" + tb_UserName + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlDelete);
+        }
 
-
+        public void Sua(string tb_UserName, string tb_Password, string cbb_IDDocGia)
+        {
+            string sqlUpdate = "UPDATE USERS SET Pwd = '" + tb_Password + "' WHERE UserName = '" + tb_UserName + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
         #endregion
 
         #region TimKiem

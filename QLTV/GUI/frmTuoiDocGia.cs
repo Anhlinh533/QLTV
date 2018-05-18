@@ -24,8 +24,8 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.useForm.ResetAllControls(groupControl1);
-
+            //SCRIPT.useForm.ResetAllControls(groupControl1);
+            ADO.adoTuoiDocGia.Instance.Sua(tb_TuoiMin.Text, tb_TuoiMax.Text);
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
