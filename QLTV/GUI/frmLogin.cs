@@ -24,10 +24,12 @@ namespace QLTV.GUI
             {
                 MessageBox.Show("Đăng nhập thành công","Đăng nhập!!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                 frmMain dlg2 = new frmMain(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim());
+                this.Hide();
                 dlg2.ShowDialog();
+                this.Close();
             }
 
-            if(ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false && ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false)
+            if (ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false && ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false)
             {
                 MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập và mật khẩu!!","Cảnh báo!!",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
@@ -36,7 +38,6 @@ namespace QLTV.GUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btn_DangKi_Click(object sender, EventArgs e)
@@ -44,5 +45,6 @@ namespace QLTV.GUI
             frmDangKi frm = new frmDangKi();
             frm.ShowDialog();
         }
+
     }
 }

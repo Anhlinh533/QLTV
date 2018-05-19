@@ -673,6 +673,7 @@
             this.btn_MatKhau.Name = "btn_MatKhau";
             this.btn_MatKhau.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_MatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_MatKhau_ItemClick);
             // 
             // rib_BaoCao
             // 

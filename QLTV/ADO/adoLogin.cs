@@ -50,5 +50,23 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true) return true;
             return false;
         }
+
+        public bool checkPassWord(string UserName,string Password)
+        {
+            string sql = "Select *from USERS where UserName='" + UserName + "' and Pwd='" + Password + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true) return true;
+            return false;
+        }
+
+        public void DoiMatKhau(string tb_UserName, string tb_Password)
+        {
+            string sqlUpdate = "UPDATE USERS SET Pwd = '" + tb_Password + "' WHERE UserName = '" + tb_UserName + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
+        public void DoiMatKhauAdmin(string tb_UserName, string tb_Password)
+        {
+            string sqlUpdate = "UPDATE USERADMIN SET PasswordAdmin = '" + tb_Password + "' WHERE UserNameAdmin = '" + tb_UserName + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
     }
 }

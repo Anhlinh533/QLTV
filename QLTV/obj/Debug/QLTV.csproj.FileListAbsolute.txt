@@ -1091,3 +1091,4 @@ D:\Mine\5. Study\Projects\QLTV\QLTV\bin\Debug\QLTV.exe.config
 D:\Mine\5. Study\Projects\QLTV\QLTV\obj\Debug\QLTV.exe
 D:\Mine\5. Study\Projects\QLTV\QLTV\obj\Debug\QLTV.pdb
 D:\Mine\5. Study\Projects Test\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDangKiUser.resources
+C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDoiMatKhau.resources

@@ -230,10 +230,14 @@ namespace QLTV
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmReportTinhHinhMuonSach f = new frmReportTinhHinhMuonSach();
-            if (ExistForm(f)) return;
-            f.MdiParent = this;
-            f.Show();
+            frmDoiMatKhau dlg2 = new frmDoiMatKhau(UserName, Password);
+            dlg2.ShowDialog();
+        }
+
+        private void btn_MatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDoiMatKhau dlg2 = new frmDoiMatKhau(UserName, Password);
+            dlg2.ShowDialog();
         }
         #endregion
 
@@ -251,8 +255,8 @@ namespace QLTV
             return false;
         }
         #endregion
-        private string UserName;
-        private string Password;
+        public string UserName;
+        public string Password;
         public frmMain(string user, string pass) : this()
         {
             UserName = user;
@@ -291,7 +295,9 @@ namespace QLTV
 
         private void btn_DangXuat_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
+
+
     }
 }
