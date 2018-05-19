@@ -239,6 +239,11 @@ namespace QLTV
             frmDoiMatKhau dlg2 = new frmDoiMatKhau(UserName, Password);
             dlg2.ShowDialog();
         }
+        private void btn_ThongTin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThongTinUser dlg2 = new frmThongTinUser(UserName, Password);
+            dlg2.ShowDialog();
+        }
         #endregion
 
         #region Function

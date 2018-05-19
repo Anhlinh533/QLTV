@@ -57,6 +57,9 @@
             this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.dtp_NgayLapThe = new System.Windows.Forms.DateTimePicker();
             this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
@@ -91,9 +94,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pic_Warning = new System.Windows.Forms.PictureBox();
-            this.pic_Ss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -106,6 +106,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -113,8 +115,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -421,6 +421,36 @@
             this.groupControl1.Size = new System.Drawing.Size(551, 931);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin độc giả";
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(488, 79);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(38, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 17;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(488, 79);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(38, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 16;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label9.Location = new System.Drawing.Point(203, 137);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 24);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "label9";
             // 
             // dtp_NgayLapThe
             // 
@@ -770,36 +800,6 @@
             // 
             this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label9.Location = new System.Drawing.Point(203, 137);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 24);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "label9";
-            // 
-            // pic_Warning
-            // 
-            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.pic_Warning.Location = new System.Drawing.Point(488, 79);
-            this.pic_Warning.Name = "pic_Warning";
-            this.pic_Warning.Size = new System.Drawing.Size(38, 39);
-            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Warning.TabIndex = 16;
-            this.pic_Warning.TabStop = false;
-            // 
-            // pic_Ss
-            // 
-            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.pic_Ss.Location = new System.Drawing.Point(488, 79);
-            this.pic_Ss.Name = "pic_Ss";
-            this.pic_Ss.Size = new System.Drawing.Size(38, 39);
-            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Ss.TabIndex = 17;
-            this.pic_Ss.TabStop = false;
-            // 
             // frmTheDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -827,6 +827,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             this.item_Xoa.PerformLayout();
@@ -836,8 +838,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
             this.ResumeLayout(false);
 
         }

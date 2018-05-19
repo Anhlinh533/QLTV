@@ -664,6 +664,7 @@
             this.btn_ThongTin.Name = "btn_ThongTin";
             this.btn_ThongTin.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_ThongTin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_ThongTin_ItemClick);
             // 
             // btn_MatKhau
             // 

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace QLTV.ADO
 {
@@ -172,6 +173,33 @@ namespace QLTV.ADO
                 return true;
             }
             return false;
+        }
+
+        public string readData(string sql,string tb,string name)
+        {
+            SqlConnection con = new SqlConnection(dataSource);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dta = cmd.ExecuteReader();
+            //tb = dta.ToString();
+            if (dta.Read())
+            {
+                tb = (dta[name].ToString());
+
+                //tb = dta.GetValue(name).ToString();
+                //tb = dta.GetString(name);
+            }
+            return tb;
+
+            //OleDbConnection cn = new OleDbConnection(dataSource);
+
+            //cn.Open();
+            //OleDbCommand cmd = new OleDbCommand(sql, cn);
+            //OleDbDataReader reader = cmd.ExecuteReader();
+
+            //reader.Read();
+            //tb = reader[name].ToString();
+            //return tb;
         }
     }
 }

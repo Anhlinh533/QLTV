@@ -261,6 +261,12 @@
     <Compile Include="GUI\frmTheDocGia.Designer.cs">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmThongTinUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinUser.Designer.cs">
+      <DependentUpon>frmThongTinUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmTienPhatMoiNgay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -407,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTheDocGia.resx">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinUser.resx">
+      <DependentUpon>frmThongTinUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTienPhatMoiNgay.resx">
       <DependentUpon>frmTienPhatMoiNgay.cs</DependentUpon>
@@ -624,6 +633,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-lock-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
