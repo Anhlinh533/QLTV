@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangKi));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.dtp_NgayLapThe = new System.Windows.Forms.DateTimePicker();
             this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
@@ -51,15 +54,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pic_Warning = new System.Windows.Forms.PictureBox();
-            this.pic_Ss = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -109,6 +109,37 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin độc giả";
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(566, 67);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(37, 36);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 32;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(566, 67);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(37, 36);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 31;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(281, 120);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 24);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "label9";
             // 
             // dtp_NgayLapThe
             // 
@@ -284,37 +315,6 @@
             // 
             this.lOAIDOCGIATableAdapter.ClearBeforeFill = true;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(281, 120);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 24);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "label9";
-            // 
-            // pic_Warning
-            // 
-            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.pic_Warning.Location = new System.Drawing.Point(566, 67);
-            this.pic_Warning.Name = "pic_Warning";
-            this.pic_Warning.Size = new System.Drawing.Size(37, 36);
-            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Warning.TabIndex = 31;
-            this.pic_Warning.TabStop = false;
-            // 
-            // pic_Ss
-            // 
-            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.pic_Ss.Location = new System.Drawing.Point(566, 67);
-            this.pic_Ss.Name = "pic_Ss";
-            this.pic_Ss.Size = new System.Drawing.Size(37, 36);
-            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Ss.TabIndex = 32;
-            this.pic_Ss.TabStop = false;
-            // 
             // frmDangKi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -322,6 +322,7 @@
             this.ClientSize = new System.Drawing.Size(635, 846);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDangKi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng kí thông tin độc giả";
@@ -330,10 +331,10 @@
             this.bunifuGradientPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIDOCGIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -127,7 +127,7 @@
             this.tb_TongNo.Location = new System.Drawing.Point(1005, 585);
             this.tb_TongNo.Name = "tb_TongNo";
             this.tb_TongNo.Size = new System.Drawing.Size(265, 44);
-            this.tb_TongNo.TabIndex = 36;
+            this.tb_TongNo.TabIndex = 10;
             // 
             // label11
             // 
@@ -146,7 +146,7 @@
             this.dtp_NgayHetHan.Location = new System.Drawing.Point(1005, 526);
             this.dtp_NgayHetHan.Name = "dtp_NgayHetHan";
             this.dtp_NgayHetHan.Size = new System.Drawing.Size(265, 44);
-            this.dtp_NgayHetHan.TabIndex = 34;
+            this.dtp_NgayHetHan.TabIndex = 9;
             // 
             // label10
             // 
@@ -174,15 +174,16 @@
             this.tb_UserName.Location = new System.Drawing.Point(1005, 51);
             this.tb_UserName.Name = "tb_UserName";
             this.tb_UserName.Size = new System.Drawing.Size(265, 44);
-            this.tb_UserName.TabIndex = 31;
+            this.tb_UserName.TabIndex = 1;
             // 
             // dtp_NgayLapThe
             // 
+            this.dtp_NgayLapThe.Enabled = false;
             this.dtp_NgayLapThe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayLapThe.Location = new System.Drawing.Point(1005, 464);
             this.dtp_NgayLapThe.Name = "dtp_NgayLapThe";
             this.dtp_NgayLapThe.Size = new System.Drawing.Size(265, 44);
-            this.dtp_NgayLapThe.TabIndex = 29;
+            this.dtp_NgayLapThe.TabIndex = 8;
             // 
             // dtp_NgaySinh
             // 
@@ -190,25 +191,25 @@
             this.dtp_NgaySinh.Location = new System.Drawing.Point(1005, 224);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(265, 44);
-            this.dtp_NgaySinh.TabIndex = 21;
+            this.dtp_NgaySinh.TabIndex = 4;
             // 
             // btn_Them
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_Them.color = System.Drawing.Color.SeaGreen;
-            this.btn_Them.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btn_Them.BackColor = System.Drawing.Color.Lime;
+            this.btn_Them.color = System.Drawing.Color.Lime;
+            this.btn_Them.colorActive = System.Drawing.Color.Lime;
             this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_next_page_96;
+            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
             this.btn_Them.ImagePosition = 20;
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
-            this.btn_Them.LabelText = "Thêm";
+            this.btn_Them.LabelText = "Sửa";
             this.btn_Them.Location = new System.Drawing.Point(992, 669);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 147);
+            this.btn_Them.Size = new System.Drawing.Size(128, 132);
             this.btn_Them.TabIndex = 30;
             // 
             // cbb_LoaiDocGia
@@ -219,7 +220,7 @@
             this.cbb_LoaiDocGia.Location = new System.Drawing.Point(1005, 407);
             this.cbb_LoaiDocGia.Name = "cbb_LoaiDocGia";
             this.cbb_LoaiDocGia.Size = new System.Drawing.Size(265, 44);
-            this.cbb_LoaiDocGia.TabIndex = 27;
+            this.cbb_LoaiDocGia.TabIndex = 7;
             this.cbb_LoaiDocGia.ValueMember = "IDLoaiDG";
             // 
             // tb_Email
@@ -227,21 +228,21 @@
             this.tb_Email.Location = new System.Drawing.Point(1005, 347);
             this.tb_Email.Name = "tb_Email";
             this.tb_Email.Size = new System.Drawing.Size(265, 44);
-            this.tb_Email.TabIndex = 25;
+            this.tb_Email.TabIndex = 6;
             // 
             // tb_DiaChi
             // 
             this.tb_DiaChi.Location = new System.Drawing.Point(1005, 287);
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(265, 44);
-            this.tb_DiaChi.TabIndex = 23;
+            this.tb_DiaChi.TabIndex = 5;
             // 
             // tb_HoTenDocGia
             // 
             this.tb_HoTenDocGia.Location = new System.Drawing.Point(1005, 167);
             this.tb_HoTenDocGia.Name = "tb_HoTenDocGia";
             this.tb_HoTenDocGia.Size = new System.Drawing.Size(265, 44);
-            this.tb_HoTenDocGia.TabIndex = 19;
+            this.tb_HoTenDocGia.TabIndex = 3;
             // 
             // tb_IDDocGia
             // 
@@ -250,7 +251,7 @@
             this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(265, 44);
-            this.tb_IDDocGia.TabIndex = 17;
+            this.tb_IDDocGia.TabIndex = 2;
             // 
             // label7
             // 
@@ -341,9 +342,10 @@
             this.ClientSize = new System.Drawing.Size(1374, 1095);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmThongTinUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmThongTinUser";
+            this.Text = "Thông tin độc giả";
             this.Load += new System.EventHandler(this.frmThongTinUser_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();

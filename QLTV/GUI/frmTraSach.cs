@@ -95,7 +95,7 @@ namespace QLTV.GUI
             tb_IDPhieuTra.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
             cbb_IDDocGia.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
             dtp_NgayTra.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
-            tb_SoTienTra.Text = dgv_Them.Rows[numrow].Cells[3].Value.ToString();
+            tb_SoTienTra.Text = dgv_Them.Rows[numrow].Cells[4].Value.ToString();
         }
 
         public void ResetForm()
