@@ -273,13 +273,25 @@ CREATE TABLE USERS
 --DROP TABLE USERADMIN
 CREATE TABLE USERADMIN
 (
-	UserNameAdmin varchar(50),
-	PasswordAdmin varchar(50)
+	IDAdmin varchar(6) PRIMARY KEY NOT NULL, --- 21/5
+	UserNameAdmin varchar(50) NOT NULL,
+	PasswordAdmin varchar(50) NOT NULL
 )
 
 INSERT INTO USERADMIN VALUES ('HunterTeam', '05123')
 INSERT INTO USERADMIN VALUES ('baoduy', '05123')
 INSERT INTO USERADMIN VALUES ('sadok', '123654')
+
+--DROP TABLE CT_USERADMIN --- 21/5
+CREATE TABLE CT_USERADMIN
+(
+	IDCTAdMin varchar(6) PRIMARY KEY NOT NULL,
+	IDAdmin varchar(6) FOREIGN KEY REFERENCES USERADMIN(IDAdmin),
+	HoTenAdmin nvarchar(50) NOT NULL,
+	NgaySinhAdmin datetime NOT NULL,
+	DiaChiAdmin nvarchar(50) NOT NULL,
+	EmailAdmin varchar(30) NOT NULL
+)
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ THAMSO _______________________________________________________________--

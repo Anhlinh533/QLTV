@@ -1380,3 +1380,5 @@ C:\Users\BaoDuy\Documents\GitHub\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResourc
 C:\Users\BaoDuy\Documents\GitHub\QLTV\QLTV\obj\Debug\QLTV.exe.licenses
 C:\Users\BaoDuy\Documents\GitHub\QLTV\QLTV\obj\Debug\RdlCompile.cache
 C:\Users\BaoDuy\Documents\GitHub\QLTV\QLTV\obj\Debug\RdlCompile.compiled
+D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmDoiMatKhau.resources
+D:\Mine\5. Study\Projects\C#\QLTV\QLTV\obj\Debug\QLTV.GUI.frmThongTinUser.resources

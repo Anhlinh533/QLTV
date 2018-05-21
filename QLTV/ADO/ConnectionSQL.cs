@@ -27,7 +27,7 @@ namespace QLTV.ADO
                 ADO.ConnectionSQL.instance = value;
             }
         }
-        string dataSource = @"Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
         //#region SLQ
         //private ConnectionSQL() { }
 

@@ -102,6 +102,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO\adoAdmin.cs" />
+    <Compile Include="ADO\adoCTAdmin.cs" />
     <Compile Include="ADO\adoCTMuonSach.cs" />
     <Compile Include="ADO\adoCTPhieuNhapSach.cs" />
     <Compile Include="ADO\adoCTTacGia.cs" />
@@ -330,6 +332,8 @@
       <DependentUpon>QuanLyThuVienDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SCRIPT\checkType.cs" />
+    <Compile Include="SCRIPT\formatAdmin.cs" />
+    <Compile Include="SCRIPT\formatCTAdmin.cs" />
     <Compile Include="SCRIPT\formatCTMuonSach.cs" />
     <Compile Include="SCRIPT\formatCTPhieuNhapSach.cs" />
     <Compile Include="SCRIPT\formatCTTacGia.cs" />
