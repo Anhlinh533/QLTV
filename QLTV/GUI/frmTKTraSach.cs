@@ -161,5 +161,58 @@ namespace QLTV.GUI
                 e.Handled = true;
         }
         #endregion
+        #region check on click
+
+        private void tb_IDPhieuTra_Click(object sender, EventArgs e)
+        {
+            rdb_IDPhieuTra.Checked = true;
+        }
+
+        private void tb_IDDocGia_Click(object sender, EventArgs e)
+        {
+            rdb_IDDocGia.Checked = true;
+        }
+
+        private void tb_TienPhatKiNay_Click(object sender, EventArgs e)
+        {
+            rdb_TienPhatKiNay.Checked = true;
+        }
+
+        private void tb_SoTienTra_Click(object sender, EventArgs e)
+        {
+            rdb_SoTienTra.Checked = true;
+        }
+
+        private void tb_TienNoKiNay_Click(object sender, EventArgs e)
+        {
+            rdb_TienNoKiNay.Checked = true;
+        }
+
+        private void tb_IDCTPhieuTra_Click(object sender, EventArgs e)
+        {
+            rdb_IDCTPhieuTra.Checked = true;
+        }
+
+        private void tb_IDPhieuTraCT_Click(object sender, EventArgs e)
+        {
+            rdb_IDPhieuTraCT.Checked = true;
+        }
+
+        private void tb_IDCTPhieuMuon_Click(object sender, EventArgs e)
+        {
+            rdb_IDPhieuMuon.Checked = true;
+        }
+
+        private void tb_SoNgayMuon_Click(object sender, EventArgs e)
+        {
+            rdb_SoNgayMuon.Checked = true;
+        }
+
+        private void tb_TienPhat_Click(object sender, EventArgs e)
+        {
+            rdb_TienPhat.Checked = true;
+        }
+        #endregion
     }
+
 }

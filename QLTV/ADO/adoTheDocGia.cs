@@ -62,7 +62,7 @@ namespace QLTV.ADO
 
         public string TKNgaySinhDG(string NgaySinhDG)
         {
-            NgaySinhDG = "Select * from THEDOCGIA where NgaySinhDG like '%" + NgaySinhDG + "%' ";
+            NgaySinhDG = "Select * from THEDOCGIA where NgaySinhDG='" + NgaySinhDG + "' ";
             return NgaySinhDG;
         }
 
@@ -80,7 +80,7 @@ namespace QLTV.ADO
 
         public string TKNgayLapThe(string NgayLapThe)
         {
-            NgayLapThe = "Select * from THEDOCGIA where NgayLapThe like '%" + NgayLapThe + "%' ";
+            NgayLapThe = "Select * from THEDOCGIA where NgayLapThe='" + NgayLapThe + "' ";
             return NgayLapThe;
         }
 

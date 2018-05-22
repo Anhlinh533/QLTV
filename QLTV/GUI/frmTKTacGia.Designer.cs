@@ -107,7 +107,7 @@
             this.navigationPage1.Controls.Add(this.groupControl3);
             this.navigationPage1.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_user_48;
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(1456, 1017);
+            this.navigationPage1.Size = new System.Drawing.Size(1456, 1018);
             // 
             // groupControl4
             // 
@@ -135,10 +135,10 @@
             this.ngaySinhDataGridViewTextBoxColumn});
             this.dgv_TKTacGia.DataSource = this.tACGIABindingSource;
             this.dgv_TKTacGia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKTacGia.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKTacGia.Location = new System.Drawing.Point(2, 45);
             this.dgv_TKTacGia.Name = "dgv_TKTacGia";
             this.dgv_TKTacGia.RowTemplate.Height = 28;
-            this.dgv_TKTacGia.Size = new System.Drawing.Size(972, 967);
+            this.dgv_TKTacGia.Size = new System.Drawing.Size(974, 970);
             this.dgv_TKTacGia.TabIndex = 0;
             // 
             // iDTacGiaDataGridViewTextBoxColumn
@@ -231,6 +231,7 @@
             this.tb_TenTacGia.Name = "tb_TenTacGia";
             this.tb_TenTacGia.Size = new System.Drawing.Size(235, 44);
             this.tb_TenTacGia.TabIndex = 2;
+            this.tb_TenTacGia.Click += new System.EventHandler(this.tb_TenTacGia_Click);
             // 
             // tb_IDTacGia
             // 
@@ -238,6 +239,7 @@
             this.tb_IDTacGia.Name = "tb_IDTacGia";
             this.tb_IDTacGia.Size = new System.Drawing.Size(235, 44);
             this.tb_IDTacGia.TabIndex = 1;
+            this.tb_IDTacGia.Click += new System.EventHandler(this.tb_IDTacGia_Click);
             // 
             // rdb_NgaySinh
             // 
@@ -281,7 +283,7 @@
             this.navigationPage2.Controls.Add(this.groupControl1);
             this.navigationPage2.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_administrator_male_80;
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(1456, 1017);
+            this.navigationPage2.Size = new System.Drawing.Size(1456, 1018);
             // 
             // groupControl2
             // 
@@ -306,10 +308,10 @@
             this.iDTacGiaDataGridViewTextBoxColumn1});
             this.dgv_TKCTTacGia.DataSource = this.cTTACGIABindingSource;
             this.dgv_TKCTTacGia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKCTTacGia.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKCTTacGia.Location = new System.Drawing.Point(2, 45);
             this.dgv_TKCTTacGia.Name = "dgv_TKCTTacGia";
             this.dgv_TKCTTacGia.RowTemplate.Height = 28;
-            this.dgv_TKCTTacGia.Size = new System.Drawing.Size(944, 967);
+            this.dgv_TKCTTacGia.Size = new System.Drawing.Size(946, 970);
             this.dgv_TKCTTacGia.TabIndex = 0;
             // 
             // iDCTTacGiaDataGridViewTextBoxColumn
@@ -364,7 +366,7 @@
             this.groupControl1.Controls.Add(this.rdb_IDCTTacGia);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(501, 1017);
+            this.groupControl1.Size = new System.Drawing.Size(501, 1018);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm theo";
             // 
@@ -374,6 +376,7 @@
             this.tb_IDTacGiaCT.Name = "tb_IDTacGiaCT";
             this.tb_IDTacGiaCT.Size = new System.Drawing.Size(215, 44);
             this.tb_IDTacGiaCT.TabIndex = 3;
+            this.tb_IDTacGiaCT.Click += new System.EventHandler(this.tb_IDTacGiaCT_Click);
             // 
             // tb_IDDauSach
             // 
@@ -381,6 +384,7 @@
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(215, 44);
             this.tb_IDDauSach.TabIndex = 2;
+            this.tb_IDDauSach.Click += new System.EventHandler(this.tb_IDDauSach_Click);
             // 
             // tb_IDCTTacGia
             // 
@@ -388,6 +392,7 @@
             this.tb_IDCTTacGia.Name = "tb_IDCTTacGia";
             this.tb_IDCTTacGia.Size = new System.Drawing.Size(215, 44);
             this.tb_IDCTTacGia.TabIndex = 1;
+            this.tb_IDCTTacGia.Click += new System.EventHandler(this.tb_IDCTTacGia_Click);
             // 
             // btn_TKCTTacGia
             // 

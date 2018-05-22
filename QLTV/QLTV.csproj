@@ -264,6 +264,18 @@
     <Compile Include="GUI\frmTheDocGia.Designer.cs">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmThongTinAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinAdmin.Designer.cs">
+      <DependentUpon>frmThongTinAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThongTinPhanMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinPhanMem.Designer.cs">
+      <DependentUpon>frmThongTinPhanMem.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmThongTinUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -418,6 +430,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmTheDocGia.resx">
       <DependentUpon>frmTheDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinAdmin.resx">
+      <DependentUpon>frmThongTinAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinPhanMem.resx">
+      <DependentUpon>frmThongTinPhanMem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThongTinUser.resx">
       <DependentUpon>frmThongTinUser.cs</DependentUpon>
@@ -644,6 +662,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-businessman-480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-windows-client-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -120,7 +120,7 @@
             this.navigationPage1.Controls.Add(this.groupControl3);
             this.navigationPage1.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_64;
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(1636, 1001);
+            this.navigationPage1.Size = new System.Drawing.Size(1636, 1002);
             // 
             // groupControl4
             // 
@@ -151,10 +151,10 @@
             this.tienNoKyNayDataGridViewTextBoxColumn});
             this.dgv_TKTraSach.DataSource = this.pHIEUTRABindingSource;
             this.dgv_TKTraSach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKTraSach.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKTraSach.Location = new System.Drawing.Point(2, 45);
             this.dgv_TKTraSach.Name = "dgv_TKTraSach";
             this.dgv_TKTraSach.RowTemplate.Height = 28;
-            this.dgv_TKTraSach.Size = new System.Drawing.Size(1110, 951);
+            this.dgv_TKTraSach.Size = new System.Drawing.Size(1112, 954);
             this.dgv_TKTraSach.TabIndex = 0;
             // 
             // iDPhieuTraDataGridViewTextBoxColumn
@@ -277,6 +277,7 @@
             this.tb_TienNoKiNay.Name = "tb_TienNoKiNay";
             this.tb_TienNoKiNay.Size = new System.Drawing.Size(202, 44);
             this.tb_TienNoKiNay.TabIndex = 6;
+            this.tb_TienNoKiNay.Click += new System.EventHandler(this.tb_TienNoKiNay_Click);
             this.tb_TienNoKiNay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoTienTra
@@ -285,6 +286,7 @@
             this.tb_SoTienTra.Name = "tb_SoTienTra";
             this.tb_SoTienTra.Size = new System.Drawing.Size(202, 44);
             this.tb_SoTienTra.TabIndex = 5;
+            this.tb_SoTienTra.Click += new System.EventHandler(this.tb_SoTienTra_Click);
             this.tb_SoTienTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuTra
@@ -293,6 +295,7 @@
             this.tb_IDPhieuTra.Name = "tb_IDPhieuTra";
             this.tb_IDPhieuTra.Size = new System.Drawing.Size(202, 44);
             this.tb_IDPhieuTra.TabIndex = 1;
+            this.tb_IDPhieuTra.Click += new System.EventHandler(this.tb_IDPhieuTra_Click);
             this.tb_IDPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDDocGia
@@ -301,6 +304,7 @@
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(202, 44);
             this.tb_IDDocGia.TabIndex = 2;
+            this.tb_IDDocGia.Click += new System.EventHandler(this.tb_IDDocGia_Click);
             this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_TienPhatKiNay
@@ -309,6 +313,7 @@
             this.tb_TienPhatKiNay.Name = "tb_TienPhatKiNay";
             this.tb_TienPhatKiNay.Size = new System.Drawing.Size(202, 44);
             this.tb_TienPhatKiNay.TabIndex = 4;
+            this.tb_TienPhatKiNay.Click += new System.EventHandler(this.tb_TienPhatKiNay_Click);
             this.tb_TienPhatKiNay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_TienNoKiNay
@@ -391,7 +396,7 @@
             this.navigationPage2.Controls.Add(this.groupControl1);
             this.navigationPage2.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_40;
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(1636, 1001);
+            this.navigationPage2.Size = new System.Drawing.Size(1636, 1002);
             // 
             // groupControl2
             // 
@@ -405,7 +410,7 @@
             this.groupControl2.Controls.Add(this.dgv_TKCTPhieuTraSach);
             this.groupControl2.Location = new System.Drawing.Point(578, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1059, 1001);
+            this.groupControl2.Size = new System.Drawing.Size(1059, 1002);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu thông tin chi tiết phiếu trả sách";
             // 
@@ -421,10 +426,10 @@
             this.tienPhatDataGridViewTextBoxColumn});
             this.dgv_TKCTPhieuTraSach.DataSource = this.cTPHIEUTRABindingSource;
             this.dgv_TKCTPhieuTraSach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKCTPhieuTraSach.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKCTPhieuTraSach.Location = new System.Drawing.Point(2, 45);
             this.dgv_TKCTPhieuTraSach.Name = "dgv_TKCTPhieuTraSach";
             this.dgv_TKCTPhieuTraSach.RowTemplate.Height = 28;
-            this.dgv_TKCTPhieuTraSach.Size = new System.Drawing.Size(1053, 951);
+            this.dgv_TKCTPhieuTraSach.Size = new System.Drawing.Size(1055, 955);
             this.dgv_TKCTPhieuTraSach.TabIndex = 0;
             // 
             // iDCTPhieuTraDataGridViewTextBoxColumn
@@ -494,7 +499,7 @@
             this.groupControl1.Controls.Add(this.rdb_IDCTPhieuTra);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(572, 1001);
+            this.groupControl1.Size = new System.Drawing.Size(572, 1002);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm theo";
             // 
@@ -524,6 +529,7 @@
             this.tb_TienPhat.Name = "tb_TienPhat";
             this.tb_TienPhat.Size = new System.Drawing.Size(198, 44);
             this.tb_TienPhat.TabIndex = 6;
+            this.tb_TienPhat.Click += new System.EventHandler(this.tb_TienPhat_Click);
             this.tb_TienPhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoNgayMuon
@@ -532,6 +538,7 @@
             this.tb_SoNgayMuon.Name = "tb_SoNgayMuon";
             this.tb_SoNgayMuon.Size = new System.Drawing.Size(198, 44);
             this.tb_SoNgayMuon.TabIndex = 5;
+            this.tb_SoNgayMuon.Click += new System.EventHandler(this.tb_SoNgayMuon_Click);
             this.tb_SoNgayMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuMuon
@@ -540,6 +547,7 @@
             this.tb_IDCTPhieuMuon.Name = "tb_IDCTPhieuMuon";
             this.tb_IDCTPhieuMuon.Size = new System.Drawing.Size(198, 44);
             this.tb_IDCTPhieuMuon.TabIndex = 4;
+            this.tb_IDCTPhieuMuon.Click += new System.EventHandler(this.tb_IDCTPhieuMuon_Click);
             this.tb_IDCTPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDPhieuTraCT
@@ -548,6 +556,7 @@
             this.tb_IDPhieuTraCT.Name = "tb_IDPhieuTraCT";
             this.tb_IDPhieuTraCT.Size = new System.Drawing.Size(198, 44);
             this.tb_IDPhieuTraCT.TabIndex = 2;
+            this.tb_IDPhieuTraCT.Click += new System.EventHandler(this.tb_IDPhieuTraCT_Click);
             this.tb_IDPhieuTraCT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuTra
@@ -556,6 +565,7 @@
             this.tb_IDCTPhieuTra.Name = "tb_IDCTPhieuTra";
             this.tb_IDCTPhieuTra.Size = new System.Drawing.Size(198, 44);
             this.tb_IDCTPhieuTra.TabIndex = 1;
+            this.tb_IDCTPhieuTra.Click += new System.EventHandler(this.tb_IDCTPhieuTra_Click);
             this.tb_IDCTPhieuTra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_TienPhat

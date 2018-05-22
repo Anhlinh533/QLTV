@@ -76,6 +76,7 @@
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
+            this.btn_ResetDG = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKDocGia.SuspendLayout();
@@ -119,7 +120,7 @@
             this.item_TKDocGia.Controls.Add(this.groupControl1);
             this.item_TKDocGia.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_user_48;
             this.item_TKDocGia.Name = "item_TKDocGia";
-            this.item_TKDocGia.Size = new System.Drawing.Size(1716, 964);
+            this.item_TKDocGia.Size = new System.Drawing.Size(1716, 965);
             // 
             // groupControl2
             // 
@@ -153,10 +154,10 @@
             this.tongNoDataGridViewTextBoxColumn});
             this.dgv_TKDocGia.DataSource = this.tHEDOCGIABindingSource;
             this.dgv_TKDocGia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKDocGia.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKDocGia.Location = new System.Drawing.Point(2, 45);
             this.dgv_TKDocGia.Name = "dgv_TKDocGia";
             this.dgv_TKDocGia.RowTemplate.Height = 28;
-            this.dgv_TKDocGia.Size = new System.Drawing.Size(1223, 914);
+            this.dgv_TKDocGia.Size = new System.Drawing.Size(1225, 917);
             this.dgv_TKDocGia.TabIndex = 0;
             // 
             // iDDocGiaDataGridViewTextBoxColumn
@@ -250,6 +251,7 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_ResetDG);
             this.groupControl1.Controls.Add(this.dtp_NgayLapThe);
             this.groupControl1.Controls.Add(this.dtp_NgaySinh);
             this.groupControl1.Controls.Add(this.btn_TKDocGia);
@@ -300,7 +302,7 @@
             this.btn_TKDocGia.ImageZoom = 50;
             this.btn_TKDocGia.LabelPosition = 41;
             this.btn_TKDocGia.LabelText = "Tìm kiếm";
-            this.btn_TKDocGia.Location = new System.Drawing.Point(156, 513);
+            this.btn_TKDocGia.Location = new System.Drawing.Point(71, 509);
             this.btn_TKDocGia.Margin = new System.Windows.Forms.Padding(6);
             this.btn_TKDocGia.Name = "btn_TKDocGia";
             this.btn_TKDocGia.Size = new System.Drawing.Size(155, 162);
@@ -314,6 +316,7 @@
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(230, 44);
             this.tb_IDDocGia.TabIndex = 1;
+            this.tb_IDDocGia.Click += new System.EventHandler(this.tb_IDDocGia_Click);
             this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_HoTen
@@ -322,6 +325,7 @@
             this.tb_HoTen.Name = "tb_HoTen";
             this.tb_HoTen.Size = new System.Drawing.Size(230, 44);
             this.tb_HoTen.TabIndex = 2;
+            this.tb_HoTen.Click += new System.EventHandler(this.tb_HoTen_Click);
             this.tb_HoTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // tb_DiaChi
@@ -330,6 +334,7 @@
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(230, 44);
             this.tb_DiaChi.TabIndex = 4;
+            this.tb_DiaChi.Click += new System.EventHandler(this.tb_DiaChi_Click);
             // 
             // tb_Email
             // 
@@ -337,6 +342,7 @@
             this.tb_Email.Name = "tb_Email";
             this.tb_Email.Size = new System.Drawing.Size(230, 44);
             this.tb_Email.TabIndex = 5;
+            this.tb_Email.Click += new System.EventHandler(this.tb_Email_Click);
             // 
             // cbb_LoaiDocGia
             // 
@@ -348,6 +354,7 @@
             this.cbb_LoaiDocGia.Size = new System.Drawing.Size(230, 44);
             this.cbb_LoaiDocGia.TabIndex = 6;
             this.cbb_LoaiDocGia.ValueMember = "IDLoaiDG";
+            this.cbb_LoaiDocGia.Click += new System.EventHandler(this.cbb_LoaiDocGia_Click);
             // 
             // lOAIDOCGIABindingSource
             // 
@@ -440,7 +447,7 @@
             this.item_TKUsers.Controls.Add(this.groupControl3);
             this.item_TKUsers.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_administrator_male_48;
             this.item_TKUsers.Name = "item_TKUsers";
-            this.item_TKUsers.Size = new System.Drawing.Size(1716, 964);
+            this.item_TKUsers.Size = new System.Drawing.Size(1716, 965);
             // 
             // groupControl4
             // 
@@ -454,7 +461,7 @@
             this.groupControl4.Controls.Add(this.dgv_TKUser);
             this.groupControl4.Location = new System.Drawing.Point(466, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(1250, 928);
+            this.groupControl4.Size = new System.Drawing.Size(1250, 962);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu User";
             // 
@@ -472,7 +479,7 @@
             this.dgv_TKUser.Location = new System.Drawing.Point(6, 50);
             this.dgv_TKUser.Name = "dgv_TKUser";
             this.dgv_TKUser.RowTemplate.Height = 28;
-            this.dgv_TKUser.Size = new System.Drawing.Size(1238, 872);
+            this.dgv_TKUser.Size = new System.Drawing.Size(1238, 906);
             this.dgv_TKUser.TabIndex = 0;
             // 
             // userNameDataGridViewTextBoxColumn
@@ -512,7 +519,7 @@
             this.groupControl3.Controls.Add(this.rdb_User);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(460, 964);
+            this.groupControl3.Size = new System.Drawing.Size(460, 965);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm User theo";
             // 
@@ -529,7 +536,7 @@
             this.btn_TKUser.ImageZoom = 50;
             this.btn_TKUser.LabelPosition = 41;
             this.btn_TKUser.LabelText = "Tìm kiếm";
-            this.btn_TKUser.Location = new System.Drawing.Point(135, 205);
+            this.btn_TKUser.Location = new System.Drawing.Point(50, 205);
             this.btn_TKUser.Margin = new System.Windows.Forms.Padding(6);
             this.btn_TKUser.Name = "btn_TKUser";
             this.btn_TKUser.Size = new System.Drawing.Size(155, 162);
@@ -542,6 +549,7 @@
             this.tb_TenUser.Name = "tb_TenUser";
             this.tb_TenUser.Size = new System.Drawing.Size(255, 44);
             this.tb_TenUser.TabIndex = 1;
+            this.tb_TenUser.Click += new System.EventHandler(this.tb_TenUser_Click);
             // 
             // tb_IDUser
             // 
@@ -550,6 +558,7 @@
             this.tb_IDUser.Name = "tb_IDUser";
             this.tb_IDUser.Size = new System.Drawing.Size(255, 44);
             this.tb_IDUser.TabIndex = 2;
+            this.tb_IDUser.Click += new System.EventHandler(this.tb_IDUser_Click);
             this.tb_IDUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_UserIDDocGia
@@ -560,13 +569,13 @@
             this.rdb_UserIDDocGia.Name = "rdb_UserIDDocGia";
             this.rdb_UserIDDocGia.Size = new System.Drawing.Size(187, 40);
             this.rdb_UserIDDocGia.TabIndex = 1;
-            this.rdb_UserIDDocGia.TabStop = true;
             this.rdb_UserIDDocGia.Text = "ID độc giả:";
             this.rdb_UserIDDocGia.UseVisualStyleBackColor = true;
             // 
             // rdb_User
             // 
             this.rdb_User.AutoSize = true;
+            this.rdb_User.Checked = true;
             this.rdb_User.ForeColor = System.Drawing.Color.Red;
             this.rdb_User.Location = new System.Drawing.Point(6, 66);
             this.rdb_User.Name = "rdb_User";
@@ -587,6 +596,26 @@
             // uSERSTableAdapter
             // 
             this.uSERSTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_ResetDG
+            // 
+            this.btn_ResetDG.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_ResetDG.color = System.Drawing.Color.SeaGreen;
+            this.btn_ResetDG.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btn_ResetDG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ResetDG.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btn_ResetDG.ForeColor = System.Drawing.Color.White;
+            this.btn_ResetDG.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.btn_ResetDG.ImagePosition = 20;
+            this.btn_ResetDG.ImageZoom = 50;
+            this.btn_ResetDG.LabelPosition = 41;
+            this.btn_ResetDG.LabelText = "Reset";
+            this.btn_ResetDG.Location = new System.Drawing.Point(280, 509);
+            this.btn_ResetDG.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_ResetDG.Name = "btn_ResetDG";
+            this.btn_ResetDG.Size = new System.Drawing.Size(155, 162);
+            this.btn_ResetDG.TabIndex = 16;
+            this.btn_ResetDG.Click += new System.EventHandler(this.btn_ResetDG_Click);
             // 
             // frmTKDocGia
             // 
@@ -672,5 +701,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayHetHanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DateTimePicker dtp_NgayLapThe;
+        private Bunifu.Framework.UI.BunifuTileButton btn_ResetDG;
     }
 }

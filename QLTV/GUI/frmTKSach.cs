@@ -148,6 +148,57 @@ namespace QLTV.GUI
             e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
         }
         #endregion
+        #region check on click
+        private void tb_IDSach_Click(object sender, EventArgs e)
+        {
+            rdb_IDSach.Checked = true;
+        }
 
+        private void tb_IDDauSach_Click(object sender, EventArgs e)
+        {
+            rdb_IDDauSach.Checked = true;
+
+        }
+
+        private void tb_NhaXuatBan_Click(object sender, EventArgs e)
+        {
+            rdb_NhaXuatBan.Checked = true;
+
+        }
+
+        private void tb_NamXuatBan_Click(object sender, EventArgs e)
+        {
+            rdb_NamXuatBan.Checked = true;
+
+        }
+
+        private void tb_SoLuongTon_Click(object sender, EventArgs e)
+        {
+            rdb_SoLuongTon.Checked = true;
+
+        }
+
+        private void tb_GiaTien_Click(object sender, EventArgs e)
+        {
+            rdb_GiaTien.Checked = true;
+
+        }
+
+        private void tb_IDCuonSach_Click(object sender, EventArgs e)
+        {
+            rdb_IDCuonSach.Checked = true;
+
+        }
+
+        private void tb_IDSachCS_Click(object sender, EventArgs e)
+        {
+            rdb_IDSachCS.Checked = true;
+        }
+
+        private void cbb_TinhTrang_Click(object sender, EventArgs e)
+        {
+            rdb_TinhTrang.Checked = true;
+        }
+        #endregion
     }
 }

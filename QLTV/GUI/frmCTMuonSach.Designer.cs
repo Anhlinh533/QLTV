@@ -124,7 +124,7 @@
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1702, 952);
+            this.item_Them.Size = new System.Drawing.Size(1702, 953);
             // 
             // groupControl2
             // 
@@ -217,14 +217,14 @@
             this.toolStripSeparator3,
             this.toolStripLabel4,
             this.btn_Exit});
-            this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1122, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1124, 31);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 

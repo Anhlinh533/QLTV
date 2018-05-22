@@ -47,7 +47,7 @@ namespace QLTV.ADO
         }
         #endregion
 
-        #region Form
+        #region Tim Kiem
         public string TKIDPhieuTra(string IDPhieuTra)
         {
             IDPhieuTra = "Select * from PHIEUTRA where IDPhieuTra like '%" + IDPhieuTra + "%' ";
@@ -61,7 +61,7 @@ namespace QLTV.ADO
 
         public string TKNgayTra(string NgayTra)
         {
-            NgayTra = "Select * from PHIEUTRA where NgayTra like '%" + NgayTra + "%' ";
+            NgayTra = "Select * from PHIEUTRA where NgayTra='" + NgayTra + "' ";
             return NgayTra;
         }
 

@@ -209,7 +209,7 @@
             this.btn_Them.Location = new System.Drawing.Point(992, 669);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 132);
+            this.btn_Them.Size = new System.Drawing.Size(128, 149);
             this.btn_Them.TabIndex = 30;
             // 
             // cbb_LoaiDocGia

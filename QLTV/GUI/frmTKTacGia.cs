@@ -102,5 +102,31 @@ namespace QLTV.GUI
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
         #endregion
+        #region check on click
+        private void tb_IDTacGia_Click(object sender, EventArgs e)
+        {
+            rdb_IDTacGia.Checked = true;
+        }
+
+        private void tb_TenTacGia_Click(object sender, EventArgs e)
+        {
+            rdb_TenTacGia.Checked = true;
+        }
+
+        private void tb_IDCTTacGia_Click(object sender, EventArgs e)
+        {
+            rdb_IDCTTacGia.Checked = true;
+        }
+
+        private void tb_IDDauSach_Click(object sender, EventArgs e)
+        {
+            rdb_IDDauSach.Checked = true;
+        }
+
+        private void tb_IDTacGiaCT_Click(object sender, EventArgs e)
+        {
+            rdb_IDTacGiaCT.Checked = true;
+        }
+        #endregion
     }
 }

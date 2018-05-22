@@ -62,7 +62,7 @@ namespace QLTV.ADO
 
         public string TKNgayMuon(string NgayMuon)
         {
-            NgayMuon = "Select * from PHIEUMUON where NgayMuon like '%" + NgayMuon + "%' ";
+            NgayMuon = "Select * from PHIEUMUON where NgayMuon='" + NgayMuon + "' ";
             return NgayMuon;
         }
 

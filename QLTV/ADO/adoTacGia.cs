@@ -60,7 +60,7 @@ namespace QLTV.ADO
         }
         public string TKNgaySinh(string NgaySinh)
         {
-            NgaySinh = "Select * from TACGIA where NgaySinh like '%" + NgaySinh + "%' ";
+            NgaySinh = "Select * from TACGIA where NgaySinh='" + NgaySinh + "' ";
             return NgaySinh;
         }
         #endregion

@@ -101,7 +101,7 @@ namespace QLTV.GUI
             }
             else if(rdb_UserIDDocGia.Checked==true && tb_IDUser.Text!="")
             {
-                dgv_TKUser.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoUsers.Instance.TKUser(tb_IDUser.Text.Trim()));
+                dgv_TKUser.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoUsers.Instance.TKUserIDDocGia(tb_IDUser.Text.Trim()));
                 ResetForm();
             }
             if (rdb_User.Checked == true && tb_TenUser.Text == "")
@@ -126,8 +126,8 @@ namespace QLTV.GUI
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
-            SCRIPT.useForm.ResetAllControls(groupControl2);
             SCRIPT.useForm.ResetAllControls(groupControl3);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
             SCRIPT.useForm.ResetAllControls(groupControl4);
         }
 
@@ -136,5 +136,49 @@ namespace QLTV.GUI
             e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
         }
         #endregion
+
+        private void btn_ResetDG_Click(object sender, EventArgs e)
+        {
+            dgv_TKDocGia.DataSource = quanLyThuVienDataSet.THEDOCGIA;
+
+        }
+        #region Checked on click
+        private void tb_IDDocGia_Click(object sender, EventArgs e)
+        {
+            rdb_IDDocGia.Checked = true;
+        }
+
+        private void tb_HoTen_Click(object sender, EventArgs e)
+        {
+            rdb_HoTen.Checked = true;
+        }
+
+        private void tb_DiaChi_Click(object sender, EventArgs e)
+        {
+            rdb_DiaChi.Checked = true;
+        }
+
+        private void tb_Email_Click(object sender, EventArgs e)
+        {
+            rdb_Email.Checked = true;
+        }
+
+        private void cbb_LoaiDocGia_Click(object sender, EventArgs e)
+        {
+            rdb_LoaiDocGia.Checked = true;
+        }
+
+        private void tb_TenUser_Click(object sender, EventArgs e)
+        {
+            rdb_User.Checked = true;
+        }
+
+        private void tb_IDUser_Click(object sender, EventArgs e)
+        {
+            rdb_UserIDDocGia.Checked = true;
+        }
+        #endregion
+
+
     }
 }

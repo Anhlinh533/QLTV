@@ -1452,3 +1452,5 @@ C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\RdlCompile.cache
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\RdlCompile.compiled
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.exe
 C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.GUI.frmThongTinAdmin.resources
+C:\Users\BaoDuy\Desktop\QLTV\QLTV\obj\Debug\QLTV.GUI.frmThongTinPhanMem.resources

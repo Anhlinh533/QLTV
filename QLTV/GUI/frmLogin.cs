@@ -46,5 +46,24 @@ namespace QLTV.GUI
             frm.ShowDialog();
         }
 
+        private void tb_MatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                if (ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == true || ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == true)
+                {
+                    MessageBox.Show("Đăng nhập thành công", "Đăng nhập!!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    frmMain dlg2 = new frmMain(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim());
+                    this.Hide();
+                    dlg2.ShowDialog();
+                    this.Close();
+                }
+
+                if (ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false && ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false)
+                {
+                    MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập và mật khẩu!!", "Cảnh báo!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

@@ -183,6 +183,16 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_businessman_480 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-businessman-480", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_calendar_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-calendar-48", resourceCulture);
@@ -226,6 +236,16 @@ namespace QLTV.Properties {
         internal static System.Drawing.Bitmap icons8_enter_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-enter-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-exit-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -563,9 +583,39 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_windows_client_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-windows-client-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_mypc_lock_41753 {
             get {
                 object obj = ResourceManager.GetObject("if_mypc_lock_41753", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap library {
+            get {
+                object obj = ResourceManager.GetObject("library", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap library__1_ {
+            get {
+                object obj = ResourceManager.GetObject("library (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -230,8 +230,8 @@ namespace QLTV
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmDoiMatKhau dlg2 = new frmDoiMatKhau(UserName, Password);
-            dlg2.ShowDialog();
+            //frmDoiMatKhau dlg2 = new frmDoiMatKhau(UserName, Password);
+            //dlg2.ShowDialog();
         }
 
         private void btn_MatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -242,6 +242,18 @@ namespace QLTV
         private void btn_ThongTin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmThongTinUser dlg2 = new frmThongTinUser(UserName, Password);
+            dlg2.ShowDialog();
+        }
+
+        private void btn_ThongTinAdmin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThongTinAdmin dlg2 = new frmThongTinAdmin(UserName, Password);
+            dlg2.ShowDialog();
+        }
+
+        private void btn_ThongTinPM_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThongTinPhanMem dlg2 = new frmThongTinPhanMem();
             dlg2.ShowDialog();
         }
         #endregion
@@ -293,12 +305,22 @@ namespace QLTV
                 btn_TuoiDocGia.Enabled = false;
                 btn_Users.Enabled = false;
                 btn_KhoangCachNamXuatBan.Enabled = false;
+                btn_ThongTinAdmin.Enabled = false;
                 //btn_CTMuonSach.Enabled = false;
+            }
+            if(ADO.adoLogin.Instance.checkAdmin(UserName,Password)==true)
+            {
+                btn_ThongTin.Enabled = false;
             }
         }
 
 
         private void btn_DangXuat_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void btn_Thoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Application.Exit();
         }

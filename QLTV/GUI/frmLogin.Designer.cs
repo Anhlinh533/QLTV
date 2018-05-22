@@ -137,6 +137,7 @@
             // 
             resources.ApplyResources(this.tb_MatKhau, "tb_MatKhau");
             this.tb_MatKhau.Name = "tb_MatKhau";
+            this.tb_MatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_MatKhau_KeyPress);
             // 
             // tb_UserName
             // 

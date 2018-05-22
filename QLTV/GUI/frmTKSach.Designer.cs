@@ -114,7 +114,7 @@
             this.item_TKSach.Controls.Add(this.groupControl3);
             this.item_TKSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_shelf_48;
             this.item_TKSach.Name = "item_TKSach";
-            this.item_TKSach.Size = new System.Drawing.Size(1530, 1016);
+            this.item_TKSach.Size = new System.Drawing.Size(1530, 1017);
             // 
             // groupControl4
             // 
@@ -145,10 +145,10 @@
             this.giaTienDataGridViewTextBoxColumn});
             this.dgv_TKSach.DataSource = this.sACHBindingSource;
             this.dgv_TKSach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKSach.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKSach.Location = new System.Drawing.Point(2, 45);
             this.dgv_TKSach.Name = "dgv_TKSach";
             this.dgv_TKSach.RowTemplate.Height = 28;
-            this.dgv_TKSach.Size = new System.Drawing.Size(1045, 966);
+            this.dgv_TKSach.Size = new System.Drawing.Size(1047, 969);
             this.dgv_TKSach.TabIndex = 0;
             // 
             // iDSachDataGridViewTextBoxColumn
@@ -263,6 +263,7 @@
             this.tb_GiaTien.Name = "tb_GiaTien";
             this.tb_GiaTien.Size = new System.Drawing.Size(214, 44);
             this.tb_GiaTien.TabIndex = 6;
+            this.tb_GiaTien.Click += new System.EventHandler(this.tb_GiaTien_Click);
             this.tb_GiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoLuongTon
@@ -271,6 +272,7 @@
             this.tb_SoLuongTon.Name = "tb_SoLuongTon";
             this.tb_SoLuongTon.Size = new System.Drawing.Size(214, 44);
             this.tb_SoLuongTon.TabIndex = 5;
+            this.tb_SoLuongTon.Click += new System.EventHandler(this.tb_SoLuongTon_Click);
             this.tb_SoLuongTon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_NamXuatBan
@@ -279,6 +281,7 @@
             this.tb_NamXuatBan.Name = "tb_NamXuatBan";
             this.tb_NamXuatBan.Size = new System.Drawing.Size(214, 44);
             this.tb_NamXuatBan.TabIndex = 4;
+            this.tb_NamXuatBan.Click += new System.EventHandler(this.tb_NamXuatBan_Click);
             this.tb_NamXuatBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_NhaXuatBan
@@ -287,6 +290,7 @@
             this.tb_NhaXuatBan.Name = "tb_NhaXuatBan";
             this.tb_NhaXuatBan.Size = new System.Drawing.Size(214, 44);
             this.tb_NhaXuatBan.TabIndex = 3;
+            this.tb_NhaXuatBan.Click += new System.EventHandler(this.tb_NhaXuatBan_Click);
             this.tb_NhaXuatBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // tb_IDDauSach
@@ -295,6 +299,7 @@
             this.tb_IDDauSach.Name = "tb_IDDauSach";
             this.tb_IDDauSach.Size = new System.Drawing.Size(214, 44);
             this.tb_IDDauSach.TabIndex = 2;
+            this.tb_IDDauSach.Click += new System.EventHandler(this.tb_IDDauSach_Click);
             this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDSach
@@ -303,6 +308,7 @@
             this.tb_IDSach.Name = "tb_IDSach";
             this.tb_IDSach.Size = new System.Drawing.Size(214, 44);
             this.tb_IDSach.TabIndex = 1;
+            this.tb_IDSach.Click += new System.EventHandler(this.tb_IDSach_Click);
             this.tb_IDSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_GiaTien
@@ -380,7 +386,7 @@
             this.item_CuonSach.Controls.Add(this.groupControl1);
             this.item_CuonSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_book_40;
             this.item_CuonSach.Name = "item_CuonSach";
-            this.item_CuonSach.Size = new System.Drawing.Size(1530, 1016);
+            this.item_CuonSach.Size = new System.Drawing.Size(1530, 1017);
             // 
             // groupControl2
             // 
@@ -394,7 +400,7 @@
             this.groupControl2.Controls.Add(this.dgv_TKCuonSach);
             this.groupControl2.Location = new System.Drawing.Point(450, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1081, 1016);
+            this.groupControl2.Size = new System.Drawing.Size(1081, 1017);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu thông tin cuốn sách";
             // 
@@ -408,10 +414,10 @@
             this.tinhTrangDataGridViewTextBoxColumn});
             this.dgv_TKCuonSach.DataSource = this.cUONSACHBindingSource;
             this.dgv_TKCuonSach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKCuonSach.Location = new System.Drawing.Point(3, 47);
+            this.dgv_TKCuonSach.Location = new System.Drawing.Point(2, 45);
             this.dgv_TKCuonSach.Name = "dgv_TKCuonSach";
             this.dgv_TKCuonSach.RowTemplate.Height = 28;
-            this.dgv_TKCuonSach.Size = new System.Drawing.Size(1075, 966);
+            this.dgv_TKCuonSach.Size = new System.Drawing.Size(1077, 970);
             this.dgv_TKCuonSach.TabIndex = 0;
             // 
             // iDCuonSachDataGridViewTextBoxColumn
@@ -461,7 +467,7 @@
             this.groupControl1.Controls.Add(this.rdb_IDCuonSach);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(444, 1016);
+            this.groupControl1.Size = new System.Drawing.Size(444, 1017);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm thông tin cuốn sách theo";
             // 
@@ -495,6 +501,7 @@
             this.cbb_TinhTrang.Name = "cbb_TinhTrang";
             this.cbb_TinhTrang.Size = new System.Drawing.Size(213, 44);
             this.cbb_TinhTrang.TabIndex = 3;
+            this.cbb_TinhTrang.Click += new System.EventHandler(this.cbb_TinhTrang_Click);
             // 
             // tb_IDSachCS
             // 
@@ -502,6 +509,7 @@
             this.tb_IDSachCS.Name = "tb_IDSachCS";
             this.tb_IDSachCS.Size = new System.Drawing.Size(213, 44);
             this.tb_IDSachCS.TabIndex = 2;
+            this.tb_IDSachCS.Click += new System.EventHandler(this.tb_IDSachCS_Click);
             this.tb_IDSachCS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCuonSach
@@ -510,6 +518,7 @@
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
             this.tb_IDCuonSach.Size = new System.Drawing.Size(213, 44);
             this.tb_IDCuonSach.TabIndex = 1;
+            this.tb_IDCuonSach.Click += new System.EventHandler(this.tb_IDCuonSach_Click);
             this.tb_IDCuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // rdb_TinhTrang
