@@ -22,7 +22,10 @@ namespace QLTV.GUI
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.BCSACHTRATRE' table. You can move, or remove it, as needed.
             this.bCSACHTRATRETableAdapter.Fill(this.quanLyThuVienDataSet.BCSACHTRATRE);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.BCSACHTRATRE' table. You can move, or remove it, as needed.
+            this.bCSACHTRATRETableAdapter.Fill(this.quanLyThuVienDataSet.BCSACHTRATRE);
 
+            this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
     }

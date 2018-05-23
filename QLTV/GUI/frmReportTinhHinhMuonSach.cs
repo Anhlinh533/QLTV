@@ -20,6 +20,8 @@ namespace QLTV.GUI
 
         private void frmReportTinhHinhMuonSach_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.BCTINHHINHMUONSACH' table. You can move, or remove it, as needed.
+            this.bCTINHHINHMUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.BCTINHHINHMUONSACH);
 
 
         }
