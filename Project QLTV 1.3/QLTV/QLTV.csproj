@@ -135,6 +135,12 @@
     <Compile Include="frmConnection.Designer.cs">
       <DependentUpon>frmConnection.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmCTMuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -374,6 +380,9 @@
     <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="frmConnection.resx">
       <DependentUpon>frmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCTMuonSach.resx">
       <DependentUpon>frmCTMuonSach.cs</DependentUpon>

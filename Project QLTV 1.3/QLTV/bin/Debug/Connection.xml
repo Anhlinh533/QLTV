@@ -11,7 +11,7 @@ Thong so co ban:
 -->
 <config>
   <costatus>true</costatus>
-  <servname>DESKTOP-LUHFR97\SQLEXPRESS</servname>
+  <servname>desktop-luhfr97\sqlexpress</servname>
   <username />
   <password />
   <database>QuanLyThuVien</database>

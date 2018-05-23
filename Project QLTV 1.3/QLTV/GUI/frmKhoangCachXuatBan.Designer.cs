@@ -33,6 +33,7 @@
             this.tb_KhoangCach = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_Thoat = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_Thoat);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.tb_KhoangCach);
             this.groupControl1.Controls.Add(this.label2);
@@ -50,7 +52,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(661, 363);
+            this.groupControl1.Size = new System.Drawing.Size(661, 342);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Chỉnh sửa qui định về khoảng cách xuất bản";
             // 
@@ -67,10 +69,10 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Sửa";
-            this.btn_Them.Location = new System.Drawing.Point(477, 142);
+            this.btn_Them.Location = new System.Drawing.Point(477, 124);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 131);
+            this.btn_Them.Size = new System.Drawing.Size(128, 144);
             this.btn_Them.TabIndex = 6;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
@@ -102,11 +104,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Thay đổi khoảng cách năm xuất bản";
             // 
+            // btn_Thoat
+            // 
+            this.btn_Thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Thoat.Appearance.Options.UseFont = true;
+            this.btn_Thoat.Location = new System.Drawing.Point(269, 276);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(112, 34);
+            this.btn_Thoat.TabIndex = 8;
+            this.btn_Thoat.Text = "Đóng";
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
+            // 
             // frmKhoangCachXuatBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 363);
+            this.ClientSize = new System.Drawing.Size(661, 342);
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -127,5 +140,6 @@
         private System.Windows.Forms.TextBox tb_KhoangCach;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.SimpleButton btn_Thoat;
     }
 }

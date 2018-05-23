@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_Thoat = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TienPhatMoiNgay = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_Thoat);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.tb_TienPhatMoiNgay);
             this.groupControl1.Controls.Add(this.label2);
@@ -53,6 +55,17 @@
             this.groupControl1.Size = new System.Drawing.Size(682, 328);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Chỉnh sửa qui định về tiền phạt mỗi ngày";
+            // 
+            // btn_Thoat
+            // 
+            this.btn_Thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Thoat.Appearance.Options.UseFont = true;
+            this.btn_Thoat.Location = new System.Drawing.Point(328, 272);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(112, 34);
+            this.btn_Thoat.TabIndex = 7;
+            this.btn_Thoat.Text = "Đóng";
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // btn_Them
             // 
@@ -67,10 +80,10 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Sửa";
-            this.btn_Them.Location = new System.Drawing.Point(527, 141);
+            this.btn_Them.Location = new System.Drawing.Point(526, 123);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 131);
+            this.btn_Them.Size = new System.Drawing.Size(128, 148);
             this.btn_Them.TabIndex = 6;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
@@ -127,5 +140,6 @@
         private System.Windows.Forms.TextBox tb_TienPhatMoiNgay;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.SimpleButton btn_Thoat;
     }
 }

@@ -51,6 +51,9 @@
             this.uSERSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDDocGia = new System.Windows.Forms.ComboBox();
             this.tHEDOCGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,11 +72,12 @@
             this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.uSERADMINBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cTUSERADMINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pic_Warning = new System.Windows.Forms.PictureBox();
-            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.uSERADMINTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERADMINTableAdapter();
+            this.cT_USERADMINTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_USERADMINTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -86,6 +90,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
@@ -93,8 +99,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSERADMINBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTUSERADMINBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -111,7 +117,7 @@
             this.navigationPane1.SelectedPage = this.item_Them;
             this.navigationPane1.Size = new System.Drawing.Size(1793, 1155);
             this.navigationPane1.TabIndex = 0;
-            this.navigationPane1.Text = "navigationPane1";
+            this.navigationPane1.Text = "Navi";
             // 
             // item_Them
             // 
@@ -120,7 +126,7 @@
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1703, 1074);
+            this.item_Them.Size = new System.Drawing.Size(1695, 1075);
             // 
             // groupControl2
             // 
@@ -135,7 +141,7 @@
             this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Location = new System.Drawing.Point(448, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1255, 1074);
+            this.groupControl2.Size = new System.Drawing.Size(1248, 1075);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu User";
             // 
@@ -157,14 +163,14 @@
             this.toolStripSeparator3,
             this.toolStripLabel4,
             this.btn_Exit});
-            this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1249, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1244, 31);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -270,7 +276,7 @@
             this.dgv_Them.Location = new System.Drawing.Point(6, 97);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(1243, 971);
+            this.dgv_Them.Size = new System.Drawing.Size(1236, 972);
             this.dgv_Them.TabIndex = 2;
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
@@ -313,9 +319,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -332,9 +337,38 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(442, 1074);
+            this.groupControl1.Size = new System.Drawing.Size(442, 1075);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin User";
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(376, 78);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(42, 39);
+            this.pic_Ss.TabIndex = 18;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(376, 78);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(42, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 17;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label5.Location = new System.Drawing.Point(177, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "label5";
             // 
             // btn_Them
             // 
@@ -425,7 +459,7 @@
             this.item_Xoa.Controls.Add(this.groupControl3);
             this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
             this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1703, 1074);
+            this.item_Xoa.Size = new System.Drawing.Size(1703, 1075);
             // 
             // groupControl4
             // 
@@ -437,9 +471,9 @@
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.dgv_Delete);
-            this.groupControl4.Location = new System.Drawing.Point(407, 0);
+            this.groupControl4.Location = new System.Drawing.Point(421, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(1297, 1074);
+            this.groupControl4.Size = new System.Drawing.Size(1283, 1075);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu User";
             // 
@@ -453,10 +487,10 @@
             this.dataGridViewTextBoxColumn3});
             this.dgv_Delete.DataSource = this.uSERSBindingSource;
             this.dgv_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_Delete.Location = new System.Drawing.Point(3, 47);
+            this.dgv_Delete.Location = new System.Drawing.Point(2, 45);
             this.dgv_Delete.Name = "dgv_Delete";
             this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1291, 1024);
+            this.dgv_Delete.Size = new System.Drawing.Size(1279, 1028);
             this.dgv_Delete.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -488,9 +522,8 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.Appearance.Options.UseFont = true;
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -500,7 +533,7 @@
             this.groupControl3.Controls.Add(this.label4);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(401, 1074);
+            this.groupControl3.Size = new System.Drawing.Size(415, 1075);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Thông tin xóa";
             // 
@@ -545,6 +578,16 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "User name cần xóa:";
             // 
+            // uSERADMINBindingSource
+            // 
+            this.uSERADMINBindingSource.DataMember = "USERADMIN";
+            this.uSERADMINBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // cTUSERADMINBindingSource
+            // 
+            this.cTUSERADMINBindingSource.DataMember = "CT_USERADMIN";
+            this.cTUSERADMINBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
             // uSERSTableAdapter
             // 
             this.uSERSTableAdapter.ClearBeforeFill = true;
@@ -553,33 +596,13 @@
             // 
             this.tHEDOCGIATableAdapter.ClearBeforeFill = true;
             // 
-            // label5
+            // uSERADMINTableAdapter
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label5.Location = new System.Drawing.Point(177, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 24);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "label5";
+            this.uSERADMINTableAdapter.ClearBeforeFill = true;
             // 
-            // pic_Warning
+            // cT_USERADMINTableAdapter
             // 
-            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.pic_Warning.Location = new System.Drawing.Point(376, 78);
-            this.pic_Warning.Name = "pic_Warning";
-            this.pic_Warning.Size = new System.Drawing.Size(42, 39);
-            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Warning.TabIndex = 17;
-            this.pic_Warning.TabStop = false;
-            // 
-            // pic_Ss
-            // 
-            this.pic_Ss.Location = new System.Drawing.Point(376, 78);
-            this.pic_Ss.Name = "pic_Ss";
-            this.pic_Ss.Size = new System.Drawing.Size(42, 39);
-            this.pic_Ss.TabIndex = 18;
-            this.pic_Ss.TabStop = false;
+            this.cT_USERADMINTableAdapter.ClearBeforeFill = true;
             // 
             // frmUsers
             // 
@@ -607,6 +630,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
@@ -615,8 +640,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSERADMINBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTUSERADMINBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -668,5 +693,9 @@
         private System.Windows.Forms.PictureBox pic_Ss;
         private System.Windows.Forms.PictureBox pic_Warning;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.BindingSource uSERADMINBindingSource;
+        private QuanLyThuVienDataSetTableAdapters.USERADMINTableAdapter uSERADMINTableAdapter;
+        private System.Windows.Forms.BindingSource cTUSERADMINBindingSource;
+        private QuanLyThuVienDataSetTableAdapters.CT_USERADMINTableAdapter cT_USERADMINTableAdapter;
     }
 }

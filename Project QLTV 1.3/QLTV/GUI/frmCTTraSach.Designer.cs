@@ -128,7 +128,7 @@
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1733, 957);
+            this.item_Them.Size = new System.Drawing.Size(1733, 958);
             // 
             // groupControl2
             // 
@@ -165,14 +165,14 @@
             this.toolStripSeparator3,
             this.toolStripLabel4,
             this.btn_Exit});
-            this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1121, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1123, 31);
             this.bindingNavigator1.TabIndex = 3;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -345,9 +345,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -497,7 +496,7 @@
             this.item_Xoa.Controls.Add(this.groupControl4);
             this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
             this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1733, 957);
+            this.item_Xoa.Size = new System.Drawing.Size(1733, 958);
             // 
             // groupControl3
             // 
@@ -510,7 +509,7 @@
             this.groupControl3.Controls.Add(this.dgv_Delete);
             this.groupControl3.Location = new System.Drawing.Point(454, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1279, 957);
+            this.groupControl3.Size = new System.Drawing.Size(1279, 958);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu chi tiết phiếu trả sách";
             // 
@@ -531,7 +530,7 @@
             this.dgv_Delete.Location = new System.Drawing.Point(3, 47);
             this.dgv_Delete.Name = "dgv_Delete";
             this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1273, 907);
+            this.dgv_Delete.Size = new System.Drawing.Size(1273, 908);
             this.dgv_Delete.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -590,7 +589,7 @@
             this.groupControl4.Controls.Add(this.label6);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(448, 957);
+            this.groupControl4.Size = new System.Drawing.Size(448, 958);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
             // 

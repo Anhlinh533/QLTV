@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_Thoat = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_HanThe = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_Thoat);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.tb_HanThe);
             this.groupControl1.Controls.Add(this.label2);
@@ -53,6 +55,17 @@
             this.groupControl1.Size = new System.Drawing.Size(693, 379);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Chỉnh sửa qui định về hạn thẻ";
+            // 
+            // btn_Thoat
+            // 
+            this.btn_Thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Thoat.Appearance.Options.UseFont = true;
+            this.btn_Thoat.Location = new System.Drawing.Point(292, 300);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(112, 34);
+            this.btn_Thoat.TabIndex = 7;
+            this.btn_Thoat.Text = "Đóng";
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // btn_Them
             // 
@@ -67,16 +80,16 @@
             this.btn_Them.ImageZoom = 50;
             this.btn_Them.LabelPosition = 41;
             this.btn_Them.LabelText = "Sửa";
-            this.btn_Them.Location = new System.Drawing.Point(454, 142);
+            this.btn_Them.Location = new System.Drawing.Point(452, 125);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 131);
+            this.btn_Them.Size = new System.Drawing.Size(128, 150);
             this.btn_Them.TabIndex = 6;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // tb_HanThe
             // 
-            this.tb_HanThe.Location = new System.Drawing.Point(225, 171);
+            this.tb_HanThe.Location = new System.Drawing.Point(226, 182);
             this.tb_HanThe.Name = "tb_HanThe";
             this.tb_HanThe.Size = new System.Drawing.Size(179, 44);
             this.tb_HanThe.TabIndex = 1;
@@ -86,7 +99,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(68, 174);
+            this.label2.Location = new System.Drawing.Point(69, 185);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 36);
             this.label2.TabIndex = 1;
@@ -127,5 +140,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuTileButton btn_Them;
+        private DevExpress.XtraEditors.SimpleButton btn_Thoat;
     }
 }

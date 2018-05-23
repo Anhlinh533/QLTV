@@ -20,6 +20,10 @@ namespace QLTV.GUI
 
         private void frmUsers_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_USERADMIN' table. You can move, or remove it, as needed.
+            this.cT_USERADMINTableAdapter.Fill(this.quanLyThuVienDataSet.CT_USERADMIN);
+            // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERADMIN' table. You can move, or remove it, as needed.
+            this.uSERADMINTableAdapter.Fill(this.quanLyThuVienDataSet.USERADMIN);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.THEDOCGIA' table. You can move, or remove it, as needed.
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.
@@ -132,5 +136,6 @@ namespace QLTV.GUI
                 pic_Warning.Show();
             }
         }
+
     }
 }
