@@ -195,12 +195,12 @@
             // 
             // btn_Them
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.Lime;
-            this.btn_Them.color = System.Drawing.Color.Lime;
+            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_Them.color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_Them.colorActive = System.Drawing.Color.Lime;
             this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_Them.ForeColor = System.Drawing.Color.White;
+            this.btn_Them.ForeColor = System.Drawing.Color.Red;
             this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
             this.btn_Them.ImagePosition = 20;
             this.btn_Them.ImageZoom = 50;

@@ -33,7 +33,7 @@
             this.designRepositoryItemComboBox1 = new DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_TaoBaoCao = new System.Windows.Forms.Button();
+            this.btn_TaoBaoCao = new DevExpress.XtraEditors.SimpleButton();
             this.dtp_NgayThangNam = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -46,7 +46,7 @@
             this.bCSACHTRATREBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rpv_SachTraTre = new Microsoft.Reporting.WinForms.ReportViewer();
             this.bCSACHTRATRETableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.BCSACHTRATRETableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox1)).BeginInit();
@@ -95,19 +95,21 @@
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox1.Location = new System.Drawing.Point(15, 125);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(833, 148);
+            this.groupBox1.Size = new System.Drawing.Size(898, 148);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê sách trả trễ";
             // 
             // btn_TaoBaoCao
             // 
-            this.btn_TaoBaoCao.Location = new System.Drawing.Point(618, 56);
+            this.btn_TaoBaoCao.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_TaoBaoCao.Appearance.Options.UseFont = true;
+            this.btn_TaoBaoCao.Location = new System.Drawing.Point(675, 64);
             this.btn_TaoBaoCao.Name = "btn_TaoBaoCao";
-            this.btn_TaoBaoCao.Size = new System.Drawing.Size(197, 65);
+            this.btn_TaoBaoCao.Size = new System.Drawing.Size(140, 44);
             this.btn_TaoBaoCao.TabIndex = 2;
             this.btn_TaoBaoCao.Text = "Tạo báo cáo";
-            this.btn_TaoBaoCao.UseVisualStyleBackColor = true;
+            this.btn_TaoBaoCao.Click += new System.EventHandler(this.btn_TaoBaoCao_Click);
             // 
             // dtp_NgayThangNam
             // 
@@ -211,7 +213,7 @@
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.reportViewer1);
+            this.groupBox3.Controls.Add(this.rpv_SachTraTre);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox3.Location = new System.Drawing.Point(1031, 125);
@@ -221,14 +223,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Xem trước báo cáo thống kê sách trả trễ";
             // 
-            // reportViewer1
+            // rpv_SachTraTre
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.Location = new System.Drawing.Point(3, 40);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(876, 906);
-            this.reportViewer1.TabIndex = 0;
+            this.rpv_SachTraTre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpv_SachTraTre.Location = new System.Drawing.Point(3, 40);
+            this.rpv_SachTraTre.Name = "rpv_SachTraTre";
+            this.rpv_SachTraTre.ServerReport.BearerToken = null;
+            this.rpv_SachTraTre.Size = new System.Drawing.Size(876, 906);
+            this.rpv_SachTraTre.TabIndex = 0;
             // 
             // bCSACHTRATRETableAdapter
             // 
@@ -265,7 +267,6 @@
         private DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox designRepositoryItemComboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_TaoBaoCao;
         private System.Windows.Forms.DateTimePicker dtp_NgayThangNam;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -279,6 +280,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCuonSachDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soNgayTraTreDataGridViewTextBoxColumn;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer rpv_SachTraTre;
+        private DevExpress.XtraEditors.SimpleButton btn_TaoBaoCao;
     }
 }

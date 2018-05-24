@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rpv_TinhHinhMuonSach = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iDBCMuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,10 +41,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_TaoBaoCao = new DevExpress.XtraEditors.SimpleButton();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_Nam = new System.Windows.Forms.TextBox();
             this.tb_Thang = new System.Windows.Forms.TextBox();
-            this.btn_TaoBaoCao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.designRepositoryItemComboBox1 = new DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox();
             this.recentlyUsedItemsComboBox1 = new DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox();
@@ -59,14 +59,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // rpv_TinhHinhMuonSach
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.Location = new System.Drawing.Point(3, 40);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(908, 986);
-            this.reportViewer1.TabIndex = 0;
+            this.rpv_TinhHinhMuonSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpv_TinhHinhMuonSach.Location = new System.Drawing.Point(3, 40);
+            this.rpv_TinhHinhMuonSach.Name = "rpv_TinhHinhMuonSach";
+            this.rpv_TinhHinhMuonSach.ServerReport.BearerToken = null;
+            this.rpv_TinhHinhMuonSach.Size = new System.Drawing.Size(908, 986);
+            this.rpv_TinhHinhMuonSach.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -132,7 +132,7 @@
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.reportViewer1);
+            this.groupBox3.Controls.Add(this.rpv_TinhHinhMuonSach);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox3.Location = new System.Drawing.Point(997, 115);
@@ -167,19 +167,30 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_TaoBaoCao);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.tb_Nam);
             this.groupBox1.Controls.Add(this.tb_Thang);
-            this.groupBox1.Controls.Add(this.btn_TaoBaoCao);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox1.Location = new System.Drawing.Point(18, 115);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(825, 145);
+            this.groupBox1.Size = new System.Drawing.Size(884, 145);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê tình hình mượn sách";
+            // 
+            // btn_TaoBaoCao
+            // 
+            this.btn_TaoBaoCao.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_TaoBaoCao.Appearance.Options.UseFont = true;
+            this.btn_TaoBaoCao.Location = new System.Drawing.Point(665, 67);
+            this.btn_TaoBaoCao.Name = "btn_TaoBaoCao";
+            this.btn_TaoBaoCao.Size = new System.Drawing.Size(140, 44);
+            this.btn_TaoBaoCao.TabIndex = 6;
+            this.btn_TaoBaoCao.Text = "Tạo báo cáo";
+            this.btn_TaoBaoCao.Click += new System.EventHandler(this.btn_TaoBaoCao_Click);
             // 
             // label3
             // 
@@ -203,15 +214,6 @@
             this.tb_Thang.Name = "tb_Thang";
             this.tb_Thang.Size = new System.Drawing.Size(156, 44);
             this.tb_Thang.TabIndex = 3;
-            // 
-            // btn_TaoBaoCao
-            // 
-            this.btn_TaoBaoCao.Location = new System.Drawing.Point(622, 59);
-            this.btn_TaoBaoCao.Name = "btn_TaoBaoCao";
-            this.btn_TaoBaoCao.Size = new System.Drawing.Size(197, 59);
-            this.btn_TaoBaoCao.TabIndex = 2;
-            this.btn_TaoBaoCao.Text = "Tạo báo cáo";
-            this.btn_TaoBaoCao.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -273,13 +275,12 @@
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer rpv_TinhHinhMuonSach;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_TaoBaoCao;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox designRepositoryItemComboBox1;
         private DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox recentlyUsedItemsComboBox1;
@@ -293,5 +294,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn thangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongSoLuotMuonDataGridViewTextBoxColumn;
+        private DevExpress.XtraEditors.SimpleButton btn_TaoBaoCao;
     }
 }

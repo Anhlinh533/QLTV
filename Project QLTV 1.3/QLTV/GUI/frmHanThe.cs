@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevComponents.DotNetBar;
 
 namespace QLTV.GUI
 {
@@ -20,8 +21,10 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            //SCRIPT.useForm.ResetAllControls(groupControl1);
-            ADO.adoHanThe.Instance.Sua(tb_HanThe.Text);
+            if (tb_HanThe.Text == "") MessageBoxEx.Show("Không được để trống hạn thẻ!!");
+            else
+                //SCRIPT.useForm.ResetAllControls(groupControl1);
+                ADO.adoHanThe.Instance.Sua(tb_HanThe.Text);
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)

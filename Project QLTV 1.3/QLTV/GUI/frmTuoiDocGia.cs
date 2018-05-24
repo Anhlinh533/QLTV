@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevComponents.DotNetBar;
 
 namespace QLTV.GUI
 {
@@ -24,8 +25,11 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            //SCRIPT.useForm.ResetAllControls(groupControl1);
-            ADO.adoTuoiDocGia.Instance.Sua(tb_TuoiMin.Text, tb_TuoiMax.Text);
+            if (tb_TuoiMin.Text == "") MessageBoxEx.Show("Không được để trống tuổi nhỏ nhất!!");
+            else if (tb_TuoiMax.Text == "") MessageBoxEx.Show("Không được để trống tuổi lớn nhất!!");
+            if (tb_TuoiMin.Text != "" && tb_TuoiMax.Text != "")
+                //SCRIPT.useForm.ResetAllControls(groupControl1);
+                ADO.adoTuoiDocGia.Instance.Sua(tb_TuoiMin.Text, tb_TuoiMax.Text);
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)

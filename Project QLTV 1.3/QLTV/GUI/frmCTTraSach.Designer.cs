@@ -54,13 +54,13 @@
             this.cTPHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
             this.pic_Ss = new System.Windows.Forms.PictureBox();
             this.pic_Warning = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbb_IDCuonSach = new System.Windows.Forms.ComboBox();
             this.cUONSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.cbb_IDPhieuTra = new System.Windows.Forms.ComboBox();
             this.pHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_IDCTPhieuTra = new System.Windows.Forms.TextBox();
@@ -75,7 +75,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_IDDelete = new DevExpress.XtraEditors.SimpleButton();
             this.cbb_Delete = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cT_PHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUTRATableAdapter();
@@ -351,12 +351,12 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.pic_Ss);
             this.groupControl1.Controls.Add(this.pic_Warning);
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.cbb_IDCuonSach);
             this.groupControl1.Controls.Add(this.label3);
-            this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.cbb_IDPhieuTra);
             this.groupControl1.Controls.Add(this.tb_IDCTPhieuTra);
             this.groupControl1.Controls.Add(this.label2);
@@ -366,6 +366,18 @@
             this.groupControl1.Size = new System.Drawing.Size(600, 957);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin chi tiết phiếu trả sách";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Them.Appearance.Options.UseFont = true;
+            this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.btn_Them.Location = new System.Drawing.Point(227, 320);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(157, 75);
+            this.btn_Them.TabIndex = 33;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // pic_Ss
             // 
@@ -422,26 +434,6 @@
             this.label3.Size = new System.Drawing.Size(199, 36);
             this.label3.TabIndex = 16;
             this.label3.Text = "ID cuốn sách:";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_Them.color = System.Drawing.Color.SeaGreen;
-            this.btn_Them.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_next_page_96;
-            this.btn_Them.ImagePosition = 20;
-            this.btn_Them.ImageZoom = 50;
-            this.btn_Them.LabelPosition = 41;
-            this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(200, 300);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 147);
-            this.btn_Them.TabIndex = 15;
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // cbb_IDPhieuTra
             // 
@@ -595,22 +587,14 @@
             // 
             // btn_IDDelete
             // 
-            this.btn_IDDelete.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_IDDelete.color = System.Drawing.Color.SeaGreen;
-            this.btn_IDDelete.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_IDDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_IDDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_IDDelete.ForeColor = System.Drawing.Color.White;
-            this.btn_IDDelete.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.btn_IDDelete.ImagePosition = 20;
-            this.btn_IDDelete.ImageZoom = 50;
-            this.btn_IDDelete.LabelPosition = 41;
-            this.btn_IDDelete.LabelText = "Xóa";
-            this.btn_IDDelete.Location = new System.Drawing.Point(134, 193);
-            this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_IDDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_IDDelete.Appearance.Options.UseFont = true;
+            this.btn_IDDelete.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.btn_IDDelete.Location = new System.Drawing.Point(138, 198);
             this.btn_IDDelete.Name = "btn_IDDelete";
-            this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
-            this.btn_IDDelete.TabIndex = 3;
+            this.btn_IDDelete.Size = new System.Drawing.Size(157, 75);
+            this.btn_IDDelete.TabIndex = 33;
+            this.btn_IDDelete.Text = "Xóa";
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
             // cbb_Delete
@@ -704,11 +688,9 @@
         private System.Windows.Forms.TextBox tb_IDCTPhieuTra;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuTileButton btn_Them;
         private System.Windows.Forms.DataGridView dgv_Delete;
         private System.Windows.Forms.ComboBox cbb_Delete;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -741,5 +723,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pic_Ss;
         private System.Windows.Forms.PictureBox pic_Warning;
+        private DevExpress.XtraEditors.SimpleButton btn_Them;
+        private DevExpress.XtraEditors.SimpleButton btn_IDDelete;
     }
 }

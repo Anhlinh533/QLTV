@@ -114,5 +114,6 @@ namespace QLTV.GUI
             SCRIPT.useForm.Instance.checkID(ADO.adoPhieuNhapSach.Instance.checkID(tb_IDPhieuNhap.Text.Trim()), label3, tb_IDPhieuNhap, pic_Warning, pic_Ss);
 
         }
+
     }
 }

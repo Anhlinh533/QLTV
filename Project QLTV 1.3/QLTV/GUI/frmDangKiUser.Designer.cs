@@ -128,8 +128,8 @@
             // 
             // btn_Them
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_Them.color = System.Drawing.Color.SeaGreen;
+            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_Them.color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btn_Them.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);

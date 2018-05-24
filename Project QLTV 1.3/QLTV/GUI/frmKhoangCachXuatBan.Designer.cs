@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_Thoat = new DevExpress.XtraEditors.SimpleButton();
             this.tb_KhoangCach = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.SuspendLayout();
@@ -44,8 +44,8 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.btn_Thoat);
             this.groupControl1.Controls.Add(this.btn_Them);
+            this.groupControl1.Controls.Add(this.btn_Thoat);
             this.groupControl1.Controls.Add(this.tb_KhoangCach);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
@@ -56,25 +56,17 @@
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Chỉnh sửa qui định về khoảng cách xuất bản";
             // 
-            // btn_Them
+            // btn_Thoat
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_Them.color = System.Drawing.Color.SeaGreen;
-            this.btn_Them.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
-            this.btn_Them.ImagePosition = 20;
-            this.btn_Them.ImageZoom = 50;
-            this.btn_Them.LabelPosition = 41;
-            this.btn_Them.LabelText = "Sửa";
-            this.btn_Them.Location = new System.Drawing.Point(477, 124);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 144);
-            this.btn_Them.TabIndex = 6;
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            this.btn_Thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Thoat.Appearance.Options.UseFont = true;
+            this.btn_Thoat.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.btn_Thoat.Location = new System.Drawing.Point(269, 248);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(141, 59);
+            this.btn_Thoat.TabIndex = 8;
+            this.btn_Thoat.Text = "Đóng";
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // tb_KhoangCach
             // 
@@ -104,16 +96,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Thay đổi khoảng cách năm xuất bản";
             // 
-            // btn_Thoat
+            // btn_Them
             // 
-            this.btn_Thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.btn_Thoat.Appearance.Options.UseFont = true;
-            this.btn_Thoat.Location = new System.Drawing.Point(269, 276);
-            this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(112, 34);
-            this.btn_Thoat.TabIndex = 8;
-            this.btn_Thoat.Text = "Đóng";
-            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
+            this.btn_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Them.Appearance.Options.UseFont = true;
+            this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_pencil_40;
+            this.btn_Them.Location = new System.Drawing.Point(467, 161);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(168, 68);
+            this.btn_Them.TabIndex = 9;
+            this.btn_Them.Text = "Thay đổi";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // frmKhoangCachXuatBan
             // 
@@ -136,10 +129,10 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private Bunifu.Framework.UI.BunifuTileButton btn_Them;
         private System.Windows.Forms.TextBox tb_KhoangCach;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton btn_Thoat;
+        private DevExpress.XtraEditors.SimpleButton btn_Them;
     }
 }

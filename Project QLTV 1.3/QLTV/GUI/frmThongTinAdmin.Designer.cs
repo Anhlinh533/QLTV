@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongTinAdmin));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.tb_Email = new System.Windows.Forms.TextBox();
             this.tb_DiaChi = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuGradientPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -94,6 +94,25 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết admin";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Them.color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Them.colorActive = System.Drawing.Color.Lime;
+            this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btn_Them.ForeColor = System.Drawing.Color.Red;
+            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
+            this.btn_Them.ImagePosition = 20;
+            this.btn_Them.ImageZoom = 50;
+            this.btn_Them.LabelPosition = 41;
+            this.btn_Them.LabelText = "Sửa";
+            this.btn_Them.Location = new System.Drawing.Point(843, 468);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(128, 149);
+            this.btn_Them.TabIndex = 31;
             // 
             // dtp_NgaySinh
             // 
@@ -215,25 +234,6 @@
             this.label1.Size = new System.Drawing.Size(468, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thông tin Admin";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.BackColor = System.Drawing.Color.Lime;
-            this.btn_Them.color = System.Drawing.Color.Lime;
-            this.btn_Them.colorActive = System.Drawing.Color.Lime;
-            this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
-            this.btn_Them.ImagePosition = 20;
-            this.btn_Them.ImageZoom = 50;
-            this.btn_Them.LabelPosition = 41;
-            this.btn_Them.LabelText = "Sửa";
-            this.btn_Them.Location = new System.Drawing.Point(843, 468);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 149);
-            this.btn_Them.TabIndex = 31;
             // 
             // frmThongTinAdmin
             // 

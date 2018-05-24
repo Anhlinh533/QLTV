@@ -115,7 +115,7 @@ namespace QLTV.ADO
         //private string connectionSTR = ConfigurationManager.ConnectionStrings["Conn"].ConnectionString;
 
         //Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True
-        //Data Source=DESKTOP-P6BNJRC\BAODUYSQL;Initial Catalog=QuanLyThuVien;Integrated Security=True
+        //Data Source=DESKTOP-LUHFR97\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True
 
         //Thực hiện các câu lệnh Select
         public DataTable ExecuteQuery(string query, object[] parameter = null)

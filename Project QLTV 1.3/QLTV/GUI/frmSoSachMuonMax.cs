@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevComponents.DotNetBar;
 
 namespace QLTV.GUI
 {
@@ -20,8 +21,10 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            //SCRIPT.useForm.ResetAllControls(groupControl1);
-            ADO.adoSoSachMuonMax.Instance.Sua(tb_SoSachMuonMax.Text);
+            if (tb_SoSachMuonMax.Text == "") MessageBoxEx.Show("Không được để trống số sách mượn tối đa!!");
+            else
+                //SCRIPT.useForm.ResetAllControls(groupControl1);
+                ADO.adoSoSachMuonMax.Instance.Sua(tb_SoSachMuonMax.Text);
         }
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {

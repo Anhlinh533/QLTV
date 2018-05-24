@@ -290,7 +290,6 @@ namespace QLTV
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            rib_User.Text = "Tài khoản: " + UserName;
             if (ADO.adoLogin.Instance.checkDocGia(UserName, Password) == true)
             {
                 btn_CTMuonSach.Enabled = false;

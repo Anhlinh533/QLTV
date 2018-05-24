@@ -54,10 +54,13 @@
             this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
+            this.pic_Ss = new System.Windows.Forms.PictureBox();
+            this.pic_Warning = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.cbb_IDCTTacGia = new System.Windows.Forms.ComboBox();
             this.cTTACGIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label8 = new System.Windows.Forms.Label();
-            this.btn_Them = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_GiaTien = new System.Windows.Forms.TextBox();
             this.tb_SoLuongTon = new System.Windows.Forms.TextBox();
             this.tb_NXB = new System.Windows.Forms.TextBox();
@@ -81,15 +84,12 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_IDDelete = new DevExpress.XtraEditors.SimpleButton();
             this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
-            this.btn_IDDelete = new Bunifu.Framework.UI.BunifuTileButton();
             this.label7 = new System.Windows.Forms.Label();
             this.sACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.SACHTableAdapter();
             this.dAUSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter();
             this.cT_TACGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_TACGIATableAdapter();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pic_Warning = new System.Windows.Forms.PictureBox();
-            this.pic_Ss = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -102,6 +102,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).BeginInit();
             this.item_Xoa.SuspendLayout();
@@ -110,8 +112,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -137,7 +137,7 @@
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
             this.item_Them.Name = "item_Them";
-            this.item_Them.Size = new System.Drawing.Size(1522, 881);
+            this.item_Them.Size = new System.Drawing.Size(1522, 882);
             // 
             // groupControl2
             // 
@@ -152,7 +152,7 @@
             this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Location = new System.Drawing.Point(555, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(967, 881);
+            this.groupControl2.Size = new System.Drawing.Size(967, 882);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu sách";
             // 
@@ -174,14 +174,14 @@
             this.toolStripSeparator3,
             this.toolStripLabel4,
             this.btn_Exit});
-            this.bindingNavigator1.Location = new System.Drawing.Point(3, 47);
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(961, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(963, 31);
             this.bindingNavigator1.TabIndex = 4;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -290,7 +290,7 @@
             this.dgv_Them.Location = new System.Drawing.Point(6, 97);
             this.dgv_Them.Name = "dgv_Them";
             this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(955, 772);
+            this.dgv_Them.Size = new System.Drawing.Size(955, 773);
             this.dgv_Them.TabIndex = 2;
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             // 
@@ -364,12 +364,12 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.pic_Ss);
             this.groupControl1.Controls.Add(this.pic_Warning);
             this.groupControl1.Controls.Add(this.label9);
             this.groupControl1.Controls.Add(this.cbb_IDCTTacGia);
             this.groupControl1.Controls.Add(this.label8);
-            this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.tb_GiaTien);
             this.groupControl1.Controls.Add(this.tb_SoLuongTon);
             this.groupControl1.Controls.Add(this.tb_NXB);
@@ -384,9 +384,51 @@
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(549, 881);
+            this.groupControl1.Size = new System.Drawing.Size(549, 882);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin sách";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Them.Appearance.Options.UseFont = true;
+            this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.btn_Them.Location = new System.Drawing.Point(209, 545);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(157, 75);
+            this.btn_Them.TabIndex = 38;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(493, 78);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(39, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 19;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(493, 78);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(39, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 18;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label9.Location = new System.Drawing.Point(262, 130);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 24);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "label9";
             // 
             // cbb_IDCTTacGia
             // 
@@ -413,26 +455,6 @@
             this.label8.Size = new System.Drawing.Size(254, 36);
             this.label8.TabIndex = 16;
             this.label8.Text = "ID chi tiết tác giả:";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_Them.color = System.Drawing.Color.SeaGreen;
-            this.btn_Them.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_Them.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Image = global::QLTV.Properties.Resources.icons8_next_page_96;
-            this.btn_Them.ImagePosition = 20;
-            this.btn_Them.ImageZoom = 50;
-            this.btn_Them.LabelPosition = 41;
-            this.btn_Them.LabelText = "Thêm";
-            this.btn_Them.Location = new System.Drawing.Point(156, 539);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(128, 147);
-            this.btn_Them.TabIndex = 15;
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // tb_GiaTien
             // 
@@ -567,7 +589,7 @@
             this.item_Xoa.Controls.Add(this.groupControl4);
             this.item_Xoa.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
             this.item_Xoa.Name = "item_Xoa";
-            this.item_Xoa.Size = new System.Drawing.Size(1522, 881);
+            this.item_Xoa.Size = new System.Drawing.Size(1522, 882);
             // 
             // groupControl3
             // 
@@ -581,7 +603,7 @@
             this.groupControl3.Controls.Add(this.dgv_Delete);
             this.groupControl3.Location = new System.Drawing.Point(388, 3);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1131, 878);
+            this.groupControl3.Size = new System.Drawing.Size(1131, 879);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Dữ liệu sách";
             // 
@@ -603,7 +625,7 @@
             this.dgv_Delete.Location = new System.Drawing.Point(6, 43);
             this.dgv_Delete.Name = "dgv_Delete";
             this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1119, 829);
+            this.dgv_Delete.Size = new System.Drawing.Size(1119, 830);
             this.dgv_Delete.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -666,14 +688,26 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
-            this.groupControl4.Controls.Add(this.cbb_IDDelete);
             this.groupControl4.Controls.Add(this.btn_IDDelete);
+            this.groupControl4.Controls.Add(this.cbb_IDDelete);
             this.groupControl4.Controls.Add(this.label7);
             this.groupControl4.Location = new System.Drawing.Point(0, 5);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(382, 876);
+            this.groupControl4.Size = new System.Drawing.Size(382, 877);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "Thông tin xóa";
+            // 
+            // btn_IDDelete
+            // 
+            this.btn_IDDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_IDDelete.Appearance.Options.UseFont = true;
+            this.btn_IDDelete.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.btn_IDDelete.Location = new System.Drawing.Point(105, 228);
+            this.btn_IDDelete.Name = "btn_IDDelete";
+            this.btn_IDDelete.Size = new System.Drawing.Size(157, 75);
+            this.btn_IDDelete.TabIndex = 38;
+            this.btn_IDDelete.Text = "Xóa";
+            this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
             // cbb_IDDelete
             // 
@@ -685,26 +719,6 @@
             this.cbb_IDDelete.Size = new System.Drawing.Size(214, 44);
             this.cbb_IDDelete.TabIndex = 1;
             this.cbb_IDDelete.ValueMember = "IDSach";
-            // 
-            // btn_IDDelete
-            // 
-            this.btn_IDDelete.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_IDDelete.color = System.Drawing.Color.SeaGreen;
-            this.btn_IDDelete.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_IDDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_IDDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_IDDelete.ForeColor = System.Drawing.Color.White;
-            this.btn_IDDelete.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.btn_IDDelete.ImagePosition = 20;
-            this.btn_IDDelete.ImageZoom = 50;
-            this.btn_IDDelete.LabelPosition = 41;
-            this.btn_IDDelete.LabelText = "Xóa";
-            this.btn_IDDelete.Location = new System.Drawing.Point(98, 215);
-            this.btn_IDDelete.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_IDDelete.Name = "btn_IDDelete";
-            this.btn_IDDelete.Size = new System.Drawing.Size(128, 146);
-            this.btn_IDDelete.TabIndex = 3;
-            this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
             // 
             // label7
             // 
@@ -727,36 +741,6 @@
             // cT_TACGIATableAdapter
             // 
             this.cT_TACGIATableAdapter.ClearBeforeFill = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label9.Location = new System.Drawing.Point(262, 130);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 24);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "label9";
-            // 
-            // pic_Warning
-            // 
-            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.pic_Warning.Location = new System.Drawing.Point(493, 78);
-            this.pic_Warning.Name = "pic_Warning";
-            this.pic_Warning.Size = new System.Drawing.Size(39, 39);
-            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Warning.TabIndex = 18;
-            this.pic_Warning.TabStop = false;
-            // 
-            // pic_Ss
-            // 
-            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.pic_Ss.Location = new System.Drawing.Point(493, 78);
-            this.pic_Ss.Name = "pic_Ss";
-            this.pic_Ss.Size = new System.Drawing.Size(39, 39);
-            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Ss.TabIndex = 19;
-            this.pic_Ss.TabStop = false;
             // 
             // frmSach
             // 
@@ -784,6 +768,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTTACGIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).EndInit();
             this.item_Xoa.ResumeLayout(false);
@@ -793,8 +779,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -826,9 +810,7 @@
         private System.Windows.Forms.TextBox tb_SoLuongTon;
         private System.Windows.Forms.TextBox tb_NXB;
         private System.Windows.Forms.TextBox tb_IDSach;
-        private Bunifu.Framework.UI.BunifuTileButton btn_Them;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuTileButton btn_IDDelete;
         private System.Windows.Forms.DataGridView dgv_Delete;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDSachDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDauSachDataGridViewTextBoxColumn;
@@ -862,5 +844,7 @@
         private System.Windows.Forms.PictureBox pic_Ss;
         private System.Windows.Forms.PictureBox pic_Warning;
         private System.Windows.Forms.Label label9;
+        private DevExpress.XtraEditors.SimpleButton btn_Them;
+        private DevExpress.XtraEditors.SimpleButton btn_IDDelete;
     }
 }

@@ -30,5 +30,10 @@ namespace QLTV.GUI
             this.cT_USERADMINTableAdapter.Fill(this.quanLyThuVienDataSet.CT_USERADMIN);
 
         }
+
+        private void btn_ThemAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
