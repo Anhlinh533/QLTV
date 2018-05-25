@@ -32,13 +32,10 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.dgv_Them = new System.Windows.Forms.DataGridView();
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDCuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTPHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Sua = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -50,6 +47,12 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Exit = new System.Windows.Forms.ToolStripButton();
+            this.dgv_Them = new System.Windows.Forms.DataGridView();
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDCuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTPHIEUMUONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -71,21 +74,21 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.btn_IDDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cT_PHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
             this.cUONSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter();
+            this.cbb_IDDelete = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUMUONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
@@ -135,69 +138,13 @@
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
-            this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Controls.Add(this.bindingNavigator1);
+            this.groupControl2.Controls.Add(this.dgv_Them);
             this.groupControl2.Location = new System.Drawing.Point(574, 0);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(1128, 952);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu chi tiết phiếu mượn";
-            // 
-            // dgv_Them
-            // 
-            this.dgv_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Them.AutoGenerateColumns = false;
-            this.dgv_Them.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Them.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn,
-            this.iDPhieuMuonDataGridViewTextBoxColumn,
-            this.iDCuonSachDataGridViewTextBoxColumn});
-            this.dgv_Them.DataSource = this.cTPHIEUMUONBindingSource;
-            this.dgv_Them.Location = new System.Drawing.Point(6, 92);
-            this.dgv_Them.Name = "dgv_Them";
-            this.dgv_Them.RowTemplate.Height = 28;
-            this.dgv_Them.Size = new System.Drawing.Size(1116, 854);
-            this.dgv_Them.TabIndex = 2;
-            this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
-            // 
-            // iDCTPhieuMuonDataGridViewTextBoxColumn
-            // 
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDCTPhieuMuon";
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID chi tiết phiếu mượn";
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn.Name = "iDCTPhieuMuonDataGridViewTextBoxColumn";
-            this.iDCTPhieuMuonDataGridViewTextBoxColumn.Width = 249;
-            // 
-            // iDPhieuMuonDataGridViewTextBoxColumn
-            // 
-            this.iDPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuMuon";
-            this.iDPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID phiếu mượn";
-            this.iDPhieuMuonDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDPhieuMuonDataGridViewTextBoxColumn.Name = "iDPhieuMuonDataGridViewTextBoxColumn";
-            this.iDPhieuMuonDataGridViewTextBoxColumn.Width = 229;
-            // 
-            // iDCuonSachDataGridViewTextBoxColumn
-            // 
-            this.iDCuonSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDCuonSachDataGridViewTextBoxColumn.DataPropertyName = "IDCuonSach";
-            this.iDCuonSachDataGridViewTextBoxColumn.HeaderText = "ID cuốn sách";
-            this.iDCuonSachDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDCuonSachDataGridViewTextBoxColumn.Name = "iDCuonSachDataGridViewTextBoxColumn";
-            this.iDCuonSachDataGridViewTextBoxColumn.Width = 205;
-            // 
-            // cTPHIEUMUONBindingSource
-            // 
-            this.cTPHIEUMUONBindingSource.DataMember = "CT_PHIEUMUON";
-            this.cTPHIEUMUONBindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // quanLyThuVienDataSet
-            // 
-            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
-            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator1
             // 
@@ -206,6 +153,9 @@
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel5,
+            this.btn_Luu,
+            this.toolStripSeparator4,
             this.toolStripLabel1,
             this.btn_Sua,
             this.toolStripSeparator1,
@@ -225,8 +175,29 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.Size = new System.Drawing.Size(1124, 31);
-            this.bindingNavigator1.TabIndex = 1;
+            this.bindingNavigator1.TabIndex = 12;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // toolStripLabel5
+            // 
+            this.toolStripLabel5.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel5.Name = "toolStripLabel5";
+            this.toolStripLabel5.Size = new System.Drawing.Size(41, 28);
+            this.toolStripLabel5.Text = "Lưu";
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
+            this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(28, 28);
+            this.btn_Luu.Text = "Lưu";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripLabel1
             // 
@@ -314,6 +285,62 @@
             this.btn_Exit.Size = new System.Drawing.Size(28, 28);
             this.btn_Exit.Text = "toolStripButton1";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // dgv_Them
+            // 
+            this.dgv_Them.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Them.AutoGenerateColumns = false;
+            this.dgv_Them.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Them.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn,
+            this.iDPhieuMuonDataGridViewTextBoxColumn,
+            this.iDCuonSachDataGridViewTextBoxColumn});
+            this.dgv_Them.DataSource = this.cTPHIEUMUONBindingSource;
+            this.dgv_Them.Location = new System.Drawing.Point(6, 92);
+            this.dgv_Them.Name = "dgv_Them";
+            this.dgv_Them.RowTemplate.Height = 28;
+            this.dgv_Them.Size = new System.Drawing.Size(1116, 854);
+            this.dgv_Them.TabIndex = 2;
+            this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
+            // 
+            // iDCTPhieuMuonDataGridViewTextBoxColumn
+            // 
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDCTPhieuMuon";
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID chi tiết phiếu mượn";
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn.Name = "iDCTPhieuMuonDataGridViewTextBoxColumn";
+            this.iDCTPhieuMuonDataGridViewTextBoxColumn.Width = 249;
+            // 
+            // iDPhieuMuonDataGridViewTextBoxColumn
+            // 
+            this.iDPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.iDPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuMuon";
+            this.iDPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID phiếu mượn";
+            this.iDPhieuMuonDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDPhieuMuonDataGridViewTextBoxColumn.Name = "iDPhieuMuonDataGridViewTextBoxColumn";
+            this.iDPhieuMuonDataGridViewTextBoxColumn.Width = 229;
+            // 
+            // iDCuonSachDataGridViewTextBoxColumn
+            // 
+            this.iDCuonSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDCuonSachDataGridViewTextBoxColumn.DataPropertyName = "IDCuonSach";
+            this.iDCuonSachDataGridViewTextBoxColumn.HeaderText = "ID cuốn sách";
+            this.iDCuonSachDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDCuonSachDataGridViewTextBoxColumn.Name = "iDCuonSachDataGridViewTextBoxColumn";
+            this.iDCuonSachDataGridViewTextBoxColumn.Width = 205;
+            // 
+            // cTPHIEUMUONBindingSource
+            // 
+            this.cTPHIEUMUONBindingSource.DataMember = "CT_PHIEUMUON";
+            this.cTPHIEUMUONBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // quanLyThuVienDataSet
+            // 
+            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
+            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupControl1
             // 
@@ -480,9 +507,6 @@
             // 
             // dgv_Delete
             // 
-            this.dgv_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Delete.AutoGenerateColumns = false;
             this.dgv_Delete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Delete.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -490,10 +514,11 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.dgv_Delete.DataSource = this.cTPHIEUMUONBindingSource;
-            this.dgv_Delete.Location = new System.Drawing.Point(6, 44);
+            this.dgv_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Delete.Location = new System.Drawing.Point(2, 45);
             this.dgv_Delete.Name = "dgv_Delete";
             this.dgv_Delete.RowTemplate.Height = 28;
-            this.dgv_Delete.Size = new System.Drawing.Size(1228, 903);
+            this.dgv_Delete.Size = new System.Drawing.Size(1236, 906);
             this.dgv_Delete.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -531,8 +556,8 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
-            this.groupControl4.Controls.Add(this.btn_IDDelete);
             this.groupControl4.Controls.Add(this.cbb_IDDelete);
+            this.groupControl4.Controls.Add(this.btn_IDDelete);
             this.groupControl4.Controls.Add(this.label4);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
@@ -545,23 +570,12 @@
             this.btn_IDDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btn_IDDelete.Appearance.Options.UseFont = true;
             this.btn_IDDelete.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.btn_IDDelete.Location = new System.Drawing.Point(142, 205);
+            this.btn_IDDelete.Location = new System.Drawing.Point(31, 194);
             this.btn_IDDelete.Name = "btn_IDDelete";
             this.btn_IDDelete.Size = new System.Drawing.Size(157, 75);
             this.btn_IDDelete.TabIndex = 30;
             this.btn_IDDelete.Text = "Xóa";
             this.btn_IDDelete.Click += new System.EventHandler(this.btn_IDDelete_Click);
-            // 
-            // cbb_IDDelete
-            // 
-            this.cbb_IDDelete.DataSource = this.cTPHIEUMUONBindingSource;
-            this.cbb_IDDelete.DisplayMember = "IDCTPhieuMuon";
-            this.cbb_IDDelete.FormattingEnabled = true;
-            this.cbb_IDDelete.Location = new System.Drawing.Point(9, 125);
-            this.cbb_IDDelete.Name = "cbb_IDDelete";
-            this.cbb_IDDelete.Size = new System.Drawing.Size(230, 44);
-            this.cbb_IDDelete.TabIndex = 1;
-            this.cbb_IDDelete.ValueMember = "IDCTPhieuMuon";
             // 
             // label4
             // 
@@ -585,6 +599,15 @@
             // 
             this.cUONSACHTableAdapter.ClearBeforeFill = true;
             // 
+            // cbb_IDDelete
+            // 
+            this.cbb_IDDelete.FormattingEnabled = true;
+            this.cbb_IDDelete.Location = new System.Drawing.Point(31, 124);
+            this.cbb_IDDelete.Name = "cbb_IDDelete";
+            this.cbb_IDDelete.Size = new System.Drawing.Size(249, 44);
+            this.cbb_IDDelete.TabIndex = 31;
+            this.cbb_IDDelete.TextChanged += new System.EventHandler(this.cbb_IDDelete_TextChanged);
+            // 
             // frmCTMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -602,12 +625,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUMUONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Them)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUMUONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -636,15 +659,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private System.Windows.Forms.DataGridView dgv_Them;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripButton btn_Sua;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripButton btn_Xoa;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripButton btn_Reset;
         private QuanLyThuVienDataSet quanLyThuVienDataSet;
         private System.Windows.Forms.BindingSource cTPHIEUMUONBindingSource;
         private QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter cT_PHIEUMUONTableAdapter;
@@ -659,7 +673,6 @@
         private System.Windows.Forms.BindingSource cUONSACHBindingSource;
         private QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter cUONSACHTableAdapter;
         private System.Windows.Forms.DataGridView dgv_Delete;
-        private System.Windows.Forms.ComboBox cbb_IDDelete;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCTPhieuMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
@@ -667,13 +680,26 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
-        private System.Windows.Forms.ToolStripButton btn_Exit;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pic_Ss;
         private System.Windows.Forms.PictureBox pic_Warning;
         private DevExpress.XtraEditors.SimpleButton btn_Them;
         private DevExpress.XtraEditors.SimpleButton btn_IDDelete;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+        private System.Windows.Forms.ToolStripButton btn_Luu;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton btn_Sua;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripButton btn_Xoa;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripButton btn_Reset;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.ComboBox cbb_IDDelete;
     }
 }

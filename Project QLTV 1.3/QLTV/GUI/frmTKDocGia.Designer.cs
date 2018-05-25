@@ -306,6 +306,9 @@
             // 
             // dgv_TKDocGia
             // 
+            this.dgv_TKDocGia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_TKDocGia.AutoGenerateColumns = false;
             this.dgv_TKDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_TKDocGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -319,10 +322,10 @@
             this.ngayHetHanDataGridViewTextBoxColumn,
             this.tongNoDataGridViewTextBoxColumn});
             this.dgv_TKDocGia.DataSource = this.tHEDOCGIABindingSource;
-            this.dgv_TKDocGia.Location = new System.Drawing.Point(2, 97);
+            this.dgv_TKDocGia.Location = new System.Drawing.Point(2, 104);
             this.dgv_TKDocGia.Name = "dgv_TKDocGia";
             this.dgv_TKDocGia.RowTemplate.Height = 28;
-            this.dgv_TKDocGia.Size = new System.Drawing.Size(1225, 865);
+            this.dgv_TKDocGia.Size = new System.Drawing.Size(1225, 858);
             this.dgv_TKDocGia.TabIndex = 0;
             // 
             // iDDocGiaDataGridViewTextBoxColumn
@@ -409,9 +412,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -765,10 +767,10 @@
             this.userNameDataGridViewTextBoxColumn,
             this.iDDocGiaDataGridViewTextBoxColumn1});
             this.dgv_TKUser.DataSource = this.uSERSBindingSource;
-            this.dgv_TKUser.Location = new System.Drawing.Point(6, 94);
+            this.dgv_TKUser.Location = new System.Drawing.Point(2, 98);
             this.dgv_TKUser.Name = "dgv_TKUser";
             this.dgv_TKUser.RowTemplate.Height = 28;
-            this.dgv_TKUser.Size = new System.Drawing.Size(1238, 862);
+            this.dgv_TKUser.Size = new System.Drawing.Size(1246, 862);
             this.dgv_TKUser.TabIndex = 0;
             // 
             // userNameDataGridViewTextBoxColumn
@@ -794,9 +796,8 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.Appearance.Options.UseFont = true;
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);

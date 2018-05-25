@@ -32,6 +32,21 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
             this.dgv_TKTraSach = new System.Windows.Forms.DataGridView();
             this.iDPhieuTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,8 +57,8 @@
             this.pHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_PhieuTraSach = new DevExpress.XtraEditors.SimpleButton();
             this.dtp_NgayTra = new System.Windows.Forms.DateTimePicker();
-            this.btn_TKPhieuTraSach = new Bunifu.Framework.UI.BunifuTileButton();
             this.tb_TienNoKiNay = new System.Windows.Forms.TextBox();
             this.tb_SoTienTra = new System.Windows.Forms.TextBox();
             this.tb_IDPhieuTra = new System.Windows.Forms.TextBox();
@@ -57,6 +72,21 @@
             this.rdb_IDPhieuTra = new System.Windows.Forms.RadioButton();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel7 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel8 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel9 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel10 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.dgv_TKCTPhieuTraSach = new System.Windows.Forms.DataGridView();
             this.iDCTPhieuTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDPhieuTraDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +95,7 @@
             this.tienPhatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTPHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btn_TKCTPhieuTraSach = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_TKCTPhieuTraSach = new DevExpress.XtraEditors.SimpleButton();
             this.tb_TienPhat = new System.Windows.Forms.TextBox();
             this.tb_SoNgayMuon = new System.Windows.Forms.TextBox();
             this.tb_IDCTPhieuMuon = new System.Windows.Forms.TextBox();
@@ -83,6 +113,8 @@
             this.navigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKTraSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
@@ -91,6 +123,8 @@
             this.navigationPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
+            this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCTPhieuTraSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUTRABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -131,6 +165,7 @@
             this.groupControl4.Appearance.Options.UseFont = true;
             this.groupControl4.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
+            this.groupControl4.Controls.Add(this.bindingNavigator1);
             this.groupControl4.Controls.Add(this.dgv_TKTraSach);
             this.groupControl4.Location = new System.Drawing.Point(521, 0);
             this.groupControl4.Name = "groupControl4";
@@ -138,8 +173,143 @@
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu thông tin mượn sách";
             // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = null;
+            this.bindingNavigator1.CountItem = null;
+            this.bindingNavigator1.DeleteItem = null;
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel5,
+            this.btn_Luu,
+            this.toolStripSeparator4,
+            this.toolStripLabel1,
+            this.btn_Sua,
+            this.toolStripSeparator1,
+            this.toolStripLabel2,
+            this.btn_Xoa,
+            this.toolStripSeparator2,
+            this.toolStripLabel3,
+            this.btn_Reset,
+            this.toolStripSeparator3,
+            this.toolStripLabel4,
+            this.btn_Exit});
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator1.MoveFirstItem = null;
+            this.bindingNavigator1.MoveLastItem = null;
+            this.bindingNavigator1.MoveNextItem = null;
+            this.bindingNavigator1.MovePreviousItem = null;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = null;
+            this.bindingNavigator1.Size = new System.Drawing.Size(1112, 31);
+            this.bindingNavigator1.TabIndex = 11;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // toolStripLabel5
+            // 
+            this.toolStripLabel5.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel5.Name = "toolStripLabel5";
+            this.toolStripLabel5.Size = new System.Drawing.Size(41, 28);
+            this.toolStripLabel5.Text = "Lưu";
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
+            this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(28, 28);
+            this.btn_Luu.Text = "Lưu";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(42, 28);
+            this.toolStripLabel1.Text = "Sửa";
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Sua.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
+            this.btn_Sua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(28, 28);
+            this.btn_Sua.Text = "Sửa thông tin";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(43, 28);
+            this.toolStripLabel2.Text = "Xóa";
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(28, 28);
+            this.btn_Xoa.Text = "Xóa";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(113, 28);
+            this.toolStripLabel3.Text = "Reset dữ liệu";
+            // 
+            // btn_Reset
+            // 
+            this.btn_Reset.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(28, 28);
+            this.btn_Reset.Text = "Reset dữ liệu";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel4
+            // 
+            this.toolStripLabel4.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            this.toolStripLabel4.Size = new System.Drawing.Size(57, 28);
+            this.toolStripLabel4.Text = "Thoát";
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(28, 28);
+            this.btn_Exit.Text = "toolStripButton1";
+            // 
             // dgv_TKTraSach
             // 
+            this.dgv_TKTraSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_TKTraSach.AutoGenerateColumns = false;
             this.dgv_TKTraSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_TKTraSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -150,11 +320,10 @@
             this.soTienTraDataGridViewTextBoxColumn,
             this.tienNoKyNayDataGridViewTextBoxColumn});
             this.dgv_TKTraSach.DataSource = this.pHIEUTRABindingSource;
-            this.dgv_TKTraSach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKTraSach.Location = new System.Drawing.Point(2, 45);
+            this.dgv_TKTraSach.Location = new System.Drawing.Point(2, 92);
             this.dgv_TKTraSach.Name = "dgv_TKTraSach";
             this.dgv_TKTraSach.RowTemplate.Height = 28;
-            this.dgv_TKTraSach.Size = new System.Drawing.Size(1112, 954);
+            this.dgv_TKTraSach.Size = new System.Drawing.Size(1112, 907);
             this.dgv_TKTraSach.TabIndex = 0;
             // 
             // iDPhieuTraDataGridViewTextBoxColumn
@@ -217,15 +386,14 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.Appearance.Options.UseFont = true;
             this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
+            this.groupControl3.Controls.Add(this.btn_PhieuTraSach);
             this.groupControl3.Controls.Add(this.dtp_NgayTra);
-            this.groupControl3.Controls.Add(this.btn_TKPhieuTraSach);
             this.groupControl3.Controls.Add(this.tb_TienNoKiNay);
             this.groupControl3.Controls.Add(this.tb_SoTienTra);
             this.groupControl3.Controls.Add(this.tb_IDPhieuTra);
@@ -243,6 +411,18 @@
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm theo";
             // 
+            // btn_PhieuTraSach
+            // 
+            this.btn_PhieuTraSach.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btn_PhieuTraSach.Appearance.Options.UseFont = true;
+            this.btn_PhieuTraSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_search_48;
+            this.btn_PhieuTraSach.Location = new System.Drawing.Point(156, 455);
+            this.btn_PhieuTraSach.Name = "btn_PhieuTraSach";
+            this.btn_PhieuTraSach.Size = new System.Drawing.Size(173, 80);
+            this.btn_PhieuTraSach.TabIndex = 20;
+            this.btn_PhieuTraSach.Text = "Tìm kiếm";
+            this.btn_PhieuTraSach.Click += new System.EventHandler(this.btn_TKPhieuTraSach_Click);
+            // 
             // dtp_NgayTra
             // 
             this.dtp_NgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -250,26 +430,6 @@
             this.dtp_NgayTra.Name = "dtp_NgayTra";
             this.dtp_NgayTra.Size = new System.Drawing.Size(202, 44);
             this.dtp_NgayTra.TabIndex = 3;
-            // 
-            // btn_TKPhieuTraSach
-            // 
-            this.btn_TKPhieuTraSach.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_TKPhieuTraSach.color = System.Drawing.Color.SeaGreen;
-            this.btn_TKPhieuTraSach.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_TKPhieuTraSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_TKPhieuTraSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_TKPhieuTraSach.ForeColor = System.Drawing.Color.White;
-            this.btn_TKPhieuTraSach.Image = global::QLTV.Properties.Resources.icons8_search_48;
-            this.btn_TKPhieuTraSach.ImagePosition = 20;
-            this.btn_TKPhieuTraSach.ImageZoom = 50;
-            this.btn_TKPhieuTraSach.LabelPosition = 41;
-            this.btn_TKPhieuTraSach.LabelText = "Tìm kiếm";
-            this.btn_TKPhieuTraSach.Location = new System.Drawing.Point(129, 426);
-            this.btn_TKPhieuTraSach.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_TKPhieuTraSach.Name = "btn_TKPhieuTraSach";
-            this.btn_TKPhieuTraSach.Size = new System.Drawing.Size(155, 162);
-            this.btn_TKPhieuTraSach.TabIndex = 17;
-            this.btn_TKPhieuTraSach.Click += new System.EventHandler(this.btn_TKPhieuTraSach_Click);
             // 
             // tb_TienNoKiNay
             // 
@@ -407,6 +567,7 @@
             this.groupControl2.Appearance.Options.UseFont = true;
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
+            this.groupControl2.Controls.Add(this.bindingNavigator2);
             this.groupControl2.Controls.Add(this.dgv_TKCTPhieuTraSach);
             this.groupControl2.Location = new System.Drawing.Point(578, 0);
             this.groupControl2.Name = "groupControl2";
@@ -414,8 +575,143 @@
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu thông tin chi tiết phiếu trả sách";
             // 
+            // bindingNavigator2
+            // 
+            this.bindingNavigator2.AddNewItem = null;
+            this.bindingNavigator2.CountItem = null;
+            this.bindingNavigator2.DeleteItem = null;
+            this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel6,
+            this.toolStripButton1,
+            this.toolStripSeparator5,
+            this.toolStripLabel7,
+            this.toolStripButton2,
+            this.toolStripSeparator6,
+            this.toolStripLabel8,
+            this.toolStripButton3,
+            this.toolStripSeparator7,
+            this.toolStripLabel9,
+            this.toolStripButton4,
+            this.toolStripSeparator8,
+            this.toolStripLabel10,
+            this.toolStripButton5});
+            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator2.MoveFirstItem = null;
+            this.bindingNavigator2.MoveLastItem = null;
+            this.bindingNavigator2.MoveNextItem = null;
+            this.bindingNavigator2.MovePreviousItem = null;
+            this.bindingNavigator2.Name = "bindingNavigator2";
+            this.bindingNavigator2.PositionItem = null;
+            this.bindingNavigator2.Size = new System.Drawing.Size(1055, 31);
+            this.bindingNavigator2.TabIndex = 11;
+            this.bindingNavigator2.Text = "bindingNavigator2";
+            // 
+            // toolStripLabel6
+            // 
+            this.toolStripLabel6.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel6.Name = "toolStripLabel6";
+            this.toolStripLabel6.Size = new System.Drawing.Size(41, 28);
+            this.toolStripLabel6.Text = "Lưu";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::QLTV.Properties.Resources.diskette;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton1.Text = "Lưu";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel7
+            // 
+            this.toolStripLabel7.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel7.Name = "toolStripLabel7";
+            this.toolStripLabel7.Size = new System.Drawing.Size(42, 28);
+            this.toolStripLabel7.Text = "Sửa";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton2.Text = "Sửa thông tin";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel8
+            // 
+            this.toolStripLabel8.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel8.Name = "toolStripLabel8";
+            this.toolStripLabel8.Size = new System.Drawing.Size(43, 28);
+            this.toolStripLabel8.Text = "Xóa";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton3.Text = "Xóa";
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel9
+            // 
+            this.toolStripLabel9.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel9.Name = "toolStripLabel9";
+            this.toolStripLabel9.Size = new System.Drawing.Size(113, 28);
+            this.toolStripLabel9.Text = "Reset dữ liệu";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton4.Text = "Reset dữ liệu";
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel10
+            // 
+            this.toolStripLabel10.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel10.Name = "toolStripLabel10";
+            this.toolStripLabel10.Size = new System.Drawing.Size(57, 28);
+            this.toolStripLabel10.Text = "Thoát";
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton5.Text = "toolStripButton1";
+            // 
             // dgv_TKCTPhieuTraSach
             // 
+            this.dgv_TKCTPhieuTraSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_TKCTPhieuTraSach.AutoGenerateColumns = false;
             this.dgv_TKCTPhieuTraSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_TKCTPhieuTraSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -425,11 +721,10 @@
             this.soNgayMuonDataGridViewTextBoxColumn,
             this.tienPhatDataGridViewTextBoxColumn});
             this.dgv_TKCTPhieuTraSach.DataSource = this.cTPHIEUTRABindingSource;
-            this.dgv_TKCTPhieuTraSach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_TKCTPhieuTraSach.Location = new System.Drawing.Point(2, 45);
+            this.dgv_TKCTPhieuTraSach.Location = new System.Drawing.Point(2, 94);
             this.dgv_TKCTPhieuTraSach.Name = "dgv_TKCTPhieuTraSach";
             this.dgv_TKCTPhieuTraSach.RowTemplate.Height = 28;
-            this.dgv_TKCTPhieuTraSach.Size = new System.Drawing.Size(1055, 955);
+            this.dgv_TKCTPhieuTraSach.Size = new System.Drawing.Size(1055, 906);
             this.dgv_TKCTPhieuTraSach.TabIndex = 0;
             // 
             // iDCTPhieuTraDataGridViewTextBoxColumn
@@ -479,9 +774,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -505,22 +799,14 @@
             // 
             // btn_TKCTPhieuTraSach
             // 
-            this.btn_TKCTPhieuTraSach.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_TKCTPhieuTraSach.color = System.Drawing.Color.SeaGreen;
-            this.btn_TKCTPhieuTraSach.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btn_TKCTPhieuTraSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_TKCTPhieuTraSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btn_TKCTPhieuTraSach.ForeColor = System.Drawing.Color.White;
-            this.btn_TKCTPhieuTraSach.Image = global::QLTV.Properties.Resources.icons8_search_48;
-            this.btn_TKCTPhieuTraSach.ImagePosition = 20;
-            this.btn_TKCTPhieuTraSach.ImageZoom = 50;
-            this.btn_TKCTPhieuTraSach.LabelPosition = 41;
-            this.btn_TKCTPhieuTraSach.LabelText = "Tìm kiếm";
-            this.btn_TKCTPhieuTraSach.Location = new System.Drawing.Point(150, 450);
-            this.btn_TKCTPhieuTraSach.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_TKCTPhieuTraSach.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btn_TKCTPhieuTraSach.Appearance.Options.UseFont = true;
+            this.btn_TKCTPhieuTraSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_search_48;
+            this.btn_TKCTPhieuTraSach.Location = new System.Drawing.Point(172, 408);
             this.btn_TKCTPhieuTraSach.Name = "btn_TKCTPhieuTraSach";
-            this.btn_TKCTPhieuTraSach.Size = new System.Drawing.Size(155, 162);
-            this.btn_TKCTPhieuTraSach.TabIndex = 18;
+            this.btn_TKCTPhieuTraSach.Size = new System.Drawing.Size(173, 80);
+            this.btn_TKCTPhieuTraSach.TabIndex = 20;
+            this.btn_TKCTPhieuTraSach.Text = "Tìm kiếm";
             this.btn_TKCTPhieuTraSach.Click += new System.EventHandler(this.btn_TKCTPhieuTraSach_Click);
             // 
             // tb_TienPhat
@@ -650,6 +936,10 @@
             this.navigationPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
+            this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKTraSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUTRABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
@@ -659,6 +949,10 @@
             this.navigationPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
+            this.bindingNavigator2.ResumeLayout(false);
+            this.bindingNavigator2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCTPhieuTraSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUTRABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -692,11 +986,9 @@
         private System.Windows.Forms.RadioButton rdb_NgayTra;
         private System.Windows.Forms.RadioButton rdb_IDDocGia;
         private System.Windows.Forms.RadioButton rdb_IDPhieuTra;
-        private Bunifu.Framework.UI.BunifuTileButton btn_TKPhieuTraSach;
         private System.Windows.Forms.DataGridView dgv_TKCTPhieuTraSach;
         private System.Windows.Forms.BindingSource cTPHIEUTRABindingSource;
         private QuanLyThuVienDataSetTableAdapters.CT_PHIEUTRATableAdapter cT_PHIEUTRATableAdapter;
-        private Bunifu.Framework.UI.BunifuTileButton btn_TKCTPhieuTraSach;
         private System.Windows.Forms.TextBox tb_TienPhat;
         private System.Windows.Forms.TextBox tb_SoNgayMuon;
         private System.Windows.Forms.TextBox tb_IDCTPhieuMuon;
@@ -719,5 +1011,37 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soNgayMuonDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tienPhatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+        private System.Windows.Forms.ToolStripButton btn_Luu;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton btn_Sua;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripButton btn_Xoa;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripButton btn_Reset;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.BindingNavigator bindingNavigator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel6;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel7;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel8;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel9;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel10;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private DevExpress.XtraEditors.SimpleButton btn_PhieuTraSach;
+        private DevExpress.XtraEditors.SimpleButton btn_TKCTPhieuTraSach;
     }
 }

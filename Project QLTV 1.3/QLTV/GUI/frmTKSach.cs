@@ -97,37 +97,6 @@ namespace QLTV.GUI
 
         private void btn_TKCuonSach_Click(object sender, EventArgs e)
         {
-            if(rdb_IDCuonSach.Checked==true && tb_IDCuonSach.Text!="")
-            {
-                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCuonSach.Instance.TKIDCuonSach(tb_IDCuonSach.Text.Trim()));
-                ResetForm();
-            }
-            else if(rdb_IDSachCS.Checked==true && tb_IDSachCS.Text!="")
-            {
-                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCuonSach.Instance.TKIDSach(tb_IDSachCS.Text.Trim()));
-                ResetForm();
-            }
-            else if(rdb_TinhTrang.Checked==true && cbb_TinhTrang.Text!="")
-            {
-                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCuonSach.Instance.TKTinhTrang(cbb_TinhTrang.Text.Trim()));
-                ResetForm();
-            }
-
-            if (rdb_IDCuonSach.Checked == true && tb_IDCuonSach.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền ID cuốn sách cần tìm!!");
-                tb_IDCuonSach.Focus();
-            }
-            else if (rdb_IDSachCS.Checked == true && tb_IDSachCS.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền ID sách cần tìm !!");
-                tb_IDSachCS.Focus();
-            }
-            else if (rdb_TinhTrang.Checked == true && cbb_TinhTrang.Text == "")
-            {
-                MessageBox.Show("Vui lòng chọn tình trạng cần tìm!!");
-            }
-
 
         }
         #region Form

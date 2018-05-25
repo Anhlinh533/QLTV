@@ -119,5 +119,10 @@ namespace QLTV.GUI
         {
             SCRIPT.useForm.Instance.checkID(ADO.adoCTMuonSach.Instance.checkID(tb_IDCTPhieuMuon.Text.Trim()), label5, tb_IDCTPhieuMuon, pic_Warning, pic_Ss);
         }
+
+        private void cbb_IDDelete_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

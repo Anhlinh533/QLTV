@@ -33,6 +33,9 @@
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
+            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btn_Sua = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -149,6 +152,9 @@
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel5,
+            this.btn_Luu,
+            this.toolStripSeparator4,
             this.toolStripLabel1,
             this.btn_Sua,
             this.toolStripSeparator1,
@@ -168,8 +174,29 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.Size = new System.Drawing.Size(1010, 31);
-            this.bindingNavigator1.TabIndex = 3;
+            this.bindingNavigator1.TabIndex = 12;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // toolStripLabel5
+            // 
+            this.toolStripLabel5.ForeColor = System.Drawing.Color.Red;
+            this.toolStripLabel5.Name = "toolStripLabel5";
+            this.toolStripLabel5.Size = new System.Drawing.Size(41, 28);
+            this.toolStripLabel5.Text = "Lưu";
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
+            this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(28, 28);
+            this.btn_Luu.Text = "Lưu";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripLabel1
             // 
@@ -270,10 +297,10 @@
             this.iDDauSachDataGridViewTextBoxColumn,
             this.iDTacGiaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cTTACGIABindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 96);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 92);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 835);
+            this.dataGridView1.Size = new System.Drawing.Size(1010, 843);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -657,7 +684,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pic_Ss;
+        private System.Windows.Forms.PictureBox pic_Warning;
+        private DevExpress.XtraEditors.SimpleButton btn_Them;
+        private DevExpress.XtraEditors.SimpleButton btn_IDDelete;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+        private System.Windows.Forms.ToolStripButton btn_Luu;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton btn_Sua;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -669,10 +704,5 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripButton btn_Exit;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pic_Ss;
-        private System.Windows.Forms.PictureBox pic_Warning;
-        private DevExpress.XtraEditors.SimpleButton btn_Them;
-        private DevExpress.XtraEditors.SimpleButton btn_IDDelete;
     }
 }
