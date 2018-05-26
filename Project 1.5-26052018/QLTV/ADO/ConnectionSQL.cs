@@ -113,7 +113,7 @@ namespace QLTV.ADO
 
         //private string connectionSTR = ConfigurationManager.ConnectionStrings["Conn"].ConnectionString;
 
-        //Data Source=DESKTOP-UKUNBAP\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True
+        //Data Source=DESKTOP-5C45L67\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True
         //Data Source=DESKTOP-LUHFR97\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True
 
         //Thực hiện các câu lệnh Select
@@ -239,6 +239,37 @@ namespace QLTV.ADO
             }
 
             con.Close();
+        }
+
+        public SqlDataAdapter ExcuteAdapter(string sql)
+        {
+            SqlConnection con = new SqlConnection(dataSource);
+
+            SqlDataAdapter adp = new SqlDataAdapter(sql, con);
+            return adp;
+        }
+
+        public int ExcuteInt(string sql)
+        {
+            int i = 0;
+            SqlConnection con = new SqlConnection(dataSource);
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            try
+            {
+                i = (int)cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                string str = ex.Message;
+                //str = str.Substring(67);
+                MessageBox.Show(str, "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            con.Close();
+            return i;
         }
 
         public bool check(string sql)

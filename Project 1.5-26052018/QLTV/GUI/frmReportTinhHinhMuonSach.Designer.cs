@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.rpv_TinhHinhMuonSach = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iDBCMuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +52,8 @@
             this.designRepositoryItemComboBox1 = new DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox();
             this.recentlyUsedItemsComboBox1 = new DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox();
             this.bCTINHHINHMUONSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.BCTINHHINHMUONSACHTableAdapter();
+            this.LOAISACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.CT_BCTINHHINHMUONSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bCTINHHINHMUONSACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
@@ -57,15 +62,29 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOAISACHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_BCTINHHINHMUONSACHBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // rpv_TinhHinhMuonSach
             // 
             this.rpv_TinhHinhMuonSach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpv_TinhHinhMuonSach.Location = new System.Drawing.Point(3, 40);
+            this.rpv_TinhHinhMuonSach.DocumentMapWidth = 98;
+            reportDataSource1.Name = "rpLoaiSach";
+            reportDataSource1.Value = this.LOAISACHBindingSource;
+            reportDataSource2.Name = "rpCTTinhHinhMuonSach";
+            reportDataSource2.Value = this.CT_BCTINHHINHMUONSACHBindingSource;
+            reportDataSource3.Name = "rpTinhHinhSach";
+            reportDataSource3.Value = this.bCTINHHINHMUONSACHBindingSource;
+            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource1);
+            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource2);
+            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource3);
+            this.rpv_TinhHinhMuonSach.LocalReport.ReportEmbeddedResource = "QLTV.REPORT.rpTinhHinhMuonSach.rdlc";
+            this.rpv_TinhHinhMuonSach.Location = new System.Drawing.Point(2, 27);
+            this.rpv_TinhHinhMuonSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rpv_TinhHinhMuonSach.Name = "rpv_TinhHinhMuonSach";
             this.rpv_TinhHinhMuonSach.ServerReport.BearerToken = null;
-            this.rpv_TinhHinhMuonSach.Size = new System.Drawing.Size(908, 986);
+            this.rpv_TinhHinhMuonSach.Size = new System.Drawing.Size(605, 675);
             this.rpv_TinhHinhMuonSach.TabIndex = 0;
             // 
             // dataGridView1
@@ -79,10 +98,11 @@
             this.tongSoLuotMuonDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.bCTINHHINHMUONSACHBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 40);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 27);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(973, 832);
+            this.dataGridView1.Size = new System.Drawing.Size(649, 570);
             this.dataGridView1.TabIndex = 0;
             // 
             // iDBCMuonSachDataGridViewTextBoxColumn
@@ -91,7 +111,7 @@
             this.iDBCMuonSachDataGridViewTextBoxColumn.DataPropertyName = "IDBCMuonSach";
             this.iDBCMuonSachDataGridViewTextBoxColumn.HeaderText = "ID báo cáo mượn sách";
             this.iDBCMuonSachDataGridViewTextBoxColumn.Name = "iDBCMuonSachDataGridViewTextBoxColumn";
-            this.iDBCMuonSachDataGridViewTextBoxColumn.Width = 264;
+            this.iDBCMuonSachDataGridViewTextBoxColumn.Width = 177;
             // 
             // thangDataGridViewTextBoxColumn
             // 
@@ -99,7 +119,7 @@
             this.thangDataGridViewTextBoxColumn.DataPropertyName = "Thang";
             this.thangDataGridViewTextBoxColumn.HeaderText = "Tháng";
             this.thangDataGridViewTextBoxColumn.Name = "thangDataGridViewTextBoxColumn";
-            this.thangDataGridViewTextBoxColumn.Width = 136;
+            this.thangDataGridViewTextBoxColumn.Width = 91;
             // 
             // namDataGridViewTextBoxColumn
             // 
@@ -107,7 +127,7 @@
             this.namDataGridViewTextBoxColumn.DataPropertyName = "Nam";
             this.namDataGridViewTextBoxColumn.HeaderText = "Năm";
             this.namDataGridViewTextBoxColumn.Name = "namDataGridViewTextBoxColumn";
-            this.namDataGridViewTextBoxColumn.Width = 112;
+            this.namDataGridViewTextBoxColumn.Width = 76;
             // 
             // tongSoLuotMuonDataGridViewTextBoxColumn
             // 
@@ -115,7 +135,7 @@
             this.tongSoLuotMuonDataGridViewTextBoxColumn.DataPropertyName = "TongSoLuotMuon";
             this.tongSoLuotMuonDataGridViewTextBoxColumn.HeaderText = "Tổng số lượt mượn";
             this.tongSoLuotMuonDataGridViewTextBoxColumn.Name = "tongSoLuotMuonDataGridViewTextBoxColumn";
-            this.tongSoLuotMuonDataGridViewTextBoxColumn.Width = 207;
+            this.tongSoLuotMuonDataGridViewTextBoxColumn.Width = 140;
             // 
             // bCTINHHINHMUONSACHBindingSource
             // 
@@ -135,9 +155,11 @@
             this.groupBox3.Controls.Add(this.rpv_TinhHinhMuonSach);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox3.Location = new System.Drawing.Point(997, 115);
+            this.groupBox3.Location = new System.Drawing.Point(665, 79);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(914, 1029);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(609, 704);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Xem trước báo cáo thống kê tình hình mượn sách";
@@ -149,9 +171,11 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox2.Location = new System.Drawing.Point(12, 266);
+            this.groupBox2.Location = new System.Drawing.Point(8, 182);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(979, 875);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(653, 599);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dữ liệu thống kê được";
@@ -159,9 +183,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 70);
+            this.label2.Location = new System.Drawing.Point(4, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 36);
+            this.label2.Size = new System.Drawing.Size(73, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tháng:";
             // 
@@ -174,9 +199,11 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(18, 115);
+            this.groupBox1.Location = new System.Drawing.Point(12, 79);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(884, 145);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(589, 99);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê tình hình mượn sách";
@@ -185,9 +212,10 @@
             // 
             this.btn_TaoBaoCao.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btn_TaoBaoCao.Appearance.Options.UseFont = true;
-            this.btn_TaoBaoCao.Location = new System.Drawing.Point(665, 67);
+            this.btn_TaoBaoCao.Location = new System.Drawing.Point(443, 46);
+            this.btn_TaoBaoCao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_TaoBaoCao.Name = "btn_TaoBaoCao";
-            this.btn_TaoBaoCao.Size = new System.Drawing.Size(140, 44);
+            this.btn_TaoBaoCao.Size = new System.Drawing.Size(93, 30);
             this.btn_TaoBaoCao.TabIndex = 6;
             this.btn_TaoBaoCao.Text = "Tạo báo cáo";
             this.btn_TaoBaoCao.Click += new System.EventHandler(this.btn_TaoBaoCao_Click);
@@ -195,24 +223,27 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(332, 70);
+            this.label3.Location = new System.Drawing.Point(221, 48);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 36);
+            this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Năm:";
             // 
             // tb_Nam
             // 
-            this.tb_Nam.Location = new System.Drawing.Point(425, 67);
+            this.tb_Nam.Location = new System.Drawing.Point(283, 46);
+            this.tb_Nam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_Nam.Name = "tb_Nam";
-            this.tb_Nam.Size = new System.Drawing.Size(155, 44);
+            this.tb_Nam.Size = new System.Drawing.Size(105, 32);
             this.tb_Nam.TabIndex = 4;
             // 
             // tb_Thang
             // 
-            this.tb_Thang.Location = new System.Drawing.Point(123, 67);
+            this.tb_Thang.Location = new System.Drawing.Point(82, 46);
+            this.tb_Thang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_Thang.Name = "tb_Thang";
-            this.tb_Thang.Size = new System.Drawing.Size(156, 44);
+            this.tb_Thang.Size = new System.Drawing.Size(105, 32);
             this.tb_Thang.TabIndex = 3;
             // 
             // label1
@@ -220,9 +251,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 25F);
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(607, 28);
+            this.label1.Location = new System.Drawing.Point(405, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(880, 60);
+            this.label1.Size = new System.Drawing.Size(602, 41);
             this.label1.TabIndex = 6;
             this.label1.Text = "Báo cáo thống kê tình hình mượn sách";
             // 
@@ -247,15 +279,26 @@
             // 
             this.bCTINHHINHMUONSACHTableAdapter.ClearBeforeFill = true;
             // 
+            // LOAISACHBindingSource
+            // 
+            this.LOAISACHBindingSource.DataMember = "LOAISACH";
+            this.LOAISACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // CT_BCTINHHINHMUONSACHBindingSource
+            // 
+            this.CT_BCTINHHINHMUONSACHBindingSource.DataMember = "CT_BCTINHHINHMUONSACH";
+            this.CT_BCTINHHINHMUONSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
             // frmReportTinhHinhMuonSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1923, 1153);
+            this.ClientSize = new System.Drawing.Size(913, 512);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmReportTinhHinhMuonSach";
             this.Text = "frmReportTinhHinhMuonSach";
             this.Load += new System.EventHandler(this.frmReportTinhHinhMuonSach_Load);
@@ -268,6 +311,8 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOAISACHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_BCTINHHINHMUONSACHBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +340,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn namDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongSoLuotMuonDataGridViewTextBoxColumn;
         private DevExpress.XtraEditors.SimpleButton btn_TaoBaoCao;
+        private System.Windows.Forms.BindingSource LOAISACHBindingSource;
+        private System.Windows.Forms.BindingSource CT_BCTINHHINHMUONSACHBindingSource;
     }
 }

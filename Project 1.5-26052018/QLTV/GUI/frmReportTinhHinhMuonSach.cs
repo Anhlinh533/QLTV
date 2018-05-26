@@ -32,23 +32,23 @@ namespace QLTV.GUI
 
         private void btn_TaoBaoCao_Click(object sender, EventArgs e)
         {
-            //int i = ADO.adoRPTinhHinhMuonSach.Instance.IDReport();
-            //i++;
+            int i = ADO.adoRPTinhHinhMuonSach.Instance.IDReport();
+            i++;
 
-            //string str = "00" + i.ToString();
-            //if (i >= 10 && i < 100) str = "0" + i.ToString();
-            //else if (i >= 100 && i < 1000) str = i.ToString();
+            string str = "00" + i.ToString();
+            if (i >= 10 && i < 100) str = "0" + i.ToString();
+            else if (i >= 100 && i < 1000) str = i.ToString();
 
-            //ADO.adoRPTinhHinhMuonSach.Instance.Them(str, tb_Thang.Text, tb_Nam.Text);
-            this.bCTINHHINHMUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.BCTINHHINHMUONSACH);
+            ADO.adoRPTinhHinhMuonSach.Instance.Them(str, tb_Thang.Text, tb_Nam.Text);
+            this.bCTINHHINHMUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.BCTINHHINHMUONSACH);           
 
             DataSet dss = new DataSet();
             DataSet dsr = new DataSet();
             DataSet dsrc = new DataSet();
 
-            //ADO.adoRPTinhHinhMuonSach.Instance.Chons(str).Fill(dss);
-            //ADO.adoRPTinhHinhMuonSach.Instance.Chonr(str).Fill(dsr);
-            //ADO.adoRPTinhHinhMuonSach.Instance.Chonrc(str).Fill(dsrc);
+            ADO.adoRPTinhHinhMuonSach.Instance.Chons(str).Fill(dss);
+            ADO.adoRPTinhHinhMuonSach.Instance.Chonr(str).Fill(dsr);
+            ADO.adoRPTinhHinhMuonSach.Instance.Chonrc(str).Fill(dsrc);
 
             //Khai báo chế độ xử lý báo cáo, trong trường hợp này lấy báo cáo ở local
             rpv_TinhHinhMuonSach.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
