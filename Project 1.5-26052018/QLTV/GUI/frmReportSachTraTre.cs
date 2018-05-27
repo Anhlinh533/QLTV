@@ -70,6 +70,7 @@ namespace QLTV.GUI
                 rpv_SachTraTre.LocalReport.DataSources.Add(rdr);
                 //Refresh lại báo cáo
                 rpv_SachTraTre.RefreshReport();
-            }            
+            }
+        }
     }
 }

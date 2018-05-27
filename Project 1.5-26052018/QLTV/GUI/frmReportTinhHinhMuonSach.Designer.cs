@@ -83,7 +83,7 @@
             this.rpv_TinhHinhMuonSach.Location = new System.Drawing.Point(2, 27);
             this.rpv_TinhHinhMuonSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rpv_TinhHinhMuonSach.Name = "rpv_TinhHinhMuonSach";
-            this.rpv_TinhHinhMuonSach.ServerReport.BearerToken = null;
+            //this.rpv_TinhHinhMuonSach.ServerReport.BearerToken = null;
             this.rpv_TinhHinhMuonSach.Size = new System.Drawing.Size(605, 675);
             this.rpv_TinhHinhMuonSach.TabIndex = 0;
             // 

@@ -228,7 +228,7 @@
             this.rpv_SachTraTre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rpv_SachTraTre.Location = new System.Drawing.Point(3, 40);
             this.rpv_SachTraTre.Name = "rpv_SachTraTre";
-            this.rpv_SachTraTre.ServerReport.BearerToken = null;
+            //this.rpv_SachTraTre.ServerReport.BearerToken = null;
             this.rpv_SachTraTre.Size = new System.Drawing.Size(876, 906);
             this.rpv_SachTraTre.TabIndex = 0;
             // 
