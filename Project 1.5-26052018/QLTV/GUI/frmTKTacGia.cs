@@ -39,6 +39,9 @@ namespace QLTV.GUI
                 toolStripButton2.Enabled = false;
                 toolStripButton3.Enabled = false;
             }
+
+            //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
         }
         private string UserName;
         private string Password;

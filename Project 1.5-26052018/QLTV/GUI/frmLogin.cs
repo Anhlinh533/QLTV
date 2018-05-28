@@ -18,7 +18,7 @@ namespace QLTV.GUI
         public frmLogin()
         {
             InitializeComponent();
-        }
+        }                
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {

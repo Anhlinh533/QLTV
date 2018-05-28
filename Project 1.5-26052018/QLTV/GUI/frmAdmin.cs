@@ -29,6 +29,8 @@ namespace QLTV.GUI
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CT_USERADMIN' table. You can move, or remove it, as needed.
             this.cT_USERADMINTableAdapter.Fill(this.quanLyThuVienDataSet.CT_USERADMIN);
 
+            //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
         }
 
         private void btn_ThemAdmin_Click(object sender, EventArgs e)

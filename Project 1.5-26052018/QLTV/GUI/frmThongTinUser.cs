@@ -42,6 +42,12 @@ namespace QLTV.GUI
             dtp_NgayHetHan.Text = ADO.ConnectionSQL.Instance.readData("SELECT NgayHetHan FROM THEDOCGIA where IDDocGia = '" + tb_IDDocGia.Text.Trim() + "'", dtp_NgayHetHan.Text.Trim(), "NgayHetHan");
             tb_TongNo.Text = ADO.ConnectionSQL.Instance.readData("SELECT TongNo FROM THEDOCGIA where IDDocGia = '" + tb_IDDocGia.Text.Trim() + "'",tb_TongNo.Text.Trim(), "TongNo");
 
+            //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
+            //dtp_NgayLapThe.Format = DateTimePickerFormat.Custom;
+            //dtp_NgayLapThe.CustomFormat = "dd/MM/yyyy";
+            //dtp_NgayHetHan.Format = DateTimePickerFormat.Custom;
+            //dtp_NgayHetHan.CustomFormat = "dd/MM/yyyy";
         }
 
     }

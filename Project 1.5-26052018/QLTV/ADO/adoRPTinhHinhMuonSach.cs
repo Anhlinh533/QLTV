@@ -44,7 +44,7 @@ namespace QLTV.ADO
         public SqlDataAdapter Chonr(string tb_IDBCMuonSach)
         {
             SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
-            string sql = "SELECT TongSoLuotMuon FROM BCTINHHINHMUONSACH WHERE IDBCMuonSach = '" + tb_IDBCMuonSach + "'";
+            string sql = "SELECT * FROM BCTINHHINHMUONSACH WHERE IDBCMuonSach = '" + tb_IDBCMuonSach + "'";
             SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
 
             return adp;
@@ -54,6 +54,14 @@ namespace QLTV.ADO
         {
             SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
             string sql = "SELECT * FROM CT_BCTINHHINHMUONSACH WHERE IDBCMuonSach = '" + tb_IDBCMuonSach + "'";
+            SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
+
+            return adp;
+        }
+
+        public SqlDataAdapter Chona(string AdminName)
+        {
+            string sql = "SELECT HoTenAdmin FROM USERADMIN A, CT_USERADMIN B WHERE A.IDAdmin = B.IDAdmin AND A.UserNameAdmin = '" + AdminName + "'";
             SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
 
             return adp;

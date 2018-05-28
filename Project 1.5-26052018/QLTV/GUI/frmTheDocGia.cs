@@ -30,6 +30,11 @@ namespace QLTV.GUI
             label9.Hide();
             pic_Warning.Hide();
             pic_Ss.Hide();
+
+            //dtp_NgayLapThe.Format = DateTimePickerFormat.Custom;
+            //dtp_NgayLapThe.CustomFormat = "dd/MM/yyyy";
+            //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
         }
 
         #region Event

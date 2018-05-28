@@ -27,6 +27,8 @@ namespace QLTV.GUI
             tb_DiaChi.Text = ADO.ConnectionSQL.Instance.readData("SELECT DiaChiAdmin FROM CT_USERADMIN where IDAdmin = '" + tb_IDAdmin.Text.Trim() + "'", tb_DiaChi.Text.Trim(), "DiaChiAdmin");
             tb_Email.Text = ADO.ConnectionSQL.Instance.readData("SELECT EmailAdmin FROM CT_USERADMIN where IDAdmin = '" + tb_IDAdmin.Text.Trim() + "'", tb_Email.Text.Trim(), "EmailAdmin");
 
+            dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
         }
         private string UserName;
         private string Password;

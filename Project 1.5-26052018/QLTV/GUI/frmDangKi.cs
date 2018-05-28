@@ -34,6 +34,9 @@ namespace QLTV.GUI
             label9.Hide();
             pic_Ss.Hide();
             pic_Warning.Hide();
+
+            //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
         }
         private void btn_Them_Click(object sender, EventArgs e)
         {

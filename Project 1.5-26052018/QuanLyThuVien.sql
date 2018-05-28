@@ -14,7 +14,7 @@ SET DATEFORMAT dmy
 
 --___________________________________________________________ THEDOCGIA ____________________________________________________________--
 
---DROP TABLE LOAIDOCGIA
+DROP TABLE LOAIDOCGIA
 CREATE TABLE LOAIDOCGIA
 (
 	IDLoaiDG varchar(6) PRIMARY KEY NOT NULL,
@@ -24,18 +24,17 @@ CREATE TABLE LOAIDOCGIA
 INSERT INTO LOAIDOCGIA VALUES ('LDG001', N'Thường')
 INSERT INTO LOAIDOCGIA VALUES ('LDG002', 'VIP')
 
-
---DROP TABLE THEDOCGIA
+DROP TABLE THEDOCGIA
 CREATE TABLE THEDOCGIA
 (
 	IDDocGia varchar(6) PRIMARY KEY NOT NULL,
 	HoTenDG nvarchar(50) NOT NULL,
-	NgaySinhDG datetime NOT NULL,
+	NgaySinhDG date NOT NULL,
 	DiaChiDG nvarchar(50) NOT NULL,
 	EmailDG varchar(30) NOT NULL,
 	IDLoaiDG varchar(6) FOREIGN KEY REFERENCES LOAIDOCGIA(IDLoaiDG),
-	NgayLapThe datetime NOT NULL,
-	NgayHetHan datetime, --o
+	NgayLapThe date NOT NULL,
+	NgayHetHan date, --o
 	TongNo money DEFAULT(0) --o
 )
 
@@ -111,7 +110,7 @@ CREATE TABLE TACGIA
 (
 	IDTacGia varchar(6) PRIMARY KEY NOT NULL,
 	TenTacGia nvarchar(50) NOT NULL,
-	NgaySinh datetime NOT NULL
+	NgaySinh date NOT NULL
 )
 
 INSERT INTO TACGIA VALUES ('ITG001', 'Anh', '1/1/1997')
@@ -139,7 +138,7 @@ INSERT INTO CT_TACGIA VALUES ('CTG004', 'DSA003', 'ITG002')
 CREATE TABLE PHIEUNHAPSACH
 (
 	IDPhieuNhap varchar(6) PRIMARY KEY NOT NULL,
-	NgayNhap datetime NOT NULL,
+	NgayNhap date NOT NULL,
 	TongTien money DEFAULT(0) --o
 )
 
@@ -173,8 +172,8 @@ CREATE TABLE PHIEUMUON
 (
 	IDPhieuMuon varchar(6) PRIMARY KEY NOT NULL,	
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia),
-	NgayMuon datetime NOT NULL,
-	HanTra datetime --o
+	NgayMuon date NOT NULL,
+	HanTra date --o
 )
 
 INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('IPM001', 'IDG001', '1/1/2018')
@@ -208,7 +207,7 @@ CREATE TABLE PHIEUTRA
 (
 	IDPhieuTra varchar(6) PRIMARY KEY NOT NULL,
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia), --IDSach điền vào CT_PHIEUTRA
-	NgayTra datetime NOT NULL,
+	NgayTra date NOT NULL,
 	TienPhatKyNay money DEFAULT(0), --o default
 	SoTienTra money DEFAULT(0),
 	TienNoKyNay money DEFAULT(0) --o default
@@ -242,7 +241,7 @@ CREATE TABLE PHIEUTHUTIENPHAT
 (
 	IDPhieuThu varchar(6) PRIMARY KEY NOT NULL,
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia),
-	NgayLap datetime NOT NULL,
+	NgayLap date NOT NULL,
 	SoTienThu money DEFAULT(0),
 	ConLai money DEFAULT(0) --O
 )
@@ -253,8 +252,9 @@ CREATE TABLE PHIEUTHUTIENPHAT
 CREATE TABLE BCTINHHINHMUONSACH
 (
 	IDBCMuonSach varchar(6) PRIMARY KEY NOT NULL,
+	NgayLap date, --- 28/5
 	Thang int NOT NULL,
-	Nam int NOT NULL,
+	Nam int NOT NULL,	
 	TongSoLuotMuon int DEFAULT(0) --o
 )
 
@@ -275,7 +275,7 @@ CREATE TABLE CT_BCTINHHINHMUONSACH
 CREATE TABLE BCSACHTRATRE
 (
 	IDBCSachTre varchar(6) PRIMARY KEY NOT NULL,
-	NgayThangNam datetime NOT NULL,
+	NgayThangNam date NOT NULL,
 	IDCuonSach varchar(6) FOREIGN KEY REFERENCES CUONSACH(IDCuonSach),
 	IDPhieuMuon varchar(6) FOREIGN KEY REFERENCES PHIEUMUON(IDPhieuMuon),
 	SoNgayTraTre int --
@@ -283,7 +283,7 @@ CREATE TABLE BCSACHTRATRE
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ USERS ________________________________________________________________--
---DROP TABLE USERS
+DROP TABLE USERS
 CREATE TABLE USERS
 (
 	UserName varchar(50) PRIMARY KEY NOT NULL,	
@@ -291,7 +291,7 @@ CREATE TABLE USERS
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia)
 )
 
---DROP TABLE USERADMIN
+DROP TABLE USERADMIN
 CREATE TABLE USERADMIN
 (	
 	UserNameAdmin varchar(50) PRIMARY KEY NOT NULL,
@@ -303,12 +303,12 @@ INSERT INTO USERADMIN VALUES ('HunterTeam', '05123', 'IAD001')
 INSERT INTO USERADMIN VALUES ('baoduy', '1', 'IAD002')
 INSERT INTO USERADMIN VALUES ('a', '1', 'IAD003')
 
---DROP TABLE CT_USERADMIN --- 21/5
+DROP TABLE CT_USERADMIN --- 21/5
 CREATE TABLE CT_USERADMIN
 (	
 	IDAdmin varchar(6) PRIMARY KEY NOT NULL,
 	HoTenAdmin nvarchar(50) NOT NULL,
-	NgaySinhAdmin datetime NOT NULL,
+	NgaySinhAdmin date NOT NULL,
 	DiaChiAdmin nvarchar(50) NOT NULL,
 	EmailAdmin varchar(30) NOT NULL
 )
@@ -354,7 +354,7 @@ AS
 BEGIN
 
 /*Tuổi độc giả*/
-	DECLARE @NGAYSINHDG datetime, @NGAYLAPTHE datetime, @TUOIMIN int, @TUOIMAX int
+	DECLARE @NGAYSINHDG date, @NGAYLAPTHE date, @TUOIMIN int, @TUOIMAX int
 	
 	SELECT @NGAYSINHDG = NgaySinhDG, @NGAYLAPTHE = NgayLapThe
 	FROM INSERTED
@@ -384,7 +384,7 @@ AS
 BEGIN
 
 /*NamXB > NgaySinh*/
-	DECLARE @NAMXB int, @NGAYSINH datetime
+	DECLARE @NAMXB int, @NGAYSINH date
 
 	SELECT @NAMXB = NamXB
 	FROM INSERTED
@@ -399,7 +399,7 @@ BEGIN
 	END
 
 /*Sách xuất bản 8 năm*/
-	DECLARE @NGAYNHAP datetime, @KHOANGCACHXB int
+	DECLARE @NGAYNHAP date, @KHOANGCACHXB int
 
 	SELECT @NGAYNHAP = A.NgayNhap 
 	FROM INSERTED I, PHIEUNHAPSACH A, CT_PHIEUNHAPSACH B
@@ -440,7 +440,7 @@ FOR UPDATE
 AS
 BEGIN
 
-	DECLARE @NGAYNHAPI datetime, @NGAYNHAPD datetime, @KHOANGCACHXB int
+	DECLARE @NGAYNHAPI date, @NGAYNHAPD date, @KHOANGCACHXB int
 	SELECT @NGAYNHAPI = I.NgayNhap, @NGAYNHAPD = D.NgayNhap
 	FROM INSERTED I, DELETED D
 	SELECT @KHOANGCACHXB = KhoangCachXB
@@ -497,7 +497,7 @@ BEGIN
 	END
 
 /*Sách xuất bản 8 năm*/
-	DECLARE @NGAYNHAP datetime, @NAMXB int, @KHOANGCACHXB int
+	DECLARE @NGAYNHAP date, @NAMXB int, @KHOANGCACHXB int
 
 	SELECT @NGAYNHAP = NgayNhap 
 	FROM INSERTED I, PHIEUNHAPSACH A
@@ -582,7 +582,7 @@ AS
 BEGIN
 
 /*NgayMuon > NgayLapThe*/
-	DECLARE @NGAYMUON datetime, @NGAYLAPTHE datetime
+	DECLARE @NGAYMUON date, @NGAYLAPTHE date
 	
 	SELECT @NGAYMUON = NgayMuon, @NGAYLAPTHE = NgayLapThe
 	FROM INSERTED I, THEDOCGIA A
@@ -601,7 +601,7 @@ BEGIN
 	WHERE A.IDPhieuMuon = I.IDPhieuMuon
 
 /*UPDATE SoNgayMuon(CT_PHIEUTRA) khi UPDATE NgayMuon*/
-	DECLARE @NGAYMUONI datetime, @NGAYMUOND datetime
+	DECLARE @NGAYMUONI date, @NGAYMUOND date
 	SELECT @NGAYMUONI = I.NgayMuon, @NGAYMUOND = D.NgayMuon
 	FROM INSERTED I, DELETED D
 
@@ -642,7 +642,7 @@ BEGIN
 		ROLLBACK TRANSACTION
 	END
 /*Quy định cho mượn sách.9*/
-	DECLARE @NGAYHETHAN datetime, @IDCUONSACH varchar(6), @IDDOCGIA varchar(6), @NGAYMUON datetime, @TINHTRANG nvarchar(20)
+	DECLARE @NGAYHETHAN date, @IDCUONSACH varchar(6), @IDDOCGIA varchar(6), @NGAYMUON date, @TINHTRANG nvarchar(20)
 		
 	SELECT @IDCUONSACH = IDCuonSach, @IDDOCGIA = IDDocGia, @NGAYMUON = NgayMuon
 	FROM INSERTED I, PHIEUMUON A
@@ -759,7 +759,7 @@ BEGIN
 	WHERE A.IDDocGia = I.IDDocGia			  		
 
 /*UPDATE SoNgayMuon(CT_PHIEUTRA) khi UPDATE NgayTra*/
-	DECLARE @NGAYTRAI datetime, @NGAYTRAD datetime
+	DECLARE @NGAYTRAI date, @NGAYTRAD date
 	SELECT @NGAYTRAI = I.NgayTra, @NGAYTRAD = D.NgayTra
 	FROM INSERTED I, DELETED D
 
@@ -844,7 +844,7 @@ BEGIN
 			END
 
 	/*TienPhat và Tự động thêm BCSACHTRATRE*/		
-			DECLARE @NGAYTRA datetime, @IDCUONSACH varchar(6), @IDPHIEUMUON varchar(6)
+			DECLARE @NGAYTRA date, @IDCUONSACH varchar(6), @IDPHIEUMUON varchar(6)
 
 			SELECT @NGAYTRA = NgayTra, @IDCUONSACH = I1.IDCuonSach, @IDPHIEUMUON = B.IDPhieuMuon --
 			FROM #INSERTED1 I1, PHIEUTRA A, CT_PHIEUTRA B
@@ -987,7 +987,7 @@ AS
 BEGIN
 
 /*NgayLap >= min(NgayTra)*/
-	DECLARE @NGAYLAP datetime, @NGAYTRA datetime
+	DECLARE @NGAYLAP date, @NGAYTRA date
 
 	SELECT @NGAYLAP = NgayLap
 	FROM INSERTED
@@ -1059,7 +1059,7 @@ AS
 BEGIN
 
 /*Thang, Nam >= NgayMuon*/
-	DECLARE @THANG int, @NAM int, @NGAYMUON datetime
+	DECLARE @THANG int, @NAM int, @NGAYMUON date
 
 	SELECT @THANG = Thang, @NAM = Nam
 	FROM INSERTED
@@ -1083,6 +1083,12 @@ CREATE TRIGGER TRG_I_IMS ON BCTINHHINHMUONSACH
 FOR INSERT
 AS
 BEGIN
+
+/*NgayLap*/
+	UPDATE BCTINHHINHMUONSACH
+	SET NgayLap = GETDATE()
+	FROM INSERTED I, BCTINHHINHMUONSACH A
+	WHERE A.IDBCMuonSach = I.IDBCMuonSach
 
 /*Tự động thêm CT_BCTINHHINHMUONSACH*/ --- 22/5
 	DECLARE @t int, @j int, @i int = 1
@@ -1187,7 +1193,7 @@ AS
 BEGIN
 
 /*NgayThangNam >= min(NgayTra)*/
-	DECLARE @NGAYTHANGNAM datetime, @NGAYTRA datetime
+	DECLARE @NGAYTHANGNAM date, @NGAYTRA date
 
 	SELECT @NGAYTHANGNAM = NgayThangNam
 	FROM INSERTED

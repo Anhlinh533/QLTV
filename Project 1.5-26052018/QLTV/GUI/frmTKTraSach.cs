@@ -45,6 +45,9 @@ namespace QLTV.GUI
                 toolStripButton2.Enabled = false;
                 toolStripButton3.Enabled = false;
             }
+
+            //dtp_NgayTra.Format = DateTimePickerFormat.Custom;
+            //dtp_NgayTra.CustomFormat = "dd/MM/yyyy";
         }
 
         private void btn_TKCTPhieuTraSach_Click(object sender, EventArgs e)

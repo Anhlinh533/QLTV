@@ -52,6 +52,10 @@ namespace QLTV.GUI
                 toolStripButton3.Enabled = false;
             }
 
+            //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
+            //dtp_NgayLapThe.Format = DateTimePickerFormat.Custom;
+            //dtp_NgayLapThe.CustomFormat = "dd/MM/yyyy";
         }
 
         private void btn_TKDocGia_Click(object sender, EventArgs e)

@@ -222,7 +222,7 @@ namespace QLTV
 
         private void btn_rpSachTraTre_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmReportSachTraTre f = new frmReportSachTraTre();
+            frmReportSachTraTre f = new frmReportSachTraTre(UserName, Password);
             if (ExistForm(f)) return;
             f.MdiParent = this;
             f.Show();
@@ -230,7 +230,7 @@ namespace QLTV
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmReportTinhHinhMuonSach f = new frmReportTinhHinhMuonSach();
+            frmReportTinhHinhMuonSach f = new frmReportTinhHinhMuonSach(UserName, Password);
             if (ExistForm(f)) return;
             f.MdiParent = this;
             f.Show();
