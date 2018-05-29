@@ -507,6 +507,8 @@
             // 
             // tb_DiaChi
             // 
+            this.tb_DiaChi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tb_DiaChi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.tb_DiaChi.Location = new System.Drawing.Point(207, 293);
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(275, 44);

@@ -27,17 +27,16 @@ namespace QLTV.GUI
             if (ADO.adoLogin.Instance.checkDocGia(UserName, Password) == true)
             {
                 btn_Luu.Enabled = false;
-                btn_Sua.Enabled = false;
-                toolStripLabel1.Enabled = false;
-                toolStripLabel5.Enabled = false;
-                toolStripLabel2.Enabled = false;
+                //toolStripLabel1.Enabled = false;
+                //toolStripLabel5.Enabled = false;
+                //toolStripLabel2.Enabled = false;
                 btn_Xoa.Enabled = false;
-                toolStripLabel6.Enabled = false;
-                toolStripLabel7.Enabled = false;
-                toolStripLabel8.Enabled = false;
-                toolStripButton1.Enabled = false;
-                toolStripButton2.Enabled = false;
-                toolStripButton3.Enabled = false;
+                //toolStripLabel6.Enabled = false;
+                //toolStripLabel7.Enabled = false;
+                //toolStripLabel8.Enabled = false;
+                //toolStripButton1.Enabled = false;
+                //toolStripButton2.Enabled = false;
+                //toolStripButton3.Enabled = false;
             }
 
             //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
@@ -160,6 +159,26 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_LuuCTTG_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_XoaCTTG_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

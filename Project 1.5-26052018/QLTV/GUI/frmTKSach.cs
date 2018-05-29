@@ -34,9 +34,9 @@ namespace QLTV.GUI
             {
                 btn_Luu.Enabled = false;
                 btn_Sua.Enabled = false;
-                toolStripLabel1.Enabled = false;
-                toolStripLabel5.Enabled = false;
-                toolStripLabel2.Enabled = false;
+                //toolStripLabel1.Enabled = false;
+                //toolStripLabel5.Enabled = false;
+                //toolStripLabel2.Enabled = false;
                 btn_Xoa.Enabled = false;
                 toolStripLabel6.Enabled = false;
                 toolStripLabel7.Enabled = false;
@@ -206,6 +206,21 @@ namespace QLTV.GUI
         {
             dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
             dgv_TKSach.DataSource = quanLyThuVienDataSet.SACH;
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

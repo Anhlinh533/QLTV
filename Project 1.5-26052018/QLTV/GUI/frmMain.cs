@@ -331,7 +331,5 @@ namespace QLTV
         {
             Application.Exit();
         }
-
-
     }
 }

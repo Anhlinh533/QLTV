@@ -30,6 +30,7 @@ namespace QLTV.GUI
 
             //dtp_NgayMuon.Format = DateTimePickerFormat.Custom;
             //dtp_NgayMuon.CustomFormat = "dd/MM/yyyy";
+            ADO.ConnectionSQL.autoSach(cbb_IDDocGia, "Select IDDocGia from THEDOCGIA");
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -107,6 +108,11 @@ namespace QLTV.GUI
         private void tb_IDPhieuMuon_TextChanged(object sender, EventArgs e)
         {
             SCRIPT.useForm.Instance.checkID(ADO.adoMuonSach.Instance.checkID(tb_IDPhieuMuon.Text.Trim()), label4, tb_IDPhieuMuon, pic_Warning, pic_Ss);
+
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
 
         }
     }

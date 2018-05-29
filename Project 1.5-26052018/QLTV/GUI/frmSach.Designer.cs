@@ -468,6 +468,7 @@
             this.tb_GiaTien.Name = "tb_GiaTien";
             this.tb_GiaTien.Size = new System.Drawing.Size(221, 44);
             this.tb_GiaTien.TabIndex = 7;
+            this.tb_GiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_SoLuongTon
             // 
@@ -475,6 +476,7 @@
             this.tb_SoLuongTon.Name = "tb_SoLuongTon";
             this.tb_SoLuongTon.Size = new System.Drawing.Size(221, 44);
             this.tb_SoLuongTon.TabIndex = 6;
+            this.tb_SoLuongTon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_NXB
             // 
@@ -514,6 +516,16 @@
             // 
             this.cbb_NXB.FormattingEnabled = true;
             this.cbb_NXB.Items.AddRange(new object[] {
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
             "2010",
             "2011",
             "2012",

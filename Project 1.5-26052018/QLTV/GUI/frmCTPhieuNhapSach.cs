@@ -29,6 +29,8 @@ namespace QLTV.GUI
             label6.Hide();
             pic_Ss.Hide();
             pic_Warning.Hide();
+            ADO.ConnectionSQL.autoSach(cbb_IDPhieuNhap, "select IDPhieuNhap from PHIEUNHAPSACH");//idphieunhap
+            ADO.ConnectionSQL.autoSach(cbb_IDSach, "Select TenDauSach from DAUSACH");//idsach
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -110,5 +112,9 @@ namespace QLTV.GUI
             SCRIPT.useForm.Instance.checkID(ADO.adoCTPhieuNhapSach.Instance.checkID(tb_IDCTPhieuNhap.Text.Trim()), label6, tb_IDCTPhieuNhap, pic_Warning, pic_Ss);
         }
 
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,17 +33,15 @@ namespace QLTV.GUI
             if (ADO.adoLogin.Instance.checkDocGia(UserName, Password) == true)
             {
                 btn_Luu.Enabled = false;
-                btn_Sua.Enabled = false;
-                toolStripLabel1.Enabled = false;
-                toolStripLabel5.Enabled = false;
-                toolStripLabel2.Enabled = false;
+                //toolStripLabel1.Enabled = false;
+                //toolStripLabel5.Enabled = false;
+                //toolStripLabel2.Enabled = false;
                 btn_Xoa.Enabled = false;
-                toolStripLabel6.Enabled = false;
-                toolStripLabel7.Enabled = false;
-                toolStripLabel8.Enabled = false;
-                toolStripButton1.Enabled = false;
-                toolStripButton2.Enabled = false;
-                toolStripButton3.Enabled = false;
+                //toolStripLabel6.Enabled = false;
+                //toolStripLabel7.Enabled = false;
+                //toolStripLabel8.Enabled = false;
+                btn_LuuCTPT.Enabled = false;
+                btn_XoaCTPT.Enabled = false;
             }
 
             //dtp_NgayTra.Format = DateTimePickerFormat.Custom;
@@ -77,7 +75,7 @@ namespace QLTV.GUI
                 dgv_TKCTPhieuTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTraSach.Instance.TKTienPhat(tb_TienPhat.Text.Trim()));
                 ResetForm();
             }
-
+            else
             if (rdb_IDCTPhieuTra.Checked == true && tb_IDCTPhieuTra.Text == "")
             {
                 MessageBox.Show("Vui lòng điền ID chi tiết phiếu trả cần tìm!!");
@@ -139,7 +137,7 @@ namespace QLTV.GUI
                 dgv_TKTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTraSach.Instance.TKTienPhatKyNay(tb_TienPhatKiNay.Text.Trim()));
                 ResetForm();
             }
-
+            else
             if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập ID độc giả cần tìm!!");
@@ -245,6 +243,26 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_LuuCTPT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_XoaCTPT_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

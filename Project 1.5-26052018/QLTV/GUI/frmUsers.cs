@@ -126,5 +126,9 @@ namespace QLTV.GUI
             }
         }
 
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

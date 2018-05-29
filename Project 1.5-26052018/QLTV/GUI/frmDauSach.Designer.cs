@@ -393,7 +393,6 @@
             this.tb_TenDauSach.Name = "tb_TenDauSach";
             this.tb_TenDauSach.Size = new System.Drawing.Size(279, 44);
             this.tb_TenDauSach.TabIndex = 2;
-            this.tb_TenDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chu_KeyPress);
             // 
             // cbb_IDTheLoaiSach
             // 

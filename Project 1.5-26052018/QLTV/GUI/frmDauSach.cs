@@ -98,7 +98,7 @@ namespace QLTV.GUI
 
         private void chu_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
+
         }
         #endregion
 

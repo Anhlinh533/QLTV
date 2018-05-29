@@ -35,6 +35,7 @@ namespace QLTV.GUI
             //dtp_NgayLapThe.CustomFormat = "dd/MM/yyyy";
             //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
             //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
+            ADO.ConnectionSQL.autoSach(tb_DiaChi, "select DiaChiDG from THEDOCGIA");
         }
 
         #region Event

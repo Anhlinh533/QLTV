@@ -312,5 +312,25 @@ namespace QLTV.ADO
             //tb = reader[name].ToString();
             //return tb;
         }
+
+        public static void autoSach(TextBox tb, string sql)
+        {
+            string ConString = ConSTR();
+
+            using (SqlConnection con = new SqlConnection(ConString))
+            {
+                tb.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                SqlCommand cmd = new SqlCommand(sql, con);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                AutoCompleteStringCollection MyCollection = new AutoCompleteStringCollection();
+                while (reader.Read())
+                {
+                    MyCollection.Add(reader.GetString(0));
+                }
+                tb.AutoCompleteCustomSource = MyCollection;
+                con.Close();
+            }
+        }
     }
 }
