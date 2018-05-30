@@ -32,10 +32,10 @@ namespace QLTV.ADO
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
-        public void Xoa(string tb_IDCTPhieuMuon)
+        public void Xoa(string tb_IDCTPhieuMuon, string cbb_IDCuonSach)
         {
             //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
-            string sqlDelete = "DELETE FROM CT_PHIEUMUON WHERE IDCTPhieuMuon ='" + tb_IDCTPhieuMuon + "'";
+            string sqlDelete = "DELETE FROM CT_PHIEUMUON WHERE IDCTPhieuMuon ='" + tb_IDCTPhieuMuon + "' AND IDCuonSach ='" + cbb_IDCuonSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
         }
 
@@ -44,6 +44,13 @@ namespace QLTV.ADO
             //SCRIPT.formatCTMuonSach.Instance.returnIDCTMuonSach(ref tb_IDCTPhieuMuon);
             string sqlUpdate = "UPDATE CT_PHIEUMUON SET IDPhieuMuon = '" + cbb_IDPhieuMuon + "', IDCuonSach = '" + cbb_IDCuonSach + "' WHERE IDCTPhieuMuon = '" + tb_IDCTPhieuMuon + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
+
+        public string GetIDCuonSach(string tb_TenSach)
+        {
+            string sql = "SELECT TOP 1 C.IDCuonSach FROM DAUSACH A, SACH B, CUONSACH C WHERE B.IDDauSach = A.IDDauSach AND C.IDSach = B.IDSach AND A.TenDauSach = N'" + tb_TenSach + "' AND C.TinhTrang = N'Chưa cho mượn' ORDER BY C.IDCuonSach";
+            string s = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            return s;
         }
         #endregion
 

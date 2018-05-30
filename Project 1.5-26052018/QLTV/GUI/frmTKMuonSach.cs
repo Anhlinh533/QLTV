@@ -178,22 +178,39 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idpm = dgv_TKMuonSach.CurrentRow.Cells[0].Value.ToString();
+            string iddg = dgv_TKMuonSach.CurrentRow.Cells[1].Value.ToString();
+            string ngaymuon = dgv_TKMuonSach.CurrentRow.Cells[2].Value.ToString();
+            string hantra = dgv_TKMuonSach.CurrentRow.Cells[3].Value.ToString();
 
+            ADO.adoMuonSach.Instance.Sua(idpm, iddg, ngaymuon);
+            dgv_TKMuonSach.DataSource = quanLyThuVienDataSet.PHIEUMUON;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            string idpm = dgv_TKMuonSach.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoMuonSach.Instance.Xoa(idpm);
+            dgv_TKMuonSach.DataSource = quanLyThuVienDataSet.PHIEUMUON;
         }
 
         private void btn_LuuCTPM_Click(object sender, EventArgs e)
         {
+            string idctpm = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[0].Value.ToString();
+            string idpm = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[1].Value.ToString();
+            string idcs = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTMuonSach.Instance.Sua(idctpm, idpm, idcs);
+            dgv_TKCTPhieuMuonSach.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
         }
 
         private void btn_XoaCTPM_Click(object sender, EventArgs e)
         {
+            string idctpm = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[0].Value.ToString();
+            string idcs = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTMuonSach.Instance.Xoa(idctpm, idcs);
+            dgv_TKCTPhieuMuonSach.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
         }
     }
 }

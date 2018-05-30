@@ -163,22 +163,36 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idtg = dgv_TKTacGia.CurrentRow.Cells[0].Value.ToString();
+            string tentg = dgv_TKTacGia.CurrentRow.Cells[1].Value.ToString();
+            string ngaysinh = dgv_TKTacGia.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoTacGia.Instance.Sua(idtg, tentg, ngaysinh);
+            dgv_TKTacGia.DataSource = quanLyThuVienDataSet.TACGIA;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            string idtg = dgv_TKTacGia.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoTacGia.Instance.Xoa(idtg);
+            dgv_TKTacGia.DataSource = quanLyThuVienDataSet.TACGIA;
         }
 
         private void btn_LuuCTTG_Click(object sender, EventArgs e)
         {
+            string idcttg = dgv_TKCTTacGia.CurrentRow.Cells[0].Value.ToString();
+            string idds = dgv_TKCTTacGia.CurrentRow.Cells[1].Value.ToString();
+            string idtg = dgv_TKCTTacGia.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTTacGia.Instance.Sua(idcttg, idds, idtg);
+            dgv_TKCTTacGia.DataSource = quanLyThuVienDataSet.CT_TACGIA;
         }
 
         private void btn_XoaCTTG_Click(object sender, EventArgs e)
         {
-
+            string idcttg = dgv_TKCTTacGia.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoCTTacGia.Instance.Xoa(idcttg);
+            dgv_TKCTTacGia.DataSource = quanLyThuVienDataSet.CT_TACGIA;
         }
     }
 }

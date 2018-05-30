@@ -130,7 +130,16 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string iddg = dgv_ThemDG.CurrentRow.Cells[0].Value.ToString();
+            string hoten = dgv_ThemDG.CurrentRow.Cells[1].Value.ToString();
+            string ngaysinh = dgv_ThemDG.CurrentRow.Cells[2].Value.ToString();
+            string diachi = dgv_ThemDG.CurrentRow.Cells[3].Value.ToString();
+            string email = dgv_ThemDG.CurrentRow.Cells[4].Value.ToString();
+            string loaidg = dgv_ThemDG.CurrentRow.Cells[5].Value.ToString();
+            string ngaylapthe = dgv_ThemDG.CurrentRow.Cells[6].Value.ToString();
 
+            ADO.adoTheDocGia.Instance.Sua(iddg, hoten, ngaysinh, diachi, email, loaidg, ngaylapthe);
+            dgv_ThemDG.DataSource = quanLyThuVienDataSet.THEDOCGIA;
         }
     }
 }

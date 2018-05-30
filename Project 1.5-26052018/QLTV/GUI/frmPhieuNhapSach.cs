@@ -109,7 +109,11 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idpn = dgv_Them.CurrentRow.Cells[0].Value.ToString();
+            string ngaynhap = dgv_Them.CurrentRow.Cells[1].Value.ToString();
 
+            ADO.adoPhieuNhapSach.Instance.Sua(idpn, ngaynhap);
+            dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUNHAPSACH;
         }
     }
 }

@@ -699,12 +699,17 @@ END
 CREATE TRIGGER TRG_D_CPM ON CT_PHIEUMUON
 FOR DELETE
 AS
-BEGIN
+BEGIN	
 
 	UPDATE CUONSACH
 	SET TinhTrang = N'Chưa cho mượn'
 	FROM DELETED L, CUONSACH A
 	WHERE A.IDCuonSach = L.IDCuonSach
+
+	UPDATE SACH --- 29/5
+	SET SoLuongTon += 1
+	FROM DELETED L, SACH A, CUONSACH B
+	WHERE A.IDSach = B.IDSach AND B.IDCuonSach = L.IDCuonSach
 
 END
 --------------------------------------------------------------------------------------------------------------------------------------
