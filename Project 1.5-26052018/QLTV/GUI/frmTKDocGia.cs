@@ -95,6 +95,7 @@ namespace QLTV.GUI
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKNgaySinhDG(dtp_NgaySinh.Text.Trim()));
                 ResetForm();
             }
+            else
             if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text == "")
             {
                 MessageBox.Show("Vui lòng điền ID độc giả cần tìm!!");
@@ -133,6 +134,7 @@ namespace QLTV.GUI
                 dgv_TKUser.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoUsers.Instance.TKUserIDDocGia(tb_IDUser.Text.Trim()));
                 ResetForm();
             }
+            else
             if (rdb_User.Checked == true && tb_TenUser.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập Username cần tìm!!");

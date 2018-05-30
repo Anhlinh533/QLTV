@@ -64,7 +64,7 @@ namespace QLTV.GUI
                 dgv_TKCTPhieuMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTMuonSach.Instance.TKIDPhieuMuon(tb_IDPhieuMuonSach.Text.Trim()));
                 ResetForm();
             }
-
+            else
             if (rdb_IDCTPhieuMuon.Checked == true && tb_IDCTPhieuMuonSach.Text == "")
             {
                 MessageBox.Show("Vui lòng điền ID chi tiết phiếu mượn cần tìm!!");
@@ -105,6 +105,7 @@ namespace QLTV.GUI
                 dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKNgayMuon(dtp_NgayMuon.Text.Trim()));
                 ResetForm();
             }
+            else
             if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text == "")
             {
                 MessageBox.Show("Vui lòng điền ID độc giả cần tìm!!");

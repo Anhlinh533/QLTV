@@ -32,6 +32,14 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_TKDocGia = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
             this.dgv_TKDocGia = new System.Windows.Forms.DataGridView();
             this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoTenDGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +71,14 @@
             this.rdb_IDDocGia = new System.Windows.Forms.RadioButton();
             this.item_TKUsers = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btn_LuuUser = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_XoaUser = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.dgv_TKUser = new System.Windows.Forms.DataGridView();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDocGiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,27 +92,13 @@
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.btn_LuuUser = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_XoaUser = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKDocGia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKDocGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
@@ -106,14 +108,12 @@
             this.item_TKUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
+            this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSERSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
-            this.bindingNavigator2.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -157,6 +157,88 @@
             this.groupControl2.Size = new System.Drawing.Size(792, 677);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu độc giả";
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = null;
+            this.bindingNavigator1.CountItem = null;
+            this.bindingNavigator1.DeleteItem = null;
+            this.bindingNavigator1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_Luu,
+            this.toolStripSeparator4,
+            this.btn_Xoa,
+            this.toolStripSeparator2,
+            this.btn_Reset,
+            this.toolStripSeparator3,
+            this.btn_Exit});
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator1.MoveFirstItem = null;
+            this.bindingNavigator1.MoveLastItem = null;
+            this.bindingNavigator1.MoveNextItem = null;
+            this.bindingNavigator1.MovePreviousItem = null;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = null;
+            this.bindingNavigator1.Size = new System.Drawing.Size(788, 35);
+            this.bindingNavigator1.TabIndex = 16;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_Luu.ForeColor = System.Drawing.Color.Red;
+            this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
+            this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(72, 32);
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click_1);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.ForeColor = System.Drawing.Color.Red;
+            this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(74, 32);
+            this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click_1);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_Reset
+            // 
+            this.btn_Reset.ForeColor = System.Drawing.Color.Red;
+            this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(151, 32);
+            this.btn_Reset.Text = "Reset dữ liệu";
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.ForeColor = System.Drawing.Color.Red;
+            this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(90, 32);
+            this.btn_Exit.Text = "Thoát";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // dgv_TKDocGia
             // 
@@ -478,6 +560,86 @@
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu User";
             // 
+            // bindingNavigator2
+            // 
+            this.bindingNavigator2.AddNewItem = null;
+            this.bindingNavigator2.CountItem = null;
+            this.bindingNavigator2.DeleteItem = null;
+            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_LuuUser,
+            this.toolStripSeparator1,
+            this.btn_XoaUser,
+            this.toolStripSeparator5,
+            this.toolStripButton3,
+            this.toolStripSeparator6,
+            this.toolStripButton4});
+            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator2.MoveFirstItem = null;
+            this.bindingNavigator2.MoveLastItem = null;
+            this.bindingNavigator2.MoveNextItem = null;
+            this.bindingNavigator2.MovePreviousItem = null;
+            this.bindingNavigator2.Name = "bindingNavigator2";
+            this.bindingNavigator2.PositionItem = null;
+            this.bindingNavigator2.Size = new System.Drawing.Size(802, 35);
+            this.bindingNavigator2.TabIndex = 17;
+            this.bindingNavigator2.Text = "bindingNavigator2";
+            // 
+            // btn_LuuUser
+            // 
+            this.btn_LuuUser.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_LuuUser.ForeColor = System.Drawing.Color.Red;
+            this.btn_LuuUser.Image = global::QLTV.Properties.Resources.diskette;
+            this.btn_LuuUser.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_LuuUser.Name = "btn_LuuUser";
+            this.btn_LuuUser.Size = new System.Drawing.Size(72, 32);
+            this.btn_LuuUser.Text = "Lưu";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_XoaUser
+            // 
+            this.btn_XoaUser.ForeColor = System.Drawing.Color.Red;
+            this.btn_XoaUser.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.btn_XoaUser.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XoaUser.Name = "btn_XoaUser";
+            this.btn_XoaUser.Size = new System.Drawing.Size(74, 32);
+            this.btn_XoaUser.Text = "Xóa";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.ForeColor = System.Drawing.Color.Red;
+            this.toolStripButton3.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(151, 32);
+            this.toolStripButton3.Text = "Reset dữ liệu";
+            this.toolStripButton3.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.ForeColor = System.Drawing.Color.Red;
+            this.toolStripButton4.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(90, 32);
+            this.toolStripButton4.Text = "Thoát";
+            this.toolStripButton4.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // dgv_TKUser
             // 
             this.dgv_TKUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -601,168 +763,6 @@
             // 
             this.uSERSTableAdapter.ClearBeforeFill = true;
             // 
-            // bindingNavigator1
-            // 
-            this.bindingNavigator1.AddNewItem = null;
-            this.bindingNavigator1.CountItem = null;
-            this.bindingNavigator1.DeleteItem = null;
-            this.bindingNavigator1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_Luu,
-            this.toolStripSeparator4,
-            this.btn_Xoa,
-            this.toolStripSeparator2,
-            this.btn_Reset,
-            this.toolStripSeparator3,
-            this.btn_Exit});
-            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
-            this.bindingNavigator1.MoveFirstItem = null;
-            this.bindingNavigator1.MoveLastItem = null;
-            this.bindingNavigator1.MoveNextItem = null;
-            this.bindingNavigator1.MovePreviousItem = null;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(788, 35);
-            this.bindingNavigator1.TabIndex = 16;
-            this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_Luu.ForeColor = System.Drawing.Color.Red;
-            this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
-            this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(72, 32);
-            this.btn_Luu.Text = "Lưu";
-            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click_1);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.ForeColor = System.Drawing.Color.Red;
-            this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
-            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(74, 32);
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click_1);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_Reset
-            // 
-            this.btn_Reset.ForeColor = System.Drawing.Color.Red;
-            this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
-            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(151, 32);
-            this.btn_Reset.Text = "Reset dữ liệu";
-            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.ForeColor = System.Drawing.Color.Red;
-            this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
-            this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(90, 32);
-            this.btn_Exit.Text = "Thoát";
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // bindingNavigator2
-            // 
-            this.bindingNavigator2.AddNewItem = null;
-            this.bindingNavigator2.CountItem = null;
-            this.bindingNavigator2.DeleteItem = null;
-            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_LuuUser,
-            this.toolStripSeparator1,
-            this.btn_XoaUser,
-            this.toolStripSeparator5,
-            this.toolStripButton3,
-            this.toolStripSeparator6,
-            this.toolStripButton4});
-            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
-            this.bindingNavigator2.MoveFirstItem = null;
-            this.bindingNavigator2.MoveLastItem = null;
-            this.bindingNavigator2.MoveNextItem = null;
-            this.bindingNavigator2.MovePreviousItem = null;
-            this.bindingNavigator2.Name = "bindingNavigator2";
-            this.bindingNavigator2.PositionItem = null;
-            this.bindingNavigator2.Size = new System.Drawing.Size(802, 35);
-            this.bindingNavigator2.TabIndex = 17;
-            this.bindingNavigator2.Text = "bindingNavigator2";
-            // 
-            // btn_LuuUser
-            // 
-            this.btn_LuuUser.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_LuuUser.ForeColor = System.Drawing.Color.Red;
-            this.btn_LuuUser.Image = global::QLTV.Properties.Resources.diskette;
-            this.btn_LuuUser.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_LuuUser.Name = "btn_LuuUser";
-            this.btn_LuuUser.Size = new System.Drawing.Size(72, 32);
-            this.btn_LuuUser.Text = "Lưu";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_XoaUser
-            // 
-            this.btn_XoaUser.ForeColor = System.Drawing.Color.Red;
-            this.btn_XoaUser.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
-            this.btn_XoaUser.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_XoaUser.Name = "btn_XoaUser";
-            this.btn_XoaUser.Size = new System.Drawing.Size(74, 32);
-            this.btn_XoaUser.Text = "Xóa";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.ForeColor = System.Drawing.Color.Red;
-            this.toolStripButton3.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(151, 32);
-            this.toolStripButton3.Text = "Reset dữ liệu";
-            this.toolStripButton3.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.ForeColor = System.Drawing.Color.Red;
-            this.toolStripButton4.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(90, 32);
-            this.toolStripButton4.Text = "Thoát";
-            this.toolStripButton4.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
             // frmTKDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -780,6 +780,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKDocGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHEDOCGIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
@@ -791,17 +794,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
+            this.bindingNavigator2.ResumeLayout(false);
+            this.bindingNavigator2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSERSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
-            this.bindingNavigator2.ResumeLayout(false);
-            this.bindingNavigator2.PerformLayout();
             this.ResumeLayout(false);
 
         }

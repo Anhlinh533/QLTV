@@ -29,6 +29,13 @@ namespace QLTV.GUI
             label5.Hide();
             pic_Ss.Hide();
             pic_Warning.Hide();
+
+            //cbb_IDDauSach -> Tên sách. cần đưa về định dạng ID
+            ADO.ConnectionSQL.autoSach(cbb_IDDauSach, "Select TenDauSach from DAUSACH");
+
+            //cbb_IDTacGia-> tên tác giả, cần đưa về dạng ID
+
+            ADO.ConnectionSQL.autoSach(cbb_IDTacGia, "Select TenTacGia from TACGIA");
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -107,6 +114,11 @@ namespace QLTV.GUI
         private void tb_IDCTTacGia_TextChanged(object sender, EventArgs e)
         {
             SCRIPT.useForm.Instance.checkID(ADO.adoCTTacGia.Instance.checkID(tb_IDCTTacGia.Text.Trim()), label5, tb_IDCTTacGia, pic_Warning, pic_Ss);
+
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
 
         }
     }

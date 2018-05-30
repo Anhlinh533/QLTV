@@ -97,23 +97,23 @@
             this.barHeaderItem3 = new DevExpress.XtraBars.BarHeaderItem();
             this.barHeaderItem4 = new DevExpress.XtraBars.BarHeaderItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.rib_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribtab_rpSachTraTre = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribtab_rpTinhHinhMuonSach = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
-            this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btn_DangXuat = new DevExpress.XtraBars.BarHeaderItem();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barHeaderItem5 = new DevExpress.XtraBars.BarHeaderItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barHeaderItem6 = new DevExpress.XtraBars.BarHeaderItem();
+            this.rib_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribtab_rpSachTraTre = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribtab_rpTinhHinhMuonSach = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
+            this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btn_DangXuat = new DevExpress.XtraBars.BarHeaderItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_ThongTinPM
@@ -547,6 +547,8 @@
             this.ribbonControl.AllowCustomization = true;
             this.ribbonControl.ApplicationButtonDropDownControl = this.popupMenu1;
             this.ribbonControl.ApplicationIcon = global::QLTV.Properties.Resources.icons8_home_48;
+            this.ribbonControl.AutoHideEmptyItems = true;
+            this.ribbonControl.CausesValidation = false;
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Font = new System.Drawing.Font("Tahoma", 15F);
             this.ribbonControl.ForeColor = System.Drawing.Color.Red;
@@ -615,6 +617,7 @@
             this.rib_BaoCao,
             this.rib_TimKiem,
             this.rib_QuiDinh});
+            this.ribbonControl.PopupShowMode = DevExpress.XtraBars.PopupShowMode.Classic;
             this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1,
             this.repositoryItemButtonEdit1});
@@ -762,45 +765,6 @@
             this.barButtonItem6.Id = 59;
             this.barButtonItem6.Name = "barButtonItem6";
             // 
-            // rib_BaoCao
-            // 
-            this.rib_BaoCao.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribtab_rpSachTraTre,
-            this.ribtab_rpTinhHinhMuonSach});
-            this.rib_BaoCao.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_report_card_48;
-            this.rib_BaoCao.Name = "rib_BaoCao";
-            this.rib_BaoCao.Text = "Báo cáo";
-            // 
-            // ribtab_rpSachTraTre
-            // 
-            this.ribtab_rpSachTraTre.ItemLinks.Add(this.btn_rpSachTraTre);
-            this.ribtab_rpSachTraTre.Name = "ribtab_rpSachTraTre";
-            this.ribtab_rpSachTraTre.Text = "Sách trả trễ";
-            // 
-            // ribtab_rpTinhHinhMuonSach
-            // 
-            this.ribtab_rpTinhHinhMuonSach.ItemLinks.Add(this.btn_rpTinhHinhMuonSach);
-            this.ribtab_rpTinhHinhMuonSach.Name = "ribtab_rpTinhHinhMuonSach";
-            this.ribtab_rpTinhHinhMuonSach.Text = "Tình hình mượn sách";
-            // 
-            // repositoryItemPictureEdit1
-            // 
-            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
-            // 
-            // xtraTable
-            // 
-            this.xtraTable.MdiParent = this;
-            // 
-            // btn_DangXuat
-            // 
-            this.btn_DangXuat.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.btn_DangXuat.Appearance.Options.UseFont = true;
-            this.btn_DangXuat.Caption = "Đăng xuất";
-            this.btn_DangXuat.Id = 41;
-            this.btn_DangXuat.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_exit_48;
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DangXuat_ItemClick_1);
-            // 
             // barEditItem1
             // 
             this.barEditItem1.Caption = "barEditItem1";
@@ -843,6 +807,45 @@
             this.barHeaderItem6.Name = "barHeaderItem6";
             this.barHeaderItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DangXuat_ItemClick_1);
             // 
+            // rib_BaoCao
+            // 
+            this.rib_BaoCao.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribtab_rpSachTraTre,
+            this.ribtab_rpTinhHinhMuonSach});
+            this.rib_BaoCao.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_report_card_48;
+            this.rib_BaoCao.Name = "rib_BaoCao";
+            this.rib_BaoCao.Text = "Báo cáo";
+            // 
+            // ribtab_rpSachTraTre
+            // 
+            this.ribtab_rpSachTraTre.ItemLinks.Add(this.btn_rpSachTraTre);
+            this.ribtab_rpSachTraTre.Name = "ribtab_rpSachTraTre";
+            this.ribtab_rpSachTraTre.Text = "Sách trả trễ";
+            // 
+            // ribtab_rpTinhHinhMuonSach
+            // 
+            this.ribtab_rpTinhHinhMuonSach.ItemLinks.Add(this.btn_rpTinhHinhMuonSach);
+            this.ribtab_rpTinhHinhMuonSach.Name = "ribtab_rpTinhHinhMuonSach";
+            this.ribtab_rpTinhHinhMuonSach.Text = "Tình hình mượn sách";
+            // 
+            // repositoryItemPictureEdit1
+            // 
+            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
+            // 
+            // xtraTable
+            // 
+            this.xtraTable.MdiParent = this;
+            // 
+            // btn_DangXuat
+            // 
+            this.btn_DangXuat.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.btn_DangXuat.Appearance.Options.UseFont = true;
+            this.btn_DangXuat.Caption = "Đăng xuất";
+            this.btn_DangXuat.Id = 41;
+            this.btn_DangXuat.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_exit_48;
+            this.btn_DangXuat.Name = "btn_DangXuat";
+            this.btn_DangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DangXuat_ItemClick_1);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -854,17 +857,17 @@
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
-            this.ribbonControl.SetPopupContextMenu(this, this.popupMenu1);
             this.Ribbon = this.ribbonControl;
+            this.RibbonVisibility = DevExpress.XtraBars.Ribbon.RibbonVisibility.Visible;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lí thư viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

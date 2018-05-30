@@ -115,9 +115,17 @@ namespace QLTV.GUI
 
         }
 
-        private void cbb_IDCuonSach_Click(object sender, EventArgs e)
+        private void cbb_IDCuonSach_KeyDown(object sender, KeyEventArgs e)
         {
-            lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
+            {
+                lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
+            }
+        }
+
+        private void lv_CuonSach_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            lv_CuonSach.Items.Remove(lv_CuonSach.SelectedItem);
         }
     }
 }

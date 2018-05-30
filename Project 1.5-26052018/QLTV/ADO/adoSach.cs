@@ -82,6 +82,23 @@ namespace QLTV.ADO
             GiaTien = "Select * from SACH where GiaTien like '%" + GiaTien + "%' ";
             return GiaTien;
         }
+
+        public string TKCuonSach(string IDCuonSach)
+        {
+            IDCuonSach = "select * from CUONSACH where IDCuonSach like '%" + IDCuonSach + "%'";
+            return IDCuonSach;
+        }
+        public string TKIDSachCS(string IDSach)
+        {
+            IDSach = "select * from CUONSACH where IDSach like '%" + IDSach + "%'";
+            return IDSach;
+        }
+
+        public string TKTinhTrang(string TinhTrang)
+        {
+            TinhTrang = "select * from CUONSACH where TinhTrang=" + TinhTrang;
+            return TinhTrang;
+        }
         #endregion
 
         public bool checkID(string ID)

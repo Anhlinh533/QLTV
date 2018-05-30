@@ -30,6 +30,12 @@ namespace QLTV.GUI
             label4.Hide();
             pic_Ss.Hide();
             pic_Warning.Hide();
+
+            //idphieutra
+            ADO.ConnectionSQL.autoSach(cbb_IDPhieuTra, "select IDPhieuTra from PHIEUTRA");
+
+            //idcuonsach->tencuonsach. chuyển về id
+            ADO.ConnectionSQL.autoSach(cbb_IDCuonSach, "select TenDauSach from DAUSACH");
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -108,6 +114,24 @@ namespace QLTV.GUI
         private void tb_IDCTPhieuTra_TextChanged(object sender, EventArgs e)
         {
             SCRIPT.useForm.Instance.checkID(ADO.adoCTTraSach.Instance.checkID(tb_IDCTPhieuTra.Text.Trim()), label4, tb_IDCTPhieuTra, pic_Warning, pic_Ss);
+
+        }
+
+        private void cbb_IDCuonSach_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
+            {
+                lb.Items.Add(cbb_IDCuonSach.Text);
+            }
+        }
+
+        private void lb_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            lb.Items.Remove(lb.SelectedItem);
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
 
         }
     }

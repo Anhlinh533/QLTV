@@ -112,5 +112,10 @@ namespace QLTV.GUI
             SCRIPT.useForm.Instance.checkID(ADO.adoDauSach.Instance.checkID(tb_IDDauSach.Text.Trim()), label5, tb_IDDauSach, pic_Warning, pic_Ss);
 
         }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

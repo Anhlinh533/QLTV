@@ -32,6 +32,14 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_TKPhieuMuonSach = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
             this.dgv_TKMuonSach = new System.Windows.Forms.DataGridView();
             this.iDPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDocGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +59,14 @@
             this.rdb_IDPhieuMuon = new System.Windows.Forms.RadioButton();
             this.item_TKCTPhieuMuonSach = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btn_LuuCTPM = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_XoaCTPM = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_ResetPM = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_ThoatPM = new System.Windows.Forms.ToolStripButton();
             this.dgv_TKCTPhieuMuonSach = new System.Windows.Forms.DataGridView();
             this.iDCTPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDPhieuMuonDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,27 +82,13 @@
             this.rdb_IDCTPhieuMuon = new System.Windows.Forms.RadioButton();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
             this.cT_PHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.btn_LuuCTPM = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_XoaCTPM = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_ResetPM = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_ThoatPM = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKPhieuMuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKMuonSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
@@ -95,14 +97,12 @@
             this.item_TKCTPhieuMuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
+            this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCTPhieuMuonSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUMUONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
-            this.bindingNavigator2.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -146,6 +146,88 @@
             this.groupControl4.Size = new System.Drawing.Size(738, 677);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu phiếu mượn sách";
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = null;
+            this.bindingNavigator1.CountItem = null;
+            this.bindingNavigator1.DeleteItem = null;
+            this.bindingNavigator1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_Luu,
+            this.toolStripSeparator4,
+            this.btn_Xoa,
+            this.toolStripSeparator2,
+            this.btn_Reset,
+            this.toolStripSeparator3,
+            this.btn_Exit});
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator1.MoveFirstItem = null;
+            this.bindingNavigator1.MoveLastItem = null;
+            this.bindingNavigator1.MoveNextItem = null;
+            this.bindingNavigator1.MovePreviousItem = null;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = null;
+            this.bindingNavigator1.Size = new System.Drawing.Size(734, 35);
+            this.bindingNavigator1.TabIndex = 15;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_Luu.ForeColor = System.Drawing.Color.Red;
+            this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
+            this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(72, 32);
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.ForeColor = System.Drawing.Color.Red;
+            this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(74, 32);
+            this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_Reset
+            // 
+            this.btn_Reset.ForeColor = System.Drawing.Color.Red;
+            this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(151, 32);
+            this.btn_Reset.Text = "Reset dữ liệu";
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.ForeColor = System.Drawing.Color.Red;
+            this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(90, 32);
+            this.btn_Exit.Text = "Thoát";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // dgv_TKMuonSach
             // 
@@ -352,6 +434,88 @@
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu chi tiết phiếu mượn sách";
             // 
+            // bindingNavigator2
+            // 
+            this.bindingNavigator2.AddNewItem = null;
+            this.bindingNavigator2.CountItem = null;
+            this.bindingNavigator2.DeleteItem = null;
+            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_LuuCTPM,
+            this.toolStripSeparator1,
+            this.btn_XoaCTPM,
+            this.toolStripSeparator5,
+            this.btn_ResetPM,
+            this.toolStripSeparator6,
+            this.btn_ThoatPM});
+            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator2.MoveFirstItem = null;
+            this.bindingNavigator2.MoveLastItem = null;
+            this.bindingNavigator2.MoveNextItem = null;
+            this.bindingNavigator2.MovePreviousItem = null;
+            this.bindingNavigator2.Name = "bindingNavigator2";
+            this.bindingNavigator2.PositionItem = null;
+            this.bindingNavigator2.Size = new System.Drawing.Size(648, 35);
+            this.bindingNavigator2.TabIndex = 15;
+            this.bindingNavigator2.Text = "bindingNavigator2";
+            // 
+            // btn_LuuCTPM
+            // 
+            this.btn_LuuCTPM.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_LuuCTPM.ForeColor = System.Drawing.Color.Red;
+            this.btn_LuuCTPM.Image = global::QLTV.Properties.Resources.diskette;
+            this.btn_LuuCTPM.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_LuuCTPM.Name = "btn_LuuCTPM";
+            this.btn_LuuCTPM.Size = new System.Drawing.Size(72, 32);
+            this.btn_LuuCTPM.Text = "Lưu";
+            this.btn_LuuCTPM.Click += new System.EventHandler(this.btn_LuuCTPM_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_XoaCTPM
+            // 
+            this.btn_XoaCTPM.ForeColor = System.Drawing.Color.Red;
+            this.btn_XoaCTPM.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.btn_XoaCTPM.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XoaCTPM.Name = "btn_XoaCTPM";
+            this.btn_XoaCTPM.Size = new System.Drawing.Size(74, 32);
+            this.btn_XoaCTPM.Text = "Xóa";
+            this.btn_XoaCTPM.Click += new System.EventHandler(this.btn_XoaCTPM_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_ResetPM
+            // 
+            this.btn_ResetPM.ForeColor = System.Drawing.Color.Red;
+            this.btn_ResetPM.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.btn_ResetPM.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_ResetPM.Name = "btn_ResetPM";
+            this.btn_ResetPM.Size = new System.Drawing.Size(151, 32);
+            this.btn_ResetPM.Text = "Reset dữ liệu";
+            this.btn_ResetPM.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_ThoatPM
+            // 
+            this.btn_ThoatPM.ForeColor = System.Drawing.Color.Red;
+            this.btn_ThoatPM.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.btn_ThoatPM.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_ThoatPM.Name = "btn_ThoatPM";
+            this.btn_ThoatPM.Size = new System.Drawing.Size(90, 32);
+            this.btn_ThoatPM.Text = "Thoát";
+            this.btn_ThoatPM.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // dgv_TKCTPhieuMuonSach
             // 
             this.dgv_TKCTPhieuMuonSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -505,170 +669,6 @@
             // 
             this.cT_PHIEUMUONTableAdapter.ClearBeforeFill = true;
             // 
-            // bindingNavigator1
-            // 
-            this.bindingNavigator1.AddNewItem = null;
-            this.bindingNavigator1.CountItem = null;
-            this.bindingNavigator1.DeleteItem = null;
-            this.bindingNavigator1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_Luu,
-            this.toolStripSeparator4,
-            this.btn_Xoa,
-            this.toolStripSeparator2,
-            this.btn_Reset,
-            this.toolStripSeparator3,
-            this.btn_Exit});
-            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
-            this.bindingNavigator1.MoveFirstItem = null;
-            this.bindingNavigator1.MoveLastItem = null;
-            this.bindingNavigator1.MoveNextItem = null;
-            this.bindingNavigator1.MovePreviousItem = null;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(734, 35);
-            this.bindingNavigator1.TabIndex = 15;
-            this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_Luu.ForeColor = System.Drawing.Color.Red;
-            this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
-            this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(72, 32);
-            this.btn_Luu.Text = "Lưu";
-            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.ForeColor = System.Drawing.Color.Red;
-            this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
-            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(74, 32);
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_Reset
-            // 
-            this.btn_Reset.ForeColor = System.Drawing.Color.Red;
-            this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
-            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(151, 32);
-            this.btn_Reset.Text = "Reset dữ liệu";
-            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.ForeColor = System.Drawing.Color.Red;
-            this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
-            this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(90, 32);
-            this.btn_Exit.Text = "Thoát";
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // bindingNavigator2
-            // 
-            this.bindingNavigator2.AddNewItem = null;
-            this.bindingNavigator2.CountItem = null;
-            this.bindingNavigator2.DeleteItem = null;
-            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_LuuCTPM,
-            this.toolStripSeparator1,
-            this.btn_XoaCTPM,
-            this.toolStripSeparator5,
-            this.btn_ResetPM,
-            this.toolStripSeparator6,
-            this.btn_ThoatPM});
-            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
-            this.bindingNavigator2.MoveFirstItem = null;
-            this.bindingNavigator2.MoveLastItem = null;
-            this.bindingNavigator2.MoveNextItem = null;
-            this.bindingNavigator2.MovePreviousItem = null;
-            this.bindingNavigator2.Name = "bindingNavigator2";
-            this.bindingNavigator2.PositionItem = null;
-            this.bindingNavigator2.Size = new System.Drawing.Size(648, 35);
-            this.bindingNavigator2.TabIndex = 15;
-            this.bindingNavigator2.Text = "bindingNavigator2";
-            // 
-            // btn_LuuCTPM
-            // 
-            this.btn_LuuCTPM.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_LuuCTPM.ForeColor = System.Drawing.Color.Red;
-            this.btn_LuuCTPM.Image = global::QLTV.Properties.Resources.diskette;
-            this.btn_LuuCTPM.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_LuuCTPM.Name = "btn_LuuCTPM";
-            this.btn_LuuCTPM.Size = new System.Drawing.Size(72, 32);
-            this.btn_LuuCTPM.Text = "Lưu";
-            this.btn_LuuCTPM.Click += new System.EventHandler(this.btn_LuuCTPM_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_XoaCTPM
-            // 
-            this.btn_XoaCTPM.ForeColor = System.Drawing.Color.Red;
-            this.btn_XoaCTPM.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
-            this.btn_XoaCTPM.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_XoaCTPM.Name = "btn_XoaCTPM";
-            this.btn_XoaCTPM.Size = new System.Drawing.Size(74, 32);
-            this.btn_XoaCTPM.Text = "Xóa";
-            this.btn_XoaCTPM.Click += new System.EventHandler(this.btn_XoaCTPM_Click);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_ResetPM
-            // 
-            this.btn_ResetPM.ForeColor = System.Drawing.Color.Red;
-            this.btn_ResetPM.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
-            this.btn_ResetPM.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_ResetPM.Name = "btn_ResetPM";
-            this.btn_ResetPM.Size = new System.Drawing.Size(151, 32);
-            this.btn_ResetPM.Text = "Reset dữ liệu";
-            this.btn_ResetPM.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
-            // 
-            // btn_ThoatPM
-            // 
-            this.btn_ThoatPM.ForeColor = System.Drawing.Color.Red;
-            this.btn_ThoatPM.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
-            this.btn_ThoatPM.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_ThoatPM.Name = "btn_ThoatPM";
-            this.btn_ThoatPM.Size = new System.Drawing.Size(90, 32);
-            this.btn_ThoatPM.Text = "Thoát";
-            this.btn_ThoatPM.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
             // frmTKMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -686,6 +686,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKMuonSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHIEUMUONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
@@ -696,17 +699,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
+            this.bindingNavigator2.ResumeLayout(false);
+            this.bindingNavigator2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCTPhieuMuonSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cTPHIEUMUONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
-            this.bindingNavigator2.ResumeLayout(false);
-            this.bindingNavigator2.PerformLayout();
             this.ResumeLayout(false);
 
         }

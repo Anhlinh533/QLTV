@@ -128,5 +128,9 @@ namespace QLTV.GUI
             SCRIPT.useForm.Instance.checkID(ADO.adoTheDocGia.Instance.checkID(tb_IDDocGia.Text.Trim()), label9, tb_IDDocGia, pic_Warning, pic_Ss);
         }
 
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

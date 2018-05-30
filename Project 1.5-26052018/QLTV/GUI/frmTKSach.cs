@@ -79,7 +79,7 @@ namespace QLTV.GUI
                 dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKSoLuongTon(tb_SoLuongTon.Text.Trim()));
                 ResetForm();
             }
-
+            else
             if (rdb_GiaTien.Checked == true && tb_GiaTien.Text == "")
             {
                 MessageBox.Show("Vui lòng điền giá tiền cần tìm!!");
@@ -117,7 +117,23 @@ namespace QLTV.GUI
 
         private void btn_TKCuonSach_Click(object sender, EventArgs e)
         {
-
+            if(rdb_IDCuonSach.Checked==true &&tb_IDCuonSach.Text!="")
+            {
+                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKCuonSach(tb_IDCuonSach.Text));
+                ResetForm();
+            }
+            else
+                if(rdb_IDSachCS.Checked==true && tb_IDSachCS.Text!="")
+            {
+                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDSachCS(tb_IDSachCS.Text));
+                ResetForm();
+            }
+            else
+                    if(rdb_TinhTrang.Checked==true && cbb_TinhTrang.Text!="")
+            {
+                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKTinhTrang(cbb_TinhTrang.Text));
+                ResetForm();
+            }
         }
         #region Form
         public void ResetForm()
