@@ -163,7 +163,7 @@ namespace QLTV.GUI
 
         private void chu_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
+
         }
         #endregion
 
@@ -220,16 +220,7 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string iddg = dgv_TKDocGia.CurrentRow.Cells[0].Value.ToString();
-            string hoten = dgv_TKDocGia.CurrentRow.Cells[1].Value.ToString();
-            string ngaysinh = dgv_TKDocGia.CurrentRow.Cells[2].Value.ToString();
-            string diachi = dgv_TKDocGia.CurrentRow.Cells[3].Value.ToString();
-            string email = dgv_TKDocGia.CurrentRow.Cells[4].Value.ToString();
-            string loaidg = dgv_TKDocGia.CurrentRow.Cells[5].Value.ToString();
-            string ngaylapthe = dgv_TKDocGia.CurrentRow.Cells[6].Value.ToString();
 
-            ADO.adoTheDocGia.Instance.Sua(iddg, hoten, ngaysinh, diachi, email, loaidg, ngaylapthe);
-            dgv_TKDocGia.DataSource = quanLyThuVienDataSet.THEDOCGIA;
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -239,9 +230,7 @@ namespace QLTV.GUI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            string iddg = dgv_TKDocGia.CurrentRow.Cells[0].Value.ToString();
-            ADO.adoTheDocGia.Instance.Xoa(iddg);
-            dgv_TKDocGia.DataSource = quanLyThuVienDataSet.THEDOCGIA;
+            
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -253,6 +242,16 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_Luu_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Xoa_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

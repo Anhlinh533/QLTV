@@ -132,12 +132,7 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idctpt = dgv_Them.CurrentRow.Cells[0].Value.ToString();
-            string idpt = dgv_Them.CurrentRow.Cells[1].Value.ToString();
-            string idcs = dgv_Them.CurrentRow.Cells[2].Value.ToString();
 
-            ADO.adoCTTraSach.Instance.Sua(idctpt, idpt, idcs);
-            dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
         }
     }
 }

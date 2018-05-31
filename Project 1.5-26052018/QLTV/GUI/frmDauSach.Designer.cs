@@ -32,6 +32,16 @@
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.item_Them = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
             this.dgv_ThemDauSach = new System.Windows.Forms.DataGridView();
             this.iDDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenDauSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +54,6 @@
             this.pic_Warning = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_TenDauSach = new System.Windows.Forms.TextBox();
-            this.cbb_IDTheLoaiSach = new System.Windows.Forms.ComboBox();
             this.lOAISACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_IDDauSach = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,21 +61,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dAUSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter();
             this.lOAISACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAISACHTableAdapter();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.btn_Luu = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_Exit = new System.Windows.Forms.ToolStripButton();
+            this.cbb_IDTheLoaiSach = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDauSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
@@ -75,8 +77,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -118,200 +118,6 @@
             this.groupControl2.Size = new System.Drawing.Size(1064, 934);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu đầu sách";
-            // 
-            // dgv_ThemDauSach
-            // 
-            this.dgv_ThemDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_ThemDauSach.AutoGenerateColumns = false;
-            this.dgv_ThemDauSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_ThemDauSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDauSachDataGridViewTextBoxColumn,
-            this.tenDauSachDataGridViewTextBoxColumn,
-            this.iDLoaiSachDataGridViewTextBoxColumn});
-            this.dgv_ThemDauSach.DataSource = this.dAUSACHBindingSource;
-            this.dgv_ThemDauSach.Location = new System.Drawing.Point(6, 97);
-            this.dgv_ThemDauSach.Name = "dgv_ThemDauSach";
-            this.dgv_ThemDauSach.RowTemplate.Height = 28;
-            this.dgv_ThemDauSach.Size = new System.Drawing.Size(1052, 831);
-            this.dgv_ThemDauSach.TabIndex = 2;
-            this.dgv_ThemDauSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDauSach_CellClick);
-            // 
-            // iDDauSachDataGridViewTextBoxColumn
-            // 
-            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDDauSachDataGridViewTextBoxColumn.DataPropertyName = "IDDauSach";
-            this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
-            this.iDDauSachDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
-            this.iDDauSachDataGridViewTextBoxColumn.Width = 192;
-            // 
-            // tenDauSachDataGridViewTextBoxColumn
-            // 
-            this.tenDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.tenDauSachDataGridViewTextBoxColumn.DataPropertyName = "TenDauSach";
-            this.tenDauSachDataGridViewTextBoxColumn.HeaderText = "Tên đầu sách";
-            this.tenDauSachDataGridViewTextBoxColumn.MaxInputLength = 200;
-            this.tenDauSachDataGridViewTextBoxColumn.Name = "tenDauSachDataGridViewTextBoxColumn";
-            this.tenDauSachDataGridViewTextBoxColumn.Width = 210;
-            // 
-            // iDLoaiSachDataGridViewTextBoxColumn
-            // 
-            this.iDLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.iDLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiSach";
-            this.iDLoaiSachDataGridViewTextBoxColumn.HeaderText = "ID thể loại sách";
-            this.iDLoaiSachDataGridViewTextBoxColumn.MaxInputLength = 6;
-            this.iDLoaiSachDataGridViewTextBoxColumn.Name = "iDLoaiSachDataGridViewTextBoxColumn";
-            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 181;
-            // 
-            // dAUSACHBindingSource
-            // 
-            this.dAUSACHBindingSource.DataMember = "DAUSACH";
-            this.dAUSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // quanLyThuVienDataSet
-            // 
-            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
-            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.Appearance.Options.UseFont = true;
-            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.btn_Them);
-            this.groupControl1.Controls.Add(this.pic_Ss);
-            this.groupControl1.Controls.Add(this.pic_Warning);
-            this.groupControl1.Controls.Add(this.label5);
-            this.groupControl1.Controls.Add(this.tb_TenDauSach);
-            this.groupControl1.Controls.Add(this.cbb_IDTheLoaiSach);
-            this.groupControl1.Controls.Add(this.tb_IDDauSach);
-            this.groupControl1.Controls.Add(this.label3);
-            this.groupControl1.Controls.Add(this.label2);
-            this.groupControl1.Controls.Add(this.label1);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(590, 937);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "Thông tin đầu sách";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.btn_Them.Appearance.Options.UseFont = true;
-            this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.btn_Them.Location = new System.Drawing.Point(197, 295);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(157, 75);
-            this.btn_Them.TabIndex = 35;
-            this.btn_Them.Text = "Thêm";
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
-            // 
-            // pic_Ss
-            // 
-            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.pic_Ss.Location = new System.Drawing.Point(529, 66);
-            this.pic_Ss.Name = "pic_Ss";
-            this.pic_Ss.Size = new System.Drawing.Size(37, 39);
-            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Ss.TabIndex = 18;
-            this.pic_Ss.TabStop = false;
-            // 
-            // pic_Warning
-            // 
-            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.pic_Warning.Location = new System.Drawing.Point(529, 66);
-            this.pic_Warning.Name = "pic_Warning";
-            this.pic_Warning.Size = new System.Drawing.Size(37, 39);
-            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Warning.TabIndex = 17;
-            this.pic_Warning.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label5.Location = new System.Drawing.Point(240, 124);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 24);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "label5";
-            // 
-            // tb_TenDauSach
-            // 
-            this.tb_TenDauSach.Location = new System.Drawing.Point(244, 161);
-            this.tb_TenDauSach.MaxLength = 200;
-            this.tb_TenDauSach.Name = "tb_TenDauSach";
-            this.tb_TenDauSach.Size = new System.Drawing.Size(279, 44);
-            this.tb_TenDauSach.TabIndex = 2;
-            // 
-            // cbb_IDTheLoaiSach
-            // 
-            this.cbb_IDTheLoaiSach.DataSource = this.lOAISACHBindingSource;
-            this.cbb_IDTheLoaiSach.DisplayMember = "IDLoaiSach";
-            this.cbb_IDTheLoaiSach.FormattingEnabled = true;
-            this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(244, 219);
-            this.cbb_IDTheLoaiSach.Name = "cbb_IDTheLoaiSach";
-            this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(279, 44);
-            this.cbb_IDTheLoaiSach.TabIndex = 3;
-            this.cbb_IDTheLoaiSach.ValueMember = "IDLoaiSach";
-            // 
-            // lOAISACHBindingSource
-            // 
-            this.lOAISACHBindingSource.DataMember = "LOAISACH";
-            this.lOAISACHBindingSource.DataSource = this.quanLyThuVienDataSet;
-            // 
-            // tb_IDDauSach
-            // 
-            this.tb_IDDauSach.Location = new System.Drawing.Point(244, 66);
-            this.tb_IDDauSach.MaxLength = 3;
-            this.tb_IDDauSach.Name = "tb_IDDauSach";
-            this.tb_IDDauSach.Size = new System.Drawing.Size(279, 44);
-            this.tb_IDDauSach.TabIndex = 1;
-            this.tb_IDDauSach.TextChanged += new System.EventHandler(this.tb_IDDauSach_TextChanged);
-            this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(6, 222);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 36);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "ID thể loại sách:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 164);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 36);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên đầu sách:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(6, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID đầu sách:";
-            // 
-            // dAUSACHTableAdapter
-            // 
-            this.dAUSACHTableAdapter.ClearBeforeFill = true;
-            // 
-            // lOAISACHTableAdapter
-            // 
-            this.lOAISACHTableAdapter.ClearBeforeFill = true;
             // 
             // bindingNavigator1
             // 
@@ -412,6 +218,198 @@
             this.btn_Exit.Text = "Thoát";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
+            // dgv_ThemDauSach
+            // 
+            this.dgv_ThemDauSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_ThemDauSach.AutoGenerateColumns = false;
+            this.dgv_ThemDauSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ThemDauSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDauSachDataGridViewTextBoxColumn,
+            this.tenDauSachDataGridViewTextBoxColumn,
+            this.iDLoaiSachDataGridViewTextBoxColumn});
+            this.dgv_ThemDauSach.DataSource = this.dAUSACHBindingSource;
+            this.dgv_ThemDauSach.Location = new System.Drawing.Point(6, 97);
+            this.dgv_ThemDauSach.Name = "dgv_ThemDauSach";
+            this.dgv_ThemDauSach.RowTemplate.Height = 28;
+            this.dgv_ThemDauSach.Size = new System.Drawing.Size(1052, 831);
+            this.dgv_ThemDauSach.TabIndex = 2;
+            this.dgv_ThemDauSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ThemDauSach_CellClick);
+            // 
+            // iDDauSachDataGridViewTextBoxColumn
+            // 
+            this.iDDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDDauSachDataGridViewTextBoxColumn.DataPropertyName = "IDDauSach";
+            this.iDDauSachDataGridViewTextBoxColumn.HeaderText = "ID đầu sách";
+            this.iDDauSachDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDDauSachDataGridViewTextBoxColumn.Name = "iDDauSachDataGridViewTextBoxColumn";
+            this.iDDauSachDataGridViewTextBoxColumn.Width = 192;
+            // 
+            // tenDauSachDataGridViewTextBoxColumn
+            // 
+            this.tenDauSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.tenDauSachDataGridViewTextBoxColumn.DataPropertyName = "TenDauSach";
+            this.tenDauSachDataGridViewTextBoxColumn.HeaderText = "Tên đầu sách";
+            this.tenDauSachDataGridViewTextBoxColumn.MaxInputLength = 200;
+            this.tenDauSachDataGridViewTextBoxColumn.Name = "tenDauSachDataGridViewTextBoxColumn";
+            this.tenDauSachDataGridViewTextBoxColumn.Width = 210;
+            // 
+            // iDLoaiSachDataGridViewTextBoxColumn
+            // 
+            this.iDLoaiSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDLoaiSachDataGridViewTextBoxColumn.DataPropertyName = "IDLoaiSach";
+            this.iDLoaiSachDataGridViewTextBoxColumn.HeaderText = "ID thể loại sách";
+            this.iDLoaiSachDataGridViewTextBoxColumn.MaxInputLength = 6;
+            this.iDLoaiSachDataGridViewTextBoxColumn.Name = "iDLoaiSachDataGridViewTextBoxColumn";
+            this.iDLoaiSachDataGridViewTextBoxColumn.Width = 181;
+            // 
+            // dAUSACHBindingSource
+            // 
+            this.dAUSACHBindingSource.DataMember = "DAUSACH";
+            this.dAUSACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // quanLyThuVienDataSet
+            // 
+            this.quanLyThuVienDataSet.DataSetName = "QuanLyThuVienDataSet";
+            this.quanLyThuVienDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.Appearance.Options.UseFont = true;
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.cbb_IDTheLoaiSach);
+            this.groupControl1.Controls.Add(this.btn_Them);
+            this.groupControl1.Controls.Add(this.pic_Ss);
+            this.groupControl1.Controls.Add(this.pic_Warning);
+            this.groupControl1.Controls.Add(this.label5);
+            this.groupControl1.Controls.Add(this.tb_TenDauSach);
+            this.groupControl1.Controls.Add(this.tb_IDDauSach);
+            this.groupControl1.Controls.Add(this.label3);
+            this.groupControl1.Controls.Add(this.label2);
+            this.groupControl1.Controls.Add(this.label1);
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(590, 937);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "Thông tin đầu sách";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_Them.Appearance.Options.UseFont = true;
+            this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.btn_Them.Location = new System.Drawing.Point(197, 295);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(157, 75);
+            this.btn_Them.TabIndex = 35;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            // 
+            // pic_Ss
+            // 
+            this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
+            this.pic_Ss.Location = new System.Drawing.Point(529, 66);
+            this.pic_Ss.Name = "pic_Ss";
+            this.pic_Ss.Size = new System.Drawing.Size(37, 39);
+            this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Ss.TabIndex = 18;
+            this.pic_Ss.TabStop = false;
+            // 
+            // pic_Warning
+            // 
+            this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
+            this.pic_Warning.Location = new System.Drawing.Point(529, 66);
+            this.pic_Warning.Name = "pic_Warning";
+            this.pic_Warning.Size = new System.Drawing.Size(37, 39);
+            this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Warning.TabIndex = 17;
+            this.pic_Warning.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label5.Location = new System.Drawing.Point(240, 124);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "label5";
+            // 
+            // tb_TenDauSach
+            // 
+            this.tb_TenDauSach.Location = new System.Drawing.Point(244, 161);
+            this.tb_TenDauSach.MaxLength = 200;
+            this.tb_TenDauSach.Name = "tb_TenDauSach";
+            this.tb_TenDauSach.Size = new System.Drawing.Size(279, 44);
+            this.tb_TenDauSach.TabIndex = 2;
+            // 
+            // lOAISACHBindingSource
+            // 
+            this.lOAISACHBindingSource.DataMember = "LOAISACH";
+            this.lOAISACHBindingSource.DataSource = this.quanLyThuVienDataSet;
+            // 
+            // tb_IDDauSach
+            // 
+            this.tb_IDDauSach.Location = new System.Drawing.Point(244, 66);
+            this.tb_IDDauSach.MaxLength = 3;
+            this.tb_IDDauSach.Name = "tb_IDDauSach";
+            this.tb_IDDauSach.Size = new System.Drawing.Size(279, 44);
+            this.tb_IDDauSach.TabIndex = 1;
+            this.tb_IDDauSach.TextChanged += new System.EventHandler(this.tb_IDDauSach_TextChanged);
+            this.tb_IDDauSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(6, 222);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(201, 36);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tên loại sách:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(6, 164);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(205, 36);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tên đầu sách:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(6, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID đầu sách:";
+            // 
+            // dAUSACHTableAdapter
+            // 
+            this.dAUSACHTableAdapter.ClearBeforeFill = true;
+            // 
+            // lOAISACHTableAdapter
+            // 
+            this.lOAISACHTableAdapter.ClearBeforeFill = true;
+            // 
+            // cbb_IDTheLoaiSach
+            // 
+            this.cbb_IDTheLoaiSach.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbb_IDTheLoaiSach.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cbb_IDTheLoaiSach.Location = new System.Drawing.Point(244, 219);
+            this.cbb_IDTheLoaiSach.Name = "cbb_IDTheLoaiSach";
+            this.cbb_IDTheLoaiSach.Size = new System.Drawing.Size(279, 44);
+            this.cbb_IDTheLoaiSach.TabIndex = 36;
+            // 
             // frmDauSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -429,6 +427,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThemDauSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dAUSACHBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
@@ -438,9 +439,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_Ss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Warning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAISACHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -455,7 +453,6 @@
         private System.Windows.Forms.BindingSource dAUSACHBindingSource;
         private QuanLyThuVienDataSetTableAdapters.DAUSACHTableAdapter dAUSACHTableAdapter;
         private System.Windows.Forms.TextBox tb_TenDauSach;
-        private System.Windows.Forms.ComboBox cbb_IDTheLoaiSach;
         private System.Windows.Forms.TextBox tb_IDDauSach;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -479,5 +476,6 @@
         private System.Windows.Forms.ToolStripButton btn_Reset;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.TextBox cbb_IDTheLoaiSach;
     }
 }

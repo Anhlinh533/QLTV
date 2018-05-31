@@ -115,12 +115,7 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idtg = dgv_Them.CurrentRow.Cells[0].Value.ToString();
-            string tentg = dgv_Them.CurrentRow.Cells[1].Value.ToString();
-            string ngaysinh = dgv_Them.CurrentRow.Cells[2].Value.ToString();
 
-            ADO.adoTacGia.Instance.Sua(idtg, tentg, ngaysinh);
-            dgv_Them.DataSource = quanLyThuVienDataSet.TACGIA;
         }
     }
 }

@@ -114,14 +114,7 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idctpn = dgv_Them.CurrentRow.Cells[0].Value.ToString();
-            string idpn = dgv_Them.CurrentRow.Cells[1].Value.ToString();
-            string ids = dgv_Them.CurrentRow.Cells[2].Value.ToString();
-            string soluong = dgv_Them.CurrentRow.Cells[3].Value.ToString();
-            string dongia = dgv_Them.CurrentRow.Cells[4].Value.ToString();
 
-            ADO.adoCTPhieuNhapSach.Instance.Sua(idctpn, idpn, ids, soluong, dongia);
-            dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUNHAPSACH;
         }
     }
 }

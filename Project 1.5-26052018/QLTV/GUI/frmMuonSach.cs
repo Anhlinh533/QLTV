@@ -113,13 +113,7 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idpm = dgv_Them.CurrentRow.Cells[0].Value.ToString();
-            string iddg = dgv_Them.CurrentRow.Cells[1].Value.ToString();
-            string ngaymuon = dgv_Them.CurrentRow.Cells[2].Value.ToString();
-            string hantra = dgv_Them.CurrentRow.Cells[3].Value.ToString();
 
-            ADO.adoMuonSach.Instance.Sua(idpm, iddg, ngaymuon);
-            dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUMUON;
         }
     }
 }

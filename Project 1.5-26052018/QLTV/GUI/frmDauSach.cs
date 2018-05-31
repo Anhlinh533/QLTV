@@ -27,6 +27,8 @@ namespace QLTV.GUI
             label5.Hide();
             pic_Ss.Hide();
             pic_Warning.Hide();
+
+            ADO.ConnectionSQL.autoSach(cbb_IDTheLoaiSach, "select TenLoaiSach from LOAISACH");
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -115,12 +117,7 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idds = dgv_ThemDauSach.CurrentRow.Cells[0].Value.ToString();
-            string tends = dgv_ThemDauSach.CurrentRow.Cells[1].Value.ToString();
-            string idls = dgv_ThemDauSach.CurrentRow.Cells[2].Value.ToString();
 
-            ADO.adoDauSach.Instance.Sua(idds, tends, idls);
-            dgv_ThemDauSach.DataSource = quanLyThuVienDataSet.DAUSACH;
         }
     }
 }

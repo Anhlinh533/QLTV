@@ -247,37 +247,22 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idpt = dgv_TKTraSach.CurrentRow.Cells[0].Value.ToString();
-            string iddg = dgv_TKTraSach.CurrentRow.Cells[1].Value.ToString();
-            string ngaytra = dgv_TKTraSach.CurrentRow.Cells[2].Value.ToString();
-            string sotientra = dgv_TKTraSach.CurrentRow.Cells[4].Value.ToString();
 
-            ADO.adoTraSach.Instance.Sua(idpt, iddg, ngaytra, sotientra);
-            dgv_TKTraSach.DataSource = quanLyThuVienDataSet.PHIEUTRA;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            string idpt = dgv_TKTraSach.CurrentRow.Cells[0].Value.ToString();
-            ADO.adoTraSach.Instance.Xoa(idpt);
-            dgv_TKTraSach.DataSource = quanLyThuVienDataSet.PHIEUTRA;
+
         }
 
         private void btn_LuuCTPT_Click(object sender, EventArgs e)
         {
-            string idctpt = dgv_TKCTPhieuTraSach.CurrentRow.Cells[0].Value.ToString();
-            string idpt = dgv_TKCTPhieuTraSach.CurrentRow.Cells[1].Value.ToString();
-            string idcs = dgv_TKCTPhieuTraSach.CurrentRow.Cells[2].Value.ToString();
 
-            ADO.adoCTTraSach.Instance.Sua(idctpt, idpt, idcs);
-            dgv_TKCTPhieuTraSach.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
         }
 
         private void btn_XoaCTPT_Click(object sender, EventArgs e)
         {
-            string idctpt = dgv_TKCTPhieuTraSach.CurrentRow.Cells[0].Value.ToString();
-            ADO.adoCTTraSach.Instance.Xoa(idctpt);
-            dgv_TKCTPhieuTraSach.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
+
         }
     }
 

@@ -107,18 +107,17 @@
             // 
             // navigationPane1
             // 
-            this.navigationPane1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.navigationPane1.Controls.Add(this.item_TKPhieuMuonSach);
             this.navigationPane1.Controls.Add(this.item_TKCTPhieuMuonSach);
+            this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationPane1.Location = new System.Drawing.Point(0, 0);
             this.navigationPane1.Name = "navigationPane1";
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.item_TKPhieuMuonSach,
             this.item_TKCTPhieuMuonSach});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1370, 748);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(1926, 939);
             this.navigationPane1.SelectedPage = this.item_TKPhieuMuonSach;
-            this.navigationPane1.Size = new System.Drawing.Size(1370, 748);
+            this.navigationPane1.Size = new System.Drawing.Size(1926, 939);
             this.navigationPane1.TabIndex = 0;
             // 
             // item_TKPhieuMuonSach
@@ -128,7 +127,7 @@
             this.item_TKPhieuMuonSach.Controls.Add(this.groupControl3);
             this.item_TKPhieuMuonSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_borow_book_80;
             this.item_TKPhieuMuonSach.Name = "item_TKPhieuMuonSach";
-            this.item_TKPhieuMuonSach.Size = new System.Drawing.Size(1240, 668);
+            this.item_TKPhieuMuonSach.Size = new System.Drawing.Size(1796, 859);
             // 
             // groupControl4
             // 
@@ -141,9 +140,9 @@
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.bindingNavigator1);
             this.groupControl4.Controls.Add(this.dgv_TKMuonSach);
-            this.groupControl4.Location = new System.Drawing.Point(512, 0);
+            this.groupControl4.Location = new System.Drawing.Point(703, 0);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(738, 677);
+            this.groupControl4.Size = new System.Drawing.Size(1103, 868);
             this.groupControl4.TabIndex = 1;
             this.groupControl4.Text = "Dữ liệu phiếu mượn sách";
             // 
@@ -169,7 +168,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(734, 35);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1099, 35);
             this.bindingNavigator1.TabIndex = 15;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -245,7 +244,7 @@
             this.dgv_TKMuonSach.Location = new System.Drawing.Point(2, 99);
             this.dgv_TKMuonSach.Name = "dgv_TKMuonSach";
             this.dgv_TKMuonSach.RowTemplate.Height = 28;
-            this.dgv_TKMuonSach.Size = new System.Drawing.Size(735, 575);
+            this.dgv_TKMuonSach.Size = new System.Drawing.Size(1100, 766);
             this.dgv_TKMuonSach.TabIndex = 0;
             // 
             // iDPhieuMuonDataGridViewTextBoxColumn
@@ -309,7 +308,7 @@
             this.groupControl3.Controls.Add(this.rdb_IDPhieuMuon);
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(508, 677);
+            this.groupControl3.Size = new System.Drawing.Size(697, 868);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tìm kiếm theo";
             // 
@@ -330,7 +329,7 @@
             this.dtp_HanTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_HanTra.Location = new System.Drawing.Point(262, 246);
             this.dtp_HanTra.Name = "dtp_HanTra";
-            this.dtp_HanTra.Size = new System.Drawing.Size(205, 44);
+            this.dtp_HanTra.Size = new System.Drawing.Size(391, 44);
             this.dtp_HanTra.TabIndex = 4;
             // 
             // dtp_NgayMuon
@@ -338,7 +337,7 @@
             this.dtp_NgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayMuon.Location = new System.Drawing.Point(262, 186);
             this.dtp_NgayMuon.Name = "dtp_NgayMuon";
-            this.dtp_NgayMuon.Size = new System.Drawing.Size(205, 44);
+            this.dtp_NgayMuon.Size = new System.Drawing.Size(391, 44);
             this.dtp_NgayMuon.TabIndex = 3;
             // 
             // tb_IDDocGia
@@ -346,7 +345,7 @@
             this.tb_IDDocGia.Location = new System.Drawing.Point(262, 129);
             this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
-            this.tb_IDDocGia.Size = new System.Drawing.Size(205, 44);
+            this.tb_IDDocGia.Size = new System.Drawing.Size(391, 44);
             this.tb_IDDocGia.TabIndex = 5;
             this.tb_IDDocGia.Click += new System.EventHandler(this.tb_IDDocGia_Click);
             this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
@@ -356,7 +355,7 @@
             this.tb_IDPhieuMuon.Location = new System.Drawing.Point(262, 69);
             this.tb_IDPhieuMuon.MaxLength = 3;
             this.tb_IDPhieuMuon.Name = "tb_IDPhieuMuon";
-            this.tb_IDPhieuMuon.Size = new System.Drawing.Size(205, 44);
+            this.tb_IDPhieuMuon.Size = new System.Drawing.Size(391, 44);
             this.tb_IDPhieuMuon.TabIndex = 4;
             this.tb_IDPhieuMuon.Click += new System.EventHandler(this.tb_IDPhieuMuon_Click);
             this.tb_IDPhieuMuon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
@@ -415,7 +414,7 @@
             this.item_TKCTPhieuMuonSach.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_more_details_40;
             this.item_TKCTPhieuMuonSach.Name = "item_TKCTPhieuMuonSach";
             this.item_TKCTPhieuMuonSach.PageText = "";
-            this.item_TKCTPhieuMuonSach.Size = new System.Drawing.Size(1240, 668);
+            this.item_TKCTPhieuMuonSach.Size = new System.Drawing.Size(1796, 859);
             // 
             // groupControl2
             // 
@@ -428,9 +427,9 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.bindingNavigator2);
             this.groupControl2.Controls.Add(this.dgv_TKCTPhieuMuonSach);
-            this.groupControl2.Location = new System.Drawing.Point(590, 0);
+            this.groupControl2.Location = new System.Drawing.Point(733, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(652, 668);
+            this.groupControl2.Size = new System.Drawing.Size(1065, 859);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu chi tiết phiếu mượn sách";
             // 
@@ -456,7 +455,7 @@
             this.bindingNavigator2.MovePreviousItem = null;
             this.bindingNavigator2.Name = "bindingNavigator2";
             this.bindingNavigator2.PositionItem = null;
-            this.bindingNavigator2.Size = new System.Drawing.Size(648, 35);
+            this.bindingNavigator2.Size = new System.Drawing.Size(1061, 35);
             this.bindingNavigator2.TabIndex = 15;
             this.bindingNavigator2.Text = "bindingNavigator2";
             // 
@@ -531,7 +530,7 @@
             this.dgv_TKCTPhieuMuonSach.Location = new System.Drawing.Point(2, 101);
             this.dgv_TKCTPhieuMuonSach.Name = "dgv_TKCTPhieuMuonSach";
             this.dgv_TKCTPhieuMuonSach.RowTemplate.Height = 28;
-            this.dgv_TKCTPhieuMuonSach.Size = new System.Drawing.Size(650, 565);
+            this.dgv_TKCTPhieuMuonSach.Size = new System.Drawing.Size(1063, 756);
             this.dgv_TKCTPhieuMuonSach.TabIndex = 0;
             // 
             // iDCTPhieuMuonDataGridViewTextBoxColumn
@@ -580,7 +579,7 @@
             this.groupControl1.Controls.Add(this.rdb_IDCTPhieuMuon);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(584, 668);
+            this.groupControl1.Size = new System.Drawing.Size(727, 859);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Tìm kiếm chi tiết phiếu mượn sách theo";
             // 
@@ -601,7 +600,7 @@
             this.tb_IDCuonSach.Location = new System.Drawing.Point(351, 199);
             this.tb_IDCuonSach.MaxLength = 3;
             this.tb_IDCuonSach.Name = "tb_IDCuonSach";
-            this.tb_IDCuonSach.Size = new System.Drawing.Size(200, 44);
+            this.tb_IDCuonSach.Size = new System.Drawing.Size(371, 44);
             this.tb_IDCuonSach.TabIndex = 5;
             this.tb_IDCuonSach.Click += new System.EventHandler(this.tb_IDCuonSach_Click);
             this.tb_IDCuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
@@ -611,17 +610,17 @@
             this.tb_IDPhieuMuonSach.Location = new System.Drawing.Point(351, 139);
             this.tb_IDPhieuMuonSach.MaxLength = 3;
             this.tb_IDPhieuMuonSach.Name = "tb_IDPhieuMuonSach";
-            this.tb_IDPhieuMuonSach.Size = new System.Drawing.Size(200, 44);
+            this.tb_IDPhieuMuonSach.Size = new System.Drawing.Size(371, 44);
             this.tb_IDPhieuMuonSach.TabIndex = 4;
             this.tb_IDPhieuMuonSach.Click += new System.EventHandler(this.tb_IDPhieuMuonSach_Click);
             this.tb_IDPhieuMuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
             // tb_IDCTPhieuMuonSach
             // 
-            this.tb_IDCTPhieuMuonSach.Location = new System.Drawing.Point(351, 79);
+            this.tb_IDCTPhieuMuonSach.Location = new System.Drawing.Point(351, 80);
             this.tb_IDCTPhieuMuonSach.MaxLength = 3;
             this.tb_IDCTPhieuMuonSach.Name = "tb_IDCTPhieuMuonSach";
-            this.tb_IDCTPhieuMuonSach.Size = new System.Drawing.Size(200, 44);
+            this.tb_IDCTPhieuMuonSach.Size = new System.Drawing.Size(371, 44);
             this.tb_IDCTPhieuMuonSach.TabIndex = 3;
             this.tb_IDCTPhieuMuonSach.Click += new System.EventHandler(this.tb_IDCTPhieuMuonSach_Click);
             this.tb_IDCTPhieuMuonSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
@@ -673,7 +672,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 748);
+            this.ClientSize = new System.Drawing.Size(1926, 939);
             this.Controls.Add(this.navigationPane1);
             this.Name = "frmTKMuonSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
