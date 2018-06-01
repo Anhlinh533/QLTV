@@ -75,7 +75,7 @@ namespace QLTV.GUI
         }
 
 
-        
+
         private void btn_Reset_Click(object sender, EventArgs e)
         {
             this.cT_TACGIATableAdapter.Fill(quanLyThuVienDataSet.CT_TACGIA);
@@ -119,7 +119,12 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idcttg = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            string idds = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            string idtg = dataGridView1.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTTacGia.Instance.Sua(idcttg, idds, idtg);
+            dataGridView1.DataSource = quanLyThuVienDataSet.CT_TACGIA;
         }
     }
 }

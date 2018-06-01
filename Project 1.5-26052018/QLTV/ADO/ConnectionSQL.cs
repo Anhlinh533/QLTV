@@ -229,13 +229,13 @@ namespace QLTV.ADO
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Thành công!!", "Chú ý!!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Thành công!!", "Chú ý!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 string str = ex.Message;
                 //str = str.Substring(67);
-                MessageBox.Show(str, "Chú ý",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show(str, "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             con.Close();
@@ -272,6 +272,29 @@ namespace QLTV.ADO
             return i;
         }
 
+        public string ExcuteString(string sql) //30/5
+        {
+            string s = "";
+            SqlConnection con = new SqlConnection(dataSource);
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand(sql, con);
+
+            try
+            {
+                s = (string)cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                string str = ex.Message;
+                //str = str.Substring(67);
+                MessageBox.Show(str, "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            con.Close();
+            return s;
+        }
+
         public bool check(string sql)
         {
             SqlConnection con = new SqlConnection(dataSource);
@@ -286,7 +309,7 @@ namespace QLTV.ADO
             return false;
         }
 
-        public string readData(string sql,string tb,string name)
+        public string readData(string sql, string tb, string name)
         {
             SqlConnection con = new SqlConnection(dataSource);
             con.Open();

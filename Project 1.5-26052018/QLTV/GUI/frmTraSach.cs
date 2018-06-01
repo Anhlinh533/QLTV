@@ -113,7 +113,13 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idpt = dgv_Them.CurrentRow.Cells[0].Value.ToString();
+            string iddg = dgv_Them.CurrentRow.Cells[1].Value.ToString();
+            string ngaytra = dgv_Them.CurrentRow.Cells[2].Value.ToString();
+            string sotientra = dgv_Them.CurrentRow.Cells[4].Value.ToString();
 
+            ADO.adoTraSach.Instance.Sua(idpt, iddg, ngaytra, sotientra);
+            dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUTRA;
         }
     }
 }

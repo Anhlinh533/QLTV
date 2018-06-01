@@ -23,7 +23,7 @@ namespace QLTV.ADO
                 ADO.adoTheDocGia.instance = value;
             }
         }
-        
+
         #region Insert
         public void Them(string tb_IDDocGia, string tb_HoTenDocGia, string dtp_NgaySinh, string tb_DiaChi, string tb_Email, string cbb_LoaiDocGia, string dtp_NgayLapThe)
         {

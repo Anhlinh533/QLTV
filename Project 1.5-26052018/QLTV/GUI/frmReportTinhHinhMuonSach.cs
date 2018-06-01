@@ -46,7 +46,7 @@ namespace QLTV.GUI
             else if (i >= 100 && i < 1000) str = i.ToString();
 
             ADO.adoRPTinhHinhMuonSach.Instance.Them(str, tb_Thang.Text, tb_Nam.Text);
-            this.bCTINHHINHMUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.BCTINHHINHMUONSACH);           
+            this.bCTINHHINHMUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.BCTINHHINHMUONSACH);
 
             DataSet dss = new DataSet();
             DataSet dsr = new DataSet();

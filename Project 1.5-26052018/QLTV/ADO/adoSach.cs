@@ -27,6 +27,9 @@ namespace QLTV.ADO
         #region Insert
         public void Them(string tb_IDSach, string cbb_IDDauSach, string cbb_IDCTTacGia, string tb_NXB, string cbb_NXB, string tb_SoLuongTon, string tb_GiaTien)
         {
+            cbb_IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH A WHERE TenDauSach = N'" + cbb_IDDauSach + "'");
+            cbb_IDCTTacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDCTTacGia FROM TACGIA A, CT_TACGIA B WHERE A.IDTacGia = B.IDTacGia AND B.IDDauSach = N'" + cbb_IDDauSach + "' AND A.TenTacGia = N'" + cbb_IDCTTacGia + "'");
+
             SCRIPT.formatSach.Instance.returnIDSach(ref tb_IDSach);
             string sqlInsert = "INSERT INTO SACH VALUES ('" + tb_IDSach + "', '" + cbb_IDDauSach + "', '" + cbb_IDCTTacGia + "', N'" + tb_NXB + "', '" + cbb_NXB + "', '" + tb_SoLuongTon + "', '" + tb_GiaTien + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);

@@ -26,7 +26,7 @@ namespace QLTV.ADO
         }
         public bool checkDocGia(string UserName, string Password)
         {
-            string sql= "Select *from USERS where UserName='" + UserName + "' and Pwd='" + Password + "'";
+            string sql = "Select *from USERS where UserName='" + UserName + "' and Pwd='" + Password + "'";
             if (ADO.ConnectionSQL.Instance.check(sql) == true) return true;
             return false;
         }
@@ -40,7 +40,7 @@ namespace QLTV.ADO
 
         public bool checkUserName(string UserName)
         {
-            string sql = "Select *from USERS where UserName='" + UserName +"'";
+            string sql = "Select *from USERS where UserName='" + UserName + "'";
             if (ADO.ConnectionSQL.Instance.check(sql) == true) return true;
             return false;
         }
@@ -51,7 +51,7 @@ namespace QLTV.ADO
             return false;
         }
 
-        public bool checkPassWord(string UserName,string Password)
+        public bool checkPassWord(string UserName, string Password)
         {
             string sql = "Select *from USERS where UserName='" + UserName + "' and Pwd='" + Password + "'";
             if (ADO.ConnectionSQL.Instance.check(sql) == true) return true;

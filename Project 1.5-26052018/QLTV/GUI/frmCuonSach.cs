@@ -110,7 +110,11 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idcs = dgv_Them.CurrentRow.Cells[0].Value.ToString();
+            string ids = dgv_Them.CurrentRow.Cells[1].Value.ToString();
 
+            ADO.adoCuonSach.Instance.Sua(idcs, ids);
+            dgv_Them.DataSource = quanLyThuVienDataSet.CUONSACH;
         }
     }
 }

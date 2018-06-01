@@ -36,7 +36,7 @@ namespace QLTV.GUI
             this.lOAIDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.LOAIDOCGIA);
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.THEDOCGIA' table. You can move, or remove it, as needed.
             this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
-            if(ADO.adoLogin.Instance.checkDocGia(UserName,Password)==true)
+            if (ADO.adoLogin.Instance.checkDocGia(UserName, Password) == true)
             {
                 //btn_Luu.Enabled = false;
                 //btn_Sua.Enabled = false;
@@ -60,37 +60,37 @@ namespace QLTV.GUI
 
         private void btn_TKDocGia_Click(object sender, EventArgs e)
         {
-            if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text!="")
+            if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text != "")
             {
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKIDDocGia(tb_IDDocGia.Text.Trim()));
                 ResetForm();
             }
-            else if (rdb_DiaChi.Checked == true && tb_DiaChi.Text!="")
+            else if (rdb_DiaChi.Checked == true && tb_DiaChi.Text != "")
             {
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKDiaChiDG(tb_DiaChi.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_Email.Checked==true && tb_Email.Text!="")
+            else if (rdb_Email.Checked == true && tb_Email.Text != "")
             {
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKEmailDG(tb_Email.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_HoTen.Checked==true && tb_HoTen.Text!="")
+            else if (rdb_HoTen.Checked == true && tb_HoTen.Text != "")
             {
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKHoTenDG(tb_HoTen.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_LoaiDocGia.Checked==true && cbb_LoaiDocGia.Text!="")
+            else if (rdb_LoaiDocGia.Checked == true && cbb_LoaiDocGia.Text != "")
             {
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKIDLoaiDG(cbb_LoaiDocGia.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_NgayLapThe.Checked==true && dtp_NgayLapThe.Text!="")
+            else if (rdb_NgayLapThe.Checked == true && dtp_NgayLapThe.Text != "")
             {
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKNgayLapThe(dtp_NgayLapThe.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_NgaySinh.Checked==true && dtp_NgaySinh.Text!="")
+            else if (rdb_NgaySinh.Checked == true && dtp_NgaySinh.Text != "")
             {
                 dgv_TKDocGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTheDocGia.Instance.TKNgaySinhDG(dtp_NgaySinh.Text.Trim()));
                 ResetForm();
@@ -124,12 +124,12 @@ namespace QLTV.GUI
 
         private void btn_TKUser_Click(object sender, EventArgs e)
         {
-            if (rdb_User.Checked == true && tb_TenUser.Text!="")
+            if (rdb_User.Checked == true && tb_TenUser.Text != "")
             {
                 dgv_TKUser.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoUsers.Instance.TKUser(tb_TenUser.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_UserIDDocGia.Checked==true && tb_IDUser.Text!="")
+            else if (rdb_UserIDDocGia.Checked == true && tb_IDUser.Text != "")
             {
                 dgv_TKUser.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoUsers.Instance.TKUserIDDocGia(tb_IDUser.Text.Trim()));
                 ResetForm();
@@ -163,7 +163,7 @@ namespace QLTV.GUI
 
         private void chu_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            e.Handled = !((e.KeyChar >= 65 && e.KeyChar <= 122) || (e.KeyChar == 8));
         }
         #endregion
 
@@ -220,7 +220,16 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string iddg = dgv_TKDocGia.CurrentRow.Cells[0].Value.ToString();
+            string hoten = dgv_TKDocGia.CurrentRow.Cells[1].Value.ToString();
+            string ngaysinh = dgv_TKDocGia.CurrentRow.Cells[2].Value.ToString();
+            string diachi = dgv_TKDocGia.CurrentRow.Cells[3].Value.ToString();
+            string email = dgv_TKDocGia.CurrentRow.Cells[4].Value.ToString();
+            string loaidg = dgv_TKDocGia.CurrentRow.Cells[5].Value.ToString();
+            string ngaylapthe = dgv_TKDocGia.CurrentRow.Cells[6].Value.ToString();
 
+            ADO.adoTheDocGia.Instance.Sua(iddg, hoten, ngaysinh, diachi, email, loaidg, ngaylapthe);
+            dgv_TKDocGia.DataSource = quanLyThuVienDataSet.THEDOCGIA;
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -230,7 +239,9 @@ namespace QLTV.GUI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            
+            string iddg = dgv_TKDocGia.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoTheDocGia.Instance.Xoa(iddg);
+            dgv_TKDocGia.DataSource = quanLyThuVienDataSet.THEDOCGIA;
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -242,16 +253,6 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btn_Luu_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Xoa_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

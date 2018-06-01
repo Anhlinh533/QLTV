@@ -26,6 +26,8 @@ namespace QLTV.ADO
 
         public void Them(string tb_IDDauSach, string tb_TenDauSach, string cbb_IDTheLoaiSach)
         {
+            cbb_IDTheLoaiSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDLoaiSach FROM LOAISACH WHERE TenLoaiSach = N'" + cbb_IDTheLoaiSach + "'");
+
             SCRIPT.formatDauSach.Instance.returnIDDauSach(ref tb_IDDauSach);
             string sqlInsert = "INSERT INTO DAUSACH VALUES ('" + tb_IDDauSach + "',N'" + tb_TenDauSach + "','" + cbb_IDTheLoaiSach + "')";
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);

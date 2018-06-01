@@ -384,15 +384,15 @@ AS
 BEGIN
 
 /*NamXB > NgaySinh*/
-	DECLARE @NAMXB int, @NGAYSINH date
+	DECLARE @NAMXB int, @NAMSINH int
 
 	SELECT @NAMXB = NamXB
 	FROM INSERTED
-	SELECT @NGAYSINH = year(A.NgaySinh)
+	SELECT @NAMSINH = year(A.NgaySinh)
 	FROM INSERTED I, TACGIA A, CT_TACGIA B
 	WHERE B.IDCTTacGia = I.IDCTTacGia AND A.IDTacGia = B.IDTacGia
 
-	IF (@NAMXB <= @NGAYSINH)
+	IF (@NAMXB <= @NAMSINH)
 	BEGIN
 		PRINT N'Năm xuất bản phải lớn hơn ngày sinh của tác giả'
 		ROLLBACK TRANSACTION
@@ -409,7 +409,7 @@ BEGIN
 
 	IF((year(@NGAYNHAP) - @NAMXB) > @KHOANGCACHXB)
 	BEGIN
-		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + ' năm'
+		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + N' năm'
 		ROLLBACK TRANSACTION
 	END
 
@@ -467,7 +467,7 @@ BEGIN
 
 			IF((year(@NGAYNHAPI) - @NAMXB) > @KHOANGCACHXB)
 			BEGIN
-				PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + ' năm'
+				PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + N' năm'
 				ROLLBACK TRANSACTION
 			END
 		END
@@ -477,7 +477,7 @@ END
 
 --_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-DROP TRIGGER TRG_IU_CPN
+--DROP TRIGGER TRG_IU_CPN
 CREATE TRIGGER TRG_IU_CPN ON CT_PHIEUNHAPSACH
 FOR INSERT, UPDATE
 AS
@@ -510,7 +510,7 @@ BEGIN
 
 	IF((year(@NGAYNHAP) - @NAMXB) > @KHOANGCACHXB)
 	BEGIN
-		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + ' năm'
+		PRINT N'Lỗi: Chỉ nhận các sách xuất bản trong vòng ' + CAST(@KHOANGCACHXB AS varchar) + N' năm'
 		ROLLBACK TRANSACTION
 	END
 
@@ -687,7 +687,7 @@ BEGIN
 						WHERE C.IDCuonSach = A.IDCuonSach AND C.IDPhieuTra = D.IDPhieuTra
 						AND D.NgayTra < B.NgayMuon))) > @SOSACHMUONMAX		
 	BEGIN
-		PRINT N'Lỗi: Mỗi độc giả chỉ mượn tối đa ' + CAST(@SOSACHMUONMAX AS varchar) + ' quyển sách'
+		PRINT N'Lỗi: Mỗi độc giả chỉ mượn tối đa ' + CAST(@SOSACHMUONMAX AS varchar) + N' quyển sách'
 		ROLLBACK TRANSACTION 
 	END	
 
@@ -699,12 +699,17 @@ END
 CREATE TRIGGER TRG_D_CPM ON CT_PHIEUMUON
 FOR DELETE
 AS
-BEGIN
+BEGIN	
 
 	UPDATE CUONSACH
 	SET TinhTrang = N'Chưa cho mượn'
 	FROM DELETED L, CUONSACH A
 	WHERE A.IDCuonSach = L.IDCuonSach
+
+	UPDATE SACH --- 29/5
+	SET SoLuongTon += 1
+	FROM DELETED L, SACH A, CUONSACH B
+	WHERE A.IDSach = B.IDSach AND B.IDCuonSach = L.IDCuonSach
 
 END
 --------------------------------------------------------------------------------------------------------------------------------------

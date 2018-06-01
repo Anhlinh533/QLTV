@@ -36,14 +36,31 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCTMuonSach.Instance.checkCTMuonSach(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
-            SCRIPT.formatCTMuonSach.Instance.checkNull(tb_IDCTPhieuMuon,cbb_IDPhieuMuon,cbb_IDCuonSach);
+            SCRIPT.formatCTMuonSach.Instance.checkNull(tb_IDCTPhieuMuon, cbb_IDPhieuMuon, cbb_IDCuonSach);
+
+            //if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
+            //{
+            //    ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
+            //    this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+            //    ResetForm();
+            //}
+
             if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
             {
-                ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
+                string s = "";
+
+                for (int j = 0; j < lv_CuonSach.Items.Count; j++)
+                {
+                    s = ADO.adoCTMuonSach.Instance.GetIDCuonSach(lv_CuonSach.Items[j].ToString());
+                    if (s == null)
+                        MessageBox.Show("Đã hết sách " + lv_CuonSach.Items[j].ToString());
+                    else
+                        ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, s);
+                }
+
                 this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
                 ResetForm();
             }
-
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -64,7 +81,7 @@ namespace QLTV.GUI
             if (tb_IDCTPhieuMuon.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (tb_IDCTPhieuMuon.Text != "")
             {
-                ADO.adoCTMuonSach.Instance.Xoa(tb_IDCTPhieuMuon.Text);
+                ADO.adoCTMuonSach.Instance.Xoa(tb_IDCTPhieuMuon.Text, cbb_IDCuonSach.Text);
                 this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
                 ResetForm();
             }
@@ -112,7 +129,12 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idctpm = dgv_Them.CurrentRow.Cells[0].Value.ToString();
+            string idpm = dgv_Them.CurrentRow.Cells[1].Value.ToString();
+            string idcs = dgv_Them.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTMuonSach.Instance.Sua(idctpm, idpm, idcs);
+            dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
         }
 
         private void cbb_IDCuonSach_KeyDown(object sender, KeyEventArgs e)

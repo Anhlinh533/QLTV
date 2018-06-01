@@ -42,17 +42,19 @@ namespace QLTV.GUI
         {
             UserName = user;
             Password = pass;
-        }        
+        }
 
         private void btn_TaoBaoCao_Click(object sender, EventArgs e)
         {
             DataSet dss = new DataSet();
             DataSet dsm = new DataSet();
+            DataSet dst = new DataSet();
             DataSet dsr = new DataSet();
             DataSet dsa = new DataSet();
 
             ADO.adoRPSachTraTre.Instance.Chons(dtp_NgayThangNam.Text).Fill(dss);
             ADO.adoRPSachTraTre.Instance.Chonm(dtp_NgayThangNam.Text).Fill(dsm);
+            ADO.adoRPSachTraTre.Instance.Chont(dtp_NgayThangNam.Text).Fill(dst);
             ADO.adoRPSachTraTre.Instance.Chonr(dtp_NgayThangNam.Text).Fill(dsr);
             ADO.adoRPSachTraTre.Instance.Chona(UserName).Fill(dsa);
 
@@ -66,16 +68,19 @@ namespace QLTV.GUI
                 //Tạo nguồn dữ liệu cho báo cáo
                 ReportDataSource rds = new ReportDataSource();
                 ReportDataSource rdm = new ReportDataSource();
+                ReportDataSource rdt = new ReportDataSource();
                 ReportDataSource rdr = new ReportDataSource();
                 ReportDataSource rda = new ReportDataSource();
 
                 rds.Name = "rpDauSach";
                 rdm.Name = "rpPhieuMuon";
+                rdt.Name = "rpPhieuTra";
                 rdr.Name = "rpSachTraTre";
                 rda.Name = "rpAdmin";
 
                 rds.Value = dss.Tables[0];
                 rdm.Value = dsm.Tables[0];
+                rdt.Value = dst.Tables[0];
                 rdr.Value = dsr.Tables[0];
                 rda.Value = dsa.Tables[0];
                 //Xóa dữ liệu của báo cáo cũ trong trường hợp người dùng thực hiện câu truy vấn khác
@@ -83,6 +88,7 @@ namespace QLTV.GUI
                 //Add dữ liệu vào báo cáo
                 rpv_SachTraTre.LocalReport.DataSources.Add(rds);
                 rpv_SachTraTre.LocalReport.DataSources.Add(rdm);
+                rpv_SachTraTre.LocalReport.DataSources.Add(rdt);
                 rpv_SachTraTre.LocalReport.DataSources.Add(rdr);
                 rpv_SachTraTre.LocalReport.DataSources.Add(rda);
                 //Refresh lại báo cáo

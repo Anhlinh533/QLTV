@@ -36,7 +36,7 @@ namespace QLTV.GUI
         private void btn_Them_Click(object sender, EventArgs e)
         {
             SCRIPT.formatCTPhieuNhapSach.Instance.checkCTPhieuNhapSach(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
-            SCRIPT.formatCTPhieuNhapSach.Instance.checkNull(tb_IDCTPhieuNhap,cbb_IDPhieuNhap, cbb_IDSach, tb_SoLuong, tb_DonGia);
+            SCRIPT.formatCTPhieuNhapSach.Instance.checkNull(tb_IDCTPhieuNhap, cbb_IDPhieuNhap, cbb_IDSach, tb_SoLuong, tb_DonGia);
             if (tb_DonGia.Text != "" && tb_IDCTPhieuNhap.Text != "" && tb_SoLuong.Text != "" && cbb_IDPhieuNhap.Text != "" && cbb_IDSach.Text != "")
             {
                 ADO.adoCTPhieuNhapSach.Instance.Them(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
@@ -114,7 +114,14 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idctpn = dgv_Them.CurrentRow.Cells[0].Value.ToString();
+            string idpn = dgv_Them.CurrentRow.Cells[1].Value.ToString();
+            string ids = dgv_Them.CurrentRow.Cells[2].Value.ToString();
+            string soluong = dgv_Them.CurrentRow.Cells[3].Value.ToString();
+            string dongia = dgv_Them.CurrentRow.Cells[4].Value.ToString();
 
+            ADO.adoCTPhieuNhapSach.Instance.Sua(idctpn, idpn, ids, soluong, dongia);
+            dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUNHAPSACH;
         }
     }
 }

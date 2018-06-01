@@ -6,12 +6,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.22916in</Width>
+              <Width>0.60937in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.22396in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -48,7 +48,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.22396in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -102,10 +102,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>rpCTTinhHinhMuonSach</DataSetName>
-        <Top>0.01389in</Top>
-        <Left>4.88069in</Left>
-        <Height>0.44792in</Height>
-        <Width>1.22916in</Width>
+        <Left>5.53472in</Left>
+        <Height>0.5in</Height>
+        <Width>0.60937in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -116,15 +115,15 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.89844in</Width>
+              <Width>0.51302in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.66927in</Width>
+              <Width>1.91927in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.22396in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -193,7 +192,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.22396in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -280,10 +279,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>rpLoaiSach</DataSetName>
-        <Top>0.01389in</Top>
-        <Left>1.08729in</Left>
-        <Height>0.44792in</Height>
-        <Width>2.56771in</Width>
+        <Left>1.87674in</Left>
+        <Height>0.5in</Height>
+        <Width>2.43229in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -300,7 +298,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.22396in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -337,7 +335,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.22396in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -391,9 +389,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>rpCTTinhHinhMuonSach</DataSetName>
-        <Top>0.01389in</Top>
-        <Left>3.65499in</Left>
-        <Height>0.44792in</Height>
+        <Left>4.30902in</Left>
+        <Height>0.5in</Height>
         <Width>1.22569in</Width>
         <ZIndex>2</ZIndex>
         <Style>
@@ -403,13 +400,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.46181in</Height>
+    <Height>0.5in</Height>
     <Style />
   </Body>
-  <Width>7.16542in</Width>
+  <Width>8.02083in</Width>
   <Page>
     <PageHeader>
-      <Height>1.17583in</Height>
+      <Height>1.78in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -424,7 +421,7 @@
                   <Style>
                     <FontStyle>Normal</FontStyle>
                     <FontFamily>Times New Roman</FontFamily>
-                    <FontSize>12pt</FontSize>
+                    <FontSize>15pt</FontSize>
                     <FontWeight>Normal</FontWeight>
                     <TextDecoration>None</TextDecoration>
                     <Color>#000000</Color>
@@ -435,10 +432,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>0.22049in</Top>
-          <Left>1.08729in</Left>
+          <Top>0.14497in</Top>
+          <Left>0.99957in</Left>
           <Height>0.27083in</Height>
-          <Width>4.93055in</Width>
+          <Width>6.02169in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -457,17 +454,20 @@
               <TextRuns>
                 <TextRun>
                   <Value>TRONG THÁNG</Value>
-                  <Style />
+                  <Style>
+                    <FontFamily>Times New Roman</FontFamily>
+                    <FontSize>15pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.5191in</Top>
-          <Left>2.18973in</Left>
+          <Top>0.48524in</Top>
+          <Left>2.34592in</Left>
           <Height>0.25in</Height>
-          <Width>1.04167in</Width>
+          <Width>1.5625in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -487,17 +487,20 @@
               <TextRuns>
                 <TextRun>
                   <Value>NĂM</Value>
-                  <Style />
+                  <Style>
+                    <FontFamily>Times New Roman</FontFamily>
+                    <FontSize>15pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox4</rd:DefaultName>
-          <Top>0.5191in</Top>
-          <Left>3.41195in</Left>
+          <Top>0.48524in</Top>
+          <Left>4.08896in</Left>
           <Height>0.25in</Height>
-          <Width>0.40625in</Width>
+          <Width>0.54167in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -517,15 +520,18 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Sum(Fields!Thang.Value, "rpTinhHinhMuonSach")</Value>
-                  <Style />
+                  <Style>
+                    <FontFamily>Times New Roman</FontFamily>
+                    <FontSize>15pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Thang</rd:DefaultName>
-          <Top>0.51909in</Top>
-          <Left>3.18973in</Left>
+          <Top>0.48523in</Top>
+          <Left>3.86674in</Left>
           <Height>0.25in</Height>
           <Width>0.16666in</Width>
           <ZIndex>3</ZIndex>
@@ -547,17 +553,20 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Sum(Fields!Nam.Value, "rpTinhHinhMuonSach")</Value>
-                  <Style />
+                  <Style>
+                    <FontFamily>Times New Roman</FontFamily>
+                    <FontSize>15pt</FontSize>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Nam</rd:DefaultName>
-          <Top>0.51909in</Top>
-          <Left>3.71403in</Left>
+          <Top>0.48524in</Top>
+          <Left>4.54034in</Left>
           <Height>0.25in</Height>
-          <Width>0.375in</Width>
+          <Width>0.5625in</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>
@@ -584,8 +593,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox10</rd:DefaultName>
-          <Top>0.81076in</Top>
-          <Left>2.18973in</Left>
+          <Top>1.38503in</Top>
+          <Left>0.99957in</Left>
           <Height>0.25in</Height>
           <Width>0.75in</Width>
           <ZIndex>5</ZIndex>
@@ -614,11 +623,71 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox11</rd:DefaultName>
-          <Top>0.81076in</Top>
-          <Left>2.71055in</Left>
+          <Top>1.38503in</Top>
+          <Left>1.52039in</Left>
           <Height>0.25in</Height>
           <Width>1.47917in</Width>
           <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox21">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Người lập báo cáo:</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox21</rd:DefaultName>
+          <Top>1.12114in</Top>
+          <Left>0.99957in</Left>
+          <Height>0.25in</Height>
+          <Width>1.23958in</Width>
+          <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="HoTenAdmin">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!HoTenAdmin.Value, "rpAdmin")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>HoTenAdmin</rd:DefaultName>
+          <Top>1.12114in</Top>
+          <Left>2.0111in</Left>
+          <Height>0.25in</Height>
+          <Width>1in</Width>
+          <ZIndex>8</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -637,7 +706,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1.53819in</Height>
+      <Height>0.49652in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -656,8 +725,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
-          <Top>0.17361in</Top>
-          <Left>3.87375in</Left>
+          <Top>0.12326in</Top>
+          <Left>4.30902in</Left>
           <Height>0.25in</Height>
           <Width>1.36458in</Width>
           <Style>
@@ -685,71 +754,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TongSoLuotMuon</rd:DefaultName>
-          <Top>0.17361in</Top>
-          <Left>5.23833in</Left>
+          <Top>0.12326in</Top>
+          <Left>5.6736in</Left>
           <Height>0.25in</Height>
           <Width>0.25173in</Width>
           <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox21">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>Người lập báo cáo</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox21</rd:DefaultName>
-          <Top>0.83965in</Top>
-          <Left>4.14805in</Left>
-          <Height>0.25in</Height>
-          <Width>1.23958in</Width>
-          <ZIndex>2</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="HoTenAdmin">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=First(Fields!HoTenAdmin.Value, "rpAdmin")</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>HoTenAdmin</rd:DefaultName>
-          <Top>1.1591in</Top>
-          <Left>4.49006in</Left>
-          <Height>0.25in</Height>
-          <Width>1in</Width>
-          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>

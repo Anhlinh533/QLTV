@@ -23,11 +23,5 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatAdmin.instance = value;
             }
         }
-
-        public void returnIDAdmin(ref string id)
-        {
-            id = "IAD" + id;
-        }
-
     }
 }

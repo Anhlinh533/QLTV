@@ -120,7 +120,16 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string ids = dgv_Them.CurrentRow.Cells[0].Value.ToString();
+            string idds = dgv_Them.CurrentRow.Cells[1].Value.ToString();
+            string idcttg = dgv_Them.CurrentRow.Cells[2].Value.ToString();
+            string nhaxb = dgv_Them.CurrentRow.Cells[3].Value.ToString();
+            string namxb = dgv_Them.CurrentRow.Cells[4].Value.ToString();
+            string soluongton = dgv_Them.CurrentRow.Cells[5].Value.ToString();
+            string giatien = dgv_Them.CurrentRow.Cells[6].Value.ToString();
 
+            ADO.adoSach.Instance.Sua(ids, idds, idcttg, nhaxb, namxb, soluongton, giatien);
+            dgv_Them.DataSource = quanLyThuVienDataSet.SACH;
         }
     }
 }

@@ -51,17 +51,17 @@ namespace QLTV.GUI
         }
         private void btn_TKTacGia_Click(object sender, EventArgs e)
         {
-            if(rdb_IDTacGia.Checked==true && tb_IDTacGia.Text!="")
+            if (rdb_IDTacGia.Checked == true && tb_IDTacGia.Text != "")
             {
                 dgv_TKTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTacGia.Instance.TKIDTacGia(tb_IDTacGia.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_NgaySinh.Checked==true && dtp_NgaySinh.Text!="")
+            else if (rdb_NgaySinh.Checked == true && dtp_NgaySinh.Text != "")
             {
                 dgv_TKTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTacGia.Instance.TKNgaySinh(dtp_NgaySinh.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_TenTacGia.Checked==true && tb_TenTacGia.Text!="")
+            else if (rdb_TenTacGia.Checked == true && tb_TenTacGia.Text != "")
             {
                 dgv_TKTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTacGia.Instance.TKTenTacGia(tb_TenTacGia.Text.Trim()));
                 ResetForm();
@@ -82,17 +82,17 @@ namespace QLTV.GUI
 
         private void btn_TKCTTacGia_Click(object sender, EventArgs e)
         {
-            if(rdb_IDCTTacGia.Checked==true && tb_IDCTTacGia.Text!="")
+            if (rdb_IDCTTacGia.Checked == true && tb_IDCTTacGia.Text != "")
             {
                 dgv_TKCTTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTacGia.Instance.TKIDCTTacGia(tb_IDCTTacGia.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDDauSach.Checked==true && tb_IDDauSach.Text!="")
+            else if (rdb_IDDauSach.Checked == true && tb_IDDauSach.Text != "")
             {
                 dgv_TKCTTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTacGia.Instance.TKIDDauSach(tb_IDDauSach.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDTacGiaCT.Checked==true && tb_IDTacGiaCT.Text!="")
+            else if (rdb_IDTacGiaCT.Checked == true && tb_IDTacGiaCT.Text != "")
             {
                 dgv_TKCTTacGia.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTacGia.Instance.TKIDTacGia(tb_IDTacGiaCT.Text.Trim()));
                 ResetForm();
@@ -163,22 +163,36 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idtg = dgv_TKTacGia.CurrentRow.Cells[0].Value.ToString();
+            string tentg = dgv_TKTacGia.CurrentRow.Cells[1].Value.ToString();
+            string ngaysinh = dgv_TKTacGia.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoTacGia.Instance.Sua(idtg, tentg, ngaysinh);
+            dgv_TKTacGia.DataSource = quanLyThuVienDataSet.TACGIA;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            string idtg = dgv_TKTacGia.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoTacGia.Instance.Xoa(idtg);
+            dgv_TKTacGia.DataSource = quanLyThuVienDataSet.TACGIA;
         }
 
         private void btn_LuuCTTG_Click(object sender, EventArgs e)
         {
+            string idcttg = dgv_TKCTTacGia.CurrentRow.Cells[0].Value.ToString();
+            string idds = dgv_TKCTTacGia.CurrentRow.Cells[1].Value.ToString();
+            string idtg = dgv_TKCTTacGia.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTTacGia.Instance.Sua(idcttg, idds, idtg);
+            dgv_TKCTTacGia.DataSource = quanLyThuVienDataSet.CT_TACGIA;
         }
 
         private void btn_XoaCTTG_Click(object sender, EventArgs e)
         {
-
+            string idcttg = dgv_TKCTTacGia.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoCTTacGia.Instance.Xoa(idcttg);
+            dgv_TKCTTacGia.DataSource = quanLyThuVienDataSet.CT_TACGIA;
         }
     }
 }

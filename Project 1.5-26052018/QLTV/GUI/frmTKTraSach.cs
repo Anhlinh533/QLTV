@@ -50,27 +50,27 @@ namespace QLTV.GUI
 
         private void btn_TKCTPhieuTraSach_Click(object sender, EventArgs e)
         {
-            if(rdb_IDCTPhieuTra.Checked==true && tb_IDCTPhieuTra.Text!="")
+            if (rdb_IDCTPhieuTra.Checked == true && tb_IDCTPhieuTra.Text != "")
             {
                 dgv_TKCTPhieuTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTraSach.Instance.TKIDCTPhieuTra(tb_IDCTPhieuTra.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDPhieuMuon.Checked==true && tb_IDCTPhieuMuon.Text!="")
+            else if (rdb_IDPhieuMuon.Checked == true && tb_IDCTPhieuMuon.Text != "")
             {
                 dgv_TKCTPhieuTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTraSach.Instance.TKIDCTPhieuMuon(tb_IDCTPhieuMuon.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDPhieuTraCT.Checked==true && tb_IDPhieuTraCT.Text!="")
+            else if (rdb_IDPhieuTraCT.Checked == true && tb_IDPhieuTraCT.Text != "")
             {
                 dgv_TKCTPhieuTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTraSach.Instance.TKIDPhieuTra(tb_IDPhieuTraCT.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_SoNgayMuon.Checked==true && tb_SoNgayMuon.Text!="")
+            else if (rdb_SoNgayMuon.Checked == true && tb_SoNgayMuon.Text != "")
             {
                 dgv_TKCTPhieuTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTraSach.Instance.TKSoNgayMuon(tb_SoNgayMuon.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_TienPhat.Checked==true && tb_TienPhat.Text!="")
+            else if (rdb_TienPhat.Checked == true && tb_TienPhat.Text != "")
             {
                 dgv_TKCTPhieuTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTTraSach.Instance.TKTienPhat(tb_TienPhat.Text.Trim()));
                 ResetForm();
@@ -107,32 +107,32 @@ namespace QLTV.GUI
 
         private void btn_TKPhieuTraSach_Click(object sender, EventArgs e)
         {
-            if(rdb_IDDocGia.Checked==true && tb_IDDocGia.Text!="")
+            if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text != "")
             {
                 dgv_TKTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTraSach.Instance.TKIDDocGia(tb_IDDocGia.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDPhieuTra.Checked==true && tb_IDPhieuTra.Text!="")
+            else if (rdb_IDPhieuTra.Checked == true && tb_IDPhieuTra.Text != "")
             {
                 dgv_TKTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTraSach.Instance.TKIDPhieuTra(tb_IDPhieuTra.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_NgayTra.Checked==true && dtp_NgayTra.Text!="")
+            else if (rdb_NgayTra.Checked == true && dtp_NgayTra.Text != "")
             {
                 dgv_TKTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTraSach.Instance.TKNgayTra(dtp_NgayTra.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_TienNoKiNay.Checked==true && tb_TienNoKiNay.Text!="")
+            else if (rdb_TienNoKiNay.Checked == true && tb_TienNoKiNay.Text != "")
             {
                 dgv_TKTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTraSach.Instance.TKTienNoKyNay(tb_TienNoKiNay.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_SoTienTra.Checked==true && tb_SoTienTra.Text!="")
+            else if (rdb_SoTienTra.Checked == true && tb_SoTienTra.Text != "")
             {
                 dgv_TKTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTraSach.Instance.TKSoTienTra(tb_SoTienTra.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_TienPhatKiNay.Checked==true && tb_TienPhatKiNay.Text!="")
+            else if (rdb_TienPhatKiNay.Checked == true && tb_TienPhatKiNay.Text != "")
             {
                 dgv_TKTraSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoTraSach.Instance.TKTienPhatKyNay(tb_TienPhatKiNay.Text.Trim()));
                 ResetForm();
@@ -247,22 +247,37 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idpt = dgv_TKTraSach.CurrentRow.Cells[0].Value.ToString();
+            string iddg = dgv_TKTraSach.CurrentRow.Cells[1].Value.ToString();
+            string ngaytra = dgv_TKTraSach.CurrentRow.Cells[2].Value.ToString();
+            string sotientra = dgv_TKTraSach.CurrentRow.Cells[4].Value.ToString();
 
+            ADO.adoTraSach.Instance.Sua(idpt, iddg, ngaytra, sotientra);
+            dgv_TKTraSach.DataSource = quanLyThuVienDataSet.PHIEUTRA;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            string idpt = dgv_TKTraSach.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoTraSach.Instance.Xoa(idpt);
+            dgv_TKTraSach.DataSource = quanLyThuVienDataSet.PHIEUTRA;
         }
 
         private void btn_LuuCTPT_Click(object sender, EventArgs e)
         {
+            string idctpt = dgv_TKCTPhieuTraSach.CurrentRow.Cells[0].Value.ToString();
+            string idpt = dgv_TKCTPhieuTraSach.CurrentRow.Cells[1].Value.ToString();
+            string idcs = dgv_TKCTPhieuTraSach.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTTraSach.Instance.Sua(idctpt, idpt, idcs);
+            dgv_TKCTPhieuTraSach.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
         }
 
         private void btn_XoaCTPT_Click(object sender, EventArgs e)
         {
-
+            string idctpt = dgv_TKCTPhieuTraSach.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoCTTraSach.Instance.Xoa(idctpt);
+            dgv_TKCTPhieuTraSach.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
         }
     }
 

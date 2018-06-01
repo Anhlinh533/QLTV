@@ -27,7 +27,7 @@ namespace QLTV.ADO
         }
 
         public SqlDataAdapter Chons(string dtp_NgayThangNam)
-        {            
+        {
             string sql = "SELECT TenDauSach FROM BCSACHTRATRE A, DAUSACH B, SACH C, CUONSACH D WHERE B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach AND D.IDCuonSach = A.IDCuonSach AND A.NgayThangNam <= '" + dtp_NgayThangNam + "' AND A.SoNgayTraTre <> 0";
             SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
 
@@ -42,9 +42,17 @@ namespace QLTV.ADO
             return adp;
         }
 
+        public SqlDataAdapter Chont(string dtp_NgayThangNam)
+        {
+            string sql = "SELECT B.NgayTra FROM BCSACHTRATRE A, PHIEUTRA B, CT_PHIEUTRA C WHERE C.IDPhieuMuon = A.IDPhieuMuon AND B.IDPhieuTra = C.IDPhieuTra AND C.IDCuonSach = A.IDCuonSach AND A.NgayThangNam <= '" + dtp_NgayThangNam + "' AND A.SoNgayTraTre <> 0";
+            SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
+
+            return adp;
+        }
+
         public SqlDataAdapter Chonr(string dtp_NgayThangNam)
         {
-            string sql = "SELECT * FROM BCSACHTRATRE WHERE NgayThangNam <= '" + dtp_NgayThangNam + "' AND SoNgayTraTre <> 0" ;
+            string sql = "SELECT * FROM BCSACHTRATRE WHERE NgayThangNam <= '" + dtp_NgayThangNam + "' AND SoNgayTraTre <> 0";
             SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
 
             return adp;

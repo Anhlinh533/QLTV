@@ -45,6 +45,13 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE CUONSACH SET IDSach = '" + cbb_IDSach + "' WHERE IDCuonSach = '" + tb_IDCuonSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+
+        public int IDReport()
+        {
+            string sql = "SELECT COUNT (IDCuonSach) FROM CUONSACH";
+            int i = ADO.ConnectionSQL.Instance.ExcuteInt(sql);
+            return i;
+        }
         #endregion
 
         #region Tim Kiem

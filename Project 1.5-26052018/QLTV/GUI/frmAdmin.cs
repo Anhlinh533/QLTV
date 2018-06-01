@@ -37,5 +37,41 @@ namespace QLTV.GUI
         {
 
         }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+            string ida = dgv_CTAdmin.CurrentRow.Cells[0].Value.ToString();
+            string hoten = dgv_CTAdmin.CurrentRow.Cells[1].Value.ToString();
+            string ngaysinh = dgv_CTAdmin.CurrentRow.Cells[2].Value.ToString();
+            string diachi = dgv_CTAdmin.CurrentRow.Cells[3].Value.ToString();
+            string email = dgv_CTAdmin.CurrentRow.Cells[4].Value.ToString();
+
+            ADO.adoCTAdmin.Instance.Sua(ida, hoten, ngaysinh, diachi, email);
+            dgv_CTAdmin.DataSource = quanLyThuVienDataSet.CT_USERADMIN;
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            string ida = dgv_CTAdmin.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoCTAdmin.Instance.Xoa(ida);
+            dgv_CTAdmin.DataSource = quanLyThuVienDataSet.CT_USERADMIN;
+        }
+
+        //private void btn_LuuAdmin_Click(object sender, EventArgs e)
+        //{
+        //    string username = dgv_UserAdmin.CurrentRow.Cells[0].Value.ToString();
+        //    string password = dgv_UserAdmin.CurrentRow.Cells[1].Value.ToString();
+        //    string ida = dgv_UserAdmin.CurrentRow.Cells[2].Value.ToString();
+
+        //    ADO.adoAdmin.Instance.Sua(username, password, ida);
+        //    dgv_UserAdmin.DataSource = quanLyThuVienDataSet.USERADMIN;
+        //}
+
+        //private void btn_XoaAdmin_Click(object sender, EventArgs e)
+        //{
+        //    string username = dgv_UserAdmin.CurrentRow.Cells[0].Value.ToString();
+        //    ADO.adoAdmin.Instance.Xoa(username);
+        //    dgv_UserAdmin.DataSource = quanLyThuVienDataSet.USERADMIN;
+        //}
     }
 }

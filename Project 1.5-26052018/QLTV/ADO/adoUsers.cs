@@ -39,7 +39,7 @@ namespace QLTV.ADO
 
         public void Sua(string tb_UserName, string tb_Password, string cbb_IDDocGia)
         {
-            string sqlUpdate = "UPDATE USERS SET Pwd = '" + tb_Password + "' WHERE UserName = '" + tb_UserName + "'";
+            string sqlUpdate = "UPDATE USERS SET Pwd = '" + tb_Password + "', IDDocGia = '" + cbb_IDDocGia + "' WHERE UserName = '" + tb_UserName + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
         #endregion

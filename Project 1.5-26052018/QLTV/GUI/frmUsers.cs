@@ -128,7 +128,12 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string username = dgv_Them.CurrentRow.Cells[0].Value.ToString();
+            string password = dgv_Them.CurrentRow.Cells[1].Value.ToString();
+            string iddg = dgv_Them.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoUsers.Instance.Sua(username, password, iddg);
+            dgv_Them.DataSource = quanLyThuVienDataSet.USERS;
         }
     }
 }

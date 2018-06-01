@@ -49,17 +49,17 @@ namespace QLTV.GUI
 
         private void btn_TKCTPhieuMuonSach_Click(object sender, EventArgs e)
         {
-            if(rdb_IDCTPhieuMuon.Checked==true && tb_IDCTPhieuMuonSach.Text!="")
+            if (rdb_IDCTPhieuMuon.Checked == true && tb_IDCTPhieuMuonSach.Text != "")
             {
                 dgv_TKCTPhieuMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTMuonSach.Instance.TKIDCTPhieuMuon(tb_IDCTPhieuMuonSach.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDCuonSach.Checked==true && tb_IDCuonSach.Text!="")
+            else if (rdb_IDCuonSach.Checked == true && tb_IDCuonSach.Text != "")
             {
                 dgv_TKCTPhieuMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTMuonSach.Instance.TKIDCuonSach(tb_IDCuonSach.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDPhieuMuonSach.Checked==true && tb_IDPhieuMuonSach.Text!="")
+            else if (rdb_IDPhieuMuonSach.Checked == true && tb_IDPhieuMuonSach.Text != "")
             {
                 dgv_TKCTPhieuMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoCTMuonSach.Instance.TKIDPhieuMuon(tb_IDPhieuMuonSach.Text.Trim()));
                 ResetForm();
@@ -85,22 +85,22 @@ namespace QLTV.GUI
 
         private void btn_TKPhieuMuonSach_Click(object sender, EventArgs e)
         {
-            if(rdb_HanTra.Checked==true && dtp_HanTra.Text!="")
+            if (rdb_HanTra.Checked == true && dtp_HanTra.Text != "")
             {
-                dgv_TKMuonSach.DataSource= ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKHanTra(dtp_HanTra.Text.Trim()));
+                dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKHanTra(dtp_HanTra.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDDocGia.Checked==true && tb_IDDocGia.Text!="")
+            else if (rdb_IDDocGia.Checked == true && tb_IDDocGia.Text != "")
             {
                 dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKHanTra(tb_IDDocGia.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_IDPhieuMuon.Checked==true && tb_IDPhieuMuon.Text!="")
+            else if (rdb_IDPhieuMuon.Checked == true && tb_IDPhieuMuon.Text != "")
             {
                 dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKIDPhieuMuon(tb_IDPhieuMuon.Text.Trim()));
                 ResetForm();
             }
-            else if(rdb_NgayMuon.Checked==true && dtp_NgayMuon.Text!="")
+            else if (rdb_NgayMuon.Checked == true && dtp_NgayMuon.Text != "")
             {
                 dgv_TKMuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoMuonSach.Instance.TKNgayMuon(dtp_NgayMuon.Text.Trim()));
                 ResetForm();
@@ -117,7 +117,7 @@ namespace QLTV.GUI
                 tb_IDPhieuMuon.Focus();
 
             }
-            
+
         }
         #region Form
         public void ResetForm()
@@ -178,22 +178,39 @@ namespace QLTV.GUI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string idpm = dgv_TKMuonSach.CurrentRow.Cells[0].Value.ToString();
+            string iddg = dgv_TKMuonSach.CurrentRow.Cells[1].Value.ToString();
+            string ngaymuon = dgv_TKMuonSach.CurrentRow.Cells[2].Value.ToString();
+            string hantra = dgv_TKMuonSach.CurrentRow.Cells[3].Value.ToString();
 
+            ADO.adoMuonSach.Instance.Sua(idpm, iddg, ngaymuon);
+            dgv_TKMuonSach.DataSource = quanLyThuVienDataSet.PHIEUMUON;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-
+            string idpm = dgv_TKMuonSach.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoMuonSach.Instance.Xoa(idpm);
+            dgv_TKMuonSach.DataSource = quanLyThuVienDataSet.PHIEUMUON;
         }
 
         private void btn_LuuCTPM_Click(object sender, EventArgs e)
         {
+            string idctpm = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[0].Value.ToString();
+            string idpm = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[1].Value.ToString();
+            string idcs = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTMuonSach.Instance.Sua(idctpm, idpm, idcs);
+            dgv_TKCTPhieuMuonSach.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
         }
 
         private void btn_XoaCTPM_Click(object sender, EventArgs e)
         {
+            string idctpm = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[0].Value.ToString();
+            string idcs = dgv_TKCTPhieuMuonSach.CurrentRow.Cells[2].Value.ToString();
 
+            ADO.adoCTMuonSach.Instance.Xoa(idctpm, idcs);
+            dgv_TKCTPhieuMuonSach.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
         }
     }
 }
