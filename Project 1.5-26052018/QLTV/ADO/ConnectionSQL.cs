@@ -355,5 +355,41 @@ namespace QLTV.ADO
                 con.Close();
             }
         }
+
+        public void FillCbb(ComboBox cbb, string sql)
+        {
+            cbb.Items.Clear();
+            SqlConnection con = new SqlConnection(dataSource);
+
+            //string query = "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, DAUSACH C WHERE A.IDTacGia = B.IDTacGia AND B.IDDauSach = C.IDDauSach AND C.TenDauSach = N'" + cbb_IDSach + "'";
+
+            string str = "";
+
+            for (int i = 7; i < sql.Length; i++) 
+            {
+                if (sql[i] == ' ') break;
+                str += sql[i];
+            }
+            con.Open();
+
+            //SqlCommand cmd = new SqlCommand(sql, con);
+                        
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cbb.Items.Add(dt.Rows[i][str]);
+            }
+            //SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            //con.Open();
+            //DataSet ds = new DataSet();
+            //da.Fill(ds);
+            //cbb.DisplayMember = str;
+            //cbb.ValueMember = str;
+            //cbb.DataSource = ds;
+            con.Close();
+        }
     }
 }

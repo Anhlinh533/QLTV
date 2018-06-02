@@ -39,9 +39,8 @@ namespace QLTV.GUI
             SCRIPT.formatCTPhieuNhapSach.Instance.checkNull(tb_IDCTPhieuNhap, cbb_IDPhieuNhap, cbb_IDSach, tb_SoLuong, tb_DonGia);
             if (tb_DonGia.Text != "" && tb_IDCTPhieuNhap.Text != "" && tb_SoLuong.Text != "" && cbb_IDPhieuNhap.Text != "" && cbb_IDSach.Text != "")
             {
-                ADO.adoCTPhieuNhapSach.Instance.Them(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
+                ADO.adoCTPhieuNhapSach.Instance.Them(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, cbb_TacGia.Text,cbb_NamXB.Text, tb_SoLuong.Text, tb_DonGia.Text);
                 this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
-
             }
         }
 
@@ -122,6 +121,20 @@ namespace QLTV.GUI
 
             ADO.adoCTPhieuNhapSach.Instance.Sua(idctpn, idpn, ids, soluong, dongia);
             dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUNHAPSACH;
+        }
+
+        private void cbb_IDSach_TextChanged(object sender, EventArgs e)
+        {
+            ADO.ConnectionSQL.Instance.FillCbb(cbb_TacGia, "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, DAUSACH C WHERE A.IDTacGia = B.IDTacGia AND B.IDDauSach = C.IDDauSach AND C.TenDauSach = N'" + cbb_IDSach.Text + "'");
+        }
+
+        private void cbb_TacGia_SelectedIndexChanged(object sender, EventArgs e)
+        {   
+            string IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + cbb_IDSach.Text + "'");
+            string IDCTTacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDCTTacGia FROM CT_TACGIA A, TACGIA B WHERE A.IDTacGia = B.IDTacGia AND A.IDDauSach = '" + IDDauSach + "'AND B.TenTacGia = N'" + cbb_TacGia.Text + "'");
+
+            //ADO.ConnectionSQL.Instance.FillCbb(cbb_NamXB, "SELECT NamXB FROM SACH A, DAUSACH B, TACGIA C, CT_TACGIA D WHERE A.IDDauSach = B.IDDauSach AND C.IDTacGia = D.IDTacGia AND A.IDDauSach = D.IDDauSach AND B.TenDauSach = N'" + cbb_IDSach.Text + "' AND C.TenTacGia = N'" + cbb_TacGia.Text + "'");
+            ADO.ConnectionSQL.Instance.FillCbb(cbb_NamXB, "SELECT NamXB FROM SACH WHERE IDDauSach = N'" + IDDauSach + "' AND IDCTTacGia = '" + IDCTTacGia + "'");
         }
     }
 }
