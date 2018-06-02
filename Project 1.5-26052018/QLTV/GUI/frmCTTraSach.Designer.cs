@@ -53,7 +53,6 @@
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.lb = new System.Windows.Forms.ListBox();
-            this.cbb_IDCuonSach = new System.Windows.Forms.TextBox();
             this.cbb_IDPhieuTra = new System.Windows.Forms.TextBox();
             this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
             this.pic_Ss = new System.Windows.Forms.PictureBox();
@@ -68,6 +67,9 @@
             this.cT_PHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUTRATableAdapter();
             this.cUONSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter();
             this.pHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter();
+            this.cbb_IDCuonSach = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_TenTacGia = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -313,8 +315,10 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.Controls.Add(this.lb);
+            this.groupControl1.Controls.Add(this.tb_TenTacGia);
+            this.groupControl1.Controls.Add(this.label5);
             this.groupControl1.Controls.Add(this.cbb_IDCuonSach);
+            this.groupControl1.Controls.Add(this.lb);
             this.groupControl1.Controls.Add(this.cbb_IDPhieuTra);
             this.groupControl1.Controls.Add(this.btn_Them);
             this.groupControl1.Controls.Add(this.pic_Ss);
@@ -334,21 +338,11 @@
             // 
             this.lb.FormattingEnabled = true;
             this.lb.ItemHeight = 36;
-            this.lb.Location = new System.Drawing.Point(12, 313);
+            this.lb.Location = new System.Drawing.Point(12, 357);
             this.lb.Name = "lb";
             this.lb.Size = new System.Drawing.Size(528, 220);
             this.lb.TabIndex = 36;
             this.lb.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lb_MouseDoubleClick);
-            // 
-            // cbb_IDCuonSach
-            // 
-            this.cbb_IDCuonSach.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbb_IDCuonSach.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.cbb_IDCuonSach.Location = new System.Drawing.Point(297, 235);
-            this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
-            this.cbb_IDCuonSach.Size = new System.Drawing.Size(243, 44);
-            this.cbb_IDCuonSach.TabIndex = 35;
-            this.cbb_IDCuonSach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbb_IDCuonSach_KeyDown);
             // 
             // cbb_IDPhieuTra
             // 
@@ -364,7 +358,7 @@
             this.btn_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btn_Them.Appearance.Options.UseFont = true;
             this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.btn_Them.Location = new System.Drawing.Point(190, 565);
+            this.btn_Them.Location = new System.Drawing.Point(190, 609);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(157, 75);
             this.btn_Them.TabIndex = 33;
@@ -463,6 +457,32 @@
             // 
             this.pHIEUTRATableAdapter.ClearBeforeFill = true;
             // 
+            // cbb_IDCuonSach
+            // 
+            this.cbb_IDCuonSach.FormattingEnabled = true;
+            this.cbb_IDCuonSach.Location = new System.Drawing.Point(297, 235);
+            this.cbb_IDCuonSach.Name = "cbb_IDCuonSach";
+            this.cbb_IDCuonSach.Size = new System.Drawing.Size(243, 44);
+            this.cbb_IDCuonSach.TabIndex = 37;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(6, 296);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(175, 36);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Tên tác giả:";
+            // 
+            // tb_TenTacGia
+            // 
+            this.tb_TenTacGia.Enabled = false;
+            this.tb_TenTacGia.Location = new System.Drawing.Point(297, 293);
+            this.tb_TenTacGia.Name = "tb_TenTacGia";
+            this.tb_TenTacGia.Size = new System.Drawing.Size(243, 44);
+            this.tb_TenTacGia.TabIndex = 39;
+            // 
             // frmCTTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -525,7 +545,6 @@
         private System.Windows.Forms.PictureBox pic_Ss;
         private System.Windows.Forms.PictureBox pic_Warning;
         private DevExpress.XtraEditors.SimpleButton btn_Them;
-        private System.Windows.Forms.TextBox cbb_IDCuonSach;
         private System.Windows.Forms.TextBox cbb_IDPhieuTra;
         private System.Windows.Forms.ListBox lb;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
@@ -538,5 +557,8 @@
         private System.Windows.Forms.ToolStripButton btn_Reset;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.TextBox tb_TenTacGia;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbb_IDCuonSach;
     }
 }

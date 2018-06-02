@@ -33,16 +33,11 @@ namespace QLTV.GUI
             if (ADO.adoLogin.Instance.checkDocGia(UserName, Password) == true)
             {
                 btn_Luu.Enabled = false;
-                btn_Sua.Enabled = false;
                 //toolStripLabel1.Enabled = false;
                 //toolStripLabel5.Enabled = false;
                 //toolStripLabel2.Enabled = false;
                 btn_Xoa.Enabled = false;
-                toolStripLabel6.Enabled = false;
-                toolStripLabel7.Enabled = false;
-                toolStripLabel8.Enabled = false;
                 toolStripButton1.Enabled = false;
-                toolStripButton2.Enabled = false;
                 toolStripButton3.Enabled = false;
             }
         }
@@ -250,20 +245,20 @@ namespace QLTV.GUI
             dgv_TKSach.DataSource = quanLyThuVienDataSet.SACH;
         }
 
-        //private void btn_LuuCS_Click(object sender, EventArgs e)
-        //{
-        //    string idcs = dgv_TKCuonSach.CurrentRow.Cells[0].Value.ToString();
-        //    string ids = dgv_TKCuonSach.CurrentRow.Cells[1].Value.ToString();
+        private void btn_LuuCS_Click(object sender, EventArgs e)
+        {
+            string idcs = dgv_TKCuonSach.CurrentRow.Cells[0].Value.ToString();
+            string ids = dgv_TKCuonSach.CurrentRow.Cells[1].Value.ToString();
 
-        //    ADO.adoCuonSach.Instance.Sua(idcs, ids);
-        //    dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
-        //}
+            ADO.adoCuonSach.Instance.Sua(idcs, ids);
+            dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
+        }
 
-        //private void btn_XoaCS_Click(object sender, EventArgs e)
-        //{
-        //    string idcs = dgv_TKCuonSach.CurrentRow.Cells[0].Value.ToString();
-        //    ADO.adoCuonSach.Instance.Xoa(idcs);
-        //    dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
-        //}
+        private void btn_XoaCS_Click(object sender, EventArgs e)
+        {
+            string idcs = dgv_TKCuonSach.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoCuonSach.Instance.Xoa(idcs);
+            dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
+        }
     }
 }

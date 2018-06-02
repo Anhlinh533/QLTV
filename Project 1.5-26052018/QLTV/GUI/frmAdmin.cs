@@ -57,21 +57,49 @@ namespace QLTV.GUI
             dgv_CTAdmin.DataSource = quanLyThuVienDataSet.CT_USERADMIN;
         }
 
-        //private void btn_LuuAdmin_Click(object sender, EventArgs e)
-        //{
-        //    string username = dgv_UserAdmin.CurrentRow.Cells[0].Value.ToString();
-        //    string password = dgv_UserAdmin.CurrentRow.Cells[1].Value.ToString();
-        //    string ida = dgv_UserAdmin.CurrentRow.Cells[2].Value.ToString();
+        private void btn_LuuAdmin_Click(object sender, EventArgs e)
+        {
+            string username = dgv_UserAdmin.CurrentRow.Cells[0].Value.ToString();
+            string password = dgv_UserAdmin.CurrentRow.Cells[1].Value.ToString();
+            string ida = dgv_UserAdmin.CurrentRow.Cells[2].Value.ToString();
 
-        //    ADO.adoAdmin.Instance.Sua(username, password, ida);
-        //    dgv_UserAdmin.DataSource = quanLyThuVienDataSet.USERADMIN;
-        //}
+            ADO.adoAdmin.Instance.Sua(username, password, ida);
+            dgv_UserAdmin.DataSource = quanLyThuVienDataSet.USERADMIN;
+        }
 
-        //private void btn_XoaAdmin_Click(object sender, EventArgs e)
-        //{
-        //    string username = dgv_UserAdmin.CurrentRow.Cells[0].Value.ToString();
-        //    ADO.adoAdmin.Instance.Xoa(username);
-        //    dgv_UserAdmin.DataSource = quanLyThuVienDataSet.USERADMIN;
-        //}
+        private void btn_XoaAdmin_Click(object sender, EventArgs e)
+        {
+            string username = dgv_UserAdmin.CurrentRow.Cells[0].Value.ToString();
+            ADO.adoAdmin.Instance.Xoa(username);
+            dgv_UserAdmin.DataSource = quanLyThuVienDataSet.USERADMIN;
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_SuaUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+            dgv_CTAdmin.DataSource = quanLyThuVienDataSet.CT_USERADMIN;
+            dgv_UserAdmin.DataSource = quanLyThuVienDataSet.USERADMIN;
+            SCRIPT.useForm.ResetAllControls(groupControl1);
+            SCRIPT.useForm.ResetAllControls(groupControl2);
+
+            SCRIPT.useForm.ResetAllControls(groupControl3);
+
+            SCRIPT.useForm.ResetAllControls(groupControl4);
+
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

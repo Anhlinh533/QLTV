@@ -35,7 +35,7 @@ namespace QLTV.GUI
             ADO.ConnectionSQL.autoSach(cbb_IDPhieuTra, "select IDPhieuTra from PHIEUTRA");
 
             //idcuonsach->tencuonsach. chuyển về id
-            ADO.ConnectionSQL.autoSach(cbb_IDCuonSach, "select TenDauSach from DAUSACH");
+            //ADO.ConnectionSQL.autoSach(cbb_IDCuonSach, "select TenDauSach from DAUSACH");
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
