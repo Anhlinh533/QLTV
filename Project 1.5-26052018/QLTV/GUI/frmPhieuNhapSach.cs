@@ -115,5 +115,10 @@ namespace QLTV.GUI
             ADO.adoPhieuNhapSach.Instance.Sua(idpn, ngaynhap);
             dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUNHAPSACH;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

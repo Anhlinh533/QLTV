@@ -121,5 +121,10 @@ namespace QLTV.GUI
             ADO.adoMuonSach.Instance.Sua(idpm, iddg, ngaymuon);
             dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUMUON;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

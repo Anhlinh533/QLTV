@@ -141,5 +141,10 @@ namespace QLTV.GUI
             ADO.adoTheDocGia.Instance.Sua(iddg, hoten, ngaysinh, diachi, email, loaidg, ngaylapthe);
             dgv_ThemDG.DataSource = quanLyThuVienDataSet.THEDOCGIA;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

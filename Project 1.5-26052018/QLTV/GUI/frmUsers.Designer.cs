@@ -66,6 +66,8 @@
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             this.uSERADMINTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERADMINTableAdapter();
             this.cT_USERADMINTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_USERADMINTableAdapter();
+            this.btn_Xuat = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -138,6 +140,8 @@
             this.btn_Sua,
             this.toolStripSeparator1,
             this.btn_Xoa,
+            this.toolStripSeparator9,
+            this.btn_Xuat,
             this.toolStripSeparator2,
             this.btn_Reset,
             this.toolStripSeparator3,
@@ -434,6 +438,21 @@
             // 
             this.cT_USERADMINTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_Xuat
+            // 
+            this.btn_Xuat.ForeColor = System.Drawing.Color.Red;
+            this.btn_Xuat.Image = global::QLTV.Properties.Resources.icons8_export_csv_40;
+            this.btn_Xuat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xuat.Name = "btn_Xuat";
+            this.btn_Xuat.Size = new System.Drawing.Size(120, 32);
+            this.btn_Xuat.Text = "Xuất CSV";
+            this.btn_Xuat.Click += new System.EventHandler(this.btn_Xuat_Click);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 35);
+            // 
             // frmUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -508,5 +527,7 @@
         private System.Windows.Forms.ToolStripButton btn_Reset;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btn_Exit;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripButton btn_Xuat;
     }
 }

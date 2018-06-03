@@ -92,6 +92,10 @@
             this.tHEDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.THEDOCGIATableAdapter();
             this.lOAIDOCGIATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.LOAIDOCGIATableAdapter();
             this.uSERSTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.USERSTableAdapter();
+            this.btn_Xuat = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_XuatUser = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKDocGia.SuspendLayout();
@@ -170,6 +174,8 @@
             this.toolStripSeparator4,
             this.btn_Xoa,
             this.toolStripSeparator2,
+            this.btn_Xuat,
+            this.toolStripSeparator9,
             this.btn_Reset,
             this.toolStripSeparator3,
             this.btn_Exit});
@@ -571,6 +577,8 @@
             this.btn_LuuUser,
             this.toolStripSeparator1,
             this.btn_XoaUser,
+            this.toolStripSeparator7,
+            this.btn_XuatUser,
             this.toolStripSeparator5,
             this.toolStripButton3,
             this.toolStripSeparator6,
@@ -764,6 +772,36 @@
             // 
             this.uSERSTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_Xuat
+            // 
+            this.btn_Xuat.ForeColor = System.Drawing.Color.Red;
+            this.btn_Xuat.Image = global::QLTV.Properties.Resources.icons8_export_csv_40;
+            this.btn_Xuat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xuat.Name = "btn_Xuat";
+            this.btn_Xuat.Size = new System.Drawing.Size(120, 32);
+            this.btn_Xuat.Text = "Xuất CSV";
+            this.btn_Xuat.Click += new System.EventHandler(this.btn_Xuat_Click);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 35);
+            // 
+            // btn_XuatUser
+            // 
+            this.btn_XuatUser.ForeColor = System.Drawing.Color.Red;
+            this.btn_XuatUser.Image = global::QLTV.Properties.Resources.icons8_export_csv_40;
+            this.btn_XuatUser.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XuatUser.Name = "btn_XuatUser";
+            this.btn_XuatUser.Size = new System.Drawing.Size(120, 32);
+            this.btn_XuatUser.Text = "Xuất CSV";
+            this.btn_XuatUser.Click += new System.EventHandler(this.btn_XuatUser_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 35);
+            // 
             // frmTKDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -872,5 +910,9 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton btn_Xuat;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripButton btn_XuatUser;
     }
 }

@@ -116,5 +116,10 @@ namespace QLTV.GUI
             ADO.adoLoaiSach.Instance.Sua(idls, tenls);
             dgv_Them.DataSource = quanLyThuVienDataSet.LOAISACH;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

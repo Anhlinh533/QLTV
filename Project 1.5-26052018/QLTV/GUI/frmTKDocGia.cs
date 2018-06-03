@@ -254,5 +254,15 @@ namespace QLTV.GUI
         {
             this.Close();
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_XuatUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

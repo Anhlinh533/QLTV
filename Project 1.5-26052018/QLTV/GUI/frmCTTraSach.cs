@@ -163,6 +163,11 @@ namespace QLTV.GUI
         private void cbb_IDCuonSach_SelectedIndexChanged(object sender, EventArgs e)
         {
             tb_TenTacGia.Text = ADO.ConnectionSQL.Instance.ExcuteString("SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CUONSACH C, SACH D WHERE A.IDTacGia = B.IDTacGia AND D.IDSach = C.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + cbb_IDCuonSach.SelectedValue.ToString() + "'");
-        }        
+        }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

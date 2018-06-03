@@ -126,5 +126,10 @@ namespace QLTV.GUI
             ADO.adoCTTacGia.Instance.Sua(idcttg, idds, idtg);
             dataGridView1.DataSource = quanLyThuVienDataSet.CT_TACGIA;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

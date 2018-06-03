@@ -151,5 +151,10 @@ namespace QLTV.GUI
             cbb_NamXB.Text = "";
             ADO.ConnectionSQL.Instance.FillCbb(cbb_NamXB, "SELECT NamXB FROM SACH WHERE IDDauSach = N'" + IDDauSach + "' AND IDCTTacGia = '" + IDCTTacGia + "' AND NhaXB = N'" + cbb_NhaXB.Text + "'");
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

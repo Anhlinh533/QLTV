@@ -122,5 +122,10 @@ namespace QLTV.GUI
             ADO.adoTacGia.Instance.Sua(idtg, tentg, ngaysinh);
             dgv_Them.DataSource = quanLyThuVienDataSet.TACGIA;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

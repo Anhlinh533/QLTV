@@ -176,5 +176,10 @@ namespace QLTV.GUI
             cbb_TenTacGia.Text = "";
             ADO.ConnectionSQL.Instance.FillCbb(cbb_TenTacGia, "SELECT TenTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia AND TenDauSach = N'" + cbb_IDCuonSach.Text + "'");
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

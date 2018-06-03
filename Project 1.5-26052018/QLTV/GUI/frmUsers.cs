@@ -135,5 +135,10 @@ namespace QLTV.GUI
             ADO.adoUsers.Instance.Sua(username, password, iddg);
             dgv_Them.DataSource = quanLyThuVienDataSet.USERS;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

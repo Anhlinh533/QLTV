@@ -66,6 +66,15 @@
             this.rdb_IDSach = new System.Windows.Forms.RadioButton();
             this.item_CuonSach = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.dgv_TKCuonSach = new System.Windows.Forms.DataGridView();
             this.iDCuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDSachDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,15 +90,10 @@
             this.rdb_IDCuonSach = new System.Windows.Forms.RadioButton();
             this.sACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.SACHTableAdapter();
             this.cUONSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter();
-            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.btn_Xuat = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_XuatCuonSach = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_TKSach.SuspendLayout();
@@ -105,12 +109,12 @@
             this.item_CuonSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
+            this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCuonSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
-            this.bindingNavigator2.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -167,6 +171,8 @@
             this.toolStripSeparator4,
             this.toolStripSeparator1,
             this.btn_Xoa,
+            this.toolStripSeparator9,
+            this.btn_Xuat,
             this.toolStripSeparator2,
             this.btn_Reset,
             this.toolStripSeparator3,
@@ -510,6 +516,96 @@
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Dữ liệu thông tin cuốn sách";
             // 
+            // bindingNavigator2
+            // 
+            this.bindingNavigator2.AddNewItem = null;
+            this.bindingNavigator2.CountItem = null;
+            this.bindingNavigator2.DeleteItem = null;
+            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripSeparator5,
+            this.toolStripSeparator6,
+            this.toolStripButton3,
+            this.toolStripSeparator10,
+            this.btn_XuatCuonSach,
+            this.toolStripSeparator7,
+            this.toolStripButton4,
+            this.toolStripSeparator8,
+            this.toolStripButton5});
+            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator2.MoveFirstItem = null;
+            this.bindingNavigator2.MoveLastItem = null;
+            this.bindingNavigator2.MoveNextItem = null;
+            this.bindingNavigator2.MovePreviousItem = null;
+            this.bindingNavigator2.Name = "bindingNavigator2";
+            this.bindingNavigator2.PositionItem = null;
+            this.bindingNavigator2.Size = new System.Drawing.Size(1077, 35);
+            this.bindingNavigator2.TabIndex = 15;
+            this.bindingNavigator2.Text = "bindingNavigator2";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.toolStripButton1.ForeColor = System.Drawing.Color.Red;
+            this.toolStripButton1.Image = global::QLTV.Properties.Resources.diskette;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(72, 32);
+            this.toolStripButton1.Text = "Lưu";
+            this.toolStripButton1.Click += new System.EventHandler(this.btn_LuuCS_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.ForeColor = System.Drawing.Color.Red;
+            this.toolStripButton3.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(74, 32);
+            this.toolStripButton3.Text = "Xóa";
+            this.toolStripButton3.Click += new System.EventHandler(this.btn_XoaCS_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 35);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.ForeColor = System.Drawing.Color.Red;
+            this.toolStripButton4.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(151, 32);
+            this.toolStripButton4.Text = "Reset dữ liệu";
+            this.toolStripButton4.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 35);
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.ForeColor = System.Drawing.Color.Red;
+            this.toolStripButton5.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(90, 32);
+            this.toolStripButton5.Text = "Thoát";
+            this.toolStripButton5.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // dgv_TKCuonSach
             // 
             this.dgv_TKCuonSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -664,93 +760,35 @@
             // 
             this.cUONSACHTableAdapter.ClearBeforeFill = true;
             // 
-            // bindingNavigator2
+            // btn_Xuat
             // 
-            this.bindingNavigator2.AddNewItem = null;
-            this.bindingNavigator2.CountItem = null;
-            this.bindingNavigator2.DeleteItem = null;
-            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bindingNavigator2.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripSeparator5,
-            this.toolStripSeparator6,
-            this.toolStripButton3,
-            this.toolStripSeparator7,
-            this.toolStripButton4,
-            this.toolStripSeparator8,
-            this.toolStripButton5});
-            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
-            this.bindingNavigator2.MoveFirstItem = null;
-            this.bindingNavigator2.MoveLastItem = null;
-            this.bindingNavigator2.MoveNextItem = null;
-            this.bindingNavigator2.MovePreviousItem = null;
-            this.bindingNavigator2.Name = "bindingNavigator2";
-            this.bindingNavigator2.PositionItem = null;
-            this.bindingNavigator2.Size = new System.Drawing.Size(1077, 35);
-            this.bindingNavigator2.TabIndex = 15;
-            this.bindingNavigator2.Text = "bindingNavigator2";
+            this.btn_Xuat.ForeColor = System.Drawing.Color.Red;
+            this.btn_Xuat.Image = global::QLTV.Properties.Resources.icons8_export_csv_40;
+            this.btn_Xuat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Xuat.Name = "btn_Xuat";
+            this.btn_Xuat.Size = new System.Drawing.Size(120, 32);
+            this.btn_Xuat.Text = "Xuất CSV";
+            this.btn_Xuat.Click += new System.EventHandler(this.btn_Xuat_Click);
             // 
-            // toolStripButton1
+            // toolStripSeparator9
             // 
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.toolStripButton1.ForeColor = System.Drawing.Color.Red;
-            this.toolStripButton1.Image = global::QLTV.Properties.Resources.diskette;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(72, 32);
-            this.toolStripButton1.Text = "Lưu";
-            this.toolStripButton1.Click += new System.EventHandler(this.btn_LuuCS_Click);
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 35);
             // 
-            // toolStripSeparator5
+            // btn_XuatCuonSach
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
+            this.btn_XuatCuonSach.ForeColor = System.Drawing.Color.Red;
+            this.btn_XuatCuonSach.Image = global::QLTV.Properties.Resources.icons8_export_csv_40;
+            this.btn_XuatCuonSach.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XuatCuonSach.Name = "btn_XuatCuonSach";
+            this.btn_XuatCuonSach.Size = new System.Drawing.Size(120, 32);
+            this.btn_XuatCuonSach.Text = "Xuất CSV";
+            this.btn_XuatCuonSach.Click += new System.EventHandler(this.btn_XuatCuonSach_Click);
             // 
-            // toolStripSeparator6
+            // toolStripSeparator10
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.ForeColor = System.Drawing.Color.Red;
-            this.toolStripButton3.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(74, 32);
-            this.toolStripButton3.Text = "Xóa";
-            this.toolStripButton3.Click += new System.EventHandler(this.btn_XoaCS_Click);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 35);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.ForeColor = System.Drawing.Color.Red;
-            this.toolStripButton4.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(151, 32);
-            this.toolStripButton4.Text = "Reset dữ liệu";
-            this.toolStripButton4.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 35);
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.ForeColor = System.Drawing.Color.Red;
-            this.toolStripButton5.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(90, 32);
-            this.toolStripButton5.Text = "Thoát";
-            this.toolStripButton5.Click += new System.EventHandler(this.btn_Exit_Click);
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 35);
             // 
             // frmTKSach
             // 
@@ -782,14 +820,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
+            this.bindingNavigator2.ResumeLayout(false);
+            this.bindingNavigator2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TKCuonSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cUONSACHBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
-            this.bindingNavigator2.ResumeLayout(false);
-            this.bindingNavigator2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -857,5 +895,9 @@
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton btn_Xuat;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripButton btn_XuatCuonSach;
     }
 }

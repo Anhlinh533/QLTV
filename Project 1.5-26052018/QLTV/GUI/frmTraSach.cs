@@ -121,5 +121,10 @@ namespace QLTV.GUI
             ADO.adoTraSach.Instance.Sua(idpt, iddg, ngaytra, sotientra);
             dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUTRA;
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
