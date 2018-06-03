@@ -87,7 +87,7 @@
             this.navigationPane1.Controls.Add(this.item_Them);
             this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationPane1.Location = new System.Drawing.Point(0, 0);
-            this.navigationPane1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navigationPane1.Margin = new System.Windows.Forms.Padding(2);
             this.navigationPane1.Name = "navigationPane1";
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.item_Them});
@@ -103,7 +103,7 @@
             this.item_Them.Controls.Add(this.groupControl2);
             this.item_Them.Controls.Add(this.groupControl1);
             this.item_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_plus_40;
-            this.item_Them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.item_Them.Margin = new System.Windows.Forms.Padding(2);
             this.item_Them.Name = "item_Them";
             this.item_Them.Size = new System.Drawing.Size(839, 452);
             // 
@@ -119,7 +119,7 @@
             this.groupControl2.Controls.Add(this.bindingNavigator1);
             this.groupControl2.Controls.Add(this.dataGridView1);
             this.groupControl2.Location = new System.Drawing.Point(357, 0);
-            this.groupControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(2);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(471, 438);
             this.groupControl2.TabIndex = 1;
@@ -237,7 +237,7 @@
             this.iDTacGiaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cTTACGIABindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(1, 63);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(468, 374);
@@ -300,7 +300,7 @@
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(2);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(353, 438);
             this.groupControl1.TabIndex = 0;
@@ -311,20 +311,20 @@
             this.cbb_IDTacGia.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbb_IDTacGia.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.cbb_IDTacGia.Location = new System.Drawing.Point(177, 153);
-            this.cbb_IDTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_IDTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_IDTacGia.Name = "cbb_IDTacGia";
             this.cbb_IDTacGia.Size = new System.Drawing.Size(135, 32);
-            this.cbb_IDTacGia.TabIndex = 34;
+            this.cbb_IDTacGia.TabIndex = 3;
             // 
             // cbb_IDDauSach
             // 
             this.cbb_IDDauSach.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbb_IDDauSach.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.cbb_IDDauSach.Location = new System.Drawing.Point(177, 112);
-            this.cbb_IDDauSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_IDDauSach.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_IDDauSach.Name = "cbb_IDDauSach";
             this.cbb_IDDauSach.Size = new System.Drawing.Size(135, 32);
-            this.cbb_IDDauSach.TabIndex = 33;
+            this.cbb_IDDauSach.TabIndex = 2;
             // 
             // btn_Them
             // 
@@ -332,7 +332,7 @@
             this.btn_Them.Appearance.Options.UseFont = true;
             this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
             this.btn_Them.Location = new System.Drawing.Point(113, 207);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(105, 51);
             this.btn_Them.TabIndex = 32;
@@ -343,7 +343,7 @@
             // 
             this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
             this.pic_Ss.Location = new System.Drawing.Point(316, 53);
-            this.pic_Ss.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_Ss.Margin = new System.Windows.Forms.Padding(2);
             this.pic_Ss.Name = "pic_Ss";
             this.pic_Ss.Size = new System.Drawing.Size(25, 27);
             this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -354,7 +354,7 @@
             // 
             this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
             this.pic_Warning.Location = new System.Drawing.Point(316, 53);
-            this.pic_Warning.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic_Warning.Margin = new System.Windows.Forms.Padding(2);
             this.pic_Warning.Name = "pic_Warning";
             this.pic_Warning.Size = new System.Drawing.Size(25, 27);
             this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -375,7 +375,7 @@
             // tb_IDCTTacGia
             // 
             this.tb_IDCTTacGia.Location = new System.Drawing.Point(177, 53);
-            this.tb_IDCTTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_IDCTTacGia.Margin = new System.Windows.Forms.Padding(2);
             this.tb_IDCTTacGia.MaxLength = 3;
             this.tb_IDCTTacGia.Name = "tb_IDCTTacGia";
             this.tb_IDCTTacGia.Size = new System.Drawing.Size(135, 32);
@@ -444,7 +444,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(913, 512);
             this.Controls.Add(this.navigationPane1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCTTacGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết tác giả";

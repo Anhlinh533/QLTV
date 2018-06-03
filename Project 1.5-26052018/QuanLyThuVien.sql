@@ -226,13 +226,14 @@ CREATE TABLE CT_PHIEUTRA
 	IDPhieuMuon varchar(6) FOREIGN KEY REFERENCES PHIEUMUON(IDPhieuMuon), --o
 	SoNgayMuon int, --o
 	TienPhat money DEFAULT(0) --o
-	CONSTRAINT PK_CPT PRIMARY KEY (IDCTPhieuTra, IDPhieuTra, IDCuonSach) --- 26/5
+	CONSTRAINT PK_CPT PRIMARY KEY (IDCTPhieuTra, IDCuonSach) --- 26/5 --- 3/6
 )
 
 INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT001', 'IPT001', 'CSA001')
 INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT002', 'IPT001', 'CSA002')
 INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT003', 'IPT002', 'CSA003')
 INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT004', 'IPT002', 'CSA004')
+INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT069', 'IPT069', 'CSA011')
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ PHIEUTHUTIENPHAT _____________________________________________________--
@@ -810,12 +811,12 @@ BEGIN
 
 	/*IDPhieuMuon, SoNgayMuon*/
 		UPDATE CT_PHIEUTRA
-		SET IDPhieuMuon = C.IDPhieuMuon, SoNgayMuon = DATEDIFF(day, C.NgayMuon, A.NgayTra)
+		SET IDPhieuMuon = D.IDPhieuMuon, SoNgayMuon = DATEDIFF(day, C.NgayMuon, A.NgayTra)
 		FROM INSERTED I, PHIEUTRA A, CT_PHIEUTRA B, PHIEUMUON C, CT_PHIEUMUON D
 		WHERE B.IDCTPhieuTra = I.IDCTPhieuTra
 			  AND A.IDPhieuTra = B.IDPhieuTra AND C.IDPhieuMuon = D.IDPhieuMuon 
-			  AND B.IDCuonSach = D.IDCuonSach AND NOT EXISTS (SELECT * FROM INSERTED I, PHIEUTRA A, CT_PHIEUTRA B, PHIEUMUON C, CT_PHIEUMUON D
-															  WHERE A.IDPhieuTra = B.IDPhieuTra AND C.IDPhieuMuon = D.IDPhieuMuon
+			  AND B.IDCuonSach = D.IDCuonSach AND D.IDPhieuMuon <> (SELECT D.IDPhieuMuon FROM INSERTED I, PHIEUTRA A, CT_PHIEUTRA B, PHIEUMUON C, CT_PHIEUMUON D
+																	WHERE A.IDPhieuTra = B.IDPhieuTra AND C.IDPhieuMuon = D.IDPhieuMuon
 																	AND B.IDCuonSach = D.IDCuonSach AND B.IDCuonSach = I.IDCuonSach AND B.IDPhieuMuon = C.IDPhieuMuon)
 																	
 	/*NgayTra > NgayMuon*/

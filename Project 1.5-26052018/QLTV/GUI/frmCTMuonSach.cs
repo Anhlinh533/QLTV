@@ -47,11 +47,30 @@ namespace QLTV.GUI
 
             if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
             {
-                string s = "";
+                string s = "";                         
 
                 for (int j = 0; j < lv_CuonSach.Items.Count; j++)
                 {
-                    s = ADO.adoCTMuonSach.Instance.GetIDCuonSach(lv_CuonSach.Items[j].ToString());
+                    string TenSach = "", TenTG = "";
+                    int t = 0;
+
+                    for (int i = 0; i < lv_CuonSach.Items[j].ToString().Length; i++)
+                    {
+                        if (lv_CuonSach.Items[j].ToString()[i] == '-')
+                        {
+                            t = i;
+                            break;
+                        }
+                    }
+
+                    if (t == 0) TenSach = lv_CuonSach.Items[j].ToString();
+                    else
+                    {
+                        TenSach = lv_CuonSach.Items[j].ToString().Substring(0, t - 1);
+                        TenTG = lv_CuonSach.Items[j].ToString().Substring(t + 2, lv_CuonSach.Items[j].ToString().Length - t - 2);
+                    }
+
+                        s = ADO.adoCTMuonSach.Instance.GetIDCuonSach(TenSach, TenTG);
                     if (s == null)
                         MessageBox.Show("Đã hết sách " + lv_CuonSach.Items[j].ToString());
                     else
@@ -141,13 +160,21 @@ namespace QLTV.GUI
         {
             if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
             {
-                lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
+                if (cbb_TenTacGia.Text == "")
+                    lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
+                else lv_CuonSach.Items.Add(cbb_IDCuonSach.Text + " - " + cbb_TenTacGia.Text);
             }
         }
 
         private void lv_CuonSach_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             lv_CuonSach.Items.Remove(lv_CuonSach.SelectedItem);
+        }
+
+        private void cbb_IDCuonSach_TextChanged(object sender, EventArgs e)
+        {
+            cbb_TenTacGia.Text = "";
+            ADO.ConnectionSQL.Instance.FillCbb(cbb_TenTacGia, "SELECT TenTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia AND TenDauSach = N'" + cbb_IDCuonSach.Text + "'");
         }
     }
 }

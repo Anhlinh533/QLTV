@@ -67,9 +67,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(834, 491);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(556, 336);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // groupBox1
@@ -92,9 +93,11 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(0, 64);
+            this.groupBox1.Location = new System.Drawing.Point(0, 44);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(834, 427);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(556, 292);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Đổi mật khẩu";
@@ -120,14 +123,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 70D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(609, 303);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(406, 207);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(122, 52);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(81, 36);
             this.bunifuFlatButton1.TabIndex = 12;
             this.bunifuFlatButton1.Text = "Thoát";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -158,14 +161,14 @@
             this.btn_DoiMatKhau.IconVisible = true;
             this.btn_DoiMatKhau.IconZoom = 60D;
             this.btn_DoiMatKhau.IsTab = false;
-            this.btn_DoiMatKhau.Location = new System.Drawing.Point(384, 303);
-            this.btn_DoiMatKhau.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.btn_DoiMatKhau.Location = new System.Drawing.Point(256, 207);
+            this.btn_DoiMatKhau.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_DoiMatKhau.Name = "btn_DoiMatKhau";
             this.btn_DoiMatKhau.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_DoiMatKhau.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_DoiMatKhau.OnHoverTextColor = System.Drawing.Color.Red;
             this.btn_DoiMatKhau.selected = false;
-            this.btn_DoiMatKhau.Size = new System.Drawing.Size(182, 52);
+            this.btn_DoiMatKhau.Size = new System.Drawing.Size(121, 36);
             this.btn_DoiMatKhau.TabIndex = 11;
             this.btn_DoiMatKhau.Text = "Đổi mật khẩu";
             this.btn_DoiMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -176,9 +179,10 @@
             // pic_WarningMK
             // 
             this.pic_WarningMK.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.pic_WarningMK.Location = new System.Drawing.Point(753, 226);
+            this.pic_WarningMK.Location = new System.Drawing.Point(502, 155);
+            this.pic_WarningMK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_WarningMK.Name = "pic_WarningMK";
-            this.pic_WarningMK.Size = new System.Drawing.Size(39, 39);
+            this.pic_WarningMK.Size = new System.Drawing.Size(26, 27);
             this.pic_WarningMK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_WarningMK.TabIndex = 10;
             this.pic_WarningMK.TabStop = false;
@@ -186,9 +190,10 @@
             // pic_SsMK
             // 
             this.pic_SsMK.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.pic_SsMK.Location = new System.Drawing.Point(753, 226);
+            this.pic_SsMK.Location = new System.Drawing.Point(502, 155);
+            this.pic_SsMK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_SsMK.Name = "pic_SsMK";
-            this.pic_SsMK.Size = new System.Drawing.Size(39, 39);
+            this.pic_SsMK.Size = new System.Drawing.Size(26, 27);
             this.pic_SsMK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_SsMK.TabIndex = 9;
             this.pic_SsMK.TabStop = false;
@@ -196,9 +201,10 @@
             // pic_Ss
             // 
             this.pic_Ss.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.pic_Ss.Location = new System.Drawing.Point(753, 131);
+            this.pic_Ss.Location = new System.Drawing.Point(502, 90);
+            this.pic_Ss.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_Ss.Name = "pic_Ss";
-            this.pic_Ss.Size = new System.Drawing.Size(39, 39);
+            this.pic_Ss.Size = new System.Drawing.Size(26, 27);
             this.pic_Ss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Ss.TabIndex = 7;
             this.pic_Ss.TabStop = false;
@@ -206,9 +212,10 @@
             // pic_Warning
             // 
             this.pic_Warning.Image = global::QLTV.Properties.Resources.icons8_cancel_40;
-            this.pic_Warning.Location = new System.Drawing.Point(753, 131);
+            this.pic_Warning.Location = new System.Drawing.Point(502, 90);
+            this.pic_Warning.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic_Warning.Name = "pic_Warning";
-            this.pic_Warning.Size = new System.Drawing.Size(39, 39);
+            this.pic_Warning.Size = new System.Drawing.Size(26, 27);
             this.pic_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Warning.TabIndex = 6;
             this.pic_Warning.TabStop = false;
@@ -217,69 +224,77 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label5.Location = new System.Drawing.Point(548, 189);
+            this.label5.Location = new System.Drawing.Point(365, 129);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 24);
+            this.label5.Size = new System.Drawing.Size(42, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "label5";
             // 
             // tb_MKMoi
             // 
-            this.tb_MKMoi.Location = new System.Drawing.Point(552, 226);
+            this.tb_MKMoi.Location = new System.Drawing.Point(368, 155);
+            this.tb_MKMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_MKMoi.MaxLength = 50;
             this.tb_MKMoi.Name = "tb_MKMoi";
             this.tb_MKMoi.PasswordChar = '*';
-            this.tb_MKMoi.Size = new System.Drawing.Size(195, 44);
-            this.tb_MKMoi.TabIndex = 2;
+            this.tb_MKMoi.Size = new System.Drawing.Size(131, 32);
+            this.tb_MKMoi.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(339, 229);
+            this.label4.Location = new System.Drawing.Point(226, 157);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 36);
+            this.label4.Size = new System.Drawing.Size(138, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Mật khẩu mới:";
             // 
             // tb_MKCu
             // 
-            this.tb_MKCu.Location = new System.Drawing.Point(552, 131);
+            this.tb_MKCu.Location = new System.Drawing.Point(368, 90);
+            this.tb_MKCu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_MKCu.MaxLength = 50;
             this.tb_MKCu.Name = "tb_MKCu";
             this.tb_MKCu.PasswordChar = '*';
-            this.tb_MKCu.Size = new System.Drawing.Size(195, 44);
-            this.tb_MKCu.TabIndex = 1;
+            this.tb_MKCu.Size = new System.Drawing.Size(131, 32);
+            this.tb_MKCu.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(339, 134);
+            this.label3.Location = new System.Drawing.Point(226, 92);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 36);
+            this.label3.Size = new System.Drawing.Size(125, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Mật khẩu cũ:";
             // 
             // tb_UserName
             // 
             this.tb_UserName.Enabled = false;
-            this.tb_UserName.Location = new System.Drawing.Point(552, 59);
+            this.tb_UserName.Location = new System.Drawing.Point(368, 40);
+            this.tb_UserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_UserName.Name = "tb_UserName";
-            this.tb_UserName.Size = new System.Drawing.Size(195, 44);
+            this.tb_UserName.Size = new System.Drawing.Size(131, 32);
             this.tb_UserName.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(339, 62);
+            this.label2.Location = new System.Drawing.Point(226, 42);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 36);
+            this.label2.Size = new System.Drawing.Size(107, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLTV.Properties.Resources.if_mypc_lock_41753;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 29);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(256, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -292,20 +307,22 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20F);
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(296, 13);
+            this.label1.Location = new System.Drawing.Point(197, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 48);
+            this.label1.Size = new System.Drawing.Size(174, 33);
             this.label1.TabIndex = 2;
             this.label1.Text = "Đổi mật khẩu";
             // 
             // frmDoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 491);
+            this.ClientSize = new System.Drawing.Size(556, 336);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "frmDoiMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

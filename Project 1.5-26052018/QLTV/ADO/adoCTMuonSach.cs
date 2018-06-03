@@ -46,9 +46,18 @@ namespace QLTV.ADO
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
 
-        public string GetIDCuonSach(string tb_TenSach)
+        public string GetIDCuonSach(string tb_TenSach, string tb_TenTG)
         {
-            string sql = "SELECT TOP 1 C.IDCuonSach FROM DAUSACH A, SACH B, CUONSACH C WHERE B.IDDauSach = A.IDDauSach AND C.IDSach = B.IDSach AND A.TenDauSach = N'" + tb_TenSach + "' AND C.TinhTrang = N'Chưa cho mượn' ORDER BY C.IDCuonSach";
+            string sql = "", IDCTTacGia = "";
+
+            if (tb_TenTG == "")
+                sql = "SELECT TOP 1 C.IDCuonSach FROM DAUSACH A, SACH B, CUONSACH C WHERE B.IDDauSach = A.IDDauSach AND C.IDSach = B.IDSach AND A.TenDauSach = N'" + tb_TenSach + "' AND C.TinhTrang = N'Chưa cho mượn' ORDER BY C.IDCuonSach";
+            else
+            {
+                IDCTTacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDCTTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia AND B.TenDauSach = N'" + tb_TenSach + "' AND C.TenTacGia = N'" + tb_TenTG + "'");
+                sql = "SELECT TOP 1 C.IDCuonSach FROM DAUSACH A, SACH B, CUONSACH C WHERE B.IDDauSach = A.IDDauSach AND C.IDSach = B.IDSach AND A.TenDauSach = N'" + tb_TenSach + "' AND B.IDCTTacGia = '" + IDCTTacGia + "' AND C.TinhTrang = N'Chưa cho mượn' ORDER BY C.IDCuonSach";
+            }
+
             string s = ADO.ConnectionSQL.Instance.ExcuteString(sql);
             return s;
         }

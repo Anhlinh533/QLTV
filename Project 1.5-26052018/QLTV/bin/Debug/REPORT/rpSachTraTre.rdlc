@@ -279,7 +279,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!NgayMuon.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>MM/dd/yyyy</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -567,7 +569,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!NgayTra.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>MM/dd/yyyy</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>

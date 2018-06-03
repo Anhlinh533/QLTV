@@ -276,7 +276,8 @@ namespace QLTV.GUI
         private void btn_XoaCTPT_Click(object sender, EventArgs e)
         {
             string idctpt = dgv_TKCTPhieuTraSach.CurrentRow.Cells[0].Value.ToString();
-            ADO.adoCTTraSach.Instance.Xoa(idctpt);
+            string idcs = dgv_TKCTPhieuTraSach.CurrentRow.Cells[2].Value.ToString();
+            ADO.adoCTTraSach.Instance.Xoa(idctpt, idcs);
             dgv_TKCTPhieuTraSach.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
         }
     }

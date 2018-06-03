@@ -44,7 +44,14 @@ namespace QLTV.GUI
             SCRIPT.formatCTTraSach.Instance.checkNull(tb_IDCTPhieuTra, cbb_IDPhieuTra, cbb_IDCuonSach);
             if (tb_IDCTPhieuTra.Text != "" && cbb_IDPhieuTra.Text != "" && cbb_IDCuonSach.Text != "")
             {
-                ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.Text);
+                string IDCuonSach = "";
+                for (int j = 0; j < lb.Items.Count; j++)
+                {
+                    IDCuonSach = lb.Items[j].ToString().Substring(lb.Items[j].ToString().Length - 8, 6);
+                    ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, IDCuonSach);
+                }
+                if (IDCuonSach == "") ADO.adoCTTraSach.Instance.Them(tb_IDCTPhieuTra.Text, cbb_IDPhieuTra.Text, cbb_IDCuonSach.SelectedValue.ToString());
+
                 this.cT_PHIEUTRATableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUTRA);
                 ResetForm();
             }
@@ -68,7 +75,7 @@ namespace QLTV.GUI
             if (tb_IDCTPhieuTra.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (tb_IDCTPhieuTra.Text != "")
             {
-                ADO.adoCTTraSach.Instance.Xoa(tb_IDCTPhieuTra.Text);
+                ADO.adoCTTraSach.Instance.Xoa(tb_IDCTPhieuTra.Text, dgv_Them.CurrentRow.Cells[2].Value.ToString());
                 this.cT_PHIEUTRATableAdapter.Fill(quanLyThuVienDataSet.CT_PHIEUTRA);
                 ResetForm();
             }
@@ -121,7 +128,9 @@ namespace QLTV.GUI
         {
             if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
             {
-                lb.Items.Add(cbb_IDCuonSach.Text);
+                lb.DisplayMember = "Text";
+                lb.ValueMember = "Value";
+                lb.Items.Add(new { Text = cbb_IDCuonSach.Text, Value = cbb_IDCuonSach.SelectedValue.ToString() });                
             }
         }
 
@@ -138,6 +147,22 @@ namespace QLTV.GUI
 
             ADO.adoCTTraSach.Instance.Sua(idctpt, idpt, idcs);
             dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
+        }                 
+
+        private void cbb_IDPhieuTra_TextChanged(object sender, EventArgs e)
+        {
+            cbb_IDCuonSach.DataSource = null;
+
+            if (cbb_IDPhieuTra.Text.Length == 6)
+            {
+                cbb_IDCuonSach.DataSource = null;
+                ADO.ConnectionSQL.Instance.FillCbb1(cbb_IDCuonSach, "SELECT TenDauSach, B.IDCuonSach FROM PHIEUMUON A, CT_PHIEUMUON B, PHIEUTRA C, CUONSACH D, SACH E, DAUSACH F WHERE B.IDPhieuMuon = A.IDPhieuMuon AND A.IDDocGia = C.IDDocGia AND B.IDCuonSach = D.IDCuonSach AND D.IDSach = E.IDSach AND E.IDDauSach = F.IDDauSach AND C.IDPhieuTra = '" + cbb_IDPhieuTra.Text + "' AND D.TinhTrang = N'Đã cho mượn'");                
+            }
         }
+
+        private void cbb_IDCuonSach_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tb_TenTacGia.Text = ADO.ConnectionSQL.Instance.ExcuteString("SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CUONSACH C, SACH D WHERE A.IDTacGia = B.IDTacGia AND D.IDSach = C.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + cbb_IDCuonSach.SelectedValue.ToString() + "'");
+        }        
     }
 }

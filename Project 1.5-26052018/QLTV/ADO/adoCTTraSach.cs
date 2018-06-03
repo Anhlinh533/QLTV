@@ -32,10 +32,10 @@ namespace QLTV.ADO
             ADO.ConnectionSQL.Instance.Execute(sqlInsert);
         }
 
-        public void Xoa(string tb_IDCTPhieuTra)
+        public void Xoa(string tb_IDCTPhieuTra, string tb_IDCuonSach)
         {
             //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
-            string sqlDelete = "DELETE FROM CT_PHIEUTRA WHERE IDCTPhieuTra ='" + tb_IDCTPhieuTra + "'";
+            string sqlDelete = "DELETE FROM CT_PHIEUTRA WHERE IDCTPhieuTra ='" + tb_IDCTPhieuTra + "' AND IDCuonSach ='" + tb_IDCuonSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
         }
 

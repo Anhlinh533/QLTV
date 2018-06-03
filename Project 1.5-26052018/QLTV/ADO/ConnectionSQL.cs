@@ -382,13 +382,53 @@ namespace QLTV.ADO
             {
                 cbb.Items.Add(dt.Rows[i][str]);
             }
-            //SqlDataAdapter da = new SqlDataAdapter(sql, con);
-            //con.Open();
+            //SqlDataAdapter da = new SqlDataAdapter(sql, con);            
             //DataSet ds = new DataSet();
             //da.Fill(ds);
             //cbb.DisplayMember = str;
             //cbb.ValueMember = str;
             //cbb.DataSource = ds;
+            con.Close();
+        }
+
+        public void FillCbb1(ComboBox cbb, string sql)
+        {
+            cbb.Items.Clear();
+            SqlConnection con = new SqlConnection(dataSource);
+
+            //string query = "SELECT TenTacGia, IDTacGia FROM TACGIA A, CT_TACGIA B, DAUSACH C WHERE A.IDTacGia = B.IDTacGia AND B.IDDauSach = C.IDDauSach AND C.TenDauSach = N'" + cbb_IDSach + "'";
+
+            string str = "", id = "";
+            int t = 0;
+
+            for (int i = 7; i < sql.Length; i++)
+            {
+                if (sql[i] == ',')
+                {
+                    t = i;
+                    break;
+                }
+                str += sql[i];
+            }
+
+            for (int j = t + 4; j < sql.Length; j++)
+            {
+                if (sql[j] == ' ') break;
+                id += sql[j];
+            }
+
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            DataTable dt = new DataTable();
+            dt.Clear();
+            con.Open();
+            da.Fill(dt);
+
+            cbb.DataSource = dt;
+            cbb.DisplayMember = dt.Columns[0].ToString();
+            cbb.ValueMember = dt.Columns[1].ToString();
+            //cbb.DisplayMember = str;
+            //cbb.ValueMember = id;
+
             con.Close();
         }
     }
