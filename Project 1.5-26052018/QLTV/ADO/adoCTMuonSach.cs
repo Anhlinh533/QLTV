@@ -90,5 +90,34 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public void AutoCbb(ComboBox cbb_TenTacGia, string TenDauSach)
+        {
+            ADO.ConnectionSQL.Instance.FillCbb(cbb_TenTacGia, "SELECT TenTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia AND TenDauSach = N'" + TenDauSach + "'");
+        }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCTPhieuMuon, IDPhieuMuon, A.IDCuonSach, TenDauSach FROM CT_PHIEUMUON A, DAUSACH B, SACH C, CUONSACH D WHERE A.IDCuonSach = D.IDCuonSach AND B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach";
+            return sql;
+        }
+
+        public string AutoFill(string idcs, string TenBox)
+        {
+            string str = "";
+
+            if (TenBox == "cbb_IDCuonSach")
+            {
+                string sql = "SELECT TenDauSach FROM DAUSACH A, SACH B, CUONSACH C, CT_PHIEUMUON D WHERE A.IDDauSach = B.IDDauSach AND B.IDSach = C.IDSach AND C.IDCuonSach = D.IDCuonSach AND D.IDCuonSach = '" + idcs + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+            else if (TenBox == "cbb_TenTacGia")
+            {
+                string sql = "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CT_PHIEUMUON C, SACH D, CUONSACH E WHERE A.IDTacGia = B.IDTacGia AND C.IDCuonSach = E.IDCuonSach AND E.IDSach = D.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + idcs + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+
+            return str;
+        }
     }
 }

@@ -280,16 +280,6 @@ namespace QLTV.GUI
             ADO.adoCTTraSach.Instance.Xoa(idctpt, idcs);
             dgv_TKCTPhieuTraSach.DataSource = quanLyThuVienDataSet.CT_PHIEUTRA;
         }
-
-        private void btn_Xuat_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_XuatCTTraSach_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

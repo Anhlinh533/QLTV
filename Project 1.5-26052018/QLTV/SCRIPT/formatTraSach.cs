@@ -28,6 +28,7 @@ namespace QLTV.SCRIPT
         {
             id = "IPT" + id;
         }
+
         public void checkTraSach(string IDPhieuTra,string IDDocGia,string NgayTra, string SoTienTra)
         {
              if(IDPhieuTra=="") MessageBox.Show("Không được để trống ID phiếu trả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);

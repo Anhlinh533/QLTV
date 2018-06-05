@@ -212,15 +212,5 @@ namespace QLTV.GUI
             ADO.adoCTMuonSach.Instance.Xoa(idctpm, idcs);
             dgv_TKCTPhieuMuonSach.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
         }
-
-        private void btn_Xuat_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_XuatCTPhieuMuon_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

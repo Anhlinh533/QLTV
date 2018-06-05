@@ -112,5 +112,29 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDSach, A.IDDauSach, TenDauSach, A.IDCTTacGia, TenTacGia, NhaXB, NamXB, SoLuongTon, GiaTien FROM SACH A, DAUSACH B, CT_TACGIA C, TACGIA D WHERE A.IDDauSach = B.IDDauSach AND A.IDCTTacGia = C.IDCTTacGia AND C.IDTacGia = D.IDTacGia";
+            return sql;
+        }
+
+        public string AutoFill(string id, string TenBox)
+        {
+            string str = "";
+
+            if (TenBox == "cbb_IDDauSach")
+            {
+                string sql = "SELECT TenDauSach FROM DAUSACH WHERE IDDauSach = '" + id + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+            else if (TenBox == "cbb_IDCTTacGia")
+            {
+                string sql = "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B WHERE A.IDTacGia = B.IDTacGia AND B.IDCTTacGia = '" + id + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+
+            return str;
+        }
     }
 }

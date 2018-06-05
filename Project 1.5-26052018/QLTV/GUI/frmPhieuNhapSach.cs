@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmPhieuNhapSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmPhieuNhapSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmPhieuNhapSach_Load(object sender, EventArgs e)
@@ -28,6 +31,14 @@ namespace QLTV.GUI
 
             //dtp_NgayNhap.Format = DateTimePickerFormat.Custom;
             //dtp_NgayNhap.CustomFormat = "dd/MM/yyyy";
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDPhieuNhap", "ID phiếu nhập");
+            dgv.Columns[0].DataPropertyName = "IDPhieuNhap";
+            dgv.Columns.Add("NgayNhap", "Ngày nhập");
+            dgv.Columns[1].DataPropertyName = "NgayNhap";
+            dgv.Columns.Add("TongTien", "Tổng tiền");
+            dgv.Columns[2].DataPropertyName = "TongTien";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -118,7 +129,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoPhieuNhapSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

@@ -41,6 +41,7 @@ namespace QLTV.SCRIPT
             else if (LoaiDocGia == "") MessageBox.Show("Không được để trống loại độc giả.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (!checkType.Instance.checkIsMail(Email)) MessageBox.Show("Email sai định dạng vui lòng nhập lại Email.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);        
         }
+
         public void checkNull(Control IDDocGia, Control HoTen, Control DiaChi, Control Email, Control LoaiDocGia)
         {
             if (useForm.Instance.checkNull(IDDocGia) == true) useForm.Instance.Focus(IDDocGia);
@@ -48,7 +49,6 @@ namespace QLTV.SCRIPT
             else if (useForm.Instance.checkNull(DiaChi) == true) useForm.Instance.Focus(DiaChi);
             else if (useForm.Instance.checkNull(Email) == true) useForm.Instance.Focus(Email);
             else if (useForm.Instance.checkNull(LoaiDocGia) == true) useForm.Instance.Focus(LoaiDocGia);
-
         }
     }
 }

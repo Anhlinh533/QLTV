@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmLoaiSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmLoaiSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmLoaiSach_Load(object sender, EventArgs e)
@@ -25,6 +28,12 @@ namespace QLTV.GUI
             label4.Hide();
             pic_Ss.Hide();
             pic_Warning.Hide();
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDLoaiSach", "ID loại sách");
+            dgv.Columns[0].DataPropertyName = "IDLoaiSach";
+            dgv.Columns.Add("TenLoaiSach", "Tên loại sách");
+            dgv.Columns[1].DataPropertyName = "TenLoaiSach";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -119,7 +128,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoLoaiSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

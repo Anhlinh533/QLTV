@@ -56,5 +56,57 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public void AutoCbb(ComboBox cbb, string TenText, string Ten1, string Ten2, string TenBox)
+        {
+            if (TenBox == "cbb_IDSach")
+                ADO.ConnectionSQL.Instance.FillCbb(cbb, "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, DAUSACH C WHERE A.IDTacGia = B.IDTacGia AND B.IDDauSach = C.IDDauSach AND C.TenDauSach = N'" + TenText + "'");
+            else
+            {
+                string IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + Ten1 + "'");
+                string IDCTTacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDCTTacGia FROM CT_TACGIA A, TACGIA B WHERE A.IDTacGia = B.IDTacGia AND A.IDDauSach = '" + IDDauSach + "'AND B.TenTacGia = N'" + Ten2 + "'");
+
+                if (TenBox == "cbb_TacGia")
+                {
+                    ADO.ConnectionSQL.Instance.FillCbb(cbb, "SELECT NhaXB FROM SACH WHERE IDDauSach = N'" + IDDauSach + "' AND IDCTTacGia = '" + IDCTTacGia + "'");
+                }
+                else if (TenBox == "cbb_NhaXB")
+                    ADO.ConnectionSQL.Instance.FillCbb(cbb, "SELECT NamXB FROM SACH WHERE IDDauSach = N'" + IDDauSach + "' AND IDCTTacGia = '" + IDCTTacGia + "' AND NhaXB = N'" + TenText + "'");
+            }
+        }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCTPhieuNhap, IDPhieuNhap, A.IDSach, TenDauSach, SoLuong, DonGia, ThanhTien FROM CT_PHIEUNHAPSACH A, DAUSACH B, SACH C WHERE A.IDSach = C.IDSach AND B.IDDauSach = C.IDDauSach";
+            return sql;
+        }
+
+        public string AutoFill(string ids, string TenBox)
+        {
+            string str = "";
+
+            if (TenBox == "cbb_IDSach")
+            {
+                string sql = "SELECT TenDauSach FROM DAUSACH A, SACH B, CT_PHIEUNHAPSACH C WHERE A.IDDauSach = B.IDDauSach AND B.IDSach = C.IDSach AND C.IDSach = '" + ids + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+            else if (TenBox == "cbb_TacGia")
+            {
+                string sql = "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CT_PHIEUNHAPSACH C, SACH D WHERE A.IDTacGia = B.IDTacGia AND C.IDSach = D.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDSach = '" + ids + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+            else if (TenBox == "cbb_NhaXB")
+            {
+                string sql = "SELECT NhaXB FROM SACH A, CT_PHIEUNHAPSACH B WHERE A.IDSach = B.IDSach AND B.IDSach = '" + ids + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+            else if (TenBox == "cbb_NamXB")
+            {
+                string sql = "SELECT NamXB FROM SACH A, CT_PHIEUNHAPSACH B WHERE A.IDSach = B.IDSach AND B.IDSach = '" + ids + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteInt(sql).ToString();
+            }
+
+            return str;
+        }
     }
 }

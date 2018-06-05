@@ -14,7 +14,7 @@ SET DATEFORMAT dmy
 
 --___________________________________________________________ THEDOCGIA ____________________________________________________________--
 
-DROP TABLE LOAIDOCGIA
+--DROP TABLE LOAIDOCGIA
 CREATE TABLE LOAIDOCGIA
 (
 	IDLoaiDG varchar(6) PRIMARY KEY NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE LOAIDOCGIA
 INSERT INTO LOAIDOCGIA VALUES ('LDG001', N'Thường')
 INSERT INTO LOAIDOCGIA VALUES ('LDG002', 'VIP')
 
-DROP TABLE THEDOCGIA
+--DROP TABLE THEDOCGIA
 CREATE TABLE THEDOCGIA
 (
 	IDDocGia varchar(6) PRIMARY KEY NOT NULL,
@@ -180,6 +180,7 @@ INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('IPM001', 'IDG00
 INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('IPM002', 'IDG001', '3/1/2018')
 INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('IPM003', 'IDG002', '1/3/2018')
 INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('IPM004', 'IDG001', '12/3/2018')
+INSERT INTO PHIEUMUON (IDPhieuMuon, IDDocGia, NgayMuon) VALUES ('IPM069', 'IDG009', '3/6/2018') --- 5/6
 
 
 --DROP TABLE CT_PHIEUMUON
@@ -199,6 +200,8 @@ INSERT INTO CT_PHIEUMUON VALUES ('CPM005', 'IPM003', 'CSA005')
 INSERT INTO CT_PHIEUMUON VALUES ('CPM006', 'IPM004', 'CSA006') /*phải trả pm1, pm2 trước*/
 INSERT INTO CT_PHIEUMUON VALUES ('CPM007', 'IPM004', 'CSA005') /*lỗi vì còn sách quá hạn chưa trả*/
 INSERT INTO CT_PHIEUMUON VALUES ('CPM008', 'IPM004', 'CSA007') /*lỗi vì số lượng tồn = 0*/
+INSERT INTO CT_PHIEUMUON VALUES ('CPM069', 'IPM069', 'CSA011') --- 5/6
+INSERT INTO CT_PHIEUMUON VALUES ('CPM070', 'IPM069', 'CSA024') --- 5/6
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ PHIEUTRA _____________________________________________________________--
@@ -215,7 +218,7 @@ CREATE TABLE PHIEUTRA
 
 INSERT INTO PHIEUTRA (IDPhieuTra, IDDocGia, NgayTra, SoTienTra) VALUES ('IPT001', 'IDG001', '7/1/2018', 1000)
 INSERT INTO PHIEUTRA (IDPhieuTra, IDDocGia, NgayTra, SoTienTra) VALUES ('IPT002', 'IDG001', '10/1/2018', 5000)
-
+INSERT INTO PHIEUTRA (IDPhieuTra, IDDocGia, NgayTra, SoTienTra) VALUES ('IPT069', 'IDG009', '5/6/2018', 0) --- 5/6
 
 --DROP TABLE CT_PHIEUTRA
 CREATE TABLE CT_PHIEUTRA
@@ -233,7 +236,7 @@ INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT001',
 INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT002', 'IPT001', 'CSA002')
 INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT003', 'IPT002', 'CSA003')
 INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT004', 'IPT002', 'CSA004')
-INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT069', 'IPT069', 'CSA011')
+INSERT INTO CT_PHIEUTRA (IDCTPhieuTra, IDPhieuTra, IDCuonSach) VALUES ('CPT069', 'IPT069', 'CSA011') --- 5/6
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ PHIEUTHUTIENPHAT _____________________________________________________--
@@ -284,7 +287,7 @@ CREATE TABLE BCSACHTRATRE
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ USERS ________________________________________________________________--
-DROP TABLE USERS
+--DROP TABLE USERS
 CREATE TABLE USERS
 (
 	UserName varchar(50) PRIMARY KEY NOT NULL,	
@@ -292,7 +295,7 @@ CREATE TABLE USERS
 	IDDocGia varchar(6) FOREIGN KEY REFERENCES THEDOCGIA(IDDocGia)
 )
 
-DROP TABLE USERADMIN
+--DROP TABLE USERADMIN
 CREATE TABLE USERADMIN
 (	
 	UserNameAdmin varchar(50) PRIMARY KEY NOT NULL,
@@ -304,7 +307,7 @@ INSERT INTO USERADMIN VALUES ('HunterTeam', '05123', 'IAD001')
 INSERT INTO USERADMIN VALUES ('baoduy', '1', 'IAD002')
 INSERT INTO USERADMIN VALUES ('a', '1', 'IAD003')
 
-DROP TABLE CT_USERADMIN --- 21/5
+--DROP TABLE CT_USERADMIN --- 21/5
 CREATE TABLE CT_USERADMIN
 (	
 	IDAdmin varchar(6) PRIMARY KEY NOT NULL,

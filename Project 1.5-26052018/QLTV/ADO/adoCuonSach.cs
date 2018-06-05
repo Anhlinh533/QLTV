@@ -82,5 +82,11 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCuonSach, A.IDSach, TenDauSach, TinhTrang FROM CUONSACH A, DAUSACH B, SACH C WHERE A.IDSach = C.IDSach AND B.IDDauSach = C.IDDauSach";
+            return sql;
+        }
     }
 }

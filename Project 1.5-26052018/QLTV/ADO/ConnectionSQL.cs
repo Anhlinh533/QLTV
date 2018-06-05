@@ -362,7 +362,6 @@ namespace QLTV.ADO
             SqlConnection con = new SqlConnection(dataSource);
 
             //string query = "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, DAUSACH C WHERE A.IDTacGia = B.IDTacGia AND B.IDDauSach = C.IDDauSach AND C.TenDauSach = N'" + cbb_IDSach + "'";
-
             string str = "";
 
             for (int i = 7; i < sql.Length; i++) 
@@ -370,10 +369,9 @@ namespace QLTV.ADO
                 if (sql[i] == ' ') break;
                 str += sql[i];
             }
-            con.Open();
 
-            //SqlCommand cmd = new SqlCommand(sql, con);
-                        
+            con.Open();    
+                                
             SqlDataAdapter da = new SqlDataAdapter(sql, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -382,12 +380,7 @@ namespace QLTV.ADO
             {
                 cbb.Items.Add(dt.Rows[i][str]);
             }
-            //SqlDataAdapter da = new SqlDataAdapter(sql, con);            
-            //DataSet ds = new DataSet();
-            //da.Fill(ds);
-            //cbb.DisplayMember = str;
-            //cbb.ValueMember = str;
-            //cbb.DataSource = ds;
+
             con.Close();
         }
 
@@ -429,6 +422,18 @@ namespace QLTV.ADO
             //cbb.DisplayMember = str;
             //cbb.ValueMember = id;
 
+            con.Close();
+        }
+
+        public void FillDgv(ref DataGridView dgv, string sql)
+        {
+            SqlConnection con = new SqlConnection(dataSource);
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+            dgv.DataSource = dt;
             con.Close();
         }
     }

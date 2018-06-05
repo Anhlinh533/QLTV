@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmUsers : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmUsers()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmUsers_Load(object sender, EventArgs e)
@@ -31,6 +34,16 @@ namespace QLTV.GUI
             label5.Hide();
             pic_Ss.Hide();
             pic_Warning.Hide();
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("UserName", "User name");
+            dgv.Columns[0].DataPropertyName = "UserName";
+            dgv.Columns.Add("Pwd", "Password");
+            dgv.Columns[1].DataPropertyName = "Pwd";
+            dgv.Columns.Add("IDDocGia", "ID độc giả");
+            dgv.Columns[2].DataPropertyName = "IDDocGia";
+            dgv.Columns.Add("HoTenDG", "Tên độc giả");
+            dgv.Columns[3].DataPropertyName = "HoTenDG";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -138,7 +151,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoUsers.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

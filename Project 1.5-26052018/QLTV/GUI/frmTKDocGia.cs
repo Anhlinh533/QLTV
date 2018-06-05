@@ -17,17 +17,16 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+
         private string UserName;
         private string Password;
-
-
-
 
         public frmTKDocGia(string userName, string password) : this()
         {
             UserName = userName;
             Password = password;
         }
+
         private void frmTKDocGia_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.
@@ -253,16 +252,6 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btn_Xuat_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_XuatUser_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

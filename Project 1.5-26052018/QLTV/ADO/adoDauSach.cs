@@ -55,5 +55,24 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDDauSach, TenDauSach, A.IDLoaiSach, TenLoaiSach FROM DAUSACH A, LOAISACH B WHERE A.IDLoaiSach = B.IDLoaiSach";
+            return sql;
+        }
+
+        public string AutoFill(string idls, string TenBox)
+        {
+            string str = "";
+
+            if (TenBox == "cbb_IDTheLoaiSach")
+            {
+                string sql = "SELECT TenLoaiSach FROM LOAISACH WHERE IDLoaiSach = '" + idls + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }            
+
+            return str;
+        }
     }
 }

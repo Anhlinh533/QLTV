@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
+using app = Microsoft.Office.Interop.Excel.Application;
 
 namespace QLTV.ADO
 {
@@ -47,5 +49,34 @@ namespace QLTV.ADO
         }
         #endregion
 
+        public void XuatExcel(ref DataGridView dgv, string sql, string DuongDan)
+        {
+            ADO.ConnectionSQL.Instance.FillDgv(ref dgv, sql);
+
+            app obj = new app();
+            obj.Application.Workbooks.Add(Type.Missing);
+            obj.Columns.ColumnWidth = 25;
+
+            for (int i = 1; i < dgv.Columns.Count + 1; i++)
+                obj.Cells[1, i] = dgv.Columns[i - 1].HeaderText;
+
+            for (int i = 0; i < dgv.Rows.Count; i++)
+            {
+                for (int j = 0; j < dgv.Columns.Count; j++)
+                {
+                    if (dgv.Rows[i].Cells[j].Value != null)
+                        obj.Cells[i + 2, j + 1] = dgv.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+
+            obj.ActiveWorkbook.SaveCopyAs(DuongDan + ".xlsx");
+            obj.ActiveWorkbook.Saved = true;
+        }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT UserNameAdmin, PasswordAdmin, A.IDAdmin, HoTenAdmin FROM USERS A, CT_USERADMIN B WHERE A.IDAdmin = B.IDAdmin";
+            return sql;
+        }
     }
 }

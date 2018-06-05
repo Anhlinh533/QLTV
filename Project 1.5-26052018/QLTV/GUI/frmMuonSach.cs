@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmMuonSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmMuonSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmMuonSach_Load(object sender, EventArgs e)
@@ -31,6 +34,18 @@ namespace QLTV.GUI
             //dtp_NgayMuon.Format = DateTimePickerFormat.Custom;
             //dtp_NgayMuon.CustomFormat = "dd/MM/yyyy";
             ADO.ConnectionSQL.autoSach(cbb_IDDocGia, "Select IDDocGia from THEDOCGIA");
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDPhieuMuon", "ID phiếu mượn");
+            dgv.Columns[0].DataPropertyName = "IDPhieuMuon";
+            dgv.Columns.Add("IDDocGia", "ID độc giả");
+            dgv.Columns[1].DataPropertyName = "IDDocGia";
+            dgv.Columns.Add("HoTenDG", "Tên độc giả");
+            dgv.Columns[2].DataPropertyName = "HoTenDG";
+            dgv.Columns.Add("NgayMuon", "Ngày mượn");
+            dgv.Columns[3].DataPropertyName = "NgayMuon";
+            dgv.Columns.Add("HanTra", "Hạn trả");
+            dgv.Columns[4].DataPropertyName = "HanTra";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -124,7 +139,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoMuonSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

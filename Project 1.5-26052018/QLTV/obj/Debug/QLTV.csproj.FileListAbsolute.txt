@@ -3675,3 +3675,4 @@ C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\de\DevExpress
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\es\DevExpress.Diagram.v18.1.Core.resources.dll
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\ja\DevExpress.Diagram.v18.1.Core.resources.dll
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\ru\DevExpress.Diagram.v18.1.Core.resources.dll
+D:\Mine\5. Study\Projects\C#\QLTV\Project 1.5-26052018\QLTV\obj\Debug\QLTV.csproj.ResolveComReference.cache

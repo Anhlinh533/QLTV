@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmCTMuonSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmCTMuonSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmCTMuonSach_Load(object sender, EventArgs e)
@@ -31,6 +34,17 @@ namespace QLTV.GUI
             pic_Warning.Hide();
             ADO.ConnectionSQL.autoSach(cbb_IDPhieuMuon, "select IDPhieuMuon from PHIEUMUON");
             ADO.ConnectionSQL.autoSach(cbb_IDCuonSach, "select TenDauSach from DAUSACH");
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDCTPhieuMuon", "ID chi tiết phiếu mượn");
+            dgv.Columns[0].DataPropertyName = "IDCTPhieuMuon";
+            dgv.Columns.Add("IDPhieuMuon", "ID phiếu mượn");
+            dgv.Columns[1].DataPropertyName = "IDPhieuMuon";
+            dgv.Columns.Add("IDCuonSach", "ID cuốn sách");
+            dgv.Columns[2].DataPropertyName = "IDCuonSach";
+            dgv.Columns.Add("TenDauSach", "Tên cuốn sách");
+            dgv.Columns[3].DataPropertyName = "TenDauSach";
+
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -119,14 +133,16 @@ namespace QLTV.GUI
             numrow = e.RowIndex;
             tb_IDCTPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
             cbb_IDPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
-            cbb_IDCuonSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+
+            string idcs = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            cbb_IDCuonSach.Text = ADO.adoCTMuonSach.Instance.AutoFill(idcs, "cbb_IDCuonSach");
+            cbb_TenTacGia.Text = ADO.adoCTMuonSach.Instance.AutoFill(idcs, "cbb_TenTacGia");
         }
 
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
             SCRIPT.useForm.ResetAllControls(groupControl2);
-
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
@@ -174,12 +190,23 @@ namespace QLTV.GUI
         private void cbb_IDCuonSach_TextChanged(object sender, EventArgs e)
         {
             cbb_TenTacGia.Text = "";
-            ADO.ConnectionSQL.Instance.FillCbb(cbb_TenTacGia, "SELECT TenTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia AND TenDauSach = N'" + cbb_IDCuonSach.Text + "'");
+            ADO.adoCTMuonSach.Instance.AutoCbb(cbb_TenTacGia, cbb_IDCuonSach.Text);
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
-
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
+                
+                string DuongDan;
+                DuongDan = sfd.FileName;
+                
+                string sql = ADO.adoCTMuonSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }            
         }
     }
 }

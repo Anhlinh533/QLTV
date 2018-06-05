@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmTacGia : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmTacGia()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmTacGia_Load(object sender, EventArgs e)
@@ -28,6 +31,14 @@ namespace QLTV.GUI
 
             //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
             //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDTacGia", "ID tác giả");
+            dgv.Columns[0].DataPropertyName = "IDTacGia";
+            dgv.Columns.Add("TenTacGia", "Tên tác giả");
+            dgv.Columns[1].DataPropertyName = "TenTacGia";
+            dgv.Columns.Add("NgaySinh", "Ngày sinh");
+            dgv.Columns[2].DataPropertyName = "NgaySinh";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -125,7 +136,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoTacGia.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

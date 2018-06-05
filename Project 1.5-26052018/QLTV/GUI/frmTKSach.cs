@@ -260,15 +260,5 @@ namespace QLTV.GUI
             ADO.adoCuonSach.Instance.Xoa(idcs);
             dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
         }
-
-        private void btn_Xuat_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_XuatCuonSach_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

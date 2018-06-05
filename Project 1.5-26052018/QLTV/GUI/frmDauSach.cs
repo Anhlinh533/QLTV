@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmDauSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmDauSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmDauSach_Load(object sender, EventArgs e)
@@ -29,6 +32,16 @@ namespace QLTV.GUI
             pic_Warning.Hide();
 
             ADO.ConnectionSQL.autoSach(cbb_IDTheLoaiSach, "select TenLoaiSach from LOAISACH");
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDDauSach", "ID đầu sách");
+            dgv.Columns[0].DataPropertyName = "IDDauSach";
+            dgv.Columns.Add("TenDauSach", "Tên đầu sách");
+            dgv.Columns[1].DataPropertyName = "TenDauSach";
+            dgv.Columns.Add("IDLoaiSach", "ID loại sách");
+            dgv.Columns[2].DataPropertyName = "IDLoaiSach";
+            dgv.Columns.Add("TenLoaiSach", "Tên loại sách");
+            dgv.Columns[3].DataPropertyName = "TenLoaiSach";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -88,7 +101,9 @@ namespace QLTV.GUI
             numrow = e.RowIndex;
             tb_IDDauSach.Text = dgv_ThemDauSach.Rows[numrow].Cells[0].Value.ToString();
             tb_TenDauSach.Text = dgv_ThemDauSach.Rows[numrow].Cells[1].Value.ToString();
-            cbb_IDTheLoaiSach.Text = dgv_ThemDauSach.Rows[numrow].Cells[2].Value.ToString();
+
+            string idls = dgv_ThemDauSach.Rows[numrow].Cells[2].Value.ToString();
+            cbb_IDTheLoaiSach.Text = ADO.adoDauSach.Instance.AutoFill(idls, "cbb_IDTheLoaiSach");
         }
 
         public void ResetForm()
@@ -127,7 +142,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoDauSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

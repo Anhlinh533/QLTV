@@ -16,9 +16,12 @@ namespace QLTV.GUI
 {
     public partial class frmTheDocGia : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmTheDocGia()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmTheDocGia_Load(object sender, EventArgs e)
@@ -36,6 +39,28 @@ namespace QLTV.GUI
             //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
             //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
             ADO.ConnectionSQL.autoSach(tb_DiaChi, "select DiaChiDG from THEDOCGIA");
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDDocGia", "ID độc giả");
+            dgv.Columns[0].DataPropertyName = "IDDocGia";
+            dgv.Columns.Add("HoTenDG", "Họ tên độc giả");
+            dgv.Columns[1].DataPropertyName = "HoTenDG";
+            dgv.Columns.Add("NgaySinhDG", "Ngày sinh");
+            dgv.Columns[2].DataPropertyName = "NgaySinhDG";
+            dgv.Columns.Add("DiaChiDG", "Địa chỉ");
+            dgv.Columns[3].DataPropertyName = "DiaChiDG";
+            dgv.Columns.Add("EmailDG", "Email");
+            dgv.Columns[4].DataPropertyName = "EmailDG";
+            dgv.Columns.Add("IDLoaiDG", "ID loại độc giả");
+            dgv.Columns[5].DataPropertyName = "IDLoaiDG";
+            dgv.Columns.Add("TenLoaiDG", "Tên loại độc giả");
+            dgv.Columns[6].DataPropertyName = "TenLoaiDG";
+            dgv.Columns.Add("NgayLapThe", "Ngày lập thẻ");
+            dgv.Columns[7].DataPropertyName = "NgayLapThe";
+            dgv.Columns.Add("NgayHetHan", "Ngày hết hạn");
+            dgv.Columns[8].DataPropertyName = "NgayHetHan";
+            dgv.Columns.Add("TongNo", "Tổng nợ");
+            dgv.Columns[9].DataPropertyName = "TongNo";
         }
 
         #region Event
@@ -144,7 +169,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoTheDocGia.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql,DuongDan);
+            }
         }
     }
 }

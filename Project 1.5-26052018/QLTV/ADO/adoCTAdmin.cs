@@ -47,5 +47,10 @@ namespace QLTV.ADO
         }
         #endregion
 
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT * FROM CT_USERADMIN";
+            return sql;
+        }
     }
 }

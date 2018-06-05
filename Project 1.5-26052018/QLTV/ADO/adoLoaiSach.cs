@@ -53,5 +53,11 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT * FROM LOAISACH";
+            return sql;
+        }
     }
 }

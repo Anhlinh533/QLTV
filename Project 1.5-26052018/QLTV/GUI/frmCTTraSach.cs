@@ -14,9 +14,12 @@ namespace QLTV.GUI
 {
     public partial class frmCTTraSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmCTTraSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmCTTraSach_Load(object sender, EventArgs e)
@@ -36,6 +39,22 @@ namespace QLTV.GUI
 
             //idcuonsach->tencuonsach. chuyển về id
             //ADO.ConnectionSQL.autoSach(cbb_IDCuonSach, "select TenDauSach from DAUSACH");
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDCTPhieuTra", "ID chi tiết phiếu trả");
+            dgv.Columns[0].DataPropertyName = "IDCTPhieuTra";
+            dgv.Columns.Add("IDPhieuTra", "ID phiếu trả");
+            dgv.Columns[1].DataPropertyName = "IDPhieuTra";
+            dgv.Columns.Add("IDCuonSach", "ID cuốn sách");
+            dgv.Columns[2].DataPropertyName = "IDCuonSach";
+            dgv.Columns.Add("TenDauSach", "Tên cuốn sách");
+            dgv.Columns[3].DataPropertyName = "TenDauSach";
+            dgv.Columns.Add("IDPhieuMuon", "ID phiếu mượn");
+            dgv.Columns[4].DataPropertyName = "IDPhieuMuon";
+            dgv.Columns.Add("SoNgayMuon", "Số ngày mượn");
+            dgv.Columns[5].DataPropertyName = "SoNgayMuon";
+            dgv.Columns.Add("TienPhat", "Tiền phạt");
+            dgv.Columns[6].DataPropertyName = "TienPhat";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -87,8 +106,6 @@ namespace QLTV.GUI
             ResetForm();
         }
 
-
-
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -102,7 +119,11 @@ namespace QLTV.GUI
             numrow = e.RowIndex;
             tb_IDCTPhieuTra.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
             cbb_IDPhieuTra.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
-            cbb_IDCuonSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+
+            //cbb_IDPhieuTra.TextChanged -= cbb_IDPhieuTra_TextChanged;
+            string idcs = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            cbb_IDCuonSach.Text = ADO.adoCTTraSach.Instance.AutoFill(idcs, "cbb_IDCuonSach");
+            tb_TenTacGia.Text = ADO.adoCTTraSach.Instance.AutoFill(idcs, "tb_TenTacGia");
         }
 
         public void ResetForm()
@@ -156,18 +177,29 @@ namespace QLTV.GUI
             if (cbb_IDPhieuTra.Text.Length == 6)
             {
                 cbb_IDCuonSach.DataSource = null;
-                ADO.ConnectionSQL.Instance.FillCbb1(cbb_IDCuonSach, "SELECT TenDauSach, B.IDCuonSach FROM PHIEUMUON A, CT_PHIEUMUON B, PHIEUTRA C, CUONSACH D, SACH E, DAUSACH F WHERE B.IDPhieuMuon = A.IDPhieuMuon AND A.IDDocGia = C.IDDocGia AND B.IDCuonSach = D.IDCuonSach AND D.IDSach = E.IDSach AND E.IDDauSach = F.IDDauSach AND C.IDPhieuTra = '" + cbb_IDPhieuTra.Text + "' AND D.TinhTrang = N'Đã cho mượn'");                
+                ADO.adoCTTraSach.Instance.AutoCbb1(cbb_IDCuonSach, cbb_IDPhieuTra.Text);
             }
         }
 
         private void cbb_IDCuonSach_SelectedIndexChanged(object sender, EventArgs e)
         {
-            tb_TenTacGia.Text = ADO.ConnectionSQL.Instance.ExcuteString("SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CUONSACH C, SACH D WHERE A.IDTacGia = B.IDTacGia AND D.IDSach = C.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + cbb_IDCuonSach.SelectedValue.ToString() + "'");
+            tb_TenTacGia.Text = ADO.adoCTTraSach.Instance.HienTG(cbb_IDCuonSach.SelectedValue.ToString());
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoCTTraSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

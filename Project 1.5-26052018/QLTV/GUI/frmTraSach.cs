@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmTraSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmTraSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmTraSach_Load(object sender, EventArgs e)
@@ -30,6 +33,22 @@ namespace QLTV.GUI
 
             //dtp_NgayTra.Format = DateTimePickerFormat.Custom;
             //dtp_NgayTra.CustomFormat = "dd/MM/yyyy";
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDPhieuTra", "ID phiếu trả");
+            dgv.Columns[0].DataPropertyName = "IDPhieuTra";
+            dgv.Columns.Add("IDDocGia", "ID độc giả");
+            dgv.Columns[1].DataPropertyName = "IDDocGia";
+            dgv.Columns.Add("HoTenDG", "Tên độc giả");
+            dgv.Columns[2].DataPropertyName = "HoTenDG";
+            dgv.Columns.Add("NgayTra", "Ngày trả");
+            dgv.Columns[3].DataPropertyName = "NgayTra";
+            dgv.Columns.Add("TienPhatKyNay", "Tiền phạt kỳ này");
+            dgv.Columns[4].DataPropertyName = "TienPhatKyNay";
+            dgv.Columns.Add("SoTienTra", "Số tiền trả");
+            dgv.Columns[5].DataPropertyName = "SoTienTra";
+            dgv.Columns.Add("TienNoKyNay", "Tiền nợ kỳ này");
+            dgv.Columns[6].DataPropertyName = "TienNoKyNay";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -124,7 +143,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoTraSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

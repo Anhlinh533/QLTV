@@ -99,5 +99,11 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDDocGia, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, A.IDLoaiDG, TenLoaiDG, NgayLapThe, NgayHetHan, TongNo FROM THEDOCGIA A, LOAIDOCGIA B WHERE A.IDLoaiDG = B.IDLoaiDG";
+            return sql;
+        }
     }
 }

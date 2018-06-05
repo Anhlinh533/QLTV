@@ -194,15 +194,5 @@ namespace QLTV.GUI
             ADO.adoCTTacGia.Instance.Xoa(idcttg);
             dgv_TKCTTacGia.DataSource = quanLyThuVienDataSet.CT_TACGIA;
         }
-
-        private void btn_Xuat_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_XuatCTTacGia_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

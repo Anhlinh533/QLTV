@@ -93,5 +93,40 @@ namespace QLTV.ADO
                 return true;
             return false;
         }
+
+        public void AutoCbb1(ComboBox cbb, string TenText)
+        {
+            ADO.ConnectionSQL.Instance.FillCbb1(cbb, "SELECT TenDauSach, B.IDCuonSach FROM PHIEUMUON A, CT_PHIEUMUON B, PHIEUTRA C, CUONSACH D, SACH E, DAUSACH F WHERE B.IDPhieuMuon = A.IDPhieuMuon AND A.IDDocGia = C.IDDocGia AND B.IDCuonSach = D.IDCuonSach AND D.IDSach = E.IDSach AND E.IDDauSach = F.IDDauSach AND C.IDPhieuTra = '" + TenText + "' AND D.TinhTrang = N'Đã cho mượn' AND NOT EXISTS (SELECT * FROM PHIEUMUON M, CT_PHIEUMUON N WHERE M.IDPhieuMuon = N.IDPhieuMuon AND N.IDCuonSach = B.IDCuonSach AND M.NgayMuon > A.NgayMuon)");
+        }
+
+        public string HienTG(string TenText)
+        {
+            string s = ADO.ConnectionSQL.Instance.ExcuteString("SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CUONSACH C, SACH D WHERE A.IDTacGia = B.IDTacGia AND D.IDSach = C.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + TenText + "'");
+            return s;
+        }
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCTPhieuTra, IDPhieuTra, A.IDCuonSach, TenDauSach, IDPhieuMuon, SoNgayMuon, TienPhat FROM CT_PHIEUTRA A, DAUSACH B, SACH C, CUONSACH D WHERE A.IDCuonSach = D.IDCuonSach AND B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach";
+            return sql;
+        }
+
+        public string AutoFill(string idcs, string TenBox)
+        {
+            string str = "";
+
+            if (TenBox == "cbb_IDCuonSach")
+            {
+                string sql = "SELECT TenDauSach FROM DAUSACH A, SACH B, CUONSACH C, CT_PHIEUTRA D WHERE A.IDDauSach = B.IDDauSach AND B.IDSach = C.IDSach AND C.IDCuonSach = D.IDCuonSach AND D.IDCuonSach = '" + idcs + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
+            }
+            else if (TenBox == "tb_TenTacGia")
+            {
+                string sql = "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CT_PHIEUTRA C, SACH D, CUONSACH E WHERE A.IDTacGia = B.IDTacGia AND C.IDCuonSach = E.IDCuonSach AND E.IDSach = D.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + idcs + "'";
+                str = ADO.ConnectionSQL.Instance.ExcuteString(sql);                              
+            }
+
+            return str;
+        }
     }
 }

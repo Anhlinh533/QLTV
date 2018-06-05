@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmCTTacGia : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmCTTacGia()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmCTTacGia_Load(object sender, EventArgs e)
@@ -36,6 +39,18 @@ namespace QLTV.GUI
             //cbb_IDTacGia-> tên tác giả, cần đưa về dạng ID
 
             ADO.ConnectionSQL.autoSach(cbb_IDTacGia, "Select TenTacGia from TACGIA");
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDCTTacGia", "ID chi tiết tác giả");
+            dgv.Columns[0].DataPropertyName = "IDCTTacGia";
+            dgv.Columns.Add("IDDauSach", "ID đầu sách");
+            dgv.Columns[1].DataPropertyName = "IDDauSach";
+            dgv.Columns.Add("TenDauSach", "Tên đầu sách");
+            dgv.Columns[2].DataPropertyName = "TenDauSach";
+            dgv.Columns.Add("IDTacGia", "ID tác giả");
+            dgv.Columns[3].DataPropertyName = "IDTacGia";
+            dgv.Columns.Add("TenTacGia", "Tên tác giả");
+            dgv.Columns[4].DataPropertyName = "TenTacGia";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -129,7 +144,18 @@ namespace QLTV.GUI
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoCTTacGia.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }

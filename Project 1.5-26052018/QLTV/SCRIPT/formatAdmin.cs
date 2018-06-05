@@ -23,5 +23,19 @@ namespace QLTV.SCRIPT
                 SCRIPT.formatAdmin.instance = value;
             }
         }
+
+        public void checkAdmin(string UserName, string Password, string IDAdmin)
+        {
+            if (UserName == "") MessageBox.Show("Không được để trống User name.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (Password == "") MessageBox.Show("Không được để trống Password.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDAdmin == "") MessageBox.Show("Không được để trống ID admin.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);  
+        }
+
+        public void checkNull(Control UserName, Control Password, Control IDAdmin)
+        {
+            if (useForm.Instance.checkNull(UserName) == true) useForm.Instance.Focus(UserName);
+            else if (useForm.Instance.checkNull(Password) == true) useForm.Instance.Focus(Password);
+            else if (useForm.Instance.checkNull(IDAdmin) == true) useForm.Instance.Focus(IDAdmin);            
+        }
     }
 }

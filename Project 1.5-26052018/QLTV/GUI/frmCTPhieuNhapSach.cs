@@ -13,9 +13,12 @@ namespace QLTV.GUI
 {
     public partial class frmCTPhieuNhapSach : DevExpress.XtraEditors.XtraForm
     {
+        private DataGridView dgv = new DataGridView();
+
         public frmCTPhieuNhapSach()
         {
             InitializeComponent();
+            this.Controls.Add(this.dgv);
         }
 
         private void frmCTPhieuNhapSach_Load(object sender, EventArgs e)
@@ -31,6 +34,22 @@ namespace QLTV.GUI
             pic_Warning.Hide();
             ADO.ConnectionSQL.autoSach(cbb_IDPhieuNhap, "select IDPhieuNhap from PHIEUNHAPSACH");//idphieunhap
             ADO.ConnectionSQL.autoSach(cbb_IDSach, "Select TenDauSach from DAUSACH");//idsach
+
+            this.dgv.VirtualMode = true;
+            dgv.Columns.Add("IDCTPhieuMuon", "ID chi tiết phiếu nhập");
+            dgv.Columns[0].DataPropertyName = "IDCTPhieuNhap";
+            dgv.Columns.Add("IDPhieuMuon", "ID phiếu nhập");
+            dgv.Columns[1].DataPropertyName = "IDPhieuNhap";
+            dgv.Columns.Add("IDSach", "ID sách");
+            dgv.Columns[2].DataPropertyName = "IDSach";
+            dgv.Columns.Add("TenDauSach", "Tên cuốn sách");
+            dgv.Columns[3].DataPropertyName = "TenDauSach";
+            dgv.Columns.Add("SoLuong", "Số lượng");
+            dgv.Columns[4].DataPropertyName = "SoLuong";
+            dgv.Columns.Add("DonGia", "Đơn giá");
+            dgv.Columns[5].DataPropertyName = "DonGia";
+            dgv.Columns.Add("ThanhTien", "Thành tiền");
+            dgv.Columns[6].DataPropertyName = "ThanhTien";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -81,10 +100,15 @@ namespace QLTV.GUI
             int numrow;
             numrow = e.RowIndex;
             tb_IDCTPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
-            cbb_IDPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
-            cbb_IDSach.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            cbb_IDPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();            
             tb_SoLuong.Text = dgv_Them.Rows[numrow].Cells[3].Value.ToString();
             tb_DonGia.Text = dgv_Them.Rows[numrow].Cells[4].Value.ToString();
+
+            string ids = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            cbb_IDSach.Text = ADO.adoCTPhieuNhapSach.Instance.AutoFill(ids, "cbb_IDSach");
+            cbb_TacGia.Text = ADO.adoCTPhieuNhapSach.Instance.AutoFill(ids, "cbb_TacGia");
+            cbb_NhaXB.Text = ADO.adoCTPhieuNhapSach.Instance.AutoFill(ids, "cbb_NhaXB");
+            cbb_NamXB.Text = ADO.adoCTPhieuNhapSach.Instance.AutoFill(ids, "cbb_NamXB");
         }
 
         public void ResetForm()
@@ -128,33 +152,38 @@ namespace QLTV.GUI
             cbb_TacGia.Text = "";
             cbb_NhaXB.Text = "";
             cbb_NamXB.Text = "";
-            ADO.ConnectionSQL.Instance.FillCbb(cbb_TacGia, "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, DAUSACH C WHERE A.IDTacGia = B.IDTacGia AND B.IDDauSach = C.IDDauSach AND C.TenDauSach = N'" + cbb_IDSach.Text + "'");
+            ADO.adoCTPhieuNhapSach.Instance.AutoCbb(cbb_TacGia, cbb_IDSach.Text, null, null, "cbb_IDSach");
         }
 
         private void cbb_TacGia_SelectedIndexChanged(object sender, EventArgs e)
         {   
-            string IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + cbb_IDSach.Text + "'");
-            string IDCTTacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDCTTacGia FROM CT_TACGIA A, TACGIA B WHERE A.IDTacGia = B.IDTacGia AND A.IDDauSach = '" + IDDauSach + "'AND B.TenTacGia = N'" + cbb_TacGia.Text + "'");
-
             cbb_NhaXB.Text = "";
             cbb_NamXB.Text = "";
-            ADO.ConnectionSQL.Instance.FillCbb(cbb_NhaXB, "SELECT NhaXB FROM SACH WHERE IDDauSach = N'" + IDDauSach + "' AND IDCTTacGia = '" + IDCTTacGia + "'");
+            ADO.adoCTPhieuNhapSach.Instance.AutoCbb(cbb_NhaXB, null, cbb_IDSach.Text, cbb_TacGia.Text, "cbb_TacGia");
             //ADO.ConnectionSQL.Instance.FillCbb(cbb_NamXB, "SELECT NamXB FROM SACH A, DAUSACH B, TACGIA C, CT_TACGIA D WHERE A.IDDauSach = B.IDDauSach AND C.IDTacGia = D.IDTacGia AND A.IDDauSach = D.IDDauSach AND B.TenDauSach = N'" + cbb_IDSach.Text + "' AND C.TenTacGia = N'" + cbb_TacGia.Text + "'");
-            
+
         }
 
         private void cbb_NhaXB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + cbb_IDSach.Text + "'");
-            string IDCTTacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDCTTacGia FROM CT_TACGIA A, TACGIA B WHERE A.IDTacGia = B.IDTacGia AND A.IDDauSach = '" + IDDauSach + "'AND B.TenTacGia = N'" + cbb_TacGia.Text + "'");
-
             cbb_NamXB.Text = "";
-            ADO.ConnectionSQL.Instance.FillCbb(cbb_NamXB, "SELECT NamXB FROM SACH WHERE IDDauSach = N'" + IDDauSach + "' AND IDCTTacGia = '" + IDCTTacGia + "' AND NhaXB = N'" + cbb_NhaXB.Text + "'");
+            ADO.adoCTPhieuNhapSach.Instance.AutoCbb(cbb_NamXB, cbb_NhaXB.Text, cbb_IDSach.Text, cbb_TacGia.Text, "cbb_NhaXB");
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                sfd.Title = "Save an Excel File";
+                sfd.ShowDialog();
 
+                string DuongDan;
+                DuongDan = sfd.FileName;
+
+                string sql = ADO.adoCTPhieuNhapSach.Instance.GetQueryFillDgv();
+                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+            }
         }
     }
 }
