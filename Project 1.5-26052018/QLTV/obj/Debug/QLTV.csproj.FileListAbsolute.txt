@@ -3493,7 +3493,6 @@ C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\Microsoft.Vis
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\Microsoft.Build.Framework.dll
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\VSLangProj2.dll
-C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\DevComponents.DotNetBar2.xml
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\DevExpress.Data.v18.1.xml
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\DevExpress.DataAccess.v18.1.xml
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\DevExpress.Office.v18.1.Core.xml
@@ -3676,3 +3675,4 @@ C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\es\DevExpress
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\ja\DevExpress.Diagram.v18.1.Core.resources.dll
 C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\bin\Debug\ru\DevExpress.Diagram.v18.1.Core.resources.dll
 D:\Mine\5. Study\Projects\C#\QLTV\Project 1.5-26052018\QLTV\obj\Debug\QLTV.csproj.ResolveComReference.cache
+C:\Users\BaoDuy\Documents\QLTV\Project 1.5-26052018\QLTV\obj\Debug\QLTV.GUI.frmPhieuThuTienPhat.resources
