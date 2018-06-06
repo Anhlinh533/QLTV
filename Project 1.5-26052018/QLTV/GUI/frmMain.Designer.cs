@@ -76,6 +76,8 @@
             this.ribtab_TacGia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btn_TacGia = new DevExpress.XtraBars.BarButtonItem();
             this.btn_CTTacGia = new DevExpress.XtraBars.BarButtonItem();
+            this.ribtab_Admin = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btn_Admin = new DevExpress.XtraBars.BarButtonItem();
             this.btn_CTPhieuNhapSach = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -395,7 +397,8 @@
             this.rib_QuanLi.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribtab_DocGia,
             this.ribtab_Sach,
-            this.ribtab_TacGia});
+            this.ribtab_TacGia,
+            this.ribtab_Admin});
             this.rib_QuanLi.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_business_64;
             this.rib_QuanLi.Name = "rib_QuanLi";
             this.rib_QuanLi.Text = "Quản lí";
@@ -525,6 +528,22 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.btn_CTTacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_CTTacGia_ItemClick);
             // 
+            // ribtab_Admin
+            // 
+            this.ribtab_Admin.ItemLinks.Add(this.btn_Admin);
+            this.ribtab_Admin.Name = "ribtab_Admin";
+            this.ribtab_Admin.Text = "Admin";
+            // 
+            // btn_Admin
+            // 
+            this.btn_Admin.Caption = "Admin";
+            this.btn_Admin.Id = 8;
+            this.btn_Admin.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_businessman_40;
+            this.btn_Admin.Name = "btn_Admin";
+            this.btn_Admin.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_Admin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Admin_ItemClick);
+            // 
             // btn_CTPhieuNhapSach
             // 
             this.btn_CTPhieuNhapSach.Caption = "Chi tiết phiếu nhập sách";
@@ -603,10 +622,11 @@
             this.barButtonItem7,
             this.barHeaderItem5,
             this.barButtonItem8,
-            this.barHeaderItem6});
+            this.barHeaderItem6,
+            this.btn_Admin});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl.MaxItemId = 8;
+            this.ribbonControl.MaxItemId = 9;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.barButtonGroup1);
             this.ribbonControl.PageHeaderItemLinks.Add(this.barHeaderItem6);
@@ -953,6 +973,8 @@
         private DevExpress.XtraBars.BarHeaderItem barHeaderItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarHeaderItem barHeaderItem6;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_Admin;
+        private DevExpress.XtraBars.BarButtonItem btn_Admin;
     }
 }
 

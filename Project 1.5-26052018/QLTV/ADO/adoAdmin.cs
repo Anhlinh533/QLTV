@@ -78,5 +78,13 @@ namespace QLTV.ADO
             string sql = "SELECT UserNameAdmin, PasswordAdmin, A.IDAdmin, HoTenAdmin FROM USERS A, CT_USERADMIN B WHERE A.IDAdmin = B.IDAdmin";
             return sql;
         }
+        
+        public bool checkAdmin(string ID)
+        {
+            string sql = "Select IDAdmin USERADMIN where IDAdmin='IDA"+ ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
+        }
     }
 }

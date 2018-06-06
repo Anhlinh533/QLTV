@@ -68,27 +68,27 @@ namespace QLTV {
         
         private USERSDataTable tableUSERS;
         
-        private global::System.Data.DataRelation relationFK__BCSACHTRA__IDCuo__0D7A0286;
+        private global::System.Data.DataRelation relationFK__BCSACHTRA__IDCuo__0E6E26BF;
         
-        private global::System.Data.DataRelation relationFK__BCSACHTRA__IDPhi__0E6E26BF;
+        private global::System.Data.DataRelation relationFK__BCSACHTRA__IDPhi__0F624AF8;
         
-        private global::System.Data.DataRelation relationFK__CT_BCTINH__IDBCM__07C12930;
+        private global::System.Data.DataRelation relationFK__CT_BCTINH__IDBCM__08B54D69;
         
-        private global::System.Data.DataRelation relationFK__CT_BCTINH__IDLoa__08B54D69;
+        private global::System.Data.DataRelation relationFK__CT_BCTINH__IDLoa__09A971A2;
         
-        private global::System.Data.DataRelation relationFK__CT_PHIEUM__IDCuo__71D1E811;
+        private global::System.Data.DataRelation relationFK__CT_PHIEUM__IDCuo__72C60C4A;
         
-        private global::System.Data.DataRelation relationFK__CT_PHIEUM__IDPhi__70DDC3D8;
+        private global::System.Data.DataRelation relationFK__CT_PHIEUM__IDPhi__71D1E811;
         
         private global::System.Data.DataRelation relationFK__CT_PHIEUN__IDPhi__6754599E;
         
         private global::System.Data.DataRelation relationFK__CT_PHIEUN__IDSac__68487DD7;
         
-        private global::System.Data.DataRelation relationFK__CT_PHIEUT__IDCuo__7B5B524B;
+        private global::System.Data.DataRelation relationFK__CT_PHIEUT__IDCuo__7C4F7684;
         
-        private global::System.Data.DataRelation relationFK__CT_PHIEUT__IDPhi__7A672E12;
+        private global::System.Data.DataRelation relationFK__CT_PHIEUT__IDPhi__7B5B524B;
         
-        private global::System.Data.DataRelation relationFK__CT_PHIEUT__IDPhi__7C4F7684;
+        private global::System.Data.DataRelation relationFK__CT_PHIEUT__IDPhi__7D439ABD;
         
         private global::System.Data.DataRelation relationFK__CT_TACGIA__IDDau__571DF1D5;
         
@@ -100,19 +100,19 @@ namespace QLTV {
         
         private global::System.Data.DataRelation relationFK__PHIEUMUON__IDDoc__6E01572D;
         
-        private global::System.Data.DataRelation relationFK__PHIEUTHUT__IDDoc__00200768;
+        private global::System.Data.DataRelation relationFK__PHIEUTHUT__IDDoc__01142BA1;
         
-        private global::System.Data.DataRelation relationFK__PHIEUTRA__IDDocG__74AE54BC;
+        private global::System.Data.DataRelation relationFK__PHIEUTRA__IDDocG__75A278F5;
         
         private global::System.Data.DataRelation relationFK__SACH__IDCTTacGia__5BE2A6F2;
         
         private global::System.Data.DataRelation relationFK__SACH__IDDauSach__5AEE82B9;
         
-        private global::System.Data.DataRelation relationFK__THEDOCGIA__IDLoa__4BAC3F29;
+        private global::System.Data.DataRelation relationFK__THEDOCGIA__IDLoa__4CA06362;
         
-        private global::System.Data.DataRelation relationFK__USERADMIN__IDAdm__18EBB532;
+        private global::System.Data.DataRelation relationFK__USERADMIN__IDAdm__17036CC0;
         
-        private global::System.Data.DataRelation relationFK__USERS__IDDocGia__114A936A;
+        private global::System.Data.DataRelation relationFK__USERS__IDDocGia__123EB7A3;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -744,29 +744,29 @@ namespace QLTV {
                     this.tableUSERS.InitVars();
                 }
             }
-            this.relationFK__BCSACHTRA__IDCuo__0D7A0286 = this.Relations["FK__BCSACHTRA__IDCuo__0D7A0286"];
-            this.relationFK__BCSACHTRA__IDPhi__0E6E26BF = this.Relations["FK__BCSACHTRA__IDPhi__0E6E26BF"];
-            this.relationFK__CT_BCTINH__IDBCM__07C12930 = this.Relations["FK__CT_BCTINH__IDBCM__07C12930"];
-            this.relationFK__CT_BCTINH__IDLoa__08B54D69 = this.Relations["FK__CT_BCTINH__IDLoa__08B54D69"];
-            this.relationFK__CT_PHIEUM__IDCuo__71D1E811 = this.Relations["FK__CT_PHIEUM__IDCuo__71D1E811"];
-            this.relationFK__CT_PHIEUM__IDPhi__70DDC3D8 = this.Relations["FK__CT_PHIEUM__IDPhi__70DDC3D8"];
+            this.relationFK__BCSACHTRA__IDCuo__0E6E26BF = this.Relations["FK__BCSACHTRA__IDCuo__0E6E26BF"];
+            this.relationFK__BCSACHTRA__IDPhi__0F624AF8 = this.Relations["FK__BCSACHTRA__IDPhi__0F624AF8"];
+            this.relationFK__CT_BCTINH__IDBCM__08B54D69 = this.Relations["FK__CT_BCTINH__IDBCM__08B54D69"];
+            this.relationFK__CT_BCTINH__IDLoa__09A971A2 = this.Relations["FK__CT_BCTINH__IDLoa__09A971A2"];
+            this.relationFK__CT_PHIEUM__IDCuo__72C60C4A = this.Relations["FK__CT_PHIEUM__IDCuo__72C60C4A"];
+            this.relationFK__CT_PHIEUM__IDPhi__71D1E811 = this.Relations["FK__CT_PHIEUM__IDPhi__71D1E811"];
             this.relationFK__CT_PHIEUN__IDPhi__6754599E = this.Relations["FK__CT_PHIEUN__IDPhi__6754599E"];
             this.relationFK__CT_PHIEUN__IDSac__68487DD7 = this.Relations["FK__CT_PHIEUN__IDSac__68487DD7"];
-            this.relationFK__CT_PHIEUT__IDCuo__7B5B524B = this.Relations["FK__CT_PHIEUT__IDCuo__7B5B524B"];
-            this.relationFK__CT_PHIEUT__IDPhi__7A672E12 = this.Relations["FK__CT_PHIEUT__IDPhi__7A672E12"];
-            this.relationFK__CT_PHIEUT__IDPhi__7C4F7684 = this.Relations["FK__CT_PHIEUT__IDPhi__7C4F7684"];
+            this.relationFK__CT_PHIEUT__IDCuo__7C4F7684 = this.Relations["FK__CT_PHIEUT__IDCuo__7C4F7684"];
+            this.relationFK__CT_PHIEUT__IDPhi__7B5B524B = this.Relations["FK__CT_PHIEUT__IDPhi__7B5B524B"];
+            this.relationFK__CT_PHIEUT__IDPhi__7D439ABD = this.Relations["FK__CT_PHIEUT__IDPhi__7D439ABD"];
             this.relationFK__CT_TACGIA__IDDau__571DF1D5 = this.Relations["FK__CT_TACGIA__IDDau__571DF1D5"];
             this.relationFK__CT_TACGIA__IDTac__5812160E = this.Relations["FK__CT_TACGIA__IDTac__5812160E"];
             this.relationFK__CUONSACH__IDSach__60A75C0F = this.Relations["FK__CUONSACH__IDSach__60A75C0F"];
             this.relationFK__DAUSACH__IDLoaiS__52593CB8 = this.Relations["FK__DAUSACH__IDLoaiS__52593CB8"];
             this.relationFK__PHIEUMUON__IDDoc__6E01572D = this.Relations["FK__PHIEUMUON__IDDoc__6E01572D"];
-            this.relationFK__PHIEUTHUT__IDDoc__00200768 = this.Relations["FK__PHIEUTHUT__IDDoc__00200768"];
-            this.relationFK__PHIEUTRA__IDDocG__74AE54BC = this.Relations["FK__PHIEUTRA__IDDocG__74AE54BC"];
+            this.relationFK__PHIEUTHUT__IDDoc__01142BA1 = this.Relations["FK__PHIEUTHUT__IDDoc__01142BA1"];
+            this.relationFK__PHIEUTRA__IDDocG__75A278F5 = this.Relations["FK__PHIEUTRA__IDDocG__75A278F5"];
             this.relationFK__SACH__IDCTTacGia__5BE2A6F2 = this.Relations["FK__SACH__IDCTTacGia__5BE2A6F2"];
             this.relationFK__SACH__IDDauSach__5AEE82B9 = this.Relations["FK__SACH__IDDauSach__5AEE82B9"];
-            this.relationFK__THEDOCGIA__IDLoa__4BAC3F29 = this.Relations["FK__THEDOCGIA__IDLoa__4BAC3F29"];
-            this.relationFK__USERADMIN__IDAdm__18EBB532 = this.Relations["FK__USERADMIN__IDAdm__18EBB532"];
-            this.relationFK__USERS__IDDocGia__114A936A = this.Relations["FK__USERS__IDDocGia__114A936A"];
+            this.relationFK__THEDOCGIA__IDLoa__4CA06362 = this.Relations["FK__THEDOCGIA__IDLoa__4CA06362"];
+            this.relationFK__USERADMIN__IDAdm__17036CC0 = this.Relations["FK__USERADMIN__IDAdm__17036CC0"];
+            this.relationFK__USERS__IDDocGia__123EB7A3 = this.Relations["FK__USERS__IDDocGia__123EB7A3"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -821,30 +821,30 @@ namespace QLTV {
             base.Tables.Add(this.tableUSERADMIN);
             this.tableUSERS = new USERSDataTable();
             base.Tables.Add(this.tableUSERS);
-            this.relationFK__BCSACHTRA__IDCuo__0D7A0286 = new global::System.Data.DataRelation("FK__BCSACHTRA__IDCuo__0D7A0286", new global::System.Data.DataColumn[] {
+            this.relationFK__BCSACHTRA__IDCuo__0E6E26BF = new global::System.Data.DataRelation("FK__BCSACHTRA__IDCuo__0E6E26BF", new global::System.Data.DataColumn[] {
                         this.tableCUONSACH.IDCuonSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableBCSACHTRATRE.IDCuonSachColumn}, false);
-            this.Relations.Add(this.relationFK__BCSACHTRA__IDCuo__0D7A0286);
-            this.relationFK__BCSACHTRA__IDPhi__0E6E26BF = new global::System.Data.DataRelation("FK__BCSACHTRA__IDPhi__0E6E26BF", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__BCSACHTRA__IDCuo__0E6E26BF);
+            this.relationFK__BCSACHTRA__IDPhi__0F624AF8 = new global::System.Data.DataRelation("FK__BCSACHTRA__IDPhi__0F624AF8", new global::System.Data.DataColumn[] {
                         this.tablePHIEUMUON.IDPhieuMuonColumn}, new global::System.Data.DataColumn[] {
                         this.tableBCSACHTRATRE.IDPhieuMuonColumn}, false);
-            this.Relations.Add(this.relationFK__BCSACHTRA__IDPhi__0E6E26BF);
-            this.relationFK__CT_BCTINH__IDBCM__07C12930 = new global::System.Data.DataRelation("FK__CT_BCTINH__IDBCM__07C12930", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__BCSACHTRA__IDPhi__0F624AF8);
+            this.relationFK__CT_BCTINH__IDBCM__08B54D69 = new global::System.Data.DataRelation("FK__CT_BCTINH__IDBCM__08B54D69", new global::System.Data.DataColumn[] {
                         this.tableBCTINHHINHMUONSACH.IDBCMuonSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_BCTINHHINHMUONSACH.IDBCMuonSachColumn}, false);
-            this.Relations.Add(this.relationFK__CT_BCTINH__IDBCM__07C12930);
-            this.relationFK__CT_BCTINH__IDLoa__08B54D69 = new global::System.Data.DataRelation("FK__CT_BCTINH__IDLoa__08B54D69", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CT_BCTINH__IDBCM__08B54D69);
+            this.relationFK__CT_BCTINH__IDLoa__09A971A2 = new global::System.Data.DataRelation("FK__CT_BCTINH__IDLoa__09A971A2", new global::System.Data.DataColumn[] {
                         this.tableLOAISACH.IDLoaiSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_BCTINHHINHMUONSACH.IDLoaiSachColumn}, false);
-            this.Relations.Add(this.relationFK__CT_BCTINH__IDLoa__08B54D69);
-            this.relationFK__CT_PHIEUM__IDCuo__71D1E811 = new global::System.Data.DataRelation("FK__CT_PHIEUM__IDCuo__71D1E811", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CT_BCTINH__IDLoa__09A971A2);
+            this.relationFK__CT_PHIEUM__IDCuo__72C60C4A = new global::System.Data.DataRelation("FK__CT_PHIEUM__IDCuo__72C60C4A", new global::System.Data.DataColumn[] {
                         this.tableCUONSACH.IDCuonSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUMUON.IDCuonSachColumn}, false);
-            this.Relations.Add(this.relationFK__CT_PHIEUM__IDCuo__71D1E811);
-            this.relationFK__CT_PHIEUM__IDPhi__70DDC3D8 = new global::System.Data.DataRelation("FK__CT_PHIEUM__IDPhi__70DDC3D8", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CT_PHIEUM__IDCuo__72C60C4A);
+            this.relationFK__CT_PHIEUM__IDPhi__71D1E811 = new global::System.Data.DataRelation("FK__CT_PHIEUM__IDPhi__71D1E811", new global::System.Data.DataColumn[] {
                         this.tablePHIEUMUON.IDPhieuMuonColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUMUON.IDPhieuMuonColumn}, false);
-            this.Relations.Add(this.relationFK__CT_PHIEUM__IDPhi__70DDC3D8);
+            this.Relations.Add(this.relationFK__CT_PHIEUM__IDPhi__71D1E811);
             this.relationFK__CT_PHIEUN__IDPhi__6754599E = new global::System.Data.DataRelation("FK__CT_PHIEUN__IDPhi__6754599E", new global::System.Data.DataColumn[] {
                         this.tablePHIEUNHAPSACH.IDPhieuNhapColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUNHAPSACH.IDPhieuNhapColumn}, false);
@@ -853,18 +853,18 @@ namespace QLTV {
                         this.tableSACH.IDSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUNHAPSACH.IDSachColumn}, false);
             this.Relations.Add(this.relationFK__CT_PHIEUN__IDSac__68487DD7);
-            this.relationFK__CT_PHIEUT__IDCuo__7B5B524B = new global::System.Data.DataRelation("FK__CT_PHIEUT__IDCuo__7B5B524B", new global::System.Data.DataColumn[] {
+            this.relationFK__CT_PHIEUT__IDCuo__7C4F7684 = new global::System.Data.DataRelation("FK__CT_PHIEUT__IDCuo__7C4F7684", new global::System.Data.DataColumn[] {
                         this.tableCUONSACH.IDCuonSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUTRA.IDCuonSachColumn}, false);
-            this.Relations.Add(this.relationFK__CT_PHIEUT__IDCuo__7B5B524B);
-            this.relationFK__CT_PHIEUT__IDPhi__7A672E12 = new global::System.Data.DataRelation("FK__CT_PHIEUT__IDPhi__7A672E12", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CT_PHIEUT__IDCuo__7C4F7684);
+            this.relationFK__CT_PHIEUT__IDPhi__7B5B524B = new global::System.Data.DataRelation("FK__CT_PHIEUT__IDPhi__7B5B524B", new global::System.Data.DataColumn[] {
                         this.tablePHIEUTRA.IDPhieuTraColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUTRA.IDPhieuTraColumn}, false);
-            this.Relations.Add(this.relationFK__CT_PHIEUT__IDPhi__7A672E12);
-            this.relationFK__CT_PHIEUT__IDPhi__7C4F7684 = new global::System.Data.DataRelation("FK__CT_PHIEUT__IDPhi__7C4F7684", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CT_PHIEUT__IDPhi__7B5B524B);
+            this.relationFK__CT_PHIEUT__IDPhi__7D439ABD = new global::System.Data.DataRelation("FK__CT_PHIEUT__IDPhi__7D439ABD", new global::System.Data.DataColumn[] {
                         this.tablePHIEUMUON.IDPhieuMuonColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_PHIEUTRA.IDPhieuMuonColumn}, false);
-            this.Relations.Add(this.relationFK__CT_PHIEUT__IDPhi__7C4F7684);
+            this.Relations.Add(this.relationFK__CT_PHIEUT__IDPhi__7D439ABD);
             this.relationFK__CT_TACGIA__IDDau__571DF1D5 = new global::System.Data.DataRelation("FK__CT_TACGIA__IDDau__571DF1D5", new global::System.Data.DataColumn[] {
                         this.tableDAUSACH.IDDauSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableCT_TACGIA.IDDauSachColumn}, false);
@@ -885,14 +885,14 @@ namespace QLTV {
                         this.tableTHEDOCGIA.IDDocGiaColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHIEUMUON.IDDocGiaColumn}, false);
             this.Relations.Add(this.relationFK__PHIEUMUON__IDDoc__6E01572D);
-            this.relationFK__PHIEUTHUT__IDDoc__00200768 = new global::System.Data.DataRelation("FK__PHIEUTHUT__IDDoc__00200768", new global::System.Data.DataColumn[] {
+            this.relationFK__PHIEUTHUT__IDDoc__01142BA1 = new global::System.Data.DataRelation("FK__PHIEUTHUT__IDDoc__01142BA1", new global::System.Data.DataColumn[] {
                         this.tableTHEDOCGIA.IDDocGiaColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHIEUTHUTIENPHAT.IDDocGiaColumn}, false);
-            this.Relations.Add(this.relationFK__PHIEUTHUT__IDDoc__00200768);
-            this.relationFK__PHIEUTRA__IDDocG__74AE54BC = new global::System.Data.DataRelation("FK__PHIEUTRA__IDDocG__74AE54BC", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__PHIEUTHUT__IDDoc__01142BA1);
+            this.relationFK__PHIEUTRA__IDDocG__75A278F5 = new global::System.Data.DataRelation("FK__PHIEUTRA__IDDocG__75A278F5", new global::System.Data.DataColumn[] {
                         this.tableTHEDOCGIA.IDDocGiaColumn}, new global::System.Data.DataColumn[] {
                         this.tablePHIEUTRA.IDDocGiaColumn}, false);
-            this.Relations.Add(this.relationFK__PHIEUTRA__IDDocG__74AE54BC);
+            this.Relations.Add(this.relationFK__PHIEUTRA__IDDocG__75A278F5);
             this.relationFK__SACH__IDCTTacGia__5BE2A6F2 = new global::System.Data.DataRelation("FK__SACH__IDCTTacGia__5BE2A6F2", new global::System.Data.DataColumn[] {
                         this.tableCT_TACGIA.IDCTTacGiaColumn}, new global::System.Data.DataColumn[] {
                         this.tableSACH.IDCTTacGiaColumn}, false);
@@ -901,18 +901,18 @@ namespace QLTV {
                         this.tableDAUSACH.IDDauSachColumn}, new global::System.Data.DataColumn[] {
                         this.tableSACH.IDDauSachColumn}, false);
             this.Relations.Add(this.relationFK__SACH__IDDauSach__5AEE82B9);
-            this.relationFK__THEDOCGIA__IDLoa__4BAC3F29 = new global::System.Data.DataRelation("FK__THEDOCGIA__IDLoa__4BAC3F29", new global::System.Data.DataColumn[] {
+            this.relationFK__THEDOCGIA__IDLoa__4CA06362 = new global::System.Data.DataRelation("FK__THEDOCGIA__IDLoa__4CA06362", new global::System.Data.DataColumn[] {
                         this.tableLOAIDOCGIA.IDLoaiDGColumn}, new global::System.Data.DataColumn[] {
                         this.tableTHEDOCGIA.IDLoaiDGColumn}, false);
-            this.Relations.Add(this.relationFK__THEDOCGIA__IDLoa__4BAC3F29);
-            this.relationFK__USERADMIN__IDAdm__18EBB532 = new global::System.Data.DataRelation("FK__USERADMIN__IDAdm__18EBB532", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__THEDOCGIA__IDLoa__4CA06362);
+            this.relationFK__USERADMIN__IDAdm__17036CC0 = new global::System.Data.DataRelation("FK__USERADMIN__IDAdm__17036CC0", new global::System.Data.DataColumn[] {
                         this.tableCT_USERADMIN.IDAdminColumn}, new global::System.Data.DataColumn[] {
                         this.tableUSERADMIN.IDAdminColumn}, false);
-            this.Relations.Add(this.relationFK__USERADMIN__IDAdm__18EBB532);
-            this.relationFK__USERS__IDDocGia__114A936A = new global::System.Data.DataRelation("FK__USERS__IDDocGia__114A936A", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__USERADMIN__IDAdm__17036CC0);
+            this.relationFK__USERS__IDDocGia__123EB7A3 = new global::System.Data.DataRelation("FK__USERS__IDDocGia__123EB7A3", new global::System.Data.DataColumn[] {
                         this.tableTHEDOCGIA.IDDocGiaColumn}, new global::System.Data.DataColumn[] {
                         this.tableUSERS.IDDocGiaColumn}, false);
-            this.Relations.Add(this.relationFK__USERS__IDDocGia__114A936A);
+            this.Relations.Add(this.relationFK__USERS__IDDocGia__123EB7A3);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1295,7 +1295,7 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BCSACHTRATRERow AddBCSACHTRATRERow(string IDBCSachTre, System.DateTime NgayThangNam, CUONSACHRow parentCUONSACHRowByFK__BCSACHTRA__IDCuo__0D7A0286, PHIEUMUONRow parentPHIEUMUONRowByFK__BCSACHTRA__IDPhi__0E6E26BF, int SoNgayTraTre) {
+            public BCSACHTRATRERow AddBCSACHTRATRERow(string IDBCSachTre, System.DateTime NgayThangNam, CUONSACHRow parentCUONSACHRowByFK__BCSACHTRA__IDCuo__0E6E26BF, PHIEUMUONRow parentPHIEUMUONRowByFK__BCSACHTRA__IDPhi__0F624AF8, int SoNgayTraTre) {
                 BCSACHTRATRERow rowBCSACHTRATRERow = ((BCSACHTRATRERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDBCSachTre,
@@ -1303,11 +1303,11 @@ namespace QLTV {
                         null,
                         null,
                         SoNgayTraTre};
-                if ((parentCUONSACHRowByFK__BCSACHTRA__IDCuo__0D7A0286 != null)) {
-                    columnValuesArray[2] = parentCUONSACHRowByFK__BCSACHTRA__IDCuo__0D7A0286[0];
+                if ((parentCUONSACHRowByFK__BCSACHTRA__IDCuo__0E6E26BF != null)) {
+                    columnValuesArray[2] = parentCUONSACHRowByFK__BCSACHTRA__IDCuo__0E6E26BF[0];
                 }
-                if ((parentPHIEUMUONRowByFK__BCSACHTRA__IDPhi__0E6E26BF != null)) {
-                    columnValuesArray[3] = parentPHIEUMUONRowByFK__BCSACHTRA__IDPhi__0E6E26BF[0];
+                if ((parentPHIEUMUONRowByFK__BCSACHTRA__IDPhi__0F624AF8 != null)) {
+                    columnValuesArray[3] = parentPHIEUMUONRowByFK__BCSACHTRA__IDPhi__0F624AF8[0];
                 }
                 rowBCSACHTRATRERow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowBCSACHTRATRERow);
@@ -1936,7 +1936,7 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CT_BCTINHHINHMUONSACHRow AddCT_BCTINHHINHMUONSACHRow(string IDCTBCMuonSach, BCTINHHINHMUONSACHRow parentBCTINHHINHMUONSACHRowByFK__CT_BCTINH__IDBCM__07C12930, LOAISACHRow parentLOAISACHRowByFK__CT_BCTINH__IDLoa__08B54D69, int SoLuotMuon, double TiLe) {
+            public CT_BCTINHHINHMUONSACHRow AddCT_BCTINHHINHMUONSACHRow(string IDCTBCMuonSach, BCTINHHINHMUONSACHRow parentBCTINHHINHMUONSACHRowByFK__CT_BCTINH__IDBCM__08B54D69, LOAISACHRow parentLOAISACHRowByFK__CT_BCTINH__IDLoa__09A971A2, int SoLuotMuon, double TiLe) {
                 CT_BCTINHHINHMUONSACHRow rowCT_BCTINHHINHMUONSACHRow = ((CT_BCTINHHINHMUONSACHRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDCTBCMuonSach,
@@ -1944,11 +1944,11 @@ namespace QLTV {
                         null,
                         SoLuotMuon,
                         TiLe};
-                if ((parentBCTINHHINHMUONSACHRowByFK__CT_BCTINH__IDBCM__07C12930 != null)) {
-                    columnValuesArray[1] = parentBCTINHHINHMUONSACHRowByFK__CT_BCTINH__IDBCM__07C12930[0];
+                if ((parentBCTINHHINHMUONSACHRowByFK__CT_BCTINH__IDBCM__08B54D69 != null)) {
+                    columnValuesArray[1] = parentBCTINHHINHMUONSACHRowByFK__CT_BCTINH__IDBCM__08B54D69[0];
                 }
-                if ((parentLOAISACHRowByFK__CT_BCTINH__IDLoa__08B54D69 != null)) {
-                    columnValuesArray[2] = parentLOAISACHRowByFK__CT_BCTINH__IDLoa__08B54D69[0];
+                if ((parentLOAISACHRowByFK__CT_BCTINH__IDLoa__09A971A2 != null)) {
+                    columnValuesArray[2] = parentLOAISACHRowByFK__CT_BCTINH__IDLoa__09A971A2[0];
                 }
                 rowCT_BCTINHHINHMUONSACHRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCT_BCTINHHINHMUONSACHRow);
@@ -2239,17 +2239,17 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CT_PHIEUMUONRow AddCT_PHIEUMUONRow(string IDCTPhieuMuon, PHIEUMUONRow parentPHIEUMUONRowByFK__CT_PHIEUM__IDPhi__70DDC3D8, CUONSACHRow parentCUONSACHRowByFK__CT_PHIEUM__IDCuo__71D1E811) {
+            public CT_PHIEUMUONRow AddCT_PHIEUMUONRow(string IDCTPhieuMuon, PHIEUMUONRow parentPHIEUMUONRowByFK__CT_PHIEUM__IDPhi__71D1E811, CUONSACHRow parentCUONSACHRowByFK__CT_PHIEUM__IDCuo__72C60C4A) {
                 CT_PHIEUMUONRow rowCT_PHIEUMUONRow = ((CT_PHIEUMUONRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDCTPhieuMuon,
                         null,
                         null};
-                if ((parentPHIEUMUONRowByFK__CT_PHIEUM__IDPhi__70DDC3D8 != null)) {
-                    columnValuesArray[1] = parentPHIEUMUONRowByFK__CT_PHIEUM__IDPhi__70DDC3D8[0];
+                if ((parentPHIEUMUONRowByFK__CT_PHIEUM__IDPhi__71D1E811 != null)) {
+                    columnValuesArray[1] = parentPHIEUMUONRowByFK__CT_PHIEUM__IDPhi__71D1E811[0];
                 }
-                if ((parentCUONSACHRowByFK__CT_PHIEUM__IDCuo__71D1E811 != null)) {
-                    columnValuesArray[2] = parentCUONSACHRowByFK__CT_PHIEUM__IDCuo__71D1E811[0];
+                if ((parentCUONSACHRowByFK__CT_PHIEUM__IDCuo__72C60C4A != null)) {
+                    columnValuesArray[2] = parentCUONSACHRowByFK__CT_PHIEUM__IDCuo__72C60C4A[0];
                 }
                 rowCT_PHIEUMUONRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCT_PHIEUMUONRow);
@@ -2905,7 +2905,7 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CT_PHIEUTRARow AddCT_PHIEUTRARow(string IDCTPhieuTra, PHIEUTRARow parentPHIEUTRARowByFK__CT_PHIEUT__IDPhi__7A672E12, CUONSACHRow parentCUONSACHRowByFK__CT_PHIEUT__IDCuo__7B5B524B, PHIEUMUONRow parentPHIEUMUONRowByFK__CT_PHIEUT__IDPhi__7C4F7684, int SoNgayMuon, decimal TienPhat) {
+            public CT_PHIEUTRARow AddCT_PHIEUTRARow(string IDCTPhieuTra, PHIEUTRARow parentPHIEUTRARowByFK__CT_PHIEUT__IDPhi__7B5B524B, CUONSACHRow parentCUONSACHRowByFK__CT_PHIEUT__IDCuo__7C4F7684, PHIEUMUONRow parentPHIEUMUONRowByFK__CT_PHIEUT__IDPhi__7D439ABD, int SoNgayMuon, decimal TienPhat) {
                 CT_PHIEUTRARow rowCT_PHIEUTRARow = ((CT_PHIEUTRARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDCTPhieuTra,
@@ -2914,14 +2914,14 @@ namespace QLTV {
                         null,
                         SoNgayMuon,
                         TienPhat};
-                if ((parentPHIEUTRARowByFK__CT_PHIEUT__IDPhi__7A672E12 != null)) {
-                    columnValuesArray[1] = parentPHIEUTRARowByFK__CT_PHIEUT__IDPhi__7A672E12[0];
+                if ((parentPHIEUTRARowByFK__CT_PHIEUT__IDPhi__7B5B524B != null)) {
+                    columnValuesArray[1] = parentPHIEUTRARowByFK__CT_PHIEUT__IDPhi__7B5B524B[0];
                 }
-                if ((parentCUONSACHRowByFK__CT_PHIEUT__IDCuo__7B5B524B != null)) {
-                    columnValuesArray[2] = parentCUONSACHRowByFK__CT_PHIEUT__IDCuo__7B5B524B[0];
+                if ((parentCUONSACHRowByFK__CT_PHIEUT__IDCuo__7C4F7684 != null)) {
+                    columnValuesArray[2] = parentCUONSACHRowByFK__CT_PHIEUT__IDCuo__7C4F7684[0];
                 }
-                if ((parentPHIEUMUONRowByFK__CT_PHIEUT__IDPhi__7C4F7684 != null)) {
-                    columnValuesArray[3] = parentPHIEUMUONRowByFK__CT_PHIEUT__IDPhi__7C4F7684[0];
+                if ((parentPHIEUMUONRowByFK__CT_PHIEUT__IDPhi__7D439ABD != null)) {
+                    columnValuesArray[3] = parentPHIEUMUONRowByFK__CT_PHIEUT__IDPhi__7D439ABD[0];
                 }
                 rowCT_PHIEUTRARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCT_PHIEUTRARow);
@@ -2930,10 +2930,9 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CT_PHIEUTRARow FindByIDCTPhieuTraIDPhieuTraIDCuonSach(string IDCTPhieuTra, string IDPhieuTra, string IDCuonSach) {
+            public CT_PHIEUTRARow FindByIDCTPhieuTraIDCuonSach(string IDCTPhieuTra, string IDCuonSach) {
                 return ((CT_PHIEUTRARow)(this.Rows.Find(new object[] {
                             IDCTPhieuTra,
-                            IDPhieuTra,
                             IDCuonSach})));
             }
             
@@ -2979,11 +2978,9 @@ namespace QLTV {
                 base.Columns.Add(this.columnTienPhat);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIDCTPhieuTra,
-                                this.columnIDPhieuTra,
                                 this.columnIDCuonSach}, true));
                 this.columnIDCTPhieuTra.AllowDBNull = false;
                 this.columnIDCTPhieuTra.MaxLength = 6;
-                this.columnIDPhieuTra.AllowDBNull = false;
                 this.columnIDPhieuTra.MaxLength = 6;
                 this.columnIDCuonSach.AllowDBNull = false;
                 this.columnIDCuonSach.MaxLength = 6;
@@ -5587,7 +5584,7 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PHIEUTHUTIENPHATRow AddPHIEUTHUTIENPHATRow(string IDPhieuThu, THEDOCGIARow parentTHEDOCGIARowByFK__PHIEUTHUT__IDDoc__00200768, System.DateTime NgayLap, decimal SoTienThu, decimal ConLai) {
+            public PHIEUTHUTIENPHATRow AddPHIEUTHUTIENPHATRow(string IDPhieuThu, THEDOCGIARow parentTHEDOCGIARowByFK__PHIEUTHUT__IDDoc__01142BA1, System.DateTime NgayLap, decimal SoTienThu, decimal ConLai) {
                 PHIEUTHUTIENPHATRow rowPHIEUTHUTIENPHATRow = ((PHIEUTHUTIENPHATRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDPhieuThu,
@@ -5595,8 +5592,8 @@ namespace QLTV {
                         NgayLap,
                         SoTienThu,
                         ConLai};
-                if ((parentTHEDOCGIARowByFK__PHIEUTHUT__IDDoc__00200768 != null)) {
-                    columnValuesArray[1] = parentTHEDOCGIARowByFK__PHIEUTHUT__IDDoc__00200768[0];
+                if ((parentTHEDOCGIARowByFK__PHIEUTHUT__IDDoc__01142BA1 != null)) {
+                    columnValuesArray[1] = parentTHEDOCGIARowByFK__PHIEUTHUT__IDDoc__01142BA1[0];
                 }
                 rowPHIEUTHUTIENPHATRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPHIEUTHUTIENPHATRow);
@@ -5917,7 +5914,7 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PHIEUTRARow AddPHIEUTRARow(string IDPhieuTra, THEDOCGIARow parentTHEDOCGIARowByFK__PHIEUTRA__IDDocG__74AE54BC, System.DateTime NgayTra, decimal TienPhatKyNay, decimal SoTienTra, decimal TienNoKyNay) {
+            public PHIEUTRARow AddPHIEUTRARow(string IDPhieuTra, THEDOCGIARow parentTHEDOCGIARowByFK__PHIEUTRA__IDDocG__75A278F5, System.DateTime NgayTra, decimal TienPhatKyNay, decimal SoTienTra, decimal TienNoKyNay) {
                 PHIEUTRARow rowPHIEUTRARow = ((PHIEUTRARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDPhieuTra,
@@ -5926,8 +5923,8 @@ namespace QLTV {
                         TienPhatKyNay,
                         SoTienTra,
                         TienNoKyNay};
-                if ((parentTHEDOCGIARowByFK__PHIEUTRA__IDDocG__74AE54BC != null)) {
-                    columnValuesArray[1] = parentTHEDOCGIARowByFK__PHIEUTRA__IDDocG__74AE54BC[0];
+                if ((parentTHEDOCGIARowByFK__PHIEUTRA__IDDocG__75A278F5 != null)) {
+                    columnValuesArray[1] = parentTHEDOCGIARowByFK__PHIEUTRA__IDDocG__75A278F5[0];
                 }
                 rowPHIEUTRARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPHIEUTRARow);
@@ -7271,7 +7268,7 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public THEDOCGIARow AddTHEDOCGIARow(string IDDocGia, string HoTenDG, System.DateTime NgaySinhDG, string DiaChiDG, string EmailDG, LOAIDOCGIARow parentLOAIDOCGIARowByFK__THEDOCGIA__IDLoa__4BAC3F29, System.DateTime NgayLapThe, System.DateTime NgayHetHan, decimal TongNo) {
+            public THEDOCGIARow AddTHEDOCGIARow(string IDDocGia, string HoTenDG, System.DateTime NgaySinhDG, string DiaChiDG, string EmailDG, LOAIDOCGIARow parentLOAIDOCGIARowByFK__THEDOCGIA__IDLoa__4CA06362, System.DateTime NgayLapThe, System.DateTime NgayHetHan, decimal TongNo) {
                 THEDOCGIARow rowTHEDOCGIARow = ((THEDOCGIARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         IDDocGia,
@@ -7283,8 +7280,8 @@ namespace QLTV {
                         NgayLapThe,
                         NgayHetHan,
                         TongNo};
-                if ((parentLOAIDOCGIARowByFK__THEDOCGIA__IDLoa__4BAC3F29 != null)) {
-                    columnValuesArray[5] = parentLOAIDOCGIARowByFK__THEDOCGIA__IDLoa__4BAC3F29[0];
+                if ((parentLOAIDOCGIARowByFK__THEDOCGIA__IDLoa__4CA06362 != null)) {
+                    columnValuesArray[5] = parentLOAIDOCGIARowByFK__THEDOCGIA__IDLoa__4CA06362[0];
                 }
                 rowTHEDOCGIARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTHEDOCGIARow);
@@ -7594,14 +7591,14 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public USERADMINRow AddUSERADMINRow(string UserNameAdmin, string PasswordAdmin, CT_USERADMINRow parentCT_USERADMINRowByFK__USERADMIN__IDAdm__18EBB532) {
+            public USERADMINRow AddUSERADMINRow(string UserNameAdmin, string PasswordAdmin, CT_USERADMINRow parentCT_USERADMINRowByFK__USERADMIN__IDAdm__17036CC0) {
                 USERADMINRow rowUSERADMINRow = ((USERADMINRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         UserNameAdmin,
                         PasswordAdmin,
                         null};
-                if ((parentCT_USERADMINRowByFK__USERADMIN__IDAdm__18EBB532 != null)) {
-                    columnValuesArray[2] = parentCT_USERADMINRowByFK__USERADMIN__IDAdm__18EBB532[0];
+                if ((parentCT_USERADMINRowByFK__USERADMIN__IDAdm__17036CC0 != null)) {
+                    columnValuesArray[2] = parentCT_USERADMINRowByFK__USERADMIN__IDAdm__17036CC0[0];
                 }
                 rowUSERADMINRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUSERADMINRow);
@@ -7887,14 +7884,14 @@ namespace QLTV {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public USERSRow AddUSERSRow(string UserName, string Pwd, THEDOCGIARow parentTHEDOCGIARowByFK__USERS__IDDocGia__114A936A) {
+            public USERSRow AddUSERSRow(string UserName, string Pwd, THEDOCGIARow parentTHEDOCGIARowByFK__USERS__IDDocGia__123EB7A3) {
                 USERSRow rowUSERSRow = ((USERSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         UserName,
                         Pwd,
                         null};
-                if ((parentTHEDOCGIARowByFK__USERS__IDDocGia__114A936A != null)) {
-                    columnValuesArray[2] = parentTHEDOCGIARowByFK__USERS__IDDocGia__114A936A[0];
+                if ((parentTHEDOCGIARowByFK__USERS__IDDocGia__123EB7A3 != null)) {
+                    columnValuesArray[2] = parentTHEDOCGIARowByFK__USERS__IDDocGia__123EB7A3[0];
                 }
                 rowUSERSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUSERSRow);
@@ -8161,10 +8158,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CUONSACHRow CUONSACHRow {
                 get {
-                    return ((CUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__BCSACHTRA__IDCuo__0D7A0286"])));
+                    return ((CUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__BCSACHTRA__IDCuo__0E6E26BF"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__BCSACHTRA__IDCuo__0D7A0286"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__BCSACHTRA__IDCuo__0E6E26BF"]);
                 }
             }
             
@@ -8172,10 +8169,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PHIEUMUONRow PHIEUMUONRow {
                 get {
-                    return ((PHIEUMUONRow)(this.GetParentRow(this.Table.ParentRelations["FK__BCSACHTRA__IDPhi__0E6E26BF"])));
+                    return ((PHIEUMUONRow)(this.GetParentRow(this.Table.ParentRelations["FK__BCSACHTRA__IDPhi__0F624AF8"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__BCSACHTRA__IDPhi__0E6E26BF"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__BCSACHTRA__IDPhi__0F624AF8"]);
                 }
             }
             
@@ -8322,11 +8319,11 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_BCTINHHINHMUONSACHRow[] GetCT_BCTINHHINHMUONSACHRows() {
-                if ((this.Table.ChildRelations["FK__CT_BCTINH__IDBCM__07C12930"] == null)) {
+                if ((this.Table.ChildRelations["FK__CT_BCTINH__IDBCM__08B54D69"] == null)) {
                     return new CT_BCTINHHINHMUONSACHRow[0];
                 }
                 else {
-                    return ((CT_BCTINHHINHMUONSACHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_BCTINH__IDBCM__07C12930"])));
+                    return ((CT_BCTINHHINHMUONSACHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_BCTINH__IDBCM__08B54D69"])));
                 }
             }
         }
@@ -8424,10 +8421,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public BCTINHHINHMUONSACHRow BCTINHHINHMUONSACHRow {
                 get {
-                    return ((BCTINHHINHMUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_BCTINH__IDBCM__07C12930"])));
+                    return ((BCTINHHINHMUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_BCTINH__IDBCM__08B54D69"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_BCTINH__IDBCM__07C12930"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_BCTINH__IDBCM__08B54D69"]);
                 }
             }
             
@@ -8435,10 +8432,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public LOAISACHRow LOAISACHRow {
                 get {
-                    return ((LOAISACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_BCTINH__IDLoa__08B54D69"])));
+                    return ((LOAISACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_BCTINH__IDLoa__09A971A2"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_BCTINH__IDLoa__08B54D69"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_BCTINH__IDLoa__09A971A2"]);
                 }
             }
             
@@ -8547,10 +8544,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CUONSACHRow CUONSACHRow {
                 get {
-                    return ((CUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUM__IDCuo__71D1E811"])));
+                    return ((CUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUM__IDCuo__72C60C4A"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUM__IDCuo__71D1E811"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUM__IDCuo__72C60C4A"]);
                 }
             }
             
@@ -8558,10 +8555,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PHIEUMUONRow PHIEUMUONRow {
                 get {
-                    return ((PHIEUMUONRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUM__IDPhi__70DDC3D8"])));
+                    return ((PHIEUMUONRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUM__IDPhi__71D1E811"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUM__IDPhi__70DDC3D8"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUM__IDPhi__71D1E811"]);
                 }
             }
             
@@ -8761,7 +8758,12 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string IDPhieuTra {
                 get {
-                    return ((string)(this[this.tableCT_PHIEUTRA.IDPhieuTraColumn]));
+                    try {
+                        return ((string)(this[this.tableCT_PHIEUTRA.IDPhieuTraColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IDPhieuTra\' in table \'CT_PHIEUTRA\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableCT_PHIEUTRA.IDPhieuTraColumn] = value;
@@ -8831,10 +8833,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CUONSACHRow CUONSACHRow {
                 get {
-                    return ((CUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUT__IDCuo__7B5B524B"])));
+                    return ((CUONSACHRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUT__IDCuo__7C4F7684"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUT__IDCuo__7B5B524B"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUT__IDCuo__7C4F7684"]);
                 }
             }
             
@@ -8842,10 +8844,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PHIEUTRARow PHIEUTRARow {
                 get {
-                    return ((PHIEUTRARow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7A672E12"])));
+                    return ((PHIEUTRARow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7B5B524B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7A672E12"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7B5B524B"]);
                 }
             }
             
@@ -8853,11 +8855,23 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PHIEUMUONRow PHIEUMUONRow {
                 get {
-                    return ((PHIEUMUONRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7C4F7684"])));
+                    return ((PHIEUMUONRow)(this.GetParentRow(this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7D439ABD"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7C4F7684"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CT_PHIEUT__IDPhi__7D439ABD"]);
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsIDPhieuTraNull() {
+                return this.IsNull(this.tableCT_PHIEUTRA.IDPhieuTraColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetIDPhieuTraNull() {
+                this[this.tableCT_PHIEUTRA.IDPhieuTraColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9084,11 +9098,11 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public USERADMINRow[] GetUSERADMINRows() {
-                if ((this.Table.ChildRelations["FK__USERADMIN__IDAdm__18EBB532"] == null)) {
+                if ((this.Table.ChildRelations["FK__USERADMIN__IDAdm__17036CC0"] == null)) {
                     return new USERADMINRow[0];
                 }
                 else {
-                    return ((USERADMINRow[])(base.GetChildRows(this.Table.ChildRelations["FK__USERADMIN__IDAdm__18EBB532"])));
+                    return ((USERADMINRow[])(base.GetChildRows(this.Table.ChildRelations["FK__USERADMIN__IDAdm__17036CC0"])));
                 }
             }
         }
@@ -9188,33 +9202,33 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public BCSACHTRATRERow[] GetBCSACHTRATRERows() {
-                if ((this.Table.ChildRelations["FK__BCSACHTRA__IDCuo__0D7A0286"] == null)) {
+                if ((this.Table.ChildRelations["FK__BCSACHTRA__IDCuo__0E6E26BF"] == null)) {
                     return new BCSACHTRATRERow[0];
                 }
                 else {
-                    return ((BCSACHTRATRERow[])(base.GetChildRows(this.Table.ChildRelations["FK__BCSACHTRA__IDCuo__0D7A0286"])));
+                    return ((BCSACHTRATRERow[])(base.GetChildRows(this.Table.ChildRelations["FK__BCSACHTRA__IDCuo__0E6E26BF"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_PHIEUMUONRow[] GetCT_PHIEUMUONRows() {
-                if ((this.Table.ChildRelations["FK__CT_PHIEUM__IDCuo__71D1E811"] == null)) {
+                if ((this.Table.ChildRelations["FK__CT_PHIEUM__IDCuo__72C60C4A"] == null)) {
                     return new CT_PHIEUMUONRow[0];
                 }
                 else {
-                    return ((CT_PHIEUMUONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUM__IDCuo__71D1E811"])));
+                    return ((CT_PHIEUMUONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUM__IDCuo__72C60C4A"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_PHIEUTRARow[] GetCT_PHIEUTRARows() {
-                if ((this.Table.ChildRelations["FK__CT_PHIEUT__IDCuo__7B5B524B"] == null)) {
+                if ((this.Table.ChildRelations["FK__CT_PHIEUT__IDCuo__7C4F7684"] == null)) {
                     return new CT_PHIEUTRARow[0];
                 }
                 else {
-                    return ((CT_PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUT__IDCuo__7B5B524B"])));
+                    return ((CT_PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUT__IDCuo__7C4F7684"])));
                 }
             }
         }
@@ -9356,11 +9370,11 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public THEDOCGIARow[] GetTHEDOCGIARows() {
-                if ((this.Table.ChildRelations["FK__THEDOCGIA__IDLoa__4BAC3F29"] == null)) {
+                if ((this.Table.ChildRelations["FK__THEDOCGIA__IDLoa__4CA06362"] == null)) {
                     return new THEDOCGIARow[0];
                 }
                 else {
-                    return ((THEDOCGIARow[])(base.GetChildRows(this.Table.ChildRelations["FK__THEDOCGIA__IDLoa__4BAC3F29"])));
+                    return ((THEDOCGIARow[])(base.GetChildRows(this.Table.ChildRelations["FK__THEDOCGIA__IDLoa__4CA06362"])));
                 }
             }
         }
@@ -9404,11 +9418,11 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_BCTINHHINHMUONSACHRow[] GetCT_BCTINHHINHMUONSACHRows() {
-                if ((this.Table.ChildRelations["FK__CT_BCTINH__IDLoa__08B54D69"] == null)) {
+                if ((this.Table.ChildRelations["FK__CT_BCTINH__IDLoa__09A971A2"] == null)) {
                     return new CT_BCTINHHINHMUONSACHRow[0];
                 }
                 else {
-                    return ((CT_BCTINHHINHMUONSACHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_BCTINH__IDLoa__08B54D69"])));
+                    return ((CT_BCTINHHINHMUONSACHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_BCTINH__IDLoa__09A971A2"])));
                 }
             }
             
@@ -9530,33 +9544,33 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public BCSACHTRATRERow[] GetBCSACHTRATRERows() {
-                if ((this.Table.ChildRelations["FK__BCSACHTRA__IDPhi__0E6E26BF"] == null)) {
+                if ((this.Table.ChildRelations["FK__BCSACHTRA__IDPhi__0F624AF8"] == null)) {
                     return new BCSACHTRATRERow[0];
                 }
                 else {
-                    return ((BCSACHTRATRERow[])(base.GetChildRows(this.Table.ChildRelations["FK__BCSACHTRA__IDPhi__0E6E26BF"])));
+                    return ((BCSACHTRATRERow[])(base.GetChildRows(this.Table.ChildRelations["FK__BCSACHTRA__IDPhi__0F624AF8"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_PHIEUMUONRow[] GetCT_PHIEUMUONRows() {
-                if ((this.Table.ChildRelations["FK__CT_PHIEUM__IDPhi__70DDC3D8"] == null)) {
+                if ((this.Table.ChildRelations["FK__CT_PHIEUM__IDPhi__71D1E811"] == null)) {
                     return new CT_PHIEUMUONRow[0];
                 }
                 else {
-                    return ((CT_PHIEUMUONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUM__IDPhi__70DDC3D8"])));
+                    return ((CT_PHIEUMUONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUM__IDPhi__71D1E811"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_PHIEUTRARow[] GetCT_PHIEUTRARows() {
-                if ((this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7C4F7684"] == null)) {
+                if ((this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7D439ABD"] == null)) {
                     return new CT_PHIEUTRARow[0];
                 }
                 else {
-                    return ((CT_PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7C4F7684"])));
+                    return ((CT_PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7D439ABD"])));
                 }
             }
         }
@@ -9725,10 +9739,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public THEDOCGIARow THEDOCGIARow {
                 get {
-                    return ((THEDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__PHIEUTHUT__IDDoc__00200768"])));
+                    return ((THEDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__PHIEUTHUT__IDDoc__01142BA1"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__PHIEUTHUT__IDDoc__00200768"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PHIEUTHUT__IDDoc__01142BA1"]);
                 }
             }
             
@@ -9873,10 +9887,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public THEDOCGIARow THEDOCGIARow {
                 get {
-                    return ((THEDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__PHIEUTRA__IDDocG__74AE54BC"])));
+                    return ((THEDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__PHIEUTRA__IDDocG__75A278F5"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__PHIEUTRA__IDDocG__74AE54BC"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__PHIEUTRA__IDDocG__75A278F5"]);
                 }
             }
             
@@ -9931,11 +9945,11 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_PHIEUTRARow[] GetCT_PHIEUTRARows() {
-                if ((this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7A672E12"] == null)) {
+                if ((this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7B5B524B"] == null)) {
                     return new CT_PHIEUTRARow[0];
                 }
                 else {
-                    return ((CT_PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7A672E12"])));
+                    return ((CT_PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__CT_PHIEUT__IDPhi__7B5B524B"])));
                 }
             }
         }
@@ -10557,10 +10571,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public LOAIDOCGIARow LOAIDOCGIARow {
                 get {
-                    return ((LOAIDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__THEDOCGIA__IDLoa__4BAC3F29"])));
+                    return ((LOAIDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__THEDOCGIA__IDLoa__4CA06362"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__THEDOCGIA__IDLoa__4BAC3F29"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__THEDOCGIA__IDLoa__4CA06362"]);
                 }
             }
             
@@ -10614,33 +10628,33 @@ namespace QLTV {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PHIEUTHUTIENPHATRow[] GetPHIEUTHUTIENPHATRows() {
-                if ((this.Table.ChildRelations["FK__PHIEUTHUT__IDDoc__00200768"] == null)) {
+                if ((this.Table.ChildRelations["FK__PHIEUTHUT__IDDoc__01142BA1"] == null)) {
                     return new PHIEUTHUTIENPHATRow[0];
                 }
                 else {
-                    return ((PHIEUTHUTIENPHATRow[])(base.GetChildRows(this.Table.ChildRelations["FK__PHIEUTHUT__IDDoc__00200768"])));
+                    return ((PHIEUTHUTIENPHATRow[])(base.GetChildRows(this.Table.ChildRelations["FK__PHIEUTHUT__IDDoc__01142BA1"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PHIEUTRARow[] GetPHIEUTRARows() {
-                if ((this.Table.ChildRelations["FK__PHIEUTRA__IDDocG__74AE54BC"] == null)) {
+                if ((this.Table.ChildRelations["FK__PHIEUTRA__IDDocG__75A278F5"] == null)) {
                     return new PHIEUTRARow[0];
                 }
                 else {
-                    return ((PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__PHIEUTRA__IDDocG__74AE54BC"])));
+                    return ((PHIEUTRARow[])(base.GetChildRows(this.Table.ChildRelations["FK__PHIEUTRA__IDDocG__75A278F5"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public USERSRow[] GetUSERSRows() {
-                if ((this.Table.ChildRelations["FK__USERS__IDDocGia__114A936A"] == null)) {
+                if ((this.Table.ChildRelations["FK__USERS__IDDocGia__123EB7A3"] == null)) {
                     return new USERSRow[0];
                 }
                 else {
-                    return ((USERSRow[])(base.GetChildRows(this.Table.ChildRelations["FK__USERS__IDDocGia__114A936A"])));
+                    return ((USERSRow[])(base.GetChildRows(this.Table.ChildRelations["FK__USERS__IDDocGia__123EB7A3"])));
                 }
             }
         }
@@ -10701,10 +10715,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CT_USERADMINRow CT_USERADMINRow {
                 get {
-                    return ((CT_USERADMINRow)(this.GetParentRow(this.Table.ParentRelations["FK__USERADMIN__IDAdm__18EBB532"])));
+                    return ((CT_USERADMINRow)(this.GetParentRow(this.Table.ParentRelations["FK__USERADMIN__IDAdm__17036CC0"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__USERADMIN__IDAdm__18EBB532"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__USERADMIN__IDAdm__17036CC0"]);
                 }
             }
             
@@ -10777,10 +10791,10 @@ namespace QLTV {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public THEDOCGIARow THEDOCGIARow {
                 get {
-                    return ((THEDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__USERS__IDDocGia__114A936A"])));
+                    return ((THEDOCGIARow)(this.GetParentRow(this.Table.ParentRelations["FK__USERS__IDDocGia__123EB7A3"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__USERS__IDDocGia__114A936A"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__USERS__IDDocGia__123EB7A3"]);
                 }
             }
             
@@ -13759,9 +13773,10 @@ SELECT IDCTPhieuNhap, IDPhieuNhap, IDSach, SoLuong, DonGia, ThanhTien FROM CT_PH
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[CT_PHIEUTRA] WHERE (([IDCTPhieuTra] = @Original_IDCTPhieuTra) AND ([IDPhieuTra] = @Original_IDPhieuTra) AND ([IDCuonSach] = @Original_IDCuonSach) AND ((@IsNull_IDPhieuMuon = 1 AND [IDPhieuMuon] IS NULL) OR ([IDPhieuMuon] = @Original_IDPhieuMuon)) AND ((@IsNull_SoNgayMuon = 1 AND [SoNgayMuon] IS NULL) OR ([SoNgayMuon] = @Original_SoNgayMuon)) AND ((@IsNull_TienPhat = 1 AND [TienPhat] IS NULL) OR ([TienPhat] = @Original_TienPhat)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[CT_PHIEUTRA] WHERE (([IDCTPhieuTra] = @Original_IDCTPhieuTra) AND ((@IsNull_IDPhieuTra = 1 AND [IDPhieuTra] IS NULL) OR ([IDPhieuTra] = @Original_IDPhieuTra)) AND ([IDCuonSach] = @Original_IDCuonSach) AND ((@IsNull_IDPhieuMuon = 1 AND [IDPhieuMuon] IS NULL) OR ([IDPhieuMuon] = @Original_IDPhieuMuon)) AND ((@IsNull_SoNgayMuon = 1 AND [SoNgayMuon] IS NULL) OR ([SoNgayMuon] = @Original_SoNgayMuon)) AND ((@IsNull_TienPhat = 1 AND [TienPhat] IS NULL) OR ([TienPhat] = @Original_TienPhat)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDCTPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDCTPhieuTra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IDPhieuTra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuTra", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuTra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDCuonSach", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDCuonSach", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IDPhieuMuon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuMuon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -13773,7 +13788,7 @@ SELECT IDCTPhieuNhap, IDPhieuNhap, IDSach, SoLuong, DonGia, ThanhTien FROM CT_PH
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[CT_PHIEUTRA] ([IDCTPhieuTra], [IDPhieuTra], [IDCuonSach], [IDPhieuMuon], [SoNgayMuon], [TienPhat]) VALUES (@IDCTPhieuTra, @IDPhieuTra, @IDCuonSach, @IDPhieuMuon, @SoNgayMuon, @TienPhat);
-SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat FROM CT_PHIEUTRA WHERE (IDCTPhieuTra = @IDCTPhieuTra) AND (IDCuonSach = @IDCuonSach) AND (IDPhieuTra = @IDPhieuTra)";
+SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat FROM CT_PHIEUTRA WHERE (IDCTPhieuTra = @IDCTPhieuTra) AND (IDCuonSach = @IDCuonSach)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDCTPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDCTPhieuTra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuTra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -13783,8 +13798,8 @@ SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat F
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TienPhat", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TienPhat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[CT_PHIEUTRA] SET [IDCTPhieuTra] = @IDCTPhieuTra, [IDPhieuTra] = @IDPhieuTra, [IDCuonSach] = @IDCuonSach, [IDPhieuMuon] = @IDPhieuMuon, [SoNgayMuon] = @SoNgayMuon, [TienPhat] = @TienPhat WHERE (([IDCTPhieuTra] = @Original_IDCTPhieuTra) AND ([IDPhieuTra] = @Original_IDPhieuTra) AND ([IDCuonSach] = @Original_IDCuonSach) AND ((@IsNull_IDPhieuMuon = 1 AND [IDPhieuMuon] IS NULL) OR ([IDPhieuMuon] = @Original_IDPhieuMuon)) AND ((@IsNull_SoNgayMuon = 1 AND [SoNgayMuon] IS NULL) OR ([SoNgayMuon] = @Original_SoNgayMuon)) AND ((@IsNull_TienPhat = 1 AND [TienPhat] IS NULL) OR ([TienPhat] = @Original_TienPhat)));
-SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat FROM CT_PHIEUTRA WHERE (IDCTPhieuTra = @IDCTPhieuTra) AND (IDCuonSach = @IDCuonSach) AND (IDPhieuTra = @IDPhieuTra)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[CT_PHIEUTRA] SET [IDCTPhieuTra] = @IDCTPhieuTra, [IDPhieuTra] = @IDPhieuTra, [IDCuonSach] = @IDCuonSach, [IDPhieuMuon] = @IDPhieuMuon, [SoNgayMuon] = @SoNgayMuon, [TienPhat] = @TienPhat WHERE (([IDCTPhieuTra] = @Original_IDCTPhieuTra) AND ((@IsNull_IDPhieuTra = 1 AND [IDPhieuTra] IS NULL) OR ([IDPhieuTra] = @Original_IDPhieuTra)) AND ([IDCuonSach] = @Original_IDCuonSach) AND ((@IsNull_IDPhieuMuon = 1 AND [IDPhieuMuon] IS NULL) OR ([IDPhieuMuon] = @Original_IDPhieuMuon)) AND ((@IsNull_SoNgayMuon = 1 AND [SoNgayMuon] IS NULL) OR ([SoNgayMuon] = @Original_SoNgayMuon)) AND ((@IsNull_TienPhat = 1 AND [TienPhat] IS NULL) OR ([TienPhat] = @Original_TienPhat)));
+SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat FROM CT_PHIEUTRA WHERE (IDCTPhieuTra = @IDCTPhieuTra) AND (IDCuonSach = @IDCuonSach)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDCTPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDCTPhieuTra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuTra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -13793,6 +13808,7 @@ SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat F
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SoNgayMuon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SoNgayMuon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TienPhat", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TienPhat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDCTPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDCTPhieuTra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IDPhieuTra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuTra", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDPhieuTra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuTra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDCuonSach", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDCuonSach", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_IDPhieuMuon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDPhieuMuon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -13886,40 +13902,42 @@ SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat F
                 this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_IDCTPhieuTra));
             }
             if ((Original_IDPhieuTra == null)) {
-                throw new global::System.ArgumentNullException("Original_IDPhieuTra");
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_IDPhieuTra));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_IDPhieuTra));
             }
             if ((Original_IDCuonSach == null)) {
                 throw new global::System.ArgumentNullException("Original_IDCuonSach");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_IDCuonSach));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_IDCuonSach));
             }
             if ((Original_IDPhieuMuon == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_IDPhieuMuon));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_IDPhieuMuon));
             }
             if ((Original_SoNgayMuon.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_SoNgayMuon.Value));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_SoNgayMuon.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             if ((Original_TienPhat.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((decimal)(Original_TienPhat.Value));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((decimal)(Original_TienPhat.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -13949,7 +13967,7 @@ SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat F
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(IDCTPhieuTra));
             }
             if ((IDPhieuTra == null)) {
-                throw new global::System.ArgumentNullException("IDPhieuTra");
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(IDPhieuTra));
@@ -14006,7 +14024,7 @@ SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat F
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(IDCTPhieuTra));
             }
             if ((IDPhieuTra == null)) {
-                throw new global::System.ArgumentNullException("IDPhieuTra");
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(IDPhieuTra));
@@ -14042,40 +14060,42 @@ SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat F
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_IDCTPhieuTra));
             }
             if ((Original_IDPhieuTra == null)) {
-                throw new global::System.ArgumentNullException("Original_IDPhieuTra");
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_IDPhieuTra));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_IDPhieuTra));
             }
             if ((Original_IDCuonSach == null)) {
                 throw new global::System.ArgumentNullException("Original_IDCuonSach");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_IDCuonSach));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_IDCuonSach));
             }
             if ((Original_IDPhieuMuon == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_IDPhieuMuon));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_IDPhieuMuon));
             }
             if ((Original_SoNgayMuon.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_SoNgayMuon.Value));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_SoNgayMuon.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             if ((Original_TienPhat.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(Original_TienPhat.Value));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(Original_TienPhat.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -14097,8 +14117,8 @@ SELECT IDCTPhieuTra, IDPhieuTra, IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat F
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string IDPhieuMuon, global::System.Nullable<int> SoNgayMuon, global::System.Nullable<decimal> TienPhat, string Original_IDCTPhieuTra, string Original_IDPhieuTra, string Original_IDCuonSach, string Original_IDPhieuMuon, global::System.Nullable<int> Original_SoNgayMuon, global::System.Nullable<decimal> Original_TienPhat) {
-            return this.Update(Original_IDCTPhieuTra, Original_IDPhieuTra, Original_IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat, Original_IDCTPhieuTra, Original_IDPhieuTra, Original_IDCuonSach, Original_IDPhieuMuon, Original_SoNgayMuon, Original_TienPhat);
+        public virtual int Update(string IDPhieuTra, string IDPhieuMuon, global::System.Nullable<int> SoNgayMuon, global::System.Nullable<decimal> TienPhat, string Original_IDCTPhieuTra, string Original_IDPhieuTra, string Original_IDCuonSach, string Original_IDPhieuMuon, global::System.Nullable<int> Original_SoNgayMuon, global::System.Nullable<decimal> Original_TienPhat) {
+            return this.Update(Original_IDCTPhieuTra, IDPhieuTra, Original_IDCuonSach, IDPhieuMuon, SoNgayMuon, TienPhat, Original_IDCTPhieuTra, Original_IDPhieuTra, Original_IDCuonSach, Original_IDPhieuMuon, Original_SoNgayMuon, Original_TienPhat);
         }
     }
     

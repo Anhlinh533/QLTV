@@ -264,6 +264,24 @@ namespace QLTV
             frmConnection dlg2 = new frmConnection();
             dlg2.ShowDialog();
         }
+
+        private void btn_DangXuat_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void btn_Thoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_Admin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmAdmin f = new frmAdmin();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
         #endregion
 
         #region Function
@@ -313,6 +331,7 @@ namespace QLTV
                 btn_Users.Enabled = false;
                 btn_KhoangCachNamXuatBan.Enabled = false;
                 btn_ThongTinAdmin.Enabled = false;
+                btn_Admin.Enabled = false;
                 //btn_CTMuonSach.Enabled = false;
             }
             if(ADO.adoLogin.Instance.checkAdmin(UserName,Password)==true)
@@ -322,14 +341,6 @@ namespace QLTV
         }
 
 
-        private void btn_DangXuat_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Application.Restart();
-        }
 
-        private void btn_Thoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }

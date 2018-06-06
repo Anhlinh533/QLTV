@@ -243,6 +243,16 @@ namespace QLTV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_businessman_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-businessman-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_businessman_480 {
             get {
                 object obj = ResourceManager.GetObject("icons8-businessman-480", resourceCulture);

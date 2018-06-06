@@ -61,6 +61,12 @@ namespace QLTV.GUI
             dgv.Columns[2].DataPropertyName = "IDAdmin";
             dgv.Columns.Add("HoTenAdmin", "Họ tên Admin");
             dgv.Columns[3].DataPropertyName = "HoTenAdmin";
+            //pic_SsAdmin.Hide();
+            //pic_SSCTAdmin.Hide();
+            //pic_WarningAdmin.Hide();
+            //pic_WarningCTAdmin.Hide();
+            //label1.Hide();
+            //label6.Hide();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -194,6 +200,40 @@ namespace QLTV.GUI
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }            
+        }
+
+        private void tb_IDAdmin_TextChanged(object sender, EventArgs e)
+        {
+            //if (ADO.adoAdmin.Instance.checkAdmin(tb_IDAdmin.Text.Trim()) == true)
+            //{
+            //    label1.ForeColor = Color.Red;
+            //    label1.Text = "UserName này đã tồn tại!!";
+            //    label1.Show();
+            //    pic_WarningAdmin.Show();
+            //    pic_SsAdmin.Hide();
+            //}
+            //else
+            //{
+            //    label1.ForeColor = Color.Green;
+            //    label1.Text = "Username phù hợp!!";
+            //    label1.Show();
+            //    pic_WarningAdmin.Hide();
+            //    pic_SsAdmin.Show();
+            //}
+            //if (tb_IDAdmin.Text == "")
+            //{
+            //    label1.ForeColor = Color.Red;
+            //    label1.Text = "Không được để trống ID";
+            //    label1.Show();
+            //    pic_SsAdmin.Hide();
+            //    pic_WarningAdmin.Show();
+            //}
+
+        }
+        public void ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }
