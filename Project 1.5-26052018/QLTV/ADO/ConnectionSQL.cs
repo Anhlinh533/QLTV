@@ -234,7 +234,7 @@ namespace QLTV.ADO
             catch (Exception ex)
             {
                 string str = ex.Message;
-                //str = str.Substring(67);
+                str = str.Substring(67);
                 MessageBox.Show(str, "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
@@ -287,7 +287,7 @@ namespace QLTV.ADO
             catch (Exception ex)
             {
                 string str = ex.Message;
-                //str = str.Substring(67);
+                str = str.Substring(67);
                 MessageBox.Show(str, "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 

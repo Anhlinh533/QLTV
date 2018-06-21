@@ -34,7 +34,7 @@ namespace QLTV.ADO
 
         public SqlDataAdapter Chons(string tb_IDBCMuonSach)
         {
-            SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
+            //SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
             string sql = "SELECT A.TenLoaiSach FROM LOAISACH A, CT_BCTINHHINHMUONSACH B WHERE B.IDBCMuonSach = '" + tb_IDBCMuonSach + "' AND A.IDLoaiSach = B.IDLoaiSach";
             SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
 
@@ -43,7 +43,7 @@ namespace QLTV.ADO
 
         public SqlDataAdapter Chonr(string tb_IDBCMuonSach)
         {
-            SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
+            //SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
             string sql = "SELECT * FROM BCTINHHINHMUONSACH WHERE IDBCMuonSach = '" + tb_IDBCMuonSach + "'";
             SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
 
@@ -52,7 +52,7 @@ namespace QLTV.ADO
 
         public SqlDataAdapter Chonrc(string tb_IDBCMuonSach)
         {
-            SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
+            //SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
             string sql = "SELECT * FROM CT_BCTINHHINHMUONSACH WHERE IDBCMuonSach = '" + tb_IDBCMuonSach + "'";
             SqlDataAdapter adp = ADO.ConnectionSQL.Instance.ExcuteAdapter(sql);
 
@@ -67,10 +67,10 @@ namespace QLTV.ADO
             return adp;
         }
 
-        public int IDReport()
+        public string IDReport(string Thang, string Nam)
         {
-            string sql = "SELECT COUNT (IDBCMuonSach) FROM BCTINHHINHMUONSACH";
-            int i = ADO.ConnectionSQL.Instance.ExcuteInt(sql);
+            string sql = "SELECT IDBCMuonSach FROM BCTINHHINHMUONSACH WHERE Thang = '" + Thang + "' AND Nam = '" + Nam + "'";
+            string i = ADO.ConnectionSQL.Instance.ExcuteString(sql);
             return i;
         }
     }

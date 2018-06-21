@@ -827,7 +827,7 @@ BEGIN
 	SELECT @NGAYMUONI = I.NgayMuon, @NGAYMUOND = D.NgayMuon
 	FROM INSERTED I, DELETED D
 
-	IF(@NGAYMUONI <> @NGAYMUOND)
+	IF (@NGAYMUONI <> @NGAYMUOND)
 	BEGIN
 		UPDATE CUONSACH
 		SET TinhTrang = N'Đã cho mượn'
@@ -839,6 +839,36 @@ BEGIN
 		FROM INSERTED I, PHIEUTRA A, CT_PHIEUTRA B
 		WHERE B.IDPhieuMuon = I.IDPhieuMuon
 			  AND A.IDPhieuTra = B.IDPhieuTra
+	END
+
+/*Tạo BCTINHHINHMUONSACH theo Tháng Năm*/ --- 20/6
+	DECLARE @THANG int, @NAM int
+
+	SELECT @THANG = month(I.NgayMuon), @NAM = year(I.NgayMuon)
+	FROM INSERTED I
+
+	IF (NOT EXISTS (SELECT * FROM INSERTED I, BCTINHHINHMUONSACH A
+					WHERE A.Thang = @THANG AND A.Nam = @NAM))
+	BEGIN
+		DECLARE @t int
+		DECLARE @mt varchar(5) = 'IMS00'		
+		
+		SET @t = (SELECT COUNT (IDBCMuonSach) 
+				  FROM BCTINHHINHMUONSACH)
+		SET @t += 1
+		IF (@t >= 10 AND @t < 100) 
+		BEGIN
+			SET @mt = 'CMS0'
+		END
+		ELSE
+		BEGIN
+			IF (@t >= 100 AND @t < 1000) 
+			BEGIN
+				SET @mt = 'CMS'
+			END
+		END
+
+		INSERT INTO BCTINHHINHMUONSACH (IDBCMuonSach, Thang, Nam)  VALUES (@mt + CAST(@t AS varchar), @THANG, @NAM)
 	END
 
 END
@@ -912,6 +942,32 @@ BEGIN
 		PRINT N'Lỗi: Mỗi độc giả chỉ mượn tối đa ' + CAST(@SOSACHMUONMAX AS varchar) + N' quyển sách'
 		ROLLBACK TRANSACTION 
 	END	
+/*SoLuotMuon*/ --- 20/6
+	DECLARE @IDBCMUONSACH varchar(6), @IDLOAISACH varchar(6), @THANG int, @NAM int
+
+	SELECT @IDBCMUONSACH = IDBCMuonSach
+	FROM INSERTED I, BCTINHHINHMUONSACH A, PHIEUMUON B
+	WHERE B.IDPhieuMuon = I.IDPhieuMuon AND A.Thang = month(B.NgayMuon) AND A.Nam = year(B.NgayMuon)
+	SELECT @IDLOAISACH = IDLoaiSach
+	FROM INSERTED I, DAUSACH A, SACH B, CUONSACH C
+	WHERE C.IDCuonSach = I.IDCuonSach AND B.IDSach = C.IDSach AND A.IDDauSach = B.IDDauSach
+	SELECT @THANG = month(NgayMuon), @NAM = year(NgayMuon)
+	FROM INSERTED I, PHIEUMUON A
+	WHERE A.IDPhieuMuon = I.IDPhieuMuon
+
+	--UPDATE CT_BCTINHHINHMUONSACH
+	--SET SoLuotMuon = (SELECT COUNT(*) FROM INSERTED I, BCTINHHINHMUONSACH A, PHIEUMUON B, CT_PHIEUMUON C , CUONSACH D, SACH E, DAUSACH F
+	--				  WHERE A.IDBCMuonSach = I.IDBCMuonSach AND B.IDPhieuMuon = C.IDPhieuMuon					        
+	--					    AND C.IDCuonSach = D.IDCuonSach AND D.IDSach = E.IDSach AND E.IDDauSach = F.IDDauSach
+	--					    AND F.IDLoaiSach = I.IDLoaiSach AND month(B.NgayMuon) = A.Thang AND year(B.NgayMuon) = A.Nam)
+	--FROM INSERTED I, CT_BCTINHHINHMUONSACH A
+	--WHERE A.IDCTBCMuonSach = I.IDCTBCMuonSach
+	UPDATE CT_BCTINHHINHMUONSACH
+	SET SoLuotMuon = (SELECT COUNT(*) FROM PHIEUMUON A, CT_PHIEUMUON B , CUONSACH C, SACH D, DAUSACH E
+					  WHERE A.IDPhieuMuon = B.IDPhieuMuon AND B.IDCuonSach = C.IDCuonSach AND C.IDSach = D.IDSach AND D.IDDauSach = E.IDDauSach
+					        AND month(A.NgayMuon) = @THANG AND year(A.NgayMuon) = @NAM AND E.IDLoaiSach = @IDLOAISACH)
+	FROM INSERTED I, CT_BCTINHHINHMUONSACH A
+	WHERE A.IDBCMuonSach = @IDBCMUONSACH AND A.IDLoaiSach = @IDLOAISACH
 
 END
 
@@ -1374,16 +1430,7 @@ CREATE TRIGGER TRG_IU_CMS ON CT_BCTINHHINHMUONSACH
 FOR INSERT, UPDATE
 AS
 BEGIN
-
-/*SoLuotMuon*/
-	UPDATE CT_BCTINHHINHMUONSACH
-	SET SoLuotMuon = (SELECT COUNT(*) FROM INSERTED I, BCTINHHINHMUONSACH A, PHIEUMUON B, CT_PHIEUMUON C , CUONSACH D, SACH E, DAUSACH F
-					  WHERE A.IDBCMuonSach = I.IDBCMuonSach AND B.IDPhieuMuon = C.IDPhieuMuon					        
-						    AND C.IDCuonSach = D.IDCuonSach AND D.IDSach = E.IDSach AND E.IDDauSach = F.IDDauSach
-						    AND F.IDLoaiSach = I.IDLoaiSach AND month(B.NgayMuon) = A.Thang AND year(B.NgayMuon) = A.Nam)
-	FROM INSERTED I, CT_BCTINHHINHMUONSACH A
-	WHERE A.IDCTBCMuonSach = I.IDCTBCMuonSach
-
+--- 20/6
 /*TongSoLuotMuon*/
 	UPDATE BCTINHHINHMUONSACH
 	SET TongSoLuotMuon = (SELECT SUM(B.SoLuotMuon)
@@ -1409,7 +1456,7 @@ BEGIN
 	ELSE
 	BEGIN
 		UPDATE CT_BCTINHHINHMUONSACH
-		SET TiLe = CAST (B.SoLuotMuon AS float) / CAST (A.TongSoLuotMuon AS float)
+		SET TiLe = ROUND((CAST (B.SoLuotMuon AS float) / CAST (A.TongSoLuotMuon AS float)), 2)
 		FROM INSERTED I, BCTINHHINHMUONSACH A, CT_BCTINHHINHMUONSACH B
 		WHERE A.IDBCMuonSach = I.IDBCMuonSach AND B.IDBCMuonSach = A.IDBCMuonSach
 	END

@@ -37,25 +37,17 @@ namespace QLTV.GUI
         }
 
         private void btn_TaoBaoCao_Click(object sender, EventArgs e)
-        {
-            int i = ADO.adoRPTinhHinhMuonSach.Instance.IDReport();
-            i++;
-
-            string str = "00" + i.ToString();
-            if (i >= 10 && i < 100) str = "0" + i.ToString();
-            else if (i >= 100 && i < 1000) str = i.ToString();
-
-            ADO.adoRPTinhHinhMuonSach.Instance.Them(str, tb_Thang.Text, tb_Nam.Text);
-            this.bCTINHHINHMUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.BCTINHHINHMUONSACH);
+        {            
+            string id = ADO.adoRPTinhHinhMuonSach.Instance.IDReport(tb_Thang.Text, tb_Nam.Text);        
 
             DataSet dss = new DataSet();
             DataSet dsr = new DataSet();
             DataSet dsrc = new DataSet();
             DataSet dsa = new DataSet();
 
-            ADO.adoRPTinhHinhMuonSach.Instance.Chons(str).Fill(dss);
-            ADO.adoRPTinhHinhMuonSach.Instance.Chonr(str).Fill(dsr);
-            ADO.adoRPTinhHinhMuonSach.Instance.Chonrc(str).Fill(dsrc);
+            ADO.adoRPTinhHinhMuonSach.Instance.Chons(id).Fill(dss);
+            ADO.adoRPTinhHinhMuonSach.Instance.Chonr(id).Fill(dsr);
+            ADO.adoRPTinhHinhMuonSach.Instance.Chonrc(id).Fill(dsrc);
             ADO.adoRPTinhHinhMuonSach.Instance.Chona(UserName).Fill(dsa);
 
             //Khai báo chế độ xử lý báo cáo, trong trường hợp này lấy báo cáo ở local
