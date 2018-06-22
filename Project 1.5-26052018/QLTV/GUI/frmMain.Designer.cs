@@ -105,9 +105,11 @@
             this.barHeaderItem5 = new DevExpress.XtraBars.BarHeaderItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barHeaderItem6 = new DevExpress.XtraBars.BarHeaderItem();
+            this.btn_PhieuThuTienPhat = new DevExpress.XtraBars.BarButtonItem();
             this.rib_BaoCao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribtab_rpSachTraTre = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribtab_rpTinhHinhMuonSach = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribtab_PhieuThu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.xtraTable = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.btn_DangXuat = new DevExpress.XtraBars.BarHeaderItem();
@@ -623,10 +625,11 @@
             this.barHeaderItem5,
             this.barButtonItem8,
             this.barHeaderItem6,
-            this.btn_Admin});
+            this.btn_Admin,
+            this.btn_PhieuThuTienPhat});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl.MaxItemId = 9;
+            this.ribbonControl.MaxItemId = 10;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.barButtonGroup1);
             this.ribbonControl.PageHeaderItemLinks.Add(this.barHeaderItem6);
@@ -827,11 +830,22 @@
             this.barHeaderItem6.Name = "barHeaderItem6";
             this.barHeaderItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DangXuat_ItemClick_1);
             // 
+            // btn_PhieuThuTienPhat
+            // 
+            this.btn_PhieuThuTienPhat.Caption = "Phiếu thu tiền phạt";
+            this.btn_PhieuThuTienPhat.Id = 9;
+            this.btn_PhieuThuTienPhat.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_cash_register_40;
+            this.btn_PhieuThuTienPhat.Name = "btn_PhieuThuTienPhat";
+            this.btn_PhieuThuTienPhat.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btn_PhieuThuTienPhat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_PhieuThuTienPhat_ItemClick);
+            // 
             // rib_BaoCao
             // 
             this.rib_BaoCao.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribtab_rpSachTraTre,
-            this.ribtab_rpTinhHinhMuonSach});
+            this.ribtab_rpTinhHinhMuonSach,
+            this.ribtab_PhieuThu});
             this.rib_BaoCao.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_report_card_48;
             this.rib_BaoCao.Name = "rib_BaoCao";
             this.rib_BaoCao.Text = "Báo cáo";
@@ -847,6 +861,12 @@
             this.ribtab_rpTinhHinhMuonSach.ItemLinks.Add(this.btn_rpTinhHinhMuonSach);
             this.ribtab_rpTinhHinhMuonSach.Name = "ribtab_rpTinhHinhMuonSach";
             this.ribtab_rpTinhHinhMuonSach.Text = "Tình hình mượn sách";
+            // 
+            // ribtab_PhieuThu
+            // 
+            this.ribtab_PhieuThu.ItemLinks.Add(this.btn_PhieuThuTienPhat);
+            this.ribtab_PhieuThu.Name = "ribtab_PhieuThu";
+            this.ribtab_PhieuThu.Text = "Phiếu thu tiền phạt";
             // 
             // repositoryItemPictureEdit1
             // 
@@ -975,6 +995,8 @@
         private DevExpress.XtraBars.BarHeaderItem barHeaderItem6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_Admin;
         private DevExpress.XtraBars.BarButtonItem btn_Admin;
+        private DevExpress.XtraBars.BarButtonItem btn_PhieuThuTienPhat;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribtab_PhieuThu;
     }
 }
 

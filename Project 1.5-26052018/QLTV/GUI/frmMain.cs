@@ -124,6 +124,14 @@ namespace QLTV
             f.Show();
         }
 
+        private void btn_PhieuThuTienPhat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmPhieuThuTienPhat f = new frmPhieuThuTienPhat();
+            if (ExistForm(f)) return;
+            f.MdiParent = this;
+            f.Show();
+        }
+
         private void btn_CTTraSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmCTTraSach f = new frmCTTraSach();
@@ -335,13 +343,16 @@ namespace QLTV
                 btn_CTPNSach.Enabled = false;
                 btn_rpSachTraTre.Enabled = false;
                 btn_rpTinhHinhMuonSach.Enabled = false;
+                btn_Admin.Enabled = false;
+                btn_PhieuThuTienPhat.Enabled = false;
             }
-            if (ADO.adoLogin.Instance.checkAdmin(UserName,Password)==true)
+            if (ADO.adoLogin.Instance.checkAdmin(UserName,Password)==true && UserName!="root")
             {
                 btn_ThongTin.Enabled = false;
+                btn_Admin.Enabled = false;
             }
+           
         }
-
 
 
     }

@@ -80,10 +80,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 25F);
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(465, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(698, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(463, 41);
+            this.label1.Size = new System.Drawing.Size(679, 60);
             this.label1.TabIndex = 2;
             this.label1.Text = "Báo cáo thống kê sách trả trễ";
             // 
@@ -94,11 +93,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox1.Location = new System.Drawing.Point(10, 86);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(15, 126);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(599, 101);
+            this.groupBox1.Size = new System.Drawing.Size(898, 148);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê sách trả trễ";
@@ -107,10 +104,9 @@
             // 
             this.btn_TaoBaoCao.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btn_TaoBaoCao.Appearance.Options.UseFont = true;
-            this.btn_TaoBaoCao.Location = new System.Drawing.Point(450, 44);
-            this.btn_TaoBaoCao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_TaoBaoCao.Location = new System.Drawing.Point(675, 64);
             this.btn_TaoBaoCao.Name = "btn_TaoBaoCao";
-            this.btn_TaoBaoCao.Size = new System.Drawing.Size(93, 30);
+            this.btn_TaoBaoCao.Size = new System.Drawing.Size(140, 44);
             this.btn_TaoBaoCao.TabIndex = 2;
             this.btn_TaoBaoCao.Text = "Tạo báo cáo";
             this.btn_TaoBaoCao.Click += new System.EventHandler(this.btn_TaoBaoCao_Click);
@@ -118,19 +114,17 @@
             // dtp_NgayThangNam
             // 
             this.dtp_NgayThangNam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayThangNam.Location = new System.Drawing.Point(224, 44);
-            this.dtp_NgayThangNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp_NgayThangNam.Location = new System.Drawing.Point(336, 64);
             this.dtp_NgayThangNam.Name = "dtp_NgayThangNam";
-            this.dtp_NgayThangNam.Size = new System.Drawing.Size(174, 32);
+            this.dtp_NgayThangNam.Size = new System.Drawing.Size(259, 44);
             this.dtp_NgayThangNam.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(64, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 24);
+            this.label2.Size = new System.Drawing.Size(247, 36);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ngày tháng năm:";
             // 
@@ -141,11 +135,9 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox2.Location = new System.Drawing.Point(8, 191);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(12, 279);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(675, 554);
+            this.groupBox2.Size = new System.Drawing.Size(1012, 810);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dữ liệu thống kê được";
@@ -162,11 +154,10 @@
             this.soNgayTraTreDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.bCSACHTRATREBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 40);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(671, 525);
+            this.dataGridView1.Size = new System.Drawing.Size(1006, 767);
             this.dataGridView1.TabIndex = 0;
             // 
             // iDBCSachTreDataGridViewTextBoxColumn
@@ -175,7 +166,7 @@
             this.iDBCSachTreDataGridViewTextBoxColumn.DataPropertyName = "IDBCSachTre";
             this.iDBCSachTreDataGridViewTextBoxColumn.HeaderText = "IDBCSachTre";
             this.iDBCSachTreDataGridViewTextBoxColumn.Name = "iDBCSachTreDataGridViewTextBoxColumn";
-            this.iDBCSachTreDataGridViewTextBoxColumn.Width = 152;
+            this.iDBCSachTreDataGridViewTextBoxColumn.Width = 227;
             // 
             // ngayThangNamDataGridViewTextBoxColumn
             // 
@@ -183,7 +174,7 @@
             this.ngayThangNamDataGridViewTextBoxColumn.DataPropertyName = "NgayThangNam";
             this.ngayThangNamDataGridViewTextBoxColumn.HeaderText = "Ngày tháng năm";
             this.ngayThangNamDataGridViewTextBoxColumn.Name = "ngayThangNamDataGridViewTextBoxColumn";
-            this.ngayThangNamDataGridViewTextBoxColumn.Width = 131;
+            this.ngayThangNamDataGridViewTextBoxColumn.Width = 196;
             // 
             // iDCuonSachDataGridViewTextBoxColumn
             // 
@@ -197,7 +188,7 @@
             this.iDPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuMuon";
             this.iDPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID phiếu mượn";
             this.iDPhieuMuonDataGridViewTextBoxColumn.Name = "iDPhieuMuonDataGridViewTextBoxColumn";
-            this.iDPhieuMuonDataGridViewTextBoxColumn.Width = 153;
+            this.iDPhieuMuonDataGridViewTextBoxColumn.Width = 229;
             // 
             // soNgayTraTreDataGridViewTextBoxColumn
             // 
@@ -205,7 +196,7 @@
             this.soNgayTraTreDataGridViewTextBoxColumn.DataPropertyName = "SoNgayTraTre";
             this.soNgayTraTreDataGridViewTextBoxColumn.HeaderText = "Số ngày trả trễ";
             this.soNgayTraTreDataGridViewTextBoxColumn.Name = "soNgayTraTreDataGridViewTextBoxColumn";
-            this.soNgayTraTreDataGridViewTextBoxColumn.Width = 131;
+            this.soNgayTraTreDataGridViewTextBoxColumn.Width = 195;
             // 
             // bCSACHTRATREBindingSource
             // 
@@ -225,11 +216,9 @@
             this.groupBox3.Controls.Add(this.rpv_SachTraTre);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox3.Location = new System.Drawing.Point(687, 86);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Location = new System.Drawing.Point(1030, 126);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox3.Size = new System.Drawing.Size(321, 425);
+            this.groupBox3.Size = new System.Drawing.Size(482, 621);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Xem trước báo cáo thống kê sách trả trễ";
@@ -237,11 +226,9 @@
             // rpv_SachTraTre
             // 
             this.rpv_SachTraTre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpv_SachTraTre.Location = new System.Drawing.Point(2, 27);
-            this.rpv_SachTraTre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rpv_SachTraTre.Location = new System.Drawing.Point(3, 40);
             this.rpv_SachTraTre.Name = "rpv_SachTraTre";
-            this.rpv_SachTraTre.ServerReport.BearerToken = null;
-            this.rpv_SachTraTre.Size = new System.Drawing.Size(317, 396);
+            this.rpv_SachTraTre.Size = new System.Drawing.Size(476, 578);
             this.rpv_SachTraTre.TabIndex = 0;
             // 
             // bCSACHTRATRETableAdapter
@@ -250,16 +237,15 @@
             // 
             // frmReportSachTraTre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1019, 522);
+            this.ClientSize = new System.Drawing.Size(1528, 763);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmReportSachTraTre";
-            this.Text = "frmReportSachTraTre";
+            this.Text = "Báo cáo sách trả trễ";
             this.Load += new System.EventHandler(this.frmReportSachTraTre_Load);
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox1)).EndInit();
