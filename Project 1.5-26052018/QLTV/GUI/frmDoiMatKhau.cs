@@ -21,12 +21,12 @@ namespace QLTV.GUI
 
         private string UserName;
         private string Password;
+
         public frmDoiMatKhau(string userName, string password):this()
         {
             UserName = userName;
             Password = password;
         }
-
 
         private void frmDoiMatKhau_Load(object sender, EventArgs e)
         {
@@ -40,68 +40,76 @@ namespace QLTV.GUI
 
         private void btn_DoiMatKhau_Click(object sender, EventArgs e)
         {
-            if(tb_MKMoi.Text!=Password)
+            try
             {
-                if(tb_MKCu.Text!=Password)
+                if (tb_MKMoi.Text != Password)
                 {
-                    label5.ForeColor = Color.Red;
-                    label5.Text = "Mật khẩu cũ không đúng!!";
-                    label5.Show();
-                    pic_Warning.Show();
-                    pic_Ss.Hide();
+                    if (tb_MKCu.Text != Password)
+                    {
+                        label5.ForeColor = Color.Red;
+                        label5.Text = "Mật khẩu cũ không đúng!!";
+                        label5.Show();
+                        pic_Warning.Show();
+                        pic_Ss.Hide();
+                    }
+
+                    if (tb_MKCu.Text == Password)
+                    {
+                        label5.Hide();
+                        pic_Ss.Show();
+                        pic_Warning.Hide();
+                    }
                 }
-                if(tb_MKCu.Text==Password)
+
+                if (tb_MKMoi.Text == Password)
                 {
-                    label5.Hide();
-                    pic_Ss.Show();
-                    pic_Warning.Hide();
+                    pic_SsMK.Hide();
+                    pic_WarningMK.Show();
+                    MessageBox.Show("Mật khẩu mới không được trùng với mật khẩu cũ!!", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    if (tb_MKCu.Text != Password)
+                    {
+                        label5.ForeColor = Color.Red;
+                        label5.Text = "Mật khẩu cũ không đúng!!";
+                        label5.Show();
+                        pic_Warning.Show();
+                        pic_Ss.Hide();
+                    }
+
+                    if (tb_MKCu.Text == Password)
+                    {
+                        label5.Hide();
+                        pic_Ss.Show();
+                        pic_Warning.Hide();
+                    }
                 }
-            }
-            if(tb_MKMoi.Text==Password)
-            {
-                pic_SsMK.Hide();
-                pic_WarningMK.Show();
-                MessageBox.Show("Mật khẩu mới không được trùng với mật khẩu cũ!!", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                if (tb_MKCu.Text != Password)
-                {
-                    label5.ForeColor = Color.Red;
-                    label5.Text = "Mật khẩu cũ không đúng!!";
-                    label5.Show();
-                    pic_Warning.Show();
-                    pic_Ss.Hide();
-                }
-                if (tb_MKCu.Text == Password)
-                {
-                    label5.Hide();
-                    pic_Ss.Show();
-                    pic_Warning.Hide();
-                }
-            }
-            if(ADO.adoLogin.Instance.checkDocGia(UserName,tb_MKCu.Text.Trim())==true)
+
+                if (ADO.adoLogin.Instance.checkDocGia(UserName, tb_MKCu.Text.Trim()) == true)
                 {
                     if (tb_MKMoi.Text != Password && tb_MKMoi.Text != "" && tb_MKCu.Text != "" && tb_MKCu.Text == Password)
                     {
-                    ADO.adoLogin.Instance.DoiMatKhau(tb_UserName.Text.Trim(), tb_MKMoi.Text.Trim());
-                    pic_SsMK.Show();
-                    pic_WarningMK.Hide();
-                    Password = tb_MKMoi.Text;
+                        ADO.adoLogin.Instance.DoiMatKhau(tb_UserName.Text.Trim(), tb_MKMoi.Text.Trim());
+                        pic_SsMK.Show();
+                        pic_WarningMK.Hide();
+                        Password = tb_MKMoi.Text;
                     }
-                //this.Close();
+                    //this.Close();
                 }
-            if (ADO.adoLogin.Instance.checkAdmin(UserName, tb_MKCu.Text.Trim()) == true)
-            {
-                if (tb_MKMoi.Text != Password && tb_MKMoi.Text != "" && tb_MKCu.Text != "" && tb_MKCu.Text == Password)
+
+                if (ADO.adoLogin.Instance.checkAdmin(UserName, tb_MKCu.Text.Trim()) == true)
                 {
-                    ADO.adoLogin.Instance.DoiMatKhauAdmin(tb_UserName.Text.Trim(), tb_MKMoi.Text.Trim());
-                    pic_SsMK.Show();
-                    pic_WarningMK.Hide();
-                    Password = tb_MKMoi.Text;
+                    if (tb_MKMoi.Text != Password && tb_MKMoi.Text != "" && tb_MKCu.Text != "" && tb_MKCu.Text == Password)
+                    {
+                        ADO.adoLogin.Instance.DoiMatKhauAdmin(tb_UserName.Text.Trim(), tb_MKMoi.Text.Trim());
+                        pic_SsMK.Show();
+                        pic_WarningMK.Hide();
+                        Password = tb_MKMoi.Text;
 
+                    }
+                    //this.Close();
                 }
-                //this.Close();
             }
-
-
+            catch { }
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)

@@ -30,8 +30,10 @@ namespace QLTV.GUI
             //dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
             //dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
         }
+
         private string UserName;
         private string Password;
+
         public frmThongTinAdmin(string userName, string password) : this()
         {
             UserName = userName;

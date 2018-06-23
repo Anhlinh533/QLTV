@@ -48,37 +48,49 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
-            SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
-            if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
+            try
             {
-                ADO.adoUsers.Instance.Them(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
-                this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
-                ResetForm();
+                SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+                SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
+                if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
+                {
+                    ADO.adoUsers.Instance.Them(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+                    this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
-            SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
-            if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
+            try
             {
-                ADO.adoUsers.Instance.Sua(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
-                this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
-                ResetForm();
+                SCRIPT.formatUsers.Instance.checkUsers(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+                SCRIPT.formatUsers.Instance.checkNull(tb_UserName, tb_Password, cbb_IDDocGia);
+                if (tb_UserName.Text != "" && tb_Password.Text != "" && cbb_IDDocGia.Text != "")
+                {
+                    ADO.adoUsers.Instance.Sua(tb_UserName.Text, tb_Password.Text, cbb_IDDocGia.Text);
+                    this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            if (tb_UserName.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            if (tb_UserName.Text != "")
+            try
             {
-                ADO.adoUsers.Instance.Xoa(tb_UserName.Text);
-                this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
-                ResetForm();
+                if (tb_UserName.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (tb_UserName.Text != "")
+                {
+                    ADO.adoUsers.Instance.Xoa(tb_UserName.Text);
+                    this.uSERSTableAdapter.Fill(quanLyThuVienDataSet.USERS);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -87,15 +99,18 @@ namespace QLTV.GUI
             ResetForm();
         }
 
-
         #region Form
         private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            tb_UserName.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
-            tb_Password.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
-            cbb_IDDocGia.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            try
+            {
+                int numrow;
+                numrow = e.RowIndex;
+                tb_UserName.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+                tb_Password.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+                cbb_IDDocGia.Text = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+            }
+            catch { }
         }
 
         public void ResetForm()
@@ -113,65 +128,81 @@ namespace QLTV.GUI
 
         private void tb_UserName_TextChanged(object sender, EventArgs e)
         {
-            if (ADO.adoLogin.Instance.checkUserName(tb_UserName.Text.Trim()) == true)
+            try
             {
-                label5.ForeColor = Color.Red;
-                label5.Text = "UserName này đã tồn tại!!";
-                label5.Show();
-                pic_Warning.Show();
-                pic_Ss.Hide();
+                if (ADO.adoLogin.Instance.checkUserName(tb_UserName.Text.Trim()) == true)
+                {
+                    label5.ForeColor = Color.Red;
+                    label5.Text = "UserName này đã tồn tại!!";
+                    label5.Show();
+                    pic_Warning.Show();
+                    pic_Ss.Hide();
+                }
+                else
+                {
+                    label5.ForeColor = Color.Green;
+                    label5.Text = "Username phù hợp!!";
+                    label5.Show();
+                    pic_Warning.Hide();
+                    pic_Ss.Show();
+                }
+                if (tb_UserName.Text == "")
+                {
+                    label5.ForeColor = Color.Red;
+                    label5.Text = "Không được để trống ID";
+                    label5.Show();
+                    pic_Ss.Hide();
+                    pic_Warning.Show();
+                }
             }
-            else
-            {
-                label5.ForeColor = Color.Green;
-                label5.Text = "Username phù hợp!!";
-                label5.Show();
-                pic_Warning.Hide();
-                pic_Ss.Show();
-            }
-            if (tb_UserName.Text == "")
-            {
-                label5.ForeColor = Color.Red;
-                label5.Text = "Không được để trống ID";
-                label5.Show();
-                pic_Ss.Hide();
-                pic_Warning.Show();
-            }
+            catch { }
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string username = dgv_Them.Rows[t].Cells[0].Value.ToString();
-            string password = dgv_Them.Rows[t].Cells[1].Value.ToString();
-            string iddg = dgv_Them.Rows[t].Cells[2].Value.ToString();
+            try
+            {
+                string username = dgv_Them.Rows[t].Cells[0].Value.ToString();
+                string password = dgv_Them.Rows[t].Cells[1].Value.ToString();
+                string iddg = dgv_Them.Rows[t].Cells[2].Value.ToString();
 
-            ADO.adoUsers.Instance.Sua(username, password, iddg);
-            dgv_Them.DataSource = quanLyThuVienDataSet.USERS;
-            this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
+                ADO.adoUsers.Instance.Sua(username, password, iddg);
+                dgv_Them.DataSource = quanLyThuVienDataSet.USERS;
+                this.uSERSTableAdapter.Fill(this.quanLyThuVienDataSet.USERS);
+            }
+            catch { }
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog sfd = new SaveFileDialog())
+            try
             {
-                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
-                sfd.Title = "Save an Excel File";
-                sfd.ShowDialog();
+                using (SaveFileDialog sfd = new SaveFileDialog())
+                {
+                    sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                    sfd.Title = "Save an Excel File";
+                    sfd.ShowDialog();
 
-                string DuongDan;
-                DuongDan = sfd.FileName;
+                    string DuongDan;
+                    DuongDan = sfd.FileName;
 
-                string sql = ADO.adoUsers.Instance.GetQueryFillDgv();
-                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                    string sql = ADO.adoUsers.Instance.GetQueryFillDgv();
+                    ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                }
             }
+            catch { }
         }
 
         int t = 0;
 
         private void dgv_Them_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_Them.CurrentCell != null)
-                t = dgv_Them.CurrentCell.RowIndex;
+            try
+            {
+                if (dgv_Them.CurrentCell != null)
+                    t = dgv_Them.CurrentCell.RowIndex;
+            }
+            catch { }
         }
     }
 }

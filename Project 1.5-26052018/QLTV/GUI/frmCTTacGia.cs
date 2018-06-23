@@ -55,46 +55,62 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatCTTacGia.Instance.checkCTTacGia(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
-            SCRIPT.formatCTTacGia.Instance.checkNull(tb_IDCTTacGia, cbb_IDDauSach, cbb_IDTacGia);
-            if (tb_IDCTTacGia.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDTacGia.Text != "")
+            try
             {
-                ADO.adoCTTacGia.Instance.Them(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
-                this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
-                ResetForm();
+                SCRIPT.formatCTTacGia.Instance.checkCTTacGia(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
+                SCRIPT.formatCTTacGia.Instance.checkNull(tb_IDCTTacGia, cbb_IDDauSach, cbb_IDTacGia);
+                if (tb_IDCTTacGia.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDTacGia.Text != "")
+                {
+                    ADO.adoCTTacGia.Instance.Them(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
+                    this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatCTTacGia.Instance.checkCTTacGia(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
-            SCRIPT.formatCTTacGia.Instance.checkNull(tb_IDCTTacGia, cbb_IDDauSach, cbb_IDTacGia);
-
-            if (tb_IDCTTacGia.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDTacGia.Text != "")
+            try
             {
-                ADO.adoCTTacGia.Instance.Sua(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
-                this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
-                ResetForm();
+                SCRIPT.formatCTTacGia.Instance.checkCTTacGia(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
+                SCRIPT.formatCTTacGia.Instance.checkNull(tb_IDCTTacGia, cbb_IDDauSach, cbb_IDTacGia);
+
+                if (tb_IDCTTacGia.Text != "" && cbb_IDDauSach.Text != "" && cbb_IDTacGia.Text != "")
+                {
+                    ADO.adoCTTacGia.Instance.Sua(tb_IDCTTacGia.Text, cbb_IDDauSach.Text, cbb_IDTacGia.Text);
+                    this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            if (tb_IDCTTacGia.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            if (tb_IDCTTacGia.Text != "")
+            try
             {
-                ADO.adoCTTacGia.Instance.Xoa(tb_IDCTTacGia.Text);
-                this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
-                ResetForm();
+                if (tb_IDCTTacGia.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (tb_IDCTTacGia.Text != "")
+                {
+                    ADO.adoCTTacGia.Instance.Xoa(tb_IDCTTacGia.Text);
+                    this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
 
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            this.cT_TACGIATableAdapter.Fill(quanLyThuVienDataSet.CT_TACGIA);
-            ResetForm();
+            try
+            {
+                this.cT_TACGIATableAdapter.Fill(quanLyThuVienDataSet.CT_TACGIA);
+                ResetForm();
+            }
+            catch { }
         }
 
         #region Form
@@ -106,14 +122,18 @@ namespace QLTV.GUI
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            tb_IDCTTacGia.Text = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
+            try
+            {
+                int numrow;
+                numrow = e.RowIndex;
+                tb_IDCTTacGia.Text = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
 
-            string idds = dataGridView1.Rows[numrow].Cells[1].Value.ToString();
-            string idtg = dataGridView1.Rows[numrow].Cells[2].Value.ToString();
-            cbb_IDDauSach.Text = ADO.adoCTTacGia.Instance.AutoFill(idds, "cbb_IDDauSach");
-            cbb_IDTacGia.Text = ADO.adoCTTacGia.Instance.AutoFill(idtg, "cbb_IDTacGia");
+                string idds = dataGridView1.Rows[numrow].Cells[1].Value.ToString();
+                string idtg = dataGridView1.Rows[numrow].Cells[2].Value.ToString();
+                cbb_IDDauSach.Text = ADO.adoCTTacGia.Instance.AutoFill(idds, "cbb_IDDauSach");
+                cbb_IDTacGia.Text = ADO.adoCTTacGia.Instance.AutoFill(idtg, "cbb_IDTacGia");
+            }
+            catch { }
         }
 
         public void ResetForm()
@@ -131,43 +151,58 @@ namespace QLTV.GUI
 
         private void tb_IDCTTacGia_TextChanged(object sender, EventArgs e)
         {
-            SCRIPT.useForm.Instance.checkID(ADO.adoCTTacGia.Instance.checkID(tb_IDCTTacGia.Text.Trim()), label5, tb_IDCTTacGia, pic_Warning, pic_Ss);
-
+            try
+            {
+                SCRIPT.useForm.Instance.checkID(ADO.adoCTTacGia.Instance.checkID(tb_IDCTTacGia.Text.Trim()), label5, tb_IDCTTacGia, pic_Warning, pic_Ss);
+            }
+            catch { }
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idcttg = dataGridView1.Rows[t].Cells[0].Value.ToString();
-            string idds = dataGridView1.Rows[t].Cells[1].Value.ToString();
-            string idtg = dataGridView1.Rows[t].Cells[2].Value.ToString();
+            try
+            {
+                string idcttg = dataGridView1.Rows[t].Cells[0].Value.ToString();
+                string idds = dataGridView1.Rows[t].Cells[1].Value.ToString();
+                string idtg = dataGridView1.Rows[t].Cells[2].Value.ToString();
 
-            ADO.adoCTTacGia.Instance.Sua(idcttg, idds, idtg);
-            dataGridView1.DataSource = quanLyThuVienDataSet.CT_TACGIA;
-            this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
+                ADO.adoCTTacGia.Instance.Sua(idcttg, idds, idtg);
+                dataGridView1.DataSource = quanLyThuVienDataSet.CT_TACGIA;
+                this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
+            }
+            catch { }
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog sfd = new SaveFileDialog())
+            try
             {
-                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
-                sfd.Title = "Save an Excel File";
-                sfd.ShowDialog();
+                using (SaveFileDialog sfd = new SaveFileDialog())
+                {
+                    sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                    sfd.Title = "Save an Excel File";
+                    sfd.ShowDialog();
 
-                string DuongDan;
-                DuongDan = sfd.FileName;
+                    string DuongDan;
+                    DuongDan = sfd.FileName;
 
-                string sql = ADO.adoCTTacGia.Instance.GetQueryFillDgv();
-                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                    string sql = ADO.adoCTTacGia.Instance.GetQueryFillDgv();
+                    ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                }
             }
+            catch { }
         }
 
         int t = 0;
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.CurrentCell != null)
-                t = dataGridView1.CurrentCell.RowIndex;
+            try
+            {
+                if (dataGridView1.CurrentCell != null)
+                    t = dataGridView1.CurrentCell.RowIndex;
+            }
+            catch { }
         }
     }
 }

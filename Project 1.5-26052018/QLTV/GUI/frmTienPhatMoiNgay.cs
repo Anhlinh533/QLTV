@@ -21,10 +21,14 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            if (tb_TienPhatMoiNgay.Text == "") MessageBoxEx.Show("Không được để trống tiền phạt mỗi ngày!!");
-            else
-                //SCRIPT.useForm.ResetAllControls(groupControl1);
-                ADO.adoTienPhatMoiNgay.Instance.Sua(tb_TienPhatMoiNgay.Text);
+            try
+            {
+                if (tb_TienPhatMoiNgay.Text == "") MessageBoxEx.Show("Không được để trống tiền phạt mỗi ngày!!");
+                else
+                    //SCRIPT.useForm.ResetAllControls(groupControl1);
+                    ADO.adoTienPhatMoiNgay.Instance.Sua(tb_TienPhatMoiNgay.Text);
+            }
+            catch { }
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)

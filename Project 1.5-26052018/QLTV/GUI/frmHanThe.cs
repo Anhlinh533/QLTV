@@ -21,10 +21,14 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            if (tb_HanThe.Text == "") MessageBoxEx.Show("Không được để trống hạn thẻ!!");
-            else
-                //SCRIPT.useForm.ResetAllControls(groupControl1);
-                ADO.adoHanThe.Instance.Sua(tb_HanThe.Text);
+            try
+            {
+                if (tb_HanThe.Text == "") MessageBoxEx.Show("Không được để trống hạn thẻ!!");
+                else
+                    //SCRIPT.useForm.ResetAllControls(groupControl1);
+                    ADO.adoHanThe.Instance.Sua(tb_HanThe.Text);
+            }
+            catch { }
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)

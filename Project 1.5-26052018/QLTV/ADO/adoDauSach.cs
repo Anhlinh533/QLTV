@@ -24,6 +24,7 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Them(string tb_IDDauSach, string tb_TenDauSach, string cbb_IDTheLoaiSach)
         {
             cbb_IDTheLoaiSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDLoaiSach FROM LOAISACH WHERE TenLoaiSach = N'" + cbb_IDTheLoaiSach + "'");
@@ -46,22 +47,9 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE DAUSACH SET TenDauSach = N'" + tb_TenDauSach + "', IDLoaiSach = '" + cbb_IDTheLoaiSach + "' WHERE IDDauSach = '" + tb_IDDauSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
 
-        public bool checkID(string ID)
-        {
-            SCRIPT.formatDauSach.Instance.returnIDDauSach(ref ID);
-            string sql = "Select *from DAUSACH where IDDauSach='" + ID + "'";
-            if (ADO.ConnectionSQL.Instance.check(sql) == true)
-                return true;
-            return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDDauSach, TenDauSach, A.IDLoaiSach, TenLoaiSach FROM DAUSACH A, LOAISACH B WHERE A.IDLoaiSach = B.IDLoaiSach";
-            return sql;
-        }
-
+        #region Auto
         public string AutoFill(string idls, string TenBox)
         {
             string str = "";
@@ -70,9 +58,25 @@ namespace QLTV.ADO
             {
                 string sql = "SELECT TenLoaiSach FROM LOAISACH WHERE IDLoaiSach = '" + idls + "'";
                 str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
-            }            
+            }
 
             return str;
+        }
+        #endregion
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDDauSach, TenDauSach, A.IDLoaiSach, TenLoaiSach FROM DAUSACH A, LOAISACH B WHERE A.IDLoaiSach = B.IDLoaiSach";
+            return sql;
+        }        
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatDauSach.Instance.returnIDDauSach(ref ID);
+            string sql = "Select *from DAUSACH where IDDauSach='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
         }
     }
 }

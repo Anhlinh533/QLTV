@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDAdmin, string tb_HoTenAdmin, string dtp_NgaySinhAdmin, string tb_DiaChiAdmin, string tb_EmailAdmin)
         {
             SCRIPT.formatCTAdmin.Instance.returnIDCTAdmin(ref tb_IDAdmin);

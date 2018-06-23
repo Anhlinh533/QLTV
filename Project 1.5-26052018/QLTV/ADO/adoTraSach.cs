@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDPhieuTra, string cbb_IDDocGia, string dtp_NgayTra, string tb_SoTienTra)
         {
             SCRIPT.formatTraSach.Instance.returnIDPhieuTra(ref tb_IDPhieuTra);
@@ -82,7 +82,13 @@ namespace QLTV.ADO
             TienNoKyNay = "Select * from PHIEUTRA where TienNoKyNay like '%" + TienNoKyNay + "%' ";
             return TienNoKyNay;
         }
-        #endregion
+        #endregion        
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDPhieuTra, A.IDDocGia, HoTenDG, NgayTra, TienPhatKyNay, SoTienTra, TienNoKyNay FROM PHIEUTRA A, THEDOCGIA B WHERE A.IDDocGia = B.IDDocGIa";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -91,12 +97,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDPhieuTra, A.IDDocGia, HoTenDG, NgayTra, TienPhatKyNay, SoTienTra, TienNoKyNay FROM PHIEUTRA A, THEDOCGIA B WHERE A.IDDocGia = B.IDDocGIa";
-            return sql;
         }
     }
 }

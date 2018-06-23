@@ -26,7 +26,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_UserNameAdmin, string tb_PasswordAdmin, string tb_IDAdmin)
         {
             //SCRIPT.formatAdmin.Instance.returnIDAdmin(ref tb_IDAdmin);
@@ -81,7 +81,7 @@ namespace QLTV.ADO
         
         public bool checkAdmin(string ID)
         {
-            string sql = "Select IDAdmin USERADMIN where IDAdmin='IDA"+ ID + "'";
+            string sql = "Select IDAdmin USERADMIN where IDAdmin = 'IDA"+ ID + "'";
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;

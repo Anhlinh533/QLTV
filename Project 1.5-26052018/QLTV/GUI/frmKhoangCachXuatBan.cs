@@ -21,10 +21,14 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            if (tb_KhoangCach.Text == "") MessageBoxEx.Show("Không được để trống khoảng cách xuất bản!!");
-            else
-                //SCRIPT.useForm.ResetAllControls(groupControl1);
-                ADO.adoKhoangCachXuatBan.Instance.Sua(tb_KhoangCach.Text);
+            try
+            {
+                if (tb_KhoangCach.Text == "") MessageBoxEx.Show("Không được để trống khoảng cách xuất bản!!");
+                else
+                    //SCRIPT.useForm.ResetAllControls(groupControl1);
+                    ADO.adoKhoangCachXuatBan.Instance.Sua(tb_KhoangCach.Text);
+            }
+            catch { }
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)

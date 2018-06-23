@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDPhieuMuon, string cbb_IDDocGia, string dtp_NgayMuon)
         {
             SCRIPT.formatMuonSach.Instance.returnIDPhieuMuon(ref tb_IDPhieuMuon);
@@ -71,7 +71,13 @@ namespace QLTV.ADO
             HanTra = "Select * from PHIEUMUON where HanTra like '%" + HanTra + "%' ";
             return HanTra;
         }
-        #endregion
+        #endregion        
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDPhieuMuon, A.IDDocGia, HoTenDG, NgayMuon, HanTra FROM PHIEUMUON A, THEDOCGIA B WHERE A.IDDocGia = B.IDDocGia";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -80,12 +86,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDPhieuMuon, A.IDDocGia, HoTenDG, NgayMuon, HanTra FROM PHIEUMUON A, THEDOCGIA B WHERE A.IDDocGia = B.IDDocGia";
-            return sql;
         }
     }
 }

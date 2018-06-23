@@ -30,6 +30,7 @@ namespace QLTV.GUI
 
         public string UserName;
         public string Password;
+
         public frmReportTinhHinhMuonSach(string user, string pass) : this()
         {
             UserName = user;
@@ -37,51 +38,55 @@ namespace QLTV.GUI
         }
 
         private void btn_TaoBaoCao_Click(object sender, EventArgs e)
-        {            
-            string id = ADO.adoRPTinhHinhMuonSach.Instance.IDReport(tb_Thang.Text, tb_Nam.Text);        
-
-            DataSet dss = new DataSet();
-            DataSet dsr = new DataSet();
-            DataSet dsrc = new DataSet();
-            DataSet dsa = new DataSet();
-
-            ADO.adoRPTinhHinhMuonSach.Instance.Chons(id).Fill(dss);
-            ADO.adoRPTinhHinhMuonSach.Instance.Chonr(id).Fill(dsr);
-            ADO.adoRPTinhHinhMuonSach.Instance.Chonrc(id).Fill(dsrc);
-            ADO.adoRPTinhHinhMuonSach.Instance.Chona(UserName).Fill(dsa);
-
-            //Khai báo chế độ xử lý báo cáo, trong trường hợp này lấy báo cáo ở local
-            rpv_TinhHinhMuonSach.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
-            //Đường dẫn báo cáo
-            rpv_TinhHinhMuonSach.LocalReport.ReportPath = "REPORT/rpTinhHinhMuonSach.rdlc";
-
-            if (dsrc.Tables[0].Rows.Count > 0)
+        {
+            try
             {
-                //Tạo nguồn dữ liệu cho báo cáo
-                ReportDataSource rds = new ReportDataSource();
-                ReportDataSource rdr = new ReportDataSource();
-                ReportDataSource rdrc = new ReportDataSource();
-                ReportDataSource rda = new ReportDataSource();
+                string id = ADO.adoRPTinhHinhMuonSach.Instance.IDReport(tb_Thang.Text, tb_Nam.Text);
 
-                rds.Name = "rpLoaiSach";
-                rdr.Name = "rpTinhHinhMuonSach";
-                rdrc.Name = "rpCTTinhHinhMuonSach";
-                rda.Name = "rpAdmin";
+                DataSet dss = new DataSet();
+                DataSet dsr = new DataSet();
+                DataSet dsrc = new DataSet();
+                DataSet dsa = new DataSet();
 
-                rds.Value = dss.Tables[0];
-                rdr.Value = dsr.Tables[0];
-                rdrc.Value = dsrc.Tables[0];
-                rda.Value = dsa.Tables[0];
-                //Xóa dữ liệu của báo cáo cũ trong trường hợp người dùng thực hiện câu truy vấn khác
-                rpv_TinhHinhMuonSach.LocalReport.DataSources.Clear();
-                //Add dữ liệu vào báo cáo
-                rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rds);
-                rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rdr);
-                rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rdrc);
-                rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rda);
-                //Refresh lại báo cáo
-                rpv_TinhHinhMuonSach.RefreshReport();
+                ADO.adoRPTinhHinhMuonSach.Instance.Chons(id).Fill(dss);
+                ADO.adoRPTinhHinhMuonSach.Instance.Chonr(id).Fill(dsr);
+                ADO.adoRPTinhHinhMuonSach.Instance.Chonrc(id).Fill(dsrc);
+                ADO.adoRPTinhHinhMuonSach.Instance.Chona(UserName).Fill(dsa);
+
+                //Khai báo chế độ xử lý báo cáo, trong trường hợp này lấy báo cáo ở local
+                rpv_TinhHinhMuonSach.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
+                //Đường dẫn báo cáo
+                rpv_TinhHinhMuonSach.LocalReport.ReportPath = "REPORT/rpTinhHinhMuonSach.rdlc";
+
+                if (dsrc.Tables[0].Rows.Count > 0)
+                {
+                    //Tạo nguồn dữ liệu cho báo cáo
+                    ReportDataSource rds = new ReportDataSource();
+                    ReportDataSource rdr = new ReportDataSource();
+                    ReportDataSource rdrc = new ReportDataSource();
+                    ReportDataSource rda = new ReportDataSource();
+
+                    rds.Name = "rpLoaiSach";
+                    rdr.Name = "rpTinhHinhMuonSach";
+                    rdrc.Name = "rpCTTinhHinhMuonSach";
+                    rda.Name = "rpAdmin";
+
+                    rds.Value = dss.Tables[0];
+                    rdr.Value = dsr.Tables[0];
+                    rdrc.Value = dsrc.Tables[0];
+                    rda.Value = dsa.Tables[0];
+                    //Xóa dữ liệu của báo cáo cũ trong trường hợp người dùng thực hiện câu truy vấn khác
+                    rpv_TinhHinhMuonSach.LocalReport.DataSources.Clear();
+                    //Add dữ liệu vào báo cáo
+                    rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rds);
+                    rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rdr);
+                    rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rdrc);
+                    rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(rda);
+                    //Refresh lại báo cáo
+                    rpv_TinhHinhMuonSach.RefreshReport();
+                }
             }
+            catch { }
         }
     }
 }

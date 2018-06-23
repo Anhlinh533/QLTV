@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDCTPhieuMuon, string cbb_IDPhieuMuon, string cbb_IDCuonSach)
         {
             SCRIPT.formatCTMuonSach.Instance.returnIDCTMuonSach(ref tb_IDCTPhieuMuon);
@@ -81,26 +81,13 @@ namespace QLTV.ADO
             IDCuonSach = "Select * from CT_PHIEUMUON where IDCuonSach like '%" + IDCuonSach + "%' ";
             return IDCuonSach;
         }
-        #endregion
+        #endregion        
 
-        public bool checkID(string ID)
-        {
-            string sql = "Select *from CT_PHIEUMUON where IDCTPhieuMuon='CPM" + ID + "'";
-            if (ADO.ConnectionSQL.Instance.check(sql) == true)
-                return true;
-            return false;
-        }
-
+        #region Auto
         public void AutoCbb(ComboBox cbb_TenTacGia, string TenDauSach)
         {
             ADO.ConnectionSQL.Instance.FillCbb(cbb_TenTacGia, "SELECT TenTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia AND TenDauSach = N'" + TenDauSach + "'");
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDCTPhieuMuon, IDPhieuMuon, A.IDCuonSach, TenDauSach FROM CT_PHIEUMUON A, DAUSACH B, SACH C, CUONSACH D WHERE A.IDCuonSach = D.IDCuonSach AND B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach";
-            return sql;
-        }
+        }        
 
         public string AutoFill(string idcs, string TenBox)
         {
@@ -116,8 +103,22 @@ namespace QLTV.ADO
                 string sql = "SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CT_PHIEUMUON C, SACH D, CUONSACH E WHERE A.IDTacGia = B.IDTacGia AND C.IDCuonSach = E.IDCuonSach AND E.IDSach = D.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + idcs + "'";
                 str = ADO.ConnectionSQL.Instance.ExcuteString(sql);
             }
-
             return str;
+        }
+        #endregion
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCTPhieuMuon, IDPhieuMuon, A.IDCuonSach, TenDauSach FROM CT_PHIEUMUON A, DAUSACH B, SACH C, CUONSACH D WHERE A.IDCuonSach = D.IDCuonSach AND B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach";
+            return sql;
+        }
+
+        public bool checkID(string ID)
+        {
+            string sql = "Select *from CT_PHIEUMUON where IDCTPhieuMuon='CPM" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
         }
     }
 }

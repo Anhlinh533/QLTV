@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_UserName, string tb_Password, string cbb_IDDocGia)
         {
             string sqlInsert = "INSERT INTO USERS VALUES ('" + tb_UserName + "', '" + tb_Password + "', '" + cbb_IDDocGia + "')";
@@ -57,6 +57,12 @@ namespace QLTV.ADO
             return UserName;
         }
         #endregion
+                
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT UserName, Pwd, A.IDDocGia, HoTenDG FROM USERS A, THEDOCGIA B WHERE A.IDDocGia = B.IDDocGia";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -64,12 +70,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT UserName, Pwd, A.IDDocGia, HoTenDG FROM USERS A, THEDOCGIA B WHERE A.IDDocGia = B.IDDocGia";
-            return sql;
         }
     }
 }

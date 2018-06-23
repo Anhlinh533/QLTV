@@ -24,6 +24,7 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Them(string tb_IDCTPhieuNhap, string cbb_IDPhieuNhap, string cbb_IDSach, string cbb_TacGia, string cbb_NamXB, string tb_SoLuong, string tb_DonGia)
         {
             cbb_IDSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + cbb_IDSach + "'");
@@ -48,15 +49,9 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE CT_PHIEUNHAPSACH SET IDPhieuNhap = '" + cbb_IDPhieuNhap + "', IDSach = '" + cbb_IDSach + "', SoLuong = '" + tb_SoLuong + "', DonGia = '" + tb_DonGia + "' WHERE IDCTPhieuNhap = '" + tb_IDCTPhieuNhap + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
 
-        public bool checkID(string ID)
-        {
-            string sql = "Select *from CT_PHIEUNHAPSACH where IDCTPhieuNhap='CNS" + ID + "'";
-            if (ADO.ConnectionSQL.Instance.check(sql) == true)
-                return true;
-            return false;
-        }
-
+        #region Auto
         public void AutoCbb(ComboBox cbb, string TenText, string Ten1, string Ten2, string TenBox)
         {
             if (TenBox == "cbb_IDSach")
@@ -73,13 +68,7 @@ namespace QLTV.ADO
                 else if (TenBox == "cbb_NhaXB")
                     ADO.ConnectionSQL.Instance.FillCbb(cbb, "SELECT NamXB FROM SACH WHERE IDDauSach = N'" + IDDauSach + "' AND IDCTTacGia = '" + IDCTTacGia + "' AND NhaXB = N'" + TenText + "'");
             }
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDCTPhieuNhap, IDPhieuNhap, A.IDSach, TenDauSach, SoLuong, DonGia, ThanhTien FROM CT_PHIEUNHAPSACH A, DAUSACH B, SACH C WHERE A.IDSach = C.IDSach AND B.IDDauSach = C.IDDauSach";
-            return sql;
-        }
+        }       
 
         public string AutoFill(string ids, string TenBox)
         {
@@ -107,6 +96,21 @@ namespace QLTV.ADO
             }
 
             return str;
+        }
+        #endregion
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCTPhieuNhap, IDPhieuNhap, A.IDSach, TenDauSach, SoLuong, DonGia, ThanhTien FROM CT_PHIEUNHAPSACH A, DAUSACH B, SACH C WHERE A.IDSach = C.IDSach AND B.IDDauSach = C.IDDauSach";
+            return sql;
+        }
+
+        public bool checkID(string ID)
+        {
+            string sql = "Select *from CT_PHIEUNHAPSACH where IDCTPhieuNhap='CNS" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
         }
     }
 }

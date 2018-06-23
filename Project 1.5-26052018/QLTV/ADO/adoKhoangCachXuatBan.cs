@@ -24,10 +24,12 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Sua(string tb_KhoangCach)
         {
             string sqlUpdate = "UPDATE THAMSO SET KhoangCachXB = '" + tb_KhoangCach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
     }
 }

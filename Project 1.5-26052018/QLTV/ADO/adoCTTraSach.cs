@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDCTPhieuTra, string cbb_IDPhieuTra, string cbb_IDCuonSach)
         {
             SCRIPT.formatCTTraSach.Instance.returnIDCTTraSach(ref tb_IDCTPhieuTra);
@@ -84,16 +84,8 @@ namespace QLTV.ADO
             return TienPhat;
         }
         #endregion
-
-        public bool checkID(string ID)
-        {
-            SCRIPT.formatCTTraSach.Instance.returnIDCTTraSach(ref ID);
-            string sql = "Select *from CT_PHIEUTRA where IDCTPhieuTra='" + ID + "'";
-            if (ADO.ConnectionSQL.Instance.check(sql) == true)
-                return true;
-            return false;
-        }
-
+        
+        #region Auto
         public void AutoCbb1(ComboBox cbb, string TenText)
         {
             ADO.ConnectionSQL.Instance.FillCbb1(cbb, "SELECT TenDauSach, B.IDCuonSach FROM PHIEUMUON A, CT_PHIEUMUON B, PHIEUTRA C, CUONSACH D, SACH E, DAUSACH F WHERE B.IDPhieuMuon = A.IDPhieuMuon AND A.IDDocGia = C.IDDocGia AND B.IDCuonSach = D.IDCuonSach AND D.IDSach = E.IDSach AND E.IDDauSach = F.IDDauSach AND C.IDPhieuTra = '" + TenText + "' AND D.TinhTrang = N'Đã cho mượn' AND NOT EXISTS (SELECT * FROM PHIEUMUON M, CT_PHIEUMUON N WHERE M.IDPhieuMuon = N.IDPhieuMuon AND N.IDCuonSach = B.IDCuonSach AND M.NgayMuon > A.NgayMuon)");
@@ -103,13 +95,7 @@ namespace QLTV.ADO
         {
             string s = ADO.ConnectionSQL.Instance.ExcuteString("SELECT TenTacGia FROM TACGIA A, CT_TACGIA B, CUONSACH C, SACH D WHERE A.IDTacGia = B.IDTacGia AND D.IDSach = C.IDSach AND D.IDCTTacGia = B.IDCTTacGia AND C.IDCuonSach = '" + TenText + "'");
             return s;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDCTPhieuTra, IDPhieuTra, A.IDCuonSach, TenDauSach, IDPhieuMuon, SoNgayMuon, TienPhat FROM CT_PHIEUTRA A, DAUSACH B, SACH C, CUONSACH D WHERE A.IDCuonSach = D.IDCuonSach AND B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach";
-            return sql;
-        }
+        }        
 
         public string AutoFill(string idcs, string TenBox)
         {
@@ -127,6 +113,22 @@ namespace QLTV.ADO
             }
 
             return str;
+        }
+        #endregion
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCTPhieuTra, IDPhieuTra, A.IDCuonSach, TenDauSach, IDPhieuMuon, SoNgayMuon, TienPhat FROM CT_PHIEUTRA A, DAUSACH B, SACH C, CUONSACH D WHERE A.IDCuonSach = D.IDCuonSach AND B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach";
+            return sql;
+        }
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatCTTraSach.Instance.returnIDCTTraSach(ref ID);
+            string sql = "Select *from CT_PHIEUTRA where IDCTPhieuTra='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
         }
     }
 }

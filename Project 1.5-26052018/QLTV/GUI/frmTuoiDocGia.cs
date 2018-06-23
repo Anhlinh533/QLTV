@@ -21,15 +21,20 @@ namespace QLTV.GUI
 
         private void frmTuoiDocGia_Load(object sender, EventArgs e)
         {
+
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            if (tb_TuoiMin.Text == "") MessageBoxEx.Show("Không được để trống tuổi nhỏ nhất!!");
-            else if (tb_TuoiMax.Text == "") MessageBoxEx.Show("Không được để trống tuổi lớn nhất!!");
-            if (tb_TuoiMin.Text != "" && tb_TuoiMax.Text != "")
-                //SCRIPT.useForm.ResetAllControls(groupControl1);
-                ADO.adoTuoiDocGia.Instance.Sua(tb_TuoiMin.Text, tb_TuoiMax.Text);
+            try
+            {
+                if (tb_TuoiMin.Text == "") MessageBoxEx.Show("Không được để trống tuổi nhỏ nhất!!");
+                else if (tb_TuoiMax.Text == "") MessageBoxEx.Show("Không được để trống tuổi lớn nhất!!");
+                if (tb_TuoiMin.Text != "" && tb_TuoiMax.Text != "")
+                    //SCRIPT.useForm.ResetAllControls(groupControl1);
+                    ADO.adoTuoiDocGia.Instance.Sua(tb_TuoiMin.Text, tb_TuoiMax.Text);
+            }
+            catch { }
         }
 
         public void ID_KeyPress(object sender, KeyPressEventArgs e)

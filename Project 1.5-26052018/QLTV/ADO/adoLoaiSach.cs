@@ -24,6 +24,7 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Them(string tb_IDLoaiSach, string tb_TenLoaiSach)
         {
             SCRIPT.formatLoaiSach.Instance.returnIDLoaiSach(ref tb_IDLoaiSach);
@@ -44,6 +45,13 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE LOAISACH SET TenLoaiSach = N'" + tb_TenLoaiSach + "' WHERE IDLoaiSach = '" + tb_IDLoaiSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT * FROM LOAISACH";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -52,12 +60,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT * FROM LOAISACH";
-            return sql;
-        }
+        }        
     }
 }

@@ -23,6 +23,7 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Them(string tb_IDPhieuNhap, string dtp_NgayNhap)
         {
             SCRIPT.formatPhieuNhapSach.Instance.returnIDPhieuNhapSach(ref tb_IDPhieuNhap);
@@ -43,6 +44,13 @@ namespace QLTV.ADO
             string sqlUpdate = "UPDATE PHIEUNHAPSACH SET NgayNhap = '" + dtp_NgayNhap + "' WHERE IDPhieuNhap = '" + tb_IDPhieuNhap + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion       
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT * FROM PHIEUNHAPSACH";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -51,12 +59,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT * FROM PHIEUNHAPSACH";
-            return sql;
         }
     }
 }

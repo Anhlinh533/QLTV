@@ -25,13 +25,7 @@ namespace QLTV.ADO
             }
         }
 
-        public void Them(string tb_IDBCMuonSach, string tb_Thang, string tb_Nam)
-        {
-            SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
-            string sqlInsert = "INSERT INTO BCTINHHINHMUONSACH (IDBCMuonSach, Thang, Nam)  VALUES ('" + tb_IDBCMuonSach + "', '" + tb_Thang + "', '" + tb_Nam + "')";
-            ADO.ConnectionSQL.Instance.Execute(sqlInsert);
-        }
-
+        #region Report
         public SqlDataAdapter Chons(string tb_IDBCMuonSach)
         {
             //SCRIPT.formatRPTinhHinhMuonSach.Instance.returnIDBCMuonSach(ref tb_IDBCMuonSach);
@@ -66,6 +60,7 @@ namespace QLTV.ADO
 
             return adp;
         }
+        #endregion
 
         public string IDReport(string Thang, string Nam)
         {

@@ -22,20 +22,23 @@ namespace QLTV.GUI
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
-            if(ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim())==true||ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim())==true)
+            try
             {
-                MessageBox.Show("Đăng nhập thành công","Đăng nhập!!",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
-                frmMain dlg2 = new frmMain(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim());
-                this.Hide();
-                dlg2.ShowDialog();
-                this.Close();
-            }
+                if (ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == true || ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == true)
+                {
+                    MessageBox.Show("Đăng nhập thành công", "Đăng nhập!!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    frmMain dlg2 = new frmMain(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim());
+                    this.Hide();
+                    dlg2.ShowDialog();
+                    this.Close();
+                }
 
-            if (ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false && ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false)
-            {
-                MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập và mật khẩu!!","Cảnh báo!!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                if (ADO.adoLogin.Instance.checkDocGia(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false && ADO.adoLogin.Instance.checkAdmin(tb_UserName.Text.Trim(), tb_MatKhau.Text.Trim()) == false)
+                {
+                    MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập và mật khẩu!!", "Cảnh báo!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-
+            catch { }
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
@@ -44,13 +47,16 @@ namespace QLTV.GUI
             {
                     ReConnection();           
             }
-
         }
 
         private void btn_DangKi_Click(object sender, EventArgs e)
         {
-            frmDangKi frm = new frmDangKi();
-            frm.ShowDialog();
+            try
+            {
+                frmDangKi frm = new frmDangKi();
+                frm.ShowDialog();
+            }
+            catch { }
         }
 
         private void tb_MatKhau_KeyPress(object sender, KeyPressEventArgs e)

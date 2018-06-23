@@ -17,13 +17,16 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+
         private string UserName;
         private string Password;
+
         public frmThongTinUser(string userName, string password) : this()
         {
             UserName = userName;
             Password = password;
         }
+
         private void frmThongTinUser_Load(object sender, EventArgs e)
         {
             //// TODO: This line of code loads data into the 'quanLyThuVienDataSet.USERS' table. You can move, or remove it, as needed.

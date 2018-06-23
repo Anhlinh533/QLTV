@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDTacGia, string tb_TenTacGia, string dtp_NgaySinh)
         {
             SCRIPT.formatTacGia.Instance.returnIDTacGia(ref tb_IDTacGia);
@@ -63,7 +63,13 @@ namespace QLTV.ADO
             NgaySinh = "Select * from TACGIA where NgaySinh='" + NgaySinh + "' ";
             return NgaySinh;
         }
-        #endregion
+        #endregion        
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT * FROM TACGIA";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -72,12 +78,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT * FROM TACGIA";
-            return sql;
         }
     }
 }

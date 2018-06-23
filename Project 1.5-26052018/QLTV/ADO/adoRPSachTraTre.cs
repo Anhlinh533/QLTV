@@ -26,6 +26,7 @@ namespace QLTV.ADO
             }
         }
 
+        #region Report
         public SqlDataAdapter Chons(string dtp_NgayThangNam)
         {
             string sql = "SELECT TenDauSach FROM BCSACHTRATRE A, DAUSACH B, SACH C, CUONSACH D WHERE B.IDDauSach = C.IDDauSach AND C.IDSach = D.IDSach AND D.IDCuonSach = A.IDCuonSach AND A.NgayThangNam <= '" + dtp_NgayThangNam + "' AND A.SoNgayTraTre <> 0";
@@ -65,5 +66,6 @@ namespace QLTV.ADO
 
             return adp;
         }
+        #endregion
     }
 }

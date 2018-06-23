@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDSach, string cbb_IDDauSach, string cbb_IDCTTacGia, string tb_NXB, string cbb_NXB, string tb_SoLuongTon, string tb_GiaTien)
         {
             cbb_IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH A WHERE TenDauSach = N'" + cbb_IDDauSach + "'");
@@ -104,21 +104,7 @@ namespace QLTV.ADO
         }
         #endregion
 
-        public bool checkID(string ID)
-        {
-            SCRIPT.formatSach.Instance.returnIDSach(ref ID);
-            string sql = "Select *from SACH where IDSach='" + ID + "'";
-            if (ADO.ConnectionSQL.Instance.check(sql) == true)
-                return true;
-            return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDSach, A.IDDauSach, TenDauSach, A.IDCTTacGia, TenTacGia, NhaXB, NamXB, SoLuongTon, GiaTien FROM SACH A, DAUSACH B, CT_TACGIA C, TACGIA D WHERE A.IDDauSach = B.IDDauSach AND A.IDCTTacGia = C.IDCTTacGia AND C.IDTacGia = D.IDTacGia";
-            return sql;
-        }
-
+        #region Auto
         public string AutoFill(string id, string TenBox)
         {
             string str = "";
@@ -135,6 +121,22 @@ namespace QLTV.ADO
             }
 
             return str;
+        }
+        #endregion        
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDSach, A.IDDauSach, TenDauSach, A.IDCTTacGia, TenTacGia, NhaXB, NamXB, SoLuongTon, GiaTien FROM SACH A, DAUSACH B, CT_TACGIA C, TACGIA D WHERE A.IDDauSach = B.IDDauSach AND A.IDCTTacGia = C.IDCTTacGia AND C.IDTacGia = D.IDTacGia";
+            return sql;
+        }
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatSach.Instance.returnIDSach(ref ID);
+            string sql = "Select *from SACH where IDSach='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
         }
     }
 }

@@ -29,6 +29,7 @@ namespace QLTV.ADO
                 ADO.ConnectionSQL.instance = value;
             }
         }
+
         #region checkConnection
         private static SqlConnection m_Connection;
         public static String m_ConnectString = "";
@@ -104,9 +105,8 @@ namespace QLTV.ADO
             }
             return connectionST;
         }
-
-
         #endregion
+
         public string dataSource = ConSTR();
         //#region SLQ
         //private ConnectionSQL() { }
@@ -216,6 +216,7 @@ namespace QLTV.ADO
             MessageBox.Show(e.Message);
         }
 
+        #region Executes
         public void Execute(string sql)
         {
             SqlConnection con = new SqlConnection(dataSource);
@@ -294,6 +295,7 @@ namespace QLTV.ADO
             con.Close();
             return s;
         }
+        #endregion
 
         public bool check(string sql)
         {
@@ -356,6 +358,7 @@ namespace QLTV.ADO
             }
         }
 
+        #region Fill
         public void FillCbb(ComboBox cbb, string sql)
         {
             cbb.Items.Clear();
@@ -436,5 +439,6 @@ namespace QLTV.ADO
             dgv.DataSource = dt;
             con.Close();
         }
+        #endregion
     }
 }

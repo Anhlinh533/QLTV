@@ -49,75 +49,80 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatCTMuonSach.Instance.checkCTMuonSach(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
-            SCRIPT.formatCTMuonSach.Instance.checkNull(tb_IDCTPhieuMuon, cbb_IDPhieuMuon, cbb_IDCuonSach);
-
-            //if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
-            //{
-            //    ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
-            //    this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
-            //    ResetForm();
-            //}
-
-            if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
+            try
             {
-                string s = "";                         
+                SCRIPT.formatCTMuonSach.Instance.checkCTMuonSach(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
+                SCRIPT.formatCTMuonSach.Instance.checkNull(tb_IDCTPhieuMuon, cbb_IDPhieuMuon, cbb_IDCuonSach);
 
-                for (int j = 0; j < lv_CuonSach.Items.Count; j++)
+                if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
                 {
-                    string TenSach = "", TenTG = "";
-                    int t = 0;
+                    string s = "";
 
-                    for (int i = 0; i < lv_CuonSach.Items[j].ToString().Length; i++)
+                    for (int j = 0; j < lv_CuonSach.Items.Count; j++)
                     {
-                        if (lv_CuonSach.Items[j].ToString()[i] == '-')
+                        string TenSach = "", TenTG = "";
+                        int t = 0;
+
+                        for (int i = 0; i < lv_CuonSach.Items[j].ToString().Length; i++)
                         {
-                            t = i;
-                            break;
+                            if (lv_CuonSach.Items[j].ToString()[i] == '-')
+                            {
+                                t = i;
+                                break;
+                            }
                         }
-                    }
 
-                    if (t == 0) TenSach = lv_CuonSach.Items[j].ToString();
-                    else
-                    {
-                        TenSach = lv_CuonSach.Items[j].ToString().Substring(0, t - 1);
-                        TenTG = lv_CuonSach.Items[j].ToString().Substring(t + 2, lv_CuonSach.Items[j].ToString().Length - t - 2);
-                    }
+                        if (t == 0) TenSach = lv_CuonSach.Items[j].ToString();
+                        else
+                        {
+                            TenSach = lv_CuonSach.Items[j].ToString().Substring(0, t - 1);
+                            TenTG = lv_CuonSach.Items[j].ToString().Substring(t + 2, lv_CuonSach.Items[j].ToString().Length - t - 2);
+                        }
 
                         s = ADO.adoCTMuonSach.Instance.GetIDCuonSach(TenSach, TenTG);
-                    if (s == null)
-                        MessageBox.Show("Đã hết sách " + lv_CuonSach.Items[j].ToString());
-                    else
-                        ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, s);
-                }
+                        if (s == null)
+                            MessageBox.Show("Đã hết sách " + lv_CuonSach.Items[j].ToString());
+                        else
+                            ADO.adoCTMuonSach.Instance.Them(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, s);
+                    }
 
-                this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
-                ResetForm();
+                    this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatCTMuonSach.Instance.checkCTMuonSach(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
-            SCRIPT.formatCTMuonSach.Instance.checkNull(tb_IDCTPhieuMuon, cbb_IDPhieuMuon, cbb_IDCuonSach);
-
-            if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
+            try
             {
-                ADO.adoCTMuonSach.Instance.Sua(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
-                this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
-                ResetForm();
+                SCRIPT.formatCTMuonSach.Instance.checkCTMuonSach(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
+                SCRIPT.formatCTMuonSach.Instance.checkNull(tb_IDCTPhieuMuon, cbb_IDPhieuMuon, cbb_IDCuonSach);
+
+                if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
+                {
+                    ADO.adoCTMuonSach.Instance.Sua(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
+                    this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            if (tb_IDCTPhieuMuon.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            if (tb_IDCTPhieuMuon.Text != "")
+            try
             {
-                ADO.adoCTMuonSach.Instance.Xoa(tb_IDCTPhieuMuon.Text, cbb_IDCuonSach.Text);
-                this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
-                ResetForm();
+                if (tb_IDCTPhieuMuon.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (tb_IDCTPhieuMuon.Text != "")
+                {
+                    ADO.adoCTMuonSach.Instance.Xoa(tb_IDCTPhieuMuon.Text, cbb_IDCuonSach.Text);
+                    this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -129,14 +134,18 @@ namespace QLTV.GUI
         #region Form
         private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            tb_IDCTPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
-            cbb_IDPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            try
+            {
+                int numrow;
+                numrow = e.RowIndex;
+                tb_IDCTPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+                cbb_IDPhieuMuon.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
 
-            string idcs = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
-            cbb_IDCuonSach.Text = ADO.adoCTMuonSach.Instance.AutoFill(idcs, "cbb_IDCuonSach");
-            cbb_TenTacGia.Text = ADO.adoCTMuonSach.Instance.AutoFill(idcs, "cbb_TenTacGia");
+                string idcs = dgv_Them.Rows[numrow].Cells[2].Value.ToString();
+                cbb_IDCuonSach.Text = ADO.adoCTMuonSach.Instance.AutoFill(idcs, "cbb_IDCuonSach");
+                cbb_TenTacGia.Text = ADO.adoCTMuonSach.Instance.AutoFill(idcs, "cbb_TenTacGia");
+            }
+            catch { }
         }
 
         public void ResetForm()
@@ -159,63 +168,91 @@ namespace QLTV.GUI
 
         private void tb_IDCTPhieuMuon_TextChanged(object sender, EventArgs e)
         {
-            SCRIPT.useForm.Instance.checkID(ADO.adoCTMuonSach.Instance.checkID(tb_IDCTPhieuMuon.Text.Trim()), label5, tb_IDCTPhieuMuon, pic_Warning, pic_Ss);
+            try
+            {
+                SCRIPT.useForm.Instance.checkID(ADO.adoCTMuonSach.Instance.checkID(tb_IDCTPhieuMuon.Text.Trim()), label5, tb_IDCTPhieuMuon, pic_Warning, pic_Ss);
+            }
+            catch { }
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idctpm = dgv_Them.Rows[t].Cells[0].Value.ToString();
-            string idpm = dgv_Them.Rows[t].Cells[1].Value.ToString();
-            string idcs = dgv_Them.Rows[t].Cells[2].Value.ToString();
+            try
+            {
+                string idctpm = dgv_Them.Rows[t].Cells[0].Value.ToString();
+                string idpm = dgv_Them.Rows[t].Cells[1].Value.ToString();
+                string idcs = dgv_Them.Rows[t].Cells[2].Value.ToString();
 
-            ADO.adoCTMuonSach.Instance.Sua(idctpm, idpm, idcs);
-            dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
-            this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                ADO.adoCTMuonSach.Instance.Sua(idctpm, idpm, idcs);
+                dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUMUON;
+                this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+            }
+            catch { }
         }
 
         private void cbb_IDCuonSach_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
+            try
             {
-                if (cbb_TenTacGia.Text == "")
-                    lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
-                else lv_CuonSach.Items.Add(cbb_IDCuonSach.Text + " - " + cbb_TenTacGia.Text);
+                if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
+                {
+                    if (cbb_TenTacGia.Text == "")
+                        lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
+                    else lv_CuonSach.Items.Add(cbb_IDCuonSach.Text + " - " + cbb_TenTacGia.Text);
+                }
             }
+            catch { }
         }
 
         private void lv_CuonSach_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            lv_CuonSach.Items.Remove(lv_CuonSach.SelectedItem);
+            try
+            {
+                lv_CuonSach.Items.Remove(lv_CuonSach.SelectedItem);
+            }
+            catch { }
         }
 
         private void cbb_IDCuonSach_TextChanged(object sender, EventArgs e)
         {
-            cbb_TenTacGia.Text = "";
-            ADO.adoCTMuonSach.Instance.AutoCbb(cbb_TenTacGia, cbb_IDCuonSach.Text);
+            try
+            {
+                cbb_TenTacGia.Text = "";
+                ADO.adoCTMuonSach.Instance.AutoCbb(cbb_TenTacGia, cbb_IDCuonSach.Text);
+            }
+            catch { }
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog sfd = new SaveFileDialog())
+            try
             {
-                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
-                sfd.Title = "Save an Excel File";
-                sfd.ShowDialog();
-                
-                string DuongDan;
-                DuongDan = sfd.FileName;
-                
-                string sql = ADO.adoCTMuonSach.Instance.GetQueryFillDgv();
-                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
-            }            
+                using (SaveFileDialog sfd = new SaveFileDialog())
+                {
+                    sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                    sfd.Title = "Save an Excel File";
+                    sfd.ShowDialog();
+
+                    string DuongDan;
+                    DuongDan = sfd.FileName;
+
+                    string sql = ADO.adoCTMuonSach.Instance.GetQueryFillDgv();
+                    ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                }
+            }
+            catch { }
         }
 
         int t = 0;
 
         private void dgv_Them_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_Them.CurrentCell != null)
-                t = dgv_Them.CurrentCell.RowIndex;
+            try
+            {
+                if (dgv_Them.CurrentCell != null)
+                    t = dgv_Them.CurrentCell.RowIndex;
+            }
+            catch { }
         }
     }
 }

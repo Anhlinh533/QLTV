@@ -23,8 +23,8 @@ namespace QLTV.ADO
                 ADO.adoCuonSach.instance = value;
             }
         }
-        #region Insert
 
+        #region Query
         public void Them(string tb_IDCuonSach, string cbb_IDSach)
         {
             SCRIPT.formatCuonSach.Instance.returnIDCuonSach(ref tb_IDCuonSach);
@@ -72,7 +72,13 @@ namespace QLTV.ADO
             TinhTrang = "Select * from CUONSACH where TinhTrang like '%" + TinhTrang + "%' ";
             return TinhTrang;
         }
-        #endregion
+        #endregion        
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCuonSach, A.IDSach, TenDauSach, TinhTrang FROM CUONSACH A, DAUSACH B, SACH C WHERE A.IDSach = C.IDSach AND B.IDDauSach = C.IDDauSach";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -81,12 +87,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDCuonSach, A.IDSach, TenDauSach, TinhTrang FROM CUONSACH A, DAUSACH B, SACH C WHERE A.IDSach = C.IDSach AND B.IDDauSach = C.IDDauSach";
-            return sql;
         }
     }
 }

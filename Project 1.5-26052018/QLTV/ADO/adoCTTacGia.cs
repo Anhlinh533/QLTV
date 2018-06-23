@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDCTTacGia, string cbb_IDDauSach, string cbb_IDTacGia)
         {
             cbb_IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + cbb_IDDauSach + "'");
@@ -68,21 +68,7 @@ namespace QLTV.ADO
         }
         #endregion
 
-        public bool checkID(string ID)
-        {
-            SCRIPT.formatCTTacGia.Instance.returnIDCTTacGia(ref ID);
-            string sql = "Select *from CT_TACGIA where IDCTTacGia='" + ID + "'";
-            if (ADO.ConnectionSQL.Instance.check(sql) == true)
-                return true;
-            return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDCTTacGia, A.IDDauSach, TenDauSach, A.IDTacGia, TenTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia";
-            return sql;
-        }
-
+        #region Auto
         public string AutoFill(string id, string TenBox)
         {
             string str = "";
@@ -99,6 +85,22 @@ namespace QLTV.ADO
             }
 
             return str;
+        }
+        #endregion
+
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDCTTacGia, A.IDDauSach, TenDauSach, A.IDTacGia, TenTacGia FROM CT_TACGIA A, DAUSACH B, TACGIA C WHERE A.IDDauSach = B.IDDauSach AND A.IDTacGia = C.IDTacGia";
+            return sql;
+        }
+
+        public bool checkID(string ID)
+        {
+            SCRIPT.formatCTTacGia.Instance.returnIDCTTacGia(ref ID);
+            string sql = "Select *from CT_TACGIA where IDCTTacGia='" + ID + "'";
+            if (ADO.ConnectionSQL.Instance.check(sql) == true)
+                return true;
+            return false;
         }
     }
 }

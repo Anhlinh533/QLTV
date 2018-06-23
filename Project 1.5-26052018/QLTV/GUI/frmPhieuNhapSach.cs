@@ -43,46 +43,61 @@ namespace QLTV.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
-            SCRIPT.formatPhieuNhapSach.Instance.checkNull(tb_IDPhieuNhap);
-            if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
+            try
             {
-                ADO.adoPhieuNhapSach.Instance.Them(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
-                this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
-                ResetForm();
+                SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+                SCRIPT.formatPhieuNhapSach.Instance.checkNull(tb_IDPhieuNhap);
+                if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
+                {
+                    ADO.adoPhieuNhapSach.Instance.Them(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+                    this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
-            SCRIPT.formatPhieuNhapSach.Instance.checkNull(tb_IDPhieuNhap);
-
-            if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
+            try
             {
-                ADO.adoPhieuNhapSach.Instance.Sua(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
-                this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
-                ResetForm();
+                SCRIPT.formatPhieuNhapSach.Instance.checkPhieuNhapSach(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+                SCRIPT.formatPhieuNhapSach.Instance.checkNull(tb_IDPhieuNhap);
+
+                if (tb_IDPhieuNhap.Text != "" && dtp_NgayNhap.Text != "")
+                {
+                    ADO.adoPhieuNhapSach.Instance.Sua(tb_IDPhieuNhap.Text, dtp_NgayNhap.Text);
+                    this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            if (tb_IDPhieuNhap.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            if (tb_IDPhieuNhap.Text != "")
+            try
             {
-                ADO.adoPhieuNhapSach.Instance.Xoa(tb_IDPhieuNhap.Text);
-                this.pHIEUNHAPSACHTableAdapter.Fill(quanLyThuVienDataSet.PHIEUNHAPSACH);
-                ResetForm();
+                if (tb_IDPhieuNhap.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (tb_IDPhieuNhap.Text != "")
+                {
+                    ADO.adoPhieuNhapSach.Instance.Xoa(tb_IDPhieuNhap.Text);
+                    this.pHIEUNHAPSACHTableAdapter.Fill(quanLyThuVienDataSet.PHIEUNHAPSACH);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
-            ResetForm();
+            try
+            {
+                this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
+                ResetForm();
+            }
+            catch { }
         }
-
 
         #region Form
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
@@ -93,17 +108,20 @@ namespace QLTV.GUI
 
         private void dgv_Them_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            tb_IDPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
-            dtp_NgayNhap.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            try
+            {
+                int numrow;
+                numrow = e.RowIndex;
+                tb_IDPhieuNhap.Text = dgv_Them.Rows[numrow].Cells[0].Value.ToString();
+                dtp_NgayNhap.Text = dgv_Them.Rows[numrow].Cells[1].Value.ToString();
+            }
+            catch { }
         }
 
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
             SCRIPT.useForm.ResetAllControls(groupControl2);
-
         }
         #endregion
 
@@ -114,42 +132,57 @@ namespace QLTV.GUI
 
         private void tb_IDPhieuNhap_TextChanged(object sender, EventArgs e)
         {
-            SCRIPT.useForm.Instance.checkID(ADO.adoPhieuNhapSach.Instance.checkID(tb_IDPhieuNhap.Text.Trim()), label3, tb_IDPhieuNhap, pic_Warning, pic_Ss);
-
+            try
+            {
+                SCRIPT.useForm.Instance.checkID(ADO.adoPhieuNhapSach.Instance.checkID(tb_IDPhieuNhap.Text.Trim()), label3, tb_IDPhieuNhap, pic_Warning, pic_Ss);
+            }
+            catch { }
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string idpn = dgv_Them.Rows[t].Cells[0].Value.ToString();
-            string ngaynhap = dgv_Them.Rows[t].Cells[1].Value.ToString();
+            try
+            {
+                string idpn = dgv_Them.Rows[t].Cells[0].Value.ToString();
+                string ngaynhap = dgv_Them.Rows[t].Cells[1].Value.ToString();
 
-            ADO.adoPhieuNhapSach.Instance.Sua(idpn, ngaynhap);
-            dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUNHAPSACH;
-            this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
+                ADO.adoPhieuNhapSach.Instance.Sua(idpn, ngaynhap);
+                dgv_Them.DataSource = quanLyThuVienDataSet.PHIEUNHAPSACH;
+                this.pHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.PHIEUNHAPSACH);
+            }
+            catch { }
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog sfd = new SaveFileDialog())
+            try
             {
-                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
-                sfd.Title = "Save an Excel File";
-                sfd.ShowDialog();
+                using (SaveFileDialog sfd = new SaveFileDialog())
+                {
+                    sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                    sfd.Title = "Save an Excel File";
+                    sfd.ShowDialog();
 
-                string DuongDan;
-                DuongDan = sfd.FileName;
+                    string DuongDan;
+                    DuongDan = sfd.FileName;
 
-                string sql = ADO.adoPhieuNhapSach.Instance.GetQueryFillDgv();
-                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                    string sql = ADO.adoPhieuNhapSach.Instance.GetQueryFillDgv();
+                    ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                }
             }
+            catch { }
         }
 
         int t = 0;
 
         private void dgv_Them_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_Them.CurrentCell != null)
-                t = dgv_Them.CurrentCell.RowIndex;
+            try
+            {
+                if (dgv_Them.CurrentCell != null)
+                    t = dgv_Them.CurrentCell.RowIndex;
+            }
+            catch { }
         }
     }
 }

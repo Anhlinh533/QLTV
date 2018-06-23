@@ -24,10 +24,12 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Sua(string tb_TuoiMin, string tb_TuoiMax)
         {
             string sqlUpdate = "UPDATE THAMSO SET TuoiMin = '" + tb_TuoiMin + "', TuoiMax = '" + tb_TuoiMax + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
     }
 }

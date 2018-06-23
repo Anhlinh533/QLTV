@@ -66,47 +66,60 @@ namespace QLTV.GUI
         #region Event
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
-            SCRIPT.formatTheDocGia.Instance.checkNull(tb_IDDocGia, tb_HoTenDocGia, tb_DiaChi, tb_Email, cbb_LoaiDocGia);
-            if (tb_IDDocGia.Text != "" && tb_HoTenDocGia.Text != "" && dtp_NgaySinh.Text != "" && tb_DiaChi.Text != "" && tb_Email.Text != "" && cbb_LoaiDocGia.Text != "" && dtp_NgayLapThe.Text != "")
+            try
             {
-                ADO.adoTheDocGia.Instance.Them(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
-                this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
-                ResetForm();
+                SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+                SCRIPT.formatTheDocGia.Instance.checkNull(tb_IDDocGia, tb_HoTenDocGia, tb_DiaChi, tb_Email, cbb_LoaiDocGia);
+                if (tb_IDDocGia.Text != "" && tb_HoTenDocGia.Text != "" && dtp_NgaySinh.Text != "" && tb_DiaChi.Text != "" && tb_Email.Text != "" && cbb_LoaiDocGia.Text != "" && dtp_NgayLapThe.Text != "")
+                {
+                    ADO.adoTheDocGia.Instance.Them(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+                    this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-
-            SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
-            SCRIPT.formatTheDocGia.Instance.checkNull(tb_IDDocGia, tb_HoTenDocGia, tb_DiaChi, tb_Email, cbb_LoaiDocGia);
-            if (tb_IDDocGia.Text != "" && tb_HoTenDocGia.Text != "" && dtp_NgaySinh.Text != "" && tb_DiaChi.Text != "" && tb_Email.Text != "" && cbb_LoaiDocGia.Text != "" && dtp_NgayLapThe.Text != "")
+            try
             {
-                ADO.adoTheDocGia.Instance.Sua(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
-                this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
-                ResetForm();
+                SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+                SCRIPT.formatTheDocGia.Instance.checkNull(tb_IDDocGia, tb_HoTenDocGia, tb_DiaChi, tb_Email, cbb_LoaiDocGia);
+                if (tb_IDDocGia.Text != "" && tb_HoTenDocGia.Text != "" && dtp_NgaySinh.Text != "" && tb_DiaChi.Text != "" && tb_Email.Text != "" && cbb_LoaiDocGia.Text != "" && dtp_NgayLapThe.Text != "")
+                {
+                    ADO.adoTheDocGia.Instance.Sua(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+                    this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            if (tb_IDDocGia.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            if (tb_IDDocGia.Text != "")
+            try
             {
-                ADO.adoTheDocGia.Instance.Xoa(tb_IDDocGia.Text);
-                this.tHEDOCGIATableAdapter.Fill(quanLyThuVienDataSet.THEDOCGIA);
-                ResetForm();
+                if (tb_IDDocGia.Text == "") MessageBox.Show("Vui lòng chọn ID cần xóa.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (tb_IDDocGia.Text != "")
+                {
+                    ADO.adoTheDocGia.Instance.Xoa(tb_IDDocGia.Text);
+                    this.tHEDOCGIATableAdapter.Fill(quanLyThuVienDataSet.THEDOCGIA);
+                    ResetForm();
+                }
             }
+            catch { }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
-            ResetForm();
+            try
+            {
+                this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+                ResetForm();
+            }
+            catch { }
         }
-
-
         #endregion
 
         #region Form
@@ -118,29 +131,31 @@ namespace QLTV.GUI
 
         private void dgv_ThemDG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            tb_IDDocGia.Text = dgv_ThemDG.Rows[numrow].Cells[0].Value.ToString();
-            tb_HoTenDocGia.Text = dgv_ThemDG.Rows[numrow].Cells[1].Value.ToString();
-            dtp_NgaySinh.Text = dgv_ThemDG.Rows[numrow].Cells[2].Value.ToString();
-            tb_DiaChi.Text = dgv_ThemDG.Rows[numrow].Cells[3].Value.ToString();
-            tb_Email.Text = dgv_ThemDG.Rows[numrow].Cells[4].Value.ToString();
-            cbb_LoaiDocGia.Text = dgv_ThemDG.Rows[numrow].Cells[5].Value.ToString();
-            dtp_NgayLapThe.Text = dgv_ThemDG.Rows[numrow].Cells[6].Value.ToString();
+            try
+            {
+                int numrow;
+                numrow = e.RowIndex;
+                tb_IDDocGia.Text = dgv_ThemDG.Rows[numrow].Cells[0].Value.ToString();
+                tb_HoTenDocGia.Text = dgv_ThemDG.Rows[numrow].Cells[1].Value.ToString();
+                dtp_NgaySinh.Text = dgv_ThemDG.Rows[numrow].Cells[2].Value.ToString();
+                tb_DiaChi.Text = dgv_ThemDG.Rows[numrow].Cells[3].Value.ToString();
+                tb_Email.Text = dgv_ThemDG.Rows[numrow].Cells[4].Value.ToString();
+                cbb_LoaiDocGia.Text = dgv_ThemDG.Rows[numrow].Cells[5].Value.ToString();
+                dtp_NgayLapThe.Text = dgv_ThemDG.Rows[numrow].Cells[6].Value.ToString();
+            }
+            catch { }
         }
 
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
             SCRIPT.useForm.ResetAllControls(groupControl2);
-
         }
 
         private void chu_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
-
         #endregion
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -150,46 +165,62 @@ namespace QLTV.GUI
 
         private void tb_IDDocGia_TextChanged(object sender, EventArgs e)
         {
-            SCRIPT.useForm.Instance.checkID(ADO.adoTheDocGia.Instance.checkID(tb_IDDocGia.Text.Trim()), label9, tb_IDDocGia, pic_Warning, pic_Ss);
+            try
+            {
+                SCRIPT.useForm.Instance.checkID(ADO.adoTheDocGia.Instance.checkID(tb_IDDocGia.Text.Trim()), label9, tb_IDDocGia, pic_Warning, pic_Ss);
+            }
+            catch { }
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            string iddg = dgv_ThemDG.Rows[t].Cells[0].Value.ToString();
-            string hoten = dgv_ThemDG.Rows[t].Cells[1].Value.ToString();
-            string ngaysinh = dgv_ThemDG.Rows[t].Cells[2].Value.ToString();
-            string diachi = dgv_ThemDG.Rows[t].Cells[3].Value.ToString();
-            string email = dgv_ThemDG.Rows[t].Cells[4].Value.ToString();
-            string loaidg = dgv_ThemDG.Rows[t].Cells[5].Value.ToString();
-            string ngaylapthe = dgv_ThemDG.Rows[t].Cells[6].Value.ToString();
+            try
+            {
+                string iddg = dgv_ThemDG.Rows[t].Cells[0].Value.ToString();
+                string hoten = dgv_ThemDG.Rows[t].Cells[1].Value.ToString();
+                string ngaysinh = dgv_ThemDG.Rows[t].Cells[2].Value.ToString();
+                string diachi = dgv_ThemDG.Rows[t].Cells[3].Value.ToString();
+                string email = dgv_ThemDG.Rows[t].Cells[4].Value.ToString();
+                string loaidg = dgv_ThemDG.Rows[t].Cells[5].Value.ToString();
+                string ngaylapthe = dgv_ThemDG.Rows[t].Cells[6].Value.ToString();
 
-            ADO.adoTheDocGia.Instance.Sua(iddg, hoten, ngaysinh, diachi, email, loaidg, ngaylapthe);
-            dgv_ThemDG.DataSource = quanLyThuVienDataSet.THEDOCGIA;
-            this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+                ADO.adoTheDocGia.Instance.Sua(iddg, hoten, ngaysinh, diachi, email, loaidg, ngaylapthe);
+                dgv_ThemDG.DataSource = quanLyThuVienDataSet.THEDOCGIA;
+                this.tHEDOCGIATableAdapter.Fill(this.quanLyThuVienDataSet.THEDOCGIA);
+            }
+            catch { }
         }
 
         private void btn_Xuat_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog sfd = new SaveFileDialog())
+            try
             {
-                sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
-                sfd.Title = "Save an Excel File";
-                sfd.ShowDialog();
+                using (SaveFileDialog sfd = new SaveFileDialog())
+                {
+                    sfd.Filter = "xlsx files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                    sfd.Title = "Save an Excel File";
+                    sfd.ShowDialog();
 
-                string DuongDan;
-                DuongDan = sfd.FileName;
+                    string DuongDan;
+                    DuongDan = sfd.FileName;
 
-                string sql = ADO.adoTheDocGia.Instance.GetQueryFillDgv();
-                ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql,DuongDan);
+                    string sql = ADO.adoTheDocGia.Instance.GetQueryFillDgv();
+                    ADO.adoAdmin.Instance.XuatExcel(ref dgv, sql, DuongDan);
+                }
             }
+            catch { }
         }
 
         int t = 0;
 
         private void dgv_ThemDG_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_ThemDG.CurrentCell != null)
-                t = dgv_ThemDG.CurrentCell.RowIndex;
+            try
+            {
+                if (dgv_ThemDG.CurrentCell != null)
+                    t = dgv_ThemDG.CurrentCell.RowIndex;
+            }
+            catch { }
         }
     }
 }

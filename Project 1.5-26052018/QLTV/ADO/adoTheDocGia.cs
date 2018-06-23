@@ -24,7 +24,7 @@ namespace QLTV.ADO
             }
         }
 
-        #region Insert
+        #region Query
         public void Them(string tb_IDDocGia, string tb_HoTenDocGia, string dtp_NgaySinh, string tb_DiaChi, string tb_Email, string cbb_LoaiDocGia, string dtp_NgayLapThe)
         {
             SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
@@ -90,6 +90,12 @@ namespace QLTV.ADO
             return DiaChiDG;
         }
         #endregion
+                
+        public string GetQueryFillDgv()
+        {
+            string sql = "SELECT IDDocGia, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, A.IDLoaiDG, TenLoaiDG, NgayLapThe, NgayHetHan, TongNo FROM THEDOCGIA A, LOAIDOCGIA B WHERE A.IDLoaiDG = B.IDLoaiDG";
+            return sql;
+        }
 
         public bool checkID(string ID)
         {
@@ -98,12 +104,6 @@ namespace QLTV.ADO
             if (ADO.ConnectionSQL.Instance.check(sql) == true)
                 return true;
             return false;
-        }
-
-        public string GetQueryFillDgv()
-        {
-            string sql = "SELECT IDDocGia, HoTenDG, NgaySinhDG, DiaChiDG, EmailDG, A.IDLoaiDG, TenLoaiDG, NgayLapThe, NgayHetHan, TongNo FROM THEDOCGIA A, LOAIDOCGIA B WHERE A.IDLoaiDG = B.IDLoaiDG";
-            return sql;
         }
     }
 }

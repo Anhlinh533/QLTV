@@ -24,10 +24,12 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Sua(string tb_SoNgayMuonMax)
         {
             string sqlUpdate = "UPDATE THAMSO SET SoNgayMuonMax = '" + tb_SoNgayMuonMax + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
     }
 }

@@ -24,10 +24,12 @@ namespace QLTV.ADO
             }
         }
 
+        #region Query
         public void Sua(string tb_TienPhatMoiNgay)
         {
             string sqlUpdate = "UPDATE THAMSO SET TienPhatMoiNgay = '" + tb_TienPhatMoiNgay + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
         }
+        #endregion
     }
 }

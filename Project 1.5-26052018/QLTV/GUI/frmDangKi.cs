@@ -40,35 +40,43 @@ namespace QLTV.GUI
         }
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
-            SCRIPT.formatTheDocGia.Instance.checkNull(tb_IDDocGia, tb_HoTenDocGia, tb_DiaChi, tb_Email, cbb_LoaiDocGia);
-            if (tb_IDDocGia.Text != "" && tb_HoTenDocGia.Text != "" && dtp_NgaySinh.Text != "" && tb_DiaChi.Text != "" && tb_Email.Text != "" && cbb_LoaiDocGia.Text != "" && dtp_NgayLapThe.Text != "")
+            try
             {
-                ADO.adoTheDocGia.Instance.Them(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
-                frmDangKiUser dlg2 = new frmDangKiUser(tb_IDDocGia.Text.Trim());
-                dlg2.ShowDialog();
-                this.Close();
+                SCRIPT.formatTheDocGia.Instance.checkTheDocGia(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+                SCRIPT.formatTheDocGia.Instance.checkNull(tb_IDDocGia, tb_HoTenDocGia, tb_DiaChi, tb_Email, cbb_LoaiDocGia);
+                if (tb_IDDocGia.Text != "" && tb_HoTenDocGia.Text != "" && dtp_NgaySinh.Text != "" && tb_DiaChi.Text != "" && tb_Email.Text != "" && cbb_LoaiDocGia.Text != "" && dtp_NgayLapThe.Text != "")
+                {
+                    ADO.adoTheDocGia.Instance.Them(tb_IDDocGia.Text, tb_HoTenDocGia.Text, dtp_NgaySinh.Text, tb_DiaChi.Text, tb_Email.Text, cbb_LoaiDocGia.Text, dtp_NgayLapThe.Text);
+                    frmDangKiUser dlg2 = new frmDangKiUser(tb_IDDocGia.Text.Trim());
+                    dlg2.ShowDialog();
+                    this.Close();
+                }
             }
+            catch { }
         }
 
         private void tb_IDDocGia_TextChanged(object sender, EventArgs e)
         {
-            if(ADO.adoLogin.Instance.checkIDDocGia(tb_IDDocGia.Text.Trim())==true)
+            try
             {
-                label9.ForeColor = Color.Red;
-                label9.Text = "ID này đã tồn tại!!";
-                label9.Show();
-                pic_Warning.Show();
-                pic_Ss.Hide();
+                if (ADO.adoLogin.Instance.checkIDDocGia(tb_IDDocGia.Text.Trim()) == true)
+                {
+                    label9.ForeColor = Color.Red;
+                    label9.Text = "ID này đã tồn tại!!";
+                    label9.Show();
+                    pic_Warning.Show();
+                    pic_Ss.Hide();
+                }
+                else
+                {
+                    label9.ForeColor = Color.Green;
+                    label9.Text = "Có thể đăng kí ID này!!";
+                    label9.Show();
+                    pic_Ss.Show();
+                    pic_Warning.Hide();
+                }
             }
-            else
-            {
-                label9.ForeColor = Color.Green;
-                label9.Text = "Có thể đăng kí ID này!!";
-                label9.Show();
-                pic_Ss.Show();
-                pic_Warning.Hide();
-            }
+            catch { }
         }
     }
 }

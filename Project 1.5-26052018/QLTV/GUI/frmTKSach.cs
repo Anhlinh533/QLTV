@@ -17,13 +17,16 @@ namespace QLTV.GUI
         {
             InitializeComponent();
         }
+
         private string UserName;
         private string Password;
+
         public frmTKSach(string userName, string password) : this()
         {
             UserName = userName;
             Password = password;
         }
+
         private void frmTKSach_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanLyThuVienDataSet.CUONSACH' table. You can move, or remove it, as needed.
@@ -44,108 +47,117 @@ namespace QLTV.GUI
 
         private void btn_TKSach_Click(object sender, EventArgs e)
         {
-            if (rdb_GiaTien.Checked == true && tb_GiaTien.Text != "")
+            try
             {
-                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKGiaTien(tb_GiaTien.Text.Trim()));
-                //ResetForm();
+                if (rdb_GiaTien.Checked == true && tb_GiaTien.Text != "")
+                {
+                    dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKGiaTien(tb_GiaTien.Text.Trim()));
+                    //ResetForm();
+                }
+                else if (rdb_IDDauSach.Checked == true && tb_IDDauSach.Text != "")
+                {
+                    dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDDauSach(tb_IDDauSach.Text.Trim()));
+                    //ResetForm();
+                }
+                else if (rdb_IDSach.Checked == true && tb_IDSach.Text != "")
+                {
+                    dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDSach(tb_IDSach.Text.Trim()));
+                    //ResetForm();
+                }
+                else if (rdb_NamXuatBan.Checked == true && tb_NamXuatBan.Text != "")
+                {
+                    dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKNamXB(tb_NamXuatBan.Text.Trim()));
+                    //ResetForm();
+                }
+                else if (rdb_NhaXuatBan.Checked == true && tb_NhaXuatBan.Text != "")
+                {
+                    dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKNhaXB(tb_NhaXuatBan.Text.Trim()));
+                    //ResetForm();
+                }
+                else if (rdb_SoLuongTon.Checked == true && tb_SoLuongTon.Text != "")
+                {
+                    dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKSoLuongTon(tb_SoLuongTon.Text.Trim()));
+                    //ResetForm();
+                }
+                else
+                if (rdb_GiaTien.Checked == true && tb_GiaTien.Text == "")
+                {
+                    MessageBox.Show("Vui lòng điền giá tiền cần tìm!!");
+                    tb_GiaTien.Focus();
+                }
+                else if (rdb_IDDauSach.Checked == true && tb_IDDauSach.Text == "")
+                {
+                    MessageBox.Show("Vui lòng điền ID đầu sách cần tìm!!");
+                    tb_IDDauSach.Focus();
+                }
+                else if (rdb_IDSach.Checked == true && tb_IDSach.Text == "")
+                {
+                    MessageBox.Show("Vui lòng điền ID sách cần tìm!!");
+                    tb_IDSach.Focus();
+                }
+                else if (rdb_NhaXuatBan.Checked == true && tb_NhaXuatBan.Text == "")
+                {
+                    MessageBox.Show("Vui lòng điền nhà xuất bản cần tìm!!");
+                    tb_NhaXuatBan.Focus();
+                }
+                else if (rdb_NamXuatBan.Checked == true && tb_NamXuatBan.Text == "")
+                {
+                    MessageBox.Show("Vui lòng điền năm xuất bản cần tìm!!");
+                    tb_NamXuatBan.Focus();
+                }
+                else if (rdb_SoLuongTon.Checked == true && tb_SoLuongTon.Text == "")
+                {
+                    MessageBox.Show("Vui lòng điền số lượng tồn cần tìm!!");
+                    tb_SoLuongTon.Focus();
+                }
             }
-            else if (rdb_IDDauSach.Checked == true && tb_IDDauSach.Text != "")
-            {
-                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDDauSach(tb_IDDauSach.Text.Trim()));
-                //ResetForm();
-            }
-            else if (rdb_IDSach.Checked == true && tb_IDSach.Text != "")
-            {
-                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDSach(tb_IDSach.Text.Trim()));
-                //ResetForm();
-            }
-            else if (rdb_NamXuatBan.Checked == true && tb_NamXuatBan.Text != "")
-            {
-                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKNamXB(tb_NamXuatBan.Text.Trim()));
-                //ResetForm();
-            }
-            else if (rdb_NhaXuatBan.Checked == true && tb_NhaXuatBan.Text != "")
-            {
-                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKNhaXB(tb_NhaXuatBan.Text.Trim()));
-                //ResetForm();
-            }
-            else if (rdb_SoLuongTon.Checked == true && tb_SoLuongTon.Text != "")
-            {
-                dgv_TKSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKSoLuongTon(tb_SoLuongTon.Text.Trim()));
-                //ResetForm();
-            }
-            else
-            if (rdb_GiaTien.Checked == true && tb_GiaTien.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền giá tiền cần tìm!!");
-                tb_GiaTien.Focus();
-            }
-            else if (rdb_IDDauSach.Checked == true && tb_IDDauSach.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền ID đầu sách cần tìm!!");
-                tb_IDDauSach.Focus();
-            }
-            else if (rdb_IDSach.Checked == true && tb_IDSach.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền ID sách cần tìm!!");
-                tb_IDSach.Focus();
-            }
-            else if (rdb_NhaXuatBan.Checked == true && tb_NhaXuatBan.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền nhà xuất bản cần tìm!!");
-                tb_NhaXuatBan.Focus();
-            }
-            else if (rdb_NamXuatBan.Checked == true && tb_NamXuatBan.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền năm xuất bản cần tìm!!");
-                tb_NamXuatBan.Focus();
-            }
-            else if (rdb_SoLuongTon.Checked == true && tb_SoLuongTon.Text == "")
-            {
-                MessageBox.Show("Vui lòng điền số lượng tồn cần tìm!!");
-                tb_SoLuongTon.Focus();
-            }
-
-
-
+            catch { }
         }
 
         private void btn_TKCuonSach_Click(object sender, EventArgs e)
         {
-            if (rdb_IDCuonSach.Checked == true && tb_IDCuonSach.Text != "")
+            try
             {
-                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKCuonSach(tb_IDCuonSach.Text));
-                //ResetForm();
-            }
-            else
+                if (rdb_IDCuonSach.Checked == true && tb_IDCuonSach.Text != "")
+                {
+                    dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKCuonSach(tb_IDCuonSach.Text));
+                    //ResetForm();
+                }
+                else
                 if (rdb_IDSachCS.Checked == true && tb_IDSachCS.Text != "")
-            {
-                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDSachCS(tb_IDSachCS.Text));
-                //ResetForm();
-            }
-            else
+                {
+                    dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKIDSachCS(tb_IDSachCS.Text));
+                    //ResetForm();
+                }
+                else
                     if (rdb_TinhTrang.Checked == true && cbb_TinhTrang.Text != "")
-            {
-                dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKTinhTrang(cbb_TinhTrang.Text));
-                //ResetForm();
+                {
+                    dgv_TKCuonSach.DataSource = ADO.ConnectionSQL.Instance.ExecuteQuery(ADO.adoSach.Instance.TKTinhTrang(cbb_TinhTrang.Text));
+                    //ResetForm();
+                }
             }
+            catch { }
         }
+
         #region Form
         public void ResetForm()
         {
             SCRIPT.useForm.ResetAllControls(groupControl1);
             SCRIPT.useForm.ResetAllControls(groupControl3);
         }
+
         public void ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
         private void chu_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
         #endregion
+
         #region check on click
         private void tb_IDSach_Click(object sender, EventArgs e)
         {
@@ -215,24 +227,32 @@ namespace QLTV.GUI
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
-            dgv_TKSach.DataSource = quanLyThuVienDataSet.SACH;
+            try
+            {
+                dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
+                dgv_TKSach.DataSource = quanLyThuVienDataSet.SACH;
 
-            this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
-            this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
+                this.cUONSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CUONSACH);
+                this.sACHTableAdapter.Fill(this.quanLyThuVienDataSet.SACH);
+            }
+            catch { }
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
-        {            
-            string ids = dgv_TKSach.Rows[t].Cells[0].Value.ToString();
-            string idds = dgv_TKSach.Rows[t].Cells[1].Value.ToString();
-            string idcttg = dgv_TKSach.Rows[t].Cells[2].Value.ToString();
-            string nhaxb = dgv_TKSach.Rows[t].Cells[3].Value.ToString();
-            string namxb = dgv_TKSach.Rows[t].Cells[4].Value.ToString();
-            string soluongton = dgv_TKSach.Rows[t].Cells[5].Value.ToString();
-            string giatien = dgv_TKSach.Rows[t].Cells[6].Value.ToString();
+        {
+            try
+            {
+                string ids = dgv_TKSach.Rows[t].Cells[0].Value.ToString();
+                string idds = dgv_TKSach.Rows[t].Cells[1].Value.ToString();
+                string idcttg = dgv_TKSach.Rows[t].Cells[2].Value.ToString();
+                string nhaxb = dgv_TKSach.Rows[t].Cells[3].Value.ToString();
+                string namxb = dgv_TKSach.Rows[t].Cells[4].Value.ToString();
+                string soluongton = dgv_TKSach.Rows[t].Cells[5].Value.ToString();
+                string giatien = dgv_TKSach.Rows[t].Cells[6].Value.ToString();
 
-            ADO.adoSach.Instance.Sua(ids, idds, idcttg, nhaxb, namxb, soluongton, giatien);            
+                ADO.adoSach.Instance.Sua(ids, idds, idcttg, nhaxb, namxb, soluongton, giatien);
+            }
+            catch { }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -242,38 +262,58 @@ namespace QLTV.GUI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            string ids = dgv_TKSach.CurrentRow.Cells[0].Value.ToString();
-            ADO.adoSach.Instance.Xoa(ids);
-            dgv_TKSach.DataSource = quanLyThuVienDataSet.SACH;
+            try
+            {
+                string ids = dgv_TKSach.CurrentRow.Cells[0].Value.ToString();
+                ADO.adoSach.Instance.Xoa(ids);
+                dgv_TKSach.DataSource = quanLyThuVienDataSet.SACH;
+            }
+            catch { }
         }
 
         private void btn_LuuCS_Click(object sender, EventArgs e)
         {
-            string idcs = dgv_TKCuonSach.Rows[t].Cells[0].Value.ToString();
-            string ids = dgv_TKCuonSach.Rows[t].Cells[1].Value.ToString();
+            try
+            {
+                string idcs = dgv_TKCuonSach.Rows[t].Cells[0].Value.ToString();
+                string ids = dgv_TKCuonSach.Rows[t].Cells[1].Value.ToString();
 
-            ADO.adoCuonSach.Instance.Sua(idcs, ids);            
+                ADO.adoCuonSach.Instance.Sua(idcs, ids);
+            }
+            catch { }
         }
 
         private void btn_XoaCS_Click(object sender, EventArgs e)
         {
-            string idcs = dgv_TKCuonSach.CurrentRow.Cells[0].Value.ToString();
-            ADO.adoCuonSach.Instance.Xoa(idcs);
-            dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
+            try
+            {
+                string idcs = dgv_TKCuonSach.CurrentRow.Cells[0].Value.ToString();
+                ADO.adoCuonSach.Instance.Xoa(idcs);
+                dgv_TKCuonSach.DataSource = quanLyThuVienDataSet.CUONSACH;
+            }
+            catch { }
         }
 
         int t = 0;
 
         private void dgv_TKSach_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_TKSach.CurrentCell != null)
-                t = dgv_TKSach.CurrentCell.RowIndex;
+            try
+            {
+                if (dgv_TKSach.CurrentCell != null)
+                    t = dgv_TKSach.CurrentCell.RowIndex;
+            }
+            catch { }
         }
 
         private void dgv_TKCuonSach_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_TKCuonSach.CurrentCell != null)
-                t = dgv_TKCuonSach.CurrentCell.RowIndex;
+            try
+            {
+                if (dgv_TKCuonSach.CurrentCell != null)
+                    t = dgv_TKCuonSach.CurrentCell.RowIndex;
+            }
+            catch { }
         }
     }
 }
