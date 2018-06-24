@@ -95,9 +95,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox1.Location = new System.Drawing.Point(10, 86);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(599, 101);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
@@ -108,7 +108,7 @@
             this.btn_TaoBaoCao.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btn_TaoBaoCao.Appearance.Options.UseFont = true;
             this.btn_TaoBaoCao.Location = new System.Drawing.Point(450, 44);
-            this.btn_TaoBaoCao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_TaoBaoCao.Margin = new System.Windows.Forms.Padding(2);
             this.btn_TaoBaoCao.Name = "btn_TaoBaoCao";
             this.btn_TaoBaoCao.Size = new System.Drawing.Size(93, 30);
             this.btn_TaoBaoCao.TabIndex = 2;
@@ -119,7 +119,7 @@
             // 
             this.dtp_NgayThangNam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayThangNam.Location = new System.Drawing.Point(224, 44);
-            this.dtp_NgayThangNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp_NgayThangNam.Margin = new System.Windows.Forms.Padding(2);
             this.dtp_NgayThangNam.Name = "dtp_NgayThangNam";
             this.dtp_NgayThangNam.Size = new System.Drawing.Size(174, 32);
             this.dtp_NgayThangNam.TabIndex = 1;
@@ -142,9 +142,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox2.Location = new System.Drawing.Point(8, 191);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(675, 554);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
@@ -163,11 +163,12 @@
             this.dataGridView1.DataSource = this.bCSACHTRATREBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(671, 525);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // iDBCSachTreDataGridViewTextBoxColumn
             // 
@@ -226,9 +227,9 @@
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupBox3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.groupBox3.Location = new System.Drawing.Point(687, 86);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(321, 425);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
@@ -238,7 +239,7 @@
             // 
             this.rpv_SachTraTre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rpv_SachTraTre.Location = new System.Drawing.Point(2, 27);
-            this.rpv_SachTraTre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rpv_SachTraTre.Margin = new System.Windows.Forms.Padding(2);
             this.rpv_SachTraTre.Name = "rpv_SachTraTre";
             this.rpv_SachTraTre.ServerReport.BearerToken = null;
             this.rpv_SachTraTre.Size = new System.Drawing.Size(317, 396);
@@ -257,7 +258,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmReportSachTraTre";
             this.Text = "frmReportSachTraTre";
             this.Load += new System.EventHandler(this.frmReportSachTraTre_Load);

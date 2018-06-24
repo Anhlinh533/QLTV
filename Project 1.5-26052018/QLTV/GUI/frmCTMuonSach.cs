@@ -102,9 +102,15 @@ namespace QLTV.GUI
 
                 if (tb_IDCTPhieuMuon.Text != "" && cbb_IDCuonSach.Text != "" && cbb_IDPhieuMuon.Text != "")
                 {
-                    ADO.adoCTMuonSach.Instance.Sua(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, cbb_IDCuonSach.Text);
-                    this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
-                    ResetForm();
+                    string s = ADO.adoCTMuonSach.Instance.GetIDCuonSach(cbb_IDCuonSach.Text, cbb_TenTacGia.Text);
+                    if (s == null)
+                        MessageBox.Show("Đã hết sách " + cbb_IDCuonSach.Text);
+                    else
+                    {
+                        ADO.adoCTMuonSach.Instance.Sua(tb_IDCTPhieuMuon.Text, cbb_IDPhieuMuon.Text, s);
+                        this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
+                        ResetForm();
+                    }                    
                 }
             }
             catch { }

@@ -33,7 +33,7 @@ namespace QLTV.SCRIPT
         {
             if (IDDauSach == "") MessageBox.Show("Không được để trống ID đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (TenDauSach == "") MessageBox.Show("Không được để trống tên đầu sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (IDTheLoaiSach == "") MessageBox.Show("Không được để trống ID thể loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDTheLoaiSach == "") MessageBox.Show("Không được để trống tên thể loại sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         public void checkNull(Control IDDauSach,Control TenDauSach,Control IDTheLoaiSach)
         {

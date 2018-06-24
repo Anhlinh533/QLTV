@@ -44,6 +44,16 @@ namespace QLTV.ADO
 
         public void Sua(string tb_IDCTTacGia, string cbb_IDDauSach, string cbb_IDTacGia)
         {
+            cbb_IDDauSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + cbb_IDDauSach + "'");
+            cbb_IDTacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDTacGia FROM TACGIA WHERE TenTacGia = N'" + cbb_IDTacGia + "'");
+            
+            //SCRIPT.formatCTTacGia.Instance.returnIDCTTacGia(ref tb_IDCTTacGia);
+            string sqlUpdate = "UPDATE CT_TACGIA SET IDDauSach = '" + cbb_IDDauSach + "', IDTacGia = '" + cbb_IDTacGia + "' WHERE IDCTTacGia = '" + tb_IDCTTacGia + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
+
+        public void SuaLuu(string tb_IDCTTacGia, string cbb_IDDauSach, string cbb_IDTacGia)
+        {
             //SCRIPT.formatCTTacGia.Instance.returnIDCTTacGia(ref tb_IDCTTacGia);
             string sqlUpdate = "UPDATE CT_TACGIA SET IDDauSach = '" + cbb_IDDauSach + "', IDTacGia = '" + cbb_IDTacGia + "' WHERE IDCTTacGia = '" + tb_IDCTTacGia + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlUpdate);

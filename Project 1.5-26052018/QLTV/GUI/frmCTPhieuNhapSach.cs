@@ -56,8 +56,8 @@ namespace QLTV.GUI
         {
             try
             {
-                SCRIPT.formatCTPhieuNhapSach.Instance.checkCTPhieuNhapSach(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
-                SCRIPT.formatCTPhieuNhapSach.Instance.checkNull(tb_IDCTPhieuNhap, cbb_IDPhieuNhap, cbb_IDSach, tb_SoLuong, tb_DonGia);
+                SCRIPT.formatCTPhieuNhapSach.Instance.checkCTPhieuNhapSach(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, cbb_TacGia.Text, cbb_NhaXB.Text, cbb_NamXB.Text, tb_SoLuong.Text, tb_DonGia.Text);
+                SCRIPT.formatCTPhieuNhapSach.Instance.checkNull(tb_IDCTPhieuNhap, cbb_IDPhieuNhap, cbb_IDSach, cbb_TacGia, cbb_NhaXB, cbb_NamXB, tb_SoLuong, tb_DonGia);
                 if (tb_DonGia.Text != "" && tb_IDCTPhieuNhap.Text != "" && tb_SoLuong.Text != "" && cbb_IDPhieuNhap.Text != "" && cbb_IDSach.Text != "")
                 {
                     ADO.adoCTPhieuNhapSach.Instance.Them(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, cbb_TacGia.Text, cbb_NamXB.Text, tb_SoLuong.Text, tb_DonGia.Text);
@@ -72,14 +72,13 @@ namespace QLTV.GUI
         {
            try
             {
-                SCRIPT.formatCTPhieuNhapSach.Instance.checkCTPhieuNhapSach(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
-                SCRIPT.formatCTPhieuNhapSach.Instance.checkNull(tb_IDCTPhieuNhap, cbb_IDPhieuNhap, cbb_IDSach, tb_SoLuong, tb_DonGia);
+                SCRIPT.formatCTPhieuNhapSach.Instance.checkCTPhieuNhapSach(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, cbb_TacGia.Text, cbb_NhaXB.Text, cbb_NamXB.Text, tb_SoLuong.Text, tb_DonGia.Text);
+                SCRIPT.formatCTPhieuNhapSach.Instance.checkNull(tb_IDCTPhieuNhap, cbb_IDPhieuNhap, cbb_IDSach, cbb_TacGia, cbb_NhaXB, cbb_NamXB, tb_SoLuong, tb_DonGia);
 
                 if (tb_DonGia.Text != "" && tb_IDCTPhieuNhap.Text != "" && tb_SoLuong.Text != "" && cbb_IDPhieuNhap.Text != "" && cbb_IDSach.Text != "")
                 {
-                    ADO.adoCTPhieuNhapSach.Instance.Sua(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, tb_SoLuong.Text, tb_DonGia.Text);
+                    ADO.adoCTPhieuNhapSach.Instance.Sua(tb_IDCTPhieuNhap.Text, cbb_IDPhieuNhap.Text, cbb_IDSach.Text, cbb_TacGia.Text, cbb_NamXB.Text, tb_SoLuong.Text, tb_DonGia.Text);
                     this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
-
                 }
             }
             catch { }
@@ -169,7 +168,7 @@ namespace QLTV.GUI
                 string soluong = dgv_Them.Rows[t].Cells[3].Value.ToString();
                 string dongia = dgv_Them.Rows[t].Cells[4].Value.ToString();
 
-                ADO.adoCTPhieuNhapSach.Instance.Sua(idctpn, idpn, ids, soluong, dongia);
+                ADO.adoCTPhieuNhapSach.Instance.SuaLuu(idctpn, idpn, ids, soluong, dongia);
                 dgv_Them.DataSource = quanLyThuVienDataSet.CT_PHIEUNHAPSACH;
                 this.cT_PHIEUNHAPSACHTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUNHAPSACH);
             }

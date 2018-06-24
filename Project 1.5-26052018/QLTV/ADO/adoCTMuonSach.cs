@@ -37,7 +37,7 @@ namespace QLTV.ADO
             //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
             string sqlDelete = "DELETE FROM CT_PHIEUMUON WHERE IDCTPhieuMuon ='" + tb_IDCTPhieuMuon + "' AND IDCuonSach ='" + cbb_IDCuonSach + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
-        }
+        }        
 
         public void Sua(string tb_IDCTPhieuMuon, string cbb_IDPhieuMuon, string cbb_IDCuonSach)
         {

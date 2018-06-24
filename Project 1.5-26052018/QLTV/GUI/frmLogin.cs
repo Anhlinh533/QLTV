@@ -45,7 +45,7 @@ namespace QLTV.GUI
         {
             if(ADO.ConnectionSQL.OpenConnection()==false)
             {
-                    ReConnection();           
+                ReConnection();           
             }
         }
 

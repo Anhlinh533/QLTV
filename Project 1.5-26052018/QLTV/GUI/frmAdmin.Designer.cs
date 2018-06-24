@@ -125,13 +125,14 @@
             this.navigationPane1.Controls.Add(this.navigationPage2);
             this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationPane1.Location = new System.Drawing.Point(0, 0);
+            this.navigationPane1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.navigationPane1.Name = "navigationPane1";
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navigationPage1,
             this.navigationPage2});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(1370, 748);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(913, 512);
             this.navigationPane1.SelectedPage = this.navigationPage1;
-            this.navigationPane1.Size = new System.Drawing.Size(1370, 748);
+            this.navigationPane1.Size = new System.Drawing.Size(913, 512);
             this.navigationPane1.TabIndex = 0;
             this.navigationPane1.Text = "navigationPane1";
             // 
@@ -141,8 +142,9 @@
             this.navigationPage1.Controls.Add(this.groupControl4);
             this.navigationPage1.Controls.Add(this.groupControl3);
             this.navigationPage1.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_administrator_male_48;
+            this.navigationPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(1272, 668);
+            this.navigationPage1.Size = new System.Drawing.Size(831, 452);
             // 
             // groupControl4
             // 
@@ -154,8 +156,9 @@
             this.groupControl4.AppearanceCaption.Options.UseFont = true;
             this.groupControl4.Controls.Add(this.groupControl5);
             this.groupControl4.Location = new System.Drawing.Point(0, 0);
+            this.groupControl4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(486, 705);
+            this.groupControl4.Size = new System.Drawing.Size(324, 463);
             this.groupControl4.TabIndex = 5;
             this.groupControl4.Text = "Thông tin admin";
             // 
@@ -178,48 +181,54 @@
             this.groupControl5.Controls.Add(this.btn_Them);
             this.groupControl5.Controls.Add(this.tb_IDAdmin);
             this.groupControl5.Controls.Add(this.label4);
-            this.groupControl5.Location = new System.Drawing.Point(9, 0);
+            this.groupControl5.Location = new System.Drawing.Point(6, 0);
+            this.groupControl5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(468, 705);
+            this.groupControl5.Size = new System.Drawing.Size(312, 463);
             this.groupControl5.TabIndex = 5;
             this.groupControl5.Text = "Thông tin admin";
             // 
             // dtp_NgaySinh
             // 
             this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(168, 213);
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(112, 146);
+            this.dtp_NgaySinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(224, 44);
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(151, 32);
             this.dtp_NgaySinh.TabIndex = 3;
             // 
             // tb_Email
             // 
-            this.tb_Email.Location = new System.Drawing.Point(168, 343);
+            this.tb_Email.Location = new System.Drawing.Point(112, 235);
+            this.tb_Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_Email.Name = "tb_Email";
-            this.tb_Email.Size = new System.Drawing.Size(224, 44);
+            this.tb_Email.Size = new System.Drawing.Size(151, 32);
             this.tb_Email.TabIndex = 5;
             // 
             // tb_DiaChi
             // 
-            this.tb_DiaChi.Location = new System.Drawing.Point(168, 281);
+            this.tb_DiaChi.Location = new System.Drawing.Point(112, 192);
+            this.tb_DiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_DiaChi.Name = "tb_DiaChi";
-            this.tb_DiaChi.Size = new System.Drawing.Size(224, 44);
+            this.tb_DiaChi.Size = new System.Drawing.Size(151, 32);
             this.tb_DiaChi.TabIndex = 4;
             // 
             // tb_HoTen
             // 
-            this.tb_HoTen.Location = new System.Drawing.Point(168, 148);
+            this.tb_HoTen.Location = new System.Drawing.Point(112, 101);
+            this.tb_HoTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_HoTen.Name = "tb_HoTen";
-            this.tb_HoTen.Size = new System.Drawing.Size(224, 44);
+            this.tb_HoTen.Size = new System.Drawing.Size(151, 32);
             this.tb_HoTen.TabIndex = 2;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(4, 346);
+            this.label10.Location = new System.Drawing.Point(3, 237);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 36);
+            this.label10.Size = new System.Drawing.Size(66, 24);
             this.label10.TabIndex = 33;
             this.label10.Text = "Email:";
             // 
@@ -227,9 +236,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(4, 286);
+            this.label5.Location = new System.Drawing.Point(3, 196);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 36);
+            this.label5.Size = new System.Drawing.Size(78, 24);
             this.label5.TabIndex = 32;
             this.label5.Text = "Địa chỉ:";
             // 
@@ -237,9 +247,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(4, 218);
+            this.label3.Location = new System.Drawing.Point(3, 149);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 36);
+            this.label3.Size = new System.Drawing.Size(104, 24);
             this.label3.TabIndex = 31;
             this.label3.Text = "Ngày sinh:";
             // 
@@ -247,9 +258,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(4, 151);
+            this.label2.Location = new System.Drawing.Point(3, 103);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 36);
+            this.label2.Size = new System.Drawing.Size(77, 24);
             this.label2.TabIndex = 30;
             this.label2.Text = "Họ tên:";
             // 
@@ -258,19 +270,21 @@
             this.btn_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btn_Them.Appearance.Options.UseFont = true;
             this.btn_Them.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.btn_Them.Location = new System.Drawing.Point(168, 433);
+            this.btn_Them.Location = new System.Drawing.Point(112, 296);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(158, 75);
+            this.btn_Them.Size = new System.Drawing.Size(105, 51);
             this.btn_Them.TabIndex = 29;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // tb_IDAdmin
             // 
-            this.tb_IDAdmin.Location = new System.Drawing.Point(168, 83);
+            this.tb_IDAdmin.Location = new System.Drawing.Point(112, 57);
+            this.tb_IDAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_IDAdmin.MaxLength = 3;
             this.tb_IDAdmin.Name = "tb_IDAdmin";
-            this.tb_IDAdmin.Size = new System.Drawing.Size(224, 44);
+            this.tb_IDAdmin.Size = new System.Drawing.Size(151, 32);
             this.tb_IDAdmin.TabIndex = 1;
             this.tb_IDAdmin.TextChanged += new System.EventHandler(this.tb_IDAdmin_TextChanged);
             // 
@@ -278,9 +292,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(4, 88);
+            this.label4.Location = new System.Drawing.Point(3, 60);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 36);
+            this.label4.Size = new System.Drawing.Size(100, 24);
             this.label4.TabIndex = 19;
             this.label4.Text = "ID Admin:";
             // 
@@ -295,9 +310,10 @@
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.Controls.Add(this.bindingNavigator1);
             this.groupControl3.Controls.Add(this.dgv_CTAdmin);
-            this.groupControl3.Location = new System.Drawing.Point(492, 0);
+            this.groupControl3.Location = new System.Drawing.Point(328, 0);
+            this.groupControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(814, 705);
+            this.groupControl3.Size = new System.Drawing.Size(515, 463);
             this.groupControl3.TabIndex = 4;
             this.groupControl3.Text = "Dữ liệu admin";
             // 
@@ -320,15 +336,14 @@
             this.btn_Reset,
             this.toolStripSeparator7,
             this.btn_Exit});
-            this.bindingNavigator1.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator1.Location = new System.Drawing.Point(2, 31);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
             this.bindingNavigator1.MoveNextItem = null;
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(810, 35);
+            this.bindingNavigator1.Size = new System.Drawing.Size(511, 31);
             this.bindingNavigator1.TabIndex = 14;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -339,14 +354,14 @@
             this.btn_Luu.Image = global::QLTV.Properties.Resources.diskette;
             this.btn_Luu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(72, 32);
+            this.btn_Luu.Size = new System.Drawing.Size(60, 28);
             this.btn_Luu.Text = "Lưu";
             this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Sua
             // 
@@ -354,14 +369,14 @@
             this.btn_Sua.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
             this.btn_Sua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(159, 32);
+            this.btn_Sua.Size = new System.Drawing.Size(120, 28);
             this.btn_Sua.Text = "Sửa thông tin";
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Xoa
             // 
@@ -369,14 +384,14 @@
             this.btn_Xoa.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
             this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(74, 32);
+            this.btn_Xoa.Size = new System.Drawing.Size(60, 28);
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Xuat
             // 
@@ -384,14 +399,14 @@
             this.btn_Xuat.Image = global::QLTV.Properties.Resources.icons8_export_csv_40;
             this.btn_Xuat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Xuat.Name = "btn_Xuat";
-            this.btn_Xuat.Size = new System.Drawing.Size(120, 32);
+            this.btn_Xuat.Size = new System.Drawing.Size(94, 28);
             this.btn_Xuat.Text = "Xuất CSV";
             this.btn_Xuat.Click += new System.EventHandler(this.btn_Xuat_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Reset
             // 
@@ -399,14 +414,14 @@
             this.btn_Reset.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
             this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(151, 32);
+            this.btn_Reset.Size = new System.Drawing.Size(115, 28);
             this.btn_Reset.Text = "Reset dữ liệu";
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Exit
             // 
@@ -414,7 +429,7 @@
             this.btn_Exit.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
             this.btn_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(90, 32);
+            this.btn_Exit.Size = new System.Drawing.Size(72, 28);
             this.btn_Exit.Text = "Thoát";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
@@ -432,10 +447,11 @@
             this.diaChiAdminDataGridViewTextBoxColumn,
             this.emailAdminDataGridViewTextBoxColumn});
             this.dgv_CTAdmin.DataSource = this.cTUSERADMINBindingSource;
-            this.dgv_CTAdmin.Location = new System.Drawing.Point(2, 99);
+            this.dgv_CTAdmin.Location = new System.Drawing.Point(1, 68);
+            this.dgv_CTAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_CTAdmin.Name = "dgv_CTAdmin";
             this.dgv_CTAdmin.RowTemplate.Height = 28;
-            this.dgv_CTAdmin.Size = new System.Drawing.Size(808, 604);
+            this.dgv_CTAdmin.Size = new System.Drawing.Size(511, 394);
             this.dgv_CTAdmin.TabIndex = 6;
             this.dgv_CTAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CTAdmin_CellClick);
             this.dgv_CTAdmin.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CTAdmin_CellValueChanged);
@@ -446,7 +462,7 @@
             this.iDAdminDataGridViewTextBoxColumn1.DataPropertyName = "IDAdmin";
             this.iDAdminDataGridViewTextBoxColumn1.HeaderText = "ID Admin";
             this.iDAdminDataGridViewTextBoxColumn1.Name = "iDAdminDataGridViewTextBoxColumn1";
-            this.iDAdminDataGridViewTextBoxColumn1.Width = 175;
+            this.iDAdminDataGridViewTextBoxColumn1.Width = 118;
             // 
             // hoTenAdminDataGridViewTextBoxColumn
             // 
@@ -454,7 +470,7 @@
             this.hoTenAdminDataGridViewTextBoxColumn.DataPropertyName = "HoTenAdmin";
             this.hoTenAdminDataGridViewTextBoxColumn.HeaderText = "Họ tên";
             this.hoTenAdminDataGridViewTextBoxColumn.Name = "hoTenAdminDataGridViewTextBoxColumn";
-            this.hoTenAdminDataGridViewTextBoxColumn.Width = 139;
+            this.hoTenAdminDataGridViewTextBoxColumn.Width = 95;
             // 
             // ngaySinhAdminDataGridViewTextBoxColumn
             // 
@@ -462,7 +478,7 @@
             this.ngaySinhAdminDataGridViewTextBoxColumn.DataPropertyName = "NgaySinhAdmin";
             this.ngaySinhAdminDataGridViewTextBoxColumn.HeaderText = "Ngày sinh";
             this.ngaySinhAdminDataGridViewTextBoxColumn.Name = "ngaySinhAdminDataGridViewTextBoxColumn";
-            this.ngaySinhAdminDataGridViewTextBoxColumn.Width = 182;
+            this.ngaySinhAdminDataGridViewTextBoxColumn.Width = 122;
             // 
             // diaChiAdminDataGridViewTextBoxColumn
             // 
@@ -470,7 +486,7 @@
             this.diaChiAdminDataGridViewTextBoxColumn.DataPropertyName = "DiaChiAdmin";
             this.diaChiAdminDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
             this.diaChiAdminDataGridViewTextBoxColumn.Name = "diaChiAdminDataGridViewTextBoxColumn";
-            this.diaChiAdminDataGridViewTextBoxColumn.Width = 142;
+            this.diaChiAdminDataGridViewTextBoxColumn.Width = 96;
             // 
             // emailAdminDataGridViewTextBoxColumn
             // 
@@ -478,7 +494,7 @@
             this.emailAdminDataGridViewTextBoxColumn.DataPropertyName = "EmailAdmin";
             this.emailAdminDataGridViewTextBoxColumn.HeaderText = "Email";
             this.emailAdminDataGridViewTextBoxColumn.Name = "emailAdminDataGridViewTextBoxColumn";
-            this.emailAdminDataGridViewTextBoxColumn.Width = 123;
+            this.emailAdminDataGridViewTextBoxColumn.Width = 84;
             // 
             // cTUSERADMINBindingSource
             // 
@@ -496,8 +512,9 @@
             this.navigationPage2.Controls.Add(this.groupControl1);
             this.navigationPage2.Controls.Add(this.groupControl2);
             this.navigationPage2.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_lock_40;
+            this.navigationPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(1246, 661);
+            this.navigationPage2.Size = new System.Drawing.Size(831, 452);
             // 
             // groupControl1
             // 
@@ -515,8 +532,9 @@
             this.groupControl1.Controls.Add(this.label8);
             this.groupControl1.Controls.Add(this.label9);
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(468, 661);
+            this.groupControl1.Size = new System.Drawing.Size(312, 452);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Thông tin admin";
             // 
@@ -525,9 +543,10 @@
             this.btn_ThemAdmin.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.btn_ThemAdmin.Appearance.Options.UseFont = true;
             this.btn_ThemAdmin.ImageOptions.Image = global::QLTV.Properties.Resources.icons8_ok_40;
-            this.btn_ThemAdmin.Location = new System.Drawing.Point(180, 322);
+            this.btn_ThemAdmin.Location = new System.Drawing.Point(120, 220);
+            this.btn_ThemAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ThemAdmin.Name = "btn_ThemAdmin";
-            this.btn_ThemAdmin.Size = new System.Drawing.Size(158, 75);
+            this.btn_ThemAdmin.Size = new System.Drawing.Size(105, 51);
             this.btn_ThemAdmin.TabIndex = 29;
             this.btn_ThemAdmin.Text = "Thêm";
             this.btn_ThemAdmin.Click += new System.EventHandler(this.btn_ThemAdmin_Click);
@@ -536,25 +555,28 @@
             // 
             this.cbb_IDAdmin.DisplayMember = "IDAdmin";
             this.cbb_IDAdmin.FormattingEnabled = true;
-            this.cbb_IDAdmin.Location = new System.Drawing.Point(182, 203);
+            this.cbb_IDAdmin.Location = new System.Drawing.Point(121, 139);
+            this.cbb_IDAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbb_IDAdmin.Name = "cbb_IDAdmin";
-            this.cbb_IDAdmin.Size = new System.Drawing.Size(188, 44);
+            this.cbb_IDAdmin.Size = new System.Drawing.Size(127, 32);
             this.cbb_IDAdmin.TabIndex = 3;
             this.cbb_IDAdmin.ValueMember = "IDAdmin";
             // 
             // tb_PassAdmin
             // 
-            this.tb_PassAdmin.Location = new System.Drawing.Point(182, 143);
+            this.tb_PassAdmin.Location = new System.Drawing.Point(121, 98);
+            this.tb_PassAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_PassAdmin.Name = "tb_PassAdmin";
-            this.tb_PassAdmin.Size = new System.Drawing.Size(188, 44);
+            this.tb_PassAdmin.Size = new System.Drawing.Size(127, 32);
             this.tb_PassAdmin.TabIndex = 2;
             // 
             // tb_UserAdmin
             // 
-            this.tb_UserAdmin.Location = new System.Drawing.Point(180, 83);
+            this.tb_UserAdmin.Location = new System.Drawing.Point(120, 57);
+            this.tb_UserAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_UserAdmin.MaxLength = 50;
             this.tb_UserAdmin.Name = "tb_UserAdmin";
-            this.tb_UserAdmin.Size = new System.Drawing.Size(188, 44);
+            this.tb_UserAdmin.Size = new System.Drawing.Size(127, 32);
             this.tb_UserAdmin.TabIndex = 1;
             this.tb_UserAdmin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
             // 
@@ -562,9 +584,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(4, 206);
+            this.label7.Location = new System.Drawing.Point(3, 141);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 36);
+            this.label7.Size = new System.Drawing.Size(99, 24);
             this.label7.TabIndex = 23;
             this.label7.Text = "ID admin:";
             // 
@@ -572,9 +595,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(4, 146);
+            this.label8.Location = new System.Drawing.Point(3, 100);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 36);
+            this.label8.Size = new System.Drawing.Size(101, 24);
             this.label8.TabIndex = 21;
             this.label8.Text = "Password:";
             // 
@@ -582,9 +606,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(4, 88);
+            this.label9.Location = new System.Drawing.Point(3, 60);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(169, 36);
+            this.label9.Size = new System.Drawing.Size(113, 24);
             this.label9.TabIndex = 19;
             this.label9.Text = "User name:";
             // 
@@ -599,9 +624,10 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.bindingNavigator2);
             this.groupControl2.Controls.Add(this.dgv_UserAdmin);
-            this.groupControl2.Location = new System.Drawing.Point(474, 0);
+            this.groupControl2.Location = new System.Drawing.Point(316, 0);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(774, 661);
+            this.groupControl2.Size = new System.Drawing.Size(516, 452);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Dữ liệu admin";
             // 
@@ -624,15 +650,14 @@
             this.btn_ResetUser,
             this.toolStripSeparator8,
             this.btn_Thoat});
-            this.bindingNavigator2.Location = new System.Drawing.Point(2, 45);
+            this.bindingNavigator2.Location = new System.Drawing.Point(2, 31);
             this.bindingNavigator2.MoveFirstItem = null;
             this.bindingNavigator2.MoveLastItem = null;
             this.bindingNavigator2.MoveNextItem = null;
             this.bindingNavigator2.MovePreviousItem = null;
             this.bindingNavigator2.Name = "bindingNavigator2";
-            this.bindingNavigator2.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.bindingNavigator2.PositionItem = null;
-            this.bindingNavigator2.Size = new System.Drawing.Size(770, 35);
+            this.bindingNavigator2.Size = new System.Drawing.Size(512, 31);
             this.bindingNavigator2.TabIndex = 14;
             this.bindingNavigator2.Text = "bindingNavigator2";
             // 
@@ -643,14 +668,14 @@
             this.btn_LuuUser.Image = global::QLTV.Properties.Resources.diskette;
             this.btn_LuuUser.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_LuuUser.Name = "btn_LuuUser";
-            this.btn_LuuUser.Size = new System.Drawing.Size(72, 32);
+            this.btn_LuuUser.Size = new System.Drawing.Size(60, 28);
             this.btn_LuuUser.Text = "Lưu";
             this.btn_LuuUser.Click += new System.EventHandler(this.btn_LuuAdmin_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_SuaUser
             // 
@@ -658,14 +683,14 @@
             this.btn_SuaUser.Image = global::QLTV.Properties.Resources.icons8_pencil_80;
             this.btn_SuaUser.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_SuaUser.Name = "btn_SuaUser";
-            this.btn_SuaUser.Size = new System.Drawing.Size(159, 32);
+            this.btn_SuaUser.Size = new System.Drawing.Size(120, 28);
             this.btn_SuaUser.Text = "Sửa thông tin";
             this.btn_SuaUser.Click += new System.EventHandler(this.btn_SuaAdmin_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_XoaUser
             // 
@@ -673,14 +698,14 @@
             this.btn_XoaUser.Image = global::QLTV.Properties.Resources.icons8_cancel_80;
             this.btn_XoaUser.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_XoaUser.Name = "btn_XoaUser";
-            this.btn_XoaUser.Size = new System.Drawing.Size(74, 32);
+            this.btn_XoaUser.Size = new System.Drawing.Size(60, 28);
             this.btn_XoaUser.Text = "Xóa";
             this.btn_XoaUser.Click += new System.EventHandler(this.btn_XoaAdmin_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_XuatUserAdmin
             // 
@@ -688,14 +713,14 @@
             this.btn_XuatUserAdmin.Image = global::QLTV.Properties.Resources.icons8_export_csv_40;
             this.btn_XuatUserAdmin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_XuatUserAdmin.Name = "btn_XuatUserAdmin";
-            this.btn_XuatUserAdmin.Size = new System.Drawing.Size(120, 32);
+            this.btn_XuatUserAdmin.Size = new System.Drawing.Size(94, 28);
             this.btn_XuatUserAdmin.Text = "Xuất CSV";
             this.btn_XuatUserAdmin.Click += new System.EventHandler(this.btn_XuatUserAdmin_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_ResetUser
             // 
@@ -703,14 +728,14 @@
             this.btn_ResetUser.Image = global::QLTV.Properties.Resources.icons8_available_updates_40;
             this.btn_ResetUser.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_ResetUser.Name = "btn_ResetUser";
-            this.btn_ResetUser.Size = new System.Drawing.Size(151, 32);
+            this.btn_ResetUser.Size = new System.Drawing.Size(115, 28);
             this.btn_ResetUser.Text = "Reset dữ liệu";
             this.btn_ResetUser.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 31);
             // 
             // btn_Thoat
             // 
@@ -718,7 +743,7 @@
             this.btn_Thoat.Image = global::QLTV.Properties.Resources.icons8_shutdown_80;
             this.btn_Thoat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(90, 32);
+            this.btn_Thoat.Size = new System.Drawing.Size(72, 28);
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
@@ -734,10 +759,11 @@
             this.passwordAdminDataGridViewTextBoxColumn,
             this.iDAdminDataGridViewTextBoxColumn});
             this.dgv_UserAdmin.DataSource = this.uSERADMINBindingSource;
-            this.dgv_UserAdmin.Location = new System.Drawing.Point(2, 98);
+            this.dgv_UserAdmin.Location = new System.Drawing.Point(1, 67);
+            this.dgv_UserAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_UserAdmin.Name = "dgv_UserAdmin";
             this.dgv_UserAdmin.RowTemplate.Height = 28;
-            this.dgv_UserAdmin.Size = new System.Drawing.Size(771, 561);
+            this.dgv_UserAdmin.Size = new System.Drawing.Size(514, 384);
             this.dgv_UserAdmin.TabIndex = 6;
             this.dgv_UserAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_UserAdmin_CellClick);
             this.dgv_UserAdmin.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_UserAdmin_CellValueChanged);
@@ -748,7 +774,7 @@
             this.userNameAdminDataGridViewTextBoxColumn.DataPropertyName = "UserNameAdmin";
             this.userNameAdminDataGridViewTextBoxColumn.HeaderText = "User name admin";
             this.userNameAdminDataGridViewTextBoxColumn.Name = "userNameAdminDataGridViewTextBoxColumn";
-            this.userNameAdminDataGridViewTextBoxColumn.Width = 260;
+            this.userNameAdminDataGridViewTextBoxColumn.Width = 175;
             // 
             // passwordAdminDataGridViewTextBoxColumn
             // 
@@ -756,7 +782,7 @@
             this.passwordAdminDataGridViewTextBoxColumn.DataPropertyName = "PasswordAdmin";
             this.passwordAdminDataGridViewTextBoxColumn.HeaderText = "Password";
             this.passwordAdminDataGridViewTextBoxColumn.Name = "passwordAdminDataGridViewTextBoxColumn";
-            this.passwordAdminDataGridViewTextBoxColumn.Width = 176;
+            this.passwordAdminDataGridViewTextBoxColumn.Width = 119;
             // 
             // iDAdminDataGridViewTextBoxColumn
             // 
@@ -764,7 +790,7 @@
             this.iDAdminDataGridViewTextBoxColumn.DataPropertyName = "IDAdmin";
             this.iDAdminDataGridViewTextBoxColumn.HeaderText = "ID Admin";
             this.iDAdminDataGridViewTextBoxColumn.Name = "iDAdminDataGridViewTextBoxColumn";
-            this.iDAdminDataGridViewTextBoxColumn.Width = 161;
+            this.iDAdminDataGridViewTextBoxColumn.Width = 108;
             // 
             // uSERADMINBindingSource
             // 
@@ -781,10 +807,11 @@
             // 
             // frmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 748);
+            this.ClientSize = new System.Drawing.Size(913, 512);
             this.Controls.Add(this.navigationPane1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAdmin";
             this.Text = "Quản lí Admin";
             this.Load += new System.EventHandler(this.frmAdmin_Load);

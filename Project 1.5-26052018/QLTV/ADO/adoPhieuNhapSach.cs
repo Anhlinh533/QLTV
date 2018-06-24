@@ -33,7 +33,7 @@ namespace QLTV.ADO
 
         public void Xoa(string tb_IDPhieuNhap)
         {
-            //SCRIPT.formatTheDocGia.Instance.returnIDDocGia(ref tb_IDDocGia);
+            //SCRIPT.formatPhieuNhapSach.Instance.returnIDPhieuNhapSach(ref tb_IDPhieuNhap);
             string sqlDelete = "DELETE FROM PHIEUNHAPSACH WHERE IDPhieuNhap ='" + tb_IDPhieuNhap + "'";
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
         }

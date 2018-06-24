@@ -54,7 +54,6 @@ namespace QLTV.SCRIPT
             throw new NotImplementedException();
         }
 
-
         public bool checkNull(Control control)
         {
             if (control is TextBox)
@@ -65,6 +64,7 @@ namespace QLTV.SCRIPT
                     return true;
                 }
             }
+
             if (control is ComboBox)
             {
                 ComboBox cb = (ComboBox)control;
@@ -87,14 +87,14 @@ namespace QLTV.SCRIPT
                     tb.Focus();
                 }
             }
+
             if(control is ComboBox)
             {
                 ComboBox cb = (ComboBox)control;
                 if (cb.Text == "")
                 {
                     cb.Focus();
-                }
-             
+                }             
             }
         }
 
@@ -138,6 +138,7 @@ namespace QLTV.SCRIPT
                     DateTimePicker dateTimePicker = (DateTimePicker)control;
                     dateTimePicker.ResetText();
                 }
+
                 if (control is PictureBox)
                 {
                     PictureBox pictureBox = (PictureBox)control;
@@ -164,6 +165,7 @@ namespace QLTV.SCRIPT
                 Warning.Hide();
                 Ss.Show();
             }
+
             if (tb.Text == "")
             {
                 lb.ForeColor = Color.Red;

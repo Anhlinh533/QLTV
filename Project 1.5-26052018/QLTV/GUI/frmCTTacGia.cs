@@ -166,7 +166,7 @@ namespace QLTV.GUI
                 string idds = dataGridView1.Rows[t].Cells[1].Value.ToString();
                 string idtg = dataGridView1.Rows[t].Cells[2].Value.ToString();
 
-                ADO.adoCTTacGia.Instance.Sua(idcttg, idds, idtg);
+                ADO.adoCTTacGia.Instance.SuaLuu(idcttg, idds, idtg);
                 dataGridView1.DataSource = quanLyThuVienDataSet.CT_TACGIA;
                 this.cT_TACGIATableAdapter.Fill(this.quanLyThuVienDataSet.CT_TACGIA);
             }

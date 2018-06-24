@@ -43,7 +43,18 @@ namespace QLTV.ADO
             ADO.ConnectionSQL.Instance.Execute(sqlDelete);
         }
 
-        public void Sua(string tb_IDCTPhieuNhap, string cbb_IDPhieuNhap, string cbb_IDSach, string tb_SoLuong, string tb_DonGia)
+        public void Sua(string tb_IDCTPhieuNhap, string cbb_IDPhieuNhap, string cbb_IDSach, string cbb_TacGia, string cbb_NamXB, string tb_SoLuong, string tb_DonGia)
+        {
+            cbb_IDSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDDauSach FROM DAUSACH WHERE TenDauSach = N'" + cbb_IDSach + "'");
+            cbb_TacGia = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDCTTacGia FROM CT_TACGIA A, TACGIA B WHERE A.IDTacGia = B.IDTacGia AND A.IDDauSach = '" + cbb_IDSach + "'AND B.TenTacGia = N'" + cbb_TacGia + "'");
+            cbb_IDSach = ADO.ConnectionSQL.Instance.ExcuteString("SELECT IDSach FROM SACH WHERE IDDauSach = '" + cbb_IDSach + "' AND IDCTTacGia = '" + cbb_TacGia + "' AND NamXB = '" + cbb_NamXB + "'");
+            
+            //SCRIPT.formatCTPhieuNhapSach.Instance.returnCTPhieuNhapSach(ref tb_IDCTPhieuNhap);
+            string sqlUpdate = "UPDATE CT_PHIEUNHAPSACH SET IDPhieuNhap = '" + cbb_IDPhieuNhap + "', IDSach = '" + cbb_IDSach + "', SoLuong = '" + tb_SoLuong + "', DonGia = '" + tb_DonGia + "' WHERE IDCTPhieuNhap = '" + tb_IDCTPhieuNhap + "'";
+            ADO.ConnectionSQL.Instance.Execute(sqlUpdate);
+        }
+
+        public void SuaLuu(string tb_IDCTPhieuNhap, string cbb_IDPhieuNhap, string cbb_IDSach, string tb_SoLuong, string tb_DonGia)
         {
             //SCRIPT.formatCTPhieuNhapSach.Instance.returnCTPhieuNhapSach(ref tb_IDCTPhieuNhap);
             string sqlUpdate = "UPDATE CT_PHIEUNHAPSACH SET IDPhieuNhap = '" + cbb_IDPhieuNhap + "', IDSach = '" + cbb_IDSach + "', SoLuong = '" + tb_SoLuong + "', DonGia = '" + tb_DonGia + "' WHERE IDCTPhieuNhap = '" + tb_IDCTPhieuNhap + "'";

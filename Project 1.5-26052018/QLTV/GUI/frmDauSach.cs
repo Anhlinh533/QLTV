@@ -158,7 +158,7 @@ namespace QLTV.GUI
                 string tends = dgv_ThemDauSach.Rows[t].Cells[1].Value.ToString();
                 string idls = dgv_ThemDauSach.Rows[t].Cells[2].Value.ToString();
 
-                ADO.adoDauSach.Instance.Sua(idds, tends, idls);
+                ADO.adoDauSach.Instance.SuaLuu(idds, tends, idls);
                 dgv_ThemDauSach.DataSource = quanLyThuVienDataSet.DAUSACH;
                 this.dAUSACHTableAdapter.Fill(this.quanLyThuVienDataSet.DAUSACH);
             }

@@ -36,7 +36,7 @@ namespace QLTV.SCRIPT
         {
             if (IDCTPhieuMuon == "")  MessageBox.Show("Không được để trống ID chi tiết phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);          
             else if (IDPhieuMuon == "") MessageBox.Show("Không được để trống ID phiếu mượn.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (IDCuonSach == "") MessageBox.Show("Không được để trống ID cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (IDCuonSach == "") MessageBox.Show("Không được để trống tên cuốn sách.", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         public void checkNull(Control IDCTPhieuMuon,Control IDPhieuMuon,Control IDCuonSach)
         {

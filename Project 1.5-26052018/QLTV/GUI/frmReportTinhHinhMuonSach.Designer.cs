@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource7 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource8 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource9 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.LOAISACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.CT_BCTINHHINHMUONSACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -91,15 +91,15 @@
             this.rpv_TinhHinhMuonSach.AutoSize = true;
             this.rpv_TinhHinhMuonSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rpv_TinhHinhMuonSach.DocumentMapWidth = 44;
-            reportDataSource1.Name = "rpLoaiSach";
-            reportDataSource1.Value = this.LOAISACHBindingSource;
-            reportDataSource2.Name = "rpCTTinhHinhMuonSach";
-            reportDataSource2.Value = this.CT_BCTINHHINHMUONSACHBindingSource;
-            reportDataSource3.Name = "rpTinhHinhSach";
-            reportDataSource3.Value = this.bCTINHHINHMUONSACHBindingSource;
-            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource1);
-            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource2);
-            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource7.Name = "rpLoaiSach";
+            reportDataSource7.Value = this.LOAISACHBindingSource;
+            reportDataSource8.Name = "rpCTTinhHinhMuonSach";
+            reportDataSource8.Value = this.CT_BCTINHHINHMUONSACHBindingSource;
+            reportDataSource9.Name = "rpTinhHinhSach";
+            reportDataSource9.Value = this.bCTINHHINHMUONSACHBindingSource;
+            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource7);
+            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource8);
+            this.rpv_TinhHinhMuonSach.LocalReport.DataSources.Add(reportDataSource9);
             this.rpv_TinhHinhMuonSach.LocalReport.ReportEmbeddedResource = "QLTV.REPORT.rpTinhHinhMuonSach.rdlc";
             this.rpv_TinhHinhMuonSach.Location = new System.Drawing.Point(2, 27);
             this.rpv_TinhHinhMuonSach.Margin = new System.Windows.Forms.Padding(2);
@@ -125,6 +125,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(649, 540);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // iDBCMuonSachDataGridViewTextBoxColumn
             // 
