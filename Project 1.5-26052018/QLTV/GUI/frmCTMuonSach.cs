@@ -194,18 +194,15 @@ namespace QLTV.GUI
                 this.cT_PHIEUMUONTableAdapter.Fill(this.quanLyThuVienDataSet.CT_PHIEUMUON);
             }
             catch { }
-        }
+        }        
 
-        private void cbb_IDCuonSach_KeyDown(object sender, KeyEventArgs e)
+        private void btn_ThemSach_Click(object sender, EventArgs e)
         {
             try
             {
-                if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
-                {
-                    if (cbb_TenTacGia.Text == "")
-                        lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
-                    else lv_CuonSach.Items.Add(cbb_IDCuonSach.Text + " - " + cbb_TenTacGia.Text);
-                }
+                if (cbb_TenTacGia.Text == "")
+                    lv_CuonSach.Items.Add(cbb_IDCuonSach.Text);
+                else lv_CuonSach.Items.Add(cbb_IDCuonSach.Text + " - " + cbb_TenTacGia.Text);
             }
             catch { }
         }
@@ -259,6 +256,6 @@ namespace QLTV.GUI
                     t = dgv_Them.CurrentCell.RowIndex;
             }
             catch { }
-        }
+        }        
     }
 }

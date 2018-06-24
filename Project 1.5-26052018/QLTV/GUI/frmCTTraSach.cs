@@ -166,18 +166,15 @@ namespace QLTV.GUI
                 SCRIPT.useForm.Instance.checkID(ADO.adoCTTraSach.Instance.checkID(tb_IDCTPhieuTra.Text.Trim()), label4, tb_IDCTPhieuTra, pic_Warning, pic_Ss);
             }
             catch { }
-        }
+        }        
 
-        private void cbb_IDCuonSach_KeyDown(object sender, KeyEventArgs e)
+        private void btn_ThemSach_Click(object sender, EventArgs e)
         {
             try
             {
-                if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
-                {
-                    lb.DisplayMember = "Text";
-                    lb.ValueMember = "Value";
-                    lb.Items.Add(new { Text = cbb_IDCuonSach.Text, Value = cbb_IDCuonSach.SelectedValue.ToString() });
-                }
+                lb.DisplayMember = "Text";
+                lb.ValueMember = "Value";
+                lb.Items.Add(new { Text = cbb_IDCuonSach.Text, Value = cbb_IDCuonSach.SelectedValue.ToString() });                
             }
             catch { }
         }
@@ -260,6 +257,6 @@ namespace QLTV.GUI
                     t = dgv_Them.CurrentCell.RowIndex;
             }
             catch { }
-        }
+        }        
     }
 }

@@ -549,9 +549,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
           <Top>0.18577in</Top>
-          <Left>2.06426in</Left>
+          <Left>2.72965in</Left>
           <Height>0.27083in</Height>
-          <Width>3.875in</Width>
+          <Width>3.27083in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -610,7 +610,7 @@
           <Top>0.86632in</Top>
           <Left>1.06426in</Left>
           <Height>0.25in</Height>
-          <Width>1.23958in</Width>
+          <Width>1.08333in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -638,9 +638,9 @@
           </Paragraphs>
           <rd:DefaultName>NgayLap</rd:DefaultName>
           <Top>1.13022in</Top>
-          <Left>1.50916in</Left>
+          <Left>1.66541in</Left>
           <Height>0.25in</Height>
-          <Width>1in</Width>
+          <Width>1.08333in</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -668,9 +668,9 @@
           </Paragraphs>
           <rd:DefaultName>HoTenAdmin</rd:DefaultName>
           <Top>0.86631in</Top>
-          <Left>2.06426in</Left>
+          <Left>2.01218in</Left>
           <Height>0.25in</Height>
-          <Width>1in</Width>
+          <Width>2.1949in</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_TaoPhieuThu = new DevExpress.XtraEditors.SimpleButton();
@@ -126,9 +126,11 @@
             // 
             this.tb_IDDocGia.Location = new System.Drawing.Point(261, 34);
             this.tb_IDDocGia.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_IDDocGia.MaxLength = 3;
             this.tb_IDDocGia.Name = "tb_IDDocGia";
             this.tb_IDDocGia.Size = new System.Drawing.Size(251, 32);
             this.tb_IDDocGia.TabIndex = 1;
+            this.tb_IDDocGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_IDDocGia_KeyPress);
             // 
             // label4
             // 
@@ -275,15 +277,15 @@
             this.rpv_PhieuThuTienPhat.AutoSize = true;
             this.rpv_PhieuThuTienPhat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rpv_PhieuThuTienPhat.DocumentMapWidth = 44;
-            reportDataSource1.Name = "rpLoaiSach";
-            reportDataSource1.Value = null;
-            reportDataSource2.Name = "rpCTTinhHinhMuonSach";
-            reportDataSource2.Value = null;
-            reportDataSource3.Name = "rpTinhHinhSach";
-            reportDataSource3.Value = null;
-            this.rpv_PhieuThuTienPhat.LocalReport.DataSources.Add(reportDataSource1);
-            this.rpv_PhieuThuTienPhat.LocalReport.DataSources.Add(reportDataSource2);
-            this.rpv_PhieuThuTienPhat.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource4.Name = "rpLoaiSach";
+            reportDataSource4.Value = null;
+            reportDataSource5.Name = "rpCTTinhHinhMuonSach";
+            reportDataSource5.Value = null;
+            reportDataSource6.Name = "rpTinhHinhSach";
+            reportDataSource6.Value = null;
+            this.rpv_PhieuThuTienPhat.LocalReport.DataSources.Add(reportDataSource4);
+            this.rpv_PhieuThuTienPhat.LocalReport.DataSources.Add(reportDataSource5);
+            this.rpv_PhieuThuTienPhat.LocalReport.DataSources.Add(reportDataSource6);
             this.rpv_PhieuThuTienPhat.LocalReport.ReportEmbeddedResource = "QLTV.REPORT.rpTinhHinhMuonSach.rdlc";
             this.rpv_PhieuThuTienPhat.Location = new System.Drawing.Point(2, 27);
             this.rpv_PhieuThuTienPhat.Margin = new System.Windows.Forms.Padding(2);

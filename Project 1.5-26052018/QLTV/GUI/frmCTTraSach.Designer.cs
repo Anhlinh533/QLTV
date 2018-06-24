@@ -45,15 +45,10 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_Exit = new System.Windows.Forms.ToolStripButton();
             this.dgv_Them = new System.Windows.Forms.DataGridView();
-            this.iDCTPhieuTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPhieuTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDCuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soNgayMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tienPhatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTPHIEUTRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyThuVienDataSet = new QLTV.QuanLyThuVienDataSet();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_ThemSach = new DevExpress.XtraEditors.SimpleButton();
             this.tb_TenTacGia = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbb_IDCuonSach = new System.Windows.Forms.ComboBox();
@@ -72,6 +67,12 @@
             this.cT_PHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUTRATableAdapter();
             this.cUONSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter();
             this.pHIEUTRATableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter();
+            this.iDCTPhieuTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPhieuTraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDCuonSachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPhieuMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soNgayMuonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tienPhatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -273,54 +274,6 @@
             this.dgv_Them.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellClick);
             this.dgv_Them.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Them_CellValueChanged);
             // 
-            // iDCTPhieuTraDataGridViewTextBoxColumn
-            // 
-            this.iDCTPhieuTraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDCTPhieuTraDataGridViewTextBoxColumn.DataPropertyName = "IDCTPhieuTra";
-            this.iDCTPhieuTraDataGridViewTextBoxColumn.HeaderText = "ID chi tiết phiếu trả";
-            this.iDCTPhieuTraDataGridViewTextBoxColumn.Name = "iDCTPhieuTraDataGridViewTextBoxColumn";
-            this.iDCTPhieuTraDataGridViewTextBoxColumn.Width = 168;
-            // 
-            // iDPhieuTraDataGridViewTextBoxColumn
-            // 
-            this.iDPhieuTraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDPhieuTraDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuTra";
-            this.iDPhieuTraDataGridViewTextBoxColumn.HeaderText = "ID phiếu trả";
-            this.iDPhieuTraDataGridViewTextBoxColumn.Name = "iDPhieuTraDataGridViewTextBoxColumn";
-            this.iDPhieuTraDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // iDCuonSachDataGridViewTextBoxColumn
-            // 
-            this.iDCuonSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDCuonSachDataGridViewTextBoxColumn.DataPropertyName = "IDCuonSach";
-            this.iDCuonSachDataGridViewTextBoxColumn.HeaderText = "ID cuốn sách";
-            this.iDCuonSachDataGridViewTextBoxColumn.Name = "iDCuonSachDataGridViewTextBoxColumn";
-            this.iDCuonSachDataGridViewTextBoxColumn.Width = 137;
-            // 
-            // iDPhieuMuonDataGridViewTextBoxColumn
-            // 
-            this.iDPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.iDPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuMuon";
-            this.iDPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID phiếu mượn";
-            this.iDPhieuMuonDataGridViewTextBoxColumn.Name = "iDPhieuMuonDataGridViewTextBoxColumn";
-            this.iDPhieuMuonDataGridViewTextBoxColumn.Width = 153;
-            // 
-            // soNgayMuonDataGridViewTextBoxColumn
-            // 
-            this.soNgayMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.soNgayMuonDataGridViewTextBoxColumn.DataPropertyName = "SoNgayMuon";
-            this.soNgayMuonDataGridViewTextBoxColumn.HeaderText = "Số ngày mượn";
-            this.soNgayMuonDataGridViewTextBoxColumn.Name = "soNgayMuonDataGridViewTextBoxColumn";
-            this.soNgayMuonDataGridViewTextBoxColumn.Width = 149;
-            // 
-            // tienPhatDataGridViewTextBoxColumn
-            // 
-            this.tienPhatDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.tienPhatDataGridViewTextBoxColumn.DataPropertyName = "TienPhat";
-            this.tienPhatDataGridViewTextBoxColumn.HeaderText = "Tiền Phạt";
-            this.tienPhatDataGridViewTextBoxColumn.Name = "tienPhatDataGridViewTextBoxColumn";
-            this.tienPhatDataGridViewTextBoxColumn.Width = 110;
-            // 
             // cTPHIEUTRABindingSource
             // 
             this.cTPHIEUTRABindingSource.DataMember = "CT_PHIEUTRA";
@@ -339,6 +292,7 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_ThemSach);
             this.groupControl1.Controls.Add(this.tb_TenTacGia);
             this.groupControl1.Controls.Add(this.label5);
             this.groupControl1.Controls.Add(this.cbb_IDCuonSach);
@@ -358,6 +312,18 @@
             this.groupControl1.Size = new System.Drawing.Size(400, 444);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin chi tiết phiếu trả sách";
+            // 
+            // btn_ThemSach
+            // 
+            this.btn_ThemSach.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_ThemSach.Appearance.Options.UseFont = true;
+            this.btn_ThemSach.Location = new System.Drawing.Point(198, 236);
+            this.btn_ThemSach.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ThemSach.Name = "btn_ThemSach";
+            this.btn_ThemSach.Size = new System.Drawing.Size(105, 25);
+            this.btn_ThemSach.TabIndex = 39;
+            this.btn_ThemSach.Text = "Thêm sách";
+            this.btn_ThemSach.Click += new System.EventHandler(this.btn_ThemSach_Click);
             // 
             // tb_TenTacGia
             // 
@@ -388,13 +354,12 @@
             this.cbb_IDCuonSach.Size = new System.Drawing.Size(163, 32);
             this.cbb_IDCuonSach.TabIndex = 3;
             this.cbb_IDCuonSach.SelectedIndexChanged += new System.EventHandler(this.cbb_IDCuonSach_SelectedIndexChanged);
-            this.cbb_IDCuonSach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbb_IDCuonSach_KeyDown);
             // 
             // lb
             // 
             this.lb.FormattingEnabled = true;
             this.lb.ItemHeight = 24;
-            this.lb.Location = new System.Drawing.Point(8, 244);
+            this.lb.Location = new System.Drawing.Point(8, 265);
             this.lb.Margin = new System.Windows.Forms.Padding(2);
             this.lb.Name = "lb";
             this.lb.Size = new System.Drawing.Size(353, 124);
@@ -524,6 +489,54 @@
             // 
             this.pHIEUTRATableAdapter.ClearBeforeFill = true;
             // 
+            // iDCTPhieuTraDataGridViewTextBoxColumn
+            // 
+            this.iDCTPhieuTraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDCTPhieuTraDataGridViewTextBoxColumn.DataPropertyName = "IDCTPhieuTra";
+            this.iDCTPhieuTraDataGridViewTextBoxColumn.HeaderText = "ID chi tiết phiếu trả";
+            this.iDCTPhieuTraDataGridViewTextBoxColumn.Name = "iDCTPhieuTraDataGridViewTextBoxColumn";
+            this.iDCTPhieuTraDataGridViewTextBoxColumn.Width = 168;
+            // 
+            // iDPhieuTraDataGridViewTextBoxColumn
+            // 
+            this.iDPhieuTraDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDPhieuTraDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuTra";
+            this.iDPhieuTraDataGridViewTextBoxColumn.HeaderText = "ID phiếu trả";
+            this.iDPhieuTraDataGridViewTextBoxColumn.Name = "iDPhieuTraDataGridViewTextBoxColumn";
+            this.iDPhieuTraDataGridViewTextBoxColumn.Width = 130;
+            // 
+            // iDCuonSachDataGridViewTextBoxColumn
+            // 
+            this.iDCuonSachDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDCuonSachDataGridViewTextBoxColumn.DataPropertyName = "IDCuonSach";
+            this.iDCuonSachDataGridViewTextBoxColumn.HeaderText = "ID cuốn sách";
+            this.iDCuonSachDataGridViewTextBoxColumn.Name = "iDCuonSachDataGridViewTextBoxColumn";
+            this.iDCuonSachDataGridViewTextBoxColumn.Width = 137;
+            // 
+            // iDPhieuMuonDataGridViewTextBoxColumn
+            // 
+            this.iDPhieuMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDPhieuMuonDataGridViewTextBoxColumn.DataPropertyName = "IDPhieuMuon";
+            this.iDPhieuMuonDataGridViewTextBoxColumn.HeaderText = "ID phiếu mượn";
+            this.iDPhieuMuonDataGridViewTextBoxColumn.Name = "iDPhieuMuonDataGridViewTextBoxColumn";
+            this.iDPhieuMuonDataGridViewTextBoxColumn.Width = 153;
+            // 
+            // soNgayMuonDataGridViewTextBoxColumn
+            // 
+            this.soNgayMuonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.soNgayMuonDataGridViewTextBoxColumn.DataPropertyName = "SoNgayMuon";
+            this.soNgayMuonDataGridViewTextBoxColumn.HeaderText = "Số ngày mượn";
+            this.soNgayMuonDataGridViewTextBoxColumn.Name = "soNgayMuonDataGridViewTextBoxColumn";
+            this.soNgayMuonDataGridViewTextBoxColumn.Width = 149;
+            // 
+            // tienPhatDataGridViewTextBoxColumn
+            // 
+            this.tienPhatDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.tienPhatDataGridViewTextBoxColumn.DataPropertyName = "TienPhat";
+            this.tienPhatDataGridViewTextBoxColumn.HeaderText = "Tiền Phạt";
+            this.tienPhatDataGridViewTextBoxColumn.Name = "tienPhatDataGridViewTextBoxColumn";
+            this.tienPhatDataGridViewTextBoxColumn.Width = 110;
+            // 
             // frmCTTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -577,12 +590,6 @@
         private QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter cUONSACHTableAdapter;
         private System.Windows.Forms.BindingSource pHIEUTRABindingSource;
         private QuanLyThuVienDataSetTableAdapters.PHIEUTRATableAdapter pHIEUTRATableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTPhieuTraDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuTraDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCuonSachDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soNgayMuonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tienPhatDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pic_Ss;
         private System.Windows.Forms.PictureBox pic_Warning;
@@ -604,5 +611,12 @@
         private System.Windows.Forms.ComboBox cbb_IDCuonSach;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripButton btn_Xuat;
+        private DevExpress.XtraEditors.SimpleButton btn_ThemSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCTPhieuTraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuTraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCuonSachDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDPhieuMuonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soNgayMuonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tienPhatDataGridViewTextBoxColumn;
     }
 }

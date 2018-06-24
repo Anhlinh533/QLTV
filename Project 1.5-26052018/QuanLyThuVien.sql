@@ -543,7 +543,7 @@ CREATE TABLE CT_USERADMIN
 
 INSERT INTO CT_USERADMIN VALUES ('IAD001', N'Hunter Team', '1998-01-01', N'ĐH CNTT - UIT', 'duybao05123@gmail.com')
 INSERT INTO CT_USERADMIN VALUES ('IAD002', N'Văn Bê', '4/4/2016', N'Trường', 'vanb@gmail.com')
-INSERT INTO CT_USERADMIN VALUES ('IAD003', N'a', '6/6/2010', N'a', 'a@gmail.com')
+INSERT INTO CT_USERADMIN VALUES ('IAD003', N'Nguyễn Văn A', '6/6/2010', N'a', 'a@gmail.com')
 --------------------------------------------------------------------------------------------------------------------------------------
 
 --___________________________________________________________ THAMSO _______________________________________________________________--

@@ -69,6 +69,7 @@
             this.cT_PHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CT_PHIEUMUONTableAdapter();
             this.pHIEUMUONTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.PHIEUMUONTableAdapter();
             this.cUONSACHTableAdapter = new QLTV.QuanLyThuVienDataSetTableAdapters.CUONSACHTableAdapter();
+            this.btn_ThemSach = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.item_Them.SuspendLayout();
@@ -313,6 +314,7 @@
             this.groupControl1.Appearance.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 15F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.btn_ThemSach);
             this.groupControl1.Controls.Add(this.cbb_TenTacGia);
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.lv_CuonSach);
@@ -357,7 +359,7 @@
             // 
             this.lv_CuonSach.FormattingEnabled = true;
             this.lv_CuonSach.ItemHeight = 24;
-            this.lv_CuonSach.Location = new System.Drawing.Point(8, 235);
+            this.lv_CuonSach.Location = new System.Drawing.Point(8, 260);
             this.lv_CuonSach.Margin = new System.Windows.Forms.Padding(2);
             this.lv_CuonSach.Name = "lv_CuonSach";
             this.lv_CuonSach.Size = new System.Drawing.Size(335, 100);
@@ -374,7 +376,6 @@
             this.cbb_IDCuonSach.Size = new System.Drawing.Size(118, 32);
             this.cbb_IDCuonSach.TabIndex = 3;
             this.cbb_IDCuonSach.TextChanged += new System.EventHandler(this.cbb_IDCuonSach_TextChanged);
-            this.cbb_IDCuonSach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbb_IDCuonSach_KeyDown);
             // 
             // cbb_IDPhieuMuon
             // 
@@ -498,6 +499,18 @@
             // 
             this.cUONSACHTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_ThemSach
+            // 
+            this.btn_ThemSach.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btn_ThemSach.Appearance.Options.UseFont = true;
+            this.btn_ThemSach.Location = new System.Drawing.Point(225, 231);
+            this.btn_ThemSach.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ThemSach.Name = "btn_ThemSach";
+            this.btn_ThemSach.Size = new System.Drawing.Size(105, 25);
+            this.btn_ThemSach.TabIndex = 32;
+            this.btn_ThemSach.Text = "Thêm sách";
+            this.btn_ThemSach.Click += new System.EventHandler(this.btn_ThemSach_Click);
+            // 
             // frmCTMuonSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -575,5 +588,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripButton btn_Xuat;
+        private DevExpress.XtraEditors.SimpleButton btn_ThemSach;
     }
 }
